@@ -1748,6 +1748,45 @@ def assemble_post(topic, title, hook, sections, images, pmids, faq_text, related
 # ============================================================
 # 품질 검사
 # ============================================================
+def _qa_leakage_issues(html: str) -> list:
+    """Placeholder leakage / generic H1 / broken meta 탐지. 발견 시 즉시 반려."""
+    issues = []
+    text = re.sub(r'<[^>]+>', ' ', html)
+
+    # 1. Placeholder leakage: 단어 사이 공백 2칸 이상 (빈 entity)
+    if re.search(r'[A-Za-z]\s{2,}[A-Za-z]', text):
+        snippet = re.search(r'[A-Za-z]\s{2,}[A-Za-z]', text).group()
+        issues.append(f"Placeholder leakage(빈 entity): '{snippet}'")
+
+    # 2. Generic H1 패턴
+    h1_m = re.search(r'<h1[^>]*>([^<]+)</h1>', html, re.IGNORECASE)
+    if h1_m:
+        h1 = h1_m.group(1).strip().lower()
+        GENERIC_H1 = [
+            "how i use supplement", "supplement effectively", "my findings",
+            "how to use", "benefits of supplement", "everything you need",
+            "ultimate guide", "complete guide", "the truth about supplement",
+        ]
+        if any(p in h1 for p in GENERIC_H1):
+            issues.append(f"Generic H1 template: '{h1_m.group(1)[:60]}'")
+
+    # 3. Meta description 누락 또는 비어있음
+    meta_m = re.search(
+        r'<meta\s+name=["\']description["\']\s+content=["\']([^"\']*)["\']',
+        html, re.IGNORECASE
+    )
+    if not meta_m or len(meta_m.group(1).strip()) < 20:
+        issues.append("Meta description 누락 또는 너무 짧음")
+
+    # 4. 이미지 캡션 placeholder
+    captions = re.findall(r'alt="([^"]*)"', html)
+    for alt in captions:
+        if re.search(r'[A-Za-z]\s{2,}[A-Za-z]', alt):
+            issues.append(f"이미지 alt placeholder: '{alt[:40]}'")
+
+    return issues
+
+
 def passes_min_gates(html, word_count):
     # [v5.9.9.9] 애드센스 승인 및 품질 유지를 위한 절대 최소 기준 (1,000 Words)
     if word_count < 1000: return False
@@ -1755,6 +1794,8 @@ def passes_min_gates(html, word_count):
     # 플레이스홀더 체크 (기존 BLOCK_TERMS 통합)
     BLOCK_TERMS = ["TOPIC:", "{topic}", "Discover how", "How I Use TOPIC"]
     if any(term in html for term in BLOCK_TERMS): return False
+    # QA leakage 하드 차단
+    if _qa_leakage_issues(html): return False
     return True
 
 def has_repetitive_paragraphs(html):
@@ -1784,6 +1825,7 @@ def quality_check(html, title, archetype_name="science-heavy"):
         "AI_Footprint":    not any(p in html.lower() for p in ["interestingly", "notably", "surprisingly", "moreover", "furthermore", "magic hour", "consistency is king", "pairing routine"]),
         "Alt_Clean":       not any(bad in html for bad in ["And Zinc", "Stopped And", "Taking And", "Stop And", "Take And", "Trying And", "Comparing And", "Using And"]) and all(not alt.strip().startswith("And ") for alt in re.findall(r'alt="([^"]*)"', html)),
         "Repetition_Free": not has_repetitive_paragraphs(html),
+        "NoPlaceholder":   not _qa_leakage_issues(html),
     }
     score  = sum(checks.values()) / len(checks)
     issues = [k for k,v in checks.items() if not v]
