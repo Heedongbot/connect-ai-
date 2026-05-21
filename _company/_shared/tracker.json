@@ -1,0 +1,174 @@
+{
+  "tasks": [
+    {
+      "id": "20260515072317-ta22",
+      "title": "기획안의 시장성 검증 (필수)",
+      "description": "자동 등록 (영숙 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "secretary"
+      ],
+      "createdAt": "2026-05-15T07:23:17.454Z",
+      "status": "done",
+      "sessionDir": "2026-05-15T07-22",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-15T07-22/_report.md\n- 영숙: 새로운 의사 결정 및 메모리 확인, 해당 과정의 최적화 가능한 정보 제공\n- 현빈: 1인 기업 24시간 운영 중 일정과 관련된 상황 점검. 회사 목표와 개별 에이전트 목표 연계. \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 새로운 의사 결정 및 메모리 확인, 해당 과정의 최적화 가능한 정보 제공\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: 현재 시점의 핵심 임무는 **'최적의 다음 행동 결정'**입니다",
+      "completedAt": "2026-05-15T07:24:23.599Z"
+    },
+    {
+      "id": "20260515072317-8oxt",
+      "title": "콘텐츠 포맷의 다양화 (영상, 카드뉴스, 심층글 등)",
+      "description": "자동 등록 (영숙 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "secretary"
+      ],
+      "createdAt": "2026-05-15T07:23:17.487Z",
+      "status": "done",
+      "sessionDir": "2026-05-15T07-22",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-15T07-22/_report.md\n- 영숙: 새로운 의사 결정 및 메모리 확인, 해당 과정의 최적화 가능한 정보 제공\n- 현빈: 1인 기업 24시간 운영 중 일정과 관련된 상황 점검. 회사 목표와 개별 에이전트 목표 연계. \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 새로운 의사 결정 및 메모리 확인, 해당 과정의 최적화 가능한 정보 제공\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: 현재 시점의 핵심 임무는 **'최적의 다음 행동 결정'**입니다",
+      "completedAt": "2026-05-15T07:24:23.618Z"
+    },
+    {
+      "id": "20260515072317-65uf",
+      "title": "다음 주 로드맵 확정",
+      "description": "자동 등록 (영숙 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "secretary"
+      ],
+      "createdAt": "2026-05-15T07:23:17.512Z",
+      "status": "done",
+      "sessionDir": "2026-05-15T07-22",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-15T07-22/_report.md\n- 영숙: 새로운 의사 결정 및 메모리 확인, 해당 과정의 최적화 가능한 정보 제공\n- 현빈: 1인 기업 24시간 운영 중 일정과 관련된 상황 점검. 회사 목표와 개별 에이전트 목표 연계. \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 새로운 의사 결정 및 메모리 확인, 해당 과정의 최적화 가능한 정보 제공\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: 현재 시점의 핵심 임무는 **'최적의 다음 행동 결정'**입니다",
+      "completedAt": "2026-05-15T07:24:23.634Z"
+    },
+    {
+      "id": "20260517085342-hq5q",
+      "title": "**분석:** Knowledge Gap 주제 3가지 확정 (담당: 분석 에이전트)",
+      "description": "자동 등록 (영숙 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "secretary"
+      ],
+      "createdAt": "2026-05-17T08:53:42.849Z",
+      "status": "done",
+      "sessionDir": "2026-05-17T08-53",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-17T08-53/_report.md\n- 영숙: 사용자 명령 내용 요약 및 의사 결정 내역 작성\n\nCEO 종합 요점: ## 🧠 오늘의 핵심 요약 및 다음 액션 플랜 (Executive Summary & Next Steps)\n\n**현재 상황:** 시스템은 지속적인 모니터링 및 최적화 단계에 있으며, 과거의 성공적인 활동(예: 초기 데이터 수집, 계획 수립)을 바탕으로 다음 단계의 실행 동력을 확보해야 합니다.\n\n**핵심 목표 재확인:**\n1. **지속 가능한 성장 동력 확",
+      "completedAt": "2026-05-17T08:53:42.870Z"
+    },
+    {
+      "id": "20260517085342-7fkz",
+      "title": "**기획:** 각 주제별 콘텐츠 아웃라인 3개 완성 (담당: 콘텐츠 에이전트)",
+      "description": "자동 등록 (영숙 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "secretary"
+      ],
+      "createdAt": "2026-05-17T08:53:42.856Z",
+      "status": "done",
+      "sessionDir": "2026-05-17T08-53",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-17T08-53/_report.md\n- 영숙: 사용자 명령 내용 요약 및 의사 결정 내역 작성\n\nCEO 종합 요점: ## 🧠 오늘의 핵심 요약 및 다음 액션 플랜 (Executive Summary & Next Steps)\n\n**현재 상황:** 시스템은 지속적인 모니터링 및 최적화 단계에 있으며, 과거의 성공적인 활동(예: 초기 데이터 수집, 계획 수립)을 바탕으로 다음 단계의 실행 동력을 확보해야 합니다.\n\n**핵심 목표 재확인:**\n1. **지속 가능한 성장 동력 확",
+      "completedAt": "2026-05-17T08:53:42.875Z"
+    },
+    {
+      "id": "20260517085342-1af8",
+      "title": "**검토:** 기획안의 독창성/검증성 1차 검토 완료 (담당: 검토 에이전트)",
+      "description": "자동 등록 (영숙 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "secretary"
+      ],
+      "createdAt": "2026-05-17T08:53:42.861Z",
+      "status": "done",
+      "sessionDir": "2026-05-17T08-53",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-17T08-53/_report.md\n- 영숙: 사용자 명령 내용 요약 및 의사 결정 내역 작성\n\nCEO 종합 요점: ## 🧠 오늘의 핵심 요약 및 다음 액션 플랜 (Executive Summary & Next Steps)\n\n**현재 상황:** 시스템은 지속적인 모니터링 및 최적화 단계에 있으며, 과거의 성공적인 활동(예: 초기 데이터 수집, 계획 수립)을 바탕으로 다음 단계의 실행 동력을 확보해야 합니다.\n\n**핵심 목표 재확인:**\n1. **지속 가능한 성장 동력 확",
+      "completedAt": "2026-05-17T08:53:42.879Z"
+    },
+    {
+      "id": "20260517085342-kl6h",
+      "title": "**점검:** 주요 API Rate Limit 보고서 작성 (담당: 인프라 에이전트)",
+      "description": "자동 등록 (영숙 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "secretary"
+      ],
+      "createdAt": "2026-05-17T08:53:42.865Z",
+      "status": "done",
+      "sessionDir": "2026-05-17T08-53",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-17T08-53/_report.md\n- 영숙: 사용자 명령 내용 요약 및 의사 결정 내역 작성\n\nCEO 종합 요점: ## 🧠 오늘의 핵심 요약 및 다음 액션 플랜 (Executive Summary & Next Steps)\n\n**현재 상황:** 시스템은 지속적인 모니터링 및 최적화 단계에 있으며, 과거의 성공적인 활동(예: 초기 데이터 수집, 계획 수립)을 바탕으로 다음 단계의 실행 동력을 확보해야 합니다.\n\n**핵심 목표 재확인:**\n1. **지속 가능한 성장 동력 확",
+      "completedAt": "2026-05-17T08:53:42.884Z"
+    },
+    {
+      "id": "20260520021032-62oa",
+      "title": "**(필수)** 콘텐츠 초안 1건 완성도 점검 (AI가 쓴 글인지, 사람이 다듬은 글인지 구분 가능할 정도의 수준 목표).",
+      "description": "자동 등록 (영숙 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "secretary"
+      ],
+      "createdAt": "2026-05-20T02:10:32.082Z",
+      "status": "done",
+      "sessionDir": "2026-05-20T02-09",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-20T02-09/_report.md\n- 영숙: 1시간 정도 일정/할 일 및 업무 요약을 작성하세요\n- 현빈: 각 에이전트의 개인 목표를 검토하고, 가장 가치 있는 단일 작업 1개를 결정하세요.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 1시간 정도 일정/할 일 및 업무 요약을 작성하세요\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: **요약:** 전반적으로 시스템의 안정화 및 콘텐츠 기획 단계에 집중해야 합니다. 어",
+      "completedAt": "2026-05-20T02:11:33.196Z"
+    },
+    {
+      "id": "20260520021032-s0yz",
+      "title": "**(점검)** 지난주 발행 글 대비 트래픽 변화 추이 시각화 자료 확보.",
+      "description": "자동 등록 (영숙 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "secretary"
+      ],
+      "createdAt": "2026-05-20T02:10:32.088Z",
+      "status": "done",
+      "sessionDir": "2026-05-20T02-09",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-20T02-09/_report.md\n- 영숙: 1시간 정도 일정/할 일 및 업무 요약을 작성하세요\n- 현빈: 각 에이전트의 개인 목표를 검토하고, 가장 가치 있는 단일 작업 1개를 결정하세요.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 1시간 정도 일정/할 일 및 업무 요약을 작성하세요\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: **요약:** 전반적으로 시스템의 안정화 및 콘텐츠 기획 단계에 집중해야 합니다. 어",
+      "completedAt": "2026-05-20T02:11:33.202Z"
+    },
+    {
+      "id": "20260520021032-tph0",
+      "title": "**(준비)** 다음 주에 다룰 콘텐츠 주제 2개 후보군 확정 및 키워드 리스트 업데이트.",
+      "description": "자동 등록 (영숙 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "secretary"
+      ],
+      "createdAt": "2026-05-20T02:10:32.093Z",
+      "status": "done",
+      "sessionDir": "2026-05-20T02-09",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-20T02-09/_report.md\n- 영숙: 1시간 정도 일정/할 일 및 업무 요약을 작성하세요\n- 현빈: 각 에이전트의 개인 목표를 검토하고, 가장 가치 있는 단일 작업 1개를 결정하세요.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 1시간 정도 일정/할 일 및 업무 요약을 작성하세요\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: **요약:** 전반적으로 시스템의 안정화 및 콘텐츠 기획 단계에 집중해야 합니다. 어",
+      "completedAt": "2026-05-20T02:11:33.206Z"
+    }
+  ]
+}

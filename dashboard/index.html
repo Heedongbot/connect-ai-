@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriStack Lab - Virtual Office Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 상단 헤더 -->
+        <header>
+            <div class="logo">
+                <span class="pixel-text">NUTRISTACK LAB</span>
+                <span class="version">v5.4.3</span>
+            </div>
+            <div class="status-pills">
+                <div class="pill online"><span class="dot"></span> SYSTEM ONLINE</div>
+                <div class="pill mode">AUTONOMOUS CEO ACTIVE</div>
+                <div class="pill time" id="current-time">20:10:45</div>
+            </div>
+        </header>
+
+        <main>
+            <!-- 왼쪽: 가상 사무실 (Virtual Office) -->
+            <section class="office-view">
+                <div class="office-container">
+                    <img src="virtual_office_bg.png" alt="Office Background" class="office-bg">
+                    
+                    <!-- 11인 에이전트 스쿼드 -->
+                    <div class="agent planner" style="top: 35%; left: 15%;">
+                        <div class="balloon">대기 중</div>
+                        <div class="sprite">🗺️</div>
+                        <div class="label">Planner</div>
+                    </div>
+
+                    <div class="agent researcher" style="top: 45%; left: 30%;">
+                        <div class="balloon">대기 중</div>
+                        <div class="sprite">🔍</div>
+                        <div class="label">Researcher</div>
+                    </div>
+                    
+                    <div class="agent writer" style="top: 55%; left: 50%;">
+                        <div class="balloon">대기 중</div>
+                        <div class="sprite">✍️</div>
+                        <div class="label">Writer</div>
+                    </div>
+
+                    <div class="agent seo" style="top: 30%; left: 45%;">
+                        <div class="balloon">대기 중</div>
+                        <div class="sprite">📈</div>
+                        <div class="label">SEO</div>
+                    </div>
+
+                    <div class="agent persona" style="top: 45%; left: 55%;">
+                        <div class="balloon">대기 중</div>
+                        <div class="sprite">❄️</div>
+                        <div class="label">Persona</div>
+                    </div>
+
+                    <div class="agent visual" style="top: 25%; left: 80%;">
+                        <div class="balloon">대기 중</div>
+                        <div class="sprite">🎨</div>
+                        <div class="label">Visual</div>
+                    </div>
+
+                    <div class="agent pmid" style="top: 75%; left: 25%;">
+                        <div class="balloon">대기 중</div>
+                        <div class="sprite">🔬</div>
+                        <div class="label">PMID</div>
+                    </div>
+
+                    <div class="agent automation" style="top: 75%; left: 45%;">
+                        <div class="balloon">대기 중</div>
+                        <div class="sprite">⚙️</div>
+                        <div class="label">Automation</div>
+                    </div>
+
+                    <div class="agent analyst" style="top: 70%; left: 65%;">
+                        <div class="balloon">대기 중</div>
+                        <div class="sprite">📊</div>
+                        <div class="label">Analyst</div>
+                    </div>
+
+                    <div class="agent ceo" style="top: 40%; left: 70%;">
+                        <div class="balloon">시스템 감시 중</div>
+                        <div class="sprite">👑</div>
+                        <div class="label">CEO</div>
+                    </div>
+
+                    <div class="agent critic" style="top: 60%; left: 85%;">
+                        <div class="balloon">대기 중</div>
+                        <div class="sprite">👨‍⚖️</div>
+                        <div class="label">Critic</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 오른쪽: 실시간 상태 및 로그 -->
+            <section class="stats-panel">
+                <div class="card mission-card">
+                    <h3>CURRENT MISSION</h3>
+                    <div class="mission-title">대기 중...</div>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 0%;"></div>
+                    </div>
+                    <div class="mission-step">Standby</div>
+                </div>
+
+                <div class="card stats-grid">
+                    <div class="stat-item">
+                        <label>TOTAL POSTS</label>
+                        <div class="value">437</div>
+                    </div>
+                    <div class="stat-item">
+                        <label>AVG. SCORE</label>
+                        <div class="value">8.9</div>
+                    </div>
+                    <div class="stat-item">
+                        <label>SELF-REPAIRED</label>
+                        <div class="value">12</div>
+                    </div>
+                </div>
+
+                <div class="card log-card">
+                    <h3>SYSTEM LOGS</h3>
+                    <div class="log-stream" id="log-stream">
+                        <div class="log-entry">[INFO] CEO started Audit cycle.</div>
+                        <div class="log-entry">[INFO] Researcher found 5 PMIDs for Ginger.</div>
+                        <div class="log-entry warning">[WARN] Banned phrase 'In conclusion' detected and removed.</div>
+                        <div class="log-entry success">[SUCCESS] Image generated for Section 2.</div>
+                        <div class="log-entry">[INFO] Writer starts Section 3: Mechanism.</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

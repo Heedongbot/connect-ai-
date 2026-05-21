@@ -1,0 +1,401 @@
+[
+  {
+    "topic": "Vitamin A and Collagen Synergy: The Nordic Protocol",
+    "type": "synergy",
+    "time": "08:41",
+    "date": "2026-05-11",
+    "status": "pending"
+  },
+  {
+    "topic": "Morning vs Evening: When to Take Collagen",
+    "type": "protocol",
+    "time": "12:47",
+    "date": "2026-05-11",
+    "status": "pending"
+  },
+  {
+    "topic": "Is Vitamin C Safe Long-Term? The Real Data",
+    "type": "side-effects",
+    "time": "18:07",
+    "date": "2026-05-11",
+    "status": "pending"
+  },
+  {
+    "topic": "What CDP-Choline Does to Your Mitochondria",
+    "type": "mechanism",
+    "time": "12:11",
+    "date": "2026-05-11",
+    "status": "pending"
+  },
+  {
+    "topic": "How to Cook With GABA for Maximum Benefit",
+    "type": "recipe",
+    "time": "19:53",
+    "date": "2026-05-11",
+    "status": "pending"
+  },
+  {
+    "topic": "Morning vs Evening: When to Take Vitamin A",
+    "type": "protocol",
+    "time": "10:29",
+    "date": "2026-05-11",
+    "status": "pending"
+  },
+  {
+    "topic": "Head-to-Head: NAC vs Glucosamine",
+    "type": "comparison",
+    "time": "14:33",
+    "date": "2026-05-11",
+    "status": "pending"
+  },
+  {
+    "topic": "Omega-3 Side Effects: What the Research Shows",
+    "type": "side-effects",
+    "time": "21:23",
+    "date": "2026-05-11",
+    "status": "pending"
+  },
+  {
+    "topic": "Creatine and CoQ10: The Complete Combination Guide",
+    "type": "synergy",
+    "time": "06:29",
+    "date": "2026-05-11",
+    "status": "pending"
+  },
+  {
+    "topic": "The Mechanism of Taurine: A Deep Dive",
+    "type": "mechanism",
+    "time": "10:47",
+    "date": "2026-05-11",
+    "status": "pending"
+  },
+  {
+    "topic": "Never Combine CoQ10 and Magnesium: Here's Why",
+    "type": "antagonism",
+    "time": "19:53",
+    "date": "2026-05-11",
+    "status": "pending"
+  },
+  {
+    "topic": "L-Tyrosine and Hormones: The Connection",
+    "type": "mechanism",
+    "time": "06:41",
+    "date": "2026-05-11",
+    "status": "pending"
+  },
+  {
+    "topic": "Zinc with Chia Seeds: The Absorption Stack",
+    "type": "food-combo",
+    "time": "11:33",
+    "date": "2026-05-11",
+    "status": "pending"
+  },
+  {
+    "topic": "Comparing Quercetin and Selenium: The Full Analysis",
+    "type": "comparison",
+    "time": "15:53",
+    "date": "2026-05-11",
+    "status": "pending"
+  },
+  {
+    "topic": "The Complete L-Tyrosine Protocol: Dosage and Timing",
+    "type": "protocol",
+    "time": "08:23",
+    "date": "2026-05-11",
+    "status": "pending"
+  },
+  {
+    "topic": "L-Tyrosine and L-Carnitine Synergy: The Nordic Protocol",
+    "type": "synergy",
+    "time": "12:29",
+    "date": "2026-05-11",
+    "status": "pending"
+  },
+  {
+    "topic": "Should You Take L-Carnitine With Food?",
+    "type": "timing",
+    "time": "18:47",
+    "date": "2026-05-11",
+    "status": "pending"
+  },
+  {
+    "topic": "How L-Theanine Actually Works in Your Body",
+    "type": "mechanism",
+    "time": "07:53",
+    "date": "2026-05-11",
+    "status": "pending"
+  },
+  {
+    "topic": "Eating Garlic With Your Glycine Supplement",
+    "type": "food-combo",
+    "time": "15:47",
+    "date": "2026-05-11",
+    "status": "pending"
+  },
+  {
+    "topic": "Head-to-Head: Probiotics vs Calcium",
+    "type": "comparison",
+    "time": "19:33",
+    "date": "2026-05-11",
+    "status": "pending"
+  },
+  {
+    "topic": "Best Foods to Take With MSM",
+    "type": "food-combo",
+    "time": "11:53",
+    "date": "2026-05-12",
+    "status": "pending"
+  },
+  {
+    "topic": "Never Combine Vitamin C and Magnesium: Here's Why",
+    "type": "antagonism",
+    "time": "15:17",
+    "date": "2026-05-12",
+    "status": "pending"
+  },
+  {
+    "topic": "Never Combine Astaxanthin and Alpha-GPC: Here's Why",
+    "type": "antagonism",
+    "time": "11:23",
+    "date": "2026-05-12",
+    "status": "pending"
+  },
+  {
+    "topic": "Signs You're Glycine Deficient",
+    "type": "deficiency",
+    "time": "18:07",
+    "date": "2026-05-12",
+    "status": "pending"
+  },
+  {
+    "topic": "Avoid This Alpha Lipoic Acid Mistake With Zinc",
+    "type": "antagonism",
+    "time": "09:29",
+    "date": "2026-05-12",
+    "status": "completed",
+    "completed_at": "2026-05-12 09:29"
+  },
+  {
+    "topic": "Ashwagandha and Kimchi: The Natural Pairing",
+    "type": "food-combo",
+    "time": "17:17",
+    "date": "2026-05-12",
+    "status": "completed",
+    "completed_at": "2026-05-12 17:17"
+  },
+  {
+    "topic": "When to Take Creatine for Maximum Absorption",
+    "type": "timing",
+    "time": "21:00",
+    "date": "2026-05-12",
+    "status": "completed",
+    "completed_at": "2026-05-12 21:00"
+  },
+  {
+    "topic": "When to Take 5-HTP for Maximum Absorption",
+    "type": "timing",
+    "time": "06:00",
+    "date": "2026-05-12",
+    "status": "completed",
+    "completed_at": "2026-05-12 06:00"
+  },
+  {
+    "topic": "Eating Spinach With Your Alpha-GPC Supplement",
+    "type": "food-combo",
+    "time": "16:47",
+    "date": "2026-05-12",
+    "status": "completed",
+    "completed_at": "2026-05-12 16:47"
+  },
+  {
+    "topic": "How to Cook With Elderberry for Maximum Benefit",
+    "type": "recipe",
+    "time": "20:47",
+    "date": "2026-05-12",
+    "status": "completed",
+    "completed_at": "2026-05-12 20:47"
+  },
+  {
+    "topic": "Testing for Quercetin Deficiency: A Guide",
+    "type": "deficiency",
+    "time": "17:47",
+    "date": "2026-05-12",
+    "status": "pending"
+  },
+  {
+    "topic": "What Iron Does to Your Mitochondria",
+    "type": "mechanism",
+    "time": "21:41",
+    "date": "2026-05-12",
+    "status": "completed",
+    "completed_at": "2026-05-12 21:41"
+  },
+  {
+    "topic": "Ashwagandha vs MSM: Cost, Efficacy, Safety",
+    "type": "comparison",
+    "time": "06:11",
+    "date": "2026-05-13",
+    "status": "completed",
+    "completed_at": "2026-05-13 06:11"
+  },
+  {
+    "topic": "Boron and the Brain-Gut Axis: Explained",
+    "type": "mechanism",
+    "time": "13:47",
+    "date": "2026-05-13",
+    "status": "completed",
+    "completed_at": "2026-05-13 13:47"
+  },
+  {
+    "topic": "Why Vitamin D3 and Iron Cancel Each Other Out",
+    "type": "antagonism",
+    "time": "08:33",
+    "date": "2026-05-14",
+    "status": "completed",
+    "completed_at": "2026-05-14 08:33"
+  },
+  {
+    "topic": "Ginger and Beets: The Natural Pairing",
+    "type": "food-combo",
+    "time": "16:29",
+    "date": "2026-05-14",
+    "status": "completed",
+    "completed_at": "2026-05-14 16:29"
+  },
+  {
+    "topic": "Probiotics Overdose Risk: Clinical Findings",
+    "type": "side-effects",
+    "time": "20:47",
+    "date": "2026-05-14",
+    "status": "completed",
+    "completed_at": "2026-05-14 20:47"
+  },
+  {
+    "topic": "Is Creatine Safe Long-Term? The Real Data",
+    "type": "side-effects",
+    "time": "14:23",
+    "date": "2026-05-15",
+    "status": "completed",
+    "completed_at": "2026-05-15 14:23"
+  },
+  {
+    "topic": "Taking Vitamin D3 Before Bed: A Huge Mistake?",
+    "type": "longtail-mistake",
+    "time": "19:41",
+    "date": "2026-05-15",
+    "status": "completed",
+    "completed_at": "2026-05-15 19:41"
+  },
+  {
+    "topic": "Best Food to Eat With Astaxanthin",
+    "type": "longtail-routine",
+    "time": "06:17",
+    "date": "2026-05-16",
+    "status": "completed",
+    "completed_at": "2026-05-16 06:17"
+  },
+  {
+    "topic": "Common Omega-3 Mistakes You're Making",
+    "type": "longtail-mistake",
+    "time": "17:33",
+    "date": "2026-05-16",
+    "status": "completed",
+    "completed_at": "2026-05-16 17:33"
+  },
+  {
+    "topic": "Comparing Berberine and GABA: The Full Analysis",
+    "type": "comparison",
+    "time": "06:33",
+    "date": "2026-05-17",
+    "status": "completed",
+    "completed_at": "2026-05-17 06:33"
+  },
+  {
+    "topic": "Stop Taking CoQ10 Like This",
+    "type": "longtail-mistake",
+    "time": "13:11",
+    "date": "2026-05-17",
+    "status": "completed",
+    "completed_at": "2026-05-17 13:11"
+  },
+  {
+    "topic": "Berries Enhances Vitamin D3 Absorption: Here's Why",
+    "type": "food-combo",
+    "time": "18:11",
+    "date": "2026-05-17",
+    "status": "completed",
+    "completed_at": "2026-05-17 18:11"
+  },
+  {
+    "topic": "NMN Causing Bloating: Is It Normal?",
+    "type": "longtail-symptom",
+    "time": "07:53",
+    "date": "2026-05-18",
+    "status": "completed",
+    "completed_at": "2026-05-18 07:53"
+  },
+  {
+    "topic": "Calcium plus Boron: Dosage and Timing",
+    "type": "synergy",
+    "time": "13:23",
+    "date": "2026-05-18",
+    "status": "completed",
+    "completed_at": "2026-05-18 13:23"
+  },
+  {
+    "topic": "Morning vs Evening: When to Take Selenium",
+    "type": "protocol",
+    "time": "17:23",
+    "date": "2026-05-18",
+    "status": "completed",
+    "completed_at": "2026-05-18 17:23"
+  },
+  {
+    "topic": "Why Phosphatidylserine Upset My Stomach",
+    "type": "longtail-symptom",
+    "time": "16:23",
+    "date": "2026-05-19",
+    "status": "completed",
+    "completed_at": "2026-05-19 16:23"
+  },
+  {
+    "topic": "The Mechanism of Melatonin: A Deep Dive",
+    "type": "mechanism",
+    "time": "21:07",
+    "date": "2026-05-19",
+    "status": "completed",
+    "completed_at": "2026-05-19 21:07"
+  },
+  {
+    "topic": "Melatonin Loading Protocol: Does It Work?",
+    "type": "protocol",
+    "time": "09:47",
+    "date": "2026-05-20",
+    "status": "completed",
+    "completed_at": "2026-05-20 09:47"
+  },
+  {
+    "topic": "Weird Dreams After Taking Vitamin B6: Explained",
+    "type": "longtail-symptom",
+    "time": "15:00",
+    "date": "2026-05-20",
+    "status": "completed",
+    "completed_at": "2026-05-20 15:00"
+  },
+  {
+    "topic": "Elderberry Blocks Iron Absorption: The Science",
+    "type": "antagonism",
+    "time": "10:53",
+    "date": "2026-05-21",
+    "status": "completed",
+    "completed_at": "2026-05-21 10:53"
+  },
+  {
+    "topic": "Iodine Side Effects: What the Research Shows",
+    "type": "side-effects",
+    "time": "16:41",
+    "date": "2026-05-21",
+    "status": "completed",
+    "completed_at": "2026-05-21 16:41"
+  }
+]

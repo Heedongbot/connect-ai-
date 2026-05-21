@@ -1,0 +1,42 @@
+<!-- Sidebar Menu Addition -->
+<a href="#" id="menu-integrity"><span class="icon">🛡️</span> Integrity Check</a>
+
+<!-- Integrity View (Hidden by default) -->
+<div id="integrity-view" style="display: none;">
+    <section class="agent-section">
+        <div class="section-header">
+            <h3>System Integrity Master Checklist</h3>
+            <button class="btn-primary" id="run-auto-check">🚀 Run Auto Audit</button>
+        </div>
+        
+        <div class="integrity-grid">
+            <!-- Category 1: HTML & Quality -->
+            <div class="integrity-card">
+                <h4>📜 HTML & Content Quality</h4>
+                <div class="check-item"><input type="checkbox"> H1 정확히 1개 (60자 이하)</div>
+                <div class="check-item"><input type="checkbox"> pollinations.ai URL 제거 확인</div>
+                <div class="check-item"><input type="checkbox"> 마크다운 잔재(**, ##) 제거 확인</div>
+                <div class="check-item"><input type="checkbox"> PMID 실제 논문 링크 동작</div>
+                <div class="check-item"><input type="checkbox"> Medical Disclaimer 하단 존재</div>
+            </div>
+
+            <!-- Category 2: Environment & Files -->
+            <div class="integrity-card">
+                <h4>⚙️ System & Environment</h4>
+                <div class="check-item" id="check-ollama"><span class="status-dot"></span> Ollama (Gemma4/Qwen2.5)</div>
+                <div class="check-item" id="check-sd"><span class="status-dot"></span> Stable Diffusion WebUI</div>
+                <div class="check-item" id="check-token"><span class="status-dot"></span> Google API token.pickle</div>
+                <div class="check-item" id="check-prompts"><span class="status-dot"></span> Agent Prompt Files (10 Units)</div>
+            </div>
+
+            <!-- Category 3: Image & SEO -->
+            <div class="integrity-card">
+                <h4>🖼️ Visuals & SEO</h4>
+                <div class="check-item"><input type="checkbox"> Hero 이미지 정상 로드</div>
+                <div class="check-item"><input type="checkbox"> 이미지 alt 텍스트 및 캡션</div>
+                <div class="check-item"><input type="checkbox"> iHerb 제휴 코드(OXV5394) 포함</div>
+                <div class="check-item"><input type="checkbox"> Blogger 라벨 3개 이상 적용</div>
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,22 @@
+{
+  "date": "2026-05-21",
+  "post_count": 3,
+  "posts": [
+    {
+      "time": "10:53",
+      "topic": "[포스팅 직전 실시간 트렌드로 생성됨]",
+      "topic_type": "antagonism"
+    },
+    {
+      "time": "16:41",
+      "topic": "[포스팅 직전 실시간 트렌드로 생성됨]",
+      "topic_type": "side-effects"
+    },
+    {
+      "time": "20:41",
+      "topic": "[포스팅 직전 실시간 트렌드로 생성됨]",
+      "topic_type": "longtail-mistake"
+    }
+  ],
+  "trending": []
+}

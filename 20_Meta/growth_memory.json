@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "last_updated": "2026-05-16 14:42",
+  "total_posts": 97,
+  "avg_sessions": 0,
+  "avg_ctr": 0,
+  "title_patterns": {
+    "high_ctr": [],
+    "low_ctr": [],
+    "best_starters": [],
+    "best_length": 0
+  },
+  "category_performance": {
+    "FUNDAMENTAL": {
+      "sessions": 0,
+      "ctr": 0,
+      "count": 0
+    },
+    "COGNITIVE": {
+      "sessions": 0,
+      "ctr": 0,
+      "count": 0
+    },
+    "METABOLIC": {
+      "sessions": 0,
+      "ctr": 0,
+      "count": 0
+    },
+    "IMMUNE": {
+      "sessions": 0,
+      "ctr": 0,
+      "count": 0
+    },
+    "STRUCTURAL": {
+      "sessions": 0,
+      "ctr": 0,
+      "count": 0
+    }
+  },
+  "keyword_performance": {},
+  "timing_performance": {
+    "monday": 0,
+    "tuesday": 0,
+    "wednesday": 0,
+    "thursday": 0,
+    "friday": 0,
+    "saturday": 0,
+    "sunday": 0
+  },
+  "recommendations": {
+    "best_category": "FUNDAMENTAL",
+    "best_title_pattern": "",
+    "avoid_keywords": [],
+    "priority_topics": []
+  },
+  "failure_patterns": [],
+  "top_posts": []
+}

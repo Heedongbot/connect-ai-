@@ -1,0 +1,3274 @@
+[
+  {
+    "date": "2026-05-15 15:05",
+    "topic": "Is Creatine Safe Long Term? The Real Data",
+    "title": "What Actually Changes Between Morning and Evening Intake",
+    "status": "rejected",
+    "score": 1.0,
+    "word_count": 2213,
+    "archetype": "science-heavy",
+    "topic_type": "recipe",
+    "nutrients": [
+      "creatine"
+    ],
+    "category": "COGNITIVE",
+    "issues": [
+      "REJECTED\n제목(Title)이 주제(Topic) 및 본문 내용과 심각하게 불일치합니다. 주제는 '크레아틴 장기 안전성'에 관한 것인데, 제목은 '아침과 저녁 섭취 시 변화'에 초점을 맞추고 있어 독자에게 잘못된 기대를 심어줍니다.\n[BACKTRACK_TO]: {TITLE}"
+    ]
+  },
+  {
+    "date": "2026-05-15 15:17",
+    "topic": "Is Creatine Safe Long Term? The Real Data",
+    "title": "The Is Protocol: My Personal Findings",
+    "status": "rejected",
+    "score": 1.0,
+    "word_count": 2662,
+    "archetype": "science-heavy",
+    "topic_type": "recipe",
+    "nutrients": [
+      "creatine"
+    ],
+    "category": "COGNITIVE",
+    "issues": [
+      "REJECTED\n제목이 주제와 일치하지 않습니다. 주제는 '크레아틴 장기 안전성'에 관한 것인데, 제목은 'The Is Protocol: My Personal Findings'로 크레아틴이나 안전성에 대한 언급이 전혀 없어 독자의 기대치를 충족시키지 못합니다.\n[BACKTRACK_TO]: {TITLE}"
+    ]
+  },
+  {
+    "date": "2026-05-15 15:24",
+    "topic": "Is Creatine Safe Long Term? The Real Data",
+    "title": "Is: Timing May Matter More Than You Think",
+    "status": "rejected",
+    "score": 1.0,
+    "word_count": 1609,
+    "archetype": "science-heavy",
+    "topic_type": "recipe",
+    "nutrients": [
+      "creatine"
+    ],
+    "category": "COGNITIVE",
+    "issues": [
+      "REJECTED\n주제(크레아틴 장기 안전성)와 제목(크레아틴 섭취 타이밍)이 일치하지 않아 독자에게 잘못된 정보를 제공할 위험이 있습니다. 제목은 반드시 본문의 주제를 정확하게 반영해야 합니다.\n[BACKTRACK_TO]: TITLE"
+    ]
+  },
+  {
+    "date": "2026-05-15 15:27",
+    "topic": "Is Creatine Safe Long Term? The Real Data",
+    "title": "The Is Protocol: My Personal Findings",
+    "status": "NEEDS_RE_AUDIT",
+    "score": 1.0,
+    "word_count": 1609,
+    "archetype": "science-heavy",
+    "topic_type": "recipe",
+    "nutrients": [
+      "creatine"
+    ],
+    "category": "COGNITIVE",
+    "issues": [],
+    "quality_score": 0.0
+  },
+  {
+    "date": "2026-05-15 19:51",
+    "topic": "Taking Vitamin D3 Before Bed: A Huge Mistake?",
+    "title": "Why Taking and Vitamin Work Better Together",
+    "status": "rejected",
+    "score": 1.0,
+    "word_count": 1999,
+    "archetype": "science-heavy",
+    "topic_type": "synergy",
+    "nutrients": [
+      "vitamin d",
+      "vitamin d3"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n제목이 주제와 일치하지 않습니다. 주제는 비타민 D3 복용 시간과 수면의 관계에 대한 구체적인 내용임에도 불구하고, 제목(\"Why Taking and Vitamin Work Better Together\")이 너무 일반적이고 모호하여 D3나 취침 시간이라는 핵심 내용을 전혀 반영하지 못했습니다.\n[BACKTRACK_TO]: TITLE"
+    ]
+  },
+  {
+    "date": "2026-05-15 19:53",
+    "topic": "Taking Vitamin D3 Before Bed: A Huge Mistake?",
+    "title": "The Taking and Vitamin Synergy Protocol",
+    "status": "rejected",
+    "score": 1.0,
+    "word_count": 1999,
+    "archetype": "science-heavy",
+    "topic_type": "synergy",
+    "nutrients": [
+      "vitamin d",
+      "vitamin d3"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n제목(Title)이 주제(Topic)와 일치하지 않습니다. 주제는 '취침 전 비타민 D3 복용의 오류'라는 특정 타이밍 문제를 다루고 있으나, 제목은 'The Taking and Vitamin Synergy Protocol'로 너무 일반적이며 독자에게 내용의 핵심을 정확히 전달하지 못하고 있습니다.\n[BACKTRACK_TO]: TITLE"
+    ]
+  },
+  {
+    "date": "2026-05-15 19:59",
+    "topic": "Taking Vitamin D3 Before Bed: A Huge Mistake?",
+    "title": "Why Taking and Vitamin Work Better Together",
+    "status": "rejected",
+    "score": 1.0,
+    "word_count": 1999,
+    "archetype": "science-heavy",
+    "topic_type": "synergy",
+    "nutrients": [
+      "vitamin d",
+      "vitamin d3"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n제목(Title)이 주제(Topic)와 일치하지 않습니다. 주제는 '취침 전 비타민 D3 복용의 적절성'에 관한 내용인데, 제목은 '비타민의 시너지 효과'에 초점을 맞추고 있어 독자의 기대와 내용의 핵심이 불일치합니다.\n[BACKTRACK_TO]: TITLE"
+    ]
+  },
+  {
+    "date": "2026-05-15 20:03",
+    "topic": "Taking Vitamin D3 Before Bed: A Huge Mistake?",
+    "title": "The Taking and Vitamin Synergy Protocol",
+    "status": "rejected",
+    "score": 1.0,
+    "word_count": 1999,
+    "archetype": "science-heavy",
+    "topic_type": "synergy",
+    "nutrients": [
+      "vitamin d",
+      "vitamin d3"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n제목(\"The Taking and Vitamin Synergy Protocol\")이 주제(\"Taking Vitamin D3 Before Bed: A Huge Mistake?\")를 정확하게 반영하지 못하고 지나치게 모호하여 주제-제목-내용 정렬 기준을 충족하지 못했습니다.\n[BACKTRACK_TO]: TITLE"
+    ]
+  },
+  {
+    "date": "2026-05-15 20:06",
+    "topic": "Taking Vitamin D3 Before Bed: A Huge Mistake?",
+    "title": "Why Taking and Vitamin Work Better Together",
+    "status": "rejected",
+    "score": 1.0,
+    "word_count": 1999,
+    "archetype": "science-heavy",
+    "topic_type": "synergy",
+    "nutrients": [
+      "vitamin d",
+      "vitamin d3"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n제목과 주제의 불일치(Topic-Title-Content Alignment)가 심각합니다. 주제는 '취침 전 비타민 D3 복용의 적절성'에 관한 것인데, 제목은 \"Why Taking and Vitamin Work Better Together\"로 매우 모호하며 비타민 D3나 취침 시간이라는 핵심 내용을 전혀 반영하지 못하고 있어 독자에게 잘못"
+    ]
+  },
+  {
+    "date": "2026-05-15 20:09",
+    "topic": "Taking Vitamin D3 Before Bed: A Huge Mistake?",
+    "title": "The Taking and Vitamin Synergy Protocol",
+    "status": "rejected",
+    "score": 1.0,
+    "word_count": 1999,
+    "archetype": "science-heavy",
+    "topic_type": "synergy",
+    "nutrients": [
+      "vitamin d",
+      "vitamin d3"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n제목이 주제와 일치하지 않습니다. 주제는 '취침 전 비타민 D3 복용의 문제점'에 대한 구체적인 내용인데, 제목(\"The Taking and Vitamin Synergy Protocol\")은 너무 모호하여 독자에게 잘못된 기대를 심어줍니다. 이는 주제-제목-내용 정렬(Topic-Title-Content Alignment) 원칙을 위반합니다."
+    ]
+  },
+  {
+    "date": "2026-05-15 20:14",
+    "topic": "Taking Vitamin D3 Before Bed: A Huge Mistake?",
+    "title": "The Taking and Vitamin Synergy Protocol",
+    "status": "rejected",
+    "score": 1.0,
+    "word_count": 1999,
+    "archetype": "science-heavy",
+    "topic_type": "synergy",
+    "nutrients": [
+      "vitamin d",
+      "vitamin d3"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n제목이 주제를 정확하게 반영하지 못했습니다. 주제는 비타민 D3 복용 시간과 관련된 오류에 관한 것인데, 제목(\"The Taking and Vitamin Synergy Protocol\")이 너무 모호하고 구체적인 내용을 약속하지 못하여 품질 게이트를 통과할 수 없습니다.\n[BACKTRACK_TO]: TITLE"
+    ]
+  },
+  {
+    "date": "2026-05-15 20:17",
+    "topic": "Taking Vitamin D3 Before Bed: A Huge Mistake?",
+    "title": "The Taking and Vitamin Synergy Protocol",
+    "status": "NEEDS_RE_AUDIT",
+    "score": 1.0,
+    "word_count": 1999,
+    "archetype": "science-heavy",
+    "topic_type": "synergy",
+    "nutrients": [
+      "vitamin d",
+      "vitamin d3"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [],
+    "quality_score": 0.0
+  },
+  {
+    "date": "2026-05-16 06:27",
+    "topic": "Best Food to Eat With Astaxanthin",
+    "title": "How to Use Best Effectively: A Essential Guide",
+    "status": "rejected",
+    "score": 0.875,
+    "word_count": 735,
+    "archetype": "listicle",
+    "topic_type": "recipe",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n아티클의 단어 수가 최소 요구치인 1400단어에 크게 미달합니다. 또한, 제목(\"How to Use Best Effectively: A Essential Guide\")이 주제인 '아스타잔틴과 함께 먹기 좋은 음식'을 명확하게 반영하지 못하고 너무 모호하여 주제-제목-내용 정렬 기준을 충족하지 못했습니다.\n[BACKTRACK_TO]: TITL"
+    ]
+  },
+  {
+    "date": "2026-05-16 06:29",
+    "topic": "Best Food to Eat With Astaxanthin",
+    "title": "What Actually Changes Between Morning and Evening Intake",
+    "status": "rejected",
+    "score": 0.875,
+    "word_count": 735,
+    "archetype": "listicle",
+    "topic_type": "recipe",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n제목(What Actually Changes Between Morning and Evening Intake)이 주제(Best Food to Eat With Astaxanthin)와 완전히 불일치하여 내용의 논리적 일관성과 독자 기대치 충족에 실패했습니다. 또한, 리스트클 아키타입에 요구되는 최소 단어 수(1400단어 이상)를 충족하지 못했습"
+    ]
+  },
+  {
+    "date": "2026-05-16 06:36",
+    "topic": "Best Food to Eat With Astaxanthin",
+    "title": "Should You Take Best in the Morning or Evening",
+    "status": "rejected",
+    "score": 1.0,
+    "word_count": 835,
+    "archetype": "nordic-anecdotal",
+    "topic_type": "recipe",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n제목과 주제의 불일치(Topic-Title-Content Alignment)가 심각합니다. 주제는 '아스타잔틴과 함께 먹기 좋은 음식'이지만, 제목은 '아침에 먹어야 할까요 저녁에 먹어야 할까요'로, 내용의 핵심 주제와 완전히 다릅니다.\n[BACKTRACK_TO]: TITLE"
+    ]
+  },
+  {
+    "date": "2026-05-16 06:39",
+    "topic": "Best Food to Eat With Astaxanthin",
+    "title": "Morning vs Evening Best: Does Timing Really Matter",
+    "status": "rejected",
+    "score": 0.875,
+    "word_count": 835,
+    "archetype": "nordic-anecdotal",
+    "topic_type": "recipe",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n제목과 주제의 불일치(Topic-Title Mismatch)가 심각합니다. 주제는 '아스타잔틴과 함께 먹기 좋은 음식'에 관한 것인데, 제목은 '아침 vs 저녁 타이밍'에 초점을 맞추고 있어 독자에게 잘못된 정보를 약속하고 있습니다. 이는 콘텐츠의 핵심 목표를 달성하지 못하는 치명적인 오류입니다.\n[BACKTRACK_TO]: TITLE"
+    ]
+  },
+  {
+    "date": "2026-05-16 06:43",
+    "topic": "Best Food to Eat With Astaxanthin",
+    "title": "Should You Take Best in the Morning or Evening",
+    "status": "rejected",
+    "score": 0.875,
+    "word_count": 835,
+    "archetype": "nordic-anecdotal",
+    "topic_type": "recipe",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n제목(\"Should You Take Best in the Morning or Evening\")이 기사의 핵심 주제(\"Best Food to Eat With Astaxanthin\")와 일치하지 않습니다. 제목은 복용 시간(Timing)에 대한 내용을 약속하지만, 본문은 영양소 조합(Food Pairing)에 초점을 맞추고 있어 주제-제목-내용"
+    ]
+  },
+  {
+    "date": "2026-05-16 06:46",
+    "topic": "Best Food to Eat With Astaxanthin",
+    "title": "Should You Take Best in the Morning or Evening",
+    "status": "rejected",
+    "score": 0.875,
+    "word_count": 835,
+    "archetype": "nordic-anecdotal",
+    "topic_type": "recipe",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n제목(Title)이 주제(Topic)와 일치하지 않습니다. 주제는 '아스타잔틴과 함께 먹기 좋은 음식'이지만, 제목은 '아침에 먹을지 저녁에 먹을지'에 초점을 맞추고 있어 독자에게 잘못된 기대를 심어줍니다.\n[BACKTRACK_TO]: TITLE"
+    ]
+  },
+  {
+    "date": "2026-05-16 06:49",
+    "topic": "Best Food to Eat With Astaxanthin",
+    "title": "What Actually Changes Between Morning and Evening Intake",
+    "status": "rejected",
+    "score": 1.0,
+    "word_count": 835,
+    "archetype": "nordic-anecdotal",
+    "topic_type": "recipe",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n주제(Best Food to Eat With Astaxanthin)와 제목(What Actually Changes Between Morning and Evening Intake)이 일치하지 않습니다. 제목이 '섭취 시간'에만 초점을 맞추고 있어, 독자가 기대하는 '최적의 음식 조합'이라는 주제의 핵심 내용을 반영하지 못하고 있습니다.\n[BA"
+    ]
+  },
+  {
+    "date": "2026-05-16 06:51",
+    "topic": "Best Food to Eat With Astaxanthin",
+    "title": "Best: Timing May Matter More Than You Think",
+    "status": "NEEDS_RE_AUDIT",
+    "score": 1.0,
+    "word_count": 835,
+    "archetype": "nordic-anecdotal",
+    "topic_type": "recipe",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [],
+    "quality_score": 0.0
+  },
+  {
+    "date": "2026-05-16 11:10",
+    "topic": "Astaxanthin and Olive Oil: The Nordic Bioavailability Protocol",
+    "title": "How I Use Astaxanthin Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.9090909090909091,
+    "word_count": 1359,
+    "archetype": "science-heavy",
+    "topic_type": "protocol",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- AI 지문 오염 패턴인 'complementaryally'가 본문 초반부에 발견되었습니다.\n- 해당 단어는 AI가 자주 사용하는 클리셰이며, 즉시 반려 사유에 해당합니다."
+    ]
+  },
+  {
+    "date": "2026-05-16 11:23",
+    "topic": "Astaxanthin and Olive Oil: The Nordic Bioavailability Protocol",
+    "title": "How I Use Astaxanthin Effectively: My Findings",
+    "status": "NEEDS_RE_AUDIT",
+    "score": 0.9090909090909091,
+    "word_count": 1701,
+    "archetype": "science-heavy",
+    "topic_type": "protocol",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "AI_Footprint"
+    ],
+    "quality_score": 0.0
+  },
+  {
+    "date": "2026-05-16 11:25",
+    "topic": "Astaxanthin and Olive Oil: The Nordic Bioavailability Protocol",
+    "title": "How I Use Astaxanthin Effectively: My Findings",
+    "status": "NEEDS_RE_AUDIT",
+    "score": 0.9090909090909091,
+    "word_count": 1686,
+    "archetype": "science-heavy",
+    "topic_type": "protocol",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "AI_Footprint"
+    ],
+    "quality_score": 0.0
+  },
+  {
+    "date": "2026-05-16 11:52",
+    "topic": "﻿TOPIC: Lutein Discovery",
+    "title": "Why I Pair TOPIC With Specific Foods",
+    "status": "rejected",
+    "score": 0.8181818181818182,
+    "word_count": 1075,
+    "archetype": "deep-protocol",
+    "topic_type": "food-combo",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 해당 아티클은 'deep-protocol' (science-heavy) 아키타입으로 분류되었으나, 필수 최소 단어 수(2000단어 이상)를 충족하지 못했습니다. (1761단어)\n- 아키타입의 깊이와 권위를 유지하기 위해 분량 보강이 필요합니다."
+    ]
+  },
+  {
+    "date": "2026-05-16 12:00",
+    "topic": "﻿TOPIC: Lutein Discovery",
+    "title": "Why I Pair TOPIC With Specific Foods",
+    "status": "rejected",
+    "score": 0.8181818181818182,
+    "word_count": 1026,
+    "archetype": "science-heavy",
+    "topic_type": "food-combo",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 과학 심화(science-heavy) 아키타입에 필요한 최소 단어 수(2000단어 이상)를 충족하지 못했습니다 (1711단어).\n- 필수적인 5단계 개인 경험 진행 구조(1. 실패/좌절 -> 2. 작동 원리 발견 -> 3. 루틴 -> 4. 결과 -> 5. 주의사항)를 따르지 않고, 일반적인"
+    ]
+  },
+  {
+    "date": "2026-05-16 12:02",
+    "topic": "﻿TOPIC: Lutein Discovery",
+    "title": "Why I Pair TOPIC With Specific Foods",
+    "status": "rejected",
+    "score": 0.9090909090909091,
+    "word_count": 582,
+    "archetype": "journal-tone",
+    "topic_type": "synergy",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 아티클의 아키타입(journal-tone/science-heavy)에 필요한 최소 단어 수(2000단어 이상)에 미달함 (현재 1250단어).\n- 필수적인 의료 면책 조항(Medical Disclaimer)이 누락됨."
+    ]
+  },
+  {
+    "date": "2026-05-16 12:06",
+    "topic": "﻿TOPIC: Lutein Discovery",
+    "title": "Why I Pair TOPIC With Specific Foods",
+    "status": "rejected",
+    "score": 0.9090909090909091,
+    "word_count": 817,
+    "archetype": "journal-tone",
+    "topic_type": "deficiency",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 아키타입이 'journal-tone' (과학 중심/딥 프로토콜)임에도 불구하고 요구되는 최소 단어 수(2000단어 이상)에 크게 미달함 (1470단어).\n- 필수 항목인 의료 면책 조항(Medical Disclaimer)이 누락됨."
+    ]
+  },
+  {
+    "date": "2026-05-16 12:09",
+    "topic": "﻿TOPIC: Lutein Discovery",
+    "title": "Why I Pair TOPIC With Specific Foods",
+    "status": "rejected",
+    "score": 0.9090909090909091,
+    "word_count": 850,
+    "archetype": "minimalist",
+    "topic_type": "recipe",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 아티클의 아키타입이 'minimalist' (짧은 실용적 글)이며, 이 경우 최소 1200단어 이상이 요구되나 현재 단어 수가 1100단어로 기준에 미달합니다."
+    ]
+  },
+  {
+    "date": "2026-05-16 12:15",
+    "topic": "﻿TOPIC: Lutein Discovery",
+    "title": "Why I Pair TOPIC With Specific Foods",
+    "status": "rejected",
+    "score": 1.0,
+    "word_count": 1260,
+    "archetype": "science-heavy",
+    "topic_type": "side-effects",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 기사 구조가 필수적인 5단계 진행(개인적 실패/좌절 -> 단순한 발견 -> 루틴/실행 방법 -> 변화된 결과 -> 주의사항)을 따르지 않고, 도입부와 역사적 사실 나열로만 구성되어 있습니다.\n- '과학 중심(science-heavy)' 아티클임에도 불구하고, 전반적인 톤이 너무 학술적이고 "
+    ]
+  },
+  {
+    "date": "2026-05-16 12:17",
+    "topic": "﻿TOPIC: Lutein Discovery",
+    "title": "Why I Pair TOPIC With Specific Foods",
+    "status": "rejected",
+    "score": 0.8181818181818182,
+    "word_count": 690,
+    "archetype": "minimalist",
+    "topic_type": "antagonism",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 최소 단어 수 미달. 'Minimalist' 아키타입은 1200단어 이상을 요구하나, 현재 948단어에 불과함.\n- 내용이 너무 짧아 섹션별 깊이가 부족하며, 작가가 목표 분량을 채우지 못했음."
+    ]
+  },
+  {
+    "date": "2026-05-16 12:23",
+    "topic": "﻿TOPIC: Lutein Discovery",
+    "title": "Why I Pair TOPIC With Specific Foods",
+    "status": "rejected",
+    "score": 1.0,
+    "word_count": 779,
+    "archetype": "minimalist",
+    "topic_type": "protocol",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 기사 섹션 진행 순서가 필수적인 내러티브 흐름을 따르지 않음. (Step 3 위반)\n- 기사는 '실패/좌절' (Section 1)에서 '결과' (Section 4)로 바로 점프하고 있으며, '단순한 발견' (Section 2)과 '루틴' (Section 3) 섹션이 누락되어 독자가 정보를 "
+    ]
+  },
+  {
+    "date": "2026-05-16 12:27",
+    "topic": "﻿TOPIC: Lutein Discovery",
+    "title": "Why I Pair TOPIC With Specific Foods",
+    "status": "NEEDS_RE_AUDIT",
+    "score": 1.0,
+    "word_count": 872,
+    "archetype": "quick-answer",
+    "topic_type": "synergy",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [],
+    "quality_score": 0.0
+  },
+  {
+    "date": "2026-05-16 12:31",
+    "topic": "﻿TOPIC: Lutein Discovery",
+    "title": "Why I Pair TOPIC With Specific Foods",
+    "status": "rejected",
+    "score": 0.8181818181818182,
+    "word_count": 809,
+    "archetype": "journal-tone",
+    "topic_type": "timing",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 아키타입이 'journal-tone' (과학 중심/심층 프로토콜)으로 지정되었으나, 요구되는 최소 단어 수(2000단어)에 크게 미달(1378단어)하여 깊이가 부족함.\n- 'journal-tone' 아키타입에 적합한 깊이와 권위를 갖추지 못하고 내용이 너무 얕음."
+    ]
+  },
+  {
+    "date": "2026-05-16 12:54",
+    "topic": "﻿TOPIC: Lutein Discovery",
+    "title": "How I Use TOPIC Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.9090909090909091,
+    "word_count": 1080,
+    "archetype": "journal-tone",
+    "topic_type": "synergy",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 지정된 'journal-tone' (과학 심층 분석) 아키타입에 따라 최소 2000단어 이상이 요구되나, 현재 단어 수가 1652단어로 기준에 미달함. 깊이 있는 과학적 논의를 위해 분량을 보강해야 함."
+    ]
+  },
+  {
+    "date": "2026-05-16 13:00",
+    "topic": "﻿TOPIC: Lutein and Egg Yolks: The Bioavailability Hack",
+    "title": "How I Use TOPIC Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.9090909090909091,
+    "word_count": 756,
+    "archetype": "quick-answer",
+    "topic_type": "synergy",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 작성된 내용이 'Erik Lindström'의 페르소나(대화체, 약간 거친, 인간적인 톤)를 충분히 반영하지 못하고, 지나치게 일반적이거나 학술적인 요약본처럼 느껴집니다.\n- 제목(\"How I Use TOPIC Effectively: My Findings\")이 너무 일반적이고 AI가 생성한"
+    ]
+  },
+  {
+    "date": "2026-05-16 13:03",
+    "topic": "﻿TOPIC: Lutein Discovery",
+    "title": "How I Use TOPIC Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.9090909090909091,
+    "word_count": 995,
+    "archetype": "nordic-anecdotal",
+    "topic_type": "antagonism",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 콘텐츠의 전반적인 어조가 너무 학술적이고 임상적입니다. 'Nordic-anecdotal' 아키타입에 맞게 에릭 린드스트롬의 대화체적이고 인간적인 페르소나(conversational, slightly rugged, and human)를 반영하지 못하고 있습니다. 특히 'Key Takeaway"
+    ]
+  },
+  {
+    "date": "2026-05-16 13:10",
+    "topic": "﻿TOPIC: Lutein Discovery",
+    "title": "How I Use TOPIC Effectively: My Findings",
+    "status": "rejected",
+    "score": 1.0,
+    "word_count": 804,
+    "archetype": "minimalist",
+    "topic_type": "synergy",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 필수적인 의료 면책 조항(Medical Disclaimer)이 콘텐츠에 포함되어 있지 않습니다. (법적 필수 요건)"
+    ]
+  },
+  {
+    "date": "2026-05-16 13:18",
+    "topic": "﻿TOPIC: Lutein Discovery",
+    "title": "How I Use TOPIC Effectively: My Findings",
+    "status": "NEEDS_RE_AUDIT",
+    "score": 1.0,
+    "word_count": 1288,
+    "archetype": "science-heavy",
+    "topic_type": "side-effects",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [],
+    "quality_score": 0.0
+  },
+  {
+    "date": "2026-05-16 14:03",
+    "topic": "﻿TOPIC: Lutein Discovery",
+    "title": "How I Use TOPIC Effectively: My Findings",
+    "status": "rejected",
+    "score": 1.0,
+    "word_count": 1220,
+    "archetype": "nordic-anecdotal",
+    "topic_type": "protocol",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 주제가 '프로토콜' 및 '과학적 발견'에 해당하여 'science-heavy/deep-protocol' 아키타입으로 분류되나, 요구되는 최소 단어 수(2000단어 이상)에 미달함 (1909단어).\n- 제목이 \"How I Use TOPIC Effectively: My Findings\"와 같이"
+    ]
+  },
+  {
+    "date": "2026-05-16 14:11",
+    "topic": "﻿TOPIC: Lutein Discovery",
+    "title": "How I Use TOPIC Effectively: My Findings",
+    "status": "NEEDS_RE_AUDIT",
+    "score": 1.0,
+    "word_count": 1396,
+    "archetype": "nordic-anecdotal",
+    "topic_type": "recipe",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [],
+    "quality_score": 0.0
+  },
+  {
+    "date": "2026-05-16 15:36",
+    "topic": "Krill Oil vs Fish Oil: Omega 3 Bioavailability",
+    "title": "Krill vs Oil: My Choice After Testing",
+    "status": "rejected",
+    "score": 1.0,
+    "word_count": 1089,
+    "archetype": "journal-tone",
+    "topic_type": "comparison",
+    "nutrients": [
+      "omega"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 기사 아키타입이 'journal-tone' (과학 중심/심층 프로토콜)으로 지정되었으나, 해당 아키타입에 필요한 최소 단어 수(2000단어 이상)를 충족하지 못했습니다. 현재 단어 수는 1541단어입니다."
+    ]
+  },
+  {
+    "date": "2026-05-16 15:47",
+    "topic": "Krill Oil vs Fish Oil: Omega 3 Bioavailability",
+    "title": "Krill vs Oil: My Choice After Testing",
+    "status": "rejected",
+    "score": 0.8181818181818182,
+    "word_count": 1090,
+    "archetype": "journal-tone",
+    "topic_type": "comparison",
+    "nutrients": [
+      "omega"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 아티클의 톤(journal-tone)이 과학적 심층 분석(science-heavy)에 해당하므로, 필수 요구 분량인 2000단어 미만(1403단어)으로 작성되어 깊이와 권위를 유지하지 못함 (규칙 14 위반)."
+    ]
+  },
+  {
+    "date": "2026-05-16 16:19",
+    "topic": "Magnesium vs Ashwagandha for Sleep: What Actually Worked",
+    "title": "Magnesium vs Ashwagandha: My Choice After Testing",
+    "status": "rejected",
+    "score": 0.9090909090909091,
+    "word_count": 724,
+    "archetype": "quick-answer",
+    "topic_type": "comparison",
+    "nutrients": [
+      "magnesium",
+      "ashwagandha"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 콘텐츠의 톤이 너무 학술적이고 임상적입니다. 'AI 지성'이 흔히 사용하는 객관적 요약 방식이며, 요청된 '에릭 린드스트룀' 스타일(대화체, 약간 거칠고 인간적인 경험담)의 페르소나를 충족하지 못합니다. 개인적인 실패와 발견을 중심으로 서술해야 합니다."
+    ]
+  },
+  {
+    "date": "2026-05-16 17:03",
+    "topic": "Omega 3 vs Vitamin D3: Which One Actually Helped My Winter Fatigue",
+    "title": "Omega vs Vitamin: My Choice After Testing",
+    "status": "rejected",
+    "score": 1.0,
+    "word_count": 908,
+    "archetype": "journal-tone",
+    "topic_type": "comparison",
+    "nutrients": [
+      "vitamin d",
+      "vitamin d3",
+      "omega"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 필수적인 의료 면책 조항(Medical Disclaimer)이 누락되었습니다. 이는 발행을 위한 비협상적인 법적 요구사항입니다."
+    ]
+  },
+  {
+    "date": "2026-05-16 17:41",
+    "topic": "Common Omega 3 Mistakes You're Making",
+    "title": "When I Take Common: Morning vs Evening Results",
+    "status": "rejected",
+    "score": 0.9090909090909091,
+    "word_count": 823,
+    "archetype": "quick-answer",
+    "topic_type": "timing",
+    "nutrients": [
+      "omega"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 콘텐츠의 전반적인 톤이 지나치게 학술적이고 일반적이며, 요구되는 '에릭 린드스트롬' 스타일의 대화체적이고 인간적인 북유럽 페르소나(conversational, slightly rugged, and human)가 부족함."
+    ]
+  },
+  {
+    "date": "2026-05-16 18:01",
+    "topic": "Common Omega 3 Mistakes You're Making",
+    "title": "When I Take Common: Morning vs Evening Results",
+    "status": "NEEDS_RE_AUDIT",
+    "score": 1.0,
+    "word_count": 1321,
+    "archetype": "science-heavy",
+    "topic_type": "synergy",
+    "nutrients": [
+      "omega"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [],
+    "quality_score": 0.0
+  },
+  {
+    "date": "2026-05-16 18:19",
+    "topic": "L Theanine and Coffee: The Morning Timing Experiment",
+    "title": "When I Take Theanine: Morning vs Evening Results",
+    "status": "rejected",
+    "score": 0.9090909090909091,
+    "word_count": 944,
+    "archetype": "minimalist",
+    "topic_type": "timing",
+    "nutrients": [],
+    "category": "COGNITIVE",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 콘텐츠의 전반적인 톤이 'Erik Lindström의 북유럽적 페르소나(대화체적이고, 약간 거칠며, 인간적인)' 기준에 미치지 못하고 지나치게 학술적이거나 임상적인 느낌이 강함. 개인적인 실험 기록의 느낌이 부족함."
+    ]
+  },
+  {
+    "date": "2026-05-16 18:46",
+    "topic": "Magnesium and Zinc: Why This Nighttime Stack Felt Different",
+    "title": "How I Use Magnesium Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.9090909090909091,
+    "word_count": 877,
+    "archetype": "journal-tone",
+    "topic_type": "synergy",
+    "nutrients": [
+      "magnesium",
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 이 글은 8개의 PMID를 포함하고 있어 과학적 깊이가 요구되는 'deep-protocol' 아키타입으로 분류됩니다. 이 경우, 최소 2000단어 이상의 분량이 필요하나, 현재 단어 수(1604단어)가 기준에 미달합니다 (Rule 14).\n- 또한, 'PersonaCheck' 이슈가 보고되"
+    ]
+  },
+  {
+    "date": "2026-05-16 18:50",
+    "topic": "Magnesium and Zinc: Why This Nighttime Stack Felt Different",
+    "title": "How I Use Magnesium Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.9090909090909091,
+    "word_count": 1331,
+    "archetype": "nordic-anecdotal",
+    "topic_type": "synergy",
+    "nutrients": [
+      "magnesium",
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 콘텐츠의 전반적인 톤이 에릭 린드스트롬의 '북유럽식, 대화체적, 약간 거친 인간적인' 페르소나를 반영하지 못하고, 너무 깔끔하고 학술적인(clinical) 느낌이 강함. (Lesson 7 위반)\n- 필수적인 '의료 면책 조항(Medical Disclaimer)'이 누락되어 있음. (Less"
+    ]
+  },
+  {
+    "date": "2026-05-16 19:45",
+    "topic": "The Synergy of Magnesium and Vitamin B6 for Cognitive Support",
+    "title": "Magnesium vs Vitamin: My Choice After Testing",
+    "status": "rejected",
+    "score": 0.9090909090909091,
+    "word_count": 824,
+    "archetype": "minimalist",
+    "topic_type": "comparison",
+    "nutrients": [
+      "magnesium"
+    ],
+    "category": "COGNITIVE",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 최소주의(minimalist) 아키타입의 요구 조건인 1200단어 이상에 미달함 (현재 1146단어)."
+    ]
+  },
+  {
+    "date": "2026-05-16 19:50",
+    "topic": "The Synergy of Magnesium and Vitamin B6 for Cognitive Support",
+    "title": "Magnesium vs Vitamin: My Choice After Testing",
+    "status": "rejected",
+    "score": 0.9090909090909091,
+    "word_count": 826,
+    "archetype": "minimalist",
+    "topic_type": "comparison",
+    "nutrients": [
+      "magnesium"
+    ],
+    "category": "COGNITIVE",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 필수적인 'Medical Disclaimer'가 누락되었습니다. (Rule 13)\n- 콘텐츠가 'minimalist' 아키타입을 따르고 있으나, 법적 고지 사항이 빠져 출판 불가합니다."
+    ]
+  },
+  {
+    "date": "2026-05-16 19:55",
+    "topic": "The Synergy of Magnesium and Vitamin B6 for Cognitive Support",
+    "title": "Magnesium vs Vitamin: My Choice After Testing",
+    "status": "rejected",
+    "score": 1.0,
+    "word_count": 928,
+    "archetype": "journal-tone",
+    "topic_type": "comparison",
+    "nutrients": [
+      "magnesium"
+    ],
+    "category": "COGNITIVE",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 아티클의 아키타입이 'journal-tone' (과학 심층 분석)으로 지정되었으나, 요구되는 최소 단어 수(2000단어 이상)에 미달하는 1671단어입니다.\n- 필수 항목인 의료 면책 조항(Medical Disclaimer)이 누락되었습니다."
+    ]
+  },
+  {
+    "date": "2026-05-16 20:20",
+    "topic": "Common Zinc Supplementation Mistakes to Avoid and Optimal Timing",
+    "title": "Why I Never Combine Common and Zinc",
+    "status": "rejected",
+    "score": 0.9090909090909091,
+    "word_count": 715,
+    "archetype": "quick-answer",
+    "topic_type": "antagonism",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 필수적인 'Medical Disclaimer'가 누락되었습니다. (Rule 13 위반)\n- Quick-answer 아키타입이지만, 내용이 Key Takeaways 목록으로만 구성되어 있어 충분한 깊이와 인간적인 스토리텔링(Erik Lindström의 페르소나)이 부족합니다. (Rule 7 "
+    ]
+  },
+  {
+    "date": "2026-05-16 20:20",
+    "topic": "Common Zinc Supplementation Mistakes to Avoid and Optimal Timing",
+    "title": "Why I Never Combine Common and Zinc",
+    "status": "rejected",
+    "score": 0.9090909090909091,
+    "word_count": 877,
+    "archetype": "nordic-anecdotal",
+    "topic_type": "antagonism",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 아티클 아키타입(minimalist/quick-answer)에 따른 최소 단어 수(1400자 이상)를 충족하지 못했습니다. 현재 단어 수는 1254자입니다."
+    ]
+  },
+  {
+    "date": "2026-05-16 20:35",
+    "topic": "Common Zinc Supplementation Mistakes to Avoid and Optimal Timing",
+    "title": "Why I Never Combine Common and Zinc",
+    "status": "rejected",
+    "score": 0.9090909090909091,
+    "word_count": 1113,
+    "archetype": "science-heavy",
+    "topic_type": "antagonism",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 과학 중심(science-heavy) 아키타입의 최소 단어 수(2000단어 이상)를 충족하지 못했습니다. 현재 단어 수는 1812단어입니다. (Critical Lesson 14 위반)"
+    ]
+  },
+  {
+    "date": "2026-05-16 20:39",
+    "topic": "Common Zinc Supplementation Mistakes to Avoid and Optimal Timing",
+    "title": "Why I Never Combine Common and Zinc",
+    "status": "rejected",
+    "score": 1.0,
+    "word_count": 704,
+    "archetype": "quick-answer",
+    "topic_type": "antagonism",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 필수적인 의료 면책 조항(Medical Disclaimer)이 누락되었습니다. (규칙 13 위반)"
+    ]
+  },
+  {
+    "date": "2026-05-16 21:12",
+    "topic": "Common Zinc mistakes and timing",
+    "title": "When I Take Zinc: Morning vs Evening Results",
+    "status": "rejected",
+    "score": 0.8181818181818182,
+    "word_count": 960,
+    "archetype": "journal-tone",
+    "topic_type": "timing",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 아티클의 목표 아키타입(Minimalist/Quick-answer/Short-practical)에 따른 최소 단어 수(1500자 이상)를 충족하지 못했습니다. 현재 단어 수는 1331자입니다."
+    ]
+  },
+  {
+    "date": "2026-05-16 21:23",
+    "topic": "Common Zinc mistakes and timing",
+    "title": "When I Take Zinc: Morning vs Evening Results",
+    "status": "rejected",
+    "score": 0.9090909090909091,
+    "word_count": 910,
+    "archetype": "journal-tone",
+    "topic_type": "timing",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 지정된 아키타입(minimalist/quick-answer/short-practical)에 따라 요구되는 최소 단어 수(1500자 이상)를 충족하지 못했습니다. 현재 단어 수는 1359자입니다."
+    ]
+  },
+  {
+    "date": "2026-05-16 21:28",
+    "topic": "Common Zinc mistakes and timing",
+    "title": "When I Take Zinc: Morning vs Evening Results",
+    "status": "rejected",
+    "score": 0.7272727272727273,
+    "word_count": 832,
+    "archetype": "minimalist",
+    "topic_type": "timing",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 최소 기사 유형(minimalist)의 요구 단어 수(1200단어 이상)에 미달합니다. 현재 1120단어입니다.\n- 기사 구조상 필수적인 5단계 진행(Section 3: The Routine, Section 5: The Caution)이 충분히 상세하게 전개되지 않아 내용이 빈약합니다."
+    ]
+  },
+  {
+    "date": "2026-05-16 22:06",
+    "topic": "Why My Zinc Routine Was Failing: The Truth About Timing",
+    "title": "When I Take Zinc: Morning vs Evening Results",
+    "status": "rejected",
+    "score": 0.9166666666666666,
+    "word_count": 640,
+    "archetype": "quick-answer",
+    "topic_type": "timing",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: AI_Footprint"
+    ]
+  },
+  {
+    "date": "2026-05-16 22:10",
+    "topic": "Why My Zinc Routine Was Failing: The Truth About Timing",
+    "title": "When I Take Zinc: Morning vs Evening Results",
+    "status": "rejected",
+    "score": 0.8333333333333334,
+    "word_count": 1256,
+    "archetype": "science-heavy",
+    "topic_type": "timing",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: 단어수_2000+, AI_Footprint"
+    ]
+  },
+  {
+    "date": "2026-05-16 22:42",
+    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
+    "title": "How I Use Stopped Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.75,
+    "word_count": 367,
+    "archetype": "minimalist",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED: INCOMPLETE CONTENT\n\nThe article currently reads as an outline or a brief abstract, not a complete, publishable piece. While the tone is appropriate—personal, reflective, and minimalist—the c"
+    ]
+  },
+  {
+    "date": "2026-05-16 22:43",
+    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
+    "title": "How I Use Stopped Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.8333333333333334,
+    "word_count": 302,
+    "archetype": "minimalist",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n\nReasoning:\n\nThe article fails to meet the minimum word count requirement for a \"Minimalist\" format. While the tone and structure are appropriate for the archetype, the current length is insu"
+    ]
+  },
+  {
+    "date": "2026-05-16 22:43",
+    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
+    "title": "How I Use Stopped Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.75,
+    "word_count": 1290,
+    "archetype": "science-heavy",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n\nReasoning:\n\nThe provided content is insufficient in length and depth to qualify as a \"science-heavy\" article. While the premise is clear, the current text lacks the necessary scientific elab"
+    ]
+  },
+  {
+    "date": "2026-05-16 22:53",
+    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
+    "title": "How I Use Stopped Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.75,
+    "word_count": 267,
+    "archetype": "quick-answer",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "The content is rejected because it does not meet the minimum word count requirement. The provided snippet is too short to be published."
+    ]
+  },
+  {
+    "date": "2026-05-16 22:53",
+    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
+    "title": "How I Use Stopped Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.8333333333333334,
+    "word_count": 654,
+    "archetype": "minimalist",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: 단어수_1200+, Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-16 22:56",
+    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
+    "title": "How I Use Stopped Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.8333333333333334,
+    "word_count": 1220,
+    "archetype": "comparison",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: AI_Footprint, Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-16 23:17",
+    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
+    "title": "How I Use Stopped Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.8333333333333334,
+    "word_count": 396,
+    "archetype": "minimalist",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: 단어수_1200+, Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-16 23:22",
+    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
+    "title": "How I Use Stopped Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.8333333333333334,
+    "word_count": 243,
+    "archetype": "quick-answer",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: 단어수_1000+, Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-16 23:23",
+    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
+    "title": "How I Use Stopped Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.8333333333333334,
+    "word_count": 243,
+    "archetype": "quick-answer",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: 단어수_1000+, Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-16 23:27",
+    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
+    "title": "How I Use Stopped Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.75,
+    "word_count": 472,
+    "archetype": "journal-tone",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: 단어수_1500+, AI_Footprint, Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-16 23:27",
+    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
+    "title": "How I Use Stopped Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.8333333333333334,
+    "word_count": 1157,
+    "archetype": "science-heavy",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "The submission is Rejected due to insufficient length and incompleteness.\n\nWhile the structure and initial tone are promising, the provided text is a highly incomplete draft and falls drastically shor"
+    ]
+  },
+  {
+    "date": "2026-05-16 23:31",
+    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
+    "title": "How I Use Stopped Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.8333333333333334,
+    "word_count": 484,
+    "archetype": "quick-answer",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: 단어수_1000+, Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-16 23:32",
+    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
+    "title": "How I Use Stopped Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.8333333333333334,
+    "word_count": 461,
+    "archetype": "minimalist",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: 단어수_1200+, Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-16 23:36",
+    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
+    "title": "How I Use Stopped Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.8333333333333334,
+    "word_count": 1097,
+    "archetype": "science-heavy",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: 단어수_2000+, Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-16 23:38",
+    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
+    "title": "How I Use Stopped Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.9166666666666666,
+    "word_count": 1082,
+    "archetype": "comparison",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-16 23:40",
+    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
+    "title": "How I Use Stopped Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.8333333333333334,
+    "word_count": 833,
+    "archetype": "journal-tone",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: 단어수_1500+, Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-16 23:43",
+    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
+    "title": "How I Use Stopped Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.8333333333333334,
+    "word_count": 981,
+    "archetype": "science-heavy",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: 단어수_2000+, Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-17 00:13",
+    "topic": "Why Taking Magnesium with Coffee Failed Me: My Electrolyte Log",
+    "title": "How I Use Magnesium Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.8333333333333334,
+    "word_count": 737,
+    "archetype": "journal-tone",
+    "topic_type": "synergy",
+    "nutrients": [
+      "magnesium"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n\nReasoning: The provided content is significantly underdeveloped and lacks the necessary depth and word count required for a comprehensive journal-style article. While the narrative premise i"
+    ]
+  },
+  {
+    "date": "2026-05-17 00:14",
+    "topic": "Why Taking Magnesium with Coffee Failed Me: My Electrolyte Log",
+    "title": "How I Use Magnesium Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.8333333333333334,
+    "word_count": 894,
+    "archetype": "journal-tone",
+    "topic_type": "synergy",
+    "nutrients": [
+      "magnesium"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "The submission is rejected due to insufficient content depth and a failure to establish the required personal, reflective narrative voice.\n\nWhile the topic is relevant, the current text reads like a c"
+    ]
+  },
+  {
+    "date": "2026-05-17 00:17",
+    "topic": "Why Taking Magnesium with Coffee Failed Me: My Electrolyte Log",
+    "title": "How I Use Magnesium Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.9166666666666666,
+    "word_count": 823,
+    "archetype": "quick-answer",
+    "topic_type": "synergy",
+    "nutrients": [
+      "magnesium"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-17 00:20",
+    "topic": "Why Taking Magnesium with Coffee Failed Me: My Electrolyte Log",
+    "title": "How I Use Magnesium Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.9166666666666666,
+    "word_count": 461,
+    "archetype": "quick-answer",
+    "topic_type": "synergy",
+    "nutrients": [
+      "magnesium"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-17 00:21",
+    "topic": "Why Taking Magnesium with Coffee Failed Me: My Electrolyte Log",
+    "title": "How I Use Magnesium Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.8333333333333334,
+    "word_count": 433,
+    "archetype": "quick-answer",
+    "topic_type": "synergy",
+    "nutrients": [
+      "magnesium"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "The submission is rejected due to insufficient depth and length. While the tone is appropriate and the core message is clear, the content is too brief to meet the expected word count and level of deta"
+    ]
+  },
+  {
+    "date": "2026-05-17 00:26",
+    "topic": "Why Taking Magnesium with Coffee Failed Me: My Electrolyte Log",
+    "title": "Why Taking Magnesium with Coffee Failed Me:电解过长重新生成",
+    "status": "rejected",
+    "score": 0.9166666666666666,
+    "word_count": 1472,
+    "archetype": "comparison",
+    "topic_type": "synergy",
+    "nutrients": [
+      "magnesium"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-17 00:28",
+    "topic": "Why Taking Magnesium with Coffee Failed Me: My Electrolyte Log",
+    "title": "How I Use Magnesium Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.9166666666666666,
+    "word_count": 1569,
+    "archetype": "science-heavy",
+    "topic_type": "synergy",
+    "nutrients": [
+      "magnesium"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-17 00:32",
+    "topic": "Why Taking Magnesium with Coffee Failed Me: My Electrolyte Log",
+    "title": "How I Use Magnesium Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.9166666666666666,
+    "word_count": 1369,
+    "archetype": "science-heavy",
+    "topic_type": "synergy",
+    "nutrients": [
+      "magnesium"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-17 00:36",
+    "topic": "Why Taking Magnesium with Coffee Failed Me: My Electrolyte Log",
+    "title": "How I Use Taking Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.8333333333333334,
+    "word_count": 615,
+    "archetype": "minimalist",
+    "topic_type": "synergy",
+    "nutrients": [
+      "magnesium"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: 단어수_1200+, Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-17 00:38",
+    "topic": "Why Taking Magnesium with Coffee Failed Me: My Electrolyte Log",
+    "title": "How I Use Taking Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.8333333333333334,
+    "word_count": 353,
+    "archetype": "quick-answer",
+    "topic_type": "synergy",
+    "nutrients": [
+      "magnesium"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: 단어수_1000+, Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-17 00:40",
+    "topic": "Why Taking Magnesium with Coffee Failed Me: My Electrolyte Log",
+    "title": "How I Use Taking Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.8333333333333334,
+    "word_count": 353,
+    "archetype": "quick-answer",
+    "topic_type": "synergy",
+    "nutrients": [
+      "magnesium"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: 단어수_1000+, Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-17 00:44",
+    "topic": "Why Taking Magnesium with Coffee Failed Me: My Electrolyte Log",
+    "title": "How I Use Taking Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.8333333333333334,
+    "word_count": 1180,
+    "archetype": "nordic-anecdotal",
+    "topic_type": "synergy",
+    "nutrients": [
+      "magnesium"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: AI_Footprint, Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-17 00:46",
+    "topic": "Why Taking Magnesium with Coffee Failed Me: My Electrolyte Log",
+    "title": "How I Use Taking Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.9166666666666666,
+    "word_count": 1362,
+    "archetype": "science-heavy",
+    "topic_type": "synergy",
+    "nutrients": [
+      "magnesium"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-17 01:13",
+    "topic": "Why L Theanine and Caffeine Works Like Magic for My ADHD",
+    "title": "Theanine vs and: My Choice After Testing",
+    "status": "rejected",
+    "score": 0.9166666666666666,
+    "word_count": 1661,
+    "archetype": "nordic-anecdotal",
+    "topic_type": "comparison",
+    "nutrients": [],
+    "category": "COGNITIVE",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-17 01:15",
+    "topic": "Why L Theanine and Caffeine Works Like Magic for My ADHD",
+    "title": "Theanine vs and: My Choice After Testing",
+    "status": "rejected",
+    "score": 0.9166666666666666,
+    "word_count": 2852,
+    "archetype": "science-heavy",
+    "topic_type": "comparison",
+    "nutrients": [],
+    "category": "COGNITIVE",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-17 01:34",
+    "topic": "Why L Theanine and Caffeine Works Like Magic for My ADHD",
+    "title": "Theanine vs and: My Choice After Testing",
+    "status": "rejected",
+    "score": 0.9166666666666666,
+    "word_count": 1040,
+    "archetype": "minimalist",
+    "topic_type": "comparison",
+    "nutrients": [],
+    "category": "COGNITIVE",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-17 01:37",
+    "topic": "Why L Theanine and Caffeine Works Like Magic for My ADHD",
+    "title": "Theanine vs and: My Choice After Testing",
+    "status": "rejected",
+    "score": 0.9166666666666666,
+    "word_count": 2009,
+    "archetype": "comparison",
+    "topic_type": "comparison",
+    "nutrients": [],
+    "category": "COGNITIVE",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-17 06:42",
+    "topic": "Comparing Berberine and GABA: The Full Analysis",
+    "title": "How I Use Comparing Effectively: My Findings",
+    "status": "NEEDS_RE_AUDIT",
+    "score": 1.0,
+    "word_count": 1235,
+    "archetype": "minimalist",
+    "topic_type": "synergy",
+    "nutrients": [
+      "berberine"
+    ],
+    "category": "METABOLIC",
+    "issues": [],
+    "quality_score": 0.0
+  },
+  {
+    "date": "2026-05-17 13:31",
+    "topic": "Stop Taking CoQ10 Like This",
+    "title": "How I Use Stop Effectively: My Findings",
+    "status": "NEEDS_RE_AUDIT",
+    "score": 1.0,
+    "word_count": 2022,
+    "archetype": "science-heavy",
+    "topic_type": "synergy",
+    "nutrients": [
+      "coq10"
+    ],
+    "category": "METABOLIC",
+    "issues": [],
+    "quality_score": 0.0
+  },
+  {
+    "date": "2026-05-17",
+    "audited_at": "2026-05-17 14:12:39",
+    "source": "CEO_Auditor",
+    "title": "Advanced Stacking Protocols & Chronobiological Optimization",
+    "url": "https://www.nutristacklab.com/2026/03/phosphatidylserine-research-report-part_097191467.html",
+    "scores": {
+      "seo": 7.0,
+      "humanity": 5.0,
+      "ai_footprint": 4.0,
+      "health_safety": 8.0,
+      "adsense": 6.0,
+      "total": 6.2
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-17",
+    "audited_at": "2026-05-17 14:26:59",
+    "source": "CEO_Auditor",
+    "title": "The Nordic Quercetin Protocol: Defend, Repair, and Stay Sharp All Winter",
+    "url": "https://www.nutristacklab.com/2026/03/the-nordic-quercetin-protocol-defend.html",
+    "scores": {
+      "seo": 7.0,
+      "humanity": 5.0,
+      "ai_footprint": 2.0,
+      "health_safety": 9.0,
+      "adsense": 6.0,
+      "total": 6.4
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-17",
+    "audited_at": "2026-05-17 14:31:18",
+    "source": "CEO_Auditor",
+    "title": "The Catalyst: Prebiotic Fuel and the Vitamin D3-VDR Axis That Locks Probiotics In",
+    "url": "https://www.nutristacklab.com/2026/03/step-23-catalyst-biochemical-logistics.html",
+    "scores": {
+      "seo": 7.0,
+      "humanity": 5.0,
+      "ai_footprint": 3.0,
+      "health_safety": 8.0,
+      "adsense": null,
+      "total": 6.2
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-17",
+    "audited_at": "2026-05-17 14:39:50",
+    "source": "CEO_Auditor",
+    "title": "The Zinc Key: How Quercetin Unlocks Your Body's Antiviral Defense",
+    "url": "https://www.nutristacklab.com/2026/03/the-zinc-key-how-quercetin-unlocks-your.html",
+    "scores": {
+      "seo": 6.0,
+      "humanity": 5.0,
+      "ai_footprint": 2.0,
+      "health_safety": 8.0,
+      "adsense": 7.0,
+      "total": 4.9
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-17",
+    "audited_at": "2026-05-17 14:47:33",
+    "source": "CEO_Auditor",
+    "title": "Creatine for the Brain: Why Your Mental Battery Is Dying",
+    "url": "https://www.nutristacklab.com/2026/04/creatine-for-brain-why-your-mental.html",
+    "scores": {
+      "seo": 7.0,
+      "humanity": 6.0,
+      "ai_footprint": 5.0,
+      "health_safety": 7.0,
+      "adsense": 6.0,
+      "total": 6.2
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-17",
+    "audited_at": "2026-05-17 15:02:53",
+    "source": "CEO_Auditor",
+    "title": "The NAD+ Bankruptcy: Why Nordic Professionals Age Faster in the 20-Hour Darkness",
+    "url": "https://www.nutristacklab.com/2026/03/the-nad-bankruptcy-why-nordic.html",
+    "scores": {
+      "seo": 7.0,
+      "humanity": 6.0,
+      "ai_footprint": 4.0,
+      "health_safety": 7.0,
+      "adsense": 6.0,
+      "total": 6.2
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-17",
+    "audited_at": "2026-05-17 16:52:52",
+    "source": "CEO_Auditor",
+    "title": "The Zinc and Selenium Synergy Protocol",
+    "url": "https://www.nutristacklab.com/2026/05/the-zinc-and-selenium-synergy-protocol.html",
+    "scores": {
+      "seo": 9.5,
+      "humanity": 8.0,
+      "ai_footprint": 6.5,
+      "health_safety": 9.5,
+      "adsense": 9.0,
+      "total": 5.9
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-17",
+    "audited_at": "2026-05-17 16:53:50",
+    "source": "CEO_Auditor",
+    "title": "When People Prefer When Over to",
+    "url": "https://www.nutristacklab.com/2026/05/when-people-prefer-when-over-to.html",
+    "scores": {
+      "seo": 6.0,
+      "humanity": 6.0,
+      "ai_footprint": 5.0,
+      "health_safety": 7.0,
+      "adsense": 5.0,
+      "total": 5.9
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-17",
+    "audited_at": "2026-05-17 16:54:45",
+    "source": "CEO_Auditor",
+    "title": "The Mitochondrial Crisis: Why PQQ Deficiency Starts Earlier Than You Think",
+    "url": "https://www.nutristacklab.com/2026/03/what-is-pqq-tiny-molecule-powering-your.html",
+    "scores": {
+      "seo": 9.5,
+      "humanity": 9.0,
+      "ai_footprint": 9.0,
+      "health_safety": 10.0,
+      "adsense": 10.0,
+      "total": 5.9
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-17",
+    "audited_at": "2026-05-17 16:56:10",
+    "source": "CEO_Auditor",
+    "title": "The Longevity Architecture: Synchronizing Your Cellular Clock With CoQ10",
+    "url": "https://www.nutristacklab.com/2026/03/part-3-longevity-architecture.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-17",
+    "audited_at": "2026-05-17 16:57:19",
+    "source": "CEO_Auditor",
+    "title": "Collagen and Ha Synergy: The Nordic Stack",
+    "url": "https://www.nutristacklab.com/2026/05/collagen-and-ha-synergy-nordic-stack.html",
+    "scores": {
+      "seo": 9.5,
+      "humanity": 10.0,
+      "ai_footprint": 8.5,
+      "health_safety": 10.0,
+      "adsense": 10.0,
+      "total": 5.9
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-17",
+    "audited_at": "2026-05-17 16:58:16",
+    "source": "CEO_Auditor",
+    "title": "The Synergy Spark: Why MSM Without Vitamin C Is Like Bricks Without Mortar",
+    "url": "https://www.nutristacklab.com/2026/03/step-23-clinical-report-synergy_01010020768.html",
+    "scores": {
+      "seo": 9.5,
+      "humanity": 7.5,
+      "ai_footprint": 6.5,
+      "health_safety": 9.0,
+      "adsense": 8.0,
+      "total": 5.9
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-17 18:18",
+    "topic": "Berries Enhances Vitamin D3 Absorption: Here's Why",
+    "title": "How I Use Berries Effectively: My Findings",
+    "status": "rejected",
+    "score": 1.0,
+    "word_count": 1061,
+    "archetype": "quick-answer",
+    "topic_type": "mechanism",
+    "nutrients": [
+      "vitamin d",
+      "vitamin d3"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED: The provided content is too short and lacks the depth required for a comprehensive article, especially given the context of scientific supplementation. The current structure is more of a sum"
+    ]
+  },
+  {
+    "date": "2026-05-17 18:41",
+    "topic": "Berries Enhances Vitamin D3 Absorption: Here's Why",
+    "title": "Why I Pair Berries With Specific Foods",
+    "status": "rejected",
+    "score": 1.0,
+    "word_count": 1626,
+    "archetype": "nordic-anecdotal",
+    "topic_type": "food-combo",
+    "nutrients": [
+      "vitamin d",
+      "vitamin d3"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED. The provided content is incomplete and lacks the necessary narrative depth, specific actionable advice, or consistent tone required for a high-quality, engaging article based on the establis"
+    ]
+  },
+  {
+    "date": "2026-05-17 19:28",
+    "topic": "Berries Enhances Vitamin D3 Absorption: Here's Why",
+    "title": "How I Use Berries Effectively: My Findings",
+    "status": "rejected",
+    "score": 1.0,
+    "word_count": 1592,
+    "archetype": "nordic-anecdotal",
+    "topic_type": "synergy",
+    "nutrients": [
+      "vitamin d3",
+      "vitamin d"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED. The provided content is incomplete and does not contain the full article body to evaluate against the required criteria. Please provide the complete text."
+    ]
+  },
+  {
+    "date": "2026-05-17 19:51",
+    "topic": "Berries Enhances Vitamin D3 Absorption: Here's Why",
+    "title": "When I Take Berries: Morning vs Evening Results",
+    "status": "rejected",
+    "score": 1.0,
+    "word_count": 891,
+    "archetype": "quick-answer",
+    "topic_type": "timing",
+    "nutrients": [
+      "vitamin d3",
+      "vitamin d"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED. The provided content is insufficient to generate a final assessment. The prompt requires the full article content to be evaluated against the specified criteria. Please provide the complete "
+    ]
+  },
+  {
+    "date": "2026-05-17 20:43",
+    "topic": "Berries Enhances Vitamin D3 Absorption: Here's Why",
+    "title": "Why I Pair Berries With Specific Foods",
+    "status": "rejected",
+    "score": 0.9230769230769231,
+    "word_count": 602,
+    "archetype": "comparison",
+    "topic_type": "food-combo",
+    "nutrients": [
+      "vitamin d",
+      "vitamin d3"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: 단어수_1600+"
+    ]
+  },
+  {
+    "date": "2026-05-17 20:50",
+    "topic": "Berries Enhances Vitamin D3 Absorption: Here's Why",
+    "title": "How I Use Berries Effectively: My Findings",
+    "status": "NEEDS_RE_AUDIT",
+    "score": 1.0,
+    "word_count": 1123,
+    "archetype": "quick-answer",
+    "topic_type": "protocol",
+    "nutrients": [
+      "vitamin d",
+      "vitamin d3"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [],
+    "quality_score": 0.0
+  },
+  {
+    "date": "2026-05-17",
+    "audited_at": "2026-05-17 23:12:21",
+    "source": "CEO_Auditor",
+    "title": "Morning vs Evening Ashwagandha: Does Timing Really Matter",
+    "url": "https://www.nutristacklab.com/2026/05/morning-vs-evening-ashwagandha-does.html",
+    "scores": {
+      "seo": 7.5,
+      "humanity": 6.0,
+      "ai_footprint": 5.5,
+      "health_safety": 9.0,
+      "adsense": 6.5,
+      "total": 5.9
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-17",
+    "audited_at": "2026-05-17 23:13:34",
+    "source": "CEO_Auditor",
+    "title": "Why I Stopped Taking Zinc With Breakfast",
+    "url": "https://www.nutristacklab.com/2026/05/how-i-use-comparing-effectively-my.html",
+    "scores": {
+      "seo": 10.0,
+      "humanity": 10.0,
+      "ai_footprint": 10.0,
+      "health_safety": 10.0,
+      "adsense": 10.0,
+      "total": 5.9
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-17",
+    "audited_at": "2026-05-17 23:14:56",
+    "source": "CEO_Auditor",
+    "title": "The Bacoside Blueprint: How Bacopa Rewires Memory and Calms the Storm",
+    "url": "https://www.nutristacklab.com/2026/03/the-bacoside-blueprint-how-bacopa.html",
+    "scores": {
+      "seo": 9.5,
+      "humanity": 9.0,
+      "ai_footprint": 7.0,
+      "health_safety": 9.5,
+      "adsense": 9.5,
+      "total": 5.9
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-17",
+    "audited_at": "2026-05-17 23:36:16",
+    "source": "CEO_Auditor",
+    "title": "The Molecular Engine: GPx, Selenium, and Why Glutathione Form Determines Everything",
+    "url": "https://www.nutristacklab.com/2026/03/glutathione-complete-supplement-guide.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-17",
+    "audited_at": "2026-05-17 23:38:04",
+    "source": "CEO_Auditor",
+    "title": "The Immune Switch: What Quercetin Actually Does Inside Your Cells",
+    "url": "https://www.nutristacklab.com/2026/03/the-immune-switch-what-quercetin.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-17",
+    "audited_at": "2026-05-17 23:40:13",
+    "source": "CEO_Auditor",
+    "title": "The Nordic Vitamin C Protocol: Dose, Form, and Winter Defense",
+    "url": "https://www.nutristacklab.com/2026/03/the-nordic-vitamin-c-protocol-dose-form.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-17",
+    "audited_at": "2026-05-17 23:48:41",
+    "source": "CEO_Auditor",
+    "title": "What Nordic Darkness Does to Your Body (The Science",
+    "url": "https://www.nutristacklab.com/2026/04/morkketid-science-nordic-darkness-body.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-17",
+    "audited_at": "2026-05-17 23:50:19",
+    "source": "CEO_Auditor",
+    "title": "Is Your Magnesium \"Leaking\" Before It Reaches Your Cells?",
+    "url": "https://www.nutristacklab.com/2026/03/is-your-magnesium-leaking-before-it.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-17",
+    "audited_at": "2026-05-17 23:51:43",
+    "source": "CEO_Auditor",
+    "title": "The Magnesium Connection: Why Your Brain Feels Foggy Without It",
+    "url": "https://www.nutristacklab.com/2026/03/the-magnesium-connection-why-your-brain.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-18",
+    "audited_at": "2026-05-18 00:13:23",
+    "source": "CEO_Auditor",
+    "title": "The Longevity Architecture: Synchronizing Your Cellular Clock With CoQ10",
+    "url": "https://www.nutristacklab.com/2026/03/part-3-longevity-architecture.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-18",
+    "audited_at": "2026-05-18 03:01:53",
+    "source": "CEO_Auditor",
+    "title": "Elderberry and Zinc Synergy",
+    "url": "https://www.nutristacklab.com/2026/05/elderberry-and-synergy-nordic-stack.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-18",
+    "audited_at": "2026-05-18 03:03:36",
+    "source": "CEO_Auditor",
+    "title": "PQQ Mastery: The Four-Layer Stack and Chronobiological Protocol for Mitochondrial Longevity",
+    "url": "https://www.nutristacklab.com/2026/03/how-pqq-actually-works-molecular.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-18",
+    "audited_at": "2026-05-18 03:05:20",
+    "source": "CEO_Auditor",
+    "title": "The Memory Herb: What Bacopa Monnieri Actually Does to Your Brain",
+    "url": "https://www.nutristacklab.com/2026/03/the-memory-herb-what-bacopa-monnieri.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-18",
+    "audited_at": "2026-05-18 06:01:42",
+    "source": "CEO_Auditor",
+    "title": "The Joint Paradox: Why Glucosamine Works — And Why Most People Take It Wrong",
+    "url": "https://www.nutristacklab.com/2026/03/the-joint-paradox-why-glucosamine-works.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-18",
+    "audited_at": "2026-05-18 06:03:29",
+    "source": "CEO_Auditor",
+    "title": "Berberine and Synergy: The Nordic Stack",
+    "url": "https://www.nutristacklab.com/2026/05/berberine-and-synergy-nordic-stack.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-18",
+    "audited_at": "2026-05-18 06:05:15",
+    "source": "CEO_Auditor",
+    "title": "The Catalyst: Prebiotic Fuel and the Vitamin D3-VDR Axis That Locks Probiotics In",
+    "url": "https://www.nutristacklab.com/2026/03/step-23-catalyst-biochemical-logistics.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-18 08:05",
+    "topic": "NMN Causing Bloating: Is It Normal?",
+    "title": "NMN vs Causing: My Choice After Testing",
+    "status": "NEEDS_RE_AUDIT",
+    "score": 1.0,
+    "word_count": 1848,
+    "archetype": "minimalist",
+    "topic_type": "comparison",
+    "nutrients": [
+      "nmn"
+    ],
+    "category": "METABOLIC",
+    "issues": [],
+    "quality_score": 0.0
+  },
+  {
+    "date": "2026-05-18",
+    "audited_at": "2026-05-18 09:10:01",
+    "source": "CEO_Auditor",
+    "title": "Vitamin C and Zinc Synergy: The Immune Acceleration Stack",
+    "url": "https://www.nutristacklab.com/2026/05/vitamin-and-c-synergy-nordic-stack.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-18",
+    "audited_at": "2026-05-18 12:10:39",
+    "source": "CEO_Auditor",
+    "title": "The Molecular Engine",
+    "url": "https://www.nutristacklab.com/2026/03/phosphatidylserine-research-report-part.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-18 13:43",
+    "topic": "Calcium plus Boron: Dosage and Timing",
+    "title": "When I Take Calcium: Morning vs Evening Results",
+    "status": "NEEDS_RE_AUDIT",
+    "score": 1.0,
+    "word_count": 972,
+    "archetype": "quick-answer",
+    "topic_type": "timing",
+    "nutrients": [
+      "boron"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [],
+    "quality_score": 0.0
+  },
+  {
+    "date": "2026-05-18 17:52",
+    "topic": "Morning vs Evening: When to Take Selenium",
+    "title": "Morning vs Evening: My Choice After Testing",
+    "status": "rejected",
+    "score": 0.9230769230769231,
+    "word_count": 1383,
+    "archetype": "comparison",
+    "topic_type": "comparison",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED. The content does not meet the length requirement for the specified article type."
+    ]
+  },
+  {
+    "date": "2026-05-18 18:07",
+    "topic": "Morning vs Evening: When to Take Selenium",
+    "title": "Should I Take Selenium in the Morning or Evening",
+    "status": "rejected",
+    "score": 0.9230769230769231,
+    "word_count": 1381,
+    "archetype": "journal-tone",
+    "topic_type": "comparison",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: AI_Footprint"
+    ]
+  },
+  {
+    "date": "2026-05-18 18:20",
+    "topic": "Morning vs Evening: When to Take Selenium",
+    "title": "Morning vs Evening: My Choice After Testing",
+    "status": "rejected",
+    "score": 0.9230769230769231,
+    "word_count": 2700,
+    "archetype": "science-heavy",
+    "topic_type": "comparison",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: AI_Footprint"
+    ]
+  },
+  {
+    "date": "2026-05-18 18:38",
+    "topic": "Morning vs Evening: When to Take Selenium",
+    "title": "Morning vs Evening: My Choice After Testing",
+    "status": "rejected",
+    "score": 0.9230769230769231,
+    "word_count": 2188,
+    "archetype": "journal-tone",
+    "topic_type": "comparison",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: AI_Footprint"
+    ]
+  },
+  {
+    "date": "2026-05-18 19:22",
+    "topic": "Morning vs Evening: When to Take Selenium",
+    "title": "Morning vs Evening: My Choice After Testing",
+    "status": "NEEDS_RE_AUDIT",
+    "score": 0.8461538461538461,
+    "word_count": 1128,
+    "archetype": "science-heavy",
+    "topic_type": "comparison",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "단어수_2000+",
+      "AI_Footprint"
+    ],
+    "quality_score": 0.0
+  },
+  {
+    "date": "2026-05-18",
+    "audited_at": "2026-05-18 21:09:42",
+    "source": "CEO_Auditor",
+    "title": "The Stoichiometric Precision: Decoding the Optimal D3:K2 Ratio for Arterial Protection",
+    "url": "https://www.nutristacklab.com/2026/03/sunlight-in-bottle-series-part-2.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-18",
+    "audited_at": "2026-05-18 21:18:16",
+    "source": "CEO_Auditor",
+    "title": "L-Theanine Benefits: Why Caffeine Alone Ruins Your Brain",
+    "url": "https://www.nutristacklab.com/2026/04/disclosure-this-post-may-contain.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-18",
+    "audited_at": "2026-05-18 21:26:42",
+    "source": "CEO_Auditor",
+    "title": "Nmn and Resveratrol: The Nordic Protocol",
+    "url": "https://www.nutristacklab.com/2026/04/nmn-and-resveratrol-nordic-protocol.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-19 00:53",
+    "topic": "The Longevity Architecture: Synchronizing Your Cellular Clock With CoQ10",
+    "title": "How I Use Longevity Effectively: My Findings",
+    "status": "success",
+    "score": 1.0,
+    "word_count": 1408,
+    "archetype": "nordic-anecdotal",
+    "topic_type": "synergy",
+    "nutrients": [
+      "coq10"
+    ],
+    "category": "METABOLIC",
+    "issues": []
+  },
+  {
+    "date": "2026-05-19 01:10",
+    "topic": "The Molecular Engine: GPx, Selenium, and Why Glutathione Form Determines Everything",
+    "title": "How I Use Molecular Effectively: My Findings",
+    "status": "success",
+    "score": 1.0,
+    "word_count": 2093,
+    "archetype": "journal-tone",
+    "topic_type": "synergy",
+    "nutrients": [
+      "glutathione"
+    ],
+    "category": "IMMUNE",
+    "issues": []
+  },
+  {
+    "date": "2026-05-19 01:48",
+    "topic": "The Nordic Quercetin Protocol: Defend, Repair, and Stay Sharp All Winter",
+    "title": "How I Use Quercetin Effectively: My Findings",
+    "status": "success",
+    "score": 1.0,
+    "word_count": 1621,
+    "archetype": "journal-tone",
+    "topic_type": "protocol",
+    "nutrients": [
+      "quercetin"
+    ],
+    "category": "IMMUNE",
+    "issues": []
+  },
+  {
+    "date": "2026-05-19",
+    "audited_at": "2026-05-19 03:06:14",
+    "source": "CEO_Auditor",
+    "title": "How PQQ Actually Works: The CREB→PGC-1α Molecular Cascade Explained",
+    "url": "https://www.nutristacklab.com/2026/03/pqq-complete-guide-benefits-dosage-and.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-19",
+    "audited_at": "2026-05-19 03:11:18",
+    "source": "CEO_Auditor",
+    "title": "The Nordic Cognitive Protocol: Erasing Brain Fog",
+    "url": "https://www.nutristacklab.com/2026/04/the-nordic-cognitive-protocol-erasing.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-19",
+    "audited_at": "2026-05-19 03:17:27",
+    "source": "CEO_Auditor",
+    "title": "The Omega-3 Deficiency Signal: Why Your Brain and Heart Are Running on Empty",
+    "url": "https://www.nutristacklab.com/2026/03/the-omega-3-deficiency-signal-why-your.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-19",
+    "audited_at": "2026-05-19 06:06:27",
+    "source": "CEO_Auditor",
+    "title": "The Brain Fog Mushroom: What Lion's Mane Actually Does to Your Neurons",
+    "url": "https://www.nutristacklab.com/2026/03/the-brain-fog-mushroom-what-lions-mane.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-19",
+    "audited_at": "2026-05-19 06:12:49",
+    "source": "CEO_Auditor",
+    "title": "Elderberry and Zinc Synergy: The Nordic Stack",
+    "url": "https://www.nutristacklab.com/2026/05/elderberry-and-zinc-synergy-nordic-stack.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-19",
+    "audited_at": "2026-05-19 06:17:09",
+    "source": "CEO_Auditor",
+    "title": "The Stoichiometric Precision: Decoding the Optimal D3:K2 Ratio for Arterial Protection",
+    "url": "https://www.nutristacklab.com/2026/03/sunlight-in-bottle-series-part-2.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "KEEP"
+  },
+  {
+    "date": "2026-05-19 07:39",
+    "topic": "Elderberry and Zinc Synergy",
+    "title": "How I Use Elderberry Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.9230769230769231,
+    "word_count": 1139,
+    "archetype": "minimalist",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-19 08:20",
+    "topic": "Elderberry and Zinc Synergy",
+    "title": "How I Use Elderberry Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.9230769230769231,
+    "word_count": 2805,
+    "archetype": "journal-tone",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-19 08:58",
+    "topic": "Elderberry and Zinc Synergy",
+    "title": "How I Use Elderberry Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.9230769230769231,
+    "word_count": 2943,
+    "archetype": "science-heavy",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: Alt_Clean"
+    ]
+  },
+  {
+    "date": "2026-05-19 20:43",
+    "topic": "Why Phosphatidylserine Upset My Stomach",
+    "title": "How I Use Phosphatidylserine Effectively: My Findings",
+    "status": "success",
+    "score": 1.0,
+    "word_count": 1047,
+    "archetype": "minimalist",
+    "topic_type": "protocol",
+    "nutrients": [
+      "phosphatidylserine"
+    ],
+    "category": "GENERAL",
+    "issues": []
+  },
+  {
+    "date": "2026-05-19 21:49",
+    "topic": "The Mechanism of Melatonin: A Deep Dive",
+    "title": "How I Use Mechanism Effectively: My Findings",
+    "status": "success",
+    "score": 1.0,
+    "word_count": 822,
+    "archetype": "quick-answer",
+    "topic_type": "mechanism",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": []
+  },
+  {
+    "date": "2026-05-19 21:53",
+    "topic": "Is Your Magnesium \"Leaking\" Before It Reaches Your Cells?",
+    "title": "How I Use Your Effectively: My Findings",
+    "status": "success",
+    "score": 1.0,
+    "word_count": 973,
+    "archetype": "quick-answer",
+    "topic_type": "synergy",
+    "nutrients": [
+      "magnesium"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": []
+  },
+  {
+    "date": "2026-05-19 22:18",
+    "topic": "The Immune Switch: What Quercetin Actually Does Inside Your Cells",
+    "title": "How I Use Immune Effectively: My Findings",
+    "status": "success",
+    "score": 1.0,
+    "word_count": 2384,
+    "archetype": "science-heavy",
+    "topic_type": "protocol",
+    "nutrients": [
+      "quercetin"
+    ],
+    "category": "IMMUNE",
+    "issues": []
+  },
+  {
+    "date": "2026-05-19 22:53",
+    "topic": "The Longevity Architecture: Synchronizing Your Cellular Clock With CoQ10",
+    "title": "How I Use Longevity Effectively: My Findings",
+    "status": "success",
+    "score": 1.0,
+    "word_count": 2030,
+    "archetype": "deep-protocol",
+    "topic_type": "synergy",
+    "nutrients": [
+      "coq10"
+    ],
+    "category": "METABOLIC",
+    "issues": []
+  },
+  {
+    "date": "2026-05-19 23:04",
+    "topic": "The Magnesium Connection: Why Your Brain Feels Foggy Without It",
+    "title": "How I Use Magnesium Effectively: My Findings",
+    "status": "success",
+    "score": 1.0,
+    "word_count": 1322,
+    "archetype": "minimalist",
+    "topic_type": "synergy",
+    "nutrients": [
+      "magnesium"
+    ],
+    "category": "COGNITIVE",
+    "issues": []
+  },
+  {
+    "date": "2026-05-19 23:27",
+    "topic": "The Nordic Vitamin C Protocol: Dose, Form, and Winter Defense",
+    "title": "How I Use Vitamin Effectively: My Findings",
+    "status": "success",
+    "score": 1.0,
+    "word_count": 1572,
+    "archetype": "journal-tone",
+    "topic_type": "protocol",
+    "nutrients": [
+      "vitamin c"
+    ],
+    "category": "IMMUNE",
+    "issues": []
+  },
+  {
+    "date": "2026-05-20",
+    "audited_at": "2026-05-20 03:02:16",
+    "source": "CEO_Auditor",
+    "title": " The Blood-Brain Barrier: Why Your Choline Fails",
+    "url": "https://www.nutristacklab.com/2026/04/the-blood-brain-barrier-why-your.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-20",
+    "audited_at": "2026-05-20 03:04:11",
+    "source": "CEO_Auditor",
+    "title": "The Calcium Traffic Dilemma: Why High-Dose Vitamin D3 Is a Silent Threat Without K2",
+    "url": "https://www.nutristacklab.com/2026/03/the-dark-season-paradox-why-your.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-20",
+    "audited_at": "2026-05-20 03:05:51",
+    "source": "CEO_Auditor",
+    "title": "Berberine and Ala Synergy: The Nordic Stack",
+    "url": "https://www.nutristacklab.com/2026/05/berberine-and-ala-synergy-nordic-stack.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-20",
+    "audited_at": "2026-05-20 06:02:14",
+    "source": "CEO_Auditor",
+    "title": "The Invisible Starvation: Why Your Cells Are Dying in the Dark",
+    "url": "https://www.nutristacklab.com/2026/03/part-1-invisible-starvation-why-your.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-20",
+    "audited_at": "2026-05-20 06:03:49",
+    "source": "CEO_Auditor",
+    "title": "The Mastery: The Detoxification Paradox and the Molybdenum Exit Strategy",
+    "url": "https://www.nutristacklab.com/2026/03/step-33-clinical-report-masterythe.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-20",
+    "audited_at": "2026-05-20 06:05:44",
+    "source": "CEO_Auditor",
+    "title": "The Eroding Mind: Is Your Brain's Architecture Collapsing?",
+    "url": "https://www.nutristacklab.com/2026/03/part-1-eroding-mind-is-your-brains.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-20",
+    "audited_at": "2026-05-20 09:02:41",
+    "source": "CEO_Auditor",
+    "title": "Magnesium and And Synergy: The Nordic Stack",
+    "url": "https://www.nutristacklab.com/2026/05/magnesium-and-and-synergy-nordic-stack.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-20",
+    "audited_at": "2026-05-20 09:04:32",
+    "source": "CEO_Auditor",
+    "title": "Nmn and Coq10 Synergy: The Nordic Stack",
+    "url": "https://www.nutristacklab.com/2026/05/nmn-and-coq10-synergy-nordic-stack.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-20",
+    "audited_at": "2026-05-20 09:06:26",
+    "source": "CEO_Auditor",
+    "title": "The EPA DHA Divide: Which Omega-3 Form Actually Reaches Your Cells",
+    "url": "https://www.nutristacklab.com/2026/03/the-epa-dha-divide-which-omega-3-form.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-20 09:57",
+    "topic": "Melatonin Loading Protocol: Does It Work?",
+    "title": "How I Use Melatonin Effectively: My Findings",
+    "status": "success",
+    "score": 1.0,
+    "word_count": 1175,
+    "archetype": "journal-tone",
+    "topic_type": "protocol",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": []
+  },
+  {
+    "date": "2026-05-20",
+    "audited_at": "2026-05-20 12:02:44",
+    "source": "CEO_Auditor",
+    "title": "Magnesium's Hidden Partners: The Ultimate Synergy Stack for 200% Absorption",
+    "url": "https://www.nutristacklab.com/2026/03/magnesiums-hidden-partners-ultimate.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-20",
+    "audited_at": "2026-05-20 12:04:25",
+    "source": "CEO_Auditor",
+    "title": "Glutathione Mastery: Chronobiological Protocol and Four Stacking Strategies",
+    "url": "https://www.nutristacklab.com/2026/03/glutathione-research-report-part-2.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-20",
+    "audited_at": "2026-05-20 12:06:16",
+    "source": "CEO_Auditor",
+    "title": "Morning vs Evening Eating: Does Timing Really Matter",
+    "url": "https://www.nutristacklab.com/2026/05/morning-vs-evening-eating-does-timing.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-20",
+    "audited_at": "2026-05-20 15:03:32",
+    "source": "CEO_Auditor",
+    "title": "The Collagen Code: How to Actually Get It Into Your Joints",
+    "url": "https://www.nutristacklab.com/2026/03/the-collagen-code-how-to-actually-get.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-20",
+    "audited_at": "2026-05-20 15:05:27",
+    "source": "CEO_Auditor",
+    "title": "The Nordic Joint Protocol: Move Better, Hurt Less, Last Longer",
+    "url": "https://www.nutristacklab.com/2026/03/the-nordic-joint-protocol-move-better.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-20",
+    "audited_at": "2026-05-20 15:07:11",
+    "source": "CEO_Auditor",
+    "title": "How I Use Melatonin Effectively: My Findings",
+    "url": "https://www.nutristacklab.com/2026/05/how-i-use-melatonin-effectively-my.html",
+    "scores": {
+      "seo": 10.0,
+      "humanity": 9.0,
+      "ai_footprint": 5.0,
+      "health_safety": 9.0,
+      "adsense": 10.0,
+      "total": 8.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-20 15:12",
+    "topic": "Weird Dreams After Taking Vitamin B6: Explained",
+    "title": "After vs Vitamin: My Choice After Testing",
+    "status": "success",
+    "score": 1.0,
+    "word_count": 839,
+    "archetype": "quick-answer",
+    "topic_type": "comparison",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": []
+  },
+  {
+    "date": "2026-05-20",
+    "audited_at": "2026-05-20 18:02:06",
+    "source": "CEO_Auditor",
+    "title": "The Nordic Winter Brain Protocol: 5-HTP, Vitamin D3, and Magnesium",
+    "url": "https://www.nutristacklab.com/2026/04/maximize-and-athletic-nordic-protocol.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-20",
+    "audited_at": "2026-05-20 18:03:30",
+    "source": "CEO_Auditor",
+    "title": "How I Use Berries Effectively: My Findings",
+    "url": "https://www.nutristacklab.com/2026/05/how-i-use-berries-effectively-my.html",
+    "scores": {
+      "seo": 9.5,
+      "humanity": 9.0,
+      "ai_footprint": 9.0,
+      "health_safety": 8.0,
+      "adsense": 9.5,
+      "total": 8.8
+    },
+    "status": "KEEP"
+  },
+  {
+    "date": "2026-05-21",
+    "audited_at": "2026-05-21 00:02:19",
+    "source": "CEO_Auditor",
+    "title": "How to Use Ashwagandha effectively: A Simple Guide",
+    "url": "https://www.nutristacklab.com/2026/05/how-to-use-ashwagandha-effectively.html",
+    "scores": {
+      "seo": 5.5,
+      "humanity": 8.0,
+      "ai_footprint": 4.5,
+      "health_safety": 7.5,
+      "adsense": 6.5,
+      "total": 5.9
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-21",
+    "audited_at": "2026-05-21 00:04:15",
+    "source": "CEO_Auditor",
+    "title": "Creatine vs Cognitive Fatigue: The ATP Buffering System",
+    "url": "https://www.nutristacklab.com/2026/04/creatine-vs-cognitive-fatigue-atp.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-21",
+    "audited_at": "2026-05-21 00:05:58",
+    "source": "CEO_Auditor",
+    "title": "The Sulfur Gap: Why Your Connective Tissue Is Losing Its Structural Integrity",
+    "url": "https://www.nutristacklab.com/2026/03/step-13-clinical-report-sulfur.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-21",
+    "audited_at": "2026-05-21 03:01:29",
+    "source": "CEO_Auditor",
+    "title": "A Simpler Way to Think About Ginger Timing",
+    "url": "https://www.nutristacklab.com/2026/05/a-simpler-way-to-think-about-ginger.html",
+    "scores": {
+      "seo": 7.5,
+      "humanity": 6.0,
+      "ai_footprint": 5.0,
+      "health_safety": 5.0,
+      "adsense": 6.0,
+      "total": 5.9
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-21",
+    "audited_at": "2026-05-21 03:03:22",
+    "source": "CEO_Auditor",
+    "title": "Alpha and Gpc: The Nordic Protocol",
+    "url": "https://www.nutristacklab.com/2026/05/alpha-and-gpc-nordic-protocol.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-21",
+    "audited_at": "2026-05-21 03:05:02",
+    "source": "CEO_Auditor",
+    "title": "L-Theanine and Caffeine: The Alpha Wave Brain Protocol",
+    "url": "https://www.nutristacklab.com/2026/04/l-theanine-and-caffeine-alpha-wave.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-21",
+    "audited_at": "2026-05-21 06:01:30",
+    "source": "CEO_Auditor",
+    "title": "The Nordic Winter Strategy: Why Vitamin D Absorption Needs Magnesium",
+    "url": "https://www.nutristacklab.com/2026/03/the-nordic-winter-strategy-why-vitamin.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-21",
+    "audited_at": "2026-05-21 06:03:06",
+    "source": "CEO_Auditor",
+    "title": "NMN vs Causing: My Choice After Testing",
+    "url": "https://www.nutristacklab.com/2026/05/nmn-vs-causing-my-choice-after-testing.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-21",
+    "audited_at": "2026-05-21 06:04:47",
+    "source": "CEO_Auditor",
+    "title": "The Nordic Bacopa Protocol: Think Faster, Stress Less, Sleep Deeper",
+    "url": "https://www.nutristacklab.com/2026/03/the-nordic-bacopa-protocol-think-faster.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-21",
+    "audited_at": "2026-05-21 09:02:40",
+    "source": "CEO_Auditor",
+    "title": "The Nordic L-Theanine Dosage Protocol: Timing and Stacks",
+    "url": "https://www.nutristacklab.com/2026/04/the-nordic-l-theanine-dosage-protocol.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-21",
+    "audited_at": "2026-05-21 09:04:25",
+    "source": "CEO_Auditor",
+    "title": "The Free Testosterone Switch: Why You Need Boron ",
+    "url": "https://www.nutristacklab.com/2026/04/the-free-testosterone-switch-why-you.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-21",
+    "audited_at": "2026-05-21 09:05:59",
+    "source": "CEO_Auditor",
+    "title": "After vs Vitamin: My Choice After Testing",
+    "url": "https://www.nutristacklab.com/2026/05/after-vs-vitamin-my-choice-after-testing.html",
+    "scores": {
+      "seo": 9.5,
+      "humanity": 10.0,
+      "ai_footprint": 9.5,
+      "health_safety": 9.5,
+      "adsense": 10.0,
+      "total": 9.7
+    },
+    "status": "KEEP"
+  },
+  {
+    "date": "2026-05-21 11:07",
+    "topic": "Elderberry Blocks Iron Absorption: The Science",
+    "title": "Why I Never Combine Elderberry and Blocks",
+    "status": "success",
+    "score": 1.0,
+    "word_count": 1438,
+    "archetype": "minimalist",
+    "topic_type": "antagonism",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": []
+  },
+  {
+    "date": "2026-05-21",
+    "audited_at": "2026-05-21 12:10:01",
+    "source": "CEO_Auditor",
+    "title": "The Mastery: Defending Your Gut Fortress Against the Three Biological Saboteurs",
+    "url": "https://www.nutristacklab.com/2026/03/step-33-mastery-art-of-siegedefending.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-21",
+    "audited_at": "2026-05-21 12:20:15",
+    "source": "CEO_Auditor",
+    "title": "The Probiotics Protocol: My Personal Findings",
+    "url": "https://www.nutristacklab.com/2026/05/the-probiotics-protocol-my-personal.html",
+    "scores": {
+      "seo": 7.5,
+      "humanity": 9.0,
+      "ai_footprint": 6.5,
+      "health_safety": 7.5,
+      "adsense": 8.5,
+      "total": 5.9
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-21",
+    "audited_at": "2026-05-21 12:25:55",
+    "source": "CEO_Auditor",
+    "title": "How I Use Phosphatidylserine Effectively: My Findings",
+    "url": "https://www.nutristacklab.com/2026/05/how-i-use-phosphatidylserine.html",
+    "scores": {
+      "seo": 8.5,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "KEEP"
+  },
+  {
+    "date": "2026-05-21",
+    "audited_at": "2026-05-21 15:10:32",
+    "source": "CEO_Auditor",
+    "title": "Vitamin D3 Magnesium Immune Defense",
+    "url": "https://www.nutristacklab.com/2026/04/vitamin-d3-magnesium-immune-defense.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-21",
+    "audited_at": "2026-05-21 15:20:19",
+    "source": "CEO_Auditor",
+    "title": "Alpha-GPC vs CDP Choline: The Ultimate Brain Fuel",
+    "url": "https://www.nutristacklab.com/2026/04/alpha-gpc-vs-cdp-choline-ultimate-brain.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-21 17:06",
+    "topic": "Iodine Side Effects: What the Research Shows",
+    "title": "Does Iodine Cause Side Effects What the Research Shows",
+    "status": "success",
+    "score": 1.0,
+    "word_count": 1328,
+    "archetype": "quick-answer",
+    "topic_type": "side-effects",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": []
+  },
+  {
+    "date": "2026-05-21",
+    "audited_at": "2026-05-21 18:04:59",
+    "source": "CEO_Auditor",
+    "title": "Zinc and Selenium Synergy: The Nordic Immune and Thyroid Defense Stack",
+    "url": "https://www.nutristacklab.com/2026/05/zinc-and-selenium-nordic-protocol.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-21",
+    "audited_at": "2026-05-21 18:09:58",
+    "source": "CEO_Auditor",
+    "title": "Vitamin D3 and the Nordic Winter: A Personal Protocol",
+    "url": "https://www.nutristacklab.com/2026/04/vitamin-and-d3-nordic-protocol.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-21",
+    "audited_at": "2026-05-21 18:13:54",
+    "source": "CEO_Auditor",
+    "title": "Collagen and Vitamin Synergy: The Nordic Stack",
+    "url": "https://www.nutristacklab.com/2026/05/collagen-and-vitamin-synergy-nordic.html",
+    "scores": {
+      "seo": null,
+      "humanity": null,
+      "ai_footprint": null,
+      "health_safety": null,
+      "adsense": null,
+      "total": 5.0
+    },
+    "status": "REWRITE"
+  }
+]

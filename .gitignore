@@ -1,3 +1,39 @@
+# ── 민감 정보 (절대 커밋 금지) ───────────────────────────
+.env
+token.json
+token.pickle
+morning_report_token.pickle
+client_secrets.json
+discord_webhook.json
+*.credentials.json
+telegram_config.json
+twitter_config.json
+pinterest_config.json
+gemini_config.json
+
+# ── 런타임 상태/체크포인트 ──────────────────────────────
+00_Raw/
+01_Completed/
+02_Checkpoints/
+05_Images/
+
+# ── 백업 파일 ────────────────────────────────────────────
+*.bak_*
+*.bak.*
+
+# ── Python ───────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+
+# ── 로그 ─────────────────────────────────────────────────
+*.log
+logs/
+
+# ── 감사 리포트 ───────────────────────────────────────────
+batch/audit_reports/
+
+# ── 기타 ─────────────────────────────────────────────────
 node_modules/
 out/
 *.vsix
@@ -5,5 +41,8 @@ out/
 preview.html
 .DS_Store
 releases/
-.env
-*.bak.*
+scratch/
+Blogger
+Blogger/
+*.gguf
+*.bin
