@@ -1,0 +1,62 @@
+[
+  {
+    "title": "The Berberine Mistake That Made Me Want to Quit",
+    "grade": "A",
+    "total": 9.0,
+    "passed": true,
+    "fixed": [
+      "D4",
+      "AI",
+      "C1"
+    ],
+    "rejects": []
+  },
+  {
+    "title": "Iron: How I Actually Fixed My Energy (After Months of Failin",
+    "grade": "A",
+    "total": 8.6,
+    "passed": false,
+    "fixed": [
+      "C1"
+    ],
+    "rejects": [
+      "D1 = 0 — PMID/연구링크 없음"
+    ]
+  },
+  {
+    "title": "Magnesium Complete Guide: Benefits, Types, and Best Dosage",
+    "grade": "B",
+    "total": 7.7,
+    "passed": false,
+    "fixed": [
+      "D4",
+      "A1",
+      "AI",
+      "AI",
+      "AI",
+      "C1",
+      "D3",
+      "E1"
+    ],
+    "rejects": [
+      "A1 < 5 — 제목 오염 (오염단어 포함)",
+      "D1 = 0 — PMID/연구링크 없음",
+      "D3 < 5 — 필수요소 누락 (누락: ['hook', 'takeaways'])"
+    ]
+  },
+  {
+    "title": "Vitamin C: What I Found After Months of Testing (Complete Gu",
+    "grade": "A",
+    "total": 8.6,
+    "passed": false,
+    "fixed": [
+      "D4",
+      "AI",
+      "E1"
+    ],
+    "rejects": [
+      "A1 < 5 — 제목 오염 (오염단어 포함)",
+      "C4 < 5 — AI 패턴 과다"
+    ]
+  }
+]

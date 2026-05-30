@@ -114,17 +114,7 @@ async def 호출(ctx, nickname, *, message):
     if not agent_file:
         await ctx.send(f"❓ **{nickname}**(이)라는 에이전트는 사령부에 없습니다, 마스터님!")
         return
-    from master_hq import PROMPT_DIR, ask_ai, HEAVY_MODEL
-    prompt_path = PROMPT_DIR / agent_file
-    if prompt_path.exists():
-        with open(prompt_path, 'r', encoding='utf-8') as f:
-            sys_prompt = f.read()
-    else:
-        sys_prompt = f"당신은 사령부의 {nickname} 에이전트입니다."
-    async with ctx.typing():
-        final_sys = sys_prompt + "\n\n[중요] 당신을 부른 사람은 사령부의 마스터입니다. 충성스럽고 전문적으로 답변하십시오."
-        response = ask_ai(message, final_sys, HEAVY_MODEL)
-    await ctx.send(f"🤖 **[{nickname} 에이전트 응답]**\n\n{response}")
+    await ctx.send(f"⚠️ `!호출` 기능은 현재 비활성화 상태입니다. Telegram `/hermes` 를 사용해주세요.")
 
 @bot.command()
 async def 보고(ctx, topic="마그네슘 부족"):
@@ -310,6 +300,163 @@ async def show_today(ctx):
     for post in today_posts[:5]:
         embed.add_field(name=f"✅ {post.get('title','')[:50]}", value=post.get("url",""), inline=False)
     await ctx.send(embed=embed)
+
+import subprocess
+import signal
+
+PIPELINE_DIR = Path(__file__).parent
+PY = r"C:\Users\66683\AppData\Local\Programs\Python\Python312\python.exe"
+
+PROCESSES = {
+    "morning_report":    {"script": "morning_report.py",                      "window": False},
+    "hernex_agent":      {"script": "hernex_agent.py",                        "window": False},
+    "hermes_bot":        {"script": "hermes_telegram_bot.py",                 "window": False},
+    "discord_bot":       {"script": "bot_start.py",                           "window": False},
+    "scheduler":         {"script": "daily_scheduler_v5.py",                  "window": True},
+    "orchestrator":      {"script": "00_NutriStack_Grand_Orchestrator_v5.py", "window": True},
+}
+
+
+def _get_running_pids() -> dict:
+    """현재 실행 중인 NutriStack 프로세스 PID 반환."""
+    result = {}
+    try:
+        import psutil
+        for proc in psutil.process_iter(['pid', 'cmdline']):
+            try:
+                cmdline = ' '.join(proc.info['cmdline'] or [])
+                for name, cfg in PROCESSES.items():
+                    if cfg["script"] in cmdline and name not in result:
+                        result[name] = proc.info['pid']
+            except (psutil.NoSuchProcess, psutil.AccessDenied):
+                pass
+    except Exception:
+        pass
+    return result
+
+
+def _kill_pid(pid: int):
+    try:
+        subprocess.call(["taskkill", "/F", "/PID", str(pid)],
+                        stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    except Exception:
+        pass
+
+
+def _start_process(name: str, cfg: dict):
+    script = str(PIPELINE_DIR / cfg["script"])
+    if name == "discord_bot":
+        return  # 자기 자신은 재시작 안 함
+    if cfg["window"]:
+        subprocess.Popen(
+            ["cmd", "/k", PY, script],
+            cwd=str(PIPELINE_DIR), creationflags=subprocess.CREATE_NEW_CONSOLE
+        )
+    else:
+        subprocess.Popen(
+            [PY, script], cwd=str(PIPELINE_DIR),
+            stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL
+        )
+
+
+@bot.command(name="명령어")
+async def show_commands(ctx):
+    embed = discord.Embed(title="📋 NutriStack 사령부 명령어 목록", color=0x9b59b6)
+    embed.add_field(name="📊 현황", value=(
+        "`!현황` — 전체 발행 현황\n"
+        "`!오늘` — 오늘 발행된 포스팅\n"
+        "`!대기` — 승인 대기 목록\n"
+        "`!status` — 프로세스 생존 확인"
+    ), inline=False)
+    embed.add_field(name="✅ 승인/폐기", value=(
+        "`!승인 [주제명]` — 포스팅 승인\n"
+        "`!폐기 [주제명]` — 포스팅 폐기"
+    ), inline=False)
+    embed.add_field(name="⚡ 수동 제어", value=(
+        "`!trigger [주제명]` — 포스팅 즉시 트리거\n"
+        "`!지시 [주제]` — 새 주제 직접 지시"
+    ), inline=False)
+    embed.add_field(name="🔄 재시작", value=(
+        "`!restart_all` — 전체 프로세스 재시작\n"
+        "`!restart scheduler` — 스케줄러만\n"
+        "`!restart orchestrator` — 오케스트레이터만\n"
+        "`!restart hernex_agent` — 자동수정 봇만\n"
+        "`!restart morning_report` — 아침보고 봇만"
+    ), inline=False)
+    embed.add_field(name="🤖 에이전트", value=(
+        "`!호출 [에이전트명] [질문]` — 에이전트 직접 호출\n"
+        "`!보고 [주제]` — 발행 보고 생성"
+    ), inline=False)
+    embed.set_footer(text="NutriStack Lab v5.0")
+    await ctx.send(embed=embed)
+
+
+@bot.command(name="status")
+async def show_proc_status(ctx):
+    pids = _get_running_pids()
+    embed = discord.Embed(title="🖥️ NutriStack 프로세스 상태", color=0x3498db)
+    for name, cfg in PROCESSES.items():
+        pid = pids.get(name)
+        icon = "🟢" if pid else "🔴"
+        val  = f"PID {pid}" if pid else "실행 안 됨"
+        embed.add_field(name=f"{icon} {name}", value=val, inline=True)
+    await ctx.send(embed=embed)
+
+
+@bot.command(name="restart_all")
+async def restart_all(ctx):
+    import asyncio
+    await ctx.send("🔄 전체 프로세스 재시작 중...")
+    pids = _get_running_pids()
+
+    for name, pid in pids.items():
+        if name != "discord_bot":
+            _kill_pid(pid)
+
+    await asyncio.sleep(5)  # 포트 해제 대기
+
+    for name, cfg in PROCESSES.items():
+        if name != "discord_bot":
+            _start_process(name, cfg)
+            await asyncio.sleep(1)
+
+    await ctx.send("✅ 재시작 완료! `!status`로 확인하세요.")
+
+
+@bot.command(name="restart")
+async def restart_one(ctx, name: str = ""):
+    if not name:
+        await ctx.send("❌ 사용법: `!restart [프로세스명]`\n가능한 이름: " + ", ".join(PROCESSES.keys()))
+        return
+    if name not in PROCESSES:
+        await ctx.send(f"❌ `{name}`은 없는 프로세스입니다.")
+        return
+    if name == "discord_bot":
+        await ctx.send("⚠️ 봇 자신은 재시작할 수 없습니다.")
+        return
+
+    import asyncio
+    pids = _get_running_pids()
+    if name in pids:
+        _kill_pid(pids[name])
+        await asyncio.sleep(2)
+
+    _start_process(name, PROCESSES[name])
+    await ctx.send(f"✅ `{name}` 재시작 완료!")
+
+
+@bot.command(name="trigger")
+async def trigger_post(ctx, *, topic: str = ""):
+    if not topic:
+        await ctx.send("❌ 사용법: `!trigger SAMe Complete Guide`")
+        return
+    raw_dir = PIPELINE_DIR / "00_Raw"
+    raw_dir.mkdir(exist_ok=True)
+    safe = "".join(c for c in topic if c.isalnum() or c in " _-").strip()
+    fp = raw_dir / f"{safe}.txt"
+    fp.write_text(f"마스터 직접 트리거: {topic}\n시각: {datetime.now()}", encoding="utf-8")
+    await ctx.send(f"⚡ `{topic}` 트리거 완료! 오케스트레이터가 곧 처리합니다.")
+
 
 # 2. 토큰 불러오기 및 실행
 def load_token():

@@ -1,1674 +1,5 @@
 [
   {
-    "date": "2026-05-15 15:05",
-    "topic": "Is Creatine Safe Long Term? The Real Data",
-    "title": "What Actually Changes Between Morning and Evening Intake",
-    "status": "rejected",
-    "score": 1.0,
-    "word_count": 2213,
-    "archetype": "science-heavy",
-    "topic_type": "recipe",
-    "nutrients": [
-      "creatine"
-    ],
-    "category": "COGNITIVE",
-    "issues": [
-      "REJECTED\n제목(Title)이 주제(Topic) 및 본문 내용과 심각하게 불일치합니다. 주제는 '크레아틴 장기 안전성'에 관한 것인데, 제목은 '아침과 저녁 섭취 시 변화'에 초점을 맞추고 있어 독자에게 잘못된 기대를 심어줍니다.\n[BACKTRACK_TO]: {TITLE}"
-    ]
-  },
-  {
-    "date": "2026-05-15 15:17",
-    "topic": "Is Creatine Safe Long Term? The Real Data",
-    "title": "The Is Protocol: My Personal Findings",
-    "status": "rejected",
-    "score": 1.0,
-    "word_count": 2662,
-    "archetype": "science-heavy",
-    "topic_type": "recipe",
-    "nutrients": [
-      "creatine"
-    ],
-    "category": "COGNITIVE",
-    "issues": [
-      "REJECTED\n제목이 주제와 일치하지 않습니다. 주제는 '크레아틴 장기 안전성'에 관한 것인데, 제목은 'The Is Protocol: My Personal Findings'로 크레아틴이나 안전성에 대한 언급이 전혀 없어 독자의 기대치를 충족시키지 못합니다.\n[BACKTRACK_TO]: {TITLE}"
-    ]
-  },
-  {
-    "date": "2026-05-15 15:24",
-    "topic": "Is Creatine Safe Long Term? The Real Data",
-    "title": "Is: Timing May Matter More Than You Think",
-    "status": "rejected",
-    "score": 1.0,
-    "word_count": 1609,
-    "archetype": "science-heavy",
-    "topic_type": "recipe",
-    "nutrients": [
-      "creatine"
-    ],
-    "category": "COGNITIVE",
-    "issues": [
-      "REJECTED\n주제(크레아틴 장기 안전성)와 제목(크레아틴 섭취 타이밍)이 일치하지 않아 독자에게 잘못된 정보를 제공할 위험이 있습니다. 제목은 반드시 본문의 주제를 정확하게 반영해야 합니다.\n[BACKTRACK_TO]: TITLE"
-    ]
-  },
-  {
-    "date": "2026-05-15 15:27",
-    "topic": "Is Creatine Safe Long Term? The Real Data",
-    "title": "The Is Protocol: My Personal Findings",
-    "status": "NEEDS_RE_AUDIT",
-    "score": 1.0,
-    "word_count": 1609,
-    "archetype": "science-heavy",
-    "topic_type": "recipe",
-    "nutrients": [
-      "creatine"
-    ],
-    "category": "COGNITIVE",
-    "issues": [],
-    "quality_score": 0.0
-  },
-  {
-    "date": "2026-05-15 19:51",
-    "topic": "Taking Vitamin D3 Before Bed: A Huge Mistake?",
-    "title": "Why Taking and Vitamin Work Better Together",
-    "status": "rejected",
-    "score": 1.0,
-    "word_count": 1999,
-    "archetype": "science-heavy",
-    "topic_type": "synergy",
-    "nutrients": [
-      "vitamin d",
-      "vitamin d3"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n제목이 주제와 일치하지 않습니다. 주제는 비타민 D3 복용 시간과 수면의 관계에 대한 구체적인 내용임에도 불구하고, 제목(\"Why Taking and Vitamin Work Better Together\")이 너무 일반적이고 모호하여 D3나 취침 시간이라는 핵심 내용을 전혀 반영하지 못했습니다.\n[BACKTRACK_TO]: TITLE"
-    ]
-  },
-  {
-    "date": "2026-05-15 19:53",
-    "topic": "Taking Vitamin D3 Before Bed: A Huge Mistake?",
-    "title": "The Taking and Vitamin Synergy Protocol",
-    "status": "rejected",
-    "score": 1.0,
-    "word_count": 1999,
-    "archetype": "science-heavy",
-    "topic_type": "synergy",
-    "nutrients": [
-      "vitamin d",
-      "vitamin d3"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n제목(Title)이 주제(Topic)와 일치하지 않습니다. 주제는 '취침 전 비타민 D3 복용의 오류'라는 특정 타이밍 문제를 다루고 있으나, 제목은 'The Taking and Vitamin Synergy Protocol'로 너무 일반적이며 독자에게 내용의 핵심을 정확히 전달하지 못하고 있습니다.\n[BACKTRACK_TO]: TITLE"
-    ]
-  },
-  {
-    "date": "2026-05-15 19:59",
-    "topic": "Taking Vitamin D3 Before Bed: A Huge Mistake?",
-    "title": "Why Taking and Vitamin Work Better Together",
-    "status": "rejected",
-    "score": 1.0,
-    "word_count": 1999,
-    "archetype": "science-heavy",
-    "topic_type": "synergy",
-    "nutrients": [
-      "vitamin d",
-      "vitamin d3"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n제목(Title)이 주제(Topic)와 일치하지 않습니다. 주제는 '취침 전 비타민 D3 복용의 적절성'에 관한 내용인데, 제목은 '비타민의 시너지 효과'에 초점을 맞추고 있어 독자의 기대와 내용의 핵심이 불일치합니다.\n[BACKTRACK_TO]: TITLE"
-    ]
-  },
-  {
-    "date": "2026-05-15 20:03",
-    "topic": "Taking Vitamin D3 Before Bed: A Huge Mistake?",
-    "title": "The Taking and Vitamin Synergy Protocol",
-    "status": "rejected",
-    "score": 1.0,
-    "word_count": 1999,
-    "archetype": "science-heavy",
-    "topic_type": "synergy",
-    "nutrients": [
-      "vitamin d",
-      "vitamin d3"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n제목(\"The Taking and Vitamin Synergy Protocol\")이 주제(\"Taking Vitamin D3 Before Bed: A Huge Mistake?\")를 정확하게 반영하지 못하고 지나치게 모호하여 주제-제목-내용 정렬 기준을 충족하지 못했습니다.\n[BACKTRACK_TO]: TITLE"
-    ]
-  },
-  {
-    "date": "2026-05-15 20:06",
-    "topic": "Taking Vitamin D3 Before Bed: A Huge Mistake?",
-    "title": "Why Taking and Vitamin Work Better Together",
-    "status": "rejected",
-    "score": 1.0,
-    "word_count": 1999,
-    "archetype": "science-heavy",
-    "topic_type": "synergy",
-    "nutrients": [
-      "vitamin d",
-      "vitamin d3"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n제목과 주제의 불일치(Topic-Title-Content Alignment)가 심각합니다. 주제는 '취침 전 비타민 D3 복용의 적절성'에 관한 것인데, 제목은 \"Why Taking and Vitamin Work Better Together\"로 매우 모호하며 비타민 D3나 취침 시간이라는 핵심 내용을 전혀 반영하지 못하고 있어 독자에게 잘못"
-    ]
-  },
-  {
-    "date": "2026-05-15 20:09",
-    "topic": "Taking Vitamin D3 Before Bed: A Huge Mistake?",
-    "title": "The Taking and Vitamin Synergy Protocol",
-    "status": "rejected",
-    "score": 1.0,
-    "word_count": 1999,
-    "archetype": "science-heavy",
-    "topic_type": "synergy",
-    "nutrients": [
-      "vitamin d",
-      "vitamin d3"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n제목이 주제와 일치하지 않습니다. 주제는 '취침 전 비타민 D3 복용의 문제점'에 대한 구체적인 내용인데, 제목(\"The Taking and Vitamin Synergy Protocol\")은 너무 모호하여 독자에게 잘못된 기대를 심어줍니다. 이는 주제-제목-내용 정렬(Topic-Title-Content Alignment) 원칙을 위반합니다."
-    ]
-  },
-  {
-    "date": "2026-05-15 20:14",
-    "topic": "Taking Vitamin D3 Before Bed: A Huge Mistake?",
-    "title": "The Taking and Vitamin Synergy Protocol",
-    "status": "rejected",
-    "score": 1.0,
-    "word_count": 1999,
-    "archetype": "science-heavy",
-    "topic_type": "synergy",
-    "nutrients": [
-      "vitamin d",
-      "vitamin d3"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n제목이 주제를 정확하게 반영하지 못했습니다. 주제는 비타민 D3 복용 시간과 관련된 오류에 관한 것인데, 제목(\"The Taking and Vitamin Synergy Protocol\")이 너무 모호하고 구체적인 내용을 약속하지 못하여 품질 게이트를 통과할 수 없습니다.\n[BACKTRACK_TO]: TITLE"
-    ]
-  },
-  {
-    "date": "2026-05-15 20:17",
-    "topic": "Taking Vitamin D3 Before Bed: A Huge Mistake?",
-    "title": "The Taking and Vitamin Synergy Protocol",
-    "status": "NEEDS_RE_AUDIT",
-    "score": 1.0,
-    "word_count": 1999,
-    "archetype": "science-heavy",
-    "topic_type": "synergy",
-    "nutrients": [
-      "vitamin d",
-      "vitamin d3"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [],
-    "quality_score": 0.0
-  },
-  {
-    "date": "2026-05-16 06:27",
-    "topic": "Best Food to Eat With Astaxanthin",
-    "title": "How to Use Best Effectively: A Essential Guide",
-    "status": "rejected",
-    "score": 0.875,
-    "word_count": 735,
-    "archetype": "listicle",
-    "topic_type": "recipe",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "REJECTED\n아티클의 단어 수가 최소 요구치인 1400단어에 크게 미달합니다. 또한, 제목(\"How to Use Best Effectively: A Essential Guide\")이 주제인 '아스타잔틴과 함께 먹기 좋은 음식'을 명확하게 반영하지 못하고 너무 모호하여 주제-제목-내용 정렬 기준을 충족하지 못했습니다.\n[BACKTRACK_TO]: TITL"
-    ]
-  },
-  {
-    "date": "2026-05-16 06:29",
-    "topic": "Best Food to Eat With Astaxanthin",
-    "title": "What Actually Changes Between Morning and Evening Intake",
-    "status": "rejected",
-    "score": 0.875,
-    "word_count": 735,
-    "archetype": "listicle",
-    "topic_type": "recipe",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "REJECTED\n제목(What Actually Changes Between Morning and Evening Intake)이 주제(Best Food to Eat With Astaxanthin)와 완전히 불일치하여 내용의 논리적 일관성과 독자 기대치 충족에 실패했습니다. 또한, 리스트클 아키타입에 요구되는 최소 단어 수(1400단어 이상)를 충족하지 못했습"
-    ]
-  },
-  {
-    "date": "2026-05-16 06:36",
-    "topic": "Best Food to Eat With Astaxanthin",
-    "title": "Should You Take Best in the Morning or Evening",
-    "status": "rejected",
-    "score": 1.0,
-    "word_count": 835,
-    "archetype": "nordic-anecdotal",
-    "topic_type": "recipe",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "REJECTED\n제목과 주제의 불일치(Topic-Title-Content Alignment)가 심각합니다. 주제는 '아스타잔틴과 함께 먹기 좋은 음식'이지만, 제목은 '아침에 먹어야 할까요 저녁에 먹어야 할까요'로, 내용의 핵심 주제와 완전히 다릅니다.\n[BACKTRACK_TO]: TITLE"
-    ]
-  },
-  {
-    "date": "2026-05-16 06:39",
-    "topic": "Best Food to Eat With Astaxanthin",
-    "title": "Morning vs Evening Best: Does Timing Really Matter",
-    "status": "rejected",
-    "score": 0.875,
-    "word_count": 835,
-    "archetype": "nordic-anecdotal",
-    "topic_type": "recipe",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "REJECTED\n제목과 주제의 불일치(Topic-Title Mismatch)가 심각합니다. 주제는 '아스타잔틴과 함께 먹기 좋은 음식'에 관한 것인데, 제목은 '아침 vs 저녁 타이밍'에 초점을 맞추고 있어 독자에게 잘못된 정보를 약속하고 있습니다. 이는 콘텐츠의 핵심 목표를 달성하지 못하는 치명적인 오류입니다.\n[BACKTRACK_TO]: TITLE"
-    ]
-  },
-  {
-    "date": "2026-05-16 06:43",
-    "topic": "Best Food to Eat With Astaxanthin",
-    "title": "Should You Take Best in the Morning or Evening",
-    "status": "rejected",
-    "score": 0.875,
-    "word_count": 835,
-    "archetype": "nordic-anecdotal",
-    "topic_type": "recipe",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "REJECTED\n제목(\"Should You Take Best in the Morning or Evening\")이 기사의 핵심 주제(\"Best Food to Eat With Astaxanthin\")와 일치하지 않습니다. 제목은 복용 시간(Timing)에 대한 내용을 약속하지만, 본문은 영양소 조합(Food Pairing)에 초점을 맞추고 있어 주제-제목-내용"
-    ]
-  },
-  {
-    "date": "2026-05-16 06:46",
-    "topic": "Best Food to Eat With Astaxanthin",
-    "title": "Should You Take Best in the Morning or Evening",
-    "status": "rejected",
-    "score": 0.875,
-    "word_count": 835,
-    "archetype": "nordic-anecdotal",
-    "topic_type": "recipe",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "REJECTED\n제목(Title)이 주제(Topic)와 일치하지 않습니다. 주제는 '아스타잔틴과 함께 먹기 좋은 음식'이지만, 제목은 '아침에 먹을지 저녁에 먹을지'에 초점을 맞추고 있어 독자에게 잘못된 기대를 심어줍니다.\n[BACKTRACK_TO]: TITLE"
-    ]
-  },
-  {
-    "date": "2026-05-16 06:49",
-    "topic": "Best Food to Eat With Astaxanthin",
-    "title": "What Actually Changes Between Morning and Evening Intake",
-    "status": "rejected",
-    "score": 1.0,
-    "word_count": 835,
-    "archetype": "nordic-anecdotal",
-    "topic_type": "recipe",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "REJECTED\n주제(Best Food to Eat With Astaxanthin)와 제목(What Actually Changes Between Morning and Evening Intake)이 일치하지 않습니다. 제목이 '섭취 시간'에만 초점을 맞추고 있어, 독자가 기대하는 '최적의 음식 조합'이라는 주제의 핵심 내용을 반영하지 못하고 있습니다.\n[BA"
-    ]
-  },
-  {
-    "date": "2026-05-16 06:51",
-    "topic": "Best Food to Eat With Astaxanthin",
-    "title": "Best: Timing May Matter More Than You Think",
-    "status": "NEEDS_RE_AUDIT",
-    "score": 1.0,
-    "word_count": 835,
-    "archetype": "nordic-anecdotal",
-    "topic_type": "recipe",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [],
-    "quality_score": 0.0
-  },
-  {
-    "date": "2026-05-16 11:10",
-    "topic": "Astaxanthin and Olive Oil: The Nordic Bioavailability Protocol",
-    "title": "How I Use Astaxanthin Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.9090909090909091,
-    "word_count": 1359,
-    "archetype": "science-heavy",
-    "topic_type": "protocol",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- AI 지문 오염 패턴인 'complementaryally'가 본문 초반부에 발견되었습니다.\n- 해당 단어는 AI가 자주 사용하는 클리셰이며, 즉시 반려 사유에 해당합니다."
-    ]
-  },
-  {
-    "date": "2026-05-16 11:23",
-    "topic": "Astaxanthin and Olive Oil: The Nordic Bioavailability Protocol",
-    "title": "How I Use Astaxanthin Effectively: My Findings",
-    "status": "NEEDS_RE_AUDIT",
-    "score": 0.9090909090909091,
-    "word_count": 1701,
-    "archetype": "science-heavy",
-    "topic_type": "protocol",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "AI_Footprint"
-    ],
-    "quality_score": 0.0
-  },
-  {
-    "date": "2026-05-16 11:25",
-    "topic": "Astaxanthin and Olive Oil: The Nordic Bioavailability Protocol",
-    "title": "How I Use Astaxanthin Effectively: My Findings",
-    "status": "NEEDS_RE_AUDIT",
-    "score": 0.9090909090909091,
-    "word_count": 1686,
-    "archetype": "science-heavy",
-    "topic_type": "protocol",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "AI_Footprint"
-    ],
-    "quality_score": 0.0
-  },
-  {
-    "date": "2026-05-16 11:52",
-    "topic": "﻿TOPIC: Lutein Discovery",
-    "title": "Why I Pair TOPIC With Specific Foods",
-    "status": "rejected",
-    "score": 0.8181818181818182,
-    "word_count": 1075,
-    "archetype": "deep-protocol",
-    "topic_type": "food-combo",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 해당 아티클은 'deep-protocol' (science-heavy) 아키타입으로 분류되었으나, 필수 최소 단어 수(2000단어 이상)를 충족하지 못했습니다. (1761단어)\n- 아키타입의 깊이와 권위를 유지하기 위해 분량 보강이 필요합니다."
-    ]
-  },
-  {
-    "date": "2026-05-16 12:00",
-    "topic": "﻿TOPIC: Lutein Discovery",
-    "title": "Why I Pair TOPIC With Specific Foods",
-    "status": "rejected",
-    "score": 0.8181818181818182,
-    "word_count": 1026,
-    "archetype": "science-heavy",
-    "topic_type": "food-combo",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 과학 심화(science-heavy) 아키타입에 필요한 최소 단어 수(2000단어 이상)를 충족하지 못했습니다 (1711단어).\n- 필수적인 5단계 개인 경험 진행 구조(1. 실패/좌절 -> 2. 작동 원리 발견 -> 3. 루틴 -> 4. 결과 -> 5. 주의사항)를 따르지 않고, 일반적인"
-    ]
-  },
-  {
-    "date": "2026-05-16 12:02",
-    "topic": "﻿TOPIC: Lutein Discovery",
-    "title": "Why I Pair TOPIC With Specific Foods",
-    "status": "rejected",
-    "score": 0.9090909090909091,
-    "word_count": 582,
-    "archetype": "journal-tone",
-    "topic_type": "synergy",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 아티클의 아키타입(journal-tone/science-heavy)에 필요한 최소 단어 수(2000단어 이상)에 미달함 (현재 1250단어).\n- 필수적인 의료 면책 조항(Medical Disclaimer)이 누락됨."
-    ]
-  },
-  {
-    "date": "2026-05-16 12:06",
-    "topic": "﻿TOPIC: Lutein Discovery",
-    "title": "Why I Pair TOPIC With Specific Foods",
-    "status": "rejected",
-    "score": 0.9090909090909091,
-    "word_count": 817,
-    "archetype": "journal-tone",
-    "topic_type": "deficiency",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 아키타입이 'journal-tone' (과학 중심/딥 프로토콜)임에도 불구하고 요구되는 최소 단어 수(2000단어 이상)에 크게 미달함 (1470단어).\n- 필수 항목인 의료 면책 조항(Medical Disclaimer)이 누락됨."
-    ]
-  },
-  {
-    "date": "2026-05-16 12:09",
-    "topic": "﻿TOPIC: Lutein Discovery",
-    "title": "Why I Pair TOPIC With Specific Foods",
-    "status": "rejected",
-    "score": 0.9090909090909091,
-    "word_count": 850,
-    "archetype": "minimalist",
-    "topic_type": "recipe",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 아티클의 아키타입이 'minimalist' (짧은 실용적 글)이며, 이 경우 최소 1200단어 이상이 요구되나 현재 단어 수가 1100단어로 기준에 미달합니다."
-    ]
-  },
-  {
-    "date": "2026-05-16 12:15",
-    "topic": "﻿TOPIC: Lutein Discovery",
-    "title": "Why I Pair TOPIC With Specific Foods",
-    "status": "rejected",
-    "score": 1.0,
-    "word_count": 1260,
-    "archetype": "science-heavy",
-    "topic_type": "side-effects",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 기사 구조가 필수적인 5단계 진행(개인적 실패/좌절 -> 단순한 발견 -> 루틴/실행 방법 -> 변화된 결과 -> 주의사항)을 따르지 않고, 도입부와 역사적 사실 나열로만 구성되어 있습니다.\n- '과학 중심(science-heavy)' 아티클임에도 불구하고, 전반적인 톤이 너무 학술적이고 "
-    ]
-  },
-  {
-    "date": "2026-05-16 12:17",
-    "topic": "﻿TOPIC: Lutein Discovery",
-    "title": "Why I Pair TOPIC With Specific Foods",
-    "status": "rejected",
-    "score": 0.8181818181818182,
-    "word_count": 690,
-    "archetype": "minimalist",
-    "topic_type": "antagonism",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 최소 단어 수 미달. 'Minimalist' 아키타입은 1200단어 이상을 요구하나, 현재 948단어에 불과함.\n- 내용이 너무 짧아 섹션별 깊이가 부족하며, 작가가 목표 분량을 채우지 못했음."
-    ]
-  },
-  {
-    "date": "2026-05-16 12:23",
-    "topic": "﻿TOPIC: Lutein Discovery",
-    "title": "Why I Pair TOPIC With Specific Foods",
-    "status": "rejected",
-    "score": 1.0,
-    "word_count": 779,
-    "archetype": "minimalist",
-    "topic_type": "protocol",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 기사 섹션 진행 순서가 필수적인 내러티브 흐름을 따르지 않음. (Step 3 위반)\n- 기사는 '실패/좌절' (Section 1)에서 '결과' (Section 4)로 바로 점프하고 있으며, '단순한 발견' (Section 2)과 '루틴' (Section 3) 섹션이 누락되어 독자가 정보를 "
-    ]
-  },
-  {
-    "date": "2026-05-16 12:27",
-    "topic": "﻿TOPIC: Lutein Discovery",
-    "title": "Why I Pair TOPIC With Specific Foods",
-    "status": "NEEDS_RE_AUDIT",
-    "score": 1.0,
-    "word_count": 872,
-    "archetype": "quick-answer",
-    "topic_type": "synergy",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [],
-    "quality_score": 0.0
-  },
-  {
-    "date": "2026-05-16 12:31",
-    "topic": "﻿TOPIC: Lutein Discovery",
-    "title": "Why I Pair TOPIC With Specific Foods",
-    "status": "rejected",
-    "score": 0.8181818181818182,
-    "word_count": 809,
-    "archetype": "journal-tone",
-    "topic_type": "timing",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 아키타입이 'journal-tone' (과학 중심/심층 프로토콜)으로 지정되었으나, 요구되는 최소 단어 수(2000단어)에 크게 미달(1378단어)하여 깊이가 부족함.\n- 'journal-tone' 아키타입에 적합한 깊이와 권위를 갖추지 못하고 내용이 너무 얕음."
-    ]
-  },
-  {
-    "date": "2026-05-16 12:54",
-    "topic": "﻿TOPIC: Lutein Discovery",
-    "title": "How I Use TOPIC Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.9090909090909091,
-    "word_count": 1080,
-    "archetype": "journal-tone",
-    "topic_type": "synergy",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 지정된 'journal-tone' (과학 심층 분석) 아키타입에 따라 최소 2000단어 이상이 요구되나, 현재 단어 수가 1652단어로 기준에 미달함. 깊이 있는 과학적 논의를 위해 분량을 보강해야 함."
-    ]
-  },
-  {
-    "date": "2026-05-16 13:00",
-    "topic": "﻿TOPIC: Lutein and Egg Yolks: The Bioavailability Hack",
-    "title": "How I Use TOPIC Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.9090909090909091,
-    "word_count": 756,
-    "archetype": "quick-answer",
-    "topic_type": "synergy",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 작성된 내용이 'Erik Lindström'의 페르소나(대화체, 약간 거친, 인간적인 톤)를 충분히 반영하지 못하고, 지나치게 일반적이거나 학술적인 요약본처럼 느껴집니다.\n- 제목(\"How I Use TOPIC Effectively: My Findings\")이 너무 일반적이고 AI가 생성한"
-    ]
-  },
-  {
-    "date": "2026-05-16 13:03",
-    "topic": "﻿TOPIC: Lutein Discovery",
-    "title": "How I Use TOPIC Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.9090909090909091,
-    "word_count": 995,
-    "archetype": "nordic-anecdotal",
-    "topic_type": "antagonism",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 콘텐츠의 전반적인 어조가 너무 학술적이고 임상적입니다. 'Nordic-anecdotal' 아키타입에 맞게 에릭 린드스트롬의 대화체적이고 인간적인 페르소나(conversational, slightly rugged, and human)를 반영하지 못하고 있습니다. 특히 'Key Takeaway"
-    ]
-  },
-  {
-    "date": "2026-05-16 13:10",
-    "topic": "﻿TOPIC: Lutein Discovery",
-    "title": "How I Use TOPIC Effectively: My Findings",
-    "status": "rejected",
-    "score": 1.0,
-    "word_count": 804,
-    "archetype": "minimalist",
-    "topic_type": "synergy",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 필수적인 의료 면책 조항(Medical Disclaimer)이 콘텐츠에 포함되어 있지 않습니다. (법적 필수 요건)"
-    ]
-  },
-  {
-    "date": "2026-05-16 13:18",
-    "topic": "﻿TOPIC: Lutein Discovery",
-    "title": "How I Use TOPIC Effectively: My Findings",
-    "status": "NEEDS_RE_AUDIT",
-    "score": 1.0,
-    "word_count": 1288,
-    "archetype": "science-heavy",
-    "topic_type": "side-effects",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [],
-    "quality_score": 0.0
-  },
-  {
-    "date": "2026-05-16 14:03",
-    "topic": "﻿TOPIC: Lutein Discovery",
-    "title": "How I Use TOPIC Effectively: My Findings",
-    "status": "rejected",
-    "score": 1.0,
-    "word_count": 1220,
-    "archetype": "nordic-anecdotal",
-    "topic_type": "protocol",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 주제가 '프로토콜' 및 '과학적 발견'에 해당하여 'science-heavy/deep-protocol' 아키타입으로 분류되나, 요구되는 최소 단어 수(2000단어 이상)에 미달함 (1909단어).\n- 제목이 \"How I Use TOPIC Effectively: My Findings\"와 같이"
-    ]
-  },
-  {
-    "date": "2026-05-16 14:11",
-    "topic": "﻿TOPIC: Lutein Discovery",
-    "title": "How I Use TOPIC Effectively: My Findings",
-    "status": "NEEDS_RE_AUDIT",
-    "score": 1.0,
-    "word_count": 1396,
-    "archetype": "nordic-anecdotal",
-    "topic_type": "recipe",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [],
-    "quality_score": 0.0
-  },
-  {
-    "date": "2026-05-16 15:36",
-    "topic": "Krill Oil vs Fish Oil: Omega 3 Bioavailability",
-    "title": "Krill vs Oil: My Choice After Testing",
-    "status": "rejected",
-    "score": 1.0,
-    "word_count": 1089,
-    "archetype": "journal-tone",
-    "topic_type": "comparison",
-    "nutrients": [
-      "omega"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 기사 아키타입이 'journal-tone' (과학 중심/심층 프로토콜)으로 지정되었으나, 해당 아키타입에 필요한 최소 단어 수(2000단어 이상)를 충족하지 못했습니다. 현재 단어 수는 1541단어입니다."
-    ]
-  },
-  {
-    "date": "2026-05-16 15:47",
-    "topic": "Krill Oil vs Fish Oil: Omega 3 Bioavailability",
-    "title": "Krill vs Oil: My Choice After Testing",
-    "status": "rejected",
-    "score": 0.8181818181818182,
-    "word_count": 1090,
-    "archetype": "journal-tone",
-    "topic_type": "comparison",
-    "nutrients": [
-      "omega"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 아티클의 톤(journal-tone)이 과학적 심층 분석(science-heavy)에 해당하므로, 필수 요구 분량인 2000단어 미만(1403단어)으로 작성되어 깊이와 권위를 유지하지 못함 (규칙 14 위반)."
-    ]
-  },
-  {
-    "date": "2026-05-16 16:19",
-    "topic": "Magnesium vs Ashwagandha for Sleep: What Actually Worked",
-    "title": "Magnesium vs Ashwagandha: My Choice After Testing",
-    "status": "rejected",
-    "score": 0.9090909090909091,
-    "word_count": 724,
-    "archetype": "quick-answer",
-    "topic_type": "comparison",
-    "nutrients": [
-      "magnesium",
-      "ashwagandha"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 콘텐츠의 톤이 너무 학술적이고 임상적입니다. 'AI 지성'이 흔히 사용하는 객관적 요약 방식이며, 요청된 '에릭 린드스트룀' 스타일(대화체, 약간 거칠고 인간적인 경험담)의 페르소나를 충족하지 못합니다. 개인적인 실패와 발견을 중심으로 서술해야 합니다."
-    ]
-  },
-  {
-    "date": "2026-05-16 17:03",
-    "topic": "Omega 3 vs Vitamin D3: Which One Actually Helped My Winter Fatigue",
-    "title": "Omega vs Vitamin: My Choice After Testing",
-    "status": "rejected",
-    "score": 1.0,
-    "word_count": 908,
-    "archetype": "journal-tone",
-    "topic_type": "comparison",
-    "nutrients": [
-      "vitamin d",
-      "vitamin d3",
-      "omega"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 필수적인 의료 면책 조항(Medical Disclaimer)이 누락되었습니다. 이는 발행을 위한 비협상적인 법적 요구사항입니다."
-    ]
-  },
-  {
-    "date": "2026-05-16 17:41",
-    "topic": "Common Omega 3 Mistakes You're Making",
-    "title": "When I Take Common: Morning vs Evening Results",
-    "status": "rejected",
-    "score": 0.9090909090909091,
-    "word_count": 823,
-    "archetype": "quick-answer",
-    "topic_type": "timing",
-    "nutrients": [
-      "omega"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 콘텐츠의 전반적인 톤이 지나치게 학술적이고 일반적이며, 요구되는 '에릭 린드스트롬' 스타일의 대화체적이고 인간적인 북유럽 페르소나(conversational, slightly rugged, and human)가 부족함."
-    ]
-  },
-  {
-    "date": "2026-05-16 18:01",
-    "topic": "Common Omega 3 Mistakes You're Making",
-    "title": "When I Take Common: Morning vs Evening Results",
-    "status": "NEEDS_RE_AUDIT",
-    "score": 1.0,
-    "word_count": 1321,
-    "archetype": "science-heavy",
-    "topic_type": "synergy",
-    "nutrients": [
-      "omega"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [],
-    "quality_score": 0.0
-  },
-  {
-    "date": "2026-05-16 18:19",
-    "topic": "L Theanine and Coffee: The Morning Timing Experiment",
-    "title": "When I Take Theanine: Morning vs Evening Results",
-    "status": "rejected",
-    "score": 0.9090909090909091,
-    "word_count": 944,
-    "archetype": "minimalist",
-    "topic_type": "timing",
-    "nutrients": [],
-    "category": "COGNITIVE",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 콘텐츠의 전반적인 톤이 'Erik Lindström의 북유럽적 페르소나(대화체적이고, 약간 거칠며, 인간적인)' 기준에 미치지 못하고 지나치게 학술적이거나 임상적인 느낌이 강함. 개인적인 실험 기록의 느낌이 부족함."
-    ]
-  },
-  {
-    "date": "2026-05-16 18:46",
-    "topic": "Magnesium and Zinc: Why This Nighttime Stack Felt Different",
-    "title": "How I Use Magnesium Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.9090909090909091,
-    "word_count": 877,
-    "archetype": "journal-tone",
-    "topic_type": "synergy",
-    "nutrients": [
-      "magnesium",
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 이 글은 8개의 PMID를 포함하고 있어 과학적 깊이가 요구되는 'deep-protocol' 아키타입으로 분류됩니다. 이 경우, 최소 2000단어 이상의 분량이 필요하나, 현재 단어 수(1604단어)가 기준에 미달합니다 (Rule 14).\n- 또한, 'PersonaCheck' 이슈가 보고되"
-    ]
-  },
-  {
-    "date": "2026-05-16 18:50",
-    "topic": "Magnesium and Zinc: Why This Nighttime Stack Felt Different",
-    "title": "How I Use Magnesium Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.9090909090909091,
-    "word_count": 1331,
-    "archetype": "nordic-anecdotal",
-    "topic_type": "synergy",
-    "nutrients": [
-      "magnesium",
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 콘텐츠의 전반적인 톤이 에릭 린드스트롬의 '북유럽식, 대화체적, 약간 거친 인간적인' 페르소나를 반영하지 못하고, 너무 깔끔하고 학술적인(clinical) 느낌이 강함. (Lesson 7 위반)\n- 필수적인 '의료 면책 조항(Medical Disclaimer)'이 누락되어 있음. (Less"
-    ]
-  },
-  {
-    "date": "2026-05-16 19:45",
-    "topic": "The Synergy of Magnesium and Vitamin B6 for Cognitive Support",
-    "title": "Magnesium vs Vitamin: My Choice After Testing",
-    "status": "rejected",
-    "score": 0.9090909090909091,
-    "word_count": 824,
-    "archetype": "minimalist",
-    "topic_type": "comparison",
-    "nutrients": [
-      "magnesium"
-    ],
-    "category": "COGNITIVE",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 최소주의(minimalist) 아키타입의 요구 조건인 1200단어 이상에 미달함 (현재 1146단어)."
-    ]
-  },
-  {
-    "date": "2026-05-16 19:50",
-    "topic": "The Synergy of Magnesium and Vitamin B6 for Cognitive Support",
-    "title": "Magnesium vs Vitamin: My Choice After Testing",
-    "status": "rejected",
-    "score": 0.9090909090909091,
-    "word_count": 826,
-    "archetype": "minimalist",
-    "topic_type": "comparison",
-    "nutrients": [
-      "magnesium"
-    ],
-    "category": "COGNITIVE",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 필수적인 'Medical Disclaimer'가 누락되었습니다. (Rule 13)\n- 콘텐츠가 'minimalist' 아키타입을 따르고 있으나, 법적 고지 사항이 빠져 출판 불가합니다."
-    ]
-  },
-  {
-    "date": "2026-05-16 19:55",
-    "topic": "The Synergy of Magnesium and Vitamin B6 for Cognitive Support",
-    "title": "Magnesium vs Vitamin: My Choice After Testing",
-    "status": "rejected",
-    "score": 1.0,
-    "word_count": 928,
-    "archetype": "journal-tone",
-    "topic_type": "comparison",
-    "nutrients": [
-      "magnesium"
-    ],
-    "category": "COGNITIVE",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 아티클의 아키타입이 'journal-tone' (과학 심층 분석)으로 지정되었으나, 요구되는 최소 단어 수(2000단어 이상)에 미달하는 1671단어입니다.\n- 필수 항목인 의료 면책 조항(Medical Disclaimer)이 누락되었습니다."
-    ]
-  },
-  {
-    "date": "2026-05-16 20:20",
-    "topic": "Common Zinc Supplementation Mistakes to Avoid and Optimal Timing",
-    "title": "Why I Never Combine Common and Zinc",
-    "status": "rejected",
-    "score": 0.9090909090909091,
-    "word_count": 715,
-    "archetype": "quick-answer",
-    "topic_type": "antagonism",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 필수적인 'Medical Disclaimer'가 누락되었습니다. (Rule 13 위반)\n- Quick-answer 아키타입이지만, 내용이 Key Takeaways 목록으로만 구성되어 있어 충분한 깊이와 인간적인 스토리텔링(Erik Lindström의 페르소나)이 부족합니다. (Rule 7 "
-    ]
-  },
-  {
-    "date": "2026-05-16 20:20",
-    "topic": "Common Zinc Supplementation Mistakes to Avoid and Optimal Timing",
-    "title": "Why I Never Combine Common and Zinc",
-    "status": "rejected",
-    "score": 0.9090909090909091,
-    "word_count": 877,
-    "archetype": "nordic-anecdotal",
-    "topic_type": "antagonism",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 아티클 아키타입(minimalist/quick-answer)에 따른 최소 단어 수(1400자 이상)를 충족하지 못했습니다. 현재 단어 수는 1254자입니다."
-    ]
-  },
-  {
-    "date": "2026-05-16 20:35",
-    "topic": "Common Zinc Supplementation Mistakes to Avoid and Optimal Timing",
-    "title": "Why I Never Combine Common and Zinc",
-    "status": "rejected",
-    "score": 0.9090909090909091,
-    "word_count": 1113,
-    "archetype": "science-heavy",
-    "topic_type": "antagonism",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 과학 중심(science-heavy) 아키타입의 최소 단어 수(2000단어 이상)를 충족하지 못했습니다. 현재 단어 수는 1812단어입니다. (Critical Lesson 14 위반)"
-    ]
-  },
-  {
-    "date": "2026-05-16 20:39",
-    "topic": "Common Zinc Supplementation Mistakes to Avoid and Optimal Timing",
-    "title": "Why I Never Combine Common and Zinc",
-    "status": "rejected",
-    "score": 1.0,
-    "word_count": 704,
-    "archetype": "quick-answer",
-    "topic_type": "antagonism",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 필수적인 의료 면책 조항(Medical Disclaimer)이 누락되었습니다. (규칙 13 위반)"
-    ]
-  },
-  {
-    "date": "2026-05-16 21:12",
-    "topic": "Common Zinc mistakes and timing",
-    "title": "When I Take Zinc: Morning vs Evening Results",
-    "status": "rejected",
-    "score": 0.8181818181818182,
-    "word_count": 960,
-    "archetype": "journal-tone",
-    "topic_type": "timing",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 아티클의 목표 아키타입(Minimalist/Quick-answer/Short-practical)에 따른 최소 단어 수(1500자 이상)를 충족하지 못했습니다. 현재 단어 수는 1331자입니다."
-    ]
-  },
-  {
-    "date": "2026-05-16 21:23",
-    "topic": "Common Zinc mistakes and timing",
-    "title": "When I Take Zinc: Morning vs Evening Results",
-    "status": "rejected",
-    "score": 0.9090909090909091,
-    "word_count": 910,
-    "archetype": "journal-tone",
-    "topic_type": "timing",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 지정된 아키타입(minimalist/quick-answer/short-practical)에 따라 요구되는 최소 단어 수(1500자 이상)를 충족하지 못했습니다. 현재 단어 수는 1359자입니다."
-    ]
-  },
-  {
-    "date": "2026-05-16 21:28",
-    "topic": "Common Zinc mistakes and timing",
-    "title": "When I Take Zinc: Morning vs Evening Results",
-    "status": "rejected",
-    "score": 0.7272727272727273,
-    "word_count": 832,
-    "archetype": "minimalist",
-    "topic_type": "timing",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n[BACKTRACK_TO]: WRITER\n사유:\n- 최소 기사 유형(minimalist)의 요구 단어 수(1200단어 이상)에 미달합니다. 현재 1120단어입니다.\n- 기사 구조상 필수적인 5단계 진행(Section 3: The Routine, Section 5: The Caution)이 충분히 상세하게 전개되지 않아 내용이 빈약합니다."
-    ]
-  },
-  {
-    "date": "2026-05-16 22:06",
-    "topic": "Why My Zinc Routine Was Failing: The Truth About Timing",
-    "title": "When I Take Zinc: Morning vs Evening Results",
-    "status": "rejected",
-    "score": 0.9166666666666666,
-    "word_count": 640,
-    "archetype": "quick-answer",
-    "topic_type": "timing",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: AI_Footprint"
-    ]
-  },
-  {
-    "date": "2026-05-16 22:10",
-    "topic": "Why My Zinc Routine Was Failing: The Truth About Timing",
-    "title": "When I Take Zinc: Morning vs Evening Results",
-    "status": "rejected",
-    "score": 0.8333333333333334,
-    "word_count": 1256,
-    "archetype": "science-heavy",
-    "topic_type": "timing",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: 단어수_2000+, AI_Footprint"
-    ]
-  },
-  {
-    "date": "2026-05-16 22:42",
-    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
-    "title": "How I Use Stopped Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.75,
-    "word_count": 367,
-    "archetype": "minimalist",
-    "topic_type": "synergy",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED: INCOMPLETE CONTENT\n\nThe article currently reads as an outline or a brief abstract, not a complete, publishable piece. While the tone is appropriate—personal, reflective, and minimalist—the c"
-    ]
-  },
-  {
-    "date": "2026-05-16 22:43",
-    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
-    "title": "How I Use Stopped Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.8333333333333334,
-    "word_count": 302,
-    "archetype": "minimalist",
-    "topic_type": "synergy",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n\nReasoning:\n\nThe article fails to meet the minimum word count requirement for a \"Minimalist\" format. While the tone and structure are appropriate for the archetype, the current length is insu"
-    ]
-  },
-  {
-    "date": "2026-05-16 22:43",
-    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
-    "title": "How I Use Stopped Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.75,
-    "word_count": 1290,
-    "archetype": "science-heavy",
-    "topic_type": "synergy",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n\nReasoning:\n\nThe provided content is insufficient in length and depth to qualify as a \"science-heavy\" article. While the premise is clear, the current text lacks the necessary scientific elab"
-    ]
-  },
-  {
-    "date": "2026-05-16 22:53",
-    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
-    "title": "How I Use Stopped Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.75,
-    "word_count": 267,
-    "archetype": "quick-answer",
-    "topic_type": "synergy",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "The content is rejected because it does not meet the minimum word count requirement. The provided snippet is too short to be published."
-    ]
-  },
-  {
-    "date": "2026-05-16 22:53",
-    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
-    "title": "How I Use Stopped Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.8333333333333334,
-    "word_count": 654,
-    "archetype": "minimalist",
-    "topic_type": "synergy",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: 단어수_1200+, Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-16 22:56",
-    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
-    "title": "How I Use Stopped Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.8333333333333334,
-    "word_count": 1220,
-    "archetype": "comparison",
-    "topic_type": "synergy",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: AI_Footprint, Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-16 23:17",
-    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
-    "title": "How I Use Stopped Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.8333333333333334,
-    "word_count": 396,
-    "archetype": "minimalist",
-    "topic_type": "synergy",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: 단어수_1200+, Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-16 23:22",
-    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
-    "title": "How I Use Stopped Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.8333333333333334,
-    "word_count": 243,
-    "archetype": "quick-answer",
-    "topic_type": "synergy",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: 단어수_1000+, Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-16 23:23",
-    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
-    "title": "How I Use Stopped Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.8333333333333334,
-    "word_count": 243,
-    "archetype": "quick-answer",
-    "topic_type": "synergy",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: 단어수_1000+, Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-16 23:27",
-    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
-    "title": "How I Use Stopped Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.75,
-    "word_count": 472,
-    "archetype": "journal-tone",
-    "topic_type": "synergy",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: 단어수_1500+, AI_Footprint, Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-16 23:27",
-    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
-    "title": "How I Use Stopped Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.8333333333333334,
-    "word_count": 1157,
-    "archetype": "science-heavy",
-    "topic_type": "synergy",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "The submission is Rejected due to insufficient length and incompleteness.\n\nWhile the structure and initial tone are promising, the provided text is a highly incomplete draft and falls drastically shor"
-    ]
-  },
-  {
-    "date": "2026-05-16 23:31",
-    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
-    "title": "How I Use Stopped Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.8333333333333334,
-    "word_count": 484,
-    "archetype": "quick-answer",
-    "topic_type": "synergy",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: 단어수_1000+, Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-16 23:32",
-    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
-    "title": "How I Use Stopped Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.8333333333333334,
-    "word_count": 461,
-    "archetype": "minimalist",
-    "topic_type": "synergy",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: 단어수_1200+, Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-16 23:36",
-    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
-    "title": "How I Use Stopped Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.8333333333333334,
-    "word_count": 1097,
-    "archetype": "science-heavy",
-    "topic_type": "synergy",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: 단어수_2000+, Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-16 23:38",
-    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
-    "title": "How I Use Stopped Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.9166666666666666,
-    "word_count": 1082,
-    "archetype": "comparison",
-    "topic_type": "synergy",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-16 23:40",
-    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
-    "title": "How I Use Stopped Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.8333333333333334,
-    "word_count": 833,
-    "archetype": "journal-tone",
-    "topic_type": "synergy",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: 단어수_1500+, Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-16 23:43",
-    "topic": "Why I Stopped Taking Zinc With Breakfast: My Nausea Results",
-    "title": "How I Use Stopped Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.8333333333333334,
-    "word_count": 981,
-    "archetype": "science-heavy",
-    "topic_type": "synergy",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: 단어수_2000+, Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-17 00:13",
-    "topic": "Why Taking Magnesium with Coffee Failed Me: My Electrolyte Log",
-    "title": "How I Use Magnesium Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.8333333333333334,
-    "word_count": 737,
-    "archetype": "journal-tone",
-    "topic_type": "synergy",
-    "nutrients": [
-      "magnesium"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n\nReasoning: The provided content is significantly underdeveloped and lacks the necessary depth and word count required for a comprehensive journal-style article. While the narrative premise i"
-    ]
-  },
-  {
-    "date": "2026-05-17 00:14",
-    "topic": "Why Taking Magnesium with Coffee Failed Me: My Electrolyte Log",
-    "title": "How I Use Magnesium Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.8333333333333334,
-    "word_count": 894,
-    "archetype": "journal-tone",
-    "topic_type": "synergy",
-    "nutrients": [
-      "magnesium"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "The submission is rejected due to insufficient content depth and a failure to establish the required personal, reflective narrative voice.\n\nWhile the topic is relevant, the current text reads like a c"
-    ]
-  },
-  {
-    "date": "2026-05-17 00:17",
-    "topic": "Why Taking Magnesium with Coffee Failed Me: My Electrolyte Log",
-    "title": "How I Use Magnesium Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.9166666666666666,
-    "word_count": 823,
-    "archetype": "quick-answer",
-    "topic_type": "synergy",
-    "nutrients": [
-      "magnesium"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-17 00:20",
-    "topic": "Why Taking Magnesium with Coffee Failed Me: My Electrolyte Log",
-    "title": "How I Use Magnesium Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.9166666666666666,
-    "word_count": 461,
-    "archetype": "quick-answer",
-    "topic_type": "synergy",
-    "nutrients": [
-      "magnesium"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-17 00:21",
-    "topic": "Why Taking Magnesium with Coffee Failed Me: My Electrolyte Log",
-    "title": "How I Use Magnesium Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.8333333333333334,
-    "word_count": 433,
-    "archetype": "quick-answer",
-    "topic_type": "synergy",
-    "nutrients": [
-      "magnesium"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "The submission is rejected due to insufficient depth and length. While the tone is appropriate and the core message is clear, the content is too brief to meet the expected word count and level of deta"
-    ]
-  },
-  {
-    "date": "2026-05-17 00:26",
-    "topic": "Why Taking Magnesium with Coffee Failed Me: My Electrolyte Log",
-    "title": "Why Taking Magnesium with Coffee Failed Me:电解过长重新生成",
-    "status": "rejected",
-    "score": 0.9166666666666666,
-    "word_count": 1472,
-    "archetype": "comparison",
-    "topic_type": "synergy",
-    "nutrients": [
-      "magnesium"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-17 00:28",
-    "topic": "Why Taking Magnesium with Coffee Failed Me: My Electrolyte Log",
-    "title": "How I Use Magnesium Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.9166666666666666,
-    "word_count": 1569,
-    "archetype": "science-heavy",
-    "topic_type": "synergy",
-    "nutrients": [
-      "magnesium"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-17 00:32",
-    "topic": "Why Taking Magnesium with Coffee Failed Me: My Electrolyte Log",
-    "title": "How I Use Magnesium Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.9166666666666666,
-    "word_count": 1369,
-    "archetype": "science-heavy",
-    "topic_type": "synergy",
-    "nutrients": [
-      "magnesium"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-17 00:36",
-    "topic": "Why Taking Magnesium with Coffee Failed Me: My Electrolyte Log",
-    "title": "How I Use Taking Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.8333333333333334,
-    "word_count": 615,
-    "archetype": "minimalist",
-    "topic_type": "synergy",
-    "nutrients": [
-      "magnesium"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: 단어수_1200+, Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-17 00:38",
-    "topic": "Why Taking Magnesium with Coffee Failed Me: My Electrolyte Log",
-    "title": "How I Use Taking Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.8333333333333334,
-    "word_count": 353,
-    "archetype": "quick-answer",
-    "topic_type": "synergy",
-    "nutrients": [
-      "magnesium"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: 단어수_1000+, Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-17 00:40",
-    "topic": "Why Taking Magnesium with Coffee Failed Me: My Electrolyte Log",
-    "title": "How I Use Taking Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.8333333333333334,
-    "word_count": 353,
-    "archetype": "quick-answer",
-    "topic_type": "synergy",
-    "nutrients": [
-      "magnesium"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: 단어수_1000+, Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-17 00:44",
-    "topic": "Why Taking Magnesium with Coffee Failed Me: My Electrolyte Log",
-    "title": "How I Use Taking Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.8333333333333334,
-    "word_count": 1180,
-    "archetype": "nordic-anecdotal",
-    "topic_type": "synergy",
-    "nutrients": [
-      "magnesium"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: AI_Footprint, Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-17 00:46",
-    "topic": "Why Taking Magnesium with Coffee Failed Me: My Electrolyte Log",
-    "title": "How I Use Taking Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.9166666666666666,
-    "word_count": 1362,
-    "archetype": "science-heavy",
-    "topic_type": "synergy",
-    "nutrients": [
-      "magnesium"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-17 01:13",
-    "topic": "Why L Theanine and Caffeine Works Like Magic for My ADHD",
-    "title": "Theanine vs and: My Choice After Testing",
-    "status": "rejected",
-    "score": 0.9166666666666666,
-    "word_count": 1661,
-    "archetype": "nordic-anecdotal",
-    "topic_type": "comparison",
-    "nutrients": [],
-    "category": "COGNITIVE",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-17 01:15",
-    "topic": "Why L Theanine and Caffeine Works Like Magic for My ADHD",
-    "title": "Theanine vs and: My Choice After Testing",
-    "status": "rejected",
-    "score": 0.9166666666666666,
-    "word_count": 2852,
-    "archetype": "science-heavy",
-    "topic_type": "comparison",
-    "nutrients": [],
-    "category": "COGNITIVE",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-17 01:34",
-    "topic": "Why L Theanine and Caffeine Works Like Magic for My ADHD",
-    "title": "Theanine vs and: My Choice After Testing",
-    "status": "rejected",
-    "score": 0.9166666666666666,
-    "word_count": 1040,
-    "archetype": "minimalist",
-    "topic_type": "comparison",
-    "nutrients": [],
-    "category": "COGNITIVE",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-17 01:37",
-    "topic": "Why L Theanine and Caffeine Works Like Magic for My ADHD",
-    "title": "Theanine vs and: My Choice After Testing",
-    "status": "rejected",
-    "score": 0.9166666666666666,
-    "word_count": 2009,
-    "archetype": "comparison",
-    "topic_type": "comparison",
-    "nutrients": [],
-    "category": "COGNITIVE",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-17 06:42",
-    "topic": "Comparing Berberine and GABA: The Full Analysis",
-    "title": "How I Use Comparing Effectively: My Findings",
-    "status": "NEEDS_RE_AUDIT",
-    "score": 1.0,
-    "word_count": 1235,
-    "archetype": "minimalist",
-    "topic_type": "synergy",
-    "nutrients": [
-      "berberine"
-    ],
-    "category": "METABOLIC",
-    "issues": [],
-    "quality_score": 0.0
-  },
-  {
-    "date": "2026-05-17 13:31",
-    "topic": "Stop Taking CoQ10 Like This",
-    "title": "How I Use Stop Effectively: My Findings",
-    "status": "NEEDS_RE_AUDIT",
-    "score": 1.0,
-    "word_count": 2022,
-    "archetype": "science-heavy",
-    "topic_type": "synergy",
-    "nutrients": [
-      "coq10"
-    ],
-    "category": "METABOLIC",
-    "issues": [],
-    "quality_score": 0.0
-  },
-  {
-    "date": "2026-05-17",
-    "audited_at": "2026-05-17 14:12:39",
-    "source": "CEO_Auditor",
-    "title": "Advanced Stacking Protocols & Chronobiological Optimization",
-    "url": "https://www.nutristacklab.com/2026/03/phosphatidylserine-research-report-part_097191467.html",
-    "scores": {
-      "seo": 7.0,
-      "humanity": 5.0,
-      "ai_footprint": 4.0,
-      "health_safety": 8.0,
-      "adsense": 6.0,
-      "total": 6.2
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-17",
-    "audited_at": "2026-05-17 14:26:59",
-    "source": "CEO_Auditor",
-    "title": "The Nordic Quercetin Protocol: Defend, Repair, and Stay Sharp All Winter",
-    "url": "https://www.nutristacklab.com/2026/03/the-nordic-quercetin-protocol-defend.html",
-    "scores": {
-      "seo": 7.0,
-      "humanity": 5.0,
-      "ai_footprint": 2.0,
-      "health_safety": 9.0,
-      "adsense": 6.0,
-      "total": 6.4
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-17",
-    "audited_at": "2026-05-17 14:31:18",
-    "source": "CEO_Auditor",
-    "title": "The Catalyst: Prebiotic Fuel and the Vitamin D3-VDR Axis That Locks Probiotics In",
-    "url": "https://www.nutristacklab.com/2026/03/step-23-catalyst-biochemical-logistics.html",
-    "scores": {
-      "seo": 7.0,
-      "humanity": 5.0,
-      "ai_footprint": 3.0,
-      "health_safety": 8.0,
-      "adsense": null,
-      "total": 6.2
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-17",
-    "audited_at": "2026-05-17 14:39:50",
-    "source": "CEO_Auditor",
-    "title": "The Zinc Key: How Quercetin Unlocks Your Body's Antiviral Defense",
-    "url": "https://www.nutristacklab.com/2026/03/the-zinc-key-how-quercetin-unlocks-your.html",
-    "scores": {
-      "seo": 6.0,
-      "humanity": 5.0,
-      "ai_footprint": 2.0,
-      "health_safety": 8.0,
-      "adsense": 7.0,
-      "total": 4.9
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-17",
-    "audited_at": "2026-05-17 14:47:33",
-    "source": "CEO_Auditor",
-    "title": "Creatine for the Brain: Why Your Mental Battery Is Dying",
-    "url": "https://www.nutristacklab.com/2026/04/creatine-for-brain-why-your-mental.html",
-    "scores": {
-      "seo": 7.0,
-      "humanity": 6.0,
-      "ai_footprint": 5.0,
-      "health_safety": 7.0,
-      "adsense": 6.0,
-      "total": 6.2
-    },
-    "status": "REWRITE"
-  },
-  {
     "date": "2026-05-17",
     "audited_at": "2026-05-17 15:02:53",
     "source": "CEO_Auditor",
@@ -3270,5 +1601,1621 @@
       "total": 5.0
     },
     "status": "REWRITE"
+  },
+  {
+    "date": "2026-05-22 22:24",
+    "topic": "Glycine Causing Bloating: Is It Normal?",
+    "title": "Why I Pair Glycine With Specific Foods",
+    "status": "rejected",
+    "score": 0.9285714285714286,
+    "word_count": 1091,
+    "archetype": "minimalist",
+    "topic_type": "food-combo",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-22 22:31",
+    "topic": "Glycine Causing Bloating: Is It Normal?",
+    "title": "How I Use Glycine Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.9285714285714286,
+    "word_count": 2353,
+    "archetype": "nordic-anecdotal",
+    "topic_type": "protocol",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED  \n이 글은 'nordic-anecdotal' 아키텍처의 기준에 부합하지 않습니다. 'nordic-anecdotal'은 최소한의 정보와 실용적인 요약을 강조하는 반면, 이 글은 과학적 근거를 포함한 깊은 프로토콜 형식으로 작성되어 있으며, 2000자 이상의 길이와 다수의 PMID 인용이 포함되어 있습니다. 또한, 개인적 경험과 과학적 분석의"
+    ]
+  },
+  {
+    "date": "2026-05-22 22:38",
+    "topic": "Glycine Causing Bloating: Is It Normal?",
+    "title": "When I Take Glycine: Morning vs Evening Results",
+    "status": "rejected",
+    "score": 0.9285714285714286,
+    "word_count": 2343,
+    "archetype": "science-heavy",
+    "topic_type": "timing",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED  \n이 문서는 과학적 주장을 뒷받침하는 PMID 인용이 불충분합니다. 예를 들어, \"Split your glycine dose into smaller servings\" 섹션과 \"Adjust timing around other supplements\" 섹션은 특정 연구를 인용하지 않으며, 이는 과학적 신뢰성을 떨어뜨립니다. 또한, 일부 섹션에서"
+    ]
+  },
+  {
+    "date": "2026-05-23 09:34",
+    "topic": "Omega 3 with Kefir: The Absorption Stack",
+    "title": "How I Use Omega Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.9285714285714286,
+    "word_count": 2173,
+    "archetype": "science-heavy",
+    "topic_type": "synergy",
+    "nutrients": [
+      "omega"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED  \n이 문서는 과학 중심 archetype 기준에 부합하지 않습니다. 주요 문제점은 다음과 같습니다:  \n1. PMID 인용 부족: 각 과학적 주장에 대한 구체적인 연구 논문 인용이 부족합니다. 예를 들어, \"kefir의 프로바이오틱스가 장-뇌 축에 영향을 미친다\"는 주장은 PMID 링크만 제공되며, 해당 연구의 구체적 결과나 메커니즘에 대"
+    ]
+  },
+  {
+    "date": "2026-05-23 09:49",
+    "topic": "Omega 3 with Kefir: The Absorption Stack",
+    "title": "How I Use Omega Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.9285714285714286,
+    "word_count": 1106,
+    "archetype": "quick-answer",
+    "topic_type": "synergy",
+    "nutrients": [
+      "omega"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-23 10:06",
+    "topic": "Omega 3 with Kefir: The Absorption Stack",
+    "title": "How I Use Omega Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.9285714285714286,
+    "word_count": 1746,
+    "archetype": "nordic-anecdotal",
+    "topic_type": "synergy",
+    "nutrients": [
+      "omega"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED  \n이 글은 'nordic-anecdotal' 아키타입의 기준에 부합하지 않습니다. 'nordic-anecdotal'은 단순하고 실용적인 정보를 1400자 이상의 짧은 형식으로 제공해야 하지만, 본 글은 과학적 근거와 상세한 FAQ, 참고 자료 링크 등으로 인해 과도하게 길고 복잡합니다. 또한, 'science-heavy' 아키타입에 해당하"
+    ]
+  },
+  {
+    "date": "2026-05-23 14:39",
+    "topic": "The Vitamin K2 Smoothie That Maximizes Absorption",
+    "title": "How I Use Vitamin Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.9285714285714286,
+    "word_count": 1642,
+    "archetype": "nordic-anecdotal",
+    "topic_type": "deficiency",
+    "nutrients": [],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED  \n이 글은 과학적 근거가 충분하지 않으며, 'nordic-anecdotal'이라는 주장을 통해 개인 경험에 초점을 맞추고 있어, 과학적 깊이와 체계적인 프로토콜을 요구하는 'science-heavy' 아키타입 기준에 부합하지 않습니다. PMID 인용은 있으나, 이론적 배경 설명, 실험적 데이터, 또는 근거를 바탕으로 한 구체적인 권장 사항"
+    ]
+  },
+  {
+    "date": "2026-05-23 15:31",
+    "topic": "The Vitamin K2 Smoothie That Maximizes Absorption",
+    "title": "Why I Pair Vitamin With Specific Foods",
+    "status": "rejected",
+    "score": 0.9285714285714286,
+    "word_count": 992,
+    "archetype": "minimalist",
+    "topic_type": "food-combo",
+    "nutrients": [],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-23 15:46",
+    "topic": "The Vitamin K2 Smoothie That Maximizes Absorption",
+    "title": "How I Use Vitamin Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.9285714285714286,
+    "word_count": 2407,
+    "archetype": "comparison",
+    "topic_type": "mechanism",
+    "nutrients": [],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED  \n이 문서는 과학 중심/심층 프로토콜 형식의 기준인 2000자 이상의 길이를 충족하지 못했습니다. 또한, 일부 과학적 설명과 PMID 인용은 포함되어 있지만, 전체적인 구조와 내용의 깊이가 요구되는 '심층 프로토콜' 아키타입에 완전히 부합하지 않습니다."
+    ]
+  },
+  {
+    "date": "2026-05-23 16:00",
+    "topic": "The Vitamin K2 Smoothie That Maximizes Absorption",
+    "title": "Vitamin vs That: My Choice After Testing",
+    "status": "success",
+    "score": 0.7857142857142857,
+    "word_count": 1610,
+    "archetype": "nordic-anecdotal",
+    "topic_type": "comparison",
+    "nutrients": [],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "Disclaimer",
+      "PersonaCheck",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-23 20:20",
+    "topic": "The Resveratrol Mistake That Ruins Absorption",
+    "title": "Why I Pair Resveratrol With Specific Foods",
+    "status": "rejected",
+    "score": 0.9285714285714286,
+    "word_count": 1034,
+    "archetype": "minimalist",
+    "topic_type": "food-combo",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-23 20:33",
+    "topic": "The Resveratrol Mistake That Ruins Absorption",
+    "title": "How I Use Resveratrol Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.9285714285714286,
+    "word_count": 1615,
+    "archetype": "science-heavy",
+    "topic_type": "protocol",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED  \nReason (Korean, specific):  \n문서는 과학적 근거를 설명하는 데 필요한 PMID 인용이 부족합니다. 예를 들어, \"resveratrol의 흡수 메커니즘\"에 대한 설명은 PMID 33934256을 인용하지만, 다른 주요 주제(예: 장기 사용 시 간 기능에 대한 영향, 특정 지방 유형의 효과 등)는 구체적인 연구 인용 "
+    ]
+  },
+  {
+    "date": "2026-05-23 20:42",
+    "topic": "The Resveratrol Mistake That Ruins Absorption",
+    "title": "When I Take Resveratrol: Morning vs Evening Results",
+    "status": "rejected",
+    "score": 0.9285714285714286,
+    "word_count": 1175,
+    "archetype": "minimalist",
+    "topic_type": "timing",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-24 07:58",
+    "topic": "Zinc and Vitamin B6 Synergy: The Nordic Protocol",
+    "title": "How I Use Zinc Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.9285714285714286,
+    "word_count": 1941,
+    "archetype": "comparison",
+    "topic_type": "protocol",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-24 08:15",
+    "topic": "Zinc and Vitamin B6 Synergy: The Nordic Protocol",
+    "title": "How I Use Zinc Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.9285714285714286,
+    "word_count": 1631,
+    "archetype": "nordic-anecdotal",
+    "topic_type": "protocol",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-24 08:33",
+    "topic": "Zinc and Vitamin B6 Synergy: The Nordic Protocol",
+    "title": "How I Use Zinc Effectively: My Findings",
+    "status": "rejected",
+    "score": 0.9285714285714286,
+    "word_count": 644,
+    "archetype": "quick-answer",
+    "topic_type": "protocol",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-24 12:19",
+    "topic": "Best Food to Eat With Biotin",
+    "title": "Why I Pair Best With Specific Foods",
+    "status": "rejected",
+    "score": 0.9285714285714286,
+    "word_count": 3449,
+    "archetype": "science-heavy",
+    "topic_type": "recipe",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-24 12:33",
+    "topic": "Best Food to Eat With Biotin",
+    "title": "Why I Pair Best With Specific Foods",
+    "status": "rejected",
+    "score": 0.9285714285714286,
+    "word_count": 1605,
+    "archetype": "journal-tone",
+    "topic_type": "recipe",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-24 12:47",
+    "topic": "Best Food to Eat With Biotin",
+    "title": "Why I Pair Best With Specific Foods",
+    "status": "rejected",
+    "score": 0.9285714285714286,
+    "word_count": 2003,
+    "archetype": "nordic-anecdotal",
+    "topic_type": "recipe",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-24 19:19",
+    "topic": "NMN and the Brain Gut Axis: Explained",
+    "title": "What Changed When I Started Taking NMN the Right Way",
+    "status": "rejected",
+    "score": 0.9285714285714286,
+    "word_count": 2942,
+    "archetype": "science-heavy",
+    "topic_type": "synergy",
+    "nutrients": [
+      "nmn"
+    ],
+    "category": "COGNITIVE",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-24 19:28",
+    "topic": "NMN and the Brain Gut Axis: Explained",
+    "title": "What Changed When I Started Taking NMN the Right Way",
+    "status": "rejected",
+    "score": 0.9285714285714286,
+    "word_count": 2893,
+    "archetype": "deep-protocol",
+    "topic_type": "synergy",
+    "nutrients": [
+      "nmn"
+    ],
+    "category": "COGNITIVE",
+    "issues": [
+      "REJECTED  \n이 글은 과학적 근거가 충분하지 않으며, PMID 인용이 일관되지 못하고 있습니다. 예를 들어, \"구강 건강 개선\"과 같은 주장을 뒷받침하는 구체적인 연구 인용이 누락되었고, 일부 과학적 주장은 충분한 데이터로 뒷받침되지 않았습니다. 또한, 개인 경험에 중점을 두고 있어 '딥 프로토콜' 형식에 부합하지 않습니다. 과학적 엄격성과 균형 잡"
+    ]
+  },
+  {
+    "date": "2026-05-24 19:36",
+    "topic": "NMN and the Brain Gut Axis: Explained",
+    "title": "What Changed When I Started Taking NMN the Right Way",
+    "status": "rejected",
+    "score": 0.9285714285714286,
+    "word_count": 2091,
+    "archetype": "nordic-anecdotal",
+    "topic_type": "synergy",
+    "nutrients": [
+      "nmn"
+    ],
+    "category": "COGNITIVE",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-25 01:52",
+    "topic": "Vitamin B12 (Cobalamin) Complete Guide",
+    "title": "What Changed When I Started Taking Vitamin the Right Way",
+    "status": "rejected",
+    "score": 0.9285714285714286,
+    "word_count": 3107,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-25 02:03",
+    "topic": "Vitamin B12 (Cobalamin) Complete Guide",
+    "title": "What Changed When I Started Taking Vitamin the Right Way",
+    "status": "rejected",
+    "score": 0.9285714285714286,
+    "word_count": 3351,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-25 02:11",
+    "topic": "Vitamin B12 (Cobalamin) Complete Guide",
+    "title": "What Changed When I Started Taking Vitamin the Right Way",
+    "status": "rejected",
+    "score": 0.9285714285714286,
+    "word_count": 2891,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-25 02:32",
+    "topic": "Vitamin B12 (Cobalamin) Complete Guide",
+    "title": "What Changed When I Started Taking Vitamin the Right Way",
+    "status": "success",
+    "score": 0.75,
+    "word_count": 2900,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "&#8594;사용",
+      "Disclaimer",
+      "PersonaCheck",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-25 09:59",
+    "topic": "Citrulline Malate Complete Guide",
+    "title": "What Changed When I Started Taking Citrulline the Right Way",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 2959,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-25 10:27",
+    "topic": "Citrulline Malate Complete Guide",
+    "title": "What Changed When I Started Taking Citrulline the Right Way",
+    "status": "rejected",
+    "score": 0.875,
+    "word_count": 2952,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED  \n이 문서는 과학적 근거를 요구하는 'science-heavy/deep-protocol' 유형의 기사로 분류되지만, 실제 PubMed ID(PMID) 인용이 누락된 것으로 보입니다. 예시로 사용된 PMID 12345678과 같은 플레이스홀더는 실제 연구 논문을 인용하지 않으므로, 과학적 엄격성을 충족하지 못합니다. 또한, 'comprehe"
+    ]
+  },
+  {
+    "date": "2026-05-25 10:52",
+    "topic": "Citrulline Malate Complete Guide",
+    "title": "What Changed When I Started Taking Citrulline the Right Way",
+    "status": "rejected",
+    "score": 0.875,
+    "word_count": 2912,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED  \n이 글은 과학적 근거와 심층적인 프로토콜을 요구하는 'science-heavy/deep-protocol' 아키타입 기준에 부합하지 않습니다. PMID 인용은 일부 포함되어 있지만, 생리학적 메커니즘, 임상 연구 데이터, 용량 기준 등에 대한 체계적인 분석이 부족합니다. 또한, 개인 경험 중심의 서술이 과도하게 강조되어 있으며, 독자의 이"
+    ]
+  },
+  {
+    "date": "2026-05-25 11:16",
+    "topic": "Citrulline Malate Complete Guide",
+    "title": "What Changed When I Started Taking Citrulline the Right Way",
+    "status": "success",
+    "score": 0.75,
+    "word_count": 2985,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "&#8594;사용",
+      "Disclaimer",
+      "PersonaCheck",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-25 11:26",
+    "topic": "Vitamin C Complete Guide",
+    "title": "What Changed When I Started Taking Vitamin the Right Way",
+    "status": "rejected",
+    "score": 0.875,
+    "word_count": 2903,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "vitamin c"
+    ],
+    "category": "IMMUNE",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: No_Cure_Claims, NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-25 11:46",
+    "topic": "Vitamin C Complete Guide",
+    "title": "What Changed When I Started Taking Vitamin the Right Way",
+    "status": "rejected",
+    "score": 0.875,
+    "word_count": 3467,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "vitamin c"
+    ],
+    "category": "IMMUNE",
+    "issues": [
+      "REJECTED  \n이 문서는 과학 중심의 심층 프로토콜 형식에 해당하지만, PMID 인용이 충분하지 않습니다. 예를 들어, \"revealed a consistent correlation with these outcomes\"와 같은 문장은 PMID 링크를 포함해야 하지만, 실제 PMID 번호가 명시되지 않았습니다. 또한, 단순한 빠른 답변 형식(3000자 "
+    ]
+  },
+  {
+    "date": "2026-05-25 12:10",
+    "topic": "Vitamin C Complete Guide",
+    "title": "What Changed When I Started Taking Vitamin the Right Way",
+    "status": "rejected",
+    "score": 0.8125,
+    "word_count": 3461,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "vitamin c"
+    ],
+    "category": "IMMUNE",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: Disclaimer, No_Cure_Claims, NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-25 18:02",
+    "topic": "Vitamin C Complete Guide",
+    "title": "What Changed When I Started Taking Vitamin the Right Way",
+    "status": "rejected",
+    "score": 0.875,
+    "word_count": 3573,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "vitamin c"
+    ],
+    "category": "IMMUNE",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: No_Cure_Claims, NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-25 18:12",
+    "topic": "Vitamin C Complete Guide",
+    "title": "What Changed When I Started Taking Vitamin the Right Way",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 3276,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "vitamin c"
+    ],
+    "category": "IMMUNE",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-25 18:24",
+    "topic": "Vitamin C Complete Guide",
+    "title": "What Changed When I Started Taking Vitamin the Right Way",
+    "status": "rejected",
+    "score": 0.875,
+    "word_count": 3579,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "vitamin c"
+    ],
+    "category": "IMMUNE",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: No_Cure_Claims, NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-25 19:10",
+    "topic": "Vitamin C Complete Guide",
+    "title": "What Changed When I Started Taking Vitamin the Right Way",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 3317,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "vitamin c"
+    ],
+    "category": "IMMUNE",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-25 19:32",
+    "topic": "Vitamin C Complete Guide",
+    "title": "What Changed When I Started Taking Vitamin the Right Way",
+    "status": "rejected",
+    "score": 0.875,
+    "word_count": 3596,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "vitamin c"
+    ],
+    "category": "IMMUNE",
+    "issues": [
+      "REJECTED  \n이 문서는 'science-heavy/deep-protocol' 아키타입의 기준을 충족하지 못합니다. PMID 인용이 특정 섹션에만 제한적으로 포함되어 있고, 전체적인 과학적 깊이와 체계적인 프로토콜 설명이 부족합니다. 또한, 'comprehensive-guide' 아키타입의 3000+ 단어 기준은 충족하지만, 과학적 근거와 데이터 기반"
+    ]
+  },
+  {
+    "date": "2026-05-25 20:15",
+    "topic": "Vitamin C Complete Guide",
+    "title": "What Changed When I Started Taking Vitamin the Right Way",
+    "status": "rejected",
+    "score": 0.875,
+    "word_count": 3003,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "vitamin c"
+    ],
+    "category": "IMMUNE",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: No_Cure_Claims, NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-25 20:17",
+    "topic": "Vitamin C Complete Guide",
+    "title": "What Changed When I Started Taking Vitamin the Right Way",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 3042,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "vitamin c"
+    ],
+    "category": "IMMUNE",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-25 20:19",
+    "topic": "Vitamin C Complete Guide",
+    "title": "What Changed When I Started Taking Vitamin the Right Way",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 3110,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "vitamin c"
+    ],
+    "category": "IMMUNE",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-25 20:27",
+    "topic": "Vitamin C Complete Guide",
+    "title": "What Changed When I Started Taking Vitamin the Right Way",
+    "status": "success",
+    "score": 0.8125,
+    "word_count": 3384,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "vitamin c"
+    ],
+    "category": "IMMUNE",
+    "issues": [
+      "AI_Footprint",
+      "NoPlaceholder",
+      "TOC_Present"
+    ]
+  },
+  {
+    "date": "2026-05-26 14:55",
+    "topic": "Magnesium Complete Guide",
+    "title": "What Changed When I Started Taking Magnesium the Right Way",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 2606,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "magnesium"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED  \n이 문서는 과학적 깊이와 철저한 프로토콜 설명이 부족합니다. 주요 내용이 개인 경험 중심의 서술에 머물며, 생물학적 메커니즘, 세부적인 연구 데이터, 또는 체계적인 실험 프로토콜에 대한 심층적 분석이 부재합니다. PMID 인용은 있으나, 이는 단순한 참고 자료 수준에 머물며, 핵심 주제에 대한 철저한 과학적 탐구가 이루어지지 않았습니다."
+    ]
+  },
+  {
+    "date": "2026-05-26 15:03",
+    "topic": "Magnesium Complete Guide",
+    "title": "What Changed When I Started Taking Magnesium the Right Way",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 2686,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "magnesium"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-26 15:11",
+    "topic": "Magnesium Complete Guide",
+    "title": "What Changed When I Started Taking Magnesium the Right Way",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 2793,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "magnesium"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-26 15:29",
+    "topic": "Magnesium Complete Guide",
+    "title": "What Changed When I Started Taking Magnesium the Right Way",
+    "status": "success",
+    "score": 0.75,
+    "word_count": 2733,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "magnesium"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "Disclosure",
+      "No_Cure_Claims",
+      "NoPlaceholder",
+      "TOC_Present"
+    ]
+  },
+  {
+    "date": "2026-05-26 15:52",
+    "topic": "# Magnesium Complete Guide\ntype: comprehensive guide",
+    "title": "What Changed When I Started Taking Magnesium the Right Way",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 3287,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "magnesium"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED  \n이 글은 'comprehensive-guide' 아키텍처 기준에 부합하지 않습니다. 과학 중심/심층 프로토콜 유형의 기준인 2000자 이상의 심층적인 과학적 설명과 PMID 인용이 충분히 반영되지 않았습니다. 또한, 주요 내용은 개인 경험 중심의 실용적 조언에 머무르고 있으며, 생물학적 메커니즘, 임상 연구 데이터, 농도/용량 권장사항 "
+    ]
+  },
+  {
+    "date": "2026-05-26 15:57",
+    "topic": "# Magnesium Complete Guide\ntype: comprehensive guide",
+    "title": "What Changed When I Started Taking Magnesium the Right Way",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 3538,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "magnesium"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-26 16:02",
+    "topic": "# Magnesium Complete Guide\ntype: comprehensive guide",
+    "title": "What Changed When I Started Taking Magnesium the Right Way",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 3618,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "magnesium"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-26 16:17",
+    "topic": "# Magnesium Complete Guide\ntype: comprehensive guide",
+    "title": "What Changed When I Started Taking Magnesium the Right Way",
+    "status": "success",
+    "score": 0.875,
+    "word_count": 3639,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "magnesium"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "Disclosure",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-26 17:25",
+    "topic": "# Vitamin K2 (MK 7) Complete Guide\ntype: comprehensive guide",
+    "title": "What Changed When I Started Taking Vitamin the Right Way",
+    "status": "rejected",
+    "score": 0.875,
+    "word_count": 3435,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: AI_Footprint, NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-26 17:29",
+    "topic": "# Vitamin K2 (MK 7) Complete Guide\ntype: comprehensive guide",
+    "title": "What Changed When I Started Taking Vitamin the Right Way",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 3467,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-26 17:33",
+    "topic": "# Vitamin K2 (MK 7) Complete Guide\ntype: comprehensive guide",
+    "title": "What Changed When I Started Taking Vitamin the Right Way",
+    "status": "rejected",
+    "score": 0.875,
+    "word_count": 3719,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: AI_Footprint, NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-26 17:41",
+    "topic": "# Vitamin K2 (MK 7) Complete Guide\ntype: comprehensive guide",
+    "title": "What Changed When I Started Taking Vitamin the Right Way",
+    "status": "success",
+    "score": 0.875,
+    "word_count": 3685,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "Disclosure",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-26 17:54",
+    "topic": "Vitamin K2 (MK 7) Complete Guide",
+    "title": "What Changed When I Started Taking Vitamin the Right Way",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 3469,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-26 17:57",
+    "topic": "Vitamin K2 (MK 7) Complete Guide",
+    "title": "What Changed When I Started Taking Vitamin the Right Way",
+    "status": "rejected",
+    "score": 0.875,
+    "word_count": 3776,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: AI_Footprint, NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-26 18:01",
+    "topic": "Vitamin K2 (MK 7) Complete Guide",
+    "title": "What Changed When I Started Taking Vitamin the Right Way",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 3822,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-26 18:08",
+    "topic": "Vitamin K2 (MK 7) Complete Guide",
+    "title": "What Changed When I Started Taking Vitamin the Right Way",
+    "status": "success",
+    "score": 0.875,
+    "word_count": 3846,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "Disclosure",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-26 22:19",
+    "topic": "# Vitamin D3 Complete Guide\ntype: comprehensive guide",
+    "title": "Vitamin D3 Dosage Guide: How Much Do You Need?",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 3494,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "vitamin d3",
+      "vitamin d"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-26 22:24",
+    "topic": "# Vitamin D3 Complete Guide\ntype: comprehensive guide",
+    "title": "Vitamin D3 Dosage Guide: How Much Do You Need?",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 3736,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "vitamin d3",
+      "vitamin d"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-26 22:27",
+    "topic": "# Vitamin D3 Complete Guide\ntype: comprehensive guide",
+    "title": "Vitamin D3 Dosage Guide: How Much Do You Need?",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 3899,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "vitamin d3",
+      "vitamin d"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-26 22:35",
+    "topic": "# Vitamin D3 Complete Guide\ntype: comprehensive guide",
+    "title": "Vitamin D3 Dosage Guide: How Much Do You Need?",
+    "status": "success",
+    "score": 0.8125,
+    "word_count": 3907,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "vitamin d3",
+      "vitamin d"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "Disclosure",
+      "NoPlaceholder",
+      "TOC_Present"
+    ]
+  },
+  {
+    "date": "2026-05-27 17:23",
+    "topic": "HMB Complete Guide",
+    "title": "Is Hmb Complete Worth Taking? What the Research Says",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 3944,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED  \n이 문서는 실제 내용이 포함되어 있지 않아 기준에 따라 평가할 수 없습니다. 제공된 텍스트는 단순한 예시나 테스트 입력으로 보이며, 실제 기술적/과학적 내용이 누락되어 있습니다."
+    ]
+  },
+  {
+    "date": "2026-05-27 17:27",
+    "topic": "HMB Complete Guide",
+    "title": "Is Hmb Complete Worth Taking? What the Research Says",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 3973,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED  \n이유: 제공된 콘텐츠는 평가 대상이 되는 '포괄적 가이드' 문서가 아닙니다. 사용자 지침에 따라 3000자 이상의 실질적인 콘텐츠(예: 과학적 프로토콜, 단계별 가이드 등)가 포함되어야 하지만, 현재 입력은 템플릿 형식의 텍스트와 평가 요청만 포함하고 있습니다. 실제 문서 내용이 누락되었으므로 평가가 불가능합니다."
+    ]
+  },
+  {
+    "date": "2026-05-27 17:31",
+    "topic": "HMB Complete Guide",
+    "title": "Is Hmb Complete Worth Taking? What the Research Says",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 3986,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-27 17:40",
+    "topic": "HMB Complete Guide",
+    "title": "Is Hmb Complete Worth Taking? What the Research Says",
+    "status": "success",
+    "score": 0.9375,
+    "word_count": 3906,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-27 18:28",
+    "topic": "Zinc Complete Guide",
+    "title": "How to Take Zinc for Best Results",
+    "status": "rejected",
+    "score": 0.8125,
+    "word_count": 3827,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: AI_Footprint, No_Cure_Claims, NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-27 18:32",
+    "topic": "Zinc Complete Guide",
+    "title": "How to Take Zinc for Best Results",
+    "status": "rejected",
+    "score": 0.875,
+    "word_count": 3872,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: No_Cure_Claims, NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-27 18:37",
+    "topic": "Zinc Complete Guide",
+    "title": "How to Take Zinc for Best Results",
+    "status": "rejected",
+    "score": 0.875,
+    "word_count": 3913,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: No_Cure_Claims, NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-27 18:47",
+    "topic": "Zinc Complete Guide",
+    "title": "How to Take Zinc for Best Results",
+    "status": "success",
+    "score": 0.8125,
+    "word_count": 4023,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "Disclosure",
+      "No_Cure_Claims",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-27 19:55",
+    "topic": "Selenium Complete Guide",
+    "title": "How to Take Selenium for Best Results",
+    "status": "rejected",
+    "score": 0.875,
+    "word_count": 3716,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED  \n이 문서는 과학 중심의 심층 프로토콜 가이드에 해당하는 기준을 충족하지 못합니다. PMID 인용이 특정 섹션에만 제한적으로 포함되어 있고, 전체적으로 필요한 깊이 있는 과학적 설명이 부족합니다. 또한, 사용자 경험 중심의 내용이 과학적 근거와 균형을 이루지 못해 '심층 프로토콜' 아키타입의 요구 사항을 충족하지 못합니다."
+    ]
+  },
+  {
+    "date": "2026-05-27 20:00",
+    "topic": "Selenium Complete Guide",
+    "title": "How to Take Selenium for Best Results",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 3875,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-27 20:05",
+    "topic": "Selenium Complete Guide",
+    "title": "How to Take Selenium for Best Results",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 3892,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-27 20:13",
+    "topic": "Selenium Complete Guide",
+    "title": "How to Take Selenium for Best Results",
+    "status": "success",
+    "score": 0.75,
+    "word_count": 3942,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "Disclosure",
+      "No_Cure_Claims",
+      "NoPlaceholder",
+      "TOC_Present"
+    ]
+  },
+  {
+    "date": "2026-05-28 20:02",
+    "topic": "SAMe Complete Guide",
+    "title": "Same Complete: Is Same Worth Taking? What the Research Says",
+    "status": "rejected",
+    "score": 0.875,
+    "word_count": 3938,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED  \n이 문서는 'comprehensive-guide' 아키타입의 기준을 충족하지 못합니다. 첫째, 과학 중심의 심층 프로토콜(2000+ 단어)에 필요한 세부적인 과학적 설명, 실험 데이터, PMIDs 기반의 연구 인용이 부족합니다. 둘째, FAQ 섹션은 간단한 질문-답변 형식에 머물며, 사용자에게 실질적인 적용 방법이나 임상적 근거에 대한 "
+    ]
+  },
+  {
+    "date": "2026-05-28 20:09",
+    "topic": "SAMe Complete Guide",
+    "title": "Same Complete: Is Same Worth Taking? What the Research Says",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 4201,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-28 20:24",
+    "topic": "SAMe Complete Guide",
+    "title": "Same Complete: Is Same Worth Taking? What the Research Says",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 4113,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-28 20:38",
+    "topic": "SAMe Complete Guide",
+    "title": "Same Complete: Is Same Worth Taking? What the Research Says",
+    "status": "success",
+    "score": 0.875,
+    "word_count": 4090,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "No_Cure_Claims",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-28 21:21",
+    "topic": "Iron Complete Guide",
+    "title": "Iron Complete: How to Take Iron for Best Results",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 3871,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-28 21:26",
+    "topic": "Iron Complete Guide",
+    "title": "Iron Complete: How to Take Iron for Best Results",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 3860,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-28 21:29",
+    "topic": "Iron Complete Guide",
+    "title": "Iron Complete: How to Take Iron for Best Results",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 3800,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-28 21:39",
+    "topic": "Iron Complete Guide",
+    "title": "Iron Complete: How to Take Iron for Best Results",
+    "status": "success",
+    "score": 0.875,
+    "word_count": 3936,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "Disclosure",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-28 22:25",
+    "topic": "Copper Complete Guide",
+    "title": "Copper Complete: Copper : Guide to Dosage and Benefits",
+    "status": "rejected",
+    "score": 0.875,
+    "word_count": 3751,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: AI_Footprint, NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-28 22:29",
+    "topic": "Copper Complete Guide",
+    "title": "Copper Complete: Copper : Guide to Dosage and Benefits",
+    "status": "rejected",
+    "score": 0.875,
+    "word_count": 3984,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED  \n이 글은 'comprehensive-guide' 아키타입의 기준을 충족하지 못한다. 첫째, 단어 수가 부족하다. 'science-heavy/deep-protocol' 아키타입은 2000자 이상이어야 하지만, 현재 글은 약 1500자로 기준에 미달한다. 둘째, 과학적 깊이가 부족하다. PMID 인용은 있으나, 생물학적 메커니즘, 금기 사항"
+    ]
+  },
+  {
+    "date": "2026-05-28 22:33",
+    "topic": "Copper Complete Guide",
+    "title": "Copper Complete: Copper : Guide to Dosage and Benefits",
+    "status": "rejected",
+    "score": 0.875,
+    "word_count": 3856,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED  \n이 글은 'comprehensive-guide' 아키타입의 기준을 충족하지 못한다. 과학적 근거를 중심으로 구성된 심층 프로토콜 형식의 글이라면 PMID 인용이 필수적이며, 현재의 경우 단 두 개의 PMID만 언급되어 있고, 대부분의 내용이 개인 경험에 기반한 주관적 관찰로 구성되어 있다. 또한, 2000자 이상의 과학적 분석이나 체계적"
+    ]
+  },
+  {
+    "date": "2026-05-28 22:40",
+    "topic": "Copper Complete Guide",
+    "title": "Copper Complete: Copper : Guide to Dosage and Benefits",
+    "status": "success",
+    "score": 0.75,
+    "word_count": 3994,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "Disclosure",
+      "AI_Footprint",
+      "No_Cure_Claims",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-29 08:42",
+    "topic": "",
+    "title": "Supplement Deficiency: Signs and How to Fix It",
+    "status": "rejected",
+    "score": 0.9333333333333333,
+    "word_count": 2130,
+    "archetype": "science-heavy",
+    "topic_type": "deficiency",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED  \n이유: 과학 중심 기사의 표준에 따라 PMID 인용이 필수적이며, 해당 기사에서는 관련 연구나 데이터를 뒷받침하는 구체적인 PMID 인용이 전혀 포함되어 있지 않습니다. 또한, 기사의 구조는 개인 경험 중심의 서술로 구성되어 있으며, 깊이 있는 과학 프로토콜이나 실험적 데이터 분석이 부족합니다. 과학 중심 기사의 경우, 특정 연구 결과,"
+    ]
+  },
+  {
+    "date": "2026-05-29 08:47",
+    "topic": "",
+    "title": "Supplement Deficiency: Signs and How to Fix It",
+    "status": "rejected",
+    "score": 0.9333333333333333,
+    "word_count": 2238,
+    "archetype": "science-heavy",
+    "topic_type": "deficiency",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-29 08:51",
+    "topic": "",
+    "title": "Supplement Deficiency: Signs and How to Fix It",
+    "status": "rejected",
+    "score": 0.9333333333333333,
+    "word_count": 2153,
+    "archetype": "science-heavy",
+    "topic_type": "deficiency",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED  \n이 글은 'science-heavy' 아키타입의 기준을 충족하지 못한다. 첫째, 과학적 깊이가 부족하다. 호르몬 메커니즘, 갑상선 기능 회복의 생물학적 근거, 미량원소 결핍의 세포 수준 영향 등에 대한 구체적 설명이 부재하며, 단순한 개인 경험에 의존하고 있다. 둘째, PMID 인용이 한 건만 있고, 이는 'science-heavy' 아"
+    ]
+  },
+  {
+    "date": "2026-05-29 19:42",
+    "topic": "",
+    "title": "Supplement Benefits, Dosage, and Side Effects",
+    "status": "success",
+    "score": 0.9333333333333333,
+    "word_count": 1246,
+    "archetype": "journal-tone",
+    "topic_type": "synergy",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-29 20:51",
+    "topic": "Creatine Complete Guide",
+    "title": "Creatine Complete: Creatine Dosage Guide: How Much Do You Need?",
+    "status": "success",
+    "score": 0.8125,
+    "word_count": 3109,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "creatine"
+    ],
+    "category": "COGNITIVE",
+    "issues": [
+      "H1 60자",
+      "AI_Footprint",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-29 22:13",
+    "topic": "Berberine Complete Guide",
+    "title": "Berberine Complete: Is Berberine Worth Taking? What the Research Says",
+    "status": "success",
+    "score": 0.875,
+    "word_count": 3377,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "berberine"
+    ],
+    "category": "METABOLIC",
+    "issues": [
+      "H1 60자",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-29 23:24",
+    "topic": "Probiotics Complete Guide",
+    "title": "Probiotics Complete: Probiotics : Guide to Dosage and Benefits",
+    "status": "success",
+    "score": 0.8125,
+    "word_count": 3269,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "probiotics"
+    ],
+    "category": "IMMUNE",
+    "issues": [
+      "H1 60자",
+      "AI_Footprint",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-30 01:05",
+    "topic": "# Berberine Complete Guide\ntype: comprehensive guide",
+    "title": "Berberine Complete: Is Berberine Worth Taking? What the Research Says",
+    "status": "success",
+    "score": 0.875,
+    "word_count": 3664,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "berberine"
+    ],
+    "category": "METABOLIC",
+    "issues": [
+      "H1 60자",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-30 02:35",
+    "topic": "# Probiotics Complete Guide\ntype: comprehensive guide",
+    "title": "Probiotics Complete: Probiotics Dosage Guide: How Much Do You Need?",
+    "status": "success",
+    "score": 0.8125,
+    "word_count": 3039,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "probiotics"
+    ],
+    "category": "IMMUNE",
+    "issues": [
+      "H1 60자",
+      "AI_Footprint",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-30 11:28",
+    "topic": "# Vitamin B12 Cobalamin Complete Guide\ntype: comprehensive guide",
+    "title": "Is Vitamin B12 Worth Taking? What the Research Says",
+    "status": "success",
+    "score": 0.875,
+    "word_count": 3190,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "AI_Footprint",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-30 16:35",
+    "topic": "# Citrulline Malate Complete Guide\ntype: comprehensive guide",
+    "title": "Citrulline Malate Dosage Guide: How Much Do You Need?",
+    "status": "success",
+    "score": 0.875,
+    "word_count": 2599,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "AI_Footprint",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-30 20:33",
+    "topic": "# Vitamin D3 Complete Guide\ntype: comprehensive guide",
+    "title": "Vitamin D3: Guide to Dosage and Benefits",
+    "status": "success",
+    "score": 0.875,
+    "word_count": 2748,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "vitamin d",
+      "vitamin d3"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "AI_Footprint",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-31 01:21",
+    "topic": "Vitamin K2 MK 7 Complete Guide",
+    "title": "Is Vitamin K2 Worth Taking? What the Research Says",
+    "status": "success",
+    "score": 0.875,
+    "word_count": 3006,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "AI_Footprint",
+      "NoPlaceholder"
+    ]
   }
 ]

@@ -1,0 +1,100 @@
+[
+  {
+    "title": "The Vitamin D Mistake That Kept Me Tired",
+    "grade": "S",
+    "total": 9.0,
+    "passed": true,
+    "fixed": [
+      "AI",
+      "AI"
+    ],
+    "rejects": []
+  },
+  {
+    "title": "Why Citrulline Malate Felt Useless Until Week Four",
+    "grade": "S",
+    "total": 9.2,
+    "passed": false,
+    "fixed": [
+      "AI",
+      "AI"
+    ],
+    "rejects": [
+      "D1 = 0 — PMID/연구링크 없음"
+    ]
+  },
+  {
+    "title": "Vitamin B12 Absorption: Why I Got It Wrong for Months",
+    "grade": "S",
+    "total": 9.4,
+    "passed": true,
+    "fixed": [
+      "AI"
+    ],
+    "rejects": []
+  },
+  {
+    "title": "NMN Supplement: The Timing Mistake That Delayed My Results",
+    "grade": "S",
+    "total": 9.7,
+    "passed": true,
+    "fixed": [
+      "AI",
+      "AI",
+      "AI"
+    ],
+    "rejects": []
+  },
+  {
+    "title": "Probiotics Dosage: How Much You Actually Need (And When)",
+    "grade": "S",
+    "total": 9.7,
+    "passed": true,
+    "fixed": [
+      "AI",
+      "AI"
+    ],
+    "rejects": []
+  },
+  {
+    "title": "Berberine Dosage: The Mistake That Delayed My Results",
+    "grade": "S",
+    "total": 9.7,
+    "passed": true,
+    "fixed": [
+      "AI",
+      "AI"
+    ],
+    "rejects": []
+  },
+  {
+    "title": "Iron Deficiency: How I Finally Fixed My Energy Levels",
+    "grade": "S",
+    "total": 9.8,
+    "passed": true,
+    "fixed": [
+      "AI"
+    ],
+    "rejects": []
+  },
+  {
+    "title": "Magnesium Types and Dosage: The Form That Finally Worked for",
+    "grade": "S",
+    "total": 9.8,
+    "passed": true,
+    "fixed": [
+      "AI"
+    ],
+    "rejects": []
+  },
+  {
+    "title": "Vitamin C Dosage: What Six Months of Testing Actually Taught",
+    "grade": "S",
+    "total": 9.8,
+    "passed": true,
+    "fixed": [
+      "AI"
+    ],
+    "rejects": []
+  }
+]

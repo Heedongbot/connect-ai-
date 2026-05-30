@@ -80,280 +80,178 @@ SD_COMMON = {
 }
 
 # ============================================================
-# 영양소별 시각 요소 DB
+# 영양소별 실사 라이프스타일 시각 DB
 # ============================================================
 NUTRIENT_VISUALS = {
     "magnesium": {
-        "element": (
-            "macro photograph of magnesium Mg hexagonal crystal lattice, "
-            "atomic bond structure visible at molecular level, "
-            "each atom precisely rendered with electron cloud"
-        ),
-        "color": (
-            "bioluminescent teal-cyan inner glow emanating from crystal core, "
-            "iridescent surface reflections, deep indigo background"
-        ),
-        "context": (
-            "surrounded by intricate neural synaptic network, "
-            "dendrites and axons visible in microscopic detail, "
-            "ATP molecule synthesis occurring in background"
-        ),
+        "subject":  "magnesium supplement bottle and capsules",
+        "setting":  "wooden kitchen counter, morning light, glass of water nearby",
+        "mood":     "calm relaxed morning routine",
     },
     "vitamin d3": {
-        "element": (
-            "vitamin D3 cholecalciferol steroid hormone molecular structure, "
-            "VDR receptor binding shown in microscopic detail, "
-            "calcium ion channels opening in response"
-        ),
-        "color": (
-            "warm liquid gold amber light radiating from molecular core, "
-            "solar spectrum visible in crystal facets"
-        ),
-        "context": (
-            "arctic Norwegian winter landscape with rare golden sunlight, "
-            "skin cells absorbing UV-B radiation at molecular scale, "
-            "bone matrix calcium integration process"
-        ),
+        "subject":  "vitamin D3 supplement capsules",
+        "setting":  "sunny windowsill, warm golden morning light, small plant nearby",
+        "mood":     "bright sunny warm lifestyle",
     },
     "vitamin d": {
-        "element": "vitamin D3 cholecalciferol molecular structure sunshine",
-        "color":   "warm golden amber radiant light",
-        "context": "Nordic winter arctic landscape snow aurora",
+        "subject":  "vitamin D supplement bottle",
+        "setting":  "sunlit wooden table, natural window light",
+        "mood":     "warm bright natural",
     },
     "omega-3": {
-        "element": (
-            "omega-3 DHA EPA polyunsaturated fatty acid chain molecule, "
-            "phospholipid bilayer membrane cross-section, "
-            "cell membrane fluidity shown at atomic detail"
-        ),
-        "color": (
-            "deep arctic ocean teal-blue iridescent shimmer, "
-            "bioluminescent plankton glow effect at edges"
-        ),
-        "context": (
-            "Norwegian salmon swimming through crystal clear arctic fjord, "
-            "brain cell membrane incorporating DHA molecules"
-        ),
+        "subject":  "omega-3 fish oil capsules",
+        "setting":  "wooden table with salmon fillet and lemon beside bottle",
+        "mood":     "fresh healthy Nordic kitchen",
     },
     "omega": {
-        "element": "omega-3 fatty acid DHA EPA polyunsaturated chain molecule",
-        "color":   "deep ocean blue iridescent",
-        "context": "Arctic Norwegian fjord deep sea fish",
+        "subject":  "omega-3 capsules and fish oil bottle",
+        "setting":  "clean white kitchen counter, natural light",
+        "mood":     "fresh healthy lifestyle",
     },
     "zinc": {
-        "element": (
-            "zinc Zn metallic crystalline rhombic structure at atomic scale, "
-            "zinc finger protein domain binding DNA helix, "
-            "T-cell receptor zinc coordination visible"
-        ),
-        "color": (
-            "polished silver metallic surface with electric blue energy field, "
-            "metalloenzyme active site glowing"
-        ),
-        "context": (
-            "immune system T-lymphocyte activation cascade, "
-            "thymulin zinc-dependent hormone releasing"
-        ),
+        "subject":  "zinc supplement tablets and bottle",
+        "setting":  "wooden table with citrus fruits and nuts beside bottle",
+        "mood":     "natural healthy kitchen scene",
+    },
+    "hmb": {
+        "subject":  "HMB supplement powder and capsules",
+        "setting":  "gym bag on wooden floor, water bottle, workout towel",
+        "mood":     "athletic active lifestyle morning",
     },
     "l-theanine": {
-        "element": "L-theanine amino acid molecule green tea leaves",
-        "color":   "soft jade green emerald calm",
-        "context": "alpha brain waves EEG neural calm focus",
+        "subject":  "L-theanine supplement capsules",
+        "setting":  "beside a steaming cup of green tea, wooden desk, calm morning",
+        "mood":     "peaceful focused calm",
     },
     "theanine": {
-        "element": "theanine molecule GABA receptor calm neural",
-        "color":   "soft jade green calming mist",
-        "context": "Nordic forest peaceful alpha wave pattern",
+        "subject":  "theanine supplement bottle and green tea cup",
+        "setting":  "wooden desk with notebook, soft morning light",
+        "mood":     "calm productive morning",
     },
     "creatine": {
-        "element": (
-            "creatine phosphate PCr molecular structure crystalline, "
-            "ATP-ADP cycle shown with energy transfer arrows, "
-            "mitochondrial cristae membrane ultra detail"
-        ),
-        "color": (
-            "electric orange-gold energy burst emanating outward, "
-            "plasma arc electricity between ATP molecules"
-        ),
-        "context": (
-            "neuron firing with maximum ATP availability, "
-            "prefrontal cortex energy metabolism optimization"
-        ),
+        "subject":  "creatine monohydrate powder and shaker bottle",
+        "setting":  "gym counter, workout gloves nearby, natural light",
+        "mood":     "athletic active performance",
     },
     "lion": {
-        "element": (
-            "Hericium erinaceus lion's mane mushroom hyper-detailed macro, "
-            "individual tendrils with cellular structure visible, "
-            "hericenone erinacine molecules floating around spines"
-        ),
-        "color": (
-            "warm cream-white bioluminescent glow from tips, "
-            "golden NGF protein molecules cascading downward"
-        ),
-        "context": (
-            "nerve growth factor NGF BDNF protein crossing blood-brain barrier, "
-            "hippocampal neurogenesis occurring in real time"
-        ),
+        "subject":  "lion's mane mushroom supplement capsules",
+        "setting":  "wooden table with fresh lion's mane mushroom beside bottle",
+        "mood":     "natural earthy wellness",
     },
     "bacopa": {
-        "element": "Bacopa monnieri plant bacoside A compound",
-        "color":   "violet purple indigo neural glow",
-        "context": "hippocampus memory formation synaptic plasticity",
+        "subject":  "bacopa supplement capsules and small plant",
+        "setting":  "wooden desk, books in background, soft natural light",
+        "mood":     "focus study calm",
     },
     "collagen": {
-        "element": "collagen triple helix protein fibril structure",
-        "color":   "warm pearl white golden fiber",
-        "context": "joint cartilage skin tissue matrix repair",
+        "subject":  "collagen powder and supplement bottle",
+        "setting":  "kitchen counter with coffee cup, morning light, clean aesthetic",
+        "mood":     "fresh clean beauty wellness",
     },
     "vitamin c": {
-        "element": "ascorbic acid vitamin C hexagonal ring molecule",
-        "color":   "vibrant citrus orange yellow glow",
-        "context": "immune cell white blood cell activation",
+        "subject":  "vitamin C supplement bottle and tablets",
+        "setting":  "wooden table with fresh oranges and lemons, bright natural light",
+        "mood":     "bright vibrant fresh healthy",
     },
     "quercetin": {
-        "element": "quercetin flavonoid polyphenol molecular structure",
-        "color":   "golden yellow bioflavonoid glow",
-        "context": "antiviral zinc ionophore immune activation",
+        "subject":  "quercetin supplement capsules",
+        "setting":  "wooden table with apples and berries, natural light",
+        "mood":     "natural antioxidant healthy",
     },
     "coq10": {
-        "element": "CoQ10 ubiquinol quinone ring electron transport",
-        "color":   "warm amber orange mitochondrial glow",
-        "context": "mitochondria inner membrane ATP synthase",
+        "subject":  "CoQ10 supplement capsules and bottle",
+        "setting":  "clean wooden counter, morning light, glass of water",
+        "mood":     "clean healthy morning routine",
     },
     "nmn": {
-        "element": "NMN nicotinamide mononucleotide NAD+ precursor",
-        "color":   "electric blue anti-aging cellular glow",
-        "context": "DNA repair sirtuin longevity pathway",
+        "subject":  "NMN supplement capsules",
+        "setting":  "minimalist wooden table, sleek bottle, morning sunlight",
+        "mood":     "clean modern anti-aging wellness",
     },
     "berberine": {
-        "element": "berberine isoquinoline alkaloid AMPK activation",
-        "color":   "deep golden yellow metabolic glow",
-        "context": "metabolic pathway glucose insulin signaling",
+        "subject":  "berberine supplement capsules",
+        "setting":  "wooden table with a small bowl of berries, natural light",
+        "mood":     "natural metabolic health",
     },
     "probiotics": {
-        "element": "probiotic Lactobacillus bacteria microbiome colony",
-        "color":   "soft green teal gut flora",
-        "context": "gut-brain axis vagus nerve microbiome diversity",
+        "subject":  "probiotic supplement bottle and capsules",
+        "setting":  "kitchen counter with yogurt and fresh fruit nearby",
+        "mood":     "gut health fresh natural",
     },
     "glutathione": {
-        "element": "glutathione GSH tripeptide antioxidant molecule",
-        "color":   "emerald green detox glow",
-        "context": "liver detox oxidative stress neutralization",
+        "subject":  "glutathione supplement capsules",
+        "setting":  "clean white counter, green vegetables nearby, bright light",
+        "mood":     "clean detox wellness",
     },
     "ashwagandha": {
-        "element": "ashwagandha withanolide adaptogen molecule",
-        "color":   "warm terracotta orange calm glow",
-        "context": "cortisol adrenal HPA axis stress regulation",
+        "subject":  "ashwagandha supplement capsules and root",
+        "setting":  "wooden table with dried herbs, warm earth-tone setting",
+        "mood":     "natural adaptogen calm earthy",
     },
     "boron": {
-        "element": "boron mineral trace element SHBG testosterone",
-        "color":   "steel blue silver mineral glow",
-        "context": "testosterone free hormone SHBG binding",
+        "subject":  "boron supplement bottle",
+        "setting":  "wooden table, clean minimal setting, natural light",
+        "mood":     "clean minimal health",
     },
     "pqq": {
-        "element": "PQQ pyrroloquinoline quinone mitochondria biogenesis",
-        "color":   "electric purple violet CREB pathway",
-        "context": "mitochondrial new growth PGC-1alpha BDNF",
+        "subject":  "PQQ supplement capsules",
+        "setting":  "wooden desk with coffee, morning productivity scene",
+        "mood":     "energy focus morning",
     },
     "phosphatidylserine": {
-        "element": "phosphatidylserine PS phospholipid brain membrane",
-        "color":   "soft blue lavender neural membrane",
-        "context": "brain cell membrane cortisol stress shield",
+        "subject":  "phosphatidylserine supplement capsules",
+        "setting":  "wooden desk with books and a cup of tea, focused setting",
+        "mood":     "brain health focus calm",
+    },
+    "b12": {
+        "subject":  "vitamin B12 supplement bottle and tablets",
+        "setting":  "wooden table with eggs and dairy nearby, bright kitchen light",
+        "mood":     "energy health bright morning",
     },
     "default": {
-        "element": "supplement molecule neural network crystalline structure",
-        "color":   "cyan blue bioluminescent dark glow",
-        "context": "Nordic winter dark season health optimization",
+        "subject":  "health supplement bottle and capsules",
+        "setting":  "wooden table, natural window light, clean minimal setting",
+        "mood":     "clean healthy lifestyle morning",
     },
 }
 
-# 섹션별 구도 (다크 골드/시안 인포그래픽 스타일)
+# 섹션별 구도 — 실사 라이프스타일 스타일
 SECTION_COMPOSITIONS = {
     "hero": {
-        "composition": (
-            "infographic style dark mode sci-fi medical dashboard, "
-            "molecular diagram with glowing gold and cyan neon lines, "
-            "data visualization panels, dark navy background"
-        ),
-        "style": (
-            "8k sharp render, gold and cyan color scheme, "
-            "dark background, professional scientific illustration, "
-            "no text, no watermark"
-        ),
+        "composition": "flat lay overhead shot, supplement bottle center, natural props around it",
+        "style":       "lifestyle product photography, warm natural tones, soft shadows",
     },
     "s1": {
-        "composition": (
-            "hyper-detailed 3D cross-section of cell organelle, "
-            "clinical UI dashboard floating labels, "
-            "mechanism diagram dark background"
-        ),
-        "style": (
-            "medical textbook quality, cyberpunk UI, "
-            "glowing cyan particles, gold accent lines, "
-            "dark blueprint background, no text"
-        ),
+        "composition": "over-the-shoulder shot, person holding supplement with coffee at wooden table",
+        "style":       "candid lifestyle photography, warm indoor light, shallow depth of field",
     },
     "s2": {
-        "composition": (
-            "complex flow diagram, glowing energy pathways, "
-            "chemical structures isometric 3D, "
-            "dark background neon nodes"
-        ),
-        "style": (
-            "scientific journal cover quality, "
-            "gold and cyan neon glowing nodes, "
-            "dark grid background, no text, no watermark"
-        ),
+        "composition": "close-up of supplement capsules spilling from bottle onto wooden surface",
+        "style":       "macro lifestyle photography, soft bokeh background, warm tones",
     },
     "s3": {
-        "composition": (
-            "split-screen comparison UI, "
-            "left panel dim depleted, right panel glowing optimized, "
-            "data charts dark interface"
-        ),
-        "style": (
-            "premium clinical data visualization, "
-            "high contrast gold vs cyan, "
-            "dark background, no text"
-        ),
+        "composition": "supplement bottle beside healthy food ingredients on kitchen counter",
+        "style":       "food and wellness lifestyle photo, bright natural light, clean aesthetic",
     },
     "s4": {
-        "composition": (
-            "futuristic laboratory holographic display, "
-            "bar charts line graphs dosage protocol, "
-            "structured dark layout"
-        ),
-        "style": (
-            "ultra-detailed data visualization, "
-            "gold and electric cyan UI, "
-            "dark cyber-lab background, no text"
-        ),
+        "composition": "morning routine flat lay: supplement, water glass, notebook on wooden desk",
+        "style":       "top-down lifestyle photography, warm morning light, minimalist",
     },
     "s5": {
-        "composition": (
-            "floating 3D molecular structures, "
-            "dark metallic background, "
-            "radar charts glowing UI indicators"
-        ),
-        "style": (
-            "high-end clinical UI render, "
-            "octane render gold and cyan highlights, "
-            "dark background, no text, no watermark"
-        ),
+        "composition": "hand holding supplement capsule near window with soft natural light",
+        "style":       "intimate lifestyle close-up, warm bokeh, authentic feel",
     },
 }
 
 QUALITY_SUFFIX = (
-    ", 8k resolution, photorealistic 3D render, "
-    "ultra-detailed sci-fi medical infographic, "
-    "dark background, gold and cyan color scheme, "
-    "glowing neon elements, high contrast, "
-    "no text, no letters, no watermark, no logo"
+    ", realistic lifestyle photography, Canon 5D Mark IV, "
+    "natural window light, warm tones, sharp focus, "
+    "high resolution, no text, no watermark, no logo, photorealistic"
 )
 
 
 def build_hq_prompt(topic, section_key="hero"):
-    """영양소 + 섹션별 인포그래픽 프롬프트 생성"""
+    """토픽에 맞는 실사 라이프스타일 이미지 프롬프트 생성"""
     t = topic.lower()
 
     visual = NUTRIENT_VISUALS["default"]
@@ -364,23 +262,10 @@ def build_hq_prompt(topic, section_key="hero"):
 
     comp = SECTION_COMPOSITIONS.get(section_key, SECTION_COMPOSITIONS["hero"])
 
-    nutrient_names = [
-        "Magnesium","Vitamin D3","Omega-3","Zinc","L-Theanine",
-        "Creatine","Alpha-GPC","Lion's Mane","CoQ10","NMN",
-        "Collagen","Quercetin","Glutathione","Bacopa","Ashwagandha",
-        "Berberine","Probiotics","Vitamin C","Boron","PQQ",
-    ]
-    key_nutrients = [n for n in nutrient_names if n.lower() in t]
-    nutrient_context = (
-        f"representing {', '.join(key_nutrients[:2])}"
-        if key_nutrients else "health supplement science"
-    )
-
     prompt = (
-        f"{visual['element']}, "
-        f"{nutrient_context}, "
-        f"{visual['color']}, "
-        f"{visual['context']}, "
+        f"{visual['subject']}, "
+        f"{visual['setting']}, "
+        f"{visual['mood']}, "
         f"{comp['composition']}, "
         f"{comp['style']}"
         f"{QUALITY_SUFFIX}"
@@ -776,10 +661,14 @@ def run_restorer(limit=None, force=False, test_latest=False):
                 save_done(post_id)
                 continue
 
+            update_body = {"title": title, "content": new_content}
+            existing_labels = post.get("labels", [])
+            if existing_labels:
+                update_body["labels"] = existing_labels
             res = service.posts().update(
                 blogId=BLOG_ID,
                 postId=post_id,
-                body={"title": title, "content": new_content}
+                body=update_body
             ).execute()
 
             if res.get('url'):

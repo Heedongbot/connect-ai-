@@ -1,0 +1,6 @@
+{
+  "last_updated": "2026-05-27",
+  "balance_at_update": 11.37,
+  "total_used": 6.80,
+  "note": "Anthropic 콘솔 수동 입력 — 이후 api_usage_log.json 누적 비용으로 차감 추정"
+}

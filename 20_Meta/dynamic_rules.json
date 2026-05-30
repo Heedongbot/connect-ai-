@@ -1,0 +1,88 @@
+{
+  "phrases": [],
+  "section_performance": {},
+  "retry_history": [
+    {
+      "date": "2026-05-29",
+      "topic": "Berberine Complete Guide",
+      "retries": 0,
+      "published": true
+    },
+    {
+      "date": "2026-05-29",
+      "topic": "Probiotics Complete Guide",
+      "retries": 0,
+      "published": true
+    },
+    {
+      "date": "2026-05-30",
+      "topic": "# Berberine Complete Guide\ntype: compreh",
+      "retries": 0,
+      "published": true
+    },
+    {
+      "date": "2026-05-30",
+      "topic": "# Probiotics Complete Guide\ntype: compre",
+      "retries": 0,
+      "published": true
+    },
+    {
+      "date": "2026-05-30",
+      "topic": "# Vitamin B12 Cobalamin Complete Guide\nt",
+      "retries": 0,
+      "published": true
+    },
+    {
+      "date": "2026-05-30",
+      "topic": "# Citrulline Malate Complete Guide\ntype:",
+      "retries": 0,
+      "published": true
+    },
+    {
+      "date": "2026-05-30",
+      "topic": "# Vitamin D3 Complete Guide\ntype: compre",
+      "retries": 0,
+      "published": true
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "Vitamin K2 MK 7 Complete Guide",
+      "retries": 0,
+      "published": true
+    }
+  ],
+  "avg_retries_20": 0.0,
+  "rules": [
+    "AVOID: Two consecutive <hr /> tags appear at the start of post body (detected 2x in published posts)",
+    "AVOID: Post ends with incomplete sentence 'I'm not' — text is cut off mid-paragraph (detected 2x in published posts)",
+    "AVOID: Phrase 'slow burn' is used in context of supplement effectiveness—common AI filler (detected 2x in published posts)",
+    "AVOID: sec5 states 'probiotics don't work effectively' but entire post recommends taking them — direct cont (detected 2x in published posts)",
+    "AVOID: Phrase 'it's worth noting' or 'it's not worth' pattern appears throughout — common AI filler (detected 2x in published posts)",
+    "AVOID: Title containing 'Complete', 'Guide', 'Dosage', or 'Benefits' — strong AI template signal, kills authenticity",
+    "AVOID: Duplicate nutrient name in title (e.g., 'Probiotics Complete: Probiotics : Guide...') — indicates broken template",
+    "AVOID: Image alt text like 'A bottle of [X] and Complete on a wooden kitchen counter' — generic template, use natural descriptions like 'my probiotic bottle next to breakfast'",
+    "AVOID: Key Takeaways that say 'take with fat for best absorption' for water-soluble or non-fat-soluble supplements (probiotics, B vitamins, etc.) — factually wrong and template-obvious",
+    "AVOID: friend/Sarah/coworker/colleague pattern — having a named friend appear is now a repeated pattern across posts, readers notice",
+    "AVOID: Success story arc that is too clean: Problem → Week 4 → Improvement → Routine → Success — must include genuine doubt, setback, or uncertainty ('maybe placebo', 'not sure', 'I almost quit')",
+    "AVOID: Repeating the same core message (take with food, bloating improved, don't quit, week 4) across 3+ sections — information density drops, post feels padded",
+    "AVOID: FAQ section in every single post — occasional posts without FAQ feel more authentic and varied",
+    "AVOID: Image alt text 'probiotics complete guide why i almost didn't try it' reads like a URL slug (all low (detected 2x in published posts)",
+    "AVOID: sec5 final paragraph: 'There's one detail I didn't mention yet — and it's the part that changed my r (detected 2x in published posts)",
+    "AVOID: Title containing 'Worth Taking' or 'What the Research Says' — sounds like a product review template, not a personal experience post",
+    "AVOID: Template substitution failure '[Nutrient] And Complete' or '[Nutrient] and Complete' in body text — indicates broken placeholder, must be caught before publish",
+    "AVOID: Caption like 'Personal observations on [Nutrient] And Complete' — AI template filler, use specific scene descriptions like 'The bottle I almost stopped taking during week 2.'",
+    "AVOID: Phrase 'I wasn't just surviving—I was thriving' — overused AI climax line, use understated language like 'I felt more stable'",
+    "AVOID: Contradicting statements about the same trigger within one post (e.g., coffee is fine in section 1, coffee causes nausea in section 4) — pick one position and stay consistent throughout",
+    "AVOID: Image alt text is all lowercase with hyphens, appears auto-generated slug: ' month one: where things (detected 2x in published posts)",
+    "AVOID: H1 heading contains 'Complete' in title: 'NMN: Is NMN Worth Taking What the Research Says' — but og: (detected 2x in published posts)",
+    "AVOID: Image alt text is auto-generated slug format: ' the second mistake (this one took longer to figure o (detected 2x in published posts)",
+    "AVOID: H2 heading 'Is It Actually Worth It?' is a generic closing question likely repeated across multiple  (detected 2x in published posts)",
+    "AVOID: Section 'Why I'm Still Taking It' (sec4) repeats the same narrative arc as sec0, sec1, sec2: initial (detected 2x in published posts)",
+    "AVOID: Phrase 'significant correlation' appears in PMID 36037202 citation context. Pattern word 'significan (detected 2x in published posts)",
+    "AVOID: H2 heading 'What I Was Doing That Helped' matches the pattern of repeated H2s across multiple posts  (detected 2x in published posts)",
+    "AVOID: Two consecutive <hr /> tags appear at the start of post content (after metadata scripts and before t (detected 2x in published posts)",
+    "AVOID: Multiple unqualified health claims: 'may support' and 'could be' language mixed with definitive stat (detected 2x in published posts)",
+    "AVOID: Two consecutive <hr /> tags appear before the 'Also worth reading' section at the end of the post. (detected 2x in published posts)",
+    "AVOID: H2 heading 'What I Adjusted Along the Way' follows a repeated pattern across supplement posts (e.g., (detected 2x in published posts)"
+  ]
+}

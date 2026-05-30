@@ -1,0 +1,22 @@
+{
+  "A2": {
+    "count_at_escalation": 13,
+    "last_escalated": "2026-05-30 12:11"
+  },
+  "A1": {
+    "count_at_escalation": 7,
+    "last_escalated": "2026-05-30 12:14"
+  },
+  "html_scan_double_hr_tags": {
+    "count_at_escalation": 5,
+    "last_escalated": "2026-05-31 01:02"
+  },
+  "html_scan_ai_pattern_phrase": {
+    "count_at_escalation": 5,
+    "last_escalated": "2026-05-31 01:13"
+  },
+  "F2": {
+    "count_at_escalation": 5,
+    "last_escalated": "2026-05-31 01:30"
+  }
+}

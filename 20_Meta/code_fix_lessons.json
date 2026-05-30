@@ -1,0 +1,30 @@
+[
+  {
+    "timestamp": "2026-05-28 21:48",
+    "problem": "[A2] 품질 문제 5회 반복 감지.\n반복 문제 패턴:\n- 52자 적정 | 영양소명 없음\n- 33자 (권장 40-65)\n- 59자 적정 | 영양소명 없음\n- 48자 적정 | 영양소명 없음\n- 37자 (권장 40-65)\n\n이 문제가 반복되는 파이프라인 코드의 근본 원인을 찾아 수정하세요.",
+    "qwen3_analysis": "[오류: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=120)]",
+    "fix_summary": "[오류: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=120)]",
+    "used_claude": true
+  },
+  {
+    "timestamp": "2026-05-30 12:11",
+    "problem": "[A2] 품질 문제 13회 반복 감지.\n반복 문제 패턴:\n- 54자 적정 | 영양소명 없음\n- 37자 (권장 40-65)\n- 45자 적정 | 영양소명 없음\n- 62자 적정 | 영양소명 없음\n- 33자 (권장 40-65)\n\n이 문제가 반복되는 파이프라인 코드의 근본 원인을 찾아 수정하세요.",
+    "qwen3_analysis": "### 1. 원인 파일 및 위치  \n- **파일명**: `pipeline/text_generator.py`  \n- **구체적 위치**: `generate_nutrition_label()` 함수 내부의 템플릿 생성 로직  \n- **추가 관련 파일**: `validator/length_checker.py` (길이 검증 로직)  \n\n---\n\n### 2. 왜 반복되는지  \n- **원인 1**: `generate_nutrition_label()` 함수에서 **템플릿에 영양소명 필드 누락**  \n  - 예: `\"{{name}}: {{value}}g\"` → `\"{{value}}g\"` (name 필드 누락)  \n- **원인 2**: `length_checker.py`에서 **길이 검증 시 영양소명 존재 여부 검증 누락**  \n  - 예: `if len(text) < 40` → `if len(text) < 40 or \"영양소명\" not in text`  \n- **원인 3**: 에러 발생 시 **재시",
+    "fix_summary": "### 1. 원인 파일 및 위치  \n- **파일명**: `pipeline/text_generator.py`  \n- **구체적 위치**: `generate_nutrition_label()` 함수 내부의 템플릿 생성 로직  \n- **추가 관련 파일**: `validator/length_checker.py` (길이 검증 로직)  \n\n---\n\n### 2. 왜 반복되는지  \n- **원인 1**: `generate_nutrition_label()` 함수에서 **템플릿에 영양소명 필드 누락**  \n  - 예: `\"{{name}}: {{value",
+    "used_claude": true
+  },
+  {
+    "timestamp": "2026-05-30 12:14",
+    "problem": "[A1] 품질 문제 7회 반복 감지.\n반복 문제 패턴:\n- 오염단어 포함\n- 오염패턴: What the Research Says, 오염패턴: Worth Taking\\??\\s*What, 오염단어 포함\n\n이 문제가 반복되는 파이프라인 코드의 근본 원인을 찾아 수정하세요.",
+    "qwen3_analysis": "1. **원인 파일 및 위치**:  \n   `nutristack/pipeline/text_cleaner.py`의 `validate_content()` 함수 내부에서 오염 패턴 검증 로직이 위치합니다. 특히, `re.compile(r'What the Research Says|Worth Taking\\? What')` 패턴이 정확하게 매칭되지 않아 반복 오류가 발생합니다.\n\n---\n\n2. **왜 반복되는지**:  \n   - **패턴 매칭 오류**: `re.compile(r'What the Research Says|Worth Taking\\? What')`은 `Worth Taking\\? What`의 경우 `\\?`가 이스케이프되지 않아 정규표현식에서 `?`를 특수문자로 인식합니다. 결과적으로 `Worth Taking What`과 `Worth Taking? What`을 구분하지 못해 오염된 텍스트를 반복적으로 감지합니다.  \n   - **데이터 처리 순서 문제**: 텍스트 정규화(`normali",
+    "fix_summary": "### ✅ **정확한 수정안 (검수 거부 사유 반영)**\n\n---\n\n#### **1. 파일명**: `nutristack/pipeline/text_cleaner.py`\n\n---\n\n### **수정 전 코드** (문제 발생 원인):\n```python\nimport re\n\ndef validate_content(text):\n    # 오염 패턴 검증\n    if re.search(r'What the Research Says|Worth Taking\\? What', text):\n        raise ValueError(\"오염 패턴 감지\")\n\n",
+    "used_claude": true
+  },
+  {
+    "timestamp": "2026-05-31 01:30",
+    "problem": "[F2] 품질 문제 5회 반복 감지.\n반복 문제 패턴:\n- 이미지 없음\n- 이미지 URL OK, alt 토픽 키워드 없음: 'my B12 bottle next to breakfast'\n- 이미지 URL OK, alt 토픽 키워드 없음: 'my D3 bottle on the counter'\n- 이미지 URL OK, alt 토픽 키워드 없음: 'A bottle",
+    "qwen3_analysis": "[오류: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=120)]",
+    "fix_summary": "[오류: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=120)]",
+    "used_claude": true
+  }
+]

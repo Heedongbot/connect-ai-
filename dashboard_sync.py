@@ -16,14 +16,14 @@ def sync():
         links_file = META_DIR / "published_links.json"
         total_posts = 0
         if links_file.exists():
-            links = json.loads(links_file.read_text(encoding='utf-8'))
+            links = json.loads(links_file.read_text(encoding='utf-8-sig'))
             total_posts = len(links)
 
         # 2. 평균 점수 계산
         perf_file = META_DIR / "performance_db.json"
         avg_score = 0.0
         if perf_file.exists():
-            perf = json.loads(perf_file.read_text(encoding='utf-8'))
+            perf = json.loads(perf_file.read_text(encoding='utf-8-sig'))
             if perf:
                 scores = [p.get("score", 0) for p in perf if "score" in p]
                 if scores:
@@ -34,7 +34,7 @@ def sync():
         # 3. 자가 수리 횟수
         self_repaired = 0
         if perf_file.exists():
-            perf = json.loads(perf_file.read_text(encoding='utf-8'))
+            perf = json.loads(perf_file.read_text(encoding='utf-8-sig'))
             self_repaired = sum(1 for p in perf if "[REWRITE]" in p.get("issues", ""))
 
         # 4. 실시간 로그 읽기
@@ -42,7 +42,7 @@ def sync():
         log_files = [BASE_DIR / "orchestrator.log", BASE_DIR / "autonomous_ceo.log"]
         for lf in log_files:
             if lf.exists():
-                lines = lf.read_text(encoding='utf-8').splitlines()
+                lines = lf.read_text(encoding='utf-8-sig').splitlines()
                 # 최근 10줄씩 가져와서 파일명 태그 달기
                 tag = "[ORCH]" if "orchestrator" in lf.name else "[CEO]"
                 for line in lines[-15:]:
@@ -77,7 +77,7 @@ def sync():
                 if cp_age > 600:  # 10분 이과 = 옥데이트 아닔
                     pass  # 대기 상태 유지
                 else:
-                    ctx = json.loads(latest_cp.read_text(encoding='utf-8'))
+                    ctx = json.loads(latest_cp.read_text(encoding='utf-8-sig'))
                     
                     # 미션 제목 추출
                     topic = ctx.get("topic", latest_cp.stem.replace('_',' '))
@@ -132,7 +132,7 @@ const REAL_DATA = {{
     lastUpdate: "{datetime.now().strftime('%H:%M:%S')}"
 }};
 """
-        DATA_FILE.write_text(js_content, encoding='utf-8')
+        DATA_FILE.write_text(js_content, encoding='utf-8-sig')
         # print(f"  📊 대시보드 데이터 동기화 완료: {total_posts}개 포스팅")
 
     except Exception as e:

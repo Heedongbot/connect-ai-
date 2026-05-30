@@ -1,0 +1,39 @@
+[
+  {
+    "date": "2026-05-29",
+    "title": "Is Berberine Worth Taking What the Research Says",
+    "total": 9.3,
+    "cat_avgs": {
+      "A": 8.5,
+      "B": 10.0,
+      "C": 9.5,
+      "D": 9.0,
+      "E": 9.0,
+      "F": 10.0
+    },
+    "strong_points": [
+      "A1(10/10): OK",
+      "B1(10/10): 106자 OK",
+      "B2(10/10): 1개 alt 모두 OK",
+      "C1(10/10): 164자 hook OK",
+      "C2(10/10): H2 9개 OK",
+      "C3(10/10): 4166단어",
+      "C5(10/10): 1인칭 334회, 개인경험 40회",
+      "C6(10/10): 전문용어 적정",
+      "D1(10/10): PMID 5개",
+      "D2(10/10): 내부링크 7개",
+      "D3(10/10): 필수요소 모두 OK",
+      "E1(10/10): YMYL 안전",
+      "E2(10/10): 개인경험 42회 OK",
+      "F1(10/10): 숫자 식별자 없음 (검사 불필요)",
+      "F2(10/10): 이미지 OK, alt 관련성 확인 (berberine)"
+    ],
+    "word_count": 4167,
+    "has_hook": true,
+    "has_toc": true,
+    "has_faq": true,
+    "pmid_count": 2,
+    "img_count": 1,
+    "section_count": 9
+  }
+]

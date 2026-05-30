@@ -16,8 +16,26 @@ import re
 import random
 import logging
 import shutil
+import subprocess
+import sys
+import socket
+import psutil
 from datetime import datetime, timedelta
 from pathlib import Path
+
+# 스케줄러 중복 실행 방지 (포트 19998 점유)
+_scheduler_socket = None
+def _ensure_single_scheduler():
+    global _scheduler_socket
+    try:
+        _scheduler_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        _scheduler_socket.bind(('127.0.0.1', 19998))
+    except socket.error:
+        sys.stdout.write("[중복 실행 방지] 스케줄러가 이미 실행 중입니다 (포트 19998). 종료합니다.\n")
+        sys.stdout.flush()
+        sys.exit(0)
+
+_ensure_single_scheduler()
 
 try:
     import schedule
@@ -183,28 +201,32 @@ TOPIC_TEMPLATES = {
 # ============================================================
 # 트렌드 수집
 # ============================================================
-def fetch_google_trends(keywords, cache_hours=12):
-    """Google Trends 검색량 수집 (캐시 포함)"""
+def fetch_google_trends(keywords, timeframe='today 1-m', cache_hours=6):
+    """Google Trends 검색량 수집 (timeframe 파라미터화, 캐시 포함)"""
     if not HAS_PYTRENDS:
         return {}
 
-    # 캐시 확인
-    if TRENDS_CACHE.exists():
+    # timeframe별 캐시 파일 분리
+    cache_tag  = timeframe.replace(' ', '_').replace('-', '')
+    cache_file = META_DIR / f"trends_cache_{cache_tag}.json"
+
+    if cache_file.exists():
         try:
-            cached = json.loads(TRENDS_CACHE.read_text(encoding='utf-8'))
+            cached = json.loads(cache_file.read_text(encoding='utf-8'))
             ct = datetime.fromisoformat(cached.get("timestamp", "2000-01-01"))
             if (datetime.now() - ct).total_seconds() < cache_hours * 3600:
-                logging.info(f"  📊 Trends 캐시 사용 ({len(cached.get('scores', {}))}개)")
+                logging.info(f"  📊 Trends 캐시 [{timeframe}] ({len(cached.get('scores', {}))}개)")
                 return cached.get("scores", {})
         except: pass
 
     try:
         pytrends = TrendReq(hl='en-US', tz=360)
         scores = {}
-        for i in range(0, min(len(keywords), 20), 5):
-            batch = keywords[i:i+5]
+        kw_list = list(keywords)
+        for i in range(0, len(kw_list), 5):
+            batch = kw_list[i:i+5]
             try:
-                pytrends.build_payload(batch, timeframe='today 1-m', geo='US')
+                pytrends.build_payload(batch, timeframe=timeframe, geo='US')
                 data = pytrends.interest_over_time()
                 if not data.empty:
                     for kw in batch:
@@ -212,39 +234,18 @@ def fetch_google_trends(keywords, cache_hours=12):
                             scores[kw] = int(data[kw].mean())
                 time.sleep(1.5)
             except Exception as e:
-                logging.warning(f"  Trends 배치 오류: {e}")
+                logging.warning(f"  Trends 배치 오류 [{timeframe}]: {e}")
 
-        TRENDS_CACHE.write_text(json.dumps({
+        cache_file.write_text(json.dumps({
             "timestamp": datetime.now().isoformat(),
+            "timeframe": timeframe,
             "scores": scores
         }, ensure_ascii=False, indent=2), encoding='utf-8')
-        logging.info(f"  📊 Google Trends 수집: {len(scores)}개")
+        logging.info(f"  📊 Google Trends [{timeframe}] {len(scores)}개 수집")
         return scores
     except Exception as e:
-        logging.warning(f"  Trends 오류: {e}")
+        logging.warning(f"  Trends 오류 [{timeframe}]: {e}")
         return {}
-
-def get_trending_nutrients(top_n=15):
-    """트렌딩 영양소 상위 N개 반환"""
-    sample = random.sample(NUTRIENTS, min(25, len(NUTRIENTS)))
-    scores = fetch_google_trends(sample)
-
-    # 점수 없는 항목은 낮은 점수로
-    all_scored = []
-    for nut in NUTRIENTS:
-        base_score = scores.get(nut, 0)
-        # 약간의 랜덤성 추가 (너무 고정되지 않게)
-        jitter = random.randint(0, 10)
-        all_scored.append((base_score + jitter, nut))
-
-    all_scored.sort(key=lambda x: x[0], reverse=True)
-    top = [n for _, n in all_scored[:top_n]]
-
-    # 랜덤 6개 추가 (다양성)
-    extra = random.sample(NUTRIENTS, min(6, len(NUTRIENTS)))
-    combined = list(dict.fromkeys(top + extra))  # 중복 제거, 순서 유지
-    logging.info(f"  📈 트렌딩 TOP 5: {top[:5]}")
-    return combined
 
 # ============================================================
 # 주제 생성
@@ -400,105 +401,151 @@ def save_schedule_log(posts):
     log = log[-30:]  # 최근 30일만 유지
     SCHEDULE_LOG.write_text(json.dumps(log, ensure_ascii=False, indent=2), encoding='utf-8')
 
-def run_posting_job(topic_type):
-    """스케줄된 포스팅 실행 (Just-In-Time 실시간 트렌드 스캔)"""
+def run_posting_job(topic, topic_type="comprehensive_guide"):
+    """스케줄된 포스팅 실행 (주제 이미 결정됨 — plan_today에서 선정)"""
     logging.info("\n" + "="*50)
-    logging.info(f"⏰ 포스팅 JIT 실행 시작 (타입: {topic_type})")
-    
-    # 1. 포스팅 실행 직전(JIT) 실시간 트렌드 수집
-    logging.info("  🔍 실시간 트렌딩 영양소 스캔 중 (최신 데이터)...")
-    trending = get_trending_nutrients(top_n=15)
-    if not trending:
-        trending = random.sample(NUTRIENTS, 15)
-        
-    # 2. 발행된 주제 로드 (중복 방지)
-    published = load_published_topics()
-    
-    # 3. 실시간 트렌드를 반영한 주제 생성
-    topic = generate_topic(topic_type, trending, published)
-    logging.info(f"  🎯 JIT 최종 생성 주제: {topic}")
-    
-    # DB 기록용
-    post_info = [{"time": datetime.now().strftime("%H:%M"), "topic": topic, "topic_type": topic_type}]
-    add_to_topic_bank(post_info)
-    save_schedule_log(post_info)
-
-    # 4. 파일 던져서 오케스트레이터 깨우기
+    logging.info(f"⏰ 포스팅 실행: {topic}")
     create_raw_file(topic)
     mark_topic_done(topic)
+    save_schedule_log([{
+        "time":       datetime.now().strftime("%H:%M"),
+        "topic":      topic,
+        "topic_type": topic_type,
+    }])
     logging.info(f"  ✅ RAW 파일 생성 완료 → 오케스트레이터가 즉시 처리합니다!")
     logging.info("="*50)
 
 # ============================================================
 # 하루 계획 수립
 # ============================================================
+def _extract_nutrient(topic_str: str) -> str:
+    """'Magnesium Complete Guide' → 'Magnesium'"""
+    return re.sub(r'\s*(complete\s+guide|guide)\s*$', '', topic_str, flags=re.I).strip()
+
+
 def plan_today():
     """
-    오늘의 발행 시간표 계획 (JIT 모드):
-    - 발행 수: 2~4개
-    - 스케줄: 불규칙
-    - 주제: (포스팅 직전 실시간 생성으로 위임)
+    오늘의 발행 시간표 (v6.0 — 트렌드 기반 comprehensive guide 3개):
+
+    131개 comprehensive guide 중 미완료 주제를
+      1번째 포스팅: 7일 트렌드 1위
+      2번째 포스팅: 30일 트렌드 1위
+      3번째 포스팅: 1년 트렌드 1위
+    이미 선정/발행된 주제는 2위, 3위... 로 밀림.
     """
     logging.info("\n" + "="*50)
-    logging.info(f"📅 오늘의 발행 시간표 수립 (JIT 모드) — {datetime.now().strftime('%Y-%m-%d')}")
+    today = datetime.now().strftime("%Y-%m-%d")
+    logging.info(f"📅 발행 시간표 수립 (v6.0 Trend-Guided) — {today}")
 
-    # 발행 수 결정
-    post_count = random.choices([2, 3, 4], weights=[35, 45, 20], k=1)[0]
-    logging.info(f"  🎲 오늘 발행 계획 수: {post_count}개")
+    bank    = load_topic_bank()
 
-    # 스케줄 시간 생성
-    schedule_times = generate_daily_schedule(post_count)
+    # 미완료 comprehensive guide (날짜 배정 전 + 오늘 이미 배정된 것 모두 포함)
+    pending = [
+        t for t in bank
+        if t.get("type") == "comprehensive_guide"
+        and t.get("status") == "pending"
+    ]
 
-    # 주제 타입 다양화 (타입만 미리 결정)
-    type_weights = {
-        "synergy": 20, "food-combo": 10, "side-effects": 8,
-        "antagonism": 8, "recipe": 5, "mechanism": 8,
-        "protocol": 10, "comparison": 8, "deficiency": 5, "timing": 5,
-        "longtail-symptom": 15, "longtail-routine": 15, "longtail-mistake": 10,
+    # 오늘 이미 배정된 항목은 제외 (중복 방지)
+    already_today = {
+        t["topic"] for t in bank
+        if t.get("date") == today and t.get("status") == "pending"
     }
-    selected_types = random.choices(
-        list(type_weights.keys()), weights=list(type_weights.values()), k=post_count
-    )
-    
-    # [v5.5] 매일 롱테일(Longtail) 키워드 1개 이상 강제 배정
-    longtail_types = ["longtail-symptom", "longtail-routine", "longtail-mistake"]
-    has_longtail = any(tt in longtail_types for tt in selected_types)
-    if not has_longtail:
-        # 랜덤한 인덱스 하나를 롱테일 타입으로 교체
-        idx = random.randint(0, len(selected_types) - 1)
-        selected_types[idx] = random.choice(longtail_types)
-        logging.info(f"  🔍 롱테일 키워드 강제 주입: {selected_types[idx]}")
+    pending = [t for t in pending if t["topic"] not in already_today]
 
-    # 연속 타입 방지
-    for i in range(1, len(selected_types)):
-        attempts = 0
-        while selected_types[i] == selected_types[i-1] and attempts < 5:
-            selected_types[i] = random.choices(
-                list(type_weights.keys()), weights=list(type_weights.values()), k=1
-            )[0]
-            attempts += 1
+    if not pending:
+        logging.info("  ✅ 모든 comprehensive guide 완료 (또는 오늘 이미 배정 완료)!")
+        return None
 
-    # JIT 시간표 구조 생성
-    posts = []
-    for t, tt in zip(schedule_times, selected_types):
-        posts.append({
-            "time":       t,
-            "topic":      "[포스팅 직전 실시간 트렌드로 생성됨]",
-            "topic_type": tt,
+    logging.info(f"  📚 남은 comprehensive guide: {len(pending)}개")
+
+    # 영양소명 추출 (트렌드 검색 키워드)
+    nutrients = list(dict.fromkeys(_extract_nutrient(t["topic"]) for t in pending))
+
+    # 3개 트렌드 윈도우 — 순서 = 발행 순서
+    TREND_WINDOWS = [
+        ("7d",  "now 7-d",       "1번째"),
+        ("30d", "today 1-m",     "2번째"),
+        ("1yr", "today 12-m",    "3번째"),
+    ]
+
+    trend_scores = {}
+    for label, tf, _ in TREND_WINDOWS:
+        scores = fetch_google_trends(nutrients, timeframe=tf, cache_hours=6)
+        trend_scores[label] = scores
+        if scores:
+            top3 = sorted(scores.items(), key=lambda x: x[1], reverse=True)[:3]
+            logging.info(f"  [{label}] TOP3: {[f'{n}({s})' for n, s in top3]}")
+        else:
+            logging.info(f"  [{label}] 트렌드 데이터 없음 — 순서 기반 선택")
+
+    # 각 윈도우에서 미선정 1위 선택
+    selected        = []   # [(entry_dict, trend_label, trend_window_name)]
+    selected_topics = set()
+
+    for label, _, slot_name in TREND_WINDOWS:
+        scores = trend_scores[label]
+        # 아직 선정 안 된 항목을 트렌드 점수 내림차순 정렬
+        ranked = sorted(
+            [t for t in pending if t["topic"] not in selected_topics],
+            key=lambda t: (
+                scores.get(_extract_nutrient(t["topic"]), 0),
+                random.uniform(0, 1)   # 동점 시 랜덤 tiebreak
+            ),
+            reverse=True
+        )
+        if not ranked:
+            logging.warning(f"  [{label}] 선택 가능한 주제 없음 — 스킵")
+            continue
+        chosen = ranked[0]
+        nut    = _extract_nutrient(chosen["topic"])
+        score  = scores.get(nut, 0)
+        selected.append((chosen, label, slot_name))
+        selected_topics.add(chosen["topic"])
+        logging.info(f"  [{slot_name}/{label}] 선택: {chosen['topic']} (trend={score})")
+
+    if not selected:
+        logging.warning("  ⚠️ 선택된 주제 없음 — plan 중단")
+        return None
+
+    # 발행 시간 배정 (불규칙, 3시간 간격)
+    times = generate_daily_schedule(len(selected))
+
+    # topic_bank 업데이트 — 날짜 + 시간 배정
+    updated = 0
+    plan_posts = []
+    for (entry, label, slot_name), t in zip(selected, times):
+        for b in bank:
+            if b["topic"] == entry["topic"] and b.get("status") == "pending":
+                b["date"]         = today
+                b["time"]         = t
+                b["trend_window"] = label
+                b["trend_slot"]   = slot_name
+                updated += 1
+                break
+        plan_posts.append({
+            "time":         t,
+            "topic":        entry["topic"],
+            "topic_type":   "comprehensive_guide",
+            "trend_window": label,
+            "trend_slot":   slot_name,
         })
 
-    plan = {
-        "date":        datetime.now().strftime("%Y-%m-%d"),
-        "post_count":  post_count,
-        "posts":       posts,
-        "trending":    [], # JIT 방식이므로 미리 수집 안함
-    }
-    plan_file = META_DIR / "daily_plan.json"
-    plan_file.write_text(json.dumps(plan, ensure_ascii=False, indent=2), encoding='utf-8')
+    save_topic_bank(bank)
 
-    logging.info(f"\n  📋 오늘의 발행 시간표 ({post_count}개):")
-    for p in posts:
-        logging.info(f"    ⏰ {p['time']} [{p['topic_type']}] (트렌드 실시간 반영 대기)")
+    plan = {
+        "date":       today,
+        "post_count": len(selected),
+        "posts":      plan_posts,
+    }
+    (META_DIR / "daily_plan.json").write_text(
+        json.dumps(plan, ensure_ascii=False, indent=2), encoding='utf-8'
+    )
+
+    logging.info(f"\n  📋 오늘 발행 시간표 ({len(selected)}개):")
+    for p in plan_posts:
+        logging.info(f"    ⏰ {p['time']} [{p['trend_slot']}/{p['trend_window']}] → {p['topic']}")
+    logging.info(f"  📊 진행률: {len([t for t in bank if t.get('type')=='comprehensive_guide' and t.get('status')=='completed'])} / 131 완료")
     logging.info("="*50)
     return plan
 
@@ -506,36 +553,168 @@ def plan_today():
 # 스케줄 등록
 # ============================================================
 def register_today_schedule():
-    """오늘 계획을 schedule 라이브러리에 등록 — 이미 계획이 있으면 재사용"""
+    """오늘 날짜 topic_bank 항목만 스케줄 등록 (날짜 불일치 항목은 절대 등록 안 함)"""
     if not HAS_SCHEDULE:
         logging.error("schedule 라이브러리 미설치!")
         return
 
-    today_str = datetime.now().strftime("%Y-%m-%d")
-    plan_file  = META_DIR / "daily_plan.json"
+    bank = load_topic_bank()
+    today = datetime.now().strftime("%Y-%m-%d")
+    now   = datetime.now()
 
-    # ✅ 핵심 버그 수정: 오늘 계획이 이미 있으면 새로 만들지 않음
-    plan = None
-    if plan_file.exists():
+    # [v5.6] 오늘 pending 항목이 없으면 자동으로 plan_today() 호출
+    today_pending = [e for e in bank if e.get("date") == today and e.get("status") == "pending"]
+    if not today_pending:
+        logging.info(f"  📅 오늘({today}) 스케줄 없음 → plan_today() 자동 실행")
+        new_plan = plan_today()
+        bank = load_topic_bank()  # plan_today가 topic_bank에 추가하므로 재로드
+
+    registered = 0
+
+    for entry in bank:
+        if entry.get("status") != "pending":
+            continue
+        entry_date = entry.get("date", "")
+        entry_time = entry.get("time", "")
+
+        # 오늘 날짜 항목만 등록
+        if entry_date != today:
+            continue
+        if not entry_time:
+            continue
+
+        # 이미 지난 시간이면 스킵
         try:
-            existing = json.loads(plan_file.read_text(encoding='utf-8'))
-            if existing.get("date") == today_str:
-                plan = existing
-                logging.info(f"  ♻️ 오늘 계획 재사용 ({len(plan['posts'])}개) — 중복 생성 방지")
-        except: pass
+            scheduled_dt = datetime.strptime(f"{entry_date} {entry_time}", "%Y-%m-%d %H:%M")
+        except:
+            continue
+        topic = entry.get("topic", "")
 
-    if plan is None:
-        plan = plan_today()
+        if scheduled_dt < now:
+            # 지나간 시간 — 스케줄러 재시작으로 놓친 발행 즉시 실행
+            logging.info(f"  ⚡ 시간 경과 → 즉시 실행: {entry_time} → {topic[:40]}")
+            _trigger_topic(topic=topic)
+            registered += 1
+            continue
 
-    for post in plan["posts"]:
-        t        = post["time"]
-        tt       = post["topic_type"]
+        schedule.every().day.at(entry_time).do(
+            _trigger_topic, topic=topic
+        ).tag(f"post_{entry_time}")
+        logging.info(f"  ⏰ 등록: {entry_time} [comprehensive-guide] → {topic[:50]}")
+        registered += 1
 
-        schedule.every().day.at(t).do(
-            run_posting_job, topic_type=tt
-        ).tag(f"post_{t}")
+    if registered == 0:
+        logging.info(f"  📭 오늘({today}) topic_bank 등록 항목 없음")
+    else:
+        logging.info(f"  ✅ topic_bank 항목 {registered}개 스케줄 등록 완료")
 
-        logging.info(f"  ⏰ 등록: {t} [{tt}] → (포스팅 직전 실시간 주제 결정)")
+def _trigger_topic(topic):
+    """topic_bank 항목을 00_Raw에 파일로 던져 오케스트레이터 트리거"""
+    logging.info(f"\n{'='*50}")
+    logging.info(f"⏰ topic_bank 트리거: {topic}")
+    create_raw_file(topic)
+    mark_topic_done(topic)
+    logging.info(f"  ✅ RAW 파일 생성 완료 → 오케스트레이터 처리 대기")
+    logging.info("="*50)
+
+ORCHESTRATOR_SCRIPT   = BASE_DIR / "00_NutriStack_Grand_Orchestrator_v5.py"
+HERNEX_SCRIPT         = BASE_DIR / "hernex_agent.py"
+DISCORD_BOT_SCRIPT    = BASE_DIR / "bot_start.py"
+MORNING_REPORT_SCRIPT = BASE_DIR / "morning_report.py"
+_orch_proc = None  # 워치독이 관리하는 오케스트레이터 프로세스
+
+def _is_orchestrator_running():
+    """포트 19999 점유 여부로 오케스트레이터 생존 확인 (수동 시작도 감지)."""
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.bind(('127.0.0.1', 19999))
+        s.close()
+        return False  # 바인딩 성공 = 포트 비어있음 = 오케스트레이터 없음
+    except OSError:
+        return True   # 바인딩 실패 = 포트 사용 중 = 오케스트레이터 실행 중
+
+def _is_discord_bot_running():
+    """포트 19997 점유 여부로 디스코드봇 생존 확인."""
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.bind(('127.0.0.1', 19997))
+        s.close()
+        return False
+    except OSError:
+        return True
+
+def _is_hernex_running():
+    """psutil cmdline으로 hernex_agent.py 생존 확인."""
+    for p in psutil.process_iter(['cmdline']):
+        try:
+            if any('hernex_agent.py' in (c or '') for c in (p.info['cmdline'] or [])):
+                return True
+        except (psutil.NoSuchProcess, psutil.AccessDenied):
+            pass
+    return False
+
+def _start_orchestrator():
+    """오케스트레이터를 새 콘솔 창으로 시작."""
+    global _orch_proc
+    try:
+        _orch_proc = subprocess.Popen(
+            ["cmd", "/k", sys.executable, str(ORCHESTRATOR_SCRIPT)],
+            cwd=str(BASE_DIR),
+            creationflags=subprocess.CREATE_NEW_CONSOLE,
+        )
+        logging.info(f"  [워치독] 오케스트레이터 시작 (창 모드) — PID {_orch_proc.pid}")
+    except Exception as e:
+        logging.error(f"  [워치독] 오케스트레이터 시작 실패: {e}")
+
+def _start_hernex():
+    """hernex_agent.py 백그라운드 재시작."""
+    try:
+        proc = subprocess.Popen(
+            [sys.executable, str(HERNEX_SCRIPT)],
+            cwd=str(BASE_DIR),
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+        )
+        logging.info(f"  [워치독] hernex_agent 시작 — PID {proc.pid}")
+    except Exception as e:
+        logging.error(f"  [워치독] hernex_agent 시작 실패: {e}")
+
+def _start_discord_bot():
+    """bot_start.py 백그라운드 재시작."""
+    try:
+        proc = subprocess.Popen(
+            [sys.executable, str(DISCORD_BOT_SCRIPT)],
+            cwd=str(BASE_DIR),
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+        )
+        logging.info(f"  [워치독] 디스코드봇 시작 — PID {proc.pid}")
+    except Exception as e:
+        logging.error(f"  [워치독] 디스코드봇 시작 실패: {e}")
+
+def _is_morning_report_running():
+    """포트 19993 점유 여부로 morning_report.py 생존 확인."""
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.bind(('127.0.0.1', 19993))
+        s.close()
+        return False
+    except OSError:
+        return True
+
+def _start_morning_report():
+    """morning_report.py 백그라운드 재시작."""
+    try:
+        proc = subprocess.Popen(
+            [sys.executable, str(MORNING_REPORT_SCRIPT)],
+            cwd=str(BASE_DIR),
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+        )
+        logging.info(f"  [워치독] morning_report 시작 — PID {proc.pid}")
+    except Exception as e:
+        logging.error(f"  [워치독] morning_report 시작 실패: {e}")
+
 
 def run_scheduler():
     """메인 스케줄러 루프"""
@@ -544,34 +723,65 @@ def run_scheduler():
         return
 
     logging.info("🤖 NutriStack Lab Daily Scheduler v5.0")
-    logging.info("  📊 Google Trends 실시간 연동")
-    logging.info("  🎲 Human Cadence Entropy 활성화")
-    logging.info("  📂 10가지 주제 타입 랜덤 선택")
-    logging.info("  ⏰ 24시간 2~4개 랜덤 발행")
+    logging.info("  📋 topic_bank.json 전용 모드 (랜덤 JIT 생성 비활성)")
+    logging.info("  🔁 워치독: 오케스트레이터 + hernex + 디스코드봇 + morning_report 자동 재시작")
     logging.info("="*50)
 
-    # 매일 00:01 — 새 계획 수립
-    schedule.every().day.at("00:01").do(lambda: (
-        [schedule.cancel_job(job) for job in schedule.jobs if any(str(tag).startswith('post_') for tag in getattr(job, 'tags', []))],
+    def _rescan_today():
+        jobs_to_cancel = [j for j in list(schedule.jobs)
+                          if any(str(t).startswith('post_') for t in getattr(j, 'tags', []))]
+        for j in jobs_to_cancel:
+            schedule.cancel_job(j)
         register_today_schedule()
-    ))
+
+    # 매일 00:01 — topic_bank 재스캔
+    schedule.every().day.at("00:01").do(_rescan_today)
+
+    # 매일 06:05 — topic_ranker 실행 후 재스캔 (06:00 topic_ranker 완료 후)
+    schedule.every().day.at("06:05").do(_rescan_today)
 
     # 오늘 계획 즉시 수립
     register_today_schedule()
 
+    # 워치독: 오케스트레이터 초기 시작
+    _start_orchestrator()
+
     last_day = datetime.now().day
     last_status_min = -1
+    last_watchdog_check = 0
 
     while True:
         schedule.run_pending()
         now = datetime.now()
 
-        # 날짜 바뀌면 이전 스케줄 정리
+        # 워치독: 60초마다 오케스트레이터 + 봇 생존 확인
+        if time.time() - last_watchdog_check > 60:
+            pause_flag = BASE_DIR.parent / "queue" / "watchdog.pause"
+            if pause_flag.exists():
+                logging.info("  ⏸️  [워치독] 일시정지 (watchdog.pause 존재) — 오케스트레이터 재시작 안 함")
+            elif not _is_orchestrator_running():
+                logging.warning("  ⚠️ [워치독] 오케스트레이터 꺼짐 감지 → 자동 재시작")
+                _start_orchestrator()
+            # 봇은 pause_flag 무관하게 항상 감시
+            if not _is_hernex_running():
+                logging.warning("  ⚠️ [워치독] hernex_agent 꺼짐 감지 → 자동 재시작")
+                _start_hernex()
+            if not _is_discord_bot_running():
+                logging.warning("  ⚠️ [워치독] 디스코드봇 꺼짐 감지 → 자동 재시작")
+                _start_discord_bot()
+            if not _is_morning_report_running():
+                logging.warning("  ⚠️ [워치독] morning_report 꺼짐 감지 → 자동 재시작")
+                _start_morning_report()
+            last_watchdog_check = time.time()
+
+        # 날짜 바뀌면 이전 스케줄 정리 후 오늘 것 재등록
         if now.day != last_day:
-            for tag in schedule.jobs:
-                if hasattr(tag, 'tags') and any('post_' in str(t) for t in tag.tags):
-                    schedule.cancel_job(tag)
+            for job in list(schedule.jobs):
+                if hasattr(job, 'tags') and any('post_' in str(t) for t in job.tags):
+                    schedule.cancel_job(job)
             last_day = now.day
+            logging.info(f"  📅 날짜 변경 감지 → 새 스케줄 등록")
+            register_today_schedule()
 
         # 매 30분마다 상태 출력
         if now.minute % 30 == 0 and now.minute != last_status_min:
@@ -594,44 +804,51 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         cmd = sys.argv[1].lower()
 
-        if cmd == "test":
-            # 주제 생성 테스트
-            logging.info("🧪 주제 생성 테스트")
-            trending = get_trending_nutrients(10)
-            published = load_published_topics()
-            logging.info(f"  트렌딩: {trending[:5]}")
-            logging.info(f"  발행된 주제 수: {len(published)}")
-            print("\n생성된 주제 샘플:")
-            for tt in list(TOPIC_TEMPLATES.keys()):
-                topic = generate_topic(tt, trending, published)
-                print(f"  [{tt:15s}] {topic}")
-
-        elif cmd == "plan":
-            # 오늘 계획 출력
+        if cmd == "plan":
+            # 오늘 계획 수립 + 출력
             plan = plan_today()
-            print(json.dumps(plan, ensure_ascii=False, indent=2))
-
-        elif cmd == "now":
-            # 즉시 1개 발행 (테스트용)
-            trending = get_trending_nutrients(10)
-            published = load_published_topics()
-            tt = random.choice(list(TOPIC_TEMPLATES.keys()))
-            topic = generate_topic(tt, trending, published)
-            logging.info(f"  즉시 발행: [{tt}] {topic}")
-            run_posting_job(topic, tt)
+            if plan:
+                print(json.dumps(plan, ensure_ascii=False, indent=2))
+            else:
+                print("계획 수립 실패 또는 모든 가이드 완료")
 
         elif cmd == "status":
             # 현재 상태 출력
-            bank = load_topic_bank()
-            pending = [t for t in bank if t.get("status") == "pending"]
-            done = [t for t in bank if t.get("status") == "completed"]
-            print(f"대기 중: {len(pending)}개")
+            bank  = load_topic_bank()
+            guides    = [t for t in bank if t.get("type") == "comprehensive_guide"]
+            done      = [t for t in guides if t.get("status") == "completed"]
+            pending   = [t for t in guides if t.get("status") == "pending"]
+            today_str = datetime.now().strftime("%Y-%m-%d")
+            today_sch = [t for t in pending if t.get("date") == today_str]
+            print(f"\n=== Comprehensive Guide 진행 현황 ===")
+            print(f"완료: {len(done)} / 131")
+            print(f"남은 가이드: {len(pending)}개")
+            print(f"오늘 예정: {len(today_sch)}개")
+            if today_sch:
+                for t in today_sch:
+                    print(f"  ⏰ {t.get('time','?')} [{t.get('trend_window','?')}] {t.get('topic','')[:60]}")
+            print(f"\n다음 대기 5개:")
             for t in pending[:5]:
-                print(f"  ⏰ {t.get('time','?')} [{t.get('type','?')}] {t.get('topic','')[:50]}")
-            print(f"완료: {len(done)}개")
+                print(f"  [{t.get('date','미배정'):10s}] {t.get('topic','')[:60]}")
+
+        elif cmd == "trends":
+            # 트렌드 미리보기 (실제 배정 없이)
+            bank    = load_topic_bank()
+            pending = [t for t in bank if t.get("type") == "comprehensive_guide" and t.get("status") == "pending"]
+            nutrients = list(dict.fromkeys(_extract_nutrient(t["topic"]) for t in pending))
+            print(f"남은 {len(pending)}개 가이드 트렌드 점수:")
+            for label, tf, slot in [("7d","now 7-d","1번째"), ("30d","today 1-m","2번째"), ("1yr","today 12-m","3번째")]:
+                scores = fetch_google_trends(nutrients, timeframe=tf, cache_hours=1)
+                ranked = sorted(
+                    [(scores.get(_extract_nutrient(t["topic"]), 0), t["topic"]) for t in pending],
+                    reverse=True
+                )[:5]
+                print(f"\n[{slot}/{label}] TOP5:")
+                for sc, tp in ranked:
+                    print(f"  {sc:3d}  {tp}")
 
         else:
             print(f"알 수 없는 명령어: {cmd}")
-            print("사용법: python daily_scheduler_v5.py [test|plan|now|status]")
+            print("사용법: python daily_scheduler_v5.py [plan|status|trends]")
     else:
         run_scheduler()

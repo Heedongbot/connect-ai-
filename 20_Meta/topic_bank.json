@@ -4,168 +4,168 @@
     "type": "synergy",
     "time": "08:41",
     "date": "2026-05-11",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "topic": "Morning vs Evening: When to Take Collagen",
     "type": "protocol",
     "time": "12:47",
     "date": "2026-05-11",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "topic": "Is Vitamin C Safe Long-Term? The Real Data",
     "type": "side-effects",
     "time": "18:07",
     "date": "2026-05-11",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "topic": "What CDP-Choline Does to Your Mitochondria",
     "type": "mechanism",
     "time": "12:11",
     "date": "2026-05-11",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "topic": "How to Cook With GABA for Maximum Benefit",
     "type": "recipe",
     "time": "19:53",
     "date": "2026-05-11",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "topic": "Morning vs Evening: When to Take Vitamin A",
     "type": "protocol",
     "time": "10:29",
     "date": "2026-05-11",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "topic": "Head-to-Head: NAC vs Glucosamine",
     "type": "comparison",
     "time": "14:33",
     "date": "2026-05-11",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "topic": "Omega-3 Side Effects: What the Research Shows",
     "type": "side-effects",
     "time": "21:23",
     "date": "2026-05-11",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "topic": "Creatine and CoQ10: The Complete Combination Guide",
     "type": "synergy",
     "time": "06:29",
     "date": "2026-05-11",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "topic": "The Mechanism of Taurine: A Deep Dive",
     "type": "mechanism",
     "time": "10:47",
     "date": "2026-05-11",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "topic": "Never Combine CoQ10 and Magnesium: Here's Why",
     "type": "antagonism",
     "time": "19:53",
     "date": "2026-05-11",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "topic": "L-Tyrosine and Hormones: The Connection",
     "type": "mechanism",
     "time": "06:41",
     "date": "2026-05-11",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "topic": "Zinc with Chia Seeds: The Absorption Stack",
     "type": "food-combo",
     "time": "11:33",
     "date": "2026-05-11",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "topic": "Comparing Quercetin and Selenium: The Full Analysis",
     "type": "comparison",
     "time": "15:53",
     "date": "2026-05-11",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "topic": "The Complete L-Tyrosine Protocol: Dosage and Timing",
     "type": "protocol",
     "time": "08:23",
     "date": "2026-05-11",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "topic": "L-Tyrosine and L-Carnitine Synergy: The Nordic Protocol",
     "type": "synergy",
     "time": "12:29",
     "date": "2026-05-11",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "topic": "Should You Take L-Carnitine With Food?",
     "type": "timing",
     "time": "18:47",
     "date": "2026-05-11",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "topic": "How L-Theanine Actually Works in Your Body",
     "type": "mechanism",
     "time": "07:53",
     "date": "2026-05-11",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "topic": "Eating Garlic With Your Glycine Supplement",
     "type": "food-combo",
     "time": "15:47",
     "date": "2026-05-11",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "topic": "Head-to-Head: Probiotics vs Calcium",
     "type": "comparison",
     "time": "19:33",
     "date": "2026-05-11",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "topic": "Best Foods to Take With MSM",
     "type": "food-combo",
     "time": "11:53",
     "date": "2026-05-12",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "topic": "Never Combine Vitamin C and Magnesium: Here's Why",
     "type": "antagonism",
     "time": "15:17",
     "date": "2026-05-12",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "topic": "Never Combine Astaxanthin and Alpha-GPC: Here's Why",
     "type": "antagonism",
     "time": "11:23",
     "date": "2026-05-12",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "topic": "Signs You're Glycine Deficient",
     "type": "deficiency",
     "time": "18:07",
     "date": "2026-05-12",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "topic": "Avoid This Alpha Lipoic Acid Mistake With Zinc",
@@ -220,7 +220,7 @@
     "type": "deficiency",
     "time": "17:47",
     "date": "2026-05-12",
-    "status": "pending"
+    "status": "skipped"
   },
   {
     "topic": "What Iron Does to Your Mitochondria",
@@ -397,5 +397,1177 @@
     "date": "2026-05-21",
     "status": "completed",
     "completed_at": "2026-05-21 16:41"
+  },
+  {
+    "topic": "Glycine Causing Bloating: Is It Normal?",
+    "type": "longtail-symptom",
+    "time": "21:33",
+    "date": "2026-05-22",
+    "status": "completed",
+    "completed_at": "2026-05-22 21:33"
+  },
+  {
+    "topic": "Omega-3 with Kefir: The Absorption Stack",
+    "type": "food-combo",
+    "time": "09:11",
+    "date": "2026-05-23",
+    "status": "completed",
+    "completed_at": "2026-05-23 09:11"
+  },
+  {
+    "topic": "The Vitamin K2 Smoothie That Maximizes Absorption",
+    "type": "recipe",
+    "time": "01:32",
+    "date": "2026-05-23",
+    "status": "pending",
+    "completed_at": ""
+  },
+  {
+    "topic": "The Resveratrol Mistake That Ruins Absorption",
+    "type": "longtail-mistake",
+    "time": "19:33",
+    "date": "2026-05-23",
+    "status": "completed",
+    "completed_at": "2026-05-23 19:33"
+  },
+  {
+    "topic": "Zinc and Vitamin B6 Synergy: The Nordic Protocol",
+    "type": "synergy",
+    "time": "07:17",
+    "date": "2026-05-24",
+    "status": "completed",
+    "completed_at": "2026-05-24 07:17"
+  },
+  {
+    "topic": "Best Food to Eat With Biotin",
+    "type": "longtail-routine",
+    "time": "11:23",
+    "date": "2026-05-24",
+    "status": "completed",
+    "completed_at": "2026-05-24 11:23"
+  },
+  {
+    "topic": "NMN and the Brain-Gut Axis: Explained",
+    "type": "mechanism",
+    "time": "18:41",
+    "date": "2026-05-24",
+    "status": "completed",
+    "completed_at": "2026-05-24 18:41"
+  },
+  {
+    "topic": "Vitamin C Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "14:34",
+    "date": "2026-05-25",
+    "status": "completed",
+    "completed_at": "2026-05-25 10:20"
+  },
+  {
+    "topic": "Vitamin D3 Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "10:13",
+    "date": "2026-05-26",
+    "status": "completed",
+    "completed_at": "2026-05-30 21:16",
+    "reset_reason": "blogger_delete_bug_2026_05"
+  },
+  {
+    "topic": "Vitamin K2 (MK-7) Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "01:32",
+    "date": "2026-05-26",
+    "status": "pending",
+    "completed_at": "",
+    "reset_reason": "blogger_delete_bug_2026_05"
+  },
+  {
+    "topic": "Magnesium Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "14:34",
+    "date": "2026-05-26",
+    "status": "completed",
+    "completed_at": "2026-05-26 14:34"
+  },
+  {
+    "topic": "Zinc Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "18:05",
+    "date": "2026-05-27",
+    "status": "pending",
+    "completed_at": "2026-05-27 18:05",
+    "reset_reason": "blogger_delete_bug_2026_05"
+  },
+  {
+    "topic": "Selenium Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "19:35",
+    "date": "2026-05-27",
+    "status": "pending",
+    "completed_at": "2026-05-27 19:35",
+    "reset_reason": "blogger_delete_bug_2026_05"
+  },
+  {
+    "topic": "Omega-3 (EPA/DHA) Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "L-Carnitine ALCAR Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Berberine Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:40",
+    "date": "2026-05-30",
+    "status": "in_progress",
+    "trend_window": "7d",
+    "trend_slot": "재발행"
+  },
+  {
+    "topic": "Probiotics Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "02:05",
+    "date": "2026-05-30",
+    "status": "completed",
+    "trend_window": "7d",
+    "trend_slot": "재발행",
+    "completed_at": "2026-05-30 02:05"
+  },
+  {
+    "topic": "Taurine Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "06:47",
+    "date": "2026-05-30",
+    "status": "skipped",
+    "trend_window": "7d",
+    "trend_slot": "1번째"
+  },
+  {
+    "topic": "NAC (N-Acetyl Cysteine) Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Lions Mane Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Bacopa Monnieri Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Alpha-GPC Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "CDP-Choline Citicoline Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "L-Theanine Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Creatine Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "20:33",
+    "date": "2026-05-29",
+    "status": "pending",
+    "trend_window": "7d",
+    "trend_slot": "1번째",
+    "completed_at": "2026-05-29 20:33",
+    "reset_reason": "blogger_delete_bug_2026_05"
+  },
+  {
+    "topic": "CoQ10 Ubiquinol Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "PQQ Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "NR Nicotinamide Riboside Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Glutathione Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "13:07",
+    "date": "2026-05-30",
+    "status": "skipped",
+    "trend_window": "30d",
+    "trend_slot": "2번째"
+  },
+  {
+    "topic": "Resveratrol Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Quercetin Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Ashwagandha KSM-66 Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Rhodiola Rosea Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Panax Ginseng Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Berberine Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "21:52",
+    "date": "2026-05-29",
+    "status": "completed",
+    "trend_window": "30d",
+    "trend_slot": "2번째",
+    "completed_at": "2026-05-29 21:52"
+  },
+  {
+    "topic": "Turmeric Curcumin Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Collagen Type I II III Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Probiotics Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "23:11",
+    "date": "2026-05-29",
+    "status": "pending",
+    "trend_window": "1yr",
+    "trend_slot": "3번째",
+    "completed_at": "2026-05-30 02:05",
+    "reset_reason": "duplicate_entry"
+  },
+  {
+    "topic": "Elderberry Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Vitamin A Retinol Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Vitamin B3 Niacin Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "18:23",
+    "date": "2026-05-30",
+    "status": "skipped",
+    "trend_window": "1yr",
+    "trend_slot": "3번째"
+  },
+  {
+    "topic": "Vitamin B6 Pyridoxine Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Vitamin B7 Biotin Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Vitamin B9 Folate Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Vitamin E Tocopherol Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Iron Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "20:58",
+    "date": "2026-05-28",
+    "status": "completed",
+    "longtail_keywords": [
+      "Iron benefits",
+      "Iron side effects",
+      "Iron dosage",
+      "Iron benefits and side effects",
+      "best time to take Iron",
+      "Iron before bed",
+      "Iron with food",
+      "Iron for women",
+      "Iron for men over 50",
+      "how much Iron per day",
+      "Iron deficiency symptoms",
+      "does Iron really work",
+      "Iron vs other supplements",
+      "what does Iron do",
+      "Iron supplement guide"
+    ],
+    "trend_slot": "30일",
+    "completed_at": "2026-05-28 20:58"
+  },
+  {
+    "topic": "Iodine Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Calcium Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Boron Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "L-Glutamine Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "L-Tyrosine Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "5-HTP Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "GABA Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Glycine Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Phosphatidylserine Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Ginkgo Biloba Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Astaxanthin Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Alpha Lipoic Acid ALA Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Fisetin Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Maca Root Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Milk Thistle Silymarin Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Glucosamine Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "MSM Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Hyaluronic Acid Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Chondroitin Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Prebiotics Inulin FOS Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Digestive Enzymes Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Butyrate Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Echinacea Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Beta-Glucan Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Beta-Alanine Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Citrulline Malate Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "09:36",
+    "date": "2026-06-16",
+    "status": "completed",
+    "completed_at": "2026-05-30 21:16",
+    "reset_reason": "blogger_delete_bug_2026_05"
+  },
+  {
+    "topic": "Vitamin B1 Thiamine Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Vitamin B2 Riboflavin Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Vitamin B5 Pantothenic Acid Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Vitamin B12 Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "02:32",
+    "date": "2026-05-25",
+    "status": "completed",
+    "completed_at": "2026-05-25 02:32",
+    "reset_reason": "blogger_delete_bug_2026_05",
+    "published_url": "https://www.nutristacklab.com/2026/05/vitamin-b12-absorption-why-i-got-it.html",
+    "published_at": "2026-05-30"
+  },
+  {
+    "topic": "Chromium Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Copper Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "22:13",
+    "date": "2026-05-28",
+    "status": "pending",
+    "longtail_keywords": [
+      "Copper benefits",
+      "Copper side effects",
+      "Copper dosage",
+      "Copper benefits and side effects",
+      "best time to take Copper",
+      "Copper before bed",
+      "Copper with food",
+      "Copper for women",
+      "Copper for men over 50",
+      "how much Copper per day",
+      "Copper deficiency symptoms",
+      "does Copper really work",
+      "Copper vs other supplements",
+      "what does Copper do",
+      "Copper supplement guide"
+    ],
+    "trend_slot": "1년",
+    "completed_at": "2026-05-28 22:13",
+    "reset_reason": "blogger_delete_bug_2026_05"
+  },
+  {
+    "topic": "GLA Evening Primrose Oil Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Huperzine A Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Holy Basil Tulsi Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "HMB Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "16:49",
+    "date": "2026-05-27",
+    "status": "pending",
+    "completed_at": "2026-05-27 16:49",
+    "reset_reason": "blogger_delete_bug_2026_05"
+  },
+  {
+    "topic": "Melatonin Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Lutein and Zeaxanthin Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Potassium Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Manganese Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "DHEA Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "SAMe Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "19:42",
+    "date": "2026-05-28",
+    "status": "pending",
+    "longtail_keywords": [
+      "SAMe benefits",
+      "SAMe side effects",
+      "SAMe dosage",
+      "SAMe benefits and side effects",
+      "best time to take SAMe",
+      "SAMe before bed",
+      "SAMe with food",
+      "SAMe for women",
+      "SAMe for men over 50",
+      "how much SAMe per day",
+      "SAMe deficiency symptoms",
+      "does SAMe really work",
+      "SAMe vs other supplements",
+      "what does SAMe do",
+      "SAMe supplement guide"
+    ],
+    "trend_slot": "7일",
+    "completed_at": "2026-05-28 19:42",
+    "reset_reason": "blogger_delete_bug_2026_05"
+  },
+  {
+    "topic": "Spirulina Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Chlorella Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Vitamin K1 Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "EGCG Green Tea Extract Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "BCAAs Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Tongkat Ali Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Shilajit Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Colostrum Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "L-Arginine Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "L-Tryptophan Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Fadogia Agrestis Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Reishi Mushroom Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Cordyceps Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Turkey Tail Mushroom Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Chaga Mushroom Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Pterostilbene Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Urolithin A Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Grape Seed Extract Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Moringa Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Black Seed Oil Nigella Sativa Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "MCT Oil Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "CLA Conjugated Linoleic Acid Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "D-Aspartic Acid Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Tribulus Terrestris Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Mucuna Pruriens Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Valerian Root Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Passionflower Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Lemon Balm Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Saw Palmetto Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Apigenin Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Pycnogenol Pine Bark Extract Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Bilberry Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Silica Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "L-Lysine Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Carnosine Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Lithium Orotate Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Maitake Mushroom Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Shiitake Mushroom Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Psyllium Husk Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Saffron Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Hawthorn Berry Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Boswellia Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Aged Garlic Extract Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "TUDCA Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Nattokinase Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Gotu Kola Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Phosphatidylcholine Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Artichoke Extract Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Inositol Myo-Inositol Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Serrapeptase Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "Nettle Root Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:00",
+    "date": "",
+    "status": "pending"
+  },
+  {
+    "topic": "NMN Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "05:22",
+    "date": "2026-05-30",
+    "status": "completed",
+    "trend_slot": "재발행",
+    "completed_at": "2026-05-30 05:22"
+  },
+  {
+    "topic": "Vitamin B12 Cobalamin Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "11:15",
+    "date": "2026-05-30",
+    "status": "completed",
+    "trend_slot": "재발행",
+    "completed_at": "2026-05-30 21:16"
+  },
+  {
+    "topic": "Citrulline Malate Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "16:07",
+    "date": "2026-05-30",
+    "status": "completed",
+    "trend_slot": "재발행",
+    "completed_at": "2026-05-30 21:16"
+  },
+  {
+    "topic": "Vitamin D3 Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "20:08",
+    "date": "2026-05-30",
+    "status": "completed",
+    "trend_slot": "재발행",
+    "completed_at": "2026-05-30 21:16"
+  },
+  {
+    "topic": "Vitamin K2 MK-7 Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "01:32",
+    "date": "2026-05-31",
+    "status": "pending",
+    "trend_slot": "재발행",
+    "completed_at": ""
+  },
+  {
+    "topic": "HMB Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "03:43",
+    "date": "2026-05-31",
+    "status": "pending",
+    "trend_slot": "재발행"
+  },
+  {
+    "topic": "Zinc Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "06:58",
+    "date": "2026-05-31",
+    "status": "pending",
+    "trend_slot": "재발행"
+  },
+  {
+    "topic": "Selenium Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "11:23",
+    "date": "2026-05-31",
+    "status": "pending",
+    "trend_slot": "재발행"
+  },
+  {
+    "topic": "SAMe Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "16:21",
+    "date": "2026-05-31",
+    "status": "pending",
+    "trend_slot": "재발행"
+  },
+  {
+    "topic": "Copper Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "20:32",
+    "date": "2026-05-31",
+    "status": "pending",
+    "trend_slot": "재발행"
+  },
+  {
+    "topic": "Creatine Complete Guide",
+    "type": "comprehensive_guide",
+    "time": "00:09",
+    "date": "2026-06-01",
+    "status": "pending",
+    "trend_slot": "재발행"
   }
 ]

@@ -1,0 +1,44 @@
+{
+  "2026-05-25": {
+    "input_tokens": 76042,
+    "output_tokens": 94750,
+    "cost_usd": 1.649376,
+    "articles": 3
+  },
+  "2026-05-26": {
+    "input_tokens": 56065,
+    "output_tokens": 81920,
+    "cost_usd": 1.396995,
+    "articles": 5
+  },
+  "2026-05-27": {
+    "input_tokens": 32633,
+    "output_tokens": 48529,
+    "cost_usd": 0.825834,
+    "articles": 3
+  },
+  "2026-05-28": {
+    "input_tokens": 16208,
+    "output_tokens": 32768,
+    "cost_usd": 0.5401440000000001,
+    "articles": 3
+  },
+  "2026-05-29": {
+    "input_tokens": 16114,
+    "output_tokens": 8990,
+    "cost_usd": 0.183192,
+    "articles": 4
+  },
+  "2026-05-30": {
+    "input_tokens": 79994,
+    "output_tokens": 47351,
+    "cost_usd": 0.9502469999999998,
+    "articles": 6
+  },
+  "2026-05-31": {
+    "input_tokens": 15708,
+    "output_tokens": 9180,
+    "cost_usd": 0.184824,
+    "articles": 1
+  }
+}
