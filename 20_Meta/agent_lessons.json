@@ -1,170 +1,101 @@
 {
   "03_Writer_Gardener_good": [
     {
-      "date": "2026-05-27",
-      "topic": "Zinc Complete Guide",
+      "date": "2026-05-31",
+      "topic": "# Vitamin K2 MK 7 Complete Guide\ntype: c",
       "score": 0.812,
-      "lesson": "4410단어 이상 심층 작성이 Critic 승인에 유리 | topic='Zinc Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-27",
-      "topic": "Selenium Complete Guide",
-      "score": 0.75,
-      "lesson": "4066단어 이상 심층 작성이 Critic 승인에 유리 | topic='Selenium Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-28",
-      "topic": "SAMe Complete Guide",
-      "score": 0.875,
-      "lesson": "3874단어 이상 심층 작성이 Critic 승인에 유리 | topic='SAMe Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-28",
-      "topic": "Iron Complete Guide",
-      "score": 0.875,
-      "lesson": "4199단어 이상 심층 작성이 Critic 승인에 유리 | topic='Iron Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-28",
-      "topic": "Copper Complete Guide",
-      "score": 0.75,
-      "lesson": "4291단어 이상 심층 작성이 Critic 승인에 유리 | topic='Copper Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-29",
-      "topic": "",
-      "score": 0.933,
-      "lesson": "score 93%: 아키타입 'journal-tone' + 주제타입 'synergy' 조합 최고 성적 | topic='' → archetype='journal-tone' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-29",
-      "topic": "Creatine Complete Guide",
-      "score": 0.812,
-      "lesson": "4010단어 이상 심층 작성이 Critic 승인에 유리 | topic='Creatine Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-29",
-      "topic": "Berberine Complete Guide",
-      "score": 0.875,
-      "lesson": "4295단어 이상 심층 작성이 Critic 승인에 유리 | topic='Berberine Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-29",
-      "topic": "Probiotics Complete Guide",
-      "score": 0.812,
-      "lesson": "4198단어 이상 심층 작성이 Critic 승인에 유리 | topic='Probiotics Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-30",
-      "topic": "# Berberine Complete Guide\ntype: compreh",
-      "score": 0.875,
-      "lesson": "4626단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Berberine Complete Guide\ntype: compreh' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-30",
-      "topic": "# Probiotics Complete Guide\ntype: compre",
-      "score": 0.812,
-      "lesson": "3987단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Probiotics Complete Guide\ntype: compre' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-30",
-      "topic": "# Vitamin B12 Cobalamin Complete Guide\nt",
-      "score": 0.875,
-      "lesson": "4088단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Vitamin B12 Cobalamin Complete Guide\nt' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-30",
-      "topic": "# Citrulline Malate Complete Guide\ntype:",
-      "score": 0.875,
-      "lesson": "3549단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Citrulline Malate Complete Guide\ntype:' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-30",
-      "topic": "# Vitamin D3 Complete Guide\ntype: compre",
-      "score": 0.875,
-      "lesson": "3779단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Vitamin D3 Complete Guide\ntype: compre' → archetype='comprehensive-guide' 조합 승인됨"
+      "lesson": "3455단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Vitamin K2 MK 7 Complete Guide\ntype: c' → archetype='comprehensive-guide' 조합 승인됨"
     },
     {
       "date": "2026-05-31",
-      "topic": "Vitamin K2 MK 7 Complete Guide",
+      "topic": "# Vitamin K2 MK 7 Complete Guide\ntype: c",
       "score": 0.875,
-      "lesson": "4007단어 이상 심층 작성이 Critic 승인에 유리 | topic='Vitamin K2 MK 7 Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
+      "lesson": "3943단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Vitamin K2 MK 7 Complete Guide\ntype: c' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "# Selenium Complete Guide\ntype: comprehe",
+      "score": 0.875,
+      "lesson": "4224단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Selenium Complete Guide\ntype: comprehe' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "Melatonin Complete Guide",
+      "score": 0.812,
+      "lesson": "4099단어 이상 심층 작성이 Critic 승인에 유리 | topic='Melatonin Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "Copper Complete Guide",
+      "score": 0.875,
+      "lesson": "4353단어 이상 심층 작성이 Critic 승인에 유리 | topic='Copper Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "# Why I Started Taking Magnesium and Vit",
+      "score": 0.933,
+      "lesson": "score 93%: 아키타입 'minimalist' + 주제타입 'synergy' 조합 최고 성적 | 2619단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Why I Started Taking Magnesium and Vit' → archetype='minimalist' 조합 승인됨"
+    },
+    {
+      "date": "2026-06-01",
+      "topic": "Ginger Complete Guide",
+      "score": 0.75,
+      "lesson": "4868단어 이상 심층 작성이 Critic 승인에 유리 | topic='Ginger Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-06-01",
+      "topic": "Why I Started Taking Magnesium and Vitam",
+      "score": 0.8,
+      "lesson": "3332단어 이상 심층 작성이 Critic 승인에 유리 | topic='Why I Started Taking Magnesium and Vitam' → archetype='science-heavy' 조합 승인됨"
+    },
+    {
+      "date": "2026-06-01",
+      "topic": "Why Copper Stopped Working When I Added ",
+      "score": 0.867,
+      "lesson": "2427단어 이상 심층 작성이 Critic 승인에 유리 | topic='Why Copper Stopped Working When I Added ' → archetype='nordic-anecdotal' 조합 승인됨"
+    },
+    {
+      "lesson": "NEVER write 'recommendation medications' — always write 'prescription medications'. 'Recommendation' is not an adjective for medications. This mistake appeared in both Ginger and Magnesium posts.",
+      "count": 3,
+      "severity": "high",
+      "added_at": "2026-06-01 20:30",
+      "source": "manual_teach"
+    },
+    {
+      "lesson": "After any substitution or auto-fix, the sentence structure may break. Always check: (1) no duplicate phrases from substitution, (2) no word.word broken sentences, (3) H1 = OG title = JSON-LD headline exactly. These post-processing errors are now caught by Editor Rules 1-7.",
+      "count": 3,
+      "severity": "high",
+      "added_at": "2026-06-01 20:42",
+      "source": "teacher_role_upgrade"
+    },
+    {
+      "lesson": "Experience ratio targets differ by post type: comprehensive_guide = 45~55% (balanced info + experience); experience/longtail posts = 60~75% (experience-focused). Do NOT aim for 60%+ in guide posts — that makes them feel like pure diary entries. Do NOT drop below 60% in experience posts — that makes them feel like Wikipedia.",
+      "date": "2026-06-02 20:03",
+      "count": 3,
+      "severity": "high",
+      "source": "manual_teach"
+    },
+    {
+      "date": "2026-06-02",
+      "topic": "The Copper and Zinc Stack I Wish I Had T",
+      "score": 0.867,
+      "lesson": "3445단어 이상 심층 작성이 Critic 승인에 유리 | topic='The Copper and Zinc Stack I Wish I Had T' → archetype='journal-tone' 조합 승인됨"
+    },
+    {
+      "date": "2026-06-03",
+      "topic": "Potassium Complete Guide",
+      "score": 0.812,
+      "lesson": "4128단어 이상 심층 작성이 Critic 승인에 유리 | topic='Potassium Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-06-03",
+      "topic": "Taking Zinc with Iron: What I Learned th",
+      "score": 0.867,
+      "lesson": "2323단어 이상 심층 작성이 Critic 승인에 유리 | topic='Taking Zinc with Iron: What I Learned th' → archetype='minimalist' 조합 승인됨"
     }
   ],
   "02_Researcher_Synergy_good": [
     {
-      "date": "2026-05-27",
-      "topic": "Zinc Complete Guide",
-      "score": 0.812,
-      "lesson": "4410단어 이상 심층 작성이 Critic 승인에 유리 | topic='Zinc Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-27",
-      "topic": "Selenium Complete Guide",
-      "score": 0.75,
-      "lesson": "4066단어 이상 심층 작성이 Critic 승인에 유리 | topic='Selenium Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-28",
-      "topic": "SAMe Complete Guide",
-      "score": 0.875,
-      "lesson": "3874단어 이상 심층 작성이 Critic 승인에 유리 | topic='SAMe Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-28",
-      "topic": "Iron Complete Guide",
-      "score": 0.875,
-      "lesson": "4199단어 이상 심층 작성이 Critic 승인에 유리 | topic='Iron Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-28",
-      "topic": "Copper Complete Guide",
-      "score": 0.75,
-      "lesson": "4291단어 이상 심층 작성이 Critic 승인에 유리 | topic='Copper Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-29",
-      "topic": "",
-      "score": 0.933,
-      "lesson": "score 93%: 아키타입 'journal-tone' + 주제타입 'synergy' 조합 최고 성적 | topic='' → archetype='journal-tone' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-29",
-      "topic": "Creatine Complete Guide",
-      "score": 0.812,
-      "lesson": "4010단어 이상 심층 작성이 Critic 승인에 유리 | topic='Creatine Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-29",
-      "topic": "Berberine Complete Guide",
-      "score": 0.875,
-      "lesson": "4295단어 이상 심층 작성이 Critic 승인에 유리 | topic='Berberine Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-29",
-      "topic": "Probiotics Complete Guide",
-      "score": 0.812,
-      "lesson": "4198단어 이상 심층 작성이 Critic 승인에 유리 | topic='Probiotics Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-30",
-      "topic": "# Berberine Complete Guide\ntype: compreh",
-      "score": 0.875,
-      "lesson": "4626단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Berberine Complete Guide\ntype: compreh' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-30",
-      "topic": "# Probiotics Complete Guide\ntype: compre",
-      "score": 0.812,
-      "lesson": "3987단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Probiotics Complete Guide\ntype: compre' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-30",
-      "topic": "# Vitamin B12 Cobalamin Complete Guide\nt",
-      "score": 0.875,
-      "lesson": "4088단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Vitamin B12 Cobalamin Complete Guide\nt' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
       "date": "2026-05-30",
       "topic": "# Citrulline Malate Complete Guide\ntype:",
       "score": 0.875,
@@ -181,82 +112,82 @@
       "topic": "Vitamin K2 MK 7 Complete Guide",
       "score": 0.875,
       "lesson": "4007단어 이상 심층 작성이 Critic 승인에 유리 | topic='Vitamin K2 MK 7 Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "# Vitamin K2 MK 7 Complete Guide\ntype: c",
+      "score": 0.812,
+      "lesson": "3455단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Vitamin K2 MK 7 Complete Guide\ntype: c' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "# Vitamin K2 MK 7 Complete Guide\ntype: c",
+      "score": 0.875,
+      "lesson": "3943단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Vitamin K2 MK 7 Complete Guide\ntype: c' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "# Selenium Complete Guide\ntype: comprehe",
+      "score": 0.875,
+      "lesson": "4224단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Selenium Complete Guide\ntype: comprehe' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "Melatonin Complete Guide",
+      "score": 0.812,
+      "lesson": "4099단어 이상 심층 작성이 Critic 승인에 유리 | topic='Melatonin Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "Copper Complete Guide",
+      "score": 0.875,
+      "lesson": "4353단어 이상 심층 작성이 Critic 승인에 유리 | topic='Copper Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "# Why I Started Taking Magnesium and Vit",
+      "score": 0.933,
+      "lesson": "score 93%: 아키타입 'minimalist' + 주제타입 'synergy' 조합 최고 성적 | 2619단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Why I Started Taking Magnesium and Vit' → archetype='minimalist' 조합 승인됨"
+    },
+    {
+      "date": "2026-06-01",
+      "topic": "Ginger Complete Guide",
+      "score": 0.75,
+      "lesson": "4868단어 이상 심층 작성이 Critic 승인에 유리 | topic='Ginger Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-06-01",
+      "topic": "Why I Started Taking Magnesium and Vitam",
+      "score": 0.8,
+      "lesson": "3332단어 이상 심층 작성이 Critic 승인에 유리 | topic='Why I Started Taking Magnesium and Vitam' → archetype='science-heavy' 조합 승인됨"
+    },
+    {
+      "date": "2026-06-01",
+      "topic": "Why Copper Stopped Working When I Added ",
+      "score": 0.867,
+      "lesson": "2427단어 이상 심층 작성이 Critic 승인에 유리 | topic='Why Copper Stopped Working When I Added ' → archetype='nordic-anecdotal' 조합 승인됨"
+    },
+    {
+      "date": "2026-06-02",
+      "topic": "The Copper and Zinc Stack I Wish I Had T",
+      "score": 0.867,
+      "lesson": "3445단어 이상 심층 작성이 Critic 승인에 유리 | topic='The Copper and Zinc Stack I Wish I Had T' → archetype='journal-tone' 조합 승인됨"
+    },
+    {
+      "date": "2026-06-03",
+      "topic": "Potassium Complete Guide",
+      "score": 0.812,
+      "lesson": "4128단어 이상 심층 작성이 Critic 승인에 유리 | topic='Potassium Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-06-03",
+      "topic": "Taking Zinc with Iron: What I Learned th",
+      "score": 0.867,
+      "lesson": "2323단어 이상 심층 작성이 Critic 승인에 유리 | topic='Taking Zinc with Iron: What I Learned th' → archetype='minimalist' 조합 승인됨"
     }
   ],
   "04_SEO_Optimizer_good": [
     {
-      "date": "2026-05-27",
-      "topic": "Zinc Complete Guide",
-      "score": 0.812,
-      "lesson": "4410단어 이상 심층 작성이 Critic 승인에 유리 | topic='Zinc Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-27",
-      "topic": "Selenium Complete Guide",
-      "score": 0.75,
-      "lesson": "4066단어 이상 심층 작성이 Critic 승인에 유리 | topic='Selenium Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-28",
-      "topic": "SAMe Complete Guide",
-      "score": 0.875,
-      "lesson": "3874단어 이상 심층 작성이 Critic 승인에 유리 | topic='SAMe Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-28",
-      "topic": "Iron Complete Guide",
-      "score": 0.875,
-      "lesson": "4199단어 이상 심층 작성이 Critic 승인에 유리 | topic='Iron Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-28",
-      "topic": "Copper Complete Guide",
-      "score": 0.75,
-      "lesson": "4291단어 이상 심층 작성이 Critic 승인에 유리 | topic='Copper Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-29",
-      "topic": "",
-      "score": 0.933,
-      "lesson": "score 93%: 아키타입 'journal-tone' + 주제타입 'synergy' 조합 최고 성적 | topic='' → archetype='journal-tone' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-29",
-      "topic": "Creatine Complete Guide",
-      "score": 0.812,
-      "lesson": "4010단어 이상 심층 작성이 Critic 승인에 유리 | topic='Creatine Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-29",
-      "topic": "Berberine Complete Guide",
-      "score": 0.875,
-      "lesson": "4295단어 이상 심층 작성이 Critic 승인에 유리 | topic='Berberine Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-29",
-      "topic": "Probiotics Complete Guide",
-      "score": 0.812,
-      "lesson": "4198단어 이상 심층 작성이 Critic 승인에 유리 | topic='Probiotics Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-30",
-      "topic": "# Berberine Complete Guide\ntype: compreh",
-      "score": 0.875,
-      "lesson": "4626단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Berberine Complete Guide\ntype: compreh' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-30",
-      "topic": "# Probiotics Complete Guide\ntype: compre",
-      "score": 0.812,
-      "lesson": "3987단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Probiotics Complete Guide\ntype: compre' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-30",
-      "topic": "# Vitamin B12 Cobalamin Complete Guide\nt",
-      "score": 0.875,
-      "lesson": "4088단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Vitamin B12 Cobalamin Complete Guide\nt' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
       "date": "2026-05-30",
       "topic": "# Citrulline Malate Complete Guide\ntype:",
       "score": 0.875,
@@ -273,82 +204,82 @@
       "topic": "Vitamin K2 MK 7 Complete Guide",
       "score": 0.875,
       "lesson": "4007단어 이상 심층 작성이 Critic 승인에 유리 | topic='Vitamin K2 MK 7 Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "# Vitamin K2 MK 7 Complete Guide\ntype: c",
+      "score": 0.812,
+      "lesson": "3455단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Vitamin K2 MK 7 Complete Guide\ntype: c' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "# Vitamin K2 MK 7 Complete Guide\ntype: c",
+      "score": 0.875,
+      "lesson": "3943단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Vitamin K2 MK 7 Complete Guide\ntype: c' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "# Selenium Complete Guide\ntype: comprehe",
+      "score": 0.875,
+      "lesson": "4224단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Selenium Complete Guide\ntype: comprehe' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "Melatonin Complete Guide",
+      "score": 0.812,
+      "lesson": "4099단어 이상 심층 작성이 Critic 승인에 유리 | topic='Melatonin Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "Copper Complete Guide",
+      "score": 0.875,
+      "lesson": "4353단어 이상 심층 작성이 Critic 승인에 유리 | topic='Copper Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "# Why I Started Taking Magnesium and Vit",
+      "score": 0.933,
+      "lesson": "score 93%: 아키타입 'minimalist' + 주제타입 'synergy' 조합 최고 성적 | 2619단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Why I Started Taking Magnesium and Vit' → archetype='minimalist' 조합 승인됨"
+    },
+    {
+      "date": "2026-06-01",
+      "topic": "Ginger Complete Guide",
+      "score": 0.75,
+      "lesson": "4868단어 이상 심층 작성이 Critic 승인에 유리 | topic='Ginger Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-06-01",
+      "topic": "Why I Started Taking Magnesium and Vitam",
+      "score": 0.8,
+      "lesson": "3332단어 이상 심층 작성이 Critic 승인에 유리 | topic='Why I Started Taking Magnesium and Vitam' → archetype='science-heavy' 조합 승인됨"
+    },
+    {
+      "date": "2026-06-01",
+      "topic": "Why Copper Stopped Working When I Added ",
+      "score": 0.867,
+      "lesson": "2427단어 이상 심층 작성이 Critic 승인에 유리 | topic='Why Copper Stopped Working When I Added ' → archetype='nordic-anecdotal' 조합 승인됨"
+    },
+    {
+      "date": "2026-06-02",
+      "topic": "The Copper and Zinc Stack I Wish I Had T",
+      "score": 0.867,
+      "lesson": "3445단어 이상 심층 작성이 Critic 승인에 유리 | topic='The Copper and Zinc Stack I Wish I Had T' → archetype='journal-tone' 조합 승인됨"
+    },
+    {
+      "date": "2026-06-03",
+      "topic": "Potassium Complete Guide",
+      "score": 0.812,
+      "lesson": "4128단어 이상 심층 작성이 Critic 승인에 유리 | topic='Potassium Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-06-03",
+      "topic": "Taking Zinc with Iron: What I Learned th",
+      "score": 0.867,
+      "lesson": "2323단어 이상 심층 작성이 Critic 승인에 유리 | topic='Taking Zinc with Iron: What I Learned th' → archetype='minimalist' 조합 승인됨"
     }
   ],
   "05_Critic_Editor_In_Chief_good": [
     {
-      "date": "2026-05-27",
-      "topic": "Zinc Complete Guide",
-      "score": 0.812,
-      "lesson": "4410단어 이상 심층 작성이 Critic 승인에 유리 | topic='Zinc Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-27",
-      "topic": "Selenium Complete Guide",
-      "score": 0.75,
-      "lesson": "4066단어 이상 심층 작성이 Critic 승인에 유리 | topic='Selenium Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-28",
-      "topic": "SAMe Complete Guide",
-      "score": 0.875,
-      "lesson": "3874단어 이상 심층 작성이 Critic 승인에 유리 | topic='SAMe Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-28",
-      "topic": "Iron Complete Guide",
-      "score": 0.875,
-      "lesson": "4199단어 이상 심층 작성이 Critic 승인에 유리 | topic='Iron Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-28",
-      "topic": "Copper Complete Guide",
-      "score": 0.75,
-      "lesson": "4291단어 이상 심층 작성이 Critic 승인에 유리 | topic='Copper Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-29",
-      "topic": "",
-      "score": 0.933,
-      "lesson": "score 93%: 아키타입 'journal-tone' + 주제타입 'synergy' 조합 최고 성적 | topic='' → archetype='journal-tone' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-29",
-      "topic": "Creatine Complete Guide",
-      "score": 0.812,
-      "lesson": "4010단어 이상 심층 작성이 Critic 승인에 유리 | topic='Creatine Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-29",
-      "topic": "Berberine Complete Guide",
-      "score": 0.875,
-      "lesson": "4295단어 이상 심층 작성이 Critic 승인에 유리 | topic='Berberine Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-29",
-      "topic": "Probiotics Complete Guide",
-      "score": 0.812,
-      "lesson": "4198단어 이상 심층 작성이 Critic 승인에 유리 | topic='Probiotics Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-30",
-      "topic": "# Berberine Complete Guide\ntype: compreh",
-      "score": 0.875,
-      "lesson": "4626단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Berberine Complete Guide\ntype: compreh' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-30",
-      "topic": "# Probiotics Complete Guide\ntype: compre",
-      "score": 0.812,
-      "lesson": "3987단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Probiotics Complete Guide\ntype: compre' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
-      "date": "2026-05-30",
-      "topic": "# Vitamin B12 Cobalamin Complete Guide\nt",
-      "score": 0.875,
-      "lesson": "4088단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Vitamin B12 Cobalamin Complete Guide\nt' → archetype='comprehensive-guide' 조합 승인됨"
-    },
-    {
       "date": "2026-05-30",
       "topic": "# Citrulline Malate Complete Guide\ntype:",
       "score": 0.875,
@@ -365,6 +296,78 @@
       "topic": "Vitamin K2 MK 7 Complete Guide",
       "score": 0.875,
       "lesson": "4007단어 이상 심층 작성이 Critic 승인에 유리 | topic='Vitamin K2 MK 7 Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "# Vitamin K2 MK 7 Complete Guide\ntype: c",
+      "score": 0.812,
+      "lesson": "3455단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Vitamin K2 MK 7 Complete Guide\ntype: c' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "# Vitamin K2 MK 7 Complete Guide\ntype: c",
+      "score": 0.875,
+      "lesson": "3943단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Vitamin K2 MK 7 Complete Guide\ntype: c' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "# Selenium Complete Guide\ntype: comprehe",
+      "score": 0.875,
+      "lesson": "4224단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Selenium Complete Guide\ntype: comprehe' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "Melatonin Complete Guide",
+      "score": 0.812,
+      "lesson": "4099단어 이상 심층 작성이 Critic 승인에 유리 | topic='Melatonin Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "Copper Complete Guide",
+      "score": 0.875,
+      "lesson": "4353단어 이상 심층 작성이 Critic 승인에 유리 | topic='Copper Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "# Why I Started Taking Magnesium and Vit",
+      "score": 0.933,
+      "lesson": "score 93%: 아키타입 'minimalist' + 주제타입 'synergy' 조합 최고 성적 | 2619단어 이상 심층 작성이 Critic 승인에 유리 | topic='# Why I Started Taking Magnesium and Vit' → archetype='minimalist' 조합 승인됨"
+    },
+    {
+      "date": "2026-06-01",
+      "topic": "Ginger Complete Guide",
+      "score": 0.75,
+      "lesson": "4868단어 이상 심층 작성이 Critic 승인에 유리 | topic='Ginger Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-06-01",
+      "topic": "Why I Started Taking Magnesium and Vitam",
+      "score": 0.8,
+      "lesson": "3332단어 이상 심층 작성이 Critic 승인에 유리 | topic='Why I Started Taking Magnesium and Vitam' → archetype='science-heavy' 조합 승인됨"
+    },
+    {
+      "date": "2026-06-01",
+      "topic": "Why Copper Stopped Working When I Added ",
+      "score": 0.867,
+      "lesson": "2427단어 이상 심층 작성이 Critic 승인에 유리 | topic='Why Copper Stopped Working When I Added ' → archetype='nordic-anecdotal' 조합 승인됨"
+    },
+    {
+      "date": "2026-06-02",
+      "topic": "The Copper and Zinc Stack I Wish I Had T",
+      "score": 0.867,
+      "lesson": "3445단어 이상 심층 작성이 Critic 승인에 유리 | topic='The Copper and Zinc Stack I Wish I Had T' → archetype='journal-tone' 조합 승인됨"
+    },
+    {
+      "date": "2026-06-03",
+      "topic": "Potassium Complete Guide",
+      "score": 0.812,
+      "lesson": "4128단어 이상 심층 작성이 Critic 승인에 유리 | topic='Potassium Complete Guide' → archetype='comprehensive-guide' 조합 승인됨"
+    },
+    {
+      "date": "2026-06-03",
+      "topic": "Taking Zinc with Iron: What I Learned th",
+      "score": 0.867,
+      "lesson": "2323단어 이상 심층 작성이 Critic 승인에 유리 | topic='Taking Zinc with Iron: What I Learned th' → archetype='minimalist' 조합 승인됨"
     }
   ],
   "06_Persona_Guardian_good": [
@@ -377,950 +380,510 @@
   ],
   "03_Writer_Gardener": [
     {
-      "date": "2026-05-30",
-      "type": "repeated_h2_pattern",
-      "lesson": "[Claude발견-3회반복] H2 heading 'What I Do Differently Now' appears to be a common template pattern used across supplement posts on this site",
+      "date": "2026-06-03",
+      "type": "META_TAG_INCONSISTENCY",
+      "lesson": "[Claude발견-3회반복] Post has multiple conflicting meta descriptions and titles: (1) HTML title = 'Taking Zinc with Iron: What I Learned the ",
       "score": 0,
-      "note": "H2 heading 'What I Do Differently Now' appears to be a common template pattern used across supplement posts on this site",
+      "note": "Post has multiple conflicting meta descriptions and titles: (1) HTML title = 'Taking Zinc with Iron: What I Learned the ",
       "count": 3,
-      "first_seen": "2026-05-30",
-      "last_seen": "2026-05-30"
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03"
     },
     {
-      "date": "2026-05-30",
-      "type": "incomplete_sentence",
-      "lesson": "[Claude발견-4회반복] Final paragraph ends abruptly with 'I'm not' — sentence is incomplete and post cuts off",
+      "date": "2026-06-03",
+      "type": "CANONICAL_URL_MISMATCH",
+      "lesson": "[Claude발견-3회반복] Canonical URL references 'six-weeks-on-probiotics-honest-results.html' but og:title and post content describe three mont",
       "score": 0,
-      "note": "Final paragraph ends abruptly with 'I'm not' — sentence is incomplete and post cuts off",
+      "note": "Canonical URL references 'six-weeks-on-probiotics-honest-results.html' but og:title and post content describe three mont",
+      "count": 3,
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03"
+    },
+    {
+      "date": "2026-06-03",
+      "type": "TIMELINE_CONTRADICTION",
+      "lesson": "[Claude발견-4회반복] Post mentions 'within two weeks' (first copper + zinc disruption), 'Within a week' (after halving zinc dose), 'By the fi",
+      "score": 0,
+      "note": "Post mentions 'within two weeks' (first copper + zinc disruption), 'Within a week' (after halving zinc dose), 'By the fi",
       "count": 4,
-      "first_seen": "2026-05-30",
-      "last_seen": "2026-05-30"
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "clean_posts": 0,
+      "active": true
     },
     {
-      "date": "2026-05-30",
-      "type": "placeholder_text",
-      "lesson": "[Claude발견-4회반복] Phrase 'Take with food, not on an empty stomach' repeated multiple times across sections with identical narrative flow s",
+      "date": "2026-06-03",
+      "type": "DOUBLE_HR_TAGS",
+      "lesson": "[Claude발견-5회반복] Two consecutive <hr> tags appear before the FAQ section",
       "score": 0,
-      "note": "Phrase 'Take with food, not on an empty stomach' repeated multiple times across sections with identical narrative flow s",
-      "count": 4,
-      "first_seen": "2026-05-30",
-      "last_seen": "2026-05-31"
-    },
-    {
-      "date": "2026-05-30",
-      "type": "auto_generated_alt_text",
-      "lesson": "[Claude발견-5회반복] Image alt text reads like a URL slug: 'probiotics complete guide why i almost didn't try it' — appears auto-generated fr",
-      "score": 0,
-      "note": "Image alt text reads like a URL slug: 'probiotics complete guide why i almost didn't try it' — appears auto-generated fr",
+      "note": "Two consecutive <hr> tags appear before the FAQ section",
       "count": 5,
-      "first_seen": "2026-05-30",
-      "last_seen": "2026-05-31"
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "clean_posts": 0,
+      "active": true
     },
     {
-      "date": "2026-05-30",
-      "type": "image_alt_text_auto_generated",
-      "lesson": "[Claude발견-3회반복] Image alt text appears auto-generated from slug: '# nmn complete guide type: comprehensive guide the first thing i got w",
+      "date": "2026-06-03",
+      "type": "AI_PATTERN_PHRASE",
+      "lesson": "[Claude발견-14회반복] Multiple instances of 'in conclusion' or similar closing patterns detected throughout sections — indicates AI-generated ",
       "score": 0,
-      "note": "Image alt text appears auto-generated from slug: '# nmn complete guide type: comprehensive guide the first thing i got w",
+      "note": "Multiple instances of 'in conclusion' or similar closing patterns detected throughout sections — indicates AI-generated ",
+      "count": 14,
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "clean_posts": 0,
+      "active": true
+    },
+    {
+      "date": "2026-06-03",
+      "type": "OVER_IMPROVEMENTS",
+      "lesson": "[Claude발견-3회반복] Post describes improvements in 5+ different body systems/symptoms: leg cramps (gone), afternoon energy crash (improved),",
+      "score": 0,
+      "note": "Post describes improvements in 5+ different body systems/symptoms: leg cramps (gone), afternoon energy crash (improved),",
       "count": 3,
-      "first_seen": "2026-05-30",
-      "last_seen": "2026-05-30"
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "clean_posts": 0,
+      "active": true
     },
     {
-      "date": "2026-05-30",
-      "type": "IMAGE_ALT_TEXT_AUTO_GENERATED",
-      "lesson": "[Claude발견-3회반복] Image alt text reads like a URL slug with hyphens and appears auto-generated: '# probiotics complete guide type: compreh",
+      "date": "2026-06-03",
+      "type": "TITLE_BODY_MISMATCH",
+      "lesson": "[Claude발견-3회반복] Post title is 'Potassium Complete: Potassium Dosage Guide: How Much Do You Need?' (informational/guide format) but H1 is",
       "score": 0,
-      "note": "Image alt text reads like a URL slug with hyphens and appears auto-generated: '# probiotics complete guide type: compreh",
+      "note": "Post title is 'Potassium Complete: Potassium Dosage Guide: How Much Do You Need?' (informational/guide format) but H1 is",
       "count": 3,
-      "first_seen": "2026-05-30",
-      "last_seen": "2026-05-30"
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "clean_posts": 0,
+      "active": true
     },
     {
-      "date": "2026-05-30",
-      "type": "title_worth_taking_pattern",
-      "lesson": "🚨 제목에 'Worth Taking' / 'What the Research Says' 금지 — 제품 리뷰 템플릿 신호, 개인 경험 중심 제목으로 대체 (예: 'The Berberine Mistake That Made Me Want to Quit')",
+      "date": "2026-06-03",
+      "type": "DOCTYPE_IN_BODY",
+      "lesson": "[Claude발견-3회반복] <!DOCTYPE html>, <html>, and <head> tags are included in the post body HTML. These should only appear in the page templa",
       "score": 0,
+      "note": "<!DOCTYPE html>, <html>, and <head> tags are included in the post body HTML. These should only appear in the page templa",
+      "count": 3,
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "clean_posts": 0,
+      "active": true
+    },
+    {
+      "date": "2026-06-03",
+      "type": "TOPIC_INFILTRATION",
+      "lesson": "[Claude발견-3회반복] Post about magnesium vitamin supplement is hijacked by discussion of vitamin D as co-equal topic. Title and meta descrip",
+      "score": 0,
+      "note": "Post about magnesium vitamin supplement is hijacked by discussion of vitamin D as co-equal topic. Title and meta descrip",
+      "count": 3,
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "clean_posts": 0,
+      "active": true
+    },
+    {
+      "date": "2026-06-02 20:07",
+      "topic": "scheduled time: 2026 06 02 21:18\nCreatin",
+      "attempt": 1,
+      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] [{'requirement': \"'science-heavy/deep-protocol' 유형이라면 2000자 이상의 글과 PMID 인용이 필요합니다.\", 'recommendation': '과학적 근거와 실증적인 정보를 충분히 포함한 길이가 2000자 이상인 문서로 작성하세요.'}, {'requirement': \"'minimalist/quick-answer/short-practical' 유형이라면 3000자 이상의 글이 필요합니다.\", '",
       "count": 1,
-      "first_seen": "2026-05-30",
-      "last_seen": "2026-05-30"
+      "first_seen": "2026-06-02"
     },
     {
-      "date": "2026-05-30",
-      "type": "template_substitution_failure",
-      "lesson": "🚨 '[Nutrient] And Complete' / '[Nutrient] and Complete' 패턴은 템플릿 치환 실패 — 발행 전 반드시 검출 및 수정. 캡션 'Personal observations on [X] And Complete'도 동일하게 금지",
-      "score": 0,
+      "date": "2026-06-02 20:33",
+      "topic": "The Copper and Zinc Stack I Wish I Had T",
+      "attempt": 1,
+      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] [{'title': '글의 길이를 줄여주세요', 'content': '2000자 이하로 작성해 주세요.'}, {'title': 'PMID 인용 확대', 'content': '더 많은 PMID을 사용하여 연구 근거를 강화하세요.'}, {'title': '과학적 설명 추가', 'content': '학문적인 접근을 통해 과학적 이유와 증명을 포함해 주세요.'}, {'title': '객관성 유지', 'content': \"'science-hea",
       "count": 1,
-      "first_seen": "2026-05-30",
-      "last_seen": "2026-05-30"
+      "first_seen": "2026-06-02"
     },
     {
-      "date": "2026-05-30",
-      "type": "ai_climax_phrase",
-      "lesson": "🚨 'I wasn't just surviving—I was thriving' 금지 — AI 절정 클리셰. 절제된 언어 사용: 'I felt more stable' / 'something had shifted' 수준",
-      "score": 0,
+      "date": "2026-06-02 20:39",
+      "topic": "The Copper and Zinc Stack I Wish I Had T",
+      "attempt": 2,
+      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] 공학적 접근법을 사용하는 대신, 개인 경험 중심의 서술을 줄이고 과학적인 근거를 포함시켜 PMID 인용을 추가해야 합니다.",
       "count": 1,
-      "first_seen": "2026-05-30",
-      "last_seen": "2026-05-30"
+      "first_seen": "2026-06-02"
     },
     {
-      "date": "2026-05-30",
-      "type": "internal_contradiction",
-      "lesson": "🚨 같은 포스팅 내 동일 트리거에 대한 모순 금지 — 예: 커피가 섹션1에선 괜찮고 섹션4에선 nausea 유발. 한 가지 입장으로 통일 후 뉘앙스는 한 섹션에서만 처리",
-      "score": 0,
+      "date": "2026-06-02 20:46",
+      "topic": "The Copper and Zinc Stack I Wish I Had T",
+      "attempt": 3,
+      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] ['다른 주제로 글을 재작성하거나, 과학적 근거를 추가하는 것이 필요합니다.', '미완성 문장들을 완성하고, 콘텐츠의 완성도와 전문성을 높이는 것이 중요합니다.']",
       "count": 1,
-      "first_seen": "2026-05-30",
-      "last_seen": "2026-05-30"
+      "first_seen": "2026-06-02"
     },
     {
-      "date": "2026-05-30",
-      "type": "content_contradiction",
-      "lesson": "[Claude발견-6회반복] Post recommends taking berberine 'with food' and specifically mentions 'with a small meal' multiple times, but the initi",
-      "score": 0,
-      "note": "Post recommends taking berberine 'with food' and specifically mentions 'with a small meal' multiple times, but the initi",
-      "count": 6,
-      "first_seen": "2026-05-29",
-      "last_seen": "2026-05-31"
+      "date": "2026-06-02",
+      "cat": "C4",
+      "topic": "How to Take Zinc for Best Results",
+      "lesson": "[발행후검증-C4] AI 패턴 제거 7/10 — AI패턴 2개: ['what actually happened', 'what actually changed'] | How to Take Zinc for Best Results",
+      "score": 7,
+      "note": "AI패턴 1개: ['complete guide']",
+      "count": 2,
+      "first_seen": "2026-06-02"
     },
     {
-      "date": "2026-05-29",
-      "type": "title_template_pattern",
-      "lesson": "🚨 제목에 Complete / Guide / Dosage / Benefits 금지 — 가장 강한 AI 템플릿 신호. 대신 독자의 궁금증 또는 경험 중심 제목 사용 (예: 'Why I Almost Gave Up on Probiotics Before Week 4')",
+      "date": "2026-06-02",
+      "cat": "C4",
+      "topic": "Selenium Benefits: What I Noticed After ",
+      "lesson": "[발행후검증-C4] AI 패턴 제거 7/10 — AI패턴 1개: ['thriving'] | Selenium Benefits: What I Noticed After ",
+      "score": 7,
+      "note": "AI패턴 1개: ['thriving']",
+      "count": 2,
+      "first_seen": "2026-06-02"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "USER_FEEDBACK",
+      "topic": "사용자 직접 지적",
+      "lesson": "[사용자피드백] 건강효과 단정 표현 금지 — 개인 경험 블로그에서 'X makes you stronger', 'X does nothing', 'That's basically useless', 'absorption depends on Y' 같은 단정 표현은 건강 콘텐츠 안전성 위험. 반드시 'seemed to', 'for me', 'I felt like', 'may', 'I probably' 등 완화 표현으로 대체할 것.",
       "score": 0,
-      "note": "Probiotics 포스팅에서 'Probiotics Complete: Probiotics : Guide to Dosage and Benefits' 제목 발생 — 역대 최악의 AI 템플릿 제목",
+      "note": "건강효과 단정 표현 금지 — 개인 경험 블로그에서 'X makes you stronger', 'X does nothing', 'That's basically useless', 'absorption depends on Y' 같은 단정 표현은 건강 콘텐츠 안전성 위험. 반드시 'seemed to', 'for me', 'I felt like', 'may', 'I probably' 등 완화 표현으로 대체할 것.",
+      "count": 3,
+      "first_seen": "2026-06-02",
+      "source": "user"
+    },
+    {
+      "lesson": "【단정 표현 절대 금지】 개인 경험 블로그에서 건강 효과를 단정 짓는 표현은 절대 쓰지 말 것. 금지: 'X makes you stronger', 'X helps you recover faster', 'X does nothing', 'That's basically useless', 'absorption depends on Y', 'X is essential for Z'. 대체: 'seemed to help', 'for me at least', 'I felt like', 'may', 'I probably', 'from what I've read', 'didn't seem to work well for me'.",
+      "count": 5,
+      "tier": 1,
+      "added_at": "2026-06-02 22:01",
+      "active": true,
+      "source": "user_engrave_2026-06-02",
+      "date": "2026-06-02"
+    },
+    {
+      "lesson": "【경험담 비율 60%+ 필수】 포스팅 전체 문장 중 1인칭 경험 문장(I/my/me 포함)이 반드시 60% 이상이어야 함. 설명/정보/조언 문장이 많아지면 FAIL. 조언형('X is important', 'you should', 'the key is') 문장을 경험형 ('I noticed', 'I found', 'it felt like', 'I was surprised') 으로 교체할 것. 리스트 항목도 'I noticed X' 형태로 작성.",
+      "count": 5,
+      "tier": 1,
+      "added_at": "2026-06-02 22:01",
+      "active": true,
+      "source": "user_engrave_2026-06-02",
+      "date": "2026-06-02"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "USER_FEEDBACK",
+      "topic": "사용자 직접 지적",
+      "lesson": "[사용자피드백] 【주변인 경험담 필수】 포스팅에 내 경험담(I noticed)만 쓰지 말고 주변인 경험담을 반드시 포함할 것. 권장 비율 내경험:주변인 = 2:8. 주변인 예시: 'My friend said she noticed the same thing', 'A guy at the gym told me', 'My partner mentioned', 'Someone on Reddit described exactly this', 'A colleague of mine tried it and'. 주변인 경험은 글에 신뢰도와 사회적 증거를 더해 더 자연스럽게 읽힘.",
+      "score": 0,
+      "note": "【주변인 경험담 필수】 포스팅에 내 경험담(I noticed)만 쓰지 말고 주변인 경험담을 반드시 포함할 것. 권장 비율 내경험:주변인 = 2:8. 주변인 예시: 'My friend said she noticed the same thing', 'A guy at the gym told me', 'My partner mentioned', 'Someone on Reddit described exactly this', 'A colleague of mine tried it and'. 주변인 경험은 글에 신뢰도와 사회적 증거를 더해 더 자연스럽게 읽힘.",
+      "count": 3,
+      "first_seen": "2026-06-02",
+      "source": "user"
+    },
+    {
+      "date": "2026-06-02 22:58",
+      "topic": "Potassium Complete Guide",
+      "attempt": 1,
+      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] ['Ensure PMID citation is present.', 'Check full text for deep-protocol architecture adherence.']",
       "count": 1,
-      "first_seen": "2026-05-29",
-      "last_seen": "2026-05-29"
+      "first_seen": "2026-06-02"
     },
     {
-      "date": "2026-05-29",
-      "type": "duplicate_nutrient_in_title",
-      "lesson": "🚨 제목에 영양소 이름 중복 금지 (예: 'Probiotics Complete: Probiotics :...') — 템플릿 복사 버그의 명백한 신호",
-      "score": 0,
-      "note": "Probiotics 포스팅에서 발생",
+      "date": "2026-06-02 23:04",
+      "topic": "Potassium Complete Guide",
+      "attempt": 2,
+      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] REJECTED  \n이 기사는 'science-heavy/deep-protocol' 아키타입의 기준을 충족하지 못한다. PMID 인용이 필수적이지만, 본문에서 단 하나의 연구도 인용되지 않았다(예: \"As noted in , researchers observed...\" 문장은 인용 출처가 누락됨). 또한, 과학적 프로토콜이나 생리학적 메커니즘에 대한 심층적 설명이 부족하며, 주로 개인 경험 중심의 서술로 구성되어 있다. 'compreh",
       "count": 1,
-      "first_seen": "2026-05-29",
-      "last_seen": "2026-05-29"
+      "first_seen": "2026-06-02"
     },
     {
-      "date": "2026-05-29",
-      "type": "image_alt_template",
-      "lesson": "🚨 이미지 alt 텍스트에 'A bottle of [X] and Complete on a wooden kitchen counter' 금지 — 완전 템플릿. 대신 'my probiotic bottle next to breakfast' 같은 자연스러운 표현 사용",
-      "score": 0,
-      "note": "Probiotics 포스팅에서 발생",
+      "date": "2026-06-02 23:11",
+      "topic": "Potassium Complete Guide",
+      "attempt": 3,
+      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] [{'title': '문서의 과학적 근거 강화', 'description': '과학적인 내용을 포함하는 것이 중요합니다.'}, {'title': '개인 경험 중심에서 과학 기반으로 전환', 'description': \"'science-heavy/deep-protocol' 아키텍처를 따르는 것이 필요합니다. PMID 인용이 포함되어 있어야 합니다.\"}]",
       "count": 1,
-      "first_seen": "2026-05-29",
-      "last_seen": "2026-05-29"
+      "first_seen": "2026-06-02"
     },
     {
-      "date": "2026-05-29",
-      "type": "friend_sarah_pattern",
-      "lesson": "⚠️ friend/Sarah/coworker/colleague 패턴 거의 모든 포스팅에 등장 중 — 이제 반복 패턴. 포스팅당 최대 1회, 가능하면 아예 없이 작성",
-      "score": 0,
-      "note": "Probiotics 포스팅에서 'My friend Sarah' 등장 — 반복 패턴 확인됨",
+      "date": "2026-06-02",
+      "cat": "C4",
+      "topic": "Potassium Complete: Potassium Dosage Gui",
+      "lesson": "[발행후검증-C4] AI 패턴 제거 7/10 — AI패턴 2개: ['what actually changed', 'consistency is what matters'] | Potassium Complete: Potassium Dosage Gui",
+      "score": 4,
+      "note": "AI패턴 3개",
+      "count": 2,
+      "first_seen": "2026-06-02"
+    },
+    {
+      "date": "2026-06-02 23:35",
+      "topic": "Potassium Complete Guide",
+      "attempt": 1,
+      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] REJECTED  \n문서는 'science-heavy/deep-protocol' 아키타입 기준에 부합하지 않습니다. 2000자 이상의 길이를 충족하지만, PMID 인용이 전혀 포함되어 있지 않으며, 과학적 근거를 바탕으로 한 심층 분석이 부족합니다. 예를 들어, '포타슘 흡수 메커니즘', '포타슘 형태별 생체 이용률 차이', '혈중 농도 조절 원리' 등에 대한 연구 인용이 누락되었고, 개인 경험 중심의 서술이 과학적 깊이를 떨어뜨렸습니",
       "count": 1,
-      "first_seen": "2026-05-29",
-      "last_seen": "2026-05-29"
+      "first_seen": "2026-06-02"
     },
     {
-      "date": "2026-05-29",
-      "type": "too_clean_success_story",
-      "lesson": "⚠️ 성공 스토리가 너무 정석적이면 AI 냄새 남 — Problem→Week4→Improvement→Routine→Success 구조는 금지. 반드시 불확실성/의심 포함 ('maybe placebo', 'not sure if it was X or Y', 'I almost quit')",
-      "score": 0,
-      "note": "Probiotics 포스팅: 의심/불확실성 없이 완벽한 성공 스토리 구조",
+      "date": "2026-06-02 23:44",
+      "topic": "Potassium Complete Guide",
+      "attempt": 2,
+      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] ['다양한 과학적 근거와 PMID를 포함하여, 생물학적 메커니즘과 권장 용량에 대해 자세히 설명하십시오.', '글의 구조는 명확한 목차(TOC), 핵심 포인트, 과학적 배경 및 권고사항을 갖도록 개선하세요.']",
       "count": 1,
-      "first_seen": "2026-05-29",
-      "last_seen": "2026-05-29"
+      "first_seen": "2026-06-02"
     },
     {
-      "date": "2026-05-29",
-      "type": "content_repetition_across_sections",
-      "lesson": "⚠️ 같은 메시지(take with food / bloating improved / don't quit / week 4)가 3개 이상 섹션에서 반복되면 정보밀도 급락 — 각 섹션은 독립적인 새 정보를 담아야 함",
-      "score": 0,
-      "note": "Probiotics 포스팅: 6개 섹션 중 3개가 사실상 같은 내용",
+      "date": "2026-06-02 23:52",
+      "topic": "Potassium Complete Guide",
+      "attempt": 3,
+      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] [{'improvement_suggestion': '과학적 근거를 포함하는 PMID 인용을 추가하여 기사의 전문성과 깊이를 강화하십시오.', 'additional_guidance_1': \"자신의 경험에 대한 서술보다는 과학적인 연구와 분석을 중심으로 작성하려고 노력하세요. 이는 'comprehensive-guide'로서의 역할을 수행하는 데 도움이 됩니다.\"}, {'improvement_suggestion_2': '기사의 마지막 부분을",
       "count": 1,
-      "first_seen": "2026-05-29",
-      "last_seen": "2026-05-29"
+      "first_seen": "2026-06-02"
     },
     {
-      "date": "2026-05-29",
-      "type": "faq_every_post",
-      "lesson": "ℹ️ FAQ가 매 포스팅에 있으면 패턴이 됨 — 가끔 FAQ 없는 포스팅도 써야 자연스러움",
-      "score": 0,
-      "note": "Probiotics 포스팅에서 확인",
+      "date": "2026-06-03 00:18",
+      "topic": "Taking Zinc with Iron: What I Learned th",
+      "attempt": 1,
+      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] ['글의 내용은 개인 경험 중심으로 작성되었으며, 과학적 근거나 명확한 프로토콜이 부족합니다.', '문장 중간에 끊긴 부분이나 미완성 상태가 있어 독자의 이해를 방해할 수 있습니다.']",
       "count": 1,
-      "first_seen": "2026-05-29",
-      "last_seen": "2026-05-29"
+      "first_seen": "2026-06-03"
     },
     {
-      "date": "2026-05-29",
-      "type": "ai_pattern_phrase",
-      "lesson": "[Claude발견-10회반복] Phrase 'game-changer' or similar AI-pattern detected — actually uses 'changed everything' in H2 which is close to repeat",
-      "score": 0,
-      "note": "Phrase 'game-changer' or similar AI-pattern detected — actually uses 'changed everything' in H2 which is close to repeat",
-      "count": 10,
-      "first_seen": "2026-05-29",
-      "last_seen": "2026-05-31"
+      "date": "2026-06-03 00:21",
+      "topic": "Taking Zinc with Iron: What I Learned th",
+      "attempt": 2,
+      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] 글의 길이를 1200자 이하로 줄이고, 간결한 구조와 핵심 정보 전달을 강화하세요.",
+      "count": 1,
+      "first_seen": "2026-06-03"
     },
     {
-      "date": "2026-05-29",
-      "type": "double_hr_tags",
-      "lesson": "[Claude발견-7회반복] Two consecutive <hr /> tags appear at the start of the post body",
-      "score": 0,
-      "note": "Two consecutive <hr /> tags appear at the start of the post body",
-      "count": 7,
-      "first_seen": "2026-05-29",
-      "last_seen": "2026-05-30"
+      "date": "2026-06-03 00:23",
+      "topic": "Taking Zinc with Iron: What I Learned th",
+      "attempt": 3,
+      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] ['작성자는 간결하고 실용적인 정보를 제공하기 위한 서사체와 구조화된 내용을 포함해야 합니다.', \"작성은 'minimalist' 아키텍처의 기준에 부합하도록 단순한 텍스트 기반 가이드로 재구성을 고려하십시오.\"]",
+      "count": 1,
+      "first_seen": "2026-06-03"
     },
     {
-      "date": "2026-05-27",
+      "date": "2026-06-03",
+      "cat": "C4",
+      "topic": "Is Zinc Worth Taking? What the Research ",
+      "lesson": "[발행후검증-C4] AI 패턴 제거 7/10 — AI패턴 1개: ['what actually worked'] | Is Zinc Worth Taking? What the Research ",
+      "score": 7,
+      "note": "AI패턴 1개: ['what actually worked']",
+      "count": 1,
+      "first_seen": "2026-06-03"
+    },
+    {
+      "date": "2026-06-03",
       "cat": "D3",
-      "topic": "Is Hmb Complete Worth Taking? What the R",
-      "lesson": "[발행후검증-D3] 필수 요소 존재 4/10 — 누락: ['hook', 'img'] | Is Hmb Complete Worth Taking? What the R",
+      "topic": "Is Zinc Worth Taking? What the Research ",
+      "lesson": "[발행후검증-D3] 필수 요소 존재 4/10 — 누락: ['hook', 'img'] | Is Zinc Worth Taking? What the Research ",
       "score": 4,
       "note": "누락: ['hook', 'img']",
       "count": 1,
-      "first_seen": "2026-05-27"
+      "first_seen": "2026-06-03"
     },
     {
-      "date": "2026-05-28 21:26",
-      "topic": "Iron Complete Guide",
-      "attempt": 1,
-      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] NoPlaceholder error indicates an issue with missing or incorrectly formatted placeholders in your text. Ensure all placeholders are properly defined and used.",
-      "count": 2,
-      "first_seen": "2026-05-27"
-    },
-    {
-      "date": "2026-05-27 18:32",
-      "topic": "Zinc Complete Guide",
-      "attempt": 2,
-      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] ['No_Cure_Claims, NoPlaceholder 문제로 인해 반려되었습니다.', '자동 검증 과정에서 문제가 발생하여 승인되지 않았습니다.']",
-      "count": 1,
-      "first_seen": "2026-05-27"
-    },
-    {
-      "date": "2026-05-29 08:47",
-      "topic": "",
-      "attempt": 3,
-      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] [{'REJECTED': ['No_Cure_Claims', 'NoPlaceholder']}]",
-      "count": 5,
-      "first_seen": "2026-05-27"
-    },
-    {
-      "date": "2026-05-27",
-      "cat": "C4",
-      "topic": "How to Take Zinc for Best Results",
-      "lesson": "[발행후검증-C4] AI 패턴 제거 7/10 — AI패턴 1개: ['game-changer'] | How to Take Zinc for Best Results",
-      "score": 7,
-      "note": "AI패턴 1개: ['game-changer']",
-      "count": 1,
-      "first_seen": "2026-05-27"
-    },
-    {
-      "date": "2026-05-27 19:55",
-      "topic": "Selenium Complete Guide",
-      "attempt": 1,
-      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] [{'title': '핵심 개선 지시', 'items': ['더 많은 PMID 인용을 전체 문서에 분산하십시오.', '모든 섹션에서 깊이 있는 과학적 설명을 포함하십시오.', \"사용자 경험 중심의 내용과 과학적 근거를 균형있게 조화시켜 '심층 프로토콜' 아키타입에 부합하도록 수정하십시오.\"]}]",
-      "count": 1,
-      "first_seen": "2026-05-27"
-    },
-    {
-      "date": "2026-05-28 21:29",
-      "topic": "Iron Complete Guide",
-      "attempt": 2,
-      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] 자동 검증 이슈로 인해 'NoPlaceholder'가 제대로 처리되지 않았습니다.",
-      "count": 2,
-      "first_seen": "2026-05-27"
-    },
-    {
-      "date": "2026-05-27",
-      "cat": "D3",
-      "topic": "How to Take Selenium for Best Results",
-      "lesson": "[발행후검증-D3] 필수 요소 존재 6/10 — 누락: ['hook'] | How to Take Selenium for Best Results",
-      "score": 6,
-      "note": "누락: ['hook']",
-      "count": 1,
-      "first_seen": "2026-05-27"
-    },
-    {
-      "date": "2026-05-28 20:02",
-      "topic": "SAMe Complete Guide",
-      "attempt": 1,
-      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] [\"문档이 'comprehensive-guide' 아키타입의 기준을 충족하지 못합니다.\", '첫째, 과학 중심의 심층 프로토콜에 필요한 세부적인 과학적 설명과 실험 데이터가 부족하다.', '둘째, FAQ 섹션은 간단한 질문-답변 형식에 머물러 실질적인 적용 방법이나 임상적 근거의 심층 해석을 제공하지 않는다.', \"셋째, 전체 구조는 'minimalist/quick-answer' 형태를 가진다만, 3000+ 단어로 요구되는 체계적이며 ",
-      "count": 1,
-      "first_seen": "2026-05-28"
-    },
-    {
-      "date": "2026-05-28 20:24",
-      "topic": "SAMe Complete Guide",
-      "attempt": 3,
-      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] {'improvement_guidance': ['이미지 또는 텍스트 레이블에 대한 대체 텍스트를 제공해야 합니다.']}",
-      "count": 1,
-      "first_seen": "2026-05-28"
-    },
-    {
-      "date": "2026-05-28",
-      "cat": "C4",
-      "topic": "Same Complete: Is Same Worth Taking? Wha",
-      "lesson": "[발행후검증-C4] AI 패턴 제거 4/10 — AI패턴 3개 | Same Complete: Is Same Worth Taking? Wha",
-      "score": 4,
-      "note": "AI패턴 3개",
-      "count": 1,
-      "first_seen": "2026-05-28"
-    },
-    {
-      "date": "2026-05-28",
-      "cat": "C4",
-      "topic": "Iron Complete: How to Take Iron for Best",
-      "lesson": "[발행후검증-C4] AI 패턴 제거 4/10 — AI패턴 3개 | Iron Complete: How to Take Iron for Best",
-      "score": 4,
-      "note": "AI패턴 3개",
-      "count": 1,
-      "first_seen": "2026-05-28"
-    },
-    {
-      "date": "2026-05-28",
-      "cat": "D3",
-      "topic": "Iron Complete: How to Take Iron for Best",
-      "lesson": "[발행후검증-D3] 필수 요소 존재 6/10 — 누락: ['hook'] | Iron Complete: How to Take Iron for Best",
-      "score": 6,
-      "note": "누락: ['hook']",
-      "count": 1,
-      "first_seen": "2026-05-28"
-    },
-    {
-      "date": "2026-05-28 22:25",
-      "topic": "Copper Complete Guide",
-      "attempt": 1,
-      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] AI_Footprint와 NoPlaceholder에 대한 자동 검증 이슈를 해결하십시오.",
-      "count": 1,
-      "first_seen": "2026-05-28"
-    },
-    {
-      "date": "2026-05-28 22:29",
-      "topic": "Copper Complete Guide",
-      "attempt": 2,
-      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] ['글의 길이를 2000자 이상으로 늘려주세요.', '생물학적 메커니즘, 금기 사항, 장기적 영향 등에 대한 체계적인 설명을 추가해 주세요.', '목차(TOC)나 FAQ를 포함한 구조적인 요소를 추가하세요.']",
-      "count": 1,
-      "first_seen": "2026-05-28"
-    },
-    {
-      "date": "2026-05-28 22:33",
-      "topic": "Copper Complete Guide",
-      "attempt": 3,
-      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] ['글의 내용은 과학적 분석과 체계적인 프로토콜이 부족합니다.', \"3000자 이상의 'quick-answer' 형식을 유지하되, 추가적으로 2000자 이상의 과학적 분석을 포함해야 합니다.\"]",
-      "count": 1,
-      "first_seen": "2026-05-28"
-    },
-    {
-      "date": "2026-05-28",
-      "cat": "C4",
-      "topic": "Copper Complete: Copper : Guide to Dosag",
-      "lesson": "[발행후검증-C4] AI 패턴 제거 4/10 — AI패턴 3개 | Copper Complete: Copper : Guide to Dosag",
-      "score": 4,
-      "note": "AI패턴 3개",
-      "count": 1,
-      "first_seen": "2026-05-28"
-    },
-    {
-      "date": "2026-05-28",
-      "cat": "D3",
-      "topic": "Copper Complete: Copper : Guide to Dosag",
-      "lesson": "[발행후검증-D3] 필수 요소 존재 6/10 — 누락: ['hook'] | Copper Complete: Copper : Guide to Dosag",
-      "score": 6,
-      "note": "누락: ['hook']",
-      "count": 1,
-      "first_seen": "2026-05-28"
-    },
-    {
-      "date": "2026-05-29 08:42",
-      "topic": "",
-      "attempt": 1,
-      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] PMID 인용과 깊은 과학 프로토콜 및 실험적 데이터 분석을 추가하십시오.",
-      "count": 1,
-      "first_seen": "2026-05-29"
-    },
-    {
-      "date": "2026-05-29 08:51",
-      "topic": "",
-      "attempt": 3,
-      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] ['제공된 정보가 과학적 깊이를 충족하지 않으며, 구체적인 호르몬 메커니즘 등에 대한 설명이 부재합니다.', '단순한 개인 경험에 의존하고 있어 체계적이지 않습니다.']",
-      "count": 1,
-      "first_seen": "2026-05-29"
-    },
-    {
-      "date": "2026-05-29",
-      "cat": "C4",
-      "topic": "Is Berberine Worth Taking What the Resea",
-      "lesson": "[발행후검증-C4] AI 패턴 제거 7/10 — AI패턴 1개: ['game-changer'] | Is Berberine Worth Taking What the Resea",
-      "score": 7,
-      "note": "AI패턴 1개: ['game-changer']",
-      "count": 1,
-      "first_seen": "2026-05-29"
-    },
-    {
-      "date": "2026-05-29",
-      "type": "good_example",
-      "lesson": "✅ 좋은 예시: 4167단어 — 충분한 분량 유지",
-      "score": 10,
-      "note": "출처: Is Berberine Worth Taking What the Research Says (9.3/10)",
-      "count": 1,
-      "first_seen": "2026-05-29",
-      "last_seen": "2026-05-29"
-    },
-    {
-      "date": "2026-05-29",
-      "type": "good_example",
-      "lesson": "✅ 좋은 예시: 도입부 Hook 존재 — 독자 유입 효과적",
-      "score": 10,
-      "note": "출처: Is Berberine Worth Taking What the Research Says (9.3/10)",
-      "count": 1,
-      "first_seen": "2026-05-29",
-      "last_seen": "2026-05-29"
-    },
-    {
-      "date": "2026-05-29",
-      "type": "good_example",
-      "lesson": "✅ 좋은 예시: TOC 존재 — 구조 명확",
-      "score": 10,
-      "note": "출처: Is Berberine Worth Taking What the Research Says (9.3/10)",
-      "count": 1,
-      "first_seen": "2026-05-29",
-      "last_seen": "2026-05-29"
-    },
-    {
-      "date": "2026-05-29",
-      "type": "good_example",
-      "lesson": "✅ 좋은 예시: FAQ 섹션 존재 — 롱테일 SEO 강화",
-      "score": 10,
-      "note": "출처: Is Berberine Worth Taking What the Research Says (9.3/10)",
-      "count": 1,
-      "first_seen": "2026-05-29",
-      "last_seen": "2026-05-29"
-    },
-    {
-      "date": "2026-05-29",
-      "type": "good_example",
-      "lesson": "✅ 좋은 예시: PMID 2개 — 과학적 신뢰도 높음",
-      "score": 10,
-      "note": "출처: Is Berberine Worth Taking What the Research Says (9.3/10)",
-      "count": 1,
-      "first_seen": "2026-05-29",
-      "last_seen": "2026-05-29"
-    },
-    {
-      "date": "2026-05-29",
-      "type": "good_example",
-      "lesson": "✅ 좋은 예시: H2 섹션 9개 — 적절한 구조",
-      "score": 10,
-      "note": "출처: Is Berberine Worth Taking What the Research Says (9.3/10)",
-      "count": 1,
-      "first_seen": "2026-05-29",
-      "last_seen": "2026-05-29"
-    },
-    {
-      "date": "2026-05-29",
-      "cat": "C2",
-      "topic": "Is Berberine Worth Taking What the Resea",
-      "lesson": "[발행후검증-C2] H2 섹션 제목 5/10 — H2 3개 (권장 4+) | Is Berberine Worth Taking What the Resea",
-      "score": 5,
-      "note": "H2 3개 (권장 4+)",
-      "count": 1,
-      "first_seen": "2026-05-29"
-    },
-    {
-      "date": "2026-05-30",
-      "cat": "D3",
-      "topic": "The Berberine Mistake That Made Me Want ",
-      "lesson": "[발행후검증-D3] 필수 요소 존재 6/10 — 누락: ['takeaways'] | The Berberine Mistake That Made Me Want ",
-      "score": 6,
-      "note": "누락: ['takeaways']",
-      "count": 2,
-      "first_seen": "2026-05-30"
-    },
-    {
-      "date": "2026-05-30",
-      "cat": "C4",
-      "topic": "Iron: How I Actually Fixed My Energy (Af",
-      "lesson": "[발행후검증-C4] AI 패턴 제거 7/10 — AI패턴 1개: ['what actually worked'] | Iron: How I Actually Fixed My Energy (Af",
-      "score": 7,
-      "note": "AI패턴 1개: ['what actually worked']",
-      "count": 6,
-      "first_seen": "2026-05-30"
-    },
-    {
-      "date": "2026-05-30",
-      "cat": "D3",
-      "topic": "Iron: How I Actually Fixed My Energy (Af",
-      "lesson": "[발행후검증-D3] 필수 요소 존재 6/10 — 누락: ['hook'] | Iron: How I Actually Fixed My Energy (Af",
-      "score": 6,
-      "note": "누락: ['hook']",
-      "count": 1,
-      "first_seen": "2026-05-30"
-    },
-    {
-      "date": "2026-05-30",
-      "cat": "C4",
-      "topic": "Magnesium Complete Guide: Benefits, Type",
-      "lesson": "[발행후검증-C4] AI 패턴 제거 7/10 — AI패턴 2개: ['what actually changed', 'complete guide'] | Magnesium Complete Guide: Benefits, Type",
-      "score": 7,
-      "note": "AI패턴 2개: ['what actually changed', 'complete guide']",
-      "count": 1,
-      "first_seen": "2026-05-30"
-    },
-    {
-      "date": "2026-05-30",
-      "cat": "C4",
-      "topic": "Vitamin C: What I Found After Months of ",
-      "lesson": "[발행후검증-C4] AI 패턴 제거 4/10 — AI패턴 3개 | Vitamin C: What I Found After Months of ",
-      "score": 7,
-      "note": "AI패턴 2개: ['what actually changed', 'complete guide']",
+      "date": "2026-06-03",
+      "cat": "USER_FEEDBACK",
+      "topic": "사용자 직접 지적",
+      "lesson": "[사용자피드백] 【YMYL 제목 금지】 'Healed', 'Cured', 'Fixed', 'Eliminated', 'Disappeared' 같은 치료/완치 의미 단어는 제목에 절대 사용 금지. 대신: 'helped with', 'started working for me', 'finally worked', 'made a difference', 'became less noticeable' 사용.",
+      "score": 0,
+      "note": "【YMYL 제목 금지】 'Healed', 'Cured', 'Fixed', 'Eliminated', 'Disappeared' 같은 치료/완치 의미 단어는 제목에 절대 사용 금지. 대신: 'helped with', 'started working for me', 'finally worked', 'made a difference', 'became less noticeable' 사용.",
       "count": 3,
-      "first_seen": "2026-05-30"
+      "first_seen": "2026-06-03",
+      "source": "user"
     },
     {
-      "date": "2026-05-30",
-      "cat": "C4",
-      "topic": "Magnesium: Benefits, Types, and Best Dos",
-      "lesson": "[발행후검증-C4] AI 패턴 제거 7/10 — AI패턴 2개: ['what actually changed', 'complete guide'] | Magnesium: Benefits, Types, and Best Dos",
-      "score": 7,
-      "note": "AI패턴 2개: ['what actually changed', 'complete guide']",
-      "count": 8,
-      "first_seen": "2026-05-30"
-    },
-    {
-      "date": "2026-05-30",
-      "cat": "C4",
-      "topic": "Probiotics Complete: Probiotics Dosage G",
-      "lesson": "[발행후검증-C4] AI 패턴 제거 7/10 — AI패턴 2개: ['what actually worked', 'complete guide'] | Probiotics Complete: Probiotics Dosage G",
-      "score": 7,
-      "note": "AI패턴 2개: ['what actually worked', 'complete guide']",
-      "count": 1,
-      "first_seen": "2026-05-30"
-    },
-    {
-      "date": "2026-05-30",
-      "cat": "C4",
-      "topic": "NMN Complete: Is NMN Worth Taking? What ",
-      "lesson": "[발행후검증-C4] AI 패턴 제거 7/10 — AI패턴 2개: ['what actually worked', 'complete guide'] | NMN Complete: Is NMN Worth Taking? What ",
-      "score": 7,
-      "note": "AI패턴 2개: ['what actually worked', 'complete guide']",
-      "count": 1,
-      "first_seen": "2026-05-30"
-    },
-    {
-      "date": "2026-05-30",
-      "cat": "C4",
-      "topic": "The NMN Mistake That Delayed My Results",
-      "lesson": "[발행후검증-C4] AI 패턴 제거 7/10 — AI패턴 1개: ['what actually worked'] | The NMN Mistake That Delayed My Results",
-      "score": 7,
-      "note": "AI패턴 2개: ['no exceptions', 'consistency is key']",
+      "date": "2026-06-03",
+      "cat": "USER_FEEDBACK",
+      "topic": "사용자 직접 지적",
+      "lesson": "[사용자피드백] 【본문 단정 표현 금지】 'disappeared', 'lifted', 'gone', 'eliminated' → 'became less noticeable', 'felt clearer', 'seemed to improve'. 일반화 표현 'you can feel / neither one is' → 'for me / seemed to / may / in some situations' 형태로.",
+      "score": 0,
+      "note": "【본문 단정 표현 금지】 'disappeared', 'lifted', 'gone', 'eliminated' → 'became less noticeable', 'felt clearer', 'seemed to improve'. 일반화 표현 'you can feel / neither one is' → 'for me / seemed to / may / in some situations' 형태로.",
       "count": 3,
-      "first_seen": "2026-05-30"
-    },
-    {
-      "date": "2026-05-30",
-      "cat": "D3",
-      "topic": "The NMN Mistake That Delayed My Results",
-      "lesson": "[발행후검증-D3] 필수 요소 존재 6/10 — 누락: ['takeaways'] | The NMN Mistake That Delayed My Results",
-      "score": 6,
-      "note": "누락: ['takeaways']",
-      "count": 3,
-      "first_seen": "2026-05-30"
-    },
-    {
-      "date": "2026-05-30",
-      "cat": "C4",
-      "topic": "Probiotics: Probiotics Dosage Guide: How",
-      "lesson": "[발행후검증-C4] AI 패턴 제거 7/10 — AI패턴 1개: ['what actually worked'] | Probiotics: Probiotics Dosage Guide: How",
-      "score": 7,
-      "note": "AI패턴 1개: ['consistency is key']",
-      "count": 3,
-      "first_seen": "2026-05-30"
-    },
-    {
-      "date": "2026-05-30",
-      "cat": "C4",
-      "topic": "Vitamin C: What Months of Testing Actual",
-      "lesson": "[발행후검증-C4] AI 패턴 제거 7/10 — AI패턴 2개: ['what actually changed', 'complete guide'] | Vitamin C: What Months of Testing Actual",
-      "score": 7,
-      "note": "AI패턴 2개: ['what actually changed', 'complete guide']",
-      "count": 5,
-      "first_seen": "2026-05-30"
-    },
-    {
-      "date": "2026-05-30",
-      "cat": "C4",
-      "topic": "Is Vitamin B12 Worth Taking? What the Re",
-      "lesson": "[발행후검증-C4] AI 패턴 제거 7/10 — AI패턴 1개: ['what actually worked'] | Is Vitamin B12 Worth Taking? What the Re",
-      "score": 7,
-      "note": "AI패턴 1개: ['what actually worked']",
-      "count": 1,
-      "first_seen": "2026-05-30"
-    },
-    {
-      "date": "2026-05-30",
-      "cat": "C4",
-      "topic": "The Berberine Mistake That Made Me Want ",
-      "lesson": "[발행후검증-C4] AI 패턴 제거 7/10 — AI패턴 1개: ['consistency is key'] | The Berberine Mistake That Made Me Want ",
-      "score": 7,
-      "note": "AI패턴 1개: ['consistency is key']",
-      "count": 1,
-      "first_seen": "2026-05-30"
-    },
-    {
-      "date": "2026-05-30",
-      "cat": "C4",
-      "topic": "Magnesium Types and Dosage: The Form Tha",
-      "lesson": "[발행후검증-C4] AI 패턴 제거 7/10 — AI패턴 2개: ['what actually changed', 'complete guide'] | Magnesium Types and Dosage: The Form Tha",
-      "score": 7,
-      "note": "AI패턴 2개: ['what actually changed', 'complete guide']",
-      "count": 5,
-      "first_seen": "2026-05-30"
-    },
-    {
-      "date": "2026-05-30",
-      "cat": "C4",
-      "topic": "Vitamin C Dosage: What Six Months of Tes",
-      "lesson": "[발행후검증-C4] AI 패턴 제거 7/10 — AI패턴 2개: ['what actually changed', 'complete guide'] | Vitamin C Dosage: What Six Months of Tes",
-      "score": 7,
-      "note": "AI패턴 1개: ['complete guide']",
-      "count": 6,
-      "first_seen": "2026-05-30"
-    },
-    {
-      "date": "2026-05-30",
-      "cat": "C4",
-      "topic": "Why Citrulline Malate Felt Useless Until",
-      "lesson": "[발행후검증-C4] AI 패턴 제거 7/10 — AI패턴 2개: ['what actually changed', 'what actually worked'] | Why Citrulline Malate Felt Useless Until",
-      "score": 7,
-      "note": "AI패턴 1개: ['what actually changed']",
-      "count": 5,
-      "first_seen": "2026-05-30"
-    },
-    {
-      "date": "2026-05-30",
-      "cat": "C4",
-      "topic": "Vitamin D3: Guide to Dosage and Benefits",
-      "lesson": "[발행후검증-C4] AI 패턴 제거 7/10 — AI패턴 1개: ['consistency is key'] | Vitamin D3: Guide to Dosage and Benefits",
-      "score": 7,
-      "note": "AI패턴 1개: ['consistency is key']",
-      "count": 1,
-      "first_seen": "2026-05-30"
-    },
-    {
-      "date": "2026-05-30",
-      "cat": "C4",
-      "topic": "NMN Supplement: The Timing Mistake That ",
-      "lesson": "[발행후검증-C4] AI 패턴 제거 7/10 — AI패턴 1개: ['stable afternoon energy'] | NMN Supplement: The Timing Mistake That ",
-      "score": 7,
-      "note": "AI패턴 1개: ['stable afternoon energy']",
-      "count": 1,
-      "first_seen": "2026-05-30"
-    },
-    {
-      "date": "2026-05-30",
-      "cat": "C4",
-      "topic": "Probiotics Dosage: How Much You Actually",
-      "lesson": "[발행후검증-C4] AI 패턴 제거 7/10 — AI패턴 2개: ['stable afternoon energy', 'may support-all'] | Probiotics Dosage: How Much You Actually",
-      "score": 7,
-      "note": "AI패턴 2개: ['stable afternoon energy', 'may support-all']",
-      "count": 1,
-      "first_seen": "2026-05-30"
-    },
-    {
-      "date": "2026-05-31",
-      "cat": "C4",
-      "topic": "Is Vitamin K2 Worth Taking? What the Res",
-      "lesson": "[발행후검증-C4] AI 패턴 제거 7/10 — AI패턴 1개: ['consistency is key'] | Is Vitamin K2 Worth Taking? What the Res",
-      "score": 7,
-      "note": "AI패턴 1개: ['consistency is key']",
-      "count": 1,
-      "first_seen": "2026-05-31"
+      "first_seen": "2026-06-03",
+      "source": "user"
     }
   ],
   "02_Researcher_Synergy": [
     {
-      "date": "2026-05-27 17:27",
-      "topic": "HMB Complete Guide",
+      "date": "2026-06-02 19:41",
+      "topic": "Creatine Complete Guide",
       "attempt": 2,
-      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] 리서치 개선 지시는 실제 문서 내용이 누락되었으므로 평가 불가능합니다.",
+      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] [{'문제': '글에 PMID 인용이 없어 과학적 근거의 존재 여부를 확인하기 어렵습니다.', '해解决问题': '각 섹션마다 적절한 연구 또는 학술 논문을 참조하여 참고 문헌으로 포함해야 합니다.'}, {'문제': '구조화된 정보와 체계성이 부족합니다.', '解决策안': '목차에 따라 각 섹션이 깊이 있게 다루어져야 하며, 이는 사용자가 쉽게 이해하고 찾을 수 있도록 구성되어 있어야 합니다.'}]",
       "count": 1,
-      "first_seen": "2026-05-27"
+      "first_seen": "2026-06-02"
     },
     {
-      "date": "2026-05-27",
+      "date": "2026-06-02 19:46",
+      "topic": "Creatine Complete Guide",
+      "attempt": 3,
+      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] [{'point1': 'PMID 인용을 포함하여 과학적 근거를 명확하게 제공하십시오.', 'point2': '구조화된 정보, 창의성 및 프로토콜이 있는 구성을 갖춘 연구 방안을 개발하십시오', 'point3': '제공되는 텍스트가 3000자 이상인지 확인하고, 이 기준에 부합하는 수준의 세부성을 갖도록 하십시오.'}]",
+      "count": 1,
+      "first_seen": "2026-06-02"
+    },
+    {
+      "date": "2026-06-02",
       "cat": "D1",
-      "topic": "Is Hmb Complete Worth Taking? What the R",
-      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 7/10 — PMID 2개 (권장 3+) | Is Hmb Complete Worth Taking? What the R",
-      "score": 7,
-      "note": "PMID 2개 (권장 3+)",
+      "topic": "Creatine Complete: Creatine Dosage Guide",
+      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 0/10 — PMID/연구링크 없음 | Creatine Complete: Creatine Dosage Guide",
+      "score": 0,
+      "note": "PMID/연구링크 없음",
       "count": 1,
-      "first_seen": "2026-05-27"
+      "first_seen": "2026-06-02"
     },
     {
-      "date": "2026-05-27 18:14",
-      "topic": "# Zinc Complete Guide\ntype: comprehensiv",
+      "date": "2026-06-02 20:07",
+      "topic": "scheduled time: 2026 06 02 21:18\nCreatin",
       "attempt": 1,
-      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] Check for any automatic validation errors related to 'NoPlaceholder'. This might involve reviewing data structures, templates, or automated scripts that could be causing the rejection.",
+      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] [{'requirement': '관련 연구나 메커니즘에 대한 명확하고 구체적인 설명', 'recommendation': \"'science-heavy/deep-protocol' 유형의 글은 관련 연구와 메커니즘이 포함되어야 합니다.\"}, {'requirement': \"글이 단편적이지 않아서 'comprehensive'라는 이름에 부합해야 함.\", 'recommendation': \"'comprehensive-guide'는 모든 주제가 통일",
       "count": 1,
-      "first_seen": "2026-05-27"
+      "first_seen": "2026-06-02"
     },
     {
-      "date": "2026-05-27 18:32",
-      "topic": "Zinc Complete Guide",
+      "date": "2026-06-02 20:33",
+      "topic": "The Copper and Zinc Stack I Wish I Had T",
+      "attempt": 1,
+      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] [{'title': '글의 길이 조정', 'content': '현재 글의 길이를 줄여야 합니다.', 'goal': '2000자 이하로 작성'}, {'title': 'PMID 인용 확대 필요성', 'content': '더 많은 학술 자료를 사용하여 연구 근거를 강화해야 합니다.'}, {'title': '과학적 설명 추가', 'content': \"'science-heavy' 아키텍처에 맞춰 과학적인 이유와 증명을 포함하는 것이 필요합니다.",
+      "count": 1,
+      "first_seen": "2026-06-02"
+    },
+    {
+      "date": "2026-06-02 20:39",
+      "topic": "The Copper and Zinc Stack I Wish I Had T",
       "attempt": 2,
-      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] ['No_Cure_Claims 및 NoPlaceholder 관련 연구를 추가 또는 수정해야 합니다.', '알고리즘을 개선하여 자동화된 검증 단계가 문제 없이 작동하도록 하세요.']",
+      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] 리서치는 실험 데이터와 기술적 프로토콜에 중점을 두고, 이들가 있으면 'science-heavy' 아키텍처의 요구사항을 충족할 수 있습니다. 2000자 이상의 길이를 유지하면서도 과학적인 근거를 확보하려면 추가 연구나 인용이 필요합니다.",
       "count": 1,
-      "first_seen": "2026-05-27"
+      "first_seen": "2026-06-02"
     },
     {
-      "date": "2026-05-27",
+      "date": "2026-06-02 20:46",
+      "topic": "The Copper and Zinc Stack I Wish I Had T",
+      "attempt": 3,
+      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] ['더 많은 PMID 인용을 포함하여 과학적인 신뢰도를 증가시켜야 합니다.', \"실험적 데이터나 연구 결과를 언급해야 하며, 이는 'science-heavy' 기준에 부합하는 것을 확인할 수 있어야합니다.\"]",
+      "count": 1,
+      "first_seen": "2026-06-02"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "D1",
+      "topic": "How Creatine Finally Stopped My Workout ",
+      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 0/10 — PMID/연구링크 없음 | How Creatine Finally Stopped My Workout ",
+      "score": 0,
+      "note": "PMID/연구링크 없음",
+      "count": 2,
+      "first_seen": "2026-06-02"
+    },
+    {
+      "date": "2026-06-02",
       "cat": "D1",
       "topic": "How to Take Zinc for Best Results",
       "lesson": "[발행후검증-D1] PMID/연구링크 유효성 0/10 — PMID/연구링크 없음 | How to Take Zinc for Best Results",
       "score": 0,
       "note": "PMID/연구링크 없음",
       "count": 1,
-      "first_seen": "2026-05-27"
+      "first_seen": "2026-06-02"
     },
     {
-      "date": "2026-05-27 19:55",
-      "topic": "Selenium Complete Guide",
-      "attempt": 1,
-      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] [{'title': '리서치 개선 지시', 'items': ['과학 중심의 내용을 확장하고, 모든 섹션에서 깊이 있는 과학적 설명을 추가하십시오.', \"사용자 경험과 과학적인 근거가 동등한 중요성을 가진 '심층 프로토콜' 아키타입에 따라 문서를 재구성하십시오.\"]}]",
-      "count": 1,
-      "first_seen": "2026-05-27"
-    },
-    {
-      "date": "2026-05-27 20:00",
-      "topic": "Selenium Complete Guide",
-      "attempt": 2,
-      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] 이 문제는 자동화된 시스템의 구조를 확인하고, 적절한 빈 공간(placeholder)을 정확하게 식별하는 알고리즘에 대한 개선이 필요합니다.",
-      "count": 1,
-      "first_seen": "2026-05-27"
-    },
-    {
-      "date": "2026-05-27",
+      "date": "2026-06-02",
       "cat": "D1",
-      "topic": "How to Take Selenium for Best Results",
-      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 7/10 — PMID 2개 (권장 3+) | How to Take Selenium for Best Results",
+      "topic": "SAMe Surprised Me After I Almost Gave Up",
+      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 7/10 — PMID 2개 (권장 3+) | SAMe Surprised Me After I Almost Gave Up",
       "score": 7,
       "note": "PMID 2개 (권장 3+)",
-      "count": 1,
-      "first_seen": "2026-05-27"
-    },
-    {
-      "date": "2026-05-28 20:02",
-      "topic": "SAMe Complete Guide",
-      "attempt": 1,
-      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] ['리서치 개선 지시가 필요합니다.', '첫째, 과학적 설명과 실험 데이터를 추가해야 합니다. PMIDs 기반의 연구 인용도 포함되어야 한다.', '둘째, FAQ 섹션은 사용자에게 실질적인 적용 방법이나 임상적 근거에 대한 심층 해석을 제공하는 내용이 필요하다.', \"셋째, 전체 구조를 'comprehensive-guide' 아키타입으로 개선하여 체계적이며 상세한 내용 확장을 포함해야 한다. 핵심 주제에 대한 체계적인 문헌 고찰도 추가",
-      "count": 1,
-      "first_seen": "2026-05-28"
-    },
-    {
-      "date": "2026-05-28 20:24",
-      "topic": "SAMe Complete Guide",
-      "attempt": 3,
-      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] {'research_improvement_guidance': ['자동 검증 시스템의 요구 사항을 충족하는 대안적인 접근법을 찾아보세요. 특히, NoPlaceholder 이슈에 대한 해결책이 필요합니다.']}",
-      "count": 1,
-      "first_seen": "2026-05-28"
-    },
-    {
-      "date": "2026-05-28",
-      "cat": "D1",
-      "topic": "Same Complete: Is Same Worth Taking? Wha",
-      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 7/10 — PMID 2개 (권장 3+) | Same Complete: Is Same Worth Taking? Wha",
-      "score": 7,
-      "note": "PMID 2개 (권장 3+)",
-      "count": 1,
-      "first_seen": "2026-05-28"
-    },
-    {
-      "date": "2026-05-28 21:26",
-      "topic": "Iron Complete Guide",
-      "attempt": 2,
-      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] The 'NoPlaceholder' automated check failure might suggest a problem with the structure of your data or content. Review how placeholders are used and ensure they match expected formats.",
-      "count": 1,
-      "first_seen": "2026-05-28"
-    },
-    {
-      "date": "2026-05-28 21:29",
-      "topic": "Iron Complete Guide",
-      "attempt": 3,
-      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] 리서치 과정이나 문서 작성 중 'NoPlaceholder' 에러가 발생하여 해당 내용을 수정해야 합니다.",
-      "count": 1,
-      "first_seen": "2026-05-28"
-    },
-    {
-      "date": "2026-05-28",
-      "cat": "D1",
-      "topic": "Iron Complete: How to Take Iron for Best",
-      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 0/10 — PMID/연구링크 없음 | Iron Complete: How to Take Iron for Best",
-      "score": 0,
-      "note": "PMID/연구링크 없음",
-      "count": 1,
-      "first_seen": "2026-05-28"
-    },
-    {
-      "date": "2026-05-28 22:25",
-      "topic": "Copper Complete Guide",
-      "attempt": 1,
-      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] 이슈가 있는 AI_Footprint 및 NoPlaceholder 관련 연구 개선을 고려해 보세요.",
-      "count": 1,
-      "first_seen": "2026-05-28"
-    },
-    {
-      "date": "2026-05-28 22:29",
-      "topic": "Copper Complete Guide",
-      "attempt": 2,
-      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] ['PMID 인용은 유지하되, 생물학적 메커니즘과 관련된 연구를 추가하여 과학적 깊이를 높여주세요.', '독자가 실질적인 결정을 내릴 수 있도록 균형 잡힌 과학적 분석 및 실용적 조언을 제공하세요.']",
-      "count": 1,
-      "first_seen": "2026-05-28"
-    },
-    {
-      "date": "2026-05-28 22:33",
-      "topic": "Copper Complete Guide",
-      "attempt": 3,
-      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] ['PMID 인용은 필수적이지만 현재 글에는 단 두 개만 언급되어 있습니다.', \"더 많은 연구 자료를 사용하여 내용의 정확성을 증진시키고, 'comprehensive-guide' 기준에 부합하는 과학적 근거를 추가해야 합니다.\"]",
-      "count": 1,
-      "first_seen": "2026-05-28"
-    },
-    {
-      "date": "2026-05-28",
-      "cat": "D1",
-      "topic": "Copper Complete: Copper : Guide to Dosag",
-      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 7/10 — PMID 2개 (권장 3+) | Copper Complete: Copper : Guide to Dosag",
-      "score": 7,
-      "note": "PMID 2개 (권장 3+)",
-      "count": 1,
-      "first_seen": "2026-05-28"
-    },
-    {
-      "date": "2026-05-29 08:42",
-      "topic": "",
-      "attempt": 1,
-      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] 특정 연구 결과, 메커니즘 또는 실험이론에 대한 명확한 설명을 제공하고 PMID 인용을 포함하여 기사를 개선하세요.",
-      "count": 1,
-      "first_seen": "2026-05-29"
-    },
-    {
-      "date": "2026-05-29 08:51",
-      "topic": "",
-      "attempt": 3,
-      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] [\"PMID 인용은 'science-heavy' 아키타입에서 요구되는 연구 기반을 보여주고 있지 않으며, 구조적인 프로토콜이 명시되지 않았습니다.\"]",
-      "count": 1,
-      "first_seen": "2026-05-29"
-    },
-    {
-      "date": "2026-05-29",
-      "cat": "D1",
-      "topic": "Is Berberine Worth Taking What the Resea",
-      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 7/10 — PMID 2개 (권장 3+) | Is Berberine Worth Taking What the Resea",
-      "score": 7,
-      "note": "PMID 2개 (권장 3+)",
-      "count": 1,
-      "first_seen": "2026-05-29"
-    },
-    {
-      "date": "2026-05-29",
-      "cat": "D1",
-      "topic": "Probiotics Complete: Probiotics : Guide ",
-      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 7/10 — PMID 2개 (권장 3+) | Probiotics Complete: Probiotics : Guide ",
-      "score": 7,
-      "note": "PMID 2개 (권장 3+)",
-      "count": 1,
-      "first_seen": "2026-05-29"
-    },
-    {
-      "date": "2026-05-29",
-      "cat": "D1",
-      "topic": "Probiotics Benefits: Boost Immune System",
-      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 7/10 — PMID 2개 (권장 3+) | Probiotics Benefits: Boost Immune System",
-      "score": 7,
-      "note": "PMID 2개 (권장 3+)",
-      "count": 1,
-      "first_seen": "2026-05-29"
-    },
-    {
-      "date": "2026-05-30",
-      "cat": "D1",
-      "topic": "Iron: How I Actually Fixed My Energy (Af",
-      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 0/10 — PMID/연구링크 없음 | Iron: How I Actually Fixed My Energy (Af",
-      "score": 0,
-      "note": "가상 PMID: [40945632, 41287676]",
       "count": 2,
-      "first_seen": "2026-05-30"
+      "first_seen": "2026-06-02"
     },
     {
-      "date": "2026-05-30",
+      "date": "2026-06-02",
       "cat": "D1",
-      "topic": "Magnesium Complete Guide: Benefits, Type",
-      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 0/10 — PMID/연구링크 없음 | Magnesium Complete Guide: Benefits, Type",
-      "score": 0,
-      "note": "PMID/연구링크 없음",
-      "count": 1,
-      "first_seen": "2026-05-30"
-    },
-    {
-      "date": "2026-05-30",
-      "cat": "D1",
-      "topic": "NMN Complete: Is NMN Worth Taking? What ",
-      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 7/10 — PMID 2개 (권장 3+) | NMN Complete: Is NMN Worth Taking? What ",
+      "topic": "I Kept Taking the Wrong Form of Zinc — H",
+      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 7/10 — PMID 2개 (권장 3+) | I Kept Taking the Wrong Form of Zinc — H",
       "score": 7,
       "note": "PMID 2개 (권장 3+)",
-      "count": 1,
-      "first_seen": "2026-05-30"
-    },
-    {
-      "date": "2026-05-30",
-      "cat": "D1",
-      "topic": "The NMN Mistake That Delayed My Results",
-      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 7/10 — PMID 2개 (권장 3+) | The NMN Mistake That Delayed My Results",
-      "score": 7,
-      "note": "PMID 2개 (권장 3+)",
-      "count": 1,
-      "first_seen": "2026-05-30"
-    },
-    {
-      "date": "2026-05-30",
-      "cat": "D1",
-      "topic": "Is Vitamin B12 Worth Taking? What the Re",
-      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 7/10 — PMID 2개 (권장 3+) | Is Vitamin B12 Worth Taking? What the Re",
-      "score": 7,
-      "note": "PMID 2개 (권장 3+)",
-      "count": 1,
-      "first_seen": "2026-05-30"
-    },
-    {
-      "date": "2026-05-30",
-      "cat": "D1",
-      "topic": "The B12 Mistake That Kept Me Tired",
-      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 7/10 — PMID 2개 (권장 3+) | The B12 Mistake That Kept Me Tired",
-      "score": 7,
-      "note": "PMID 2개 (권장 3+)",
-      "count": 1,
-      "first_seen": "2026-05-30"
-    },
-    {
-      "date": "2026-05-30",
-      "cat": "D1",
-      "topic": "Why Citrulline Malate Felt Useless Until",
-      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 0/10 — PMID/연구링크 없음 | Why Citrulline Malate Felt Useless Until",
-      "score": 0,
-      "note": "PMID/연구링크 없음",
-      "count": 14,
-      "first_seen": "2026-05-30"
-    },
-    {
-      "date": "2026-05-30",
-      "cat": "D1",
-      "topic": "The Vitamin D Mistake That Kept Me Tired",
-      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 0/10 — PMID/연구링크 없음 | The Vitamin D Mistake That Kept Me Tired",
-      "score": 0,
-      "note": "PMID/연구링크 없음",
       "count": 2,
-      "first_seen": "2026-05-30"
+      "first_seen": "2026-06-02"
+    },
+    {
+      "date": "2026-06-02 22:58",
+      "topic": "Potassium Complete Guide",
+      "attempt": 1,
+      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] ['Include complete research references.', \"Verify article's word count and relevance to comprehensive-guide criteria.\"]",
+      "count": 1,
+      "first_seen": "2026-06-02"
+    },
+    {
+      "date": "2026-06-02 23:11",
+      "topic": "Potassium Complete Guide",
+      "attempt": 3,
+      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] [{'title': '체계적인 프로토콜 개선', 'description': '단순한 팁 제공을 넘어 체계적이고 깊은 연구 기반의 내용을 담아내는 것이 필요합니다.'}, {'title': '과학적 내용과 PMID 인용 추가', 'description': \"'comprehensive-guide'로 분류되었음에도 불구하고, 과학적인 정보와 PMID 인용이 부족한 부분입니다. 이 부분에 중점을 두어야 합니다.\"}]",
+      "count": 1,
+      "first_seen": "2026-06-02"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "D1",
+      "topic": "Potassium Complete: Potassium Dosage Gui",
+      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 7/10 — PMID 2개 (권장 3+) | Potassium Complete: Potassium Dosage Gui",
+      "score": 7,
+      "note": "PMID 1개 (권장 3+)",
+      "count": 2,
+      "first_seen": "2026-06-02"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "D1",
+      "topic": "The Potassium Problem That Changed My En",
+      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 7/10 — PMID 2개 (권장 3+) | The Potassium Problem That Changed My En",
+      "score": 7,
+      "note": "PMID 2개 (권장 3+)",
+      "count": 1,
+      "first_seen": "2026-06-02"
+    },
+    {
+      "date": "2026-06-02 23:44",
+      "topic": "Potassium Complete Guide",
+      "attempt": 2,
+      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] [\"문서의 길이를 2000자 이상으로 늘려 'science-heavy' 아키타입의 요구 사항에 부합하도록 수정하십시오.\"]",
+      "count": 1,
+      "first_seen": "2026-06-02"
+    },
+    {
+      "date": "2026-06-02 23:52",
+      "topic": "Potassium Complete Guide",
+      "attempt": 3,
+      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] [{'research_improvement': \"이 기사를 'science-heavy/deep-protocol' 아키타입으로 변환하려면 과학적 근거를 바탕으로 한 체계적인 분석이나 프로토콜 설명을 포함해야 합니다.\", 'additional_guidance_research_1': ''}]",
+      "count": 1,
+      "first_seen": "2026-06-02"
+    },
+    {
+      "date": "2026-06-03 00:18",
+      "topic": "Taking Zinc with Iron: What I Learned th",
+      "attempt": 1,
+      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] [\"인용을 포함해야 하는 'science-heavy' 아키텍처 기준에 따라 PMID 인용이 없음\", '아키텍처의 설명이 완결되지 않아 정확한 이해를 어렵게 합니다']",
+      "count": 1,
+      "first_seen": "2026-06-03"
+    },
+    {
+      "date": "2026-06-03 00:21",
+      "topic": "Taking Zinc with Iron: What I Learned th",
+      "attempt": 2,
+      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] 필요할 경우 TOC나 FAQ 등을 포함하고 과학적 근거가 있는 PMID 인용을 추가해주세요.",
+      "count": 1,
+      "first_seen": "2026-06-03"
+    },
+    {
+      "date": "2026-06-03 00:23",
+      "topic": "Taking Zinc with Iron: What I Learned th",
+      "attempt": 3,
+      "lesson": "[점수: N/A/10 | 기술: ?, AI패턴: ?, 품질: ?, 애드센스: ?, 인간느낌: ?] ['리서치는 명확한 결론과 실천 지침을 포함해야 합니다.', ' 과학적 근거를 제공하는 것이 요구되므로, PMID 인용은 반드시 포함되어야 합니다.']",
+      "count": 1,
+      "first_seen": "2026-06-03"
+    },
+    {
+      "date": "2026-06-03",
+      "cat": "D1",
+      "topic": "Is Zinc Worth Taking? What the Research ",
+      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 7/10 — PMID 1개 (권장 3+) | Is Zinc Worth Taking? What the Research ",
+      "score": 7,
+      "note": "PMID 1개 (권장 3+)",
+      "count": 1,
+      "first_seen": "2026-06-03"
     }
   ],
   "04_SEO_Optimizer": [
@@ -1528,23 +1091,23 @@
       "first_seen": "2026-05-27"
     },
     {
-      "date": "2026-05-27",
+      "date": "2026-06-02",
       "cat": "B1",
       "topic": "How to Take Zinc for Best Results",
       "lesson": "[발행후검증-B1] og:description 상태 7/10 — 너무 김 (164자) | How to Take Zinc for Best Results",
-      "score": 7,
-      "note": "너무 김 (164자)",
-      "count": 1,
+      "score": 0,
+      "note": "오염됨: The research on Zinc is often different from real-",
+      "count": 6,
       "first_seen": "2026-05-27"
     },
     {
-      "date": "2026-05-27",
+      "date": "2026-06-02",
       "cat": "E3",
       "topic": "How to Take Zinc for Best Results",
       "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | How to Take Zinc for Best Results",
       "score": 7,
       "note": "브랜드 OK",
-      "count": 1,
+      "count": 8,
       "first_seen": "2026-05-27"
     },
     {
@@ -1928,113 +1491,113 @@
       "first_seen": "2026-05-30"
     },
     {
-      "date": "2026-05-30",
+      "date": "2026-06-02",
       "cat": "D4",
       "topic": "Vitamin B12 Absorption: Why I Got It Wro",
       "lesson": "[발행후검증-D4] HTML 구조 완성도 6/10 — CSS 없음 | Vitamin B12 Absorption: Why I Got It Wro",
       "score": 6,
       "note": "CSS 없음",
-      "count": 14,
+      "count": 19,
       "first_seen": "2026-05-30"
     },
     {
-      "date": "2026-05-30",
+      "date": "2026-06-02",
       "cat": "E3",
       "topic": "Vitamin B12 Absorption: Why I Got It Wro",
       "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Vitamin B12 Absorption: Why I Got It Wro",
       "score": 7,
       "note": "브랜드 OK",
-      "count": 14,
+      "count": 19,
       "first_seen": "2026-05-30"
     },
     {
-      "date": "2026-05-30",
+      "date": "2026-06-02",
       "cat": "D4",
       "topic": "NMN Supplement: The Timing Mistake That ",
       "lesson": "[발행후검증-D4] HTML 구조 완성도 6/10 — CSS 없음 | NMN Supplement: The Timing Mistake That ",
       "score": 6,
       "note": "CSS 없음",
-      "count": 14,
+      "count": 19,
       "first_seen": "2026-05-30"
     },
     {
-      "date": "2026-05-30",
+      "date": "2026-06-02",
       "cat": "E3",
       "topic": "NMN Supplement: The Timing Mistake That ",
       "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | NMN Supplement: The Timing Mistake That ",
       "score": 7,
       "note": "브랜드 OK",
-      "count": 14,
+      "count": 19,
       "first_seen": "2026-05-30"
     },
     {
-      "date": "2026-05-30",
+      "date": "2026-06-02",
       "cat": "D4",
       "topic": "Probiotics Dosage: How Much You Actually",
       "lesson": "[발행후검증-D4] HTML 구조 완성도 6/10 — CSS 없음 | Probiotics Dosage: How Much You Actually",
       "score": 6,
       "note": "CSS 없음",
-      "count": 14,
+      "count": 19,
       "first_seen": "2026-05-30"
     },
     {
-      "date": "2026-05-30",
+      "date": "2026-06-02",
       "cat": "E3",
       "topic": "Probiotics Dosage: How Much You Actually",
       "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Probiotics Dosage: How Much You Actually",
       "score": 7,
       "note": "브랜드 OK",
-      "count": 14,
+      "count": 19,
       "first_seen": "2026-05-30"
     },
     {
-      "date": "2026-05-30",
+      "date": "2026-06-02",
       "cat": "D4",
       "topic": "Berberine Dosage: The Mistake That Delay",
       "lesson": "[발행후검증-D4] HTML 구조 완성도 6/10 — CSS 없음 | Berberine Dosage: The Mistake That Delay",
       "score": 6,
       "note": "CSS 없음",
-      "count": 14,
+      "count": 19,
       "first_seen": "2026-05-30"
     },
     {
-      "date": "2026-05-30",
+      "date": "2026-06-02",
       "cat": "E3",
       "topic": "Berberine Dosage: The Mistake That Delay",
       "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Berberine Dosage: The Mistake That Delay",
       "score": 7,
       "note": "브랜드 OK",
-      "count": 14,
+      "count": 19,
       "first_seen": "2026-05-30"
     },
     {
-      "date": "2026-05-30",
+      "date": "2026-06-02",
       "cat": "E3",
       "topic": "Iron Deficiency: How I Finally Fixed My ",
       "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Iron Deficiency: How I Finally Fixed My ",
       "score": 7,
       "note": "브랜드 OK",
-      "count": 14,
+      "count": 19,
       "first_seen": "2026-05-30"
     },
     {
-      "date": "2026-05-30",
+      "date": "2026-06-02",
       "cat": "E3",
       "topic": "Magnesium Types and Dosage: The Form Tha",
       "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Magnesium Types and Dosage: The Form Tha",
       "score": 7,
       "note": "브랜드 OK",
-      "count": 14,
+      "count": 19,
       "first_seen": "2026-05-30"
     },
     {
-      "date": "2026-05-30",
+      "date": "2026-06-02",
       "cat": "E3",
       "topic": "Vitamin C Dosage: What Six Months of Tes",
       "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Vitamin C Dosage: What Six Months of Tes",
       "score": 7,
       "note": "브랜드 OK",
-      "count": 14,
+      "count": 19,
       "first_seen": "2026-05-30"
     },
     {
@@ -2058,23 +1621,23 @@
       "first_seen": "2026-05-30"
     },
     {
-      "date": "2026-05-30",
+      "date": "2026-06-02",
       "cat": "D4",
       "topic": "Why Citrulline Malate Felt Useless Until",
       "lesson": "[발행후검증-D4] HTML 구조 완성도 6/10 — CSS 없음 | Why Citrulline Malate Felt Useless Until",
       "score": 6,
       "note": "CSS 없음",
-      "count": 14,
+      "count": 19,
       "first_seen": "2026-05-30"
     },
     {
-      "date": "2026-05-30",
+      "date": "2026-06-02",
       "cat": "E3",
       "topic": "Why Citrulline Malate Felt Useless Until",
       "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Why Citrulline Malate Felt Useless Until",
       "score": 7,
       "note": "브랜드 OK",
-      "count": 14,
+      "count": 19,
       "first_seen": "2026-05-30"
     },
     {
@@ -2108,23 +1671,23 @@
       "first_seen": "2026-05-30"
     },
     {
-      "date": "2026-05-30",
+      "date": "2026-06-02",
       "cat": "D4",
       "topic": "The Vitamin D Mistake That Kept Me Tired",
       "lesson": "[발행후검증-D4] HTML 구조 완성도 6/10 — CSS 없음 | The Vitamin D Mistake That Kept Me Tired",
       "score": 6,
       "note": "CSS 없음",
-      "count": 7,
+      "count": 12,
       "first_seen": "2026-05-30"
     },
     {
-      "date": "2026-05-30",
+      "date": "2026-06-02",
       "cat": "E3",
       "topic": "The Vitamin D Mistake That Kept Me Tired",
       "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | The Vitamin D Mistake That Kept Me Tired",
       "score": 7,
       "note": "브랜드 OK",
-      "count": 7,
+      "count": 12,
       "first_seen": "2026-05-30"
     },
     {
@@ -2146,9 +1709,683 @@
       "note": "브랜드 OK",
       "count": 1,
       "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-05-31",
+      "cat": "D4",
+      "topic": "Vitamin K2 Timing: Why I Finally Saw Res",
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 3/10 — &#8594; 엔티티 잔존 (→ 로 교체 필요), CSS 없음 | Vitamin K2 Timing: Why I Finally Saw Res",
+      "score": 6,
+      "note": "CSS 없음",
+      "count": 11,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-05-31",
+      "cat": "E3",
+      "topic": "Vitamin K2 Timing: Why I Finally Saw Res",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Vitamin K2 Timing: Why I Finally Saw Res",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 11,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-05-31",
+      "cat": "B1",
+      "topic": "Vitamin K2 Timing: Why I Finally Saw Res",
+      "lesson": "[발행후검증-B1] og:description 상태 5/10 — 너무 짧음 (50자) | Vitamin K2 Timing: Why I Finally Saw Res",
+      "score": 5,
+      "note": "너무 짧음 (41자)",
+      "count": 6,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-05-31",
+      "cat": "D4",
+      "topic": "Vitamin K2 Benefits, Dosage, and Side Ef",
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 3/10 — &#8594; 엔티티 잔존 (→ 로 교체 필요), CSS 없음 | Vitamin K2 Benefits, Dosage, and Side Ef",
+      "score": 3,
+      "note": "&#8594; 엔티티 잔존 (→ 로 교체 필요), CSS 없음",
+      "count": 1,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-05-31",
+      "cat": "E3",
+      "topic": "Vitamin K2 Benefits, Dosage, and Side Ef",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Vitamin K2 Benefits, Dosage, and Side Ef",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 1,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "D4",
+      "topic": "I Almost Quit Vitamin K2 After Two Weeks",
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 6/10 — CSS 없음 | I Almost Quit Vitamin K2 After Two Weeks",
+      "score": 6,
+      "note": "CSS 없음",
+      "count": 10,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "E3",
+      "topic": "I Almost Quit Vitamin K2 After Two Weeks",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | I Almost Quit Vitamin K2 After Two Weeks",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 10,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-05-31",
+      "cat": "D4",
+      "topic": "Hmb Complete Dosage Guide: How Much Do Y",
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 3/10 — &#8594; 엔티티 잔존 (→ 로 교체 필요), CSS 없음 | Hmb Complete Dosage Guide: How Much Do Y",
+      "score": 3,
+      "note": "&#8594; 엔티티 잔존 (→ 로 교체 필요), CSS 없음",
+      "count": 1,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-05-31",
+      "cat": "E3",
+      "topic": "Hmb Complete Dosage Guide: How Much Do Y",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Hmb Complete Dosage Guide: How Much Do Y",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 1,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-05-31",
+      "cat": "D4",
+      "topic": "Zinc Benefits, Dosage, and Side Effects",
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 3/10 — &#8594; 엔티티 잔존 (→ 로 교체 필요), CSS 없음 | Zinc Benefits, Dosage, and Side Effects",
+      "score": 3,
+      "note": "&#8594; 엔티티 잔존 (→ 로 교체 필요), CSS 없음",
+      "count": 1,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-05-31",
+      "cat": "E3",
+      "topic": "Zinc Benefits, Dosage, and Side Effects",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Zinc Benefits, Dosage, and Side Effects",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 1,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-05-31",
+      "cat": "D4",
+      "topic": "SAMe Complete: SAMe Benefits, Dosage, an",
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 3/10 — &#8594; 엔티티 잔존 (→ 로 교체 필요), CSS 없음 | SAMe Complete: SAMe Benefits, Dosage, an",
+      "score": 3,
+      "note": "&#8594; 엔티티 잔존 (→ 로 교체 필요), CSS 없음",
+      "count": 1,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-05-31",
+      "cat": "E3",
+      "topic": "SAMe Complete: SAMe Benefits, Dosage, an",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | SAMe Complete: SAMe Benefits, Dosage, an",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 1,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-05-31",
+      "cat": "B1",
+      "topic": "How HMB Helped Me Recover From My Worst ",
+      "lesson": "[발행후검증-B1] og:description 상태 5/10 — 너무 짧음 (65자) | How HMB Helped Me Recover From My Worst ",
+      "score": 5,
+      "note": "너무 짧음 (65자)",
+      "count": 1,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "D4",
+      "topic": "How HMB Helped Me Recover From My Worst ",
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 6/10 — CSS 없음 | How HMB Helped Me Recover From My Worst ",
+      "score": 6,
+      "note": "CSS 없음",
+      "count": 10,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "E3",
+      "topic": "How HMB Helped Me Recover From My Worst ",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | How HMB Helped Me Recover From My Worst ",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 10,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "D4",
+      "topic": "I Kept Taking the Wrong Form of Zinc — H",
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 6/10 — CSS 없음 | I Kept Taking the Wrong Form of Zinc — H",
+      "score": 6,
+      "note": "CSS 없음",
+      "count": 13,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "E3",
+      "topic": "I Kept Taking the Wrong Form of Zinc — H",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | I Kept Taking the Wrong Form of Zinc — H",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 13,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "D4",
+      "topic": "SAMe Surprised Me After I Almost Gave Up",
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 6/10 — CSS 없음 | SAMe Surprised Me After I Almost Gave Up",
+      "score": 6,
+      "note": "CSS 없음",
+      "count": 13,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "E3",
+      "topic": "SAMe Surprised Me After I Almost Gave Up",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | SAMe Surprised Me After I Almost Gave Up",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 13,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-05-31",
+      "cat": "D4",
+      "topic": "Selenium Complete: Is Selenium Worth Tak",
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 3/10 — &#8594; 엔티티 잔존 (→ 로 교체 필요), CSS 없음 | Selenium Complete: Is Selenium Worth Tak",
+      "score": 3,
+      "note": "&#8594; 엔티티 잔존 (→ 로 교체 필요), CSS 없음",
+      "count": 1,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-05-31",
+      "cat": "E3",
+      "topic": "Selenium Complete: Is Selenium Worth Tak",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Selenium Complete: Is Selenium Worth Tak",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 1,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "D4",
+      "topic": "Selenium Benefits: What I Noticed After ",
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 6/10 — CSS 없음 | Selenium Benefits: What I Noticed After ",
+      "score": 6,
+      "note": "CSS 없음",
+      "count": 5,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "E3",
+      "topic": "Selenium Benefits: What I Noticed After ",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Selenium Benefits: What I Noticed After ",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 5,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-05-31",
+      "cat": "D4",
+      "topic": "Melatonin Complete: Melatonin Dosage Gui",
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 3/10 — &#8594; 엔티티 잔존 (→ 로 교체 필요), CSS 없음 | Melatonin Complete: Melatonin Dosage Gui",
+      "score": 3,
+      "note": "&#8594; 엔티티 잔존 (→ 로 교체 필요), CSS 없음",
+      "count": 1,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-05-31",
+      "cat": "E3",
+      "topic": "Melatonin Complete: Melatonin Dosage Gui",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Melatonin Complete: Melatonin Dosage Gui",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 1,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "D4",
+      "topic": "I Thought Melatonin Didn't Work Until We",
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 6/10 — CSS 없음 | I Thought Melatonin Didn't Work Until We",
+      "score": 6,
+      "note": "CSS 없음",
+      "count": 4,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "E3",
+      "topic": "I Thought Melatonin Didn't Work Until We",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | I Thought Melatonin Didn't Work Until We",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 4,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-05-31",
+      "cat": "D4",
+      "topic": "Copper Complete: Copper Dosage Guide: Ho",
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 3/10 — &#8594; 엔티티 잔존 (→ 로 교체 필요) | Copper Complete: Copper Dosage Guide: Ho",
+      "score": 3,
+      "note": "&#8594; 엔티티 잔존 (→ 로 교체 필요)",
+      "count": 1,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-05-31",
+      "cat": "E3",
+      "topic": "Copper Complete: Copper Dosage Guide: Ho",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Copper Complete: Copper Dosage Guide: Ho",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 1,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "E3",
+      "topic": "Why I Started Taking Copper and Everythi",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Why I Started Taking Copper and Everythi",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 3,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-05-31",
+      "cat": "D4",
+      "topic": "How to Take Magnesium Vitamin for Best R",
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 3/10 — &#8594; 엔티티 잔존 (→ 로 교체 필요) | How to Take Magnesium Vitamin for Best R",
+      "score": 3,
+      "note": "&#8594; 엔티티 잔존 (→ 로 교체 필요)",
+      "count": 1,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-05-31",
+      "cat": "E3",
+      "topic": "How to Take Magnesium Vitamin for Best R",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | How to Take Magnesium Vitamin for Best R",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 1,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "date": "2026-06-01",
+      "cat": "D4",
+      "topic": "Ginger Complete: Ginger Benefits, Dosage",
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 3/10 — &#8594; 엔티티 잔존 (→ 로 교체 필요) | Ginger Complete: Ginger Benefits, Dosage",
+      "score": 3,
+      "note": "&#8594; 엔티티 잔존 (→ 로 교체 필요)",
+      "count": 1,
+      "first_seen": "2026-06-01"
+    },
+    {
+      "date": "2026-06-01",
+      "cat": "E3",
+      "topic": "Ginger Complete: Ginger Benefits, Dosage",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Ginger Complete: Ginger Benefits, Dosage",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 1,
+      "first_seen": "2026-06-01"
+    },
+    {
+      "date": "2026-06-01",
+      "cat": "D4",
+      "topic": "Magnesium Vitamin Benefits, Dosage, and ",
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 3/10 — &#8594; 엔티티 잔존 (→ 로 교체 필요) | Magnesium Vitamin Benefits, Dosage, and ",
+      "score": 6,
+      "note": "CSS 없음",
+      "count": 2,
+      "first_seen": "2026-06-01"
+    },
+    {
+      "date": "2026-06-01",
+      "cat": "E3",
+      "topic": "Magnesium Vitamin Benefits, Dosage, and ",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Magnesium Vitamin Benefits, Dosage, and ",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 2,
+      "first_seen": "2026-06-01"
+    },
+    {
+      "date": "2026-06-01",
+      "cat": "D4",
+      "topic": "Zinc: Guide to Dosage and Benefits",
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 3/10 — &#8594; 엔티티 잔존 (→ 로 교체 필요) | Zinc: Guide to Dosage and Benefits",
+      "score": 3,
+      "note": "&#8594; 엔티티 잔존 (→ 로 교체 필요)",
+      "count": 1,
+      "first_seen": "2026-06-01"
+    },
+    {
+      "date": "2026-06-01",
+      "cat": "E3",
+      "topic": "Zinc: Guide to Dosage and Benefits",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Zinc: Guide to Dosage and Benefits",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 1,
+      "first_seen": "2026-06-01"
+    },
+    {
+      "date": "2026-06-01",
+      "cat": "E3",
+      "topic": "Ginger: Ginger Benefits, Dosage, and Sid",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Ginger: Ginger Benefits, Dosage, and Sid",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 1,
+      "first_seen": "2026-06-01"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "D4",
+      "topic": "How Zinc Supplements Finally Ended My Co",
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 6/10 — CSS 없음 | How Zinc Supplements Finally Ended My Co",
+      "score": 6,
+      "note": "CSS 없음",
+      "count": 3,
+      "first_seen": "2026-06-01"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "E3",
+      "topic": "How Zinc Supplements Finally Ended My Co",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | How Zinc Supplements Finally Ended My Co",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 3,
+      "first_seen": "2026-06-01"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "D4",
+      "topic": "Why I Started Taking Magnesium and Vitam",
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 6/10 — CSS 없음 | Why I Started Taking Magnesium and Vitam",
+      "score": 6,
+      "note": "CSS 없음",
+      "count": 3,
+      "first_seen": "2026-06-01"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "E3",
+      "topic": "Why I Started Taking Magnesium and Vitam",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 4/10 — disclosure 없음 | Why I Started Taking Magnesium and Vitam",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 3,
+      "first_seen": "2026-06-01"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "E3",
+      "topic": "What Four Weeks of Daily Ginger Actually",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | What Four Weeks of Daily Ginger Actually",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 3,
+      "first_seen": "2026-06-01"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "D4",
+      "topic": "Creatine Complete: Creatine Dosage Guide",
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 3/10 — &#8594; 엔티티 잔존 (→ 로 교체 필요) | Creatine Complete: Creatine Dosage Guide",
+      "score": 3,
+      "note": "&#8594; 엔티티 잔존 (→ 로 교체 필요)",
+      "count": 1,
+      "first_seen": "2026-06-02"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "E3",
+      "topic": "Creatine Complete: Creatine Dosage Guide",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Creatine Complete: Creatine Dosage Guide",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 1,
+      "first_seen": "2026-06-02"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "B1",
+      "topic": "How Creatine Finally Stopped My Workout ",
+      "lesson": "[발행후검증-B1] og:description 상태 5/10 — 너무 짧음 (70자) | How Creatine Finally Stopped My Workout ",
+      "score": 5,
+      "note": "너무 짧음 (70자)",
+      "count": 3,
+      "first_seen": "2026-06-02"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "E3",
+      "topic": "How Creatine Finally Stopped My Workout ",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | How Creatine Finally Stopped My Workout ",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 3,
+      "first_seen": "2026-06-02"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "D4",
+      "topic": "How to Take Zinc for Best Results",
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 3/10 — &#8594; 엔티티 잔존 (→ 로 교체 필요) | How to Take Zinc for Best Results",
+      "score": 3,
+      "note": "&#8594; 엔티티 잔존 (→ 로 교체 필요)",
+      "count": 1,
+      "first_seen": "2026-06-02"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "B1",
+      "topic": "Why I Started Taking Copper and Everythi",
+      "lesson": "[발행후검증-B1] og:description 상태 7/10 — 너무 김 (162자) | Why I Started Taking Copper and Everythi",
+      "score": 7,
+      "note": "너무 김 (162자)",
+      "count": 2,
+      "first_seen": "2026-06-02"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "D4",
+      "topic": "Potassium Complete: Potassium Dosage Gui",
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 3/10 — &#8594; 엔티티 잔존 (→ 로 교체 필요) | Potassium Complete: Potassium Dosage Gui",
+      "score": 0,
+      "note": "DOCTYPE 전체문서 저장 버그, &#8594; 엔티티 잔존 (→ 로 교체 필요)",
+      "count": 2,
+      "first_seen": "2026-06-02"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "E3",
+      "topic": "Potassium Complete: Potassium Dosage Gui",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Potassium Complete: Potassium Dosage Gui",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 2,
+      "first_seen": "2026-06-02"
+    },
+    {
+      "date": "2026-06-03",
+      "cat": "E3",
+      "topic": "The Potassium Problem That Changed My En",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | The Potassium Problem That Changed My En",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 11,
+      "first_seen": "2026-06-02"
+    },
+    {
+      "date": "2026-06-03",
+      "cat": "B1",
+      "topic": "Is Zinc Worth Taking? What the Research ",
+      "lesson": "[발행후검증-B1] og:description 상태 0/10 — 오염됨: The research on Zinc is often different from real- | Is Zinc Worth Taking? What the Research ",
+      "score": 0,
+      "note": "오염됨: The research on Zinc is often different from real-",
+      "count": 1,
+      "first_seen": "2026-06-03"
+    },
+    {
+      "date": "2026-06-03",
+      "cat": "D4",
+      "topic": "Is Zinc Worth Taking? What the Research ",
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 3/10 — &#8594; 엔티티 잔존 (→ 로 교체 필요) | Is Zinc Worth Taking? What the Research ",
+      "score": 3,
+      "note": "&#8594; 엔티티 잔존 (→ 로 교체 필요)",
+      "count": 1,
+      "first_seen": "2026-06-03"
+    },
+    {
+      "date": "2026-06-03",
+      "cat": "E3",
+      "topic": "Is Zinc Worth Taking? What the Research ",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Is Zinc Worth Taking? What the Research ",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 1,
+      "first_seen": "2026-06-03"
+    },
+    {
+      "date": "2026-06-03",
+      "cat": "B1",
+      "topic": "How Zinc Supplementation Finally Healed ",
+      "lesson": "[발행후검증-B1] og:description 상태 0/10 — 오염됨: The research on Zinc is often different from real- | How Zinc Supplementation Finally Healed ",
+      "score": 0,
+      "note": "오염됨: The research on Zinc is often different from real-",
+      "count": 1,
+      "first_seen": "2026-06-03"
+    },
+    {
+      "date": "2026-06-03",
+      "cat": "D4",
+      "topic": "How Zinc Supplementation Finally Healed ",
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 6/10 — CSS 없음 | How Zinc Supplementation Finally Healed ",
+      "score": 6,
+      "note": "CSS 없음",
+      "count": 5,
+      "first_seen": "2026-06-03"
+    },
+    {
+      "date": "2026-06-03",
+      "cat": "E3",
+      "topic": "How Zinc Supplementation Finally Healed ",
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | How Zinc Supplementation Finally Healed ",
+      "score": 7,
+      "note": "브랜드 OK",
+      "count": 5,
+      "first_seen": "2026-06-03"
     }
   ],
-  "05_Critic_Editor_In_Chief": [],
+  "05_Critic_Editor_In_Chief": [
+    {
+      "date": "2026-05-31",
+      "cat": "USER_FEEDBACK",
+      "topic": "사용자 직접 지적",
+      "lesson": "[사용자피드백] Selenium WebDriver 같은 동명이의 내용을 못 잡음. 영양소명이 다른 분야(자동화툴/프로그래밍/음악 등)에서도 쓰이는 경우 본문 맥락 체크 필요",
+      "score": 0,
+      "note": "Selenium WebDriver 같은 동명이의 내용을 못 잡음. 영양소명이 다른 분야(자동화툴/프로그래밍/음악 등)에서도 쓰이는 경우 본문 맥락 체크 필요",
+      "count": 3,
+      "first_seen": "2026-05-31",
+      "source": "user"
+    },
+    {
+      "date": "2026-05-31",
+      "cat": "USER_FEEDBACK",
+      "topic": "사용자 직접 지적",
+      "lesson": "[사용자피드백] 타임라인 충돌(Week three vs Week four)을 REJECT 조건에 추가했으나 이전엔 통과. 같은 글에서 변화 시작 시점이 두 군데에서 다르면 즉각 반려",
+      "score": 0,
+      "note": "타임라인 충돌(Week three vs Week four)을 REJECT 조건에 추가했으나 이전엔 통과. 같은 글에서 변화 시작 시점이 두 군데에서 다르면 즉각 반려",
+      "count": 3,
+      "first_seen": "2026-05-31",
+      "source": "user"
+    },
+    {
+      "date": "2026-05-31",
+      "cat": "USER_FEEDBACK",
+      "topic": "사용자 직접 지적",
+      "lesson": "[사용자피드백] 과도한 신체 변화(5가지+)를 못 잡음. 에너지/기분/수면/피부/손톱/머리카락 전부 개선 패턴은 AI 생성 흔적임",
+      "score": 0,
+      "note": "과도한 신체 변화(5가지+)를 못 잡음. 에너지/기분/수면/피부/손톱/머리카락 전부 개선 패턴은 AI 생성 흔적임",
+      "count": 3,
+      "first_seen": "2026-05-31",
+      "source": "user"
+    },
+    {
+      "date": "2026-06-02",
+      "cat": "USER_FEEDBACK",
+      "topic": "사용자 직접 지적",
+      "lesson": "[사용자피드백] 단정 표현 검사 추가 — 발행 전 다음 패턴 감지 필요: 'X does nothing', 'That's basically useless/pointless', 'X means you will Y', 'absorption depends on', 'makes you stronger/faster/better'. 감지 시 완화 표현 제안으로 REJECT 처리.",
+      "score": 0,
+      "note": "단정 표현 검사 추가 — 발행 전 다음 패턴 감지 필요: 'X does nothing', 'That's basically useless/pointless', 'X means you will Y', 'absorption depends on', 'makes you stronger/faster/better'. 감지 시 완화 표현 제안으로 REJECT 처리.",
+      "count": 3,
+      "first_seen": "2026-06-02",
+      "source": "user"
+    },
+    {
+      "lesson": "【단정 표현 감지 → REJECT】 다음 패턴 발견 시 즉시 REJECT: 'makes you stronger/faster/better', 'X does nothing', 'basically useless', 'absorption depends on', 'X is essential', 'you will feel/see/notice'. Writer에게 완화 표현으로 재작성 요청: 'seemed to', 'for me', 'I felt like', 'may'.",
+      "count": 5,
+      "tier": 1,
+      "added_at": "2026-06-02 22:01",
+      "active": true,
+      "source": "user_engrave_2026-06-02",
+      "date": "2026-06-02"
+    },
+    {
+      "lesson": "【경험담 비율 체크 필수】 발행 전 경험 문장 비율 반드시 확인. 전체 문장 대비 1인칭 경험 문장 60% 미만이면 REJECT. 특히 'First/Second/Third' 리스트, 'Key Takeaways', 'What I Wish' 섹션이 조언형으로 흐르기 쉬움 — 개인 회고형으로 변환 요구.",
+      "count": 5,
+      "tier": 1,
+      "added_at": "2026-06-02 22:01",
+      "active": true,
+      "source": "user_engrave_2026-06-02",
+      "date": "2026-06-02"
+    },
+    {
+      "date": "2026-06-03",
+      "cat": "USER_FEEDBACK",
+      "topic": "사용자 직접 지적",
+      "lesson": "[사용자피드백] 【YMYL 제목 감지】 제목에 'Healed', 'Cured', 'Fixed my X', 'Eliminated', 'Disappeared' 포함 시 REJECT. 만성질환(fatigue, inflammation, anxiety, depression) + 치료동사 조합 = 즉시 반려.",
+      "score": 0,
+      "note": "【YMYL 제목 감지】 제목에 'Healed', 'Cured', 'Fixed my X', 'Eliminated', 'Disappeared' 포함 시 REJECT. 만성질환(fatigue, inflammation, anxiety, depression) + 치료동사 조합 = 즉시 반려.",
+      "count": 3,
+      "first_seen": "2026-06-03",
+      "source": "user"
+    }
+  ],
   "AI_Footprint": [
     {
       "date": "2026-05-27 18:28",

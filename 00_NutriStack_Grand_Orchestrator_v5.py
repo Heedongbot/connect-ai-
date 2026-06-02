@@ -49,14 +49,16 @@ logging.basicConfig(level=logging.INFO,
 
 BASE_DIR       = Path(__file__).parent
 RAW_DIR        = BASE_DIR / "00_Raw"
+TEST_DIR       = BASE_DIR / "00_Test"        # 테스트 전용 (항상 draft, 기록 없음)
 COMPLETED_DIR  = BASE_DIR / "01_Completed"
+TEST_DONE_DIR  = BASE_DIR / "99_Test_Done"   # 테스트 완료 보관
 CHECKPOINT_DIR = BASE_DIR / "02_Checkpoints"
 IMAGE_DIR      = BASE_DIR / "05_Images"
 PROMPT_DIR     = BASE_DIR / "06_prompts"
 LEARN_DIR      = BASE_DIR / "10_Wiki" / "Decisions"
 META_DIR       = BASE_DIR / "20_Meta"
 
-for d in [RAW_DIR, COMPLETED_DIR, CHECKPOINT_DIR, IMAGE_DIR, LEARN_DIR, META_DIR]:
+for d in [RAW_DIR, TEST_DIR, COMPLETED_DIR, TEST_DONE_DIR, CHECKPOINT_DIR, IMAGE_DIR, LEARN_DIR, META_DIR]:
     d.mkdir(exist_ok=True, parents=True)
 
 SCOPES = [
@@ -281,6 +283,70 @@ def random_caption(section_label, topic):
     template = random.choice(CAPTION_TEMPLATES)
     return template.format(section=section_label, topic=topic[:45])
 
+def _sync_all_meta(html: str, title: str, desc: str) -> str:
+    """
+    v8.1 단일 소스 메타데이터 동기화
+    title → H1 + og:title + JSON-LD headline (3곳)
+    desc  → og:description + JSON-LD description + JS var desc (3곳)
+    모두 같은 변수에서 주입 → H1≠OG≠JSON-LD 불일치 원천 차단
+    """
+    if not title or not desc:
+        return html
+
+    # ── 제목 3곳 ────────────────────────────────────────────────
+    # H1
+    html = re.sub(
+        r'(<h1[^>]*>)[^<]*(</h1>)',
+        lambda m: m.group(1) + title + m.group(2),
+        html, flags=re.I
+    )
+    # og:title (양쪽 속성 순서 처리)
+    html = re.sub(
+        r'(property=["\']og:title["\'][^>]*content=")[^"]+(")',
+        lambda m: m.group(1) + title + m.group(2), html, flags=re.I
+    )
+    html = re.sub(
+        r'(content=")[^"]+("[^>]*property=["\']og:title["\'])',
+        lambda m: m.group(1) + title + m.group(2), html, flags=re.I
+    )
+    # JSON-LD headline
+    html = re.sub(
+        r'("headline"\s*:\s*")[^"]+(")',
+        lambda m: m.group(1) + title + m.group(2), html
+    )
+
+    # ── 설명 3곳 ────────────────────────────────────────────────
+    import html as _htmllib
+    desc_esc = _htmllib.escape(desc, quote=True)  # apostrophe → &#x27;
+
+    # og:description — 태그 전체 교체 (content 속성 내 apostrophe 오작동 방지)
+    _new_og_desc = f'<meta property="og:description" content="{desc_esc}"/>'
+    html = re.sub(
+        r'<meta[^>]*property=["\']og:description["\'][^/]*/?>',
+        _new_og_desc, html, flags=re.I
+    )
+    html = re.sub(
+        r'<meta[^>]*content=["\'][^"\']*["\'][^>]*property=["\']og:description["\'][^/]*/?>',
+        _new_og_desc, html, flags=re.I
+    )
+
+    # JSON-LD description (JSON 내부라 HTML 이스케이프 불필요, Python repr 문자만 주의)
+    _desc_json = desc.replace('"', '\\"')
+    html = re.sub(
+        r'("description"\s*:\s*")[^"]+(")',
+        lambda m: m.group(1) + _desc_json + m.group(2), html
+    )
+    # JS var desc — 세미콜론 기준 전체 교체
+    html = re.sub(
+        r'var\s+desc\s*=\s*"[^;]+";',
+        f'var desc = "{_desc_json}";',
+        html
+    )
+
+    logging.info(f"  🔗 [MetaSync] 제목 3곳 + 설명 3곳 → 단일 소스 동기화 완료")
+    return html
+
+
 def inject_meta_description(html, description):
     desc_escaped = description.replace('"', '\\"')
     today_str = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
@@ -292,7 +358,7 @@ def inject_meta_description(html, description):
         f'"@context":"https://schema.org",'
         f'"@type":"BlogPosting",'
         f'"description":"{desc_escaped}",'
-        f'"author":{{"@type":"Person","name":"Eric Lindström"}},'
+        f'"author":{{"@type":"Person","name":"Erik Lindström"}},'
         f'"publisher":{{"@type":"Organization","name":"NutriStack Lab",'
         f'"logo":{{"@type":"ImageObject","url":"https://www.nutristacklab.com/favicon.ico"}}}},'
         f'"datePublished":"{today_str}",'
@@ -362,7 +428,7 @@ def patch_seo_tags(html: str, url: str, title: str, description: str) -> str:
         f'"description":"{desc_escaped}",'
         f'"url":"{url_escaped}",'
         f'"datePublished":"{today_str}",'
-        f'"author":{{"@type":"Person","name":"Eric Lindström"}},'
+        f'"author":{{"@type":"Person","name":"Erik Lindström"}},'
         f'"publisher":{{"@type":"Organization","name":"NutriStack Lab",'
         f'"logo":{{"@type":"ImageObject","url":"https://www.nutristacklab.com/favicon.ico"}}}}'
         f'}}'
@@ -542,16 +608,17 @@ OG_DESC_TEMPLATES_GUIDE = [
 
 TITLE_STYLES_GUIDE = [
     # SEO 키워드(영양소+측면) + 개인 경험 훅 형태
+    # 주의: "Benefits, Dosage, and Side Effects" 3종 세트 절대 금지 (v7.9)
     "{nutrient} Dosage: The Mistake That Delayed My Results",
-    "{nutrient} Benefits: What Six Months of Testing Actually Showed",
-    "{nutrient} Side Effects: What I Noticed After Week Two",
     "{nutrient} Timing: The One Change That Made the Difference",
     "{nutrient} Absorption: Why I Got It Wrong for Months",
     "{nutrient} Deficiency: How I Finally Fixed My Energy Levels",
-    "{nutrient} vs {nutrient}: Which Form Actually Worked for Me",
     "{nutrient} Results: The Honest Version After Six Weeks",
     "Why {nutrient} Felt Useless Until I Changed the Timing",
     "The {nutrient} Mistake I Kept Making for Months",
+    "I Almost Quit {nutrient} After Two Weeks",
+    "What Changed After Six Weeks on {nutrient}",
+    "Why {nutrient} Felt Useless Until Week Four",
 ]
 
 SECTION_POOLS = {
@@ -1013,6 +1080,20 @@ BANNED_PHRASES = {
     "make a big difference":            "had an impact",
     "give it a shot":                   "try it",
     "like magic":                       "effectively",
+    "That's basically useless": "that didn't seem to work well for me",
+    "that's basically useless": "that didn't seem to work well for me",
+    "makes you stronger": "seemed to help with strength",
+    "helps you recover faster": "seemed to help with recovery",
+    "basically wasting": "probably not getting the full benefit from",
+    "healed my chronic": "helped with my",
+    "Healed My Chronic": "Helped With My",
+    "crashes disappeared": "crashes became less noticeable",
+    "brain fog lifted": "I felt mentally clearer",
+    "Brain fog lifted": "I felt mentally clearer",
+    "pain disappeared": "pain became less noticeable",
+    "neither one is getting properly absorbed": "absorption of both may be affected",
+    "you can feel simultaneously": "it seemed like I was feeling",
+
 }
 
 # ============================================================
@@ -1028,13 +1109,14 @@ def load_links_db():
 def save_links_db(db: list):
     LINKS_DB_FILE.write_text(json.dumps(db, ensure_ascii=False, indent=2), encoding='utf-8')
 
-def save_link_to_db(title, url, topic, nutrients, post_id="", score=0.0, html_path="", template=""):
+def save_link_to_db(title, url, topic, nutrients, post_id="", score=0.0, html_path="", template="", topic_type=""):
     db = load_links_db()
     if any(l.get("url","") == url for l in db): return
     db.append({"title": title, "url": url, "topic": topic,
                 "nutrients": nutrients, "date": datetime.now().strftime("%Y-%m-%d"),
                 "category": detect_category(topic), "template": template,
-                "post_id": post_id, "score": round(score, 3), "html_path": html_path})
+                "post_id": post_id, "score": round(score, 3), "html_path": html_path,
+                "topic_type": topic_type})
     LINKS_DB_FILE.write_text(json.dumps(db, ensure_ascii=False, indent=2), encoding='utf-8')
     logging.info(f"  🔗 링크 DB 저장: {title[:40]}")
 
@@ -1148,8 +1230,8 @@ def _is_guide_post(entry: dict) -> bool:
 
 def find_related_links(topic, count=5):
     db = load_links_db()
-    # 가이드 포스팅만 후보로 사용 (기존 일반 포스팅은 순차 삭제 예정)
-    all_links = [e for e in list(INTERNAL_LINKS) + db if _is_guide_post(e)]
+    # 모든 발행 포스팅 후보 (가이드 필터 제거 — 개인 경험 제목도 포함)
+    all_links = list(INTERNAL_LINKS) + db
     # 중복 URL 제거
     seen = set()
     deduped = []
@@ -1167,16 +1249,25 @@ def find_related_links(topic, count=5):
         link_title    = link.get("title","").lower()
         link_nutrients= [n.lower() for n in link.get("nutrients", [])]
         link_topic    = link.get("topic","").lower()
-        for nut in topic_nutrients:
-            if nut in link_title or nut in link_topic: score += 3
-            if nut in link_nutrients: score += 2
+
+        # 같은 주제 제외
+        if any(nut in link_title for nut in topic_nutrients) and \
+           all(nut in link_title for nut in topic_nutrients):
+            continue  # 현재 글과 동일 영양소 조합 → 스킵
+
+        # 1순위: 시너지/반감 관계 영양소 포함 포스팅
         for nut in topic_nutrients:
             for rel in NUTRIENT_RELATIONS.get(nut, []):
-                if rel in link_title or rel in link_topic: score += 2
-        if link.get("category","") == detect_category(topic): score += 1
-        for word in topic_lower.split():
-            if len(word) > 4 and word in link_title: score += 1
-        if score > 0: scored.append((score, link))
+                if rel in link_title or rel in link_topic:
+                    score += 3
+            # 해당 영양소 직접 포함
+            if nut in link_title or nut in link_topic:
+                score += 2
+            if nut in link_nutrients:
+                score += 1
+
+        if score > 0:
+            scored.append((score, link))
     scored.sort(key=lambda x: x[0], reverse=True)
 
     bad_markers = [
@@ -1407,8 +1498,11 @@ def promote_to_core_lessons(lessons: dict) -> dict:
             lesson_text = entry.get("lesson", "")
             if not lesson_text: continue
             core.setdefault(agent_key, [])
-            already = any(_lesson_similarity(lesson_text, c["lesson"]) >= 0.60
-                          for c in core[agent_key])
+            already = any(
+                _lesson_similarity(lesson_text,
+                    c.get("lesson") or c.get("fix") or c.get("issue", "")) >= 0.60
+                for c in core[agent_key]
+            )
             if already: continue
             core[agent_key].append({
                 "lesson": lesson_text[:300],
@@ -1422,7 +1516,7 @@ def promote_to_core_lessons(lessons: dict) -> dict:
         save_core_lessons(core)
     return core
 
-def load_agent_with_lessons(filename):
+def load_agent_with_lessons(filename, topic_type: str = ""):
     base_prompt   = load_agent(filename)
     agent_key     = filename.replace(".md", "")
     lessons       = load_lessons()
@@ -1430,20 +1524,92 @@ def load_agent_with_lessons(filename):
 
     lessons_block = ""
 
-    # ── [Tier 2] 핵심 영구 교훈 (3회 이상 반복 — 항상 주입) ──────
-    core_entries = core.get(agent_key, [])
+    # ── [friend_experience] 지인 시점 프롬프트 주입 ───────────────────
+    if agent_key == "03_Writer_Gardener" and topic_type == "friend_experience":
+        lessons_block += (
+            "\n\n## 🧑‍🤝‍🧑 FRIEND EXPERIENCE MODE — PERSONA SHIFT (MANDATORY)\n"
+            "This post is written from the perspective of SOMEONE DESCRIBING A FRIEND/COLLEAGUE's experience.\n"
+            "YOU ARE NOT THE PERSON WHO TOOK THE SUPPLEMENT — a friend/colleague/gym buddy did.\n\n"
+            "MANDATORY RULES:\n"
+            "1. The NARRATOR (Erik) observed and learned from their friend's experience\n"
+            "2. Use: 'My friend noticed...', 'She told me...', 'He mentioned...', "
+            "'A colleague of mine started...', 'Someone at my gym said...'\n"
+            "3. Erik's own voice appears as OBSERVER: 'I watched her go through it', "
+            "'Hearing her describe it made me pay attention', 'I was skeptical at first'\n"
+            "4. The friend is the protagonist — Erik is the narrator/witness\n"
+            "5. NO sentences like 'I took X' or 'I noticed X changed' — Erik did NOT take it\n"
+            "6. End with Erik's reflection: 'Listening to her changed how I thought about X'\n\n"
+            "EXAMPLE OPENING: 'My colleague started taking [nutrient] three months before I gave "
+            "it any serious thought. I remember thinking she was overcomplicating her routine. "
+            "Then she started describing what she noticed, and I started paying attention.'\n"
+        )
+        logging.info("  👥 [friend_experience] 지인 시점 프롬프트 주입")
+
+    # ── [Tier 1] 직전 글 미수정 이슈 — 최우선 주입 ───────────────────
+    # PPV가 자동 수정 못 한 high/critical 이슈 → Writer가 반드시 회피
+    if agent_key == "03_Writer_Gardener":
+        _last_ppv_path = META_DIR / "last_ppv_unfixed.json"
+        if _last_ppv_path.exists():
+            try:
+                _last = json.loads(_last_ppv_path.read_text(encoding="utf-8"))
+                _age_hrs = (datetime.now() - datetime.fromisoformat(_last["timestamp"])).total_seconds() / 3600
+                if _age_hrs < 24 and _last.get("unfixed"):
+                    lessons_block += (
+                        "\n\n## 🚨 CRITICAL: ISSUES FROM YOUR LAST POST (PPV COULD NOT AUTO-FIX THESE):\n"
+                        f"Last post: '{_last.get('title','')}' — final score {_last.get('total','?')}/10\n"
+                        "These were NOT fixed automatically. You MUST avoid them in this post:\n"
+                    )
+                    for _i, _iss in enumerate(_last["unfixed"], 1):
+                        lessons_block += f"{_i}. [{_iss['severity'].upper()}] {_iss['description']}\n"
+                    logging.info(f"  🚨 [Writer] 직전 글 미수정 {len(_last['unfixed'])}개 최우선 주입")
+            except Exception as _e:
+                pass
+
+    # ── [Tier 2] 핵심 영구 교훈 — active=true만, 타입 우선 정렬 ──────
+    core_entries_all = core.get(agent_key, [])
+    # Lifecycle: active=false(휴면)는 제외. active 필드 없는 기존 항목은 active=true 취급
+    core_entries = [c for c in core_entries_all if c.get("active", True)]
+    dormant_core = len(core_entries_all) - len(core_entries)
+    if dormant_core > 0:
+        logging.info(f"  💤 [Lifecycle] core_lessons 휴면 {dormant_core}개 제외 (active=false)")
+
+    if topic_type and agent_key == "03_Writer_Gardener":
+        def _type_relevance(c):
+            t = str(c.get("topic_type","") or c.get("lesson","")).lower()
+            if topic_type == "comprehensive_guide" and "guide" in t:
+                return 0
+            if topic_type != "comprehensive_guide" and ("experience" in t or "longtail" in t):
+                return 0
+            return 1
+        core_entries = sorted(core_entries, key=_type_relevance)
+
     if core_entries:
         lessons_block += "\n\n## 🏆 CORE PERMANENT LESSONS (ALWAYS APPLY — NEVER IGNORE):\n"
         for i, c in enumerate(core_entries, 1):
-            lessons_block += f"{i}. [반복{c['count']}회] {c['lesson']}\n"
+            _lesson_text = c.get("lesson") or c.get("fix") or c.get("issue", "")
+            _cp = c.get("clean_posts", 0)
+            _cp_str = f" [✓{_cp}회 연속 통과]" if _cp >= 5 else ""
+            lessons_block += f"{i}. [반복{c.get('count',1)}회{_cp_str}] {_lesson_text}\n"
 
-    # ── [Tier 3] 실패 교훈 (반려 사례) ───────────────────────────
-    bad_lessons = lessons.get(agent_key, [])
+    # ── [Tier 3] 실패 교훈 — active=true + 타입 우선 정렬 ─────────
+    bad_lessons_all = lessons.get(agent_key, [])
+    # Lifecycle 필터
+    bad_lessons = [l for l in bad_lessons_all if l.get("active", True)]
+    dormant_bad = len(bad_lessons_all) - len(bad_lessons)
+    if dormant_bad > 0:
+        logging.info(f"  💤 [Lifecycle] agent_lessons 휴면 {dormant_bad}개 제외")
+
     if bad_lessons:
-        recent_bad = bad_lessons[-10:]
+        if topic_type and agent_key == "03_Writer_Gardener":
+            type_related = [l for l in bad_lessons if topic_type in str(l.get("lesson","")).lower()]
+            other        = [l for l in bad_lessons if l not in type_related]
+            recent_bad   = (type_related + other)[-10:]
+        else:
+            recent_bad = bad_lessons[-10:]
         lessons_block += "\n\n## ⚠️ PAST REJECTION LESSONS (AVOID THESE):\n"
         for i, l in enumerate(recent_bad, 1):
-            lessons_block += f"{i}. [{l['date']}] {l['lesson']}\n"
+            _l_date = l.get('date') or l.get('added_at', '')
+            lessons_block += f"{i}. [{_l_date}] {l.get('lesson','')}\n"
 
     # ── [Tier 3] 성공 사례 (발행 성공 패턴) ──────────────────────
     good_key     = f"{agent_key}_good"
@@ -1452,7 +1618,10 @@ def load_agent_with_lessons(filename):
         recent_good = good_lessons[-5:]
         lessons_block += "\n\n## ✅ RECENT SUCCESS PATTERNS (FOLLOW THESE):\n"
         for i, l in enumerate(recent_good, 1):
-            lessons_block += f"{i}. [{l['date']}] score={l.get('score','?'):.0%} | {l['lesson']}\n"
+            _l_date  = l.get('date') or l.get('added_at', '')
+            _l_score = l.get('score', None)
+            _score_str = f" score={_l_score:.0%}" if isinstance(_l_score, float) else ""
+            lessons_block += f"{i}. [{_l_date}]{_score_str} | {l.get('lesson','')}\n"
 
     # ── Critic B 캘리브레이션 교정 지침 (Critic에만 주입) ─────────
     if "05_Critic" in agent_key:
@@ -1464,6 +1633,21 @@ def load_agent_with_lessons(filename):
                 logging.info("  🎯 [Critic] 캘리브레이션 교정 지침 주입 완료")
             except Exception as e:
                 logging.warning(f"  [Critic] 캘리브레이션 로드 실패: {e}")
+
+    # ── v7.9 Writer 전용 경고 규칙 ──────────────────────────────
+    if agent_key == "03_Writer_Gardener":
+        lessons_block += (
+            "\n\n## ⚠️ FAT/ABSORPTION WRITING RULES (v7.9+ — MANDATORY):\n"
+            "1. If the post title contains 'Timing' or 'Routine': fat/absorption = MAX 2 sentences total.\n"
+            "2. Fat-soluble vitamins (K2, D3, A, E, CoQ10): mention 'take with food' ONCE only.\n"
+            "3. Fat mention cap: 8 times max per article (excluding 'fat-soluble').\n"
+            "4. WATER-SOLUBLE supplements (HMB, SAMe, B12, B6, Vitamin C, Probiotics, Creatine, NMN, Berberine, Zinc, Magnesium): "
+            "NEVER say 'take with fat', 'fatty meal', 'fat helps absorption'. These are WATER-SOLUBLE.\n"
+            "5. BAD: 'Take SAMe with a fatty meal for absorption.' "
+            "GOOD: 'I took it at the same time every day.'\n"
+            "6. food mention cap for water-soluble posts: 8 times max. Beyond = absorption guide, not personal story.\n"
+            "7. Post narrative must match title: Timing = timing story. Never 70% absorption mechanics.\n"
+        )
 
     # ── S등급 레퍼런스 아티클 (Writer에만 주입) ──────────────────
     if agent_key == "03_Writer_Gardener":
@@ -1520,6 +1704,65 @@ def load_agent_with_lessons(filename):
 
     return base_prompt + lessons_block
 
+def _parse_critic_lessons(critic_result: str) -> list:
+    """
+    Critic 출력의 LESSONS_START...LESSONS_END 블록을 파싱.
+    각 레슨을 {'agent_key', 'lesson', 'issue', 'root_cause', 'fix', 'count'} dict로 반환.
+    """
+    AGENT_FILE_MAP = {
+        "writer":     "03_Writer_Gardener",
+        "researcher": "02_Researcher_Synergy",
+        "persona":    "06_Persona_Guardian",
+        "seo":        "04_SEO_Optimizer",
+        "critic":     "05_Critic_Editor_In_Chief",
+    }
+    SEVERITY_COUNT = {"critical": 5, "high": 3, "medium": 1}
+
+    block_m = re.search(r'LESSONS_START\s*(.*?)\s*LESSONS_END', critic_result, re.S | re.I)
+    if not block_m:
+        return []
+
+    block = block_m.group(1).strip()
+    if not block or block.lower() in ["없음", "none", "-"]:
+        return []
+
+    entries = re.split(r'\n\s*---\s*\n', block)
+    results = []
+    for entry in entries:
+        agent_m     = re.search(r'\[AGENT\]:\s*(\w+)', entry, re.I)
+        issue_m     = re.search(r'\[ISSUE\]:\s*(.+?)(?=\[|$)', entry, re.I | re.S)
+        root_m      = re.search(r'\[ROOT_CAUSE\]:\s*(.+?)(?=\[|$)', entry, re.I | re.S)
+        fix_m       = re.search(r'\[FIX\]:\s*(.+?)(?=\[|$)', entry, re.I | re.S)
+        severity_m  = re.search(r'\[SEVERITY\]:\s*(\w+)', entry, re.I)
+
+        if not agent_m or not issue_m:
+            continue
+
+        agent_key = AGENT_FILE_MAP.get(agent_m.group(1).lower(), "03_Writer_Gardener")
+        issue     = issue_m.group(1).strip()
+        root      = root_m.group(1).strip() if root_m else ""
+        fix       = fix_m.group(1).strip() if fix_m else ""
+        severity  = severity_m.group(1).lower() if severity_m else "medium"
+        count     = SEVERITY_COUNT.get(severity, 1)
+
+        lesson_text = f"[Critic교사] {issue}"
+        if root:  lesson_text += f" | 원인: {root}"
+        if fix:   lesson_text += f" | 수정: {fix}"
+
+        results.append({
+            "agent_key": agent_key,
+            "lesson":    lesson_text[:400],
+            "issue":     issue,
+            "root_cause": root,
+            "fix":       fix,
+            "severity":  severity,
+            "count":     count,
+        })
+
+    logging.info(f"  🎓 Critic 구조화 레슨 파싱: {len(results)}개")
+    return results
+
+
 def imprint_critic_feedback(topic, critic_result, attempt_num):
     logging.info(f"  📚 Critic 피드백 각인... (시도 #{attempt_num})")
     AGENT_FILE_MAP = {
@@ -1552,48 +1795,81 @@ def imprint_critic_feedback(topic, critic_result, attempt_num):
     
     score_summary = f"[점수: {total_score}/10 | 기술: {tech_val}, AI패턴: {ai_val}, 품질: {qual_val}, 애드센스: {ads_val}, 인간느낌: {hum_val}]"
     
-    structured = ask_ai(
-        f"다음 반려 사유를 에이전트별로 분류해서 JSON으로 반환하라.\n반려 사유:\n{critic_result}\n\n"
-        f'출력 형식 (JSON): {{"Writer": "핵심 개선 지시", "Researcher": "리서치 개선 지시"}}\n'
-        f"JSON만 출력. 설명 없음.",
-        "JSON만 출력하는 AI 분류기입니다.", LIGHT_MODEL, timeout=60
-    )
-    try:
-        match = re.search(r'\{.*\}', structured, re.DOTALL)
-        lessons_parsed = json.loads(match.group()) if match else {"Writer": critic_result[:300]}
-    except:
-        lessons_parsed = {"Writer": critic_result[:300]}
     lessons   = load_lessons()
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M")
     today     = datetime.now().strftime("%Y-%m-%d")
     updated   = []
-    for agent_key, lesson_text in lessons_parsed.items():
-        if not lesson_text or str(lesson_text).lower() in ["null","none",""]: continue
-        file_key = AGENT_FILE_MAP.get(agent_key, agent_key)
-        if file_key not in lessons: lessons[file_key] = []
 
-        full_lesson = f"{score_summary} {str(lesson_text).strip()}"
+    # ── v8.0: 구조화 레슨 우선 파싱 (LESSONS_START...LESSONS_END) ─────────
+    structured_lessons = _parse_critic_lessons(critic_result)
 
-        # 유사 레슨이 있으면 count 증가, 없으면 신규 추가
-        merged = False
-        for existing in lessons[file_key]:
-            if _lesson_similarity(full_lesson, existing.get("lesson", "")) >= 0.60:
-                existing["count"] = existing.get("count", 1) + 1
-                existing["date"]  = timestamp
-                existing["topic"] = topic[:40]
-                logging.info(f"  🔁 [{file_key}] 유사 레슨 count={existing['count']}: {full_lesson[:60]}...")
-                merged = True
-                break
+    if structured_lessons:
+        for sl in structured_lessons:
+            file_key = sl["agent_key"]
+            if file_key not in lessons: lessons[file_key] = []
+            full_lesson = sl["lesson"]
+            merged = False
+            for existing in lessons[file_key]:
+                if _lesson_similarity(full_lesson, existing.get("lesson", "")) >= 0.60:
+                    existing["count"] = existing.get("count", 1) + sl["count"]
+                    existing["date"]  = timestamp
+                    existing["topic"] = topic[:40]
+                    logging.info(f"  🔁 [{file_key}] 유사 구조화레슨 count={existing['count']}")
+                    merged = True
+                    break
+            if not merged:
+                lessons[file_key].append({
+                    "date":       timestamp,
+                    "topic":      topic[:40],
+                    "attempt":    attempt_num,
+                    "lesson":     full_lesson,
+                    "issue":      sl.get("issue", ""),
+                    "root_cause": sl.get("root_cause", ""),
+                    "fix":        sl.get("fix", ""),
+                    "severity":   sl.get("severity", "medium"),
+                    "count":      sl["count"],
+                    "first_seen": today,
+                    "source":     "critic_structured",
+                })
+                logging.info(f"  🎓 [{file_key}] 새 구조화레슨(severity={sl['severity']}): {full_lesson[:80]}")
+            lessons[file_key] = lessons[file_key][-30:]
+            if file_key not in updated: updated.append(file_key)
 
-        if not merged:
-            lessons[file_key].append({
-                "date": timestamp, "topic": topic[:40],
-                "attempt": attempt_num, "lesson": full_lesson[:300],
-                "count": 1, "first_seen": today,
-            })
+    else:
+        # ── fallback: 기존 방식 (비구조화 — LESSONS 블록 없는 구버전 Critic 대응) ──
+        structured = ask_ai(
+            f"다음 반려 사유를 에이전트별로 분류해서 JSON으로 반환하라.\n반려 사유:\n{critic_result}\n\n"
+            f'출력 형식 (JSON): {{"Writer": "핵심 개선 지시", "Researcher": "리서치 개선 지시"}}\n'
+            f"JSON만 출력. 설명 없음.",
+            "JSON만 출력하는 AI 분류기입니다.", LIGHT_MODEL, timeout=60
+        )
+        try:
+            match = re.search(r'\{.*\}', structured, re.DOTALL)
+            lessons_parsed = json.loads(match.group()) if match else {"Writer": critic_result[:300]}
+        except:
+            lessons_parsed = {"Writer": critic_result[:300]}
 
-        lessons[file_key] = lessons[file_key][-20:]
-        updated.append(agent_key)
+        for agent_key, lesson_text in lessons_parsed.items():
+            if not lesson_text or str(lesson_text).lower() in ["null","none",""]: continue
+            file_key = AGENT_FILE_MAP.get(agent_key, agent_key)
+            if file_key not in lessons: lessons[file_key] = []
+            full_lesson = f"{score_summary} {str(lesson_text).strip()}"
+            merged = False
+            for existing in lessons[file_key]:
+                if _lesson_similarity(full_lesson, existing.get("lesson", "")) >= 0.60:
+                    existing["count"] = existing.get("count", 1) + 1
+                    existing["date"]  = timestamp
+                    existing["topic"] = topic[:40]
+                    merged = True
+                    break
+            if not merged:
+                lessons[file_key].append({
+                    "date": timestamp, "topic": topic[:40],
+                    "attempt": attempt_num, "lesson": full_lesson[:300],
+                    "count": 1, "first_seen": today,
+                })
+            lessons[file_key] = lessons[file_key][-20:]
+            updated.append(agent_key)
 
     save_lessons(lessons)
     promote_to_core_lessons(lessons)  # count >= 3 → core_lessons.json 승격
@@ -2154,7 +2430,8 @@ def get_image_prompt(topic, img_key, title="", hook=""):
     is_hero = (img_key == "hero")
     realism_suffix = (
         "realistic lifestyle photography, Canon 5D Mark IV, natural light, warm tones, "
-        "sharp focus, high resolution, no text, no watermark, photorealistic"
+        "sharp focus, high resolution, no text, no watermark, photorealistic, "
+        "no people, no person, no human, product and environment only"
     )
 
     # 1순위: Claude API로 컨텍스트 기반 생성
@@ -2207,10 +2484,11 @@ def _sd_generate(prompt, is_hero=True):
         # 히어로: 2:3 세로형 768×1152 (속도/품질 균형) / 섹션: 768×512 가로형
         width, height = (768, 1152) if is_hero else (768, 512)
         negative_prompt = (
+            "person, people, human, man, woman, face, body, hands, skin, portrait, "
             "molecule, diagram, scientific visualization, 3d render, cgi, cartoon, illustration, "
             "painting, aurora, nordic winter glow, neural network, abstract, dark background, "
             "neon, cyberpunk, text, watermark, logo, blurry, low quality, deformed, ugly, "
-            "extra limbs, face close-up, portrait, oversaturated"
+            "extra limbs, face close-up, oversaturated"
         )
         payload = {
             "prompt": prompt,
@@ -3387,7 +3665,19 @@ class GrandOrchestrator:
 
         # v5.5: 파일은 딱 한 번만 읽고 루프로 진입
         raw_text = file_path.read_text(encoding='utf-8').strip()
-        is_draft_mode = ("test_" in file_path.name.lower())
+        # draft 모드: 00_Test 폴더 OR 파일명에 test_ OR 헤더에 draft:true
+        _raw_lines_hdr = raw_text.splitlines()[:8]
+        _has_draft_hdr = any(
+            l.strip().lower() in ("draft: true", "draft:true", "test: true")
+            for l in _raw_lines_hdr
+        )
+        _is_test_file  = (file_path.parent == TEST_DIR)
+        is_draft_mode  = _is_test_file or ("test_" in file_path.name.lower()) or _has_draft_hdr
+        if is_draft_mode:
+            logging.info(
+                f"  🧪 [{'TEST FOLDER' if _is_test_file else 'DRAFT MODE'}] "
+                f"초안으로만 저장됩니다 (발행 안 됨)"
+            )
         
         while True: # [🚨 v5.5] 재귀 대신 루프 사용
 
@@ -3403,6 +3693,9 @@ class GrandOrchestrator:
             topic = raw_text
             topic = topic.lstrip('﻿​‌‍')          # BOM + zero-width chars
             topic = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]', '', topic)  # 제어문자
+            # 헤더 라인 제거 (topic_type: / scheduled_time: 등)
+            topic = re.sub(r'^(topic_type|scheduled_time|draft|test):[^\n]*\n?', '',
+                           topic, flags=re.IGNORECASE | re.MULTILINE).strip()
             # 접두사 청소 루프
             prefixes = [r'^TOPIC:\s*', r'^Title:\s*', r'^\[.*?\]', r'^P[12]\s*[-_]*\s*']
             for p in prefixes:
@@ -3460,7 +3753,15 @@ class GrandOrchestrator:
             is_mutation_needed = (retries > 0 and not self.ctx.get("sections"))
 
             if "archetype_name" not in self.ctx or is_mutation_needed:
-                topic_type     = detect_topic_type(topic)
+                # RAW 파일 헤더에서 topic_type 우선 읽기
+                _hdr_type = next(
+                    (l.split(":",1)[1].strip() for l in _raw_lines_hdr
+                     if l.startswith("topic_type:")),
+                    None
+                )
+                topic_type = _hdr_type if _hdr_type else detect_topic_type(topic)
+                if _hdr_type:
+                    logging.info(f"  📌 topic_type 헤더 감지: {topic_type}")
                 # [v6.0] 완전 가이드는 항상 comprehensive-guide 아키타입 강제
                 if topic_type == "comprehensive_guide":
                     archetype_name = "comprehensive-guide"
@@ -3558,7 +3859,17 @@ class GrandOrchestrator:
                 dashboard_sync.sync()
             except: pass
 
-            writer_agent  = load_agent_with_lessons("03_Writer_Gardener.md")
+            writer_agent  = load_agent_with_lessons("03_Writer_Gardener.md", topic_type=topic_type)
+            # Diversity hint: 과포화 구조 회피 지시 주입
+            try:
+                from diversity_checker import get_diversity_hint
+                _div_hint = get_diversity_hint()
+                if _div_hint.get("prompt_injection"):
+                    writer_agent = writer_agent + "\n\n" + _div_hint["prompt_injection"]
+                    logging.info(f"  [Diversity] Writer 프롬프트에 구조 회피 힌트 주입: avoid={_div_hint['avoid_arcs']}")
+            except Exception as _dh_err:
+                logging.warning(f"  [Diversity] 힌트 주입 실패 (무시): {_dh_err}")
+
             words_per_sec = max(200, min(600, archetype_cfg["target_words"] // len(sections_list)))
             last_feedback = self.ctx.get("last_critic_feedback","")
             feedback_instruction = (f"[CRITICAL: PREVIOUS REJECTION]\n{last_feedback}\nFIX THESE."
@@ -3749,6 +4060,29 @@ class GrandOrchestrator:
             # JSON-LD 메타 정보 주입 (v5.6)
             html = inject_meta_description(html, meta_desc)
 
+            # v8.1: 단일 소스 메타 동기화 — H1·OG·JSON-LD·JS 전부 같은 변수로 통일
+            html = _sync_all_meta(html, title, meta_desc)
+
+            # Step 8.5: PubMed PMID 검증 (가짜 제거 + 진짜 주입)
+            try:
+                from pubmed_validator import validate_and_fix_pmids
+                logging.info("  🔬 [PubMed] PMID 검증 시작...")
+                html, _pmid_report = validate_and_fix_pmids(html, topic)
+                if _pmid_report["removed"]:
+                    logging.warning(
+                        f"  [PubMed] 가짜 PMID 제거: {_pmid_report['removed']}"
+                    )
+                if _pmid_report["added"]:
+                    logging.info(
+                        f"  [PubMed] 실제 PMID 주입: {_pmid_report['added']}"
+                    )
+                logging.info(
+                    f"  [PubMed] 완료 — 유효:{len(_pmid_report['valid'])} "
+                    f"제거:{len(_pmid_report['removed'])} "
+                    f"추가:{len(_pmid_report['added'])}"
+                )
+            except Exception as _pmid_err:
+                logging.warning(f"  [PubMed] 검증 스킵 (무시): {_pmid_err}")
 
             # Step 9: 품질 검사 + Critic [gemma4:e4b-it-q8_0]
             report_to_discord("HTML 조립", f"🔧 HTML 조립 완료 → 품질 검사 시작")
@@ -3843,41 +4177,35 @@ class GrandOrchestrator:
             _critical_issues = {"AI_Footprint", "No_Cure_Claims", "PMID_Valid", "NoPlaceholder"}
             _blocking_issues = [i for i in issues if i in _critical_issues]
 
-            # [v7.1] 80%+ → Critic 스킵, 즉시 발행 (발행 기준과 동일하게 통일)
-            if score >= 0.80:
-                logging.info(f"  ✅ 품질 {score:.1%} ≥ 80% → Critic 스킵, 즉시 발행")
-                report_to_discord("편집장", f"✅ Critic 스킵 ({score:.0%}) → 즉시 발행")
-                critic_result = "APPROVED (auto)"
-                is_rejected   = False
-            else:
-                logging.info("  🎯 Critic 검증 [gemma4 Q8]...")
-                report_to_discord("편집장", f"🎯 Critic 검증 시작...")
-                critic_sys    = load_agent_with_lessons("05_Critic_Editor_In_Chief.md")
-                html          = clean_ai_output(html)
-                critic_result = ask_ai(
-                    f"Topic: {topic}\nArchetype: {archetype_name}\nTopic Type: {topic_type}\n"
-                    f"Title: {title}\nWord Count: {word_count}\nPMID Count: {pmid_count}\n"
-                    f"Issues: {issues}\nArticle (first 12000 chars):\n{html[:12000]}\n\n"
-                    f"IMPORTANT: This is a '{archetype_name}' article.\n"
-                    f"- minimalist/quick-answer/short-practical: "
-                    f"{ARCHETYPES.get(archetype_name,{}).get('min_words',1200)}+ words. TOC/FAQ optional.\n"
-                    f"- science-heavy/deep-protocol: 2000+ words, PMID citations required.\n"
-                    f"Evaluate based on archetype standards.\n"
-                    f"Output: APPROVED or REJECTED\nReason (Korean, specific):",
-                    critic_sys, MODEL_CRITIC, max_retries=1
-                )
+            # [v8.1] 모든 포스팅 Critic A 필수 통과 (80% 자동승인 제거)
+            logging.info(f"  🎯 Critic A 검증 [gemma4 Q8] (품질 {score:.1%})...")
+            report_to_discord("편집장", f"🎯 Critic A 검증 시작 ({score:.0%})...")
+            critic_sys    = load_agent_with_lessons("05_Critic_Editor_In_Chief.md")
+            html          = clean_ai_output(html)
+            critic_result = ask_ai(
+                f"Topic: {topic}\nArchetype: {archetype_name}\nTopic Type: {topic_type}\n"
+                f"Title: {title}\nWord Count: {word_count}\nPMID Count: {pmid_count}\n"
+                f"Issues: {issues}\nArticle (first 12000 chars):\n{html[:12000]}\n\n"
+                f"IMPORTANT: This is a '{archetype_name}' article.\n"
+                f"- minimalist/quick-answer/short-practical: "
+                f"{ARCHETYPES.get(archetype_name,{}).get('min_words',1200)}+ words. TOC/FAQ optional.\n"
+                f"- science-heavy/deep-protocol: 2000+ words, PMID citations required.\n"
+                f"Evaluate based on archetype standards.\n"
+                f"Output: APPROVED or REJECTED\nReason (Korean, specific):",
+                critic_sys, MODEL_CRITIC, max_retries=1
+            )
 
-                critic_retries = self.ctx.get("critic_retries", 0)
-                history        = self.ctx.get("rejection_history", [])
+            critic_retries = self.ctx.get("critic_retries", 0)
+            history        = self.ctx.get("rejection_history", [])
 
-                # [v6.5] 치명적 이슈만 강제반려 (경미한 이슈로 Critic 승인 무효화 금지)
-                if _blocking_issues and "REJECTED" not in critic_result.upper():
-                    logging.warning(f"  🚨 치명적 이슈 {_blocking_issues} → AI 승인 무효화")
-                    critic_result = f"REJECTED\n자동 검증 이슈: {', '.join(_blocking_issues)}"
-                elif issues and not _blocking_issues and "REJECTED" not in critic_result.upper():
-                    logging.info(f"  ℹ️ 경미한 이슈 {issues} — Critic 승인 유지")
+            # [v6.5] 치명적 이슈만 강제반려 (경미한 이슈로 Critic 승인 무효화 금지)
+            if _blocking_issues and "REJECTED" not in critic_result.upper():
+                logging.warning(f"  🚨 치명적 이슈 {_blocking_issues} → AI 승인 무효화")
+                critic_result = f"REJECTED\n자동 검증 이슈: {', '.join(_blocking_issues)}"
+            elif issues and not _blocking_issues and "REJECTED" not in critic_result.upper():
+                logging.info(f"  ℹ️ 경미한 이슈 {issues} — Critic A 승인 유지")
 
-                is_rejected = "REJECTED" in critic_result.upper()
+            is_rejected = "REJECTED" in critic_result.upper()
 
             critic_retries = self.ctx.get("critic_retries", 0)
             history        = self.ctx.get("rejection_history", [])
@@ -4079,7 +4407,31 @@ class GrandOrchestrator:
                     f"- Section titles: authority-style (~Mechanism/~Synergy/~Protocol) = REJECT\n"
                     f"- Medical terms: chylomicron/mechanistically/steady-state/carboxylation = REJECT\n"
                     f"- PMID: 3개 이상 = REJECT\n"
-                    f"- Nordic 2회 이상 = deduct\n"
+                    f"- Nordic 2회 이상 = deduct\n\n"
+                    f"── v8.1 추가 검사 3가지 (아래 기준 어느 하나라도 해당 시 REJECT) ──\n\n"
+                    f"[1] 경험담 밀도 검사\n"
+                    f"  제목에 'I Almost Quit' / 'What Changed' / 'The Mistake' / 'I Kept' / "
+                    f"'I Thought' 포함 시:\n"
+                    f"  본문 전체 문장의 70% 이상이 1인칭 경험 서술이어야 함.\n"
+                    f"  (I noticed / I felt / I tried / I found / I realized / I stopped 등)\n"
+                    f"  정보 전달 문장(Studies show / The recommended dose / Research indicates)이\n"
+                    f"  전체의 30%를 초과하면 → REJECT\n"
+                    f"  이유: 경험담 제목인데 설명서처럼 읽히면 독자가 속은 느낌.\n\n"
+                    f"[2] 제목-본문 일치성 검사\n"
+                    f"  제목이 약속하는 내러티브가 본문에 실제로 존재해야 함:\n"
+                    f"  - 'I Almost Quit' → 포기 직전 경험 + 전환점이 본문에 있어야 함\n"
+                    f"  - 'The Mistake' → 구체적인 실수 묘사 + 수정 과정이 있어야 함\n"
+                    f"  - 'Didn't Work Until Week N' → N주 전 실패 + N주 이후 변화가 있어야 함\n"
+                    f"  - 'Timing Mistake' → 잘못된 타이밍 + 올바른 타이밍 비교가 있어야 함\n"
+                    f"  제목이 약속한 스토리가 본문에 없으면 → REJECT\n"
+                    f"  이유: 독자가 제목 보고 기대한 것을 본문이 안 주면 신뢰 손상.\n\n"
+                    f"[3] 반복 단어 품질 저하 검사\n"
+                    f"  다음 중 하나라도 해당하면 감점(-1.0) 또는 REJECT:\n"
+                    f"  - 제목의 핵심 단어가 본문에 15회 이상 단독 반복 (예: 'timing' 15회+) → REJECT\n"
+                    f"  - 같은 결론 문장이 4개 이상 섹션에서 반복 (예: 4개 섹션 전부 'timing matters') → REJECT\n"
+                    f"  - 연속 3개 이상 단락이 동일한 단어로 시작 (예: 'I noticed... I noticed... I noticed...') → 감점\n"
+                    f"  - 단일 영양소 효과 단어(예: 'energy', 'sleep', 'focus')가 10회+ 반복 → 감점\n"
+                    f"  이유: 반복이 심하면 AI 생성 냄새가 나고 읽는 흥미가 떨어짐.\n\n"
                     f"Use same scoring format. APPROVED if total ≥ 8.0/10.\n\n"
                     f"Topic: {topic}\nArchetype: {archetype_name}\nType: {topic_type}\n"
                     f"Title: {title}\nWord Count: {word_count}\n"
@@ -4093,8 +4445,8 @@ class GrandOrchestrator:
                 logging.info(f"  {'❌ 2차 반려' if _p2_fail else '✅ 2차 승인'}: {_p2_score:.1%}")
 
                 if _p2_fail:
-                    for _p2_try in range(2):
-                        logging.warning(f"  ✍️ 2차 반려 → Claude 인간화 개선 ({_p2_try+1}/2)")
+                    for _p2_try in range(1):
+                        logging.warning(f"  ✍️ 2차 반려 → Claude 인간화 개선 ({_p2_try+1}/1)")
                         report_to_discord("System", f"🔬 2차 반려 Claude 개선: {topic[:30]} ({_p2_score:.0%})")
                         _p2_fix_sys = (
                             "You are a personal health blogger making an article feel more human and less AI-generated. "
@@ -4317,14 +4669,17 @@ class GrandOrchestrator:
                             ask_ai_fn        = ask_ai,
                             ask_ai_fn_claude = lambda p, s="": ask_claude(p, s, model="claude-haiku-4-5-20251001"),
                             meta_dir         = META_DIR,
+                            topic_type       = topic_type,
                         )
                         _ppv_discord = build_discord_report(title, _ppv_result)
                         report_to_discord("Critic-Final", _ppv_discord)
+                        _ppv_loops = _ppv_result.get('ppv_loop_rounds', 0)
                         logging.info(
                             f"  [Post-Publish] {_ppv_result.get('grade')}등급 "
                             f"({_ppv_result.get('total')}/10) — "
                             f"수정:{len(_ppv_result.get('fixed',[]))} "
-                            f"레슨:{len(_ppv_result.get('notified',[]))}"
+                            f"레슨:{len(_ppv_result.get('notified',[]))} "
+                            f"PPV루프:{_ppv_loops}회"
                         )
                     except Exception as _ppv_err:
                         logging.warning(f"  [Post-Publish] 검증 스킵 (무시): {_ppv_err}")
@@ -4337,10 +4692,39 @@ class GrandOrchestrator:
                         _tmpl_key = _tmpl_info.get("template", "")
                     except Exception:
                         _tmpl_key = ""
-                    save_link_to_db(title, url, topic, nutrients,
-                                    post_id=_pub_post_id, score=score, html_path=str(_html_path),
-                                    template=_tmpl_key)
-                    add_to_audit_queue(title, url, _pub_post_id, str(_html_path), score, topic)
+                    if not _is_test_file:
+                        # 테스트 파일은 published_links + audit 기록 제외
+                        save_link_to_db(title, url, topic, nutrients,
+                                        post_id=_pub_post_id, score=score, html_path=str(_html_path),
+                                        template=_tmpl_key, topic_type=topic_type)
+                        add_to_audit_queue(title, url, _pub_post_id, str(_html_path), score, topic)
+
+                        # [v9.0] Site Brain — 허브 페이지 자동 업데이트
+                        try:
+                            from hub_page_generator import add_post_to_hub
+                            from site_brain import SiteBrain
+                            _sb  = SiteBrain()
+                            _cat = _sb.categorize(title, nutrients or [])
+                            if _cat != "other":
+                                _svc_hub = get_blogger_service()
+                                add_post_to_hub(_svc_hub, str(_pub_post_id), title, url, _cat)
+                                logging.info(f"  🗺️ [SiteBrain] 허브 업데이트: [{_cat}] ← {title[:40]}")
+                        except Exception as _hub_err:
+                            logging.warning(f"  [SiteBrain] 허브 업데이트 실패 (비치명적): {_hub_err}")
+
+                        # [v9.0] 새 영양소 발행 시 조합 쿼리 자동 갱신
+                        try:
+                            import subprocess as _sp
+                            _sp.Popen(
+                                [sys.executable, str(BASE_DIR / "add_combination_queries.py")],
+                                cwd=str(BASE_DIR),
+                                stdout=_sp.DEVNULL, stderr=_sp.DEVNULL
+                            )
+                            logging.info(f"  🔗 [SiteBrain] 조합 쿼리 갱신 트리거")
+                        except Exception as _cq_err:
+                            logging.warning(f"  [SiteBrain] 조합 쿼리 갱신 실패 (비치명적): {_cq_err}")
+                    else:
+                        logging.info(f"  🧪 [TEST] published_links 기록 생략")
 
                     # topic_bank.json: in_progress → completed (가이드 진행 현황 반영)
                     try:
@@ -4364,8 +4748,14 @@ class GrandOrchestrator:
                                         _entry["published_at"]  = datetime.now().strftime("%Y-%m-%d %H:%M")
                                         break
                             _tb_path.write_text(json.dumps(_tb, ensure_ascii=False, indent=2), encoding="utf-8")
-                            _done = sum(1 for x in _tb if x.get("status") == "completed"
-                                        and x.get("type") == "comprehensive_guide")
+                            # published_links 기반 카운트:
+                            # topic_type="comprehensive_guide" 명시된 것 + 기존 16개(topic_type 없고 토픽이 3단어 이하)
+                            _links_db = load_links_db()
+                            _done = sum(
+                                1 for l in _links_db
+                                if l.get("topic_type") == "comprehensive_guide"
+                                or (not l.get("topic_type") and len(l.get("topic","").split()) <= 3)
+                            )
                             logging.info(f"  📋 가이드 진행 현황: {_done}/131 완료")
                     except Exception as _tb_err:
                         logging.warning(f"  [topic_bank] completed 업데이트 실패: {_tb_err}")
@@ -4376,12 +4766,30 @@ class GrandOrchestrator:
                         except Exception as _del_err:
                             logging.warning(f"  [자동 삭제] 실패 (무시): {_del_err}")
                     
+                    # [Diversity Score] 품질과 독립된 다양성 점수 (WARN 전용)
+                    _diversity = {"score": 100, "grade": "high", "advice": "", "breakdown": {}}
+                    try:
+                        from diversity_checker import compute_diversity_score
+                        _diversity = compute_diversity_score(title, html)
+                        _div_icon  = {"high": "✅", "ok": "🔵", "warn": "⚠️ "}.get(_diversity["grade"], "")
+                        logging.info(
+                            f"  📊 Diversity: {_div_icon}{_diversity['score']}/100 "
+                            f"(제목:{_diversity['breakdown'].get('title','-')} "
+                            f"구조:{_diversity['breakdown'].get('structure','-')} "
+                            f"변화:{_diversity['breakdown'].get('change_points','-')})"
+                        )
+                        if _diversity["grade"] == "warn":
+                            logging.warning(f"  [Diversity] {_diversity['advice']}")
+                    except Exception as _div_err:
+                        logging.warning(f"  [Diversity] 계산 실패 (무시): {_div_err}")
+
                     # [Telegram 연동] 블로거 발행 후 텔레그램 DM으로 알림 + API 사용량 전송
                     try:
                         _in_tok  = _api_tokens.get("input", 0)
                         _out_tok = _api_tokens.get("output", 0)
                         telegram_poster.send_publish_notification(
-                            title, url, score, word_count, _in_tok, _out_tok
+                            title, url, score, word_count, _in_tok, _out_tok,
+                            diversity=_diversity
                         )
                     except Exception as e:
                         logging.warning(f"  [Telegram] 텔레그램 알림 발송 실패: {e}")
@@ -4483,7 +4891,18 @@ def monitor():
             if not candidates:
                 return None
             candidates.sort(key=lambda x: x[0])
-            return candidates[0]  # (datetime, task_dict)
+            chosen_dt, chosen_task = candidates[0]
+
+            # ── 즉시 status → "processing" 으로 잠금 (중복 트리거 방지) ──────
+            chosen_task["status"] = "processing"
+            try:
+                topic_bank_path.write_text(
+                    json.dumps(bank, ensure_ascii=False, indent=2), encoding="utf-8"
+                )
+            except Exception:
+                pass
+
+            return chosen_dt, chosen_task
         except Exception:
             return None
 
@@ -4494,7 +4913,9 @@ def monitor():
         longtail = task.get("longtail_keywords", [])
         safe     = "".join(c if c.isalnum() or c in "_ -" else "_" for c in topic)[:60]
         out      = RAW_DIR / f"{safe}.md"
-        content  = f"# {topic}\ntype: {t_type}\n"
+        # 예정 시간 기록 — 재시작 후에도 시간 체크 가능하도록
+        sched_dt = f"{task.get('date','')} {task.get('time','00:00')}".strip()
+        content  = f"# {topic}\ntype: {t_type}\nscheduled_time: {sched_dt}\n"
         if longtail:
             content += "\n## Target Keywords (include naturally in content)\n"
             for kw in longtail:
@@ -4544,7 +4965,21 @@ def monitor():
                 kw_l = kw.lower()
                 return any(kw_l in p for p in published_topics)
 
-            candidates = [s for s in SUPPLEMENT_KEYWORDS if not is_published(s)]
+            # [v8.0] topic_bank.json pending/in_progress 항목도 제외 (중복 스케줄 방지)
+            _tb_pending_kws = set()
+            try:
+                _tb_chk = json.loads((META_DIR / "topic_bank.json").read_text(encoding='utf-8'))
+                for _tc in _tb_chk:
+                    if _tc.get("status") in ("pending", "in_progress"):
+                        _tc_topic = _tc.get("topic", "").lower()
+                        for _sk in SUPPLEMENT_KEYWORDS:
+                            if _sk.lower() in _tc_topic:
+                                _tb_pending_kws.add(_sk)
+            except Exception:
+                pass
+
+            candidates = [s for s in SUPPLEMENT_KEYWORDS
+                          if not is_published(s) and s not in _tb_pending_kws]
             if len(candidates) < 3:
                 logging.warning("  [TrendScheduler] 미발행 후보 부족 — 스킵")
                 return
@@ -4586,14 +5021,13 @@ def monitor():
                     logging.warning(f"  [TrendScheduler] {window_key} 후보 없음")
                     continue
                 used_in_session.append(top_kw)
-                h, m = _rnd.choice(time_pool)
-                t_str = f"{h:02d}:{m:02d}"
                 topic_name = f"{top_kw} Complete Guide"
+                # [v8.0] 시간/날짜 배정 없이 큐에만 추가 — 실제 시간 배정은 00:01 plan_today()가 담당
                 bank.append({
                     "topic": topic_name,
                     "type": "comprehensive_guide",
-                    "time": t_str,
-                    "date": today_str,
+                    "time": "00:00",
+                    "date": "",
                     "status": "pending",
                     "trend_window": window_key,
                     "trend_slot": f"{idx+1}번째",
@@ -4654,9 +5088,9 @@ def monitor():
                 logging.warning(f"  [GA4 Lesson] 스킵: {_e}")
             last_analytics_day = now.day
 
+        # v8.1: 스케줄링은 daily_scheduler_v5.py 06:00이 전담 — 오케스트레이터 TrendScheduler 비활성
         if now.hour >= 6 and now.day != last_trend_day:
-            _auto_schedule_daily_trends()
-            last_trend_day = now.day
+            last_trend_day = now.day  # _auto_schedule_daily_trends() 제거됨
 
         if ((now.hour > 5) or (now.hour == 5 and now.minute >= 0)) and now.day != last_briefing_day:
             topic_bank = META_DIR / "topic_bank.json"
@@ -4672,11 +5106,18 @@ def monitor():
                     logging.warning(f"브리핑 오류: {e}")
             last_briefing_day = now.day
 
-        files = [f for f in list(RAW_DIR.glob("**/*.txt")) + list(RAW_DIR.glob("**/*.md"))
-                 if not f.name.startswith("SKIP_")]
+        # 00_Raw (실제 발행) + 00_Test (테스트 draft) 둘 다 감지
+        _raw_files  = [f for f in list(RAW_DIR.glob("**/*.txt")) + list(RAW_DIR.glob("**/*.md"))
+                       if not f.name.startswith("SKIP_")]
+        _test_files = [f for f in list(TEST_DIR.glob("**/*.txt")) + list(TEST_DIR.glob("**/*.md"))
+                       if not f.name.startswith("SKIP_")]
+        if _test_files:
+            logging.info(f"  🧪 [TEST] {len(_test_files)}개 테스트 파일 감지")
+        files = _raw_files + _test_files
         if files:
             stuck_count = 0
             for f in files:
+                _is_test_file = f.parent == TEST_DIR  # 테스트 폴더 여부
                 # 파일별 최대 3회 실패 시 격리 (ctx 리셋과 무관하게 누적)
                 if file_fail_counts.get(f.name, 0) >= 3:
                     logging.error(f"  🚨 {f.name} 3회 실패 — 00_Failed로 격리")
@@ -4692,6 +5133,88 @@ def monitor():
                     continue
 
                 logging.info(f"\n📄 파일 감지: {f.name}")
+
+                # ── 예정 시간 체크 — 아직 안 됐으면 스킵 ────────────────────
+                try:
+                    _raw_lines = f.read_text(encoding='utf-8', errors='ignore').splitlines()
+                    _sched_line = next((l for l in _raw_lines if l.startswith("scheduled_time:")), None)
+                    if _sched_line:
+                        _sched_str = _sched_line.split(":", 1)[1].strip()
+                        _sched_dt  = datetime.strptime(_sched_str, "%Y-%m-%d %H:%M")
+                        _now_dt    = datetime.now()
+                        if _sched_dt > _now_dt:
+                            _wait_min = int((_sched_dt - _now_dt).total_seconds() / 60)
+                            logging.info(
+                                f"  ⏳ [{f.name}] 예정 시간 미도달 "
+                                f"({_sched_str}, {_wait_min}분 후) — 대기"
+                            )
+                            stuck_count += 1
+                            continue
+                except Exception:
+                    pass  # scheduled_time 없는 기존 파일은 즉시 처리
+
+                # [v8.1] 중복발행 방지 — published_links 확인 + Blogger API 실제 존재 검증
+                _already_pub = False
+                try:
+                    _raw_txt   = f.read_text(encoding='utf-8', errors='ignore')
+                    _topic_key = _raw_txt.split('\n')[0].lstrip('#').strip().lower()
+                    _pl_path   = META_DIR / "published_links.json"
+                    if _pl_path.exists() and _topic_key:
+                        _pl      = json.loads(_pl_path.read_text(encoding='utf-8'))
+                        _today_s = datetime.now().strftime("%Y-%m-%d")
+                        for _pe in _pl:
+                            _pe_topic = ((_pe.get('topic') or '').split('\n')[0]
+                                         .lstrip('#').strip().lower())
+                            if _pe.get('date') == _today_s and _pe_topic and (
+                                _topic_key in _pe_topic or _pe_topic in _topic_key
+                            ):
+                                # ── Blogger API로 실제 존재 여부 확인 ──────────
+                                _post_id_chk = str(_pe.get('post_id', ''))
+                                _live_on_blogger = False
+                                if _post_id_chk:
+                                    try:
+                                        _chk_svc = get_blogger_service()
+                                        if _chk_svc:
+                                            _chk_svc.posts().get(
+                                                blogId=BLOG_ID,
+                                                postId=_post_id_chk,
+                                                fields="id,status"
+                                            ).execute()
+                                            _live_on_blogger = True  # 200 OK = 실제 존재
+                                    except Exception as _chk_err:
+                                        # 404 등 = Blogger에서 삭제됨 → 발행 허용
+                                        logging.info(
+                                            f"  [중복체크] post_id={_post_id_chk} Blogger에 없음 "
+                                            f"(삭제됨) → 발행 허용: {_chk_err}"
+                                        )
+                                        _live_on_blogger = False
+                                else:
+                                    # post_id 없으면 published_links만으로 판단
+                                    _live_on_blogger = True
+
+                                if _live_on_blogger:
+                                    logging.warning(
+                                        f"  ⏭️ Blogger에 실제 존재 확인 — 파이프라인 차단: "
+                                        f"{_raw_txt.split(chr(10))[0].strip()}"
+                                    )
+                                    _dest = COMPLETED_DIR / f.name
+                                    if _dest.exists(): _dest.unlink()
+                                    if f.exists(): shutil.move(str(f), str(_dest))
+                                    file_fail_counts.pop(f.name, None)
+                                    _already_pub = True
+                                else:
+                                    logging.info(
+                                        f"  ♻️ published_links에는 있으나 Blogger에 없음 "
+                                        f"→ 재발행 허용: {_raw_txt.split(chr(10))[0].strip()}"
+                                    )
+                                break
+                except Exception as _ap_err:
+                    logging.warning(f"  [중복발행 방지] 체크 오류: {_ap_err}")
+
+                if _already_pub:
+                    orch.ctx = {}
+                    continue
+
                 _api_tokens["input"] = 0
                 _api_tokens["output"] = 0
                 ok = False
@@ -4709,11 +5232,15 @@ def monitor():
                         logging.warning("  ⚠️ 발행 실패 크래시 — Raw 유지")
                 try:
                     if ok:
-                        dest = COMPLETED_DIR / f.name
+                        # 테스트 파일 → 99_Test_Done, 실제 파일 → 01_Completed
+                        dest = (TEST_DONE_DIR if _is_test_file else COMPLETED_DIR) / f.name
                         if dest.exists(): dest.unlink()
                         if f.exists():
                             shutil.move(str(f), str(dest))
-                            logging.info(f"  ✅ 완료 이동: {f.name}")
+                            if _is_test_file:
+                                logging.info(f"  🧪 테스트 완료: {f.name} → 99_Test_Done")
+                            else:
+                                logging.info(f"  ✅ 완료 이동: {f.name}")
                         # 파일 이동 성공 후 체크포인트 삭제 (URL 정보 보존을 위해 여기서 삭제)
                         _cp = CHECKPOINT_DIR / f"{f.stem}.json"
                         if _cp.exists():
@@ -4736,6 +5263,10 @@ def monitor():
 
                 orch.ctx = {}
 
+            # 모든 파일이 scheduled_time 미도달로 스킵됐으면 30초 대기 (로그 폭발 방지)
+            if stuck_count == len(files):
+                time.sleep(30)
+
         else:
             nxt = _next_scheduled_task()
             if nxt:
@@ -4743,21 +5274,76 @@ def monitor():
                 secs = (next_dt - datetime.now()).total_seconds()
 
                 if secs <= 0:
-                    # 시간이 됐거나 지남 → RAW 파일 즉시 생성
-                    logging.info(f"  ⏰ 스케줄 실행: '{next_task.get('topic','')}' — RAW 파일 생성")
-                    _create_raw_file_from_topic(next_task)
-                    # topic_bank status → in_progress (중복 실행 방지)
+                    # [v8.0] RAW 생성 전 published_links 확인 — 이미 발행됐으면 completed 처리 후 스킵
+                    _next_topic_str = next_task.get("topic", "")
+                    _next_topic_key = _next_topic_str.lower()
+                    _already_in_pl  = False
+                    _matched_post_id = None
                     try:
-                        _tb_path = META_DIR / "topic_bank.json"
-                        _bank = json.loads(_tb_path.read_text(encoding='utf-8'))
-                        for _t in _bank:
-                            if (_t.get("topic") == next_task.get("topic") and
-                                    _t.get("date") == next_task.get("date")):
-                                _t["status"] = "in_progress"
+                        _pl2 = json.loads((META_DIR / "published_links.json").read_text(encoding='utf-8'))
+                        for _pe2 in _pl2:
+                            _pe2_t = ((_pe2.get("topic") or "").split("\n")[0]
+                                      .lstrip("#").strip().lower())
+                            if _pe2_t and (
+                                _next_topic_key in _pe2_t or _pe2_t in _next_topic_key
+                            ):
+                                _matched_post_id = str(_pe2.get("post_id", ""))
+                                _already_in_pl = True
                                 break
-                        _tb_path.write_text(json.dumps(_bank, ensure_ascii=False, indent=2), encoding='utf-8')
-                    except Exception as _ue:
-                        logging.warning(f"  [스케줄러] topic_bank 업데이트 실패: {_ue}")
+                    except Exception:
+                        pass
+
+                    # ── Blogger API 실제 존재 확인 ────────────────────
+                    if _already_in_pl and _matched_post_id:
+                        try:
+                            _sch_svc = get_blogger_service()
+                            if _sch_svc:
+                                _sch_svc.posts().get(
+                                    blogId=BLOG_ID,
+                                    postId=_matched_post_id,
+                                    fields="id,status"
+                                ).execute()
+                                # 200 OK → 실제 존재 → 차단 유지
+                        except Exception:
+                            # 404 → Blogger에 없음 → 재발행 허용
+                            logging.info(
+                                f"  ♻️ published_links에 있으나 Blogger에 없음 → 재발행 허용: {_next_topic_str}"
+                            )
+                            _already_in_pl = False
+
+                    if _already_in_pl:
+                        logging.warning(
+                            f"  ⏭️ 이미 발행됨 — RAW 생성 차단 & topic_bank 완료 처리: {_next_topic_str}"
+                        )
+                        try:
+                            _tb_path2 = META_DIR / "topic_bank.json"
+                            _bank2 = json.loads(_tb_path2.read_text(encoding='utf-8'))
+                            for _t2 in _bank2:
+                                if _t2.get("topic") == _next_topic_str:
+                                    _t2["status"] = "completed"
+                            _tb_path2.write_text(
+                                json.dumps(_bank2, ensure_ascii=False, indent=2), encoding='utf-8'
+                            )
+                        except Exception as _ce:
+                            logging.warning(f"  [스케줄러] completed 처리 실패: {_ce}")
+                    else:
+                        # 시간이 됐거나 지남 → RAW 파일 즉시 생성
+                        logging.info(f"  ⏰ 스케줄 실행: '{_next_topic_str}' — RAW 파일 생성")
+                        _create_raw_file_from_topic(next_task)
+                        # topic_bank status → in_progress (중복 실행 방지)
+                        try:
+                            _tb_path = META_DIR / "topic_bank.json"
+                            _bank = json.loads(_tb_path.read_text(encoding='utf-8'))
+                            for _t in _bank:
+                                if (_t.get("topic") == _next_topic_str and
+                                        _t.get("date") == next_task.get("date")):
+                                    _t["status"] = "in_progress"
+                                    break
+                            _tb_path.write_text(
+                                json.dumps(_bank, ensure_ascii=False, indent=2), encoding='utf-8'
+                            )
+                        except Exception as _ue:
+                            logging.warning(f"  [스케줄러] topic_bank 업데이트 실패: {_ue}")
                 else:
                     mins = int(secs // 60)
                     hrs  = mins // 60

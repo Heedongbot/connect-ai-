@@ -2,6 +2,231 @@
 
 ---
 
+## 2026-06-03 — v9.3: hermes_queue 정리 + GPU 점유 근본 해결
+
+### hermes_queue.json 정리 (cleanup_queue.py / cleanup_queue2.py)
+- **원인:** hermes-agent CLI 타임아웃 루프 → hernex_agent 재시작 시 pending 377개 처리 시도 → qwen3:14b VRAM 점유
+- **분석:** pending 377개 = 삭제된 구 포스팅 294개 + 중복 71개 + 이미 수정된 항목 12개
+- **처리:** 377개 전부 `"status": "completed"` 마킹
+  - 구 제목 패턴(`Complete Guide`, `Complete:`, `Is X Worth Taking`) → old title format
+  - 오늘 수동 수술된 포스팅 → manually fixed 2026-06-03
+  - 중복 항목 → duplicate
+- **결과:** pending 377 → 0 / VRAM 클리어 확인
+
+### Ollama VRAM 관리
+- qwen3:14b-q4_K_M: 6.6GB → 0GB (언로드 완료)
+- `keep_alive=0` API로 즉시 언로드 가능 확인
+
+---
+
+## 2026-06-03 — v9.2: PPV 자동화 개선 + YMYL 각인
+
+### post_quality_check.py — 4가지 개선
+
+**F2 display:none 픽셀 버그 수정**
+- 기존: `re.search(r'<img[^>]+>', html)` → 첫 번째 img = 숨김 트래킹 픽셀 → F2=3/10
+- 수정: `display:none` / `width:1px` / `height:1px` 이미지 스킵 후 첫 번째 실제 이미지 탐색
+
+**A1 YMYL 제목 단어 추가**
+- `BAD_TITLE_WORDS`에 추가: `"Healed My"`, `"Cured My"`, `"Eliminated My"`, `"Fixed My Chronic"`, `"Reversed My"`, `"Defeated My"`, `"Overcame My Chronic"`
+- 이제 발행 전 Critic이 자동 차단
+
+**B1 og:description 오염 감지 강화**
+- 추가 패턴: `"the research on "`, `"studies show"`, `"according to research"`, `"what the research says"`, `"science behind"`, `"and complete"`, `"or complete"`
+
+### post_publish_verifier.py — var desc 자동 주입
+- og:description 존재하는데 `var desc` 없으면 `<h1>` 앞에 자동 `<script>` 블록 생성
+- Description 3곳 불일치 근본 해결 (매번 재발 방지)
+
+### bulk_verify.py — Claude Haiku AI 연결
+- `make_claude_fn()` 추가 — `ANTHROPIC_API_KEY` 환경변수 사용
+- `ask_ai_fn = claude_haiku` 전달 → B1 og:description 재작성, YMYL 자동 감지
+- AI 없을 때 graceful fallback (rule-based만 실행)
+
+### YMYL 표현 각인 (agent_lessons + BANNED_PHRASES + dynamic_rules)
+- `agent_lessons` Writer/Critic: YMYL 제목/본문 금지 패턴 3개 (count=3)
+- `BANNED_PHRASES` 8개: `"healed my chronic"`, `"crashes disappeared"`, `"brain fog lifted"`, `"pain disappeared"`, `"neither one is getting properly absorbed"` 등
+- `dynamic_rules` 3개: TITLE-YMYL, BODY-YMYL, BODY-GENERALIZATION
+
+### 오늘 수동 수정 포스팅
+| 포스팅 | 점수 | 주요 수정 |
+|---|---|---|
+| Potassium (1275828656143939503) | 8.8→**9.6 S** | var desc 주입, 숨김 픽셀 제거, H2 대소문자 |
+| Zinc+Iron (6218057025291946012) | 9.7 S | 제목 Healed→안전, YMYL 표현 5곳 수정 |
+
+---
+
+## 2026-06-02 — v9.0: Site Brain + 허브 페이지 + 롱테일 전략 전면 확장
+
+### site_brain.py (신규) — 사이트 단위 의사결정 레이어
+- **7개 카테고리 택소노미:** minerals / vitamins / performance / sleep_stress / gut_metabolism / longevity_antioxidants / cognitive_mood
+- **목표 비율:** minerals 25% / vitamins 20% / performance 18% / sleep 12% / gut 10% / longevity 8% / cognitive 7%
+- **3가지 분석 지표:**
+  - `category_balance()` — 현재 vs 목표 비율, 과잉(🔴)/부족(🟡) 감지
+  - `cluster_completeness()` — 영양소별 5슬롯 완성도 (guide/timing/dosage/mistake/synergy)
+  - `topic_authority()` — 영양소별 발행 편수 (3편+ = adequate)
+- `recommend()` → block_categories / boost_categories / weak_nutrients 반환
+- CLI: `python site_brain.py` → 전체 리포트 즉시 출력
+
+### hub_page_generator.py (신규) — 카테고리 허브 페이지
+- 7개 카테고리 허브 Blogger 발행 완료
+
+| 카테고리 | 허브 제목 | 현재 편수 |
+|---|---|---|
+| minerals | Every Mineral Supplement I've Tested | 8편 |
+| vitamins | Every Vitamin I've Tested | 3편 |
+| performance | Performance Supplements I've Actually Used | 3편 |
+| sleep_stress | Sleep and Stress Supplements | 1편 |
+| gut_metabolism | Gut Health and Metabolism Supplements | 4편 |
+| longevity_antioxidants | Longevity and Antioxidant Supplements | 1편 |
+| cognitive_mood | Brain and Mood Supplements | 1편 |
+
+- `hub_posts.json`에 post_id + URL 추적
+- `add_post_to_hub()`: 새 글 발행 시 해당 허브에 자동 링크 삽입
+- Blogger API rate limit 대비 지수 백오프 재시도 (15→30→60→120→240초)
+
+### orchestrator — 허브 자동 업데이트 훅
+- 새 글 발행 직후 SiteBrain으로 카테고리 분류 → `add_post_to_hub()` 자동 호출
+- 실패 시 비치명적 경고만 (발행 자체는 영향 없음)
+
+### daily_scheduler_v5.py — Site Brain 40% plan_today() 반영
+- 기존: Google Trends 100% 기준 선택
+- 변경: 트렌드 60% + Site Brain 40% 가중 합산
+  - block 카테고리 (과잉): -40점 페널티
+  - boost 카테고리 (부족): +20점 보너스
+- 2026-06-02 현재: minerals/gut_metabolism BLOCK → sleep_stress/vitamins BOOST
+
+### friend_experience 포스팅 타입 신설 + 2:8 비율 전략
+- 144개 friend_experience 토픽 생성 (36 영양소 × 4 템플릿, 8가지 지인 유형)
+- RAW 파일 첫 줄 `topic_type: friend_experience` 헤더 → 오케스트레이터 우선 읽기
+- Writer 페르소나: "지인이 주인공, Erik은 관찰자/증인"
+- 스케줄러 2:8 비율 관리: published_links 기준 personal:friend 비율 계산, 부족 시 하루 최대 4개 우선 배정
+
+### topic_bank 신규 타입 추가 (총 343개)
+| 타입 | 편수 | 예시 |
+|---|---|---|
+| friend_experience | 144 | "My Colleague Started Zinc Before I Did" |
+| symptom_query | 20 | "Always Tired After Lunch — What Finally Helped" |
+| question_query | 20 | "Why Isn't My Zinc Working — What I Figured Out" |
+
+### PPV Rule5 주변인 경험담 + 타입별 비율 세분화
+- social_markers 추가 (30개+ 패턴): my friend / a guy at the gym / someone on reddit 등
+- 서브체크: 주변인 < 내경험×0.5 → WARN "권장 비율 2:8"
+- social 우선 분류로 "my friend" vs "my" 충돌 방지
+- 7타입 세분화 _RATIO_MAP 적용
+
+---
+
+## 2026-06-02 — v8.9: 루프 버그 수정 + 단정 표현 금지 + 경험담 비율 각인
+
+### orchestrator: scheduled_time 대기 루프 sleep 버그 수정
+- **문제:** RAW 파일이 있으나 전부 `scheduled_time` 미도달일 때 `sleep` 없이 즉시 루프 재진입
+- **증상:** 초당 3~4회 로그 스팸 → `orchestrator.log` 폭발(21만 줄+), CPU/메모리 낭비
+- **수정:** `stuck_count` 카운터 추가 — `scheduled_time` 미도달 스킵 시 `stuck_count += 1`
+  - for 루프 종료 후 `stuck_count == len(files)` 이면 `time.sleep(30)` 실행
+- **효과:** 대기 중 파일만 있을 때 30초 간격 체크 (분당 2회)
+
+### 건강효과 단정 표현 금지 — Tier1 각인 (engrave_rules.py)
+- **배경:** Creatine/Zinc Stack 포스팅에서 사용자가 직접 6곳 단정 표현 발견
+- **각인 위치:**
+  - `agent_lessons.json`: Writer + Critic (count=5, tier1, active=True)
+  - `core_lessons.json`: Writer + Critic (count=5, tier1)
+  - `dynamic_rules.json`: WRITER/CRITIC 규칙 4개 추가 (총 92개)
+- **금지 표현 → 대체 표현:**
+  - `makes you stronger/faster/better` → `seemed to help with strength/recovery`
+  - `X does nothing` → `X likely does very little for me`
+  - `That's basically useless` → `that didn't seem to work well for me`
+  - `absorption depends on Y` → `may absorb better when... from what I've read`
+  - `X is essential for Z` → `X seemed important, at least in my case`
+- **BANNED_PHRASES 추가:** 5개 자동치환 패턴 (발행 전 자동 적용)
+
+### 경험담 비율 60%+ 필수 — Tier1 각인
+- **배경:** Zinc Stack 포스팅 경험담 비율 43% → 수술 3회 → 59%/9.6/10 S등급 달성
+- **각인 내용:**
+  - 전체 문장 중 1인칭(I/my/me) 경험 문장 60% 이상 필수
+  - 조언형(`First: X is important`, `you should`, `the key is`) → 경험형(`I noticed`, `for me`, `I found`) 전환 의무
+  - `og:description`: 연구/정보형 금지 → 개인 경험형 필수
+    - BAD: `"The research on Zinc is often different from real-world results"`
+    - GOOD: `"I took zinc every day for six weeks and felt nothing."`
+- **Critic REJECT 조건 추가:** 발행 전 비율 60% 미만 → REJECT + Writer 재작성 요구
+
+### daily_scheduler_v5: 발행 시간대 확장 (v8.7)
+- `07:00~20:00` → `07:00~22:30` (2.5시간 확장)
+- 랜덤 탈락 방식 → 균등분배(interval) + jitter 방식 교체 (count=N 항상 N개 보장)
+
+### 오늘 수동 수술 완료 포스팅
+| 포스팅 | 작업 | 결과 |
+|---|---|---|
+| How Creatine Finally Stopped My Workout Plateau | 단정 표현 6곳 완화 + PMID 3개 주입 + 이미지 재생성(인물 제거) | 8.8/10 S |
+| How to Take Zinc for Best Results | 경험담 비율 43%→59% 부분수술 3회 + og:description 교체 | 9.6/10 S |
+
+### friend_experience 포스팅 타입 신설 — 지인 시점 2:8 전략
+
+**배경:** 100~200개 포스팅이 전부 "I tried X" 패턴이면 한 사람이 모든 보충제를 먹는 부자연스러운 블로그가 됨.
+개인 포스팅 2 : 지인 포스팅 8 비율로 다양한 화자 시점 확보.
+
+**추가된 컴포넌트:**
+
+`add_friend_experience_topics.py` (신규)
+- 36개 영양소 × 4개 템플릿 = 144개 friend_experience 토픽 자동 생성
+- 8가지 지인 유형: My Friend / My Colleague / A Guy at My Gym / My Partner / My Roommate 등
+- 8가지 제목 템플릿: "tried for a month", "before I did", "I almost talked them out of", 등
+
+`daily_scheduler_v5.py`
+- `plan_today()`에 2:8 비율 관리 로직 추가
+- `published_links.json` 기준 personal:friend 비율 실시간 계산
+- friend_experience 부족 시 하루 최대 4개 우선 배정
+- `create_raw_file(topic_type=)` — RAW 파일 첫 줄에 `topic_type: friend_experience` 헤더 추가
+
+`00_NutriStack_Grand_Orchestrator_v5.py`
+- RAW 파일 헤더에서 `topic_type:` 우선 읽기 (기존 텍스트 키워드 감지 대신)
+- `load_agent_with_lessons()` — `topic_type == "friend_experience"` 시 Writer 페르소나 주입:
+  - "YOU ARE NOT THE PERSON WHO TOOK THE SUPPLEMENT — a friend/colleague did"
+  - Erik은 관찰자/증인 역할, 지인이 주인공
+  - 예시 오프닝 패턴 포함
+
+`topic_bank.json`
+- friend_experience 144개 추가 (총 303개)
+
+### combination_query 자동 생성 (v9.1) — add_combination_queries.py (신규)
+- 발행된 영양소끼리만 조합 (없으면 안 만들고, 생기면 자동 추가)
+- 18개 영양소 → 134개 combination_query 생성 (18C2 = 153 - 기존 19쌍)
+- 다른 카테고리 조합 우선 (minerals × performance 등)
+- 새 글 발행 시 orchestrator 훅에서 자동 재실행 → 새 조합 즉시 추가
+- `longtail_types`에 combination_query / symptom_query / question_query 추가
+
+### post_publish_verifier: Rule5 주변인 경험담 카운트 추가
+- **배경:** 내 경험담만 쓰면 단조롭고 신뢰도 낮음 → 주변인 경험도 경험담으로 인정
+- **경험담 정의 확장:** 내경험(I/my/me) + 주변인경험(친구/파트너/지인/포럼) 합산
+- **social_markers 추가:** `my friend`, `my partner`, `a guy at the gym`, `someone on reddit`,
+  `a colleague of mine`, `someone I know`, `one of my friends` 등 30개+ 패턴
+- **서브체크 추가:** 주변인 < 내경험×0.5 이면 WARN (권장 비율 내경험:주변인 = 2:8)
+- **우선순위:** social_markers 먼저 분류 → personal_markers 분류 (`my friend` vs `my` 충돌 방지)
+- **Writer 레슨 각인:** 주변인 경험담 예시 패턴 + 2:8 권장 비율 (count=3)
+
+### post_publish_verifier: Rule5 타입별 경험담 비율 세분화
+- **기존:** comprehensive_guide 45~55% / 그 외 60~75% (2타입)
+- **변경:** 7타입 세분화 (`_RATIO_MAP` 딕셔너리)
+
+| topic_type | 기준 | 설명 |
+|---|---|---|
+| `comprehensive_guide` | 45~55% | 정보+경험 균형 |
+| `how_i_use` / `personal_guide` | 60~75% | 개인 루틴 중심 |
+| `experiment_log` | 60~70% | 실험 기록 형식 |
+| `wrong_culprit` | 65~80% | 범인 찾기 서사 |
+| `unexpected_tradeoff` | 65~80% | 예상 못한 부작용 |
+| `regret_ignoring` | 65~80% | 무시했다 후회 |
+| 기타 (longtail 등) | 60~75% | 기본 경험담 |
+
+- 상한(hi) 초과도 WARN — 설명/정보 문장 부족 경고
+- `dynamic_rules.json` Tier1 규칙 추가
+
+### bulk_verify 결과 (2026-06-02)
+- 전체 21개 전원 통과, 전원 S등급 ✅
+- 평균: **9.57/10** (신규 2개 포함)
+
+---
+
 ## 2026-05-28 (5차) — 이미지/엔티티 버그 소급 수정
 
 ### Iron Complete Guide: 종합 소급 수정

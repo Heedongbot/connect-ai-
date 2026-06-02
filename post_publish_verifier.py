@@ -120,6 +120,347 @@ _RELATED_TITLE_MAP: dict[str, str] = {
 }
 
 
+# ============================================================
+# EDITOR RULES v1.0 — 7개 후처리 검수 룰
+# Writer 품질 교육 → 자동 수정 후 글 파손 방지로 Teacher 역할 전환
+# ============================================================
+
+def _editor_rule1_substitution_duplicates(html: str) -> list[str]:
+    """Rule 1: 치환 후 중복 구문 탐지.
+    예: 'That Finally Made a Difference That Finally Made a Difference'
+    """
+    issues = []
+    plain = re.sub(r'<[^>]+>', ' ', html)
+    plain = re.sub(r'\s+', ' ', plain)
+    # 4단어 이상 반복 구문
+    words = plain.split()
+    for length in (5, 6, 7, 8):
+        for i in range(len(words) - length * 2 + 1):
+            phrase = ' '.join(words[i:i+length])
+            following = ' '.join(words[i+length:i+length*2])
+            if phrase.lower() == following.lower() and len(phrase) > 20:
+                issues.append(f"중복 구문: '{phrase[:60]}' 연속 등장")
+    return issues
+
+
+def _editor_rule2_broken_sentences(html: str) -> list[str]:
+    """Rule 2: 치환 사고로 인한 문장 파손 탐지.
+    예: 'health.simultaneously', 'work.however', 'day.the'
+    """
+    issues = []
+    plain = re.sub(r'<[^>]+>', ' ', html)
+    # 소문자 단어.소문자 단어 (URL, 숫자 제외)
+    broken = re.findall(r'\b([a-z]{3,})\.(simultaneously|however|therefore|the|this|that|when|it|i |my |he |she |they |we |you )', plain, re.I)
+    for w1, w2 in broken:
+        issues.append(f"문장 파손: '{w1}.{w2}' — 마침표 뒤 공백 없음")
+    # 소문자로 시작하는 <p> 태그
+    lc_p = re.findall(r'<p[^>]*>\s*([a-z])', html)
+    if len(lc_p) > 3:
+        issues.append(f"소문자 시작 <p> {len(lc_p)}개 — 치환 사고 가능성")
+    return issues
+
+
+def _editor_rule3_title_sync(html: str, title: str) -> list[str]:
+    """Rule 3: H1 / OG Title / JSON-LD headline 100% 동일 검사."""
+    issues = []
+    h1_m   = re.search(r'<h1[^>]*>(.*?)</h1>', html, re.I | re.S)
+    ogt_m  = re.search(r'property=["\']og:title["\'][^>]*content="([^"]+)"', html, re.I)
+    jld_m  = re.search(r'"headline"\s*:\s*"([^"]+)"', html)
+
+    h1    = re.sub(r'<[^>]+>', '', h1_m.group(1)).strip()  if h1_m  else '(없음)'
+    og_t  = ogt_m.group(1).strip()                          if ogt_m else '(없음)'
+    jld_t = jld_m.group(1).strip()                          if jld_m else '(없음)'
+
+    if not (h1 == og_t == jld_t):
+        issues.append(
+            f"제목 3곳 불일치:\n  H1      : {h1[:60]}\n  OG      : {og_t[:60]}\n  JSON-LD : {jld_t[:60]}"
+        )
+    return issues
+
+
+def _editor_rule4_desc_sync(html: str) -> list[str]:
+    """Rule 4: OG Description / JSON-LD description 동일 검사."""
+    issues = []
+    ogd_m  = re.search(r'property=["\']og:description["\'][^>]*content="([^"]+)"', html, re.I)
+    jldd_m = re.search(r'"description"\s*:\s*"([^"]+)"', html)
+    jsd_m  = re.search(r'var\s+desc\s*=\s*"([^"]+)"', html)
+
+    og_d  = ogd_m.group(1).strip()  if ogd_m  else ''
+    jld_d = jldd_m.group(1).strip() if jldd_m else ''
+    js_d  = jsd_m.group(1).strip()  if jsd_m  else ''
+
+    # apostrophe 정규화 후 비교
+    def norm(s): return s.replace("&#39;", "'").replace("&apos;", "'").replace('’', "'")
+    og_n, jld_n, js_n = norm(og_d), norm(jld_d), norm(js_d)
+
+    if og_n and jld_n and og_n != jld_n:
+        issues.append(f"Description 불일치:\n  OG     : {og_d[:80]}\n  JSON-LD: {jld_d[:80]}")
+    if og_n and js_n and og_n != js_n:
+        issues.append(f"Description 불일치:\n  OG : {og_d[:80]}\n  JS : {js_d[:80]}")
+    return issues
+
+
+def _editor_rule5_experience_ratio(html: str, topic_type: str = "") -> list[str]:
+    """Rule 5: 포스트 타입별 경험담 비율 검사 (내경험 + 주변인 경험 통합).
+    - comprehensive_guide          : 45~55%
+    - how_i_use / personal_guide   : 60~75%
+    - experiment_log               : 60~70%
+    - wrong_culprit                : 65~80%
+    - unexpected_tradeoff          : 65~80%
+    - regret_ignoring              : 65~80%
+    - 기타 experience/longtail     : 60~75%
+
+    경험담 = 내경험(I/my/me) + 주변인경험(친구/파트너/지인/포럼 등)
+    내경험 : 주변인 권장 비율 = 2 : 8
+    """
+    _RATIO_MAP = {
+        "comprehensive_guide":  (0.45, 0.55, "Comprehensive Guide 기준 45~55%"),
+        "how_i_use":            (0.60, 0.75, "How I Use 기준 60~75%"),
+        "personal_guide":       (0.60, 0.75, "Personal Guide 기준 60~75%"),
+        "experiment_log":       (0.60, 0.70, "Experiment Log 기준 60~70%"),
+        "wrong_culprit":        (0.65, 0.80, "Wrong Culprit 기준 65~80%"),
+        "unexpected_tradeoff":  (0.65, 0.80, "Unexpected Tradeoff 기준 65~80%"),
+        "regret_ignoring":      (0.65, 0.80, "Regret Ignoring 기준 65~80%"),
+    }
+    _DEFAULT = (0.60, 0.75, "경험담 기준 60~75%")
+
+    t = (topic_type or "").lower().strip()
+    lo, hi, label = _RATIO_MAP.get(t, _DEFAULT)
+
+    issues = []
+    plain = re.sub(r'<[^>]+>', ' ', html)
+    sentences = [s.strip() for s in re.split(r'[.!?]', plain) if len(s.strip()) > 20]
+    if not sentences:
+        return issues
+
+    # ── 내 경험담 마커 ────────────────────────────────────────────
+    personal_markers = re.compile(
+        r'\b(I |I\'ve |I was |I\'m |I noticed |I tried |I found |I started |'
+        r'my |me |myself |for me |felt |noticed |realized |decided )\b', re.I
+    )
+    # ── 주변인 경험담 마커 ────────────────────────────────────────
+    social_markers = re.compile(
+        r'\b(my friend|my partner|my wife|my husband|my girlfriend|my boyfriend|'
+        r'my mom|my dad|my mother|my father|my sister|my brother|my colleague|'
+        r'my coworker|my trainer|my coach|my doctor|my roommate|'
+        r'a friend of mine|one of my friends|someone I know|a guy I know|'
+        r'a woman I know|people I know|someone at the gym|a guy at the gym|'
+        r'someone on reddit|a reddit thread|someone mentioned|'
+        r'someone told me|people around me|others I\'ve talked to|'
+        r'a few people I know)\b', re.I
+    )
+
+    # social_markers 우선 분류 (my friend > my 패턴 충돌 방지)
+    personal_count = 0
+    social_count   = 0
+    for s in sentences:
+        if social_markers.search(s):
+            social_count += 1
+        elif personal_markers.search(s):
+            personal_count += 1
+    exp_count = personal_count + social_count
+    ratio = exp_count / len(sentences)
+
+    # ① 전체 경험담 비율 체크
+    if ratio < lo:
+        issues.append(
+            f"경험담 비율 {ratio:.0%} 미달 ({label}) — "
+            f"설명 {len(sentences)-exp_count}개 vs 경험(내{personal_count}+주변{social_count})개"
+        )
+    elif ratio > hi:
+        issues.append(
+            f"경험담 비율 {ratio:.0%} 초과 ({label}) — 설명/정보 문장이 더 필요함"
+        )
+
+    # ② 내경험 : 주변인 비율 서브체크 — friend_experience 타입만 적용
+    # comprehensive_guide/timing/synergy 등은 개인 경험 위주가 자연스러움
+    _social_check_types = {"friend_experience", "wrong_culprit", "regret_ignoring"}
+    if t in _social_check_types and exp_count >= 5 and social_count < personal_count * 0.5:
+        issues.append(
+            f"주변인 경험담 부족 — 내경험 {personal_count}개 vs 주변인 {social_count}개 "
+            f"(권장 비율 2:8 — 친구/파트너/지인/포럼 경험 추가 필요)"
+        )
+
+    return issues
+
+
+def _editor_rule6_exaggeration(html: str) -> list[str]:
+    """Rule 6: 과장 표현 탐지 + 근거 문단 존재 여부 확인."""
+    issues = []
+    plain = re.sub(r'<[^>]+>', ' ', html).lower()
+
+    EXAGGERATIONS = [
+        'everything changed', 'life changing', 'life-changing',
+        'completely transformed', 'miracle', 'miraculous',
+        'incredible results', 'dramatic improvement', 'totally different person',
+        'changed my life', 'never looked back',
+    ]
+    EVIDENCE_MARKERS = ['study', 'research', 'pmid', 'trial', 'published', 'evidence', 'data']
+
+    found = [e for e in EXAGGERATIONS if e in plain]
+    if found:
+        has_evidence = any(m in plain for m in EVIDENCE_MARKERS)
+        if not has_evidence:
+            issues.append(
+                f"과장 표현 + 근거 없음: {found[:3]} — "
+                "연구/PMID 인용 없이 과장적 표현 사용"
+            )
+    return issues
+
+
+def _editor_rule7_reader_perspective(html: str, title: str, ask_ai_fn) -> list[str]:
+    """Rule 7: 발행 전 독자 시점 검사 (가장 중요).
+    Claude에게 독자 입장에서 4가지 질문 답하게 함.
+    답 못하면 FAIL.
+    """
+    issues = []
+    if ask_ai_fn is None:
+        return issues
+
+    plain = re.sub(r'<[^>]+>', ' ', html)
+    plain = re.sub(r'\s+', ' ', plain).strip()
+    excerpt = plain[:4000]  # 앞 4000자만 사용 (비용 절감)
+
+    prompt = f"""Read this article excerpt as a first-time visitor. Ignore HTML, JSON-LD, and SEO.
+
+Title: {title}
+
+Article excerpt:
+{excerpt}
+
+Answer ONLY these 4 questions in JSON:
+{{
+  "story": "one sentence: what happened to the author?",
+  "what_changed": "one sentence: what specific change did they notice?",
+  "mistake": "one sentence: what mistake did the author make?",
+  "title_fulfilled": true or false
+}}
+
+If you cannot answer any question from the text, use null."""
+
+    try:
+        raw = ask_ai_fn(prompt, "You are a first-time blog reader. Be honest and brief.")
+        # JSON 추출
+        m = re.search(r'\{[^{}]+\}', raw, re.S)
+        if not m:
+            issues.append("Rule7: 독자 시점 응답 파싱 실패")
+            return issues
+
+        data = json.loads(m.group())
+        nulls = [k for k, v in data.items() if v is None or v == 'null']
+        if nulls:
+            issues.append(
+                f"Rule7 독자 시점 FAIL — 답 불가 항목: {nulls}. "
+                "독자가 이야기/변화/실수/제목 이행 중 일부를 파악 못함"
+            )
+        if data.get('title_fulfilled') is False:
+            issues.append(
+                f"Rule7 제목 미이행 — 제목 '{title[:50]}' 이 본문에서 약속한 것을 이행하지 않음"
+            )
+    except Exception as e:
+        log.warning(f"  [Rule7] 독자 시점 검사 실패 (무시): {e}")
+
+    return issues
+
+
+def _editor_rule8_image_urls(html: str) -> list[str]:
+    """Rule 8: 이미지 URL 유효성 검사.
+    깨진 이미지(404/timeout/error)를 감지. Imgur 링크 우선 확인.
+    최대 6개 이미지, 각 5초 타임아웃.
+    """
+    import urllib.request
+    issues = []
+
+    # img src 추출
+    img_urls = re.findall(r'<img[^>]+src=["\']([^"\']+)["\']', html, re.I)
+    # og:image도 포함
+    og_imgs  = re.findall(r'property=["\']og:image["\'][^>]*content=["\']([^"\']+)["\']', html, re.I)
+    all_urls = list(dict.fromkeys(img_urls + og_imgs))  # 중복 제거
+
+    if not all_urls:
+        return issues
+
+    # Imgur 우선, 나머지는 뒤로 (최대 6개)
+    imgur_urls = [u for u in all_urls if 'imgur.com' in u]
+    other_urls = [u for u in all_urls if 'imgur.com' not in u]
+    check_urls = (imgur_urls + other_urls)[:6]
+
+    # CDN별 정책:
+    # - Imgur: timeout/연결오류도 broken으로 처리 (자주 링크 사망)
+    # - Unsplash/Google/Drive 등 대형 CDN: 확실한 404만 처리 (느린 것은 무시)
+    CDN_STRICT = ('imgur.com',)                         # 엄격 체크
+    CDN_LENIENT = ('unsplash.com', 'googleusercontent', # 404만 체크
+                   'drive.google.com', 'blogger.com',
+                   'lh3.googleusercontent', 'bp.blogspot')
+
+    for url in check_urls:
+        if not url.startswith('http'):
+            continue
+        is_strict  = any(d in url for d in CDN_STRICT)
+        is_lenient = any(d in url for d in CDN_LENIENT)
+        timeout    = 5 if is_strict else 8
+        try:
+            req = urllib.request.Request(url, method='HEAD',
+                headers={'User-Agent': 'Mozilla/5.0 NutriStackBot'})
+            resp = urllib.request.urlopen(req, timeout=timeout)
+            if resp.status == 404:
+                issues.append(f"이미지 404 (없음): {url[:80]}")
+            elif resp.status >= 400 and is_strict:
+                issues.append(f"이미지 HTTP {resp.status}: {url[:80]}")
+        except urllib.error.HTTPError as e:
+            if e.code == 404:
+                issues.append(f"이미지 404 (없음): {url[:80]}")
+            elif e.code >= 400 and is_strict:
+                issues.append(f"이미지 HTTP {e.code}: {url[:80]}")
+        except Exception as e:
+            err = str(e)[:50]
+            # Imgur만 timeout/연결오류도 broken으로 처리
+            if is_strict:
+                issues.append(f"이미지 접근 불가 (Imgur): {url[:80]}")
+            # Unsplash/CDN timeout은 무시
+
+    return issues
+
+
+def run_editor_checks(html: str, title: str, ask_ai_fn=None, topic_type: str = "") -> list[dict]:
+    """8개 Editor 룰 전체 실행. 각 이슈를 dict 리스트로 반환."""
+    all_issues = []
+
+    checks = [
+        ("RULE1_DUPLICATE",   "치환 중복",       "medium", _editor_rule1_substitution_duplicates(html)),
+        ("RULE2_BROKEN",      "문장 파손",       "high",   _editor_rule2_broken_sentences(html)),
+        ("RULE3_TITLE_SYNC",  "제목 동기화",     "high",   _editor_rule3_title_sync(html, title)),
+        ("RULE4_DESC_SYNC",   "설명 동기화",     "medium", _editor_rule4_desc_sync(html)),
+        ("RULE5_EXP_RATIO",   "경험담 비율",     "medium", _editor_rule5_experience_ratio(html, topic_type)),
+        ("RULE6_EXAGGERATION","과장 탐지",       "high",   _editor_rule6_exaggeration(html)),
+        ("RULE8_IMAGE_URL",   "이미지 URL 깨짐", "high",   _editor_rule8_image_urls(html)),
+    ]
+
+    for code, label, severity, msgs in checks:
+        for msg in msgs:
+            all_issues.append({
+                "category": code, "message": msg,
+                "severity": severity, "label": label
+            })
+            log.warning(f"  [Editor-{code}] {msg[:100]}")
+
+    # Rule 7은 AI 호출 필요 (비용 있으므로 이슈 있을 때만 실행 OR 항상)
+    r7 = _editor_rule7_reader_perspective(html, title, ask_ai_fn)
+    for msg in r7:
+        all_issues.append({
+            "category": "RULE7_READER",
+            "message": msg,
+            "severity": "critical",
+            "label": "독자 시점 검사"
+        })
+        log.warning(f"  [Editor-RULE7] {msg[:100]}")
+
+    if not all_issues:
+        log.info("  [Editor] ✅ 7개 룰 전부 통과")
+
+    return all_issues
+
+
 def _fix_bad_alts(html: str) -> tuple[str, list]:
     """오염된 이미지 alt 텍스트 자동 수정.
     - 'And Complete' / 'or Complete' 잔재
@@ -147,6 +488,11 @@ def _fix_bad_alts(html: str) -> tuple[str, list]:
             # "vitamin k2 guide weeks 1–2: what i expected vs. reality"
             new_alt = "my notes from the first two weeks"
             fixed.append(f"alt guide-weeks 패턴 제거: '{alt[:40]}'")
+
+        elif re.search(r'testing\s+\w[\w\s]{0,20}during\s+week', alt, re.I):
+            # "testing K2 during week three" → AI 설명 느낌
+            new_alt = "my K2 bottle after week three"
+            fixed.append(f"alt testing-during-week 패턴 제거: '{alt[:40]}'")
 
         elif re.search(r'expected\s+vs\.?\s*reality', alt, re.I):
             # "what i expected vs. reality" 패턴
@@ -362,12 +708,94 @@ def _fix_ai_phrases(html: str) -> tuple[str, list]:
         (r"\bthat's why It\b",              "that's why it"),
         (r'\bbut It wasn\'t\b',             "but it wasn't"),
         (r'\bwhy It wasn\'t\b',             "why it wasn't"),
+        # v7.9: og:description 내 "and complete" / "or complete" 흔적
+        (r'\band complete experiment\b',    'and my experience'),
+        (r'\bvitamin and complete\b',       'vitamin experience'),
+        (r'\bor complete\b(?=[^<]{0,50}(?:experiment|guide|post))', 'experience'),
+        # v7.9: Alt 텍스트 AI 설명 패턴 (testing X during week)
+        (r'testing\s+\w[\w\s]{0,20}during\s+week\s*\w+',
+         'my bottle after week three'),
+        # v7.9 후속: 저자명 오타 — Eric → Erik
+        (r'\bEric Lindström\b',             'Erik Lindström'),
+        # v7.9 후속: "started this routine X" → "started taking X"
+        (r'\bI started this routine\b',     'I started taking'),
+        (r'\bstarted this routine\b',       'started taking'),
+        # v7.9 후속: 오타 자동 수정
+        (r'\bdiscoverys\b',                 'discoveries'),
+        (r'\brecoverys\b',                  'recoveries'),
+        (r'\bhelpd\b',                      'helped'),
+        (r'\bdna\b',                        'DNA'),
+        (r'\brna\b',                        'RNA'),
+        # v7.9 후속: 문법 오류
+        (r'\bmight not had\b',              'might not have'),
+        (r'\bcould not had\b',              'could not have'),
+        (r'\bwould not had\b',              'would not have'),
+        # v7.9 후속: HMB 지용성/수용성 오류 (HMB는 water-soluble)
+        (r'\bHMB is fat.soluble\b',         'HMB is water-soluble'),
+        (r'\btake HMB with fat\b',          'take HMB before training'),
+        (r'\bHMB needs fat\b',              'HMB needs consistency'),
+        # v7.9 후속: FAQ 문장 dash 연결 오류 ("consistency mattered.—stick with it")
+        (r'(consistency mattered[^.]*)\.[—–-]+([Ss]tick with it)',
+         r'\1. \2'),
+        (r'(mattered more than anything else)\.[—–-]+([Ss]tick)',
+         r'\1. \2'),
+        # v7.9 후속: fat 치환 사고 복구 패턴
+        (r'\bsomething with food\b',        'something with protein or fat'),
+        (r'\bespecially something with food\b', 'especially a meal with protein or fat'),
+        # v7.9 후속: fat 과잉 — 문맥 붕괴 방지를 위해 food/meal 주변 치환 금지
+        # "with fat" → 주변에 meal/food가 없을 때만 치환
+        (r'\btaken?\s+with\s+fat\b',        'taken with food'),
+        (r'\bsome fat\b',                   'a small meal'),
+        (r'\bhigh.fat\b',                   'heavier'),
+        (r'\bneeds?\s+fat\b',               'works best with food'),
+        (r'\bwithout fat\b',                'on an empty stomach'),
+        (r'\bgood fat\b',                   'healthy fats'),
+        # v7.9: 음식명 치환 사고 복구 패턴 (almonds/avocado가 이미 치환된 경우)
+        (r'\ba handful of a meal\b',        'a handful of almonds'),
+        (r'\ba handful of a proper meal\b', 'a handful of almonds'),
+        (r'\ba slice of a proper meal\b',   'a few slices of avocado'),
+        (r'\bchew a few a meal\b',          'chew a few almonds'),
+        (r'\byou needs food\b',             'your body needs fat'),
+        (r'\byou needs\b',                  'you need'),
     ]
     changed = []
     for pattern, repl in replacements:
         new_html, n = re.subn(pattern, repl, html, flags=re.I)
         if n:
             changed.append(f"'{pattern}' → '{repl}' ({n}회)")
+            html = new_html
+
+    # v8.0: 치환 후 문장 붕괴 자동감지 & 복구
+    # 1) 이중 관사 "a a " / "a an " / "an a "
+    for _dbl in [(' a a ', ' a '), (' a an ', ' an '), (' an a ', ' an '), (' an an ', ' an ')]:
+        if _dbl[0] in html:
+            html = html.replace(_dbl[0], _dbl[1])
+            changed.append(f"이중관사 수정: '{_dbl[0].strip()}'")
+    # 2) 핵심 명사 단거리 이중 등장 (food/meal) — "a meal.*a proper meal" 등
+    for _noun in ['meal', 'food']:
+        html, _n = re.subn(
+            rf'(a\s+(?:proper\s+|regular\s+|good\s+)?{_noun}\b[^.!?]{{0,40}})'
+            rf'a\s+(?:proper\s+|regular\s+|good\s+)?{_noun}\b',
+            rf'\1{_noun}',
+            html, flags=re.I
+        )
+        if _n:
+            changed.append(f"이중명사({_noun}) 수정 {_n}건")
+
+    # v8.0: 누락된 문법 패턴
+    _grammar_extra = [
+        (r'\ba\s+help\b',           'support'),
+        (r'\bgetting\s+a\s+help\b', 'getting support'),
+        (r'\ba\s+instant\b',        'an instant'),   # 혹시 놓친 경우
+        # v8.0 제거: That's → that's 는 문장 시작 대문자를 파괴하는 부작용 발생
+        # 대신 하위 패턴으로만 처리 (구체적 케이스만)
+        (r',\s+That\'s\b',   ", that's"),   # 콤마 뒤 중간 문장
+        (r';\s+That\'s\b',   "; that's"),   # 세미콜론 뒤 중간 문장
+    ]
+    for pat, rep in _grammar_extra:
+        new_html, n = re.subn(pat, rep, html, flags=re.I)
+        if n:
+            changed.append(f"문법 수정: '{pat}' → '{rep}' ({n}회)")
             html = new_html
 
     # v7.6: consistency 단어 3회 초과 시 추가 치환
@@ -516,15 +944,20 @@ def _fix_b1_og_desc(html: str, title: str, ask_ai_fn) -> tuple[str, str]:
     if not new_desc or len(new_desc) < 60:
         return html, ""
 
+    import html as _htmllib
+    desc_esc = _htmllib.escape(new_desc, quote=True)
+
+    # og:description — 태그 전체 교체 (content 내 apostrophe 오작동 방지)
+    _new_tag = f'<meta property="og:description" content="{desc_esc}"/>'
     html = re.sub(
-        r'(<meta[^>]+property="og:description"[^>]+content=")[^"]*(")',
-        lambda m: m.group(1) + new_desc + m.group(2),
-        html, flags=re.I,
+        r'<meta[^>]*property=["\']og:description["\'][^/]*/?>',
+        _new_tag, html, flags=re.I
     )
+    # name="description" 도 동일 방식
+    _new_name_tag = f'<meta name="description" content="{desc_esc}"/>'
     html = re.sub(
-        r'(<meta[^>]+name="description"[^>]+content=")[^"]*(")',
-        lambda m: m.group(1) + new_desc + m.group(2),
-        html, flags=re.I,
+        r'<meta[^>]*name=["\']description["\'][^/]*/?>',
+        _new_name_tag, html, flags=re.I
     )
     return html, new_desc
 
@@ -650,6 +1083,143 @@ def _fix_c1_hook(html: str, title: str, ask_ai_fn) -> tuple[str, str]:
     return html, hook_text
 
 
+def _check_and_fix_metadata(html: str, blogger_title: str) -> tuple[str, list, list]:
+    """
+    v8.0 메타데이터 일관성 체크 + 자동수정
+    체크 항목:
+      1. OG Title = H1 = JSON-LD headline 일치
+      2. OG Description = JSON-LD Description = JS desc 일치 (apostrophe-safe)
+      3. Complete 흔적 없음 (H1/OG title/JSON-LD)
+      4. Dosage Guide 흔적 없음
+      5. Alt 텍스트 이상 패턴
+      6. 문장 시작 소문자 (<p> 또는 " 직후)
+      7. 치환 사고 흔적 (이중 단어, 합쳐진 문장)
+    Returns: (fixed_html, ok_list, warn_list)
+    """
+    ok   = []
+    warn = []
+    fixed = []
+
+    # ── 헬퍼 ────────────────────────────────────────────────────
+    def get(pattern, flags=re.I): return re.search(pattern, html, flags)
+
+    # ── 1. 제목 3곳 일치 확인 ────────────────────────────────────
+    h1_m    = get(r'<h1[^>]*>(.*?)</h1>', re.I|re.S)
+    ogt_m   = get(r'property=["\']og:title["\'][^>]*content="([^"]+)"')
+    jld_m   = get(r'"headline"\s*:\s*"([^"]+)"')
+    h1      = re.sub(r'<[^>]+>','',h1_m.group(1)).strip() if h1_m else ''
+    og_t    = ogt_m.group(1).strip() if ogt_m else ''
+    jld_hl  = jld_m.group(1).strip() if jld_m else ''
+
+    title_ok = (h1 == og_t == jld_hl == blogger_title)
+    if title_ok:
+        ok.append("✅ OG Title = H1 = JSON-LD headline 일치")
+    else:
+        warn.append(f"❌ 제목 불일치\n     Blogger : {blogger_title[:60]}\n     H1      : {h1[:60]}\n     OG title: {og_t[:60]}\n     JSON-LD : {jld_hl[:60]}")
+        # 자동 수정: 전부 blogger_title로 통일
+        html = re.sub(r'(<h1[^>]*>)[^<]*(</h1>)',
+                      lambda m: m.group(1)+blogger_title+m.group(2), html, flags=re.I)
+        for pat in [r'(property=["\']og:title["\'][^>]*content=")[^"]+(")',
+                    r'(content=")[^"]+("[^>]*property=["\']og:title["\'])'  ]:
+            html = re.sub(pat, lambda m: m.group(1)+blogger_title+m.group(2), html, flags=re.I)
+        html = re.sub(r'("headline"\s*:\s*")[^"]+(")',
+                      lambda m: m.group(1)+blogger_title+m.group(2), html)
+        fixed.append(f"제목 4곳 → '{blogger_title[:50]}'")
+
+    # ── 2. Description 3곳 일치 + apostrophe-safe ─────────────────
+    ogd_m  = get(r'property=["\']og:description["\'][^>]*content="([^"]+)"')
+    jldd_m = get(r'"description"\s*:\s*"([^"]+)"')
+    jsd_m  = get(r'var\s+desc\s*=\s*"([^"]+)"')
+    og_d   = ogd_m.group(1)  if ogd_m  else ''
+    jld_d  = jldd_m.group(1) if jldd_m else ''
+    js_d   = jsd_m.group(1)  if jsd_m  else ''
+
+    desc_ok = (og_d == jld_d == js_d) and og_d
+    # 합쳐진 문장 감지: description에 두 버전이 붙어있는 패턴
+    desc_merged = len(og_d) > 200 or (og_d and og_d.count('. ') > 3)
+    if desc_ok and not desc_merged:
+        ok.append(f"✅ OG/JSON-LD/JS Description 일치 ({len(og_d)}자)")
+    else:
+        if desc_merged:
+            warn.append(f"❌ Description 합쳐짐 감지 ({len(og_d)}자) — 수동 확인 필요:\n     {og_d[:120]}")
+        else:
+            warn.append(f"❌ Description 3곳 불일치\n     OG    : {og_d[:80]}\n     JSON-LD: {jld_d[:80]}\n     JS    : {js_d[:80]}")
+            # 자동 수정: OG → JSON-LD, JS
+            if og_d:
+                html = re.sub(r'("description"\s*:\s*")[^"]+(")',
+                              lambda m: m.group(1)+og_d+m.group(2), html)
+                html = re.sub(r'var\s+desc\s*=\s*"[^"]*(?:\'[^"]*)*";',
+                              f'var desc = "{og_d}";', html)
+                fixed.append("JSON-LD desc + JS var desc → OG desc로 동기화")
+
+    # ── 3. Complete 흔적 ──────────────────────────────────────────
+    complete_hits = re.findall(r'\bComplete\b(?!\s+Guide\s+(?:for|to|on)|\s+(?:list|set|pack))', h1+og_t+jld_hl, re.I)
+    if complete_hits:
+        warn.append(f"❌ 제목에 'Complete' 흔적: {complete_hits}")
+    else:
+        ok.append("✅ Complete 흔적 없음")
+
+    # ── 4. Dosage Guide 흔적 ─────────────────────────────────────
+    dosage_hits = re.findall(r'Dosage\s+Guide|How\s+Much\s+Do\s+You\s+Need', h1+og_t+jld_hl, re.I)
+    if dosage_hits:
+        warn.append(f"❌ 'Dosage Guide' 흔적: {dosage_hits}")
+    else:
+        ok.append("✅ Dosage Guide 흔적 없음")
+
+    # ── 5. Alt 텍스트 이상 패턴 ──────────────────────────────────
+    alts = re.findall(r'alt="([^"]*)"', html, re.I)
+    bad_alts = [a for a in alts if re.search(
+        r'\bcomplete\b|\band complete\b|automation|webdriver|documentation|^[\w-]+$',
+        a, re.I
+    )]
+    if bad_alts:
+        warn.append(f"❌ 이상한 Alt 텍스트: {bad_alts[:3]}")
+    else:
+        ok.append(f"✅ Alt 텍스트 정상 ({len(alts)}개)")
+
+    # ── 6. 문장 시작 소문자 ──────────────────────────────────────
+    p_starts = re.findall(r'<p[^>]*>([a-z][^<]{0,30})', html)
+    q_starts = re.findall(r'"([a-z][^"]{0,20})', html)  # 따옴표 뒤 소문자
+    bad_caps = [s for s in p_starts if s[0].islower() and len(s) > 3][:5]
+    if bad_caps:
+        warn.append(f"❌ 문장 시작 소문자 {len(bad_caps)}개: {bad_caps}")
+        # 자동 수정: <p> 태그 직후 소문자 → 대문자
+        html = re.sub(r'(<p[^>]*>)([a-z])',
+                      lambda m: m.group(1)+m.group(2).upper(), html)
+        fixed.append(f"<p> 시작 소문자 자동 대문자화")
+    else:
+        ok.append("✅ 문장 시작 대소문자 정상")
+
+    # ── 7. 치환 사고 흔적 ────────────────────────────────────────
+    subs_accidents = []
+    # 이중 단어
+    for noun in ['meal','food','morning','morning']:
+        if re.search(rf'\b{noun}\b[^.!?]{{0,30}}\b{noun}\b', html, re.I):
+            subs_accidents.append(f"'{noun}' 이중 등장")
+    # 합쳐진 description 흔적
+    if re.search(r"going\.'d been|enough\.'d been|notice\.'d been", html):
+        subs_accidents.append("Description 합쳐짐 흔적")
+    # "in the mornings in the morning"
+    if re.search(r'in the mornings? in the mornings?', html, re.I):
+        subs_accidents.append("'in the mornings' 중복")
+        html = re.sub(r'in the mornings? in the mornings?', 'in the mornings', html, flags=re.I)
+        fixed.append("'in the mornings in the morning' 중복 제거")
+
+    if subs_accidents:
+        warn.append(f"❌ 치환 사고 흔적: {subs_accidents}")
+    else:
+        ok.append("✅ 치환 사고 흔적 없음")
+
+    # ── 로그 출력 ─────────────────────────────────────────────────
+    log.info("  [MetaCheck] ── 메타데이터 일관성 검사 ──")
+    for o in ok:   log.info(f"  [MetaCheck] {o}")
+    for w in warn: log.warning(f"  [MetaCheck] {w}")
+    if fixed:
+        for f_ in fixed: log.info(f"  [MetaCheck] 자동수정: {f_}")
+
+    return html, ok, warn
+
+
 def _fix_d4_html_bugs(html: str) -> tuple[str, list]:
     """반복되는 HTML 구조 버그 자동 수정:
     1. &amp;#숫자; 이중인코딩 → 디코딩
@@ -701,6 +1271,54 @@ def _fix_d4_html_bugs(html: str) -> tuple[str, list]:
     if n_hr:
         html = new_html_hr
         fixed.append(f"이중 <hr> 태그 제거 ({n_hr}곳)")
+
+    # 6-b. <p>/<li>/<dd> 시작 소문자 영양소명 자동 대문자
+    _nutrient_caps = ["zinc","magnesium","iron","calcium","selenium","copper",
+                      "chromium","iodine","boron","manganese","molybdenum",
+                      "hmb","nmn","same","coq10","pqq","nad"]
+    for nt in _nutrient_caps:
+        new_html_nt, n_nt = re.subn(
+            rf'(<(?:p|li|dd|dt)>){nt}\b',
+            lambda m, cap=nt: m.group(1) + cap.upper(),
+            html, flags=re.I
+        )
+        if n_nt:
+            html = new_html_nt
+            fixed.append(f"<p> 시작 소문자 {nt} → 대문자 ({n_nt}건)")
+
+    # 6-a. JS var desc → og:description 동기화 (apostrophe-safe 세미콜론 기준)
+    og_m = re.search(r'og:description[^>]+content="([^"]+)"', html, re.I)
+    if og_m:
+        og_desc = og_m.group(1)
+        has_var_desc = bool(re.search(r'var\s+desc\s*=', html, re.I))
+        if not has_var_desc:
+            # var desc 없으면 <h1> 앞에 자동 주입
+            _script = f'<script type="text/javascript">\nvar desc = "{og_desc}";\n</script>\n'
+            if '<h1' in html:
+                html = html.replace('<h1', _script + '<h1', 1)
+            fixed.append("JS var desc 없음 → <h1> 앞에 자동 주입")
+        else:
+            # var desc = "..."; 전체를 세미콜론까지 교체
+            new_html_vd, n_vd = re.subn(
+                r'var\s+desc\s*=\s*"[^;]+"(?=\s*;)',
+                f'var desc = "{og_desc}"',
+                html, flags=re.I
+            )
+            if n_vd and new_html_vd != html:
+                html = new_html_vd
+                fixed.append(f"JS var desc → og:description 동기화 ({n_vd}건)")
+
+    # 6-b. JSON-LD "description" → og:description 동기화 (v8.0)
+    if og_m:
+        og_desc = og_m.group(1)
+        new_html_jld, n_jld = re.subn(
+            r'("description"\s*:\s*")[^"]+(")',
+            rf'\g<1>{og_desc}\2',
+            html
+        )
+        if n_jld and new_html_jld != html:
+            html = new_html_jld
+            fixed.append(f"JSON-LD description → og:description 동기화 ({n_jld}건)")
 
     # 6. <script> 내 한국어 포함 JS 주석 제거 (영어 주석만 유지)
     def _strip_korean_js_comments(m):
@@ -1013,7 +1631,7 @@ def _generate_labels(title: str) -> list:
 
 
 def _fix_d2_internal_links(html: str, title: str, links_db_path: Path) -> tuple[str, list]:
-    """관련 내부 링크 2개 주입"""
+    """시너지 기반 내부 링크 2-4개 주입"""
     if not links_db_path or not links_db_path.exists():
         return html, []
     try:
@@ -1021,30 +1639,99 @@ def _fix_d2_internal_links(html: str, title: str, links_db_path: Path) -> tuple[
     except Exception:
         return html, []
 
-    stop = {"and","the","a","an","of","for","to","in","is","are","with",
-            "how","when","what","why","does","do","my","i","me","its","vs","it"}
-    kws = [w.lower() for w in re.findall(r'\b[A-Za-z]{4,}\b', title) if w.lower() not in stop]
+    # ── 시너지 맵: 영양소 → 관련 영양소 목록 ────────────────────────────
+    SYNERGY_MAP: dict[str, list[str]] = {
+        "copper":     ["zinc", "iron", "vitamin c", "selenium"],
+        "zinc":       ["copper", "vitamin c", "selenium", "magnesium"],
+        "iron":       ["vitamin c", "copper", "b12", "folate"],
+        "magnesium":  ["vitamin d", "zinc", "b6", "calcium"],
+        "vitamin d":  ["magnesium", "vitamin k2", "zinc", "calcium"],
+        "vitamin k2": ["vitamin d", "magnesium", "calcium"],
+        "vitamin c":  ["iron", "zinc", "collagen", "copper"],
+        "selenium":   ["zinc", "vitamin e", "iodine", "copper"],
+        "vitamin b12":["folate", "b6", "iron", "same"],
+        "b12":        ["folate", "b6", "iron", "same"],
+        "nmn":        ["resveratrol", "coq10", "nad"],
+        "melatonin":  ["magnesium", "5-htp", "b6"],
+        "same":       ["b12", "folate", "magnesium"],
+        "berberine":  ["chromium", "magnesium", "zinc"],
+        "probiotics": ["vitamin d", "zinc", "magnesium"],
+        "hmb":        ["creatine", "vitamin d", "protein"],
+        "creatine":   ["hmb", "magnesium", "vitamin d"],
+        "citrulline": ["arginine", "beet", "magnesium"],
+        "taurine":    ["magnesium", "b6", "zinc"],
+        "glutathione":["vitamin c", "selenium", "nac"],
+        "niacin":     ["b12", "b6", "folate"],
+        "collagen":   ["vitamin c", "zinc", "silicon"],
+        "coq10":      ["nmn", "vitamin e", "magnesium"],
+        "omega":      ["vitamin d", "vitamin e", "magnesium"],
+        "ashwagandha":["magnesium", "zinc", "b6"],
+        "vitamin e":  ["selenium", "coq10", "vitamin c"],
+    }
 
+    # ── 포스팅 제목에서 영양소명 추출 ────────────────────────────────────
+    title_lower = title.lower()
+    matched_nutrient = None
+    for nutrient in SYNERGY_MAP:
+        if nutrient in title_lower:
+            matched_nutrient = nutrient
+            break
+
+    # ── 1순위: 시너지 파트너 포스팅 ─────────────────────────────────────
     candidates = []
-    for lnk in links:
-        lnk_title = lnk.get("title", "").lower()
-        lnk_url   = lnk.get("url", "")
-        if not lnk_url or title[:30].lower() in lnk_title:
-            continue
-        score = sum(1 for k in kws if k in lnk_title)
-        if score > 0:
-            candidates.append((score, lnk_url, lnk.get("title", "")))
+    if matched_nutrient:
+        partners = SYNERGY_MAP[matched_nutrient]
+        for lnk in links:
+            lnk_title = lnk.get("title", "").lower()
+            lnk_url   = lnk.get("url", "")
+            if not lnk_url or matched_nutrient in lnk_title:
+                continue  # 자기 자신 제외
+            # 파트너 영양소가 제목에 있으면 점수
+            synergy_score = sum(
+                (len(partners) - i)  # 앞에 나올수록 높은 점수
+                for i, p in enumerate(partners)
+                if p in lnk_title
+            )
+            if synergy_score > 0:
+                candidates.append((synergy_score, lnk_url, lnk.get("title", "")))
+
+    # ── 2순위: 제목 키워드 매칭 (시너지 매칭 부족 시 보충) ───────────────
+    if len(candidates) < 2:
+        stop = {"and","the","a","an","of","for","to","in","is","are","with",
+                "how","when","what","why","does","do","my","i","me","its","vs",
+                "it","took","taking","started","after","almost","quit","work",
+                "until","week","month","every","day","what","didn","here","wrong"}
+        kws = [w.lower() for w in re.findall(r'\b[A-Za-z]{4,}\b', title)
+               if w.lower() not in stop]
+        existing_urls = {url for _, url, _ in candidates}
+        for lnk in links:
+            lnk_title = lnk.get("title", "").lower()
+            lnk_url   = lnk.get("url", "")
+            if not lnk_url or lnk_url in existing_urls:
+                continue
+            if matched_nutrient and matched_nutrient in lnk_title:
+                continue  # 같은 영양소 자기 자신류 제외
+            kw_score = sum(1 for k in kws if k in lnk_title)
+            if kw_score > 0:
+                candidates.append((kw_score * 0.5, lnk_url, lnk.get("title", "")))
 
     candidates.sort(reverse=True)
-    chosen = candidates[:2]
+    chosen = candidates[:4]
+
+    # ── 3순위: 그래도 없으면 최신 2개 ───────────────────────────────────
     if not chosen:
         chosen = [(0, lnk.get("url", ""), lnk.get("title", ""))
-                  for lnk in links[-2:] if lnk.get("url")]
-
+                  for lnk in reversed(links[-4:]) if lnk.get("url")
+                  and (matched_nutrient or "") not in lnk.get("title","").lower()][:2]
     if not chosen:
         return html, []
 
-    link_parts = [f'<a href="{url}">{t[:50]}</a>' for _, url, t in chosen if url]
+    log.info(
+        f"  [D2] 시너지링크 {'매칭(' + matched_nutrient + ')' if matched_nutrient else '키워드매칭'}: "
+        f"{[t[:30] for _,_,t in chosen]}"
+    )
+
+    link_parts = [f'<a href="{url}">{t[:55]}</a>' for _, url, t in chosen if url]
     link_block = (
         '<p style="font-size:0.9em;color:#555;margin-top:20px;">'
         'Related reading: ' + " | ".join(link_parts) + '</p>'
@@ -1055,7 +1742,7 @@ def _fix_d2_internal_links(html: str, title: str, links_db_path: Path) -> tuple[
     else:
         html += "\n" + link_block
 
-    injected = [t[:50] for _, _, t in chosen]
+    injected = [t[:55] for _, _, t in chosen]
     return html, injected
 
 
@@ -1172,7 +1859,9 @@ def _promote_to_agent_lessons(meta_dir: Path, issue: dict, count: int):
 
     agent_key = "03_Writer_Gardener"
     agent_lessons = lessons.setdefault(agent_key, [])
-    lesson_text = f"[Claude발견-{count}회반복] {issue['description'][:120]}"
+    # lesson_for_llm 필드 우선 사용 (v8.0 — 더 구체적인 로컬 LLM 교육 레슨)
+    llm_lesson  = issue.get("lesson_for_llm", "")
+    lesson_text = f"[Claude발견-{count}회반복] {llm_lesson or issue['description'][:120]}"
     existing = next((e for e in agent_lessons if e.get("type") == issue["type"]), None)
     if existing:
         existing["count"] = count
@@ -1191,6 +1880,110 @@ def _promote_to_agent_lessons(meta_dir: Path, issue: dict, count: int):
         })
     lessons_path.write_text(json.dumps(lessons, ensure_ascii=False, indent=2), encoding="utf-8")
     log.info(f"  [Learn] agent_lessons (Writer) 고우선순위 등록: {issue['type']} ({count}회)")
+
+
+def _update_lesson_lifecycle(meta_dir: Path, found_issue_types: set, title: str):
+    """
+    Lesson Lifecycle (Decay) 관리.
+
+    PPV 통과한 이슈 타입은 clean_posts += 1
+    clean_posts >= 20 → active=false (휴면)
+    재발 시 → clean_posts=0, active=true (부활)
+
+    적용 대상: claude_discoveries.json + agent_lessons.json
+    """
+    DORMANT_THRESHOLD = 20  # 연속 통과 횟수 기준
+
+    # ── claude_discoveries.json ──────────────────────────────────
+    discoveries = _load_discoveries(meta_dir)
+    resurrected = []
+    dormant     = []
+
+    for d in discoveries:
+        itype = d.get("type", "")
+        if not d.get("promoted_to_rule") and not d.get("promoted_to_agent"):
+            continue  # 아직 승격 안 된 건 lifecycle 대상 아님
+
+        if itype in found_issue_types:
+            # 재발 → 부활
+            was_dormant = not d.get("active", True)
+            d["clean_posts"] = 0
+            d["active"]      = True
+            d["count"]       = d.get("count", 1) + 1
+            if was_dormant:
+                resurrected.append(itype)
+                log.info(f"  [Lifecycle] 🔄 부활: '{itype}' (clean_posts 리셋, count={d['count']})")
+        else:
+            # 통과 → clean_posts 증가
+            d["clean_posts"] = d.get("clean_posts", 0) + 1
+            if d["clean_posts"] >= DORMANT_THRESHOLD and d.get("active", True):
+                d["active"] = False
+                dormant.append(itype)
+                log.info(f"  [Lifecycle] 💤 휴면: '{itype}' ({d['clean_posts']}회 연속 미발생)")
+
+    _save_discoveries(meta_dir, discoveries)
+
+    # ── agent_lessons.json ───────────────────────────────────────
+    lessons_path = meta_dir / "agent_lessons.json"
+    if not lessons_path.exists():
+        return
+    try:
+        lessons = json.loads(lessons_path.read_text(encoding="utf-8"))
+        changed = False
+        for agent_key, entries in lessons.items():
+            if not isinstance(entries, list):
+                continue
+            for entry in entries:
+                itype = entry.get("type", "")
+                if not itype:
+                    continue
+                if itype in found_issue_types:
+                    # 재발 → 부활
+                    entry["clean_posts"] = 0
+                    entry["active"]      = True
+                    changed = True
+                else:
+                    entry["clean_posts"] = entry.get("clean_posts", 0) + 1
+                    if entry["clean_posts"] >= DORMANT_THRESHOLD and entry.get("active", True):
+                        entry["active"] = False
+                        changed = True
+        if changed:
+            lessons_path.write_text(json.dumps(lessons, ensure_ascii=False, indent=2), encoding="utf-8")
+    except Exception as e:
+        log.warning(f"  [Lifecycle] agent_lessons 업데이트 실패: {e}")
+
+    # ── core_lessons.json ────────────────────────────────────────
+    core_path = meta_dir / "core_lessons.json"
+    if not core_path.exists():
+        return
+    try:
+        core = json.loads(core_path.read_text(encoding="utf-8"))
+        changed = False
+        for agent_key, entries in core.items():
+            if not isinstance(entries, list):
+                continue
+            for entry in entries:
+                itype = entry.get("type", "") or entry.get("issue", "")
+                if not itype:
+                    continue
+                if itype in found_issue_types:
+                    entry["clean_posts"] = 0
+                    entry["active"]      = True
+                    changed = True
+                else:
+                    entry["clean_posts"] = entry.get("clean_posts", 0) + 1
+                    if entry["clean_posts"] >= DORMANT_THRESHOLD and entry.get("active", True):
+                        entry["active"] = False
+                        changed = True
+        if changed:
+            core_path.write_text(json.dumps(core, ensure_ascii=False, indent=2), encoding="utf-8")
+    except Exception as e:
+        log.warning(f"  [Lifecycle] core_lessons 업데이트 실패: {e}")
+
+    if dormant:
+        log.info(f"  [Lifecycle] 💤 이번 글 휴면 처리: {dormant}")
+    if resurrected:
+        log.info(f"  [Lifecycle] 🔄 이번 글 부활: {resurrected}")
 
 
 def _promote_to_quality_check(issue: dict):
@@ -1400,23 +2193,37 @@ def _promote_good_example_to_lessons(meta_dir: Path, entry: dict):
 
 # ── Claude 스마트 스캔 ────────────────────────────────────────────────────────
 
-_SMART_SCAN_PROMPT = """You are a technical blog post auditor. Review the HTML below and identify ALL bugs and issues — including ones I haven't anticipated.
+_SMART_SCAN_PROMPT = """You are a blog post auditor AND teacher for a local LLM. Your job has two parts:
+1. Find ALL bugs (technical and semantic)
+2. Generate lessons that teach the local LLM to avoid the same mistakes
 
-Check for:
-1. HTML rendering bugs (entity literals like &#8594; showing as text, broken tags, unclosed elements)
+The post title tells you the supplement topic. Everything in this post should be about that supplement as a DIETARY SUPPLEMENT — nothing else.
+
+=== PART 1: BUG DETECTION ===
+
+Check for ALL of the following:
+
+TECHNICAL BUGS:
+1. HTML rendering bugs (entity literals showing as text, broken tags)
 2. Duplicate text or sections appearing twice
-3. Placeholder text left in ([UPLOAD_...], {{nutrient}}, template variables)
-4. "Complete Guide" or "Complete" remaining in H1 headings
-5. Korean characters in og:description or meta tags (should be English only)
-6. DOCTYPE / <html> / <head> wrapper accidentally included in post body
-7. CSS rendering bugs (content: property showing as literal text)
-8. Broken internal links or image src issues
-9. AI-pattern phrases: game-changer, delve into, it's worth noting, significant advancement, warzone, battlefield, hamster wheel, in conclusion, bioavailable, protocol (in H2 headings)
-10. Repeated H2 patterns used across multiple posts: "What Actually Changed", "My Personal Protocol:", "What Most People Get Wrong"
-11. Content contradiction: a section recommends something that a later section explicitly says to avoid (e.g., coffee good → coffee bad)
-12. Image alt text that looks auto-generated from H2 slugs (all lowercase, hyphens, reads like a URL slug)
-13. Double consecutive <hr> tags
-14. Any other bug or quality issue you detect
+3. Placeholder text left in ([UPLOAD_...], template variables)
+4. "Complete Guide" or "Complete:" remaining in H1 or body text
+5. Korean characters in og:description or meta tags
+6. DOCTYPE / <html> / <head> accidentally included in post body
+7. CSS rendering bugs (# missing from color codes)
+8. Broken internal links or missing image src
+9. Double consecutive <hr> tags
+
+SEMANTIC BUGS (most important — these are missed by rule-based checks):
+10. TOPIC INFILTRATION: Any content that is NOT about the supplement in the title.
+    - Example: A selenium supplement post mentioning "automation", "WebDriver", "documentation", "testing framework", "test suite" → CRITICAL bug. The LLM confused selenium (supplement) with Selenium (web automation tool).
+    - Check every H2 section, every bullet list, every callout box. If anything doesn't belong in a supplement post, flag it.
+11. TIMELINE CONTRADICTION: The post mentions "Week X" as the turning point in two different sections but uses different numbers (e.g., "Week three" in one place and "Week four" in another) → HIGH bug.
+12. OVER-IMPROVEMENTS: More than 3 different body systems/symptoms all described as "improved" (energy + mood + sleep + nails + hair + skin + focus + anxiety + headaches all getting better) → HIGH bug. Real people notice 2-3 things max.
+13. TITLE vs BODY MISMATCH: Title is experience-style ("I Almost Quit", "What Changed", "The Mistake I Made") but body contains 3+ H2 sections titled "Benefits", "Dosage", "Absorption", "How It Works", "Mechanism" → HIGH bug.
+14. SENTENCE-START LOWERCASE: Any <p> tag or content after a quote mark (") that starts with a lowercase letter (that's, maybe, it, etc.) → MEDIUM bug.
+15. ARTICLE ERROR: "a instant", "a improvement", "a answer" — vowel-starting words after "a" → MEDIUM bug.
+16. AI-PATTERN PHRASES: game-changer, delve into, significant advancement, warzone, consistency is key, in conclusion → MEDIUM bug.
 
 For each issue found, respond in this EXACT JSON format (array):
 [
@@ -1424,16 +2231,17 @@ For each issue found, respond in this EXACT JSON format (array):
     "type": "short_type_code",
     "severity": "critical|high|medium|low",
     "description": "exact description of the bug",
-    "location": "brief location in HTML (e.g. H1, TOC, og:description)",
+    "location": "brief location in HTML (e.g. H1, section 3, bullet list)",
     "can_auto_fix": true/false,
-    "fix_instruction": "exact HTML change needed, or null if manual"
+    "fix_instruction": "exact fix needed, or null if needs rewrite",
+    "lesson_for_llm": "one sentence: what the local LLM must do differently next time to avoid this"
   }
 ]
 
 If NO bugs found, return: []
 
 POST TITLE: {title}
-POST HTML (first 8000 chars):
+POST HTML:
 {html_preview}"""
 
 
@@ -1445,8 +2253,12 @@ def claude_smart_scan(html: str, title: str, ask_ai_fn, meta_dir: Path = None) -
     if not ask_ai_fn:
         return []
 
-    html_preview = html
-    # .format() 대신 replace 사용 — 프롬프트 내 JSON 예시의 { } 가 format 변수로 오해석되는 버그 방지
+    # 전체 HTML 전달 (앞부분 + 뒷부분 — 중간 생략 방지)
+    # Claude 컨텍스트 한계 대비: 앞 12000 + 뒤 6000 (총 18000자 커버)
+    if len(html) > 20000:
+        html_preview = html[:12000] + "\n\n[...MIDDLE SECTION OMITTED...]\n\n" + html[-6000:]
+    else:
+        html_preview = html
     prompt = _SMART_SCAN_PROMPT.replace("{title}", title).replace("{html_preview}", html_preview)
 
     try:
@@ -1596,6 +2408,200 @@ def _save_verification_log(meta_dir: Path, entry: dict):
     log_path.write_text(json.dumps(records, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+# ── Teacher 전용 Sonnet 호출 ──────────────────────────────────────────────────
+
+def _ask_sonnet(prompt: str, system: str = "") -> str:
+    """Claude-Teacher (T1/T2) 전용 — Sonnet 4.6 직접 호출."""
+    try:
+        import anthropic, os
+        key = os.environ.get("ANTHROPIC_API_KEY", "")
+        if not key:
+            log.warning("  [Teacher-Sonnet] ANTHROPIC_API_KEY 없음 — 스킵")
+            return ""
+        client = anthropic.Anthropic(api_key=key)
+        msg = client.messages.create(
+            model="claude-sonnet-4-6",
+            max_tokens=1024,
+            system=system or "You are a senior editorial analyst.",
+            messages=[{"role": "user", "content": prompt}],
+        )
+        return msg.content[0].text.strip() if msg.content else ""
+    except Exception as _e:
+        log.warning(f"  [Teacher-Sonnet] 호출 실패: {_e}")
+        return ""
+
+
+# ── 외과적 섹션 분리 헬퍼 ────────────────────────────────────────────────────
+
+def _strip_css_js(html: str) -> str:
+    """CSS/JS/주석 제거 — Claude에 불필요한 코드 삭제"""
+    html = re.sub(r'(?s)<style[^>]*>.*?</style>', '', html)
+    html = re.sub(r'(?s)<script[^>]*>.*?</script>', '', html)
+    html = re.sub(r'<!--.*?-->', '', html, flags=re.DOTALL)
+    return html
+
+
+# 카테고리 → 추출 그룹 매핑
+_CAT_GROUP = {
+    "A1": "HEAD", "A2": "HEAD", "META": "HEAD",
+    "B1": "HEAD", "B2": "IMAGES",
+    "C1": "BODY", "C2": "BODY", "C3": "BODY",
+    "C4": "BODY", "C5": "BODY", "C6": "BODY",
+    "D1": "STRUCT", "D2": "STRUCT", "D3": "STRUCT",
+    "E1": "STRUCT", "F1": "STRUCT", "F2": "STRUCT",
+}
+
+
+def _extract_surgical_parts(html: str, failing_cats: dict) -> dict:
+    """
+    실패 카테고리별로 최소 컨텍스트만 추출.
+    Returns: {"PART_ID": html_snippet, ...}
+    """
+    parts = {}
+    groups = {_CAT_GROUP.get(c, "BODY") for c in failing_cats}
+    stripped = _strip_css_js(html)
+
+    # ── HEAD 그룹 (A, B1, META) ──────────────────────────────────────────────
+    if "HEAD" in groups:
+        head_m = re.search(r'(?s)<head[^>]*>(.*?)</head>', html)
+        if head_m:
+            parts["HEAD"] = f"<head>{head_m.group(1)}</head>"
+
+    # ── IMAGES 그룹 (B2) ─────────────────────────────────────────────────────
+    if "IMAGES" in groups:
+        imgs = re.findall(r'<img[^>]+>', html, re.I)
+        if imgs:
+            parts["IMAGES"] = "\n".join(imgs[:12])
+
+    # ── BODY 그룹 (C 카테고리) ────────────────────────────────────────────────
+    if "BODY" in groups:
+        body_m = re.search(r'(?s)<body[^>]*>(.*?)</body>', stripped)
+        body   = body_m.group(1) if body_m else stripped
+
+        if "C4" in failing_cats:
+            # AI 패턴 문장만 추출 (전체 본문 불필요)
+            _AI_KW = ["real talk", "game changer", "bioavailable", "significant advancement",
+                      "delve into", "it's worth noting", "consistency is everything",
+                      "miracle", "aging slower", "new level", "hamster wheel", "warzone"]
+            raw_text = re.sub(r'<[^>]+>', ' ', body)
+            sents = re.split(r'(?<=[.!?])\s+', raw_text)
+            ai_sents = [s.strip() for s in sents
+                        if any(k in s.lower() for k in _AI_KW)][:10]
+            parts["C4_SENTENCES"] = "\n".join(ai_sents) if ai_sents else ""
+
+        if "C6" in failing_cats:
+            _JARGON = ["chylomicron", "mechanistically", "steady-state", "carboxylation",
+                       "osteocalcin", "lymphatic vessel", "plasma half-life", "bioavailability"]
+            raw_text = re.sub(r'<[^>]+>', ' ', body)
+            sents = re.split(r'(?<=[.!?])\s+', raw_text)
+            j_sents = [s.strip() for s in sents
+                       if any(j in s.lower() for j in _JARGON)][:8]
+            parts["C6_SENTENCES"] = "\n".join(j_sents) if j_sents else ""
+
+        # C1/C2/C3/C5 → H2 섹션 단위로 전송
+        body_cats = [c for c in failing_cats if c in ("C1","C2","C3","C5")]
+        if body_cats:
+            # CSS/JS 제거 후 H2 단위 분리
+            secs = re.split(r'(?=<h2[\s>])', body)
+            # 각 섹션에 SECTION_N 마커 부여
+            for idx, sec in enumerate(secs):
+                if sec.strip():
+                    parts[f"SECTION_{idx}"] = sec
+
+    # ── STRUCT 그룹 (D, E, F 카테고리) ──────────────────────────────────────
+    if "STRUCT" in groups:
+        if "D1" in failing_cats:
+            ref_m = re.search(r'(?s)(?:PMID|pubmed|references?).*?(?=<h2|</article|</section|$)',
+                              stripped, re.I)
+            if ref_m:
+                parts["D1_REFS"] = ref_m.group(0)[:2000]
+
+        if "D2" in failing_cats:
+            lks = re.findall(r'<a[^>]+href="[^"]*nutristacklab[^"]*"[^>]*>[^<]+</a>', html)
+            if lks:
+                parts["D2_LINKS"] = "\n".join(lks[:10])
+
+        if "D3" in failing_cats:
+            disc_m = re.search(
+                r'(?s)<div[^>]*(?:disclaimer|takeaway|disclosure)[^>]*>.*?</div>', html, re.I)
+            if disc_m:
+                parts["D3_BLOCK"] = disc_m.group(0)[:2000]
+
+        if "E1" in failing_cats:
+            e1_m = re.search(r'(?s)<div[^>]*medical-disclaimer[^>]*>.*?</div>', html, re.I)
+            if e1_m:
+                parts["E1_YMYL"] = e1_m.group(0)[:1000]
+
+        if "F1" in failing_cats:
+            faq_m = re.search(r'(?s)(<h2[^>]*>.*?FAQ.*?</h2>.*?)(?=<h2|</body|$)', html, re.I)
+            if faq_m:
+                parts["F1_FAQ"] = faq_m.group(0)[:4000]
+
+        if "F2" in failing_cats:
+            rel_m = re.search(r'(?s)<p[^>]*>Related reading:.*?</p>', html, re.I)
+            if rel_m:
+                parts["F2_RELATED"] = rel_m.group(0)
+
+    # 빈 값 제거
+    return {k: v for k, v in parts.items() if v and v.strip()}
+
+
+def _splice_surgical_response(original_html: str, response: str,
+                               extracted: dict) -> tuple[str, list]:
+    """
+    Claude 응답(마커별 수정본)을 원본 HTML에 splice back.
+    Returns (new_html, list_of_applied_part_ids)
+    """
+    result  = original_html
+    applied = []
+
+    for part_id, orig_snippet in extracted.items():
+        pattern = rf'\[{re.escape(part_id)}\](.*?)\[/{re.escape(part_id)}\]'
+        m = re.search(pattern, response, re.DOTALL)
+        if not m:
+            continue
+        new_snippet = m.group(1).strip()
+        if not new_snippet or new_snippet == orig_snippet.strip():
+            continue
+
+        # HEAD 교체 — 통째로 replace
+        if part_id == "HEAD":
+            result = re.sub(r'(?s)<head[^>]*>.*?</head>', new_snippet, result)
+            applied.append(part_id)
+            continue
+
+        # IMAGES — 각 img 태그 개별 교체
+        if part_id == "IMAGES":
+            orig_imgs = [l.strip() for l in orig_snippet.splitlines() if l.strip()]
+            new_imgs  = [l.strip() for l in new_snippet.splitlines()  if l.strip()]
+            for oi, ni in zip(orig_imgs, new_imgs):
+                if oi != ni and oi in result:
+                    result = result.replace(oi, ni, 1)
+            applied.append(part_id)
+            continue
+
+        # 문장 레벨 수정 (C4/C6) — 문장 단위 replace
+        if part_id in ("C4_SENTENCES", "C6_SENTENCES"):
+            orig_sents = [s.strip() for s in orig_snippet.splitlines() if s.strip()]
+            new_sents  = [s.strip() for s in new_snippet.splitlines()  if s.strip()]
+            changed = False
+            for os_, ns_ in zip(orig_sents, new_sents):
+                if os_ != ns_ and os_ in result:
+                    result = result.replace(os_, ns_, 1)
+                    changed = True
+            if changed:
+                applied.append(part_id)
+            continue
+
+        # SECTION / STRUCT — 원본 snippet 위치 찾아서 교체
+        orig_clean = orig_snippet.strip()
+        if orig_clean and orig_clean in result:
+            result = result.replace(orig_clean, new_snippet, 1)
+            applied.append(part_id)
+
+    return result, applied
+
+
 # ── 메인 검증 + 수정 함수 ─────────────────────────────────────────────────────
 
 def verify_and_patch(
@@ -1608,6 +2614,7 @@ def verify_and_patch(
     ask_ai_fn=None,
     meta_dir: Path = None,
     ask_ai_fn_claude=None,
+    topic_type: str = "",
 ) -> dict:
     """
     발행 직후 품질 검증 + 수술적 수정.
@@ -1678,6 +2685,9 @@ def verify_and_patch(
 
     failing = {cat: (s, n) for cat, (s, n) in all_scores.items() if s < 9}
 
+    # ── Editor 7룰 검사 (채점 직후, 수정 전에 실행) ─────────────────
+    _editor_issues = run_editor_checks(html, title, ask_ai_fn, topic_type=topic_type)
+
     # ── 2. 수술적 수정
     _fn2 = ask_ai_fn_claude or ask_ai_fn   # 재작성·2차 스캔용 (D3 등에서 사용)
     new_html      = html
@@ -1694,6 +2704,12 @@ def verify_and_patch(
             fixed.append({"cat": "D4", "label": "HTML 구조 버그", "score": 0,
                            "note": _fx, "detail": f"자동수정: {_fx}"})
             log.info(f"    [D4-auto] {_fx}")
+
+    # ── v8.0: 메타데이터 일관성 체크 + 자동수정 ─────────────────────
+    new_html, _meta_ok, _meta_warn = _check_and_fix_metadata(new_html, current_title)
+    for _mw in _meta_warn:
+        fixed.append({"cat": "META", "label": "메타데이터 불일치", "score": 0,
+                      "note": _mw[:120], "detail": _mw[:200]})
 
     # A1: Complete Guide 제거 + 나쁜 제목 패턴 자동 수정 (Worth Taking / Research Says 등)
     _a1_html, _a1_title = _fix_a1_complete_guide(new_html, title)
@@ -1998,7 +3014,505 @@ def verify_and_patch(
         except Exception as _se:
             log.warning(f"  [Claude-Scan] 스캔 오류 (무시): {_se}")
 
+    # ── 5-bis. PPV 개선 루프 (9.0 미만이면 Claude 직접 개선, 최대 5회) ──────────
+    # [Claude-Teacher] 발동 시점:
+    #   (T1) 점수 정체 2회 연속 → 근본 원인 분석
+    #   (T2) 5회 소진 후 미달 → AVOID 규칙 추출 → dynamic_rules 자동 추가
+    #   (T3) 9점 달성 → 성공 패턴 각인
+    # 에러 발동 시점:
+    #   (E1) Claude 호출 실패 → 에러 레슨 기록 + 텔레그램
+    #   (E2) Blogger 패치 실패 → 에러 레슨 기록 + 텔레그램
+    #   (E3) Claude 응답 없음 → 레슨 기록 (텔레그램 없음)
+    # ─────────────────────────────────────────────────────────────────────────────
+
+    _PPV_MAX_ROUNDS   = 5
+    _ppv_loop_total   = total
+    _ppv_loop_html    = new_html
+    _ppv_loop_title   = current_title
+    _ppv_rounds_done  = 0
+    _ppv_prev_total   = total          # 정체 감지용 이전 회차 점수
+    _ppv_stagnant_cnt = 0              # 연속 정체 횟수
+    # 평균값 초기화 (루프 미진입 시 참조 오류 방지)
+    _la_avg = _lb_avg = _lc_avg = _ld_avg = _le_avg = _lf_avg = 0.0
+    _l_all: dict = {}
+
+    def _ppv_send_tg(msg: str):
+        try:
+            import telegram_poster
+            telegram_poster.send_alert(msg)
+        except Exception:
+            pass
+
+    def _ppv_record_error(cat: str, note: str, score: int = 0):
+        if meta_dir:
+            _record_lesson(meta_dir, cat, note, title, score)
+            log.info(f"  [PPV-에러각인] [{cat}] {note[:80]}")
+
+    if _ppv_loop_total < 9.0 and _fn2:
+        log.info(
+            f"  [PPV-Loop] 시작: 현재 {_ppv_loop_total:.1f}/10 → 목표 9.0 "
+            f"(최대 {_PPV_MAX_ROUNDS}회)"
+        )
+        for _ppv_round in range(1, _PPV_MAX_ROUNDS + 1):
+
+            # 재채점
+            _la = score_A(_ppv_loop_title, _ppv_loop_html)
+            _lb = score_B(_ppv_loop_html)
+            _lc = score_C(_ppv_loop_html, _ppv_loop_title)
+            _ld = score_D(_ppv_loop_html)
+            _le = score_E(_ppv_loop_html, _ppv_loop_title)
+            _lf = score_F(_ppv_loop_html, _ppv_loop_title)
+            _l_all = {**_la, **_lb, **_lc, **_ld, **_le, **_lf}
+
+            _la_avg = sum(v[0] for v in _la.values()) / max(len(_la), 1)
+            _lb_avg = sum(v[0] for v in _lb.values()) / max(len(_lb), 1)
+            _lc_avg = sum(v[0] for v in _lc.values()) / max(len(_lc), 1)
+            _ld_avg = sum(v[0] for v in _ld.values()) / max(len(_ld), 1)
+            _le_avg = sum(v[0] for v in _le.values()) / max(len(_le), 1)
+            _lf_avg = sum(v[0] for v in _lf.values()) / max(len(_lf), 1)
+            _ppv_loop_total = (_la_avg + _lb_avg + _lc_avg + _ld_avg + _le_avg + _lf_avg) / 6
+            _ppv_rounds_done = _ppv_round
+
+            log.info(f"  [PPV-Loop {_ppv_round}] 재채점: {_ppv_loop_total:.1f}/10")
+
+            # ── (T3) 9점 달성 → 성공 각인 ────────────────────────────────────
+            if _ppv_loop_total >= 9.0:
+                log.info(f"  [PPV-Loop {_ppv_round}] 목표 달성! {_ppv_loop_total:.1f}/10")
+                new_html      = _ppv_loop_html
+                current_title = _ppv_loop_title
+                log.info(f"  [Claude-Teacher T3] 성공 패턴 각인 시작")
+                if meta_dir:
+                    try:
+                        _save_good_example(
+                            meta_dir, title, _ppv_loop_total,
+                            {"A": round(_la_avg,1), "B": round(_lb_avg,1),
+                             "C": round(_lc_avg,1), "D": round(_ld_avg,1),
+                             "E": round(_le_avg,1), "F": round(_lf_avg,1)},
+                            _l_all, _ppv_loop_html,
+                        )
+                        log.info(
+                            f"  [Claude-Teacher T3] good_examples 각인: "
+                            f"{_ppv_round}회차에서 9점 달성"
+                        )
+                    except Exception: pass
+                    try:
+                        import shared_brain as _sb
+                        if not _sb.BRAIN_FILE: _sb.init(meta_dir)
+                        _sb.record_post_success(title, _l_all, _ppv_loop_html)
+                        log.info("  [Claude-Teacher T3] shared_brain DO 패턴 각인 완료")
+                    except Exception: pass
+                break
+
+            # ── 점수 정체 감지 ────────────────────────────────────────────────
+            _improvement = _ppv_loop_total - _ppv_prev_total
+            if _improvement < 0.1:
+                _ppv_stagnant_cnt += 1
+                log.warning(
+                    f"  [PPV-Loop {_ppv_round}] 정체 감지: "
+                    f"{_ppv_prev_total:.1f} → {_ppv_loop_total:.1f} "
+                    f"(개선={_improvement:+.2f}, 연속={_ppv_stagnant_cnt}회)"
+                )
+            else:
+                _ppv_stagnant_cnt = 0
+            _ppv_prev_total = _ppv_loop_total
+
+            # ── (T1) 정체 2회 연속 → Claude 근본 원인 분석 ───────────────────
+            if _ppv_stagnant_cnt >= 2:
+                log.warning(
+                    f"  [Claude-Teacher T1] 정체 2회 연속 → 근본 원인 분석 시작"
+                )
+                _l_failing_stag = {
+                    cat: (s, n) for cat, (s, n) in _l_all.items() if s < 9
+                }
+                _stag_fail_lines = "\n".join(
+                    f"  [{cat}] {CATEGORY_LABELS.get(cat, cat)}: {s:.1f}/10 — {n[:100]}"
+                    for cat, (s, n) in sorted(_l_failing_stag.items(), key=lambda x: x[1][0])
+                )
+                _root_prompt = (
+                    f"A health supplement blog post has been revised {_ppv_round} times "
+                    f"but the score is not improving (stuck at {_ppv_loop_total:.1f}/10).\n\n"
+                    f"FAILING ITEMS (not improving):\n{_stag_fail_lines}\n\n"
+                    f"FAILING SECTIONS (extracted from the post):\n"
+                    f"{_ppv_parts_block if '_ppv_parts_block' in dir() else _stag_fail_lines}\n\n"
+                    f"As a senior editor, analyze WHY the score is stuck. "
+                    f"Identify the ROOT CAUSE — is it a structural issue, voice issue, "
+                    f"content pattern, or something that Claude cannot fix by rewriting alone?\n\n"
+                    f"Output format (Korean):\n"
+                    f"ROOT_CAUSE: [한 줄 근본 원인]\n"
+                    f"WHY_CLAUDE_FAILS: [왜 자동 수정이 안 되는가]\n"
+                    f"CODE_FIX_NEEDED: [Writer/Critic 프롬프트에 추가해야 할 규칙]"
+                )
+                try:
+                    log.info("  [Claude-Teacher T1] Sonnet 4.6 호출 중...")
+                    _root_analysis = _ask_sonnet(
+                        _root_prompt,
+                        "You are a senior editorial analyst. Diagnose why automated fixes are failing.",
+                    )
+                    if _root_analysis and len(_root_analysis) > 50:
+                        log.info(
+                            f"  [Claude-Teacher T1] 근본 원인 분석 완료:\n"
+                            f"{_root_analysis[:400]}"
+                        )
+                        if meta_dir:
+                            _core_path = meta_dir / "core_lessons.json"
+                            _core_data = (
+                                json.loads(_core_path.read_text(encoding="utf-8"))
+                                if _core_path.exists() else {}
+                            )
+                            if isinstance(_core_data, list):
+                                _core_data = {"post_publish_verifier": _core_data}
+                            _core_data.setdefault("post_publish_verifier", []).append({
+                                "agent":      "post_publish_verifier",
+                                "issue":      f"PPV정체({_ppv_round}회): {title[:50]}",
+                                "root_cause": _root_analysis[:300],
+                                "fix":        "Writer/Critic 프롬프트에 CODE_FIX_NEEDED 항목 추가",
+                                "severity":   "high",
+                                "count":      3,
+                                "first_seen": datetime.now().strftime("%Y-%m-%d"),
+                            })
+                            _core_path.write_text(
+                                json.dumps(_core_data, ensure_ascii=False, indent=2),
+                                encoding="utf-8",
+                            )
+                            log.info("  [Claude-Teacher T1] core_lessons 각인 완료")
+                        _ppv_send_tg(
+                            f"[PPV-Teacher T1] 정체 근본 원인 분석\n"
+                            f"포스팅: {title[:40]}\n점수: {_ppv_loop_total:.1f}/10\n"
+                            f"분석: {_root_analysis[:200]}"
+                        )
+                except Exception as _ta_e:
+                    log.warning(f"  [Claude-Teacher T1] 분석 실패: {_ta_e}")
+                break  # 정체 시 루프 중단 (더 시도해도 의미 없음)
+
+            # 실패 항목 수집 (점수 낮은 순)
+            _l_failing = {
+                cat: (s, n)
+                for cat, (s, n) in _l_all.items() if s < 9
+            }
+            _fail_lines = "\n".join(
+                f"  [{cat}] {CATEGORY_LABELS.get(cat, cat)}: {s:.1f}/10 — {n[:120]}"
+                for cat, (s, n) in sorted(_l_failing.items(), key=lambda x: x[1][0])
+            )
+            log.info(
+                f"  [PPV-Loop {_ppv_round}] 미달 {len(_l_failing)}개:\n{_fail_lines}"
+            )
+
+            # Claude에 개선 요청
+            # ── 외과적 섹션 추출 (전체 HTML 대신 실패 부분만) ────────────────
+            _ppv_parts = _extract_surgical_parts(_ppv_loop_html, _l_failing)
+            _ppv_parts_total = sum(len(v) for v in _ppv_parts.values())
+            log.info(
+                f"  [PPV-Loop {_ppv_round}] 외과적 추출: "
+                f"{len(_ppv_parts)}개 파트, {_ppv_parts_total:,}자 "
+                f"(전체 {len(_ppv_loop_html):,}자 대비 "
+                f"{100*_ppv_parts_total//max(len(_ppv_loop_html),1)}%)"
+            )
+
+            # 파트별 마커 포맷 생성
+            _ppv_parts_block = "\n\n".join(
+                f"[{pid}]\n{snippet}\n[/{pid}]"
+                for pid, snippet in _ppv_parts.items()
+            )
+
+            _ppv_prompt = (
+                f"Blog post '{_ppv_loop_title}' scored {_ppv_loop_total:.1f}/10 "
+                f"(target 9.0+). Round {_ppv_round}/{_PPV_MAX_ROUNDS}.\n\n"
+                f"FAILING ITEMS:\n{_fail_lines}\n\n"
+                f"SECTIONS TO FIX (only these parts of the HTML):\n"
+                f"{_ppv_parts_block}\n\n"
+                f"RULES:\n"
+                f"- Fix ONLY what's listed in FAILING ITEMS\n"
+                f"- Return ONLY the parts you changed, using the SAME markers\n"
+                f"- Skip unchanged parts entirely\n"
+                f"- Keep all HTML tags, attributes, and structure intact\n"
+                f"- Make content feel more human and personal\n"
+                f"- No explanation, no markdown fences\n\n"
+                f"FORMAT (return only changed parts):\n"
+                f"[PART_ID]\n<fixed html>\n[/PART_ID]"
+            )
+            _ppv_sys = (
+                "You are a senior blog editor fixing specific quality issues in a supplement article. "
+                "You receive labeled HTML sections. Return ONLY the sections you changed, "
+                "using the same [PART_ID]...[/PART_ID] markers. "
+                "Do not return unchanged sections. Preserve all HTML structure exactly."
+            )
+
+            # ── (E3) Claude 호출 ───────────────────────────────────────────────
+            try:
+                _ppv_response = _fn2(_ppv_prompt, _ppv_sys)
+                if _ppv_response:
+                    _ppv_response = _ppv_response.strip()
+                    if _ppv_response.startswith("```"):
+                        _ppv_response = re.sub(r"^```[a-z]*\n?", "", _ppv_response)
+                        _ppv_response = re.sub(r"\n?```$", "", _ppv_response).strip()
+            except Exception as _ppv_e:
+                # (E1) Claude 호출 실패 → 에러 각인 + 텔레그램
+                _ppv_record_error(
+                    "PPV_ERR",
+                    f"PPV-Loop {_ppv_round}회 Claude 호출 실패: {str(_ppv_e)[:120]}"
+                )
+                _ppv_send_tg(
+                    f"[PPV-에러 E1] Claude 호출 실패\n"
+                    f"포스팅: {title[:40]}\n{_ppv_round}회차\n오류: {str(_ppv_e)[:100]}"
+                )
+                log.warning(f"  [PPV-Loop {_ppv_round}] Claude 호출 실패: {_ppv_e}")
+                break
+
+            # (E3) 응답 없음
+            if not _ppv_response or len(_ppv_response) < 20:
+                _ppv_record_error(
+                    "PPV_ERR",
+                    f"PPV-Loop {_ppv_round}회 Claude 응답 없음 (len={len(_ppv_response or '')})",
+                )
+                log.warning(f"  [PPV-Loop {_ppv_round}] Claude 응답 없음 — 루프 종료")
+                break
+
+            # ── splice back: 응답을 원본 HTML에 외과적으로 주입 ──────────────
+            _ppv_spliced, _applied = _splice_surgical_response(
+                _ppv_loop_html, _ppv_response, _ppv_parts
+            )
+            if not _applied:
+                log.info(f"  [PPV-Loop {_ppv_round}] 변경 없음 (splice 매칭 실패) — 루프 종료")
+                break
+            log.info(f"  [PPV-Loop {_ppv_round}] splice 완료: {_applied}")
+
+            # ── (E2) Blogger 패치 ──────────────────────────────────────────────
+            if svc and post_id:
+                try:
+                    svc.posts().patch(
+                        blogId=blog_id, postId=post_id,
+                        body={"content": _ppv_spliced, "title": _ppv_loop_title},
+                    ).execute()
+                    _ppv_loop_html = _ppv_spliced
+                    log.info(f"  [PPV-Loop {_ppv_round}] Blogger 패치 완료")
+                except Exception as _ppv_pe:
+                    _ppv_record_error(
+                        "PPV_ERR",
+                        f"PPV-Loop {_ppv_round}회 Blogger 패치 실패: {str(_ppv_pe)[:120]}"
+                    )
+                    _ppv_send_tg(
+                        f"[PPV-에러 E2] Blogger 패치 실패\n"
+                        f"포스팅: {title[:40]}\n{_ppv_round}회차\n오류: {str(_ppv_pe)[:100]}"
+                    )
+                    log.warning(f"  [PPV-Loop {_ppv_round}] Blogger 패치 실패: {_ppv_pe}")
+                    break
+            else:
+                _ppv_loop_html = _ppv_spliced
+
+        else:
+            # for-else: 5회 소진 후에도 미달
+            log.warning(
+                f"  [PPV-Loop] {_PPV_MAX_ROUNDS}회 후에도 "
+                f"{_ppv_loop_total:.1f}/10"
+            )
+            if meta_dir and _l_all:
+                _l_failing_final = {
+                    cat: (s, n) for cat, (s, n) in _l_all.items() if s < 9
+                }
+
+                # agent_lessons 기록
+                for _fc, (_fs, _fn_note) in _l_failing_final.items():
+                    _record_lesson(
+                        meta_dir, _fc,
+                        f"[PPV-Loop {_PPV_MAX_ROUNDS}회 미달] {_fn_note}",
+                        title, _fs,
+                    )
+                    log.info(f"  [코드각인] [{_fc}] agent_lessons 기록")
+
+                # core_lessons 기록 (count=3 → 즉시 core 승격)
+                try:
+                    _core_path = meta_dir / "core_lessons.json"
+                    _core_data = (
+                        json.loads(_core_path.read_text(encoding="utf-8"))
+                        if _core_path.exists() else {}
+                    )
+                    if isinstance(_core_data, list):
+                        _core_data = {"post_publish_verifier": _core_data}
+                    _core_data.setdefault("post_publish_verifier", []).append({
+                        "agent":      "post_publish_verifier",
+                        "issue":      f"PPV-Loop {_PPV_MAX_ROUNDS}회 미달: {title[:60]}",
+                        "root_cause": (
+                            f"최종점수 {_ppv_loop_total:.1f}/10, "
+                            f"미달 카테고리: {list(_l_failing_final.keys())}"
+                        ),
+                        "fix":        "해당 카테고리 패턴을 Writer/Critic 프롬프트에 추가",
+                        "severity":   "high",
+                        "count":      3,
+                        "first_seen": datetime.now().strftime("%Y-%m-%d"),
+                    })
+                    _core_path.write_text(
+                        json.dumps(_core_data, ensure_ascii=False, indent=2),
+                        encoding="utf-8",
+                    )
+                    log.info("  [코드각인] core_lessons 기록 완료")
+                except Exception as _cl_e:
+                    log.warning(f"  [코드각인] core_lessons 기록 실패: {_cl_e}")
+
+                # ── (T2) Claude-Teacher: AVOID 규칙 추출 → dynamic_rules ──────
+                log.info("  [Claude-Teacher T2] dynamic_rules AVOID 규칙 추출 시작")
+                _stag_fail_summary = "\n".join(
+                    f"[{cat}] {CATEGORY_LABELS.get(cat, cat)}: {s:.1f}/10 — {n[:100]}"
+                    for cat, (s, n) in sorted(
+                        _l_failing_final.items(), key=lambda x: x[1][0]
+                    )
+                )
+                _rule_prompt = (
+                    f"A supplement blog post failed quality checks after {_PPV_MAX_ROUNDS} "
+                    f"improvement rounds (final score: {_ppv_loop_total:.1f}/10).\n\n"
+                    f"PERSISTENT FAILURES:\n{_stag_fail_summary}\n\n"
+                    f"FAILING SECTIONS (actual HTML that caused failures):\n"
+                    f"{_ppv_parts_block if '_ppv_parts_block' in dir() else _stag_fail_summary}\n\n"
+                    f"As a senior editorial analyst, extract 2-4 specific AVOID rules "
+                    f"that a Writer agent should follow to prevent these issues in future posts.\n\n"
+                    f"Output format (one rule per line, Korean):\n"
+                    f"AVOID: [구체적 금지 패턴 — 예시 포함] (detected {_PPV_MAX_ROUNDS}x in PPV-Loop)"
+                )
+                try:
+                    log.info("  [Claude-Teacher T2] Sonnet 4.6 호출 중...")
+                    _rule_resp = _ask_sonnet(
+                        _rule_prompt,
+                        "You are a senior editorial analyst extracting writing rules from failures.",
+                    )
+                    if _rule_resp:
+                        _new_rules = [
+                            ln.strip()
+                            for ln in _rule_resp.splitlines()
+                            if ln.strip().startswith("AVOID:")
+                        ]
+                        if _new_rules:
+                            _dr_path = meta_dir / "dynamic_rules.json"
+                            try:
+                                _dr = (
+                                    json.loads(_dr_path.read_text(encoding="utf-8"))
+                                    if _dr_path.exists() else {}
+                                )
+                            except Exception:
+                                _dr = {}
+                            _existing = _dr.get("rules", [])
+                            _added = [r for r in _new_rules if r not in _existing]
+                            _dr["rules"] = (_existing + _added)[-80:]
+                            _dr_path.write_text(
+                                json.dumps(_dr, ensure_ascii=False, indent=2),
+                                encoding="utf-8",
+                            )
+                            log.info(
+                                f"  [Claude-Teacher T2] dynamic_rules {len(_added)}개 추가: "
+                                f"{_added}"
+                            )
+                            _ppv_send_tg(
+                                f"[Claude-Teacher T2] dynamic_rules 자동 각인\n"
+                                f"포스팅: {title[:40]}\n"
+                                f"추가 규칙 {len(_added)}개:\n" +
+                                "\n".join(f"  {r[:80]}" for r in _added)
+                            )
+                        else:
+                            log.info("  [Claude-Teacher T2] 추출된 AVOID 규칙 없음")
+                except Exception as _t2_e:
+                    log.warning(f"  [Claude-Teacher T2] 규칙 추출 실패: {_t2_e}")
+
+        # 루프 완료: 최종 HTML + 점수 반영
+        if _ppv_loop_html != new_html:
+            new_html      = _ppv_loop_html
+            current_title = _ppv_loop_title
+
+        if _ppv_rounds_done > 0:
+            total = _ppv_loop_total
+            if total >= 9.0:   grade = "S"
+            elif total >= 8.0: grade = "A"
+            elif total >= 7.0: grade = "B"
+            elif total >= 6.0: grade = "C"
+            else:              grade = "F"
+            result_cat_avgs = {
+                "A": round(_la_avg, 1), "B": round(_lb_avg, 1),
+                "C": round(_lc_avg, 1), "D": round(_ld_avg, 1),
+                "E": round(_le_avg, 1), "F": round(_lf_avg, 1),
+            }
+            log.info(
+                f"  [PPV-Loop] 완료: {_ppv_rounds_done}회 → "
+                f"최종 {total:.1f}/10 ({grade}등급)"
+            )
+
     passed = len(instant_rejects) == 0 and total >= 7.0
+
+    # ── Lesson Lifecycle 업데이트 ──────────────────────────────────────
+    # 이번 PPV에서 발견된 이슈 타입 집합 수집
+    _all_found_types = set()
+    for _s in scan1_issues:
+        _all_found_types.add(_s.get("type", ""))
+    for _s in scan2_issues:
+        _all_found_types.add(_s.get("type", ""))
+    _all_found_types.discard("")
+    if meta_dir:
+        try:
+            _update_lesson_lifecycle(meta_dir, _all_found_types, title)
+        except Exception as _lc_err:
+            log.warning(f"  [Lifecycle] 업데이트 실패 (무시): {_lc_err}")
+
+    # ── ① 못 고친 이슈만 핫 주입 (count=3 즉시 승격) ───────────────────
+    # scan2_issues = PPV가 수정 시도했지만 여전히 남은 이슈
+    # 이 이슈들은 auto-fix 불가 → Writer가 다음 글에서 직접 회피해야 함
+    if scan2_issues and meta_dir:
+        try:
+            _unfixed_high = [i for i in scan2_issues
+                             if i.get("severity") in ("critical", "high")]
+            for _iss in _unfixed_high:
+                _itype = _iss.get("type", "unknown")
+                _desc  = _iss.get("description", "")[:120]
+                # claude_discoveries count를 3으로 강제 설정 → 즉시 agent_lessons 승격
+                _disc = _load_discoveries(meta_dir)
+                _ex = next((d for d in _disc if d.get("type") == _itype), None)
+                if _ex:
+                    _ex["count"] = max(_ex.get("count", 0), 3)
+                    _ex["hot_inject"] = True
+                else:
+                    _disc.append({
+                        "type": _itype, "description": _desc,
+                        "severity": _iss.get("severity", "high"),
+                        "count": 3, "hot_inject": True,
+                        "first_seen": datetime.now().strftime("%Y-%m-%d"),
+                        "last_seen":  datetime.now().strftime("%Y-%m-%d"),
+                        "titles": [title[:50]],
+                        "promoted_to_rule": False,
+                    })
+                _save_discoveries(meta_dir, _disc)
+                _promote_to_agent_lessons(meta_dir, _ex or _disc[-1], 3)
+                log.info(f"  [HotInject] 미수정 이슈 즉시 count=3 승격: {_itype}")
+        except Exception as _hi_err:
+            log.warning(f"  [HotInject] 실패 (무시): {_hi_err}")
+
+    # ── ② 직전 글 피드백 저장 (다음 글 Writer 프롬프트 최상단 주입용) ───
+    if meta_dir and scan2_issues:
+        try:
+            _unfixed_all = [
+                {"type": i.get("type",""), "severity": i.get("severity",""),
+                 "description": i.get("description","")[:120]}
+                for i in scan2_issues
+                if i.get("severity") in ("critical","high","medium")
+            ]
+            if _unfixed_all:
+                _last_ppv = {
+                    "title":      title[:80],
+                    "topic_type": topic_type,
+                    "grade":      grade,
+                    "total":      round(total, 1),
+                    "timestamp":  datetime.now().isoformat(),
+                    "unfixed":    _unfixed_all[:5],  # 최대 5개
+                }
+                (meta_dir / "last_ppv_unfixed.json").write_text(
+                    json.dumps(_last_ppv, ensure_ascii=False, indent=2),
+                    encoding="utf-8"
+                )
+                log.info(f"  [LastPPV] 미수정 {len(_unfixed_all)}개 → last_ppv_unfixed.json 저장")
+        except Exception as _lp_err:
+            log.warning(f"  [LastPPV] 저장 실패 (무시): {_lp_err}")
+    elif meta_dir:
+        # 이슈 없으면 파일 삭제 (오래된 피드백이 다음 글에 영향 안 주도록)
+        try:
+            _lpf = meta_dir / "last_ppv_unfixed.json"
+            if _lpf.exists():
+                _lpf.unlink()
+        except Exception:
+            pass
 
     result = {
         "passed":            passed,
@@ -2017,6 +3531,8 @@ def verify_and_patch(
         "scan1_count":       len(scan1_issues),
         "scan2_count":       len(scan2_issues),
         "scan2_clean":       (len(scan2_issues) == 0),
+        "ppv_loop_rounds":   _ppv_rounds_done,
+        "editor_issues":     _editor_issues,
     }
 
     # ── 6. 검증 전체 기록 저장 (verification_log.json)
@@ -2044,6 +3560,8 @@ def verify_and_patch(
                 "scan2_clean":  result["scan2_clean"],
                 "instant_rejects": instant_rejects,
                 "lessons":     [n["cat"] + ":" + n["note"][:50] for n in notified],
+                "ppv_loop_rounds": _ppv_rounds_done,
+                "ppv_loop_final":  round(total, 1),
             })
         except Exception as _le:
             log.warning(f"  [검증로그] 저장 실패: {_le}")

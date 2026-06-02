@@ -1,6 +1,168 @@
 {
   "phrases": [],
-  "section_performance": {},
+  "section_performance": {
+    "Month One: Where Things Started to Shift": {
+      "removed": 1,
+      "issues": [
+        "NoPlaceholder"
+      ],
+      "top_issue": "NoPlaceholder"
+    },
+    "What I'd Do Differently From Day One": {
+      "removed": 2,
+      "issues": [
+        "NoPlaceholder",
+        "NoPlaceholder"
+      ],
+      "top_issue": "NoPlaceholder"
+    },
+    "What Actually Worked Better for Me": {
+      "removed": 2,
+      "issues": [
+        "NoPlaceholder",
+        "NoPlaceholder"
+      ],
+      "top_issue": "NoPlaceholder"
+    },
+    "How it Actually Felt During the First Week": {
+      "removed": 1,
+      "issues": [
+        "NoPlaceholder"
+      ],
+      "top_issue": "NoPlaceholder"
+    },
+    "The Timing Experiment: My Morning vs Night Results": {
+      "removed": 1,
+      "issues": [
+        "NoPlaceholder"
+      ],
+      "top_issue": "NoPlaceholder"
+    },
+    "Who Gets the Most Out of This Combination": {
+      "removed": 3,
+      "issues": [
+        "NoPlaceholder",
+        "NoPlaceholder",
+        "NoPlaceholder"
+      ],
+      "top_issue": "NoPlaceholder"
+    },
+    "The First Thing I Got Wrong": {
+      "removed": 1,
+      "issues": [
+        "NoPlaceholder"
+      ],
+      "top_issue": "NoPlaceholder"
+    },
+    "The Third Mistake I Keep Seeing Others Make": {
+      "removed": 2,
+      "issues": [
+        "NoPlaceholder",
+        "NoPlaceholder"
+      ],
+      "top_issue": "NoPlaceholder"
+    },
+    "The Week I Almost Stopped and What Kept Me Going": {
+      "removed": 5,
+      "issues": [
+        "NoPlaceholder",
+        "NoPlaceholder",
+        "NoPlaceholder",
+        "NoPlaceholder",
+        "NoPlaceholder"
+      ],
+      "top_issue": "NoPlaceholder"
+    },
+    "How My Routine Changed After Figuring This Out": {
+      "removed": 3,
+      "issues": [
+        "NoPlaceholder",
+        "NoPlaceholder",
+        "NoPlaceholder"
+      ],
+      "top_issue": "NoPlaceholder"
+    },
+    "What I Was Doing That Helped": {
+      "removed": 1,
+      "issues": [
+        "H1 60자",
+        "AI_Footprint",
+        "NoPlaceholder"
+      ],
+      "top_issue": "H1 60자"
+    },
+    "Why I Almost Didn't Try It": {
+      "removed": 2,
+      "issues": [
+        "H1 60자",
+        "AI_Footprint",
+        "NoPlaceholder",
+        "H1 60자",
+        "AI_Footprint",
+        "NoPlaceholder"
+      ],
+      "top_issue": "H1 60자"
+    },
+    "The Turning Point: What Changed in Week Four": {
+      "removed": 1,
+      "issues": [
+        "H1 60자",
+        "AI_Footprint",
+        "NoPlaceholder"
+      ],
+      "top_issue": "H1 60자"
+    },
+    "The Simple Choice I Finally Made": {
+      "removed": 2,
+      "issues": [
+        "NoPlaceholder",
+        "NoPlaceholder"
+      ],
+      "top_issue": "NoPlaceholder"
+    },
+    "The Honest Caveat I Don't See Mentioned Enough": {
+      "removed": 2,
+      "issues": [
+        "H1 60자",
+        "AI_Footprint",
+        "NoPlaceholder",
+        "H1 60자",
+        "AI_Footprint",
+        "NoPlaceholder"
+      ],
+      "top_issue": "H1 60자"
+    },
+    "What I Had to Stop Doing": {
+      "removed": 2,
+      "issues": [
+        "H1 60자",
+        "AI_Footprint",
+        "NoPlaceholder",
+        "H1 60자",
+        "AI_Footprint",
+        "NoPlaceholder"
+      ],
+      "top_issue": "H1 60자"
+    },
+    "The Adjustment That Changed Everything": {
+      "removed": 1,
+      "issues": [
+        "H1 60자",
+        "AI_Footprint",
+        "NoPlaceholder"
+      ],
+      "top_issue": "H1 60자"
+    },
+    "What Went Wrong the First Time": {
+      "removed": 1,
+      "issues": [
+        "H1 60자",
+        "AI_Footprint",
+        "NoPlaceholder"
+      ],
+      "top_issue": "H1 60자"
+    }
+  },
   "retry_history": [
     {
       "date": "2026-05-29",
@@ -49,9 +211,81 @@
       "topic": "Vitamin K2 MK 7 Complete Guide",
       "retries": 0,
       "published": true
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "# Vitamin K2 MK 7 Complete Guide\ntype: c",
+      "retries": 0,
+      "published": true
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "# Vitamin K2 MK 7 Complete Guide\ntype: c",
+      "retries": 0,
+      "published": true
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "# Selenium Complete Guide\ntype: comprehe",
+      "retries": 0,
+      "published": true
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "Melatonin Complete Guide",
+      "retries": 0,
+      "published": true
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "Copper Complete Guide",
+      "retries": 4,
+      "published": true
+    },
+    {
+      "date": "2026-05-31",
+      "topic": "# Why I Started Taking Magnesium and Vit",
+      "retries": 4,
+      "published": true
+    },
+    {
+      "date": "2026-06-01",
+      "topic": "Ginger Complete Guide",
+      "retries": 4,
+      "published": true
+    },
+    {
+      "date": "2026-06-01",
+      "topic": "Why I Started Taking Magnesium and Vitam",
+      "retries": 4,
+      "published": true
+    },
+    {
+      "date": "2026-06-01",
+      "topic": "Why Copper Stopped Working When I Added ",
+      "retries": 4,
+      "published": true
+    },
+    {
+      "date": "2026-06-02",
+      "topic": "The Copper and Zinc Stack I Wish I Had T",
+      "retries": 4,
+      "published": true
+    },
+    {
+      "date": "2026-06-03",
+      "topic": "Potassium Complete Guide",
+      "retries": 4,
+      "published": true
+    },
+    {
+      "date": "2026-06-03",
+      "topic": "Taking Zinc with Iron: What I Learned th",
+      "retries": 4,
+      "published": true
     }
   ],
-  "avg_retries_20": 0.0,
+  "avg_retries_20": 1.6,
   "rules": [
     "AVOID: Two consecutive <hr /> tags appear at the start of post body (detected 2x in published posts)",
     "AVOID: Post ends with incomplete sentence 'I'm not' — text is cut off mid-paragraph (detected 2x in published posts)",
@@ -83,6 +317,190 @@
     "AVOID: Two consecutive <hr /> tags appear at the start of post content (after metadata scripts and before t (detected 2x in published posts)",
     "AVOID: Multiple unqualified health claims: 'may support' and 'could be' language mixed with definitive stat (detected 2x in published posts)",
     "AVOID: Two consecutive <hr /> tags appear before the 'Also worth reading' section at the end of the post. (detected 2x in published posts)",
-    "AVOID: H2 heading 'What I Adjusted Along the Way' follows a repeated pattern across supplement posts (e.g., (detected 2x in published posts)"
+    "AVOID: H2 heading 'What I Adjusted Along the Way' follows a repeated pattern across supplement posts (e.g., (detected 2x in published posts)",
+    "AVOID: The core concept of 'K2 needs fat to absorb properly' is repeated across multiple sections (sec0, se (detected 2x in published posts)",
+    "AVOID: Author name in H1 section shows 'Eric Lindström' but in About section shows 'Erik Lindström' (differ (detected 2x in published posts)",
+    "AVOID: Author name spelled two different ways: 'Eric Lindström' in JSON-LD schema but 'Erik Lindström' in A (detected 2x in published posts)",
+    "AVOID: Multiple sections contain extended first-person narrative that could be condensed. For example, 'Wee (detected 2x in published posts)",
+    "AVOID: H2 heading 'What Most People Get Wrong About This Nutrient' matches the repeated pattern 'What Most  (detected 2x in published posts)",
+    "AVOID: Grammatical error: 'that's why it doesn't trigger' — lowercase 'that's' at start of sentence followi (detected 2x in published posts)",
+    "AVOID: Related link uses generic anchor text 'Also worth reading:' repeated 4 times — low SEO and readabili (detected 2x in published posts)",
+    "AVOID: Claim 'HMB is fat-soluble' — not clearly supported by scientific consensus; HMB's solubility is wate (detected 2x in published posts)",
+    "AVOID: H2 'My Personal routine: Dose, Timing, and Form' matches AI-pattern phrase 'My Personal Protocol:' f (detected 2x in published posts)",
+    "AVOID: Link 'Also worth reading: The Vitamin D Mistake That Kept Me Tired' points to 'why-vitamin-finally-w (detected 2x in published posts)",
+    "AVOID: Image alt text 'my zinc and complete bottle on the counter' is conversational but includes 'complete (detected 2x in published posts)",
+    "AVOID: Sections 'What Went Wrong the First Time', 'Why I Gave It Another Chance', and 'The Adjustment That  (detected 2x in published posts)",
+    "AVOID: Text contains unclear/incomplete phrase: 'I still have bad days, but I don't feel as stuck in them.  (detected 2x in published posts)",
+    "AVOID: The phrase 'I'm not a doctor. I have no credentials. I'm just someone who got annoyed enough to expe (detected 2x in published posts)",
+    "AVOID: Sentence 'not skipping more than a day or two made the difference' is awkwardly worded—appears to be (detected 2x in published posts)",
+    "AVOID: Page title in <h1> ('How Melatonin Supplements Ruined My Sleep Schedule') does not match POST TITLE  (detected 2x in published posts)",
+    "AVOID: I noticed / I realized / What surprised me ?? ?? 3?+ ?? ? AI ??",
+    "AVOID: Week1?Week2?Month3?Conclusion ?? ?? ? ??? ??",
+    "AVOID: ?? ??? ?? ?? ?? ? ??? ?? ??(trade-off) 1? ?? ??",
+    "AVOID: ??? ?? (X mg was perfect / X worked great) ? '?? ?? ?' ?? ??",
+    "AVOID: ??? ?? ?? ?? ?? ?? ? ?? ?? ??? ??? ?",
+    "AVOID: ??/?? ?? 1? ?? ? ????/????/?? ? ?? 2?",
+    "AVOID: og:description content ???? regex ?? ? ??? <meta> ?? ?? ?? ?? ??",
+    "AVOID: html ?? ? [^\"']+ ?? ?? ? apostrophe ?? ????? ?? ?? ??",
+    "AVOID: ?? ??? 4? ?? ? ?? ?? ?? (topic_bank scheduled_time ?? ??)",
+    "AVOID: topic_bank status processing ?? ?? RAW ?? ? ?? ?? ?? ???",
+    "AVOID: Sentence begins with lowercase 'what' in table header. (detected 2x in published posts)",
+    "AVOID: <!DOCTYPE html>, <html>, and <head> tags appear in the post body instead of being structural. This w (detected 2x in published posts)",
+    "AVOID: Post claims ginger improved: (1) bloating, (2) stomach cramping, (3) digestive sluggishness, (4) 3 P (detected 2x in published posts)",
+    "AVOID: Title is 'Magnesium Vitamin Benefits, Dosage, and Side Effects' (educational, reference-style), but  (detected 2x in published posts)",
+    "AVOID: The post heavily emphasizes the combination of magnesium AND vitamin D as a pair, but the title stat (detected 2x in published posts)",
+    "AVOID: The first related reading link anchor text contains 'Ginger Complete:' — a template artifact that sh (detected 2x in published posts)",
+    "AVOID: The fourth related reading link has truncated anchor text: 'Vitamin C Dosage: What Six Months of Tes (detected 2x in published posts)",
+    "AVOID: Post title is 'Ginger: Ginger Benefits, Dosage, and Side Effects' (informational/reference style) bu (detected 2x in published posts)",
+    "AVOID: Section 'When I Take It vs. When I Skip It' ends mid-sentence: 'I'd almost forgotten what' — text is (detected 2x in published posts)",
+    "AVOID: The post claims improvement in at least 5 distinct areas: afternoon energy crash, sleep quality, mus (detected 2x in published posts)",
+    "AVOID: Two consecutive <hr /> tags appear with only a short italic paragraph between them, and then a final (detected 2x in published posts)",
+    "AVOID: After the opening asterisk/quote styling, the italic intro paragraph begins with a lowercase continu (detected 2x in published posts)",
+    "AVOID: The og:description says 'I added zinc to my routine and my copper supplement stopped working. Here's (detected 2x in published posts)",
+    "AVOID: The experience-style title 'How Zinc Supplements Finally Ended My Cold Cycle' promises a personal st (detected 2x in published posts)",
+    "AVOID: 'a improvement' — the indefinite article 'a' is used before a vowel-starting word 'improvement'; sho (detected 2x in published posts)",
+    "AVOID: In the Medical Disclaimer, the phrase 'taking recommendation medications' is grammatically broken. ' (detected 2x in published posts)",
+    "AVOID: The article body contains '[...MIDDLE SECTION OMITTED...]' indicating that at least one full H2 sect (detected 2x in published posts)",
+    "AVOID: og:title meta tag contains lowercase 'd' in 'digestion' — should match H1 capitalization standard (detected 2x in published posts)",
+    "AVOID: Phrase 'going into surgery, it's worth flagging to your physician' — awkward phrasing; should be 'be (detected 2x in published posts)",
+    {
+      "rule": "EDITOR-R1: After substitution, check for duplicate phrases (e.g., 'phrase phrase') — run_editor_checks() catches this.",
+      "count": 1,
+      "tier": 1,
+      "added_at": "2026-06-01 20:42",
+      "source": "editor_rules_v1"
+    },
+    {
+      "rule": "EDITOR-R2: After substitution, check for broken sentences (word.word) — no space after period.",
+      "count": 1,
+      "tier": 1,
+      "added_at": "2026-06-01 20:42",
+      "source": "editor_rules_v1"
+    },
+    {
+      "rule": "EDITOR-R3: H1, OG title, JSON-LD headline must be identical after any title change.",
+      "count": 1,
+      "tier": 1,
+      "added_at": "2026-06-01 20:42",
+      "source": "editor_rules_v1"
+    },
+    {
+      "rule": "EDITOR-R4: OG description and JSON-LD description must be identical.",
+      "count": 1,
+      "tier": 1,
+      "added_at": "2026-06-01 20:42",
+      "source": "editor_rules_v1"
+    },
+    {
+      "rule": "EDITOR-R6: Exaggeration (everything changed, life-changing) requires evidence paragraph.",
+      "count": 1,
+      "tier": 1,
+      "added_at": "2026-06-01 20:42",
+      "source": "editor_rules_v1"
+    },
+    {
+      "rule": "EDITOR-R7: Reader perspective check — must answer: story, what changed, mistake, title fulfilled.",
+      "count": 1,
+      "tier": 1,
+      "added_at": "2026-06-01 20:42",
+      "source": "editor_rules_v1"
+    },
+    {
+      "rule": "AVOID: applying a single 60% experience ratio rule to all post types. comprehensive_guide → 45~55% | experience/longtail → 60~75%",
+      "count": 3,
+      "tier": 1,
+      "added_at": "2026-06-02 20:03",
+      "source": "manual_teach"
+    },
+    "AVOID: Sentence fragment: 'After I started the stack—and I'm talking the real stack, both at once' ends abr (detected 2x in published posts)",
+    {
+      "rule": "AVOID: Definitive health claim 'That's basically useless' — replace with personal hedge: 'didn't seem to work well for me'",
+      "count": 3,
+      "tier": 1,
+      "added_at": "2026-06-02 21:43",
+      "source": "user_feedback_creatine"
+    },
+    {
+      "rule": "AVOID: Definitive health claim 'makes you stronger' / 'helps you recover faster' — replace with 'seemed to help with strength/recovery' or 'for me at least'",
+      "count": 3,
+      "tier": 1,
+      "added_at": "2026-06-02 21:43",
+      "source": "user_feedback_creatine"
+    },
+    {
+      "rule": "AVOID: Mechanistic claim 'absorption depends on X' — replace with 'may absorb better when...' or 'from what I've read'",
+      "count": 3,
+      "tier": 1,
+      "added_at": "2026-06-02 21:43",
+      "source": "user_feedback_creatine"
+    },
+    {
+      "rule": "AVOID: Blanket dismissal 'X does nothing' — replace with 'X likely does very little for me' or 'I didn't notice much difference'",
+      "count": 3,
+      "tier": 1,
+      "added_at": "2026-06-02 21:43",
+      "source": "user_feedback_creatine"
+    },
+    {
+      "rule": "WRITER-RULE: 모든 문장을 쓸 때 '이게 1인칭 경험 문장인가?' 확인. 아니면 경험형으로 재작성.",
+      "count": 5,
+      "tier": 1,
+      "added_at": "2026-06-02 22:01",
+      "source": "user_engrave_2026-06-02"
+    },
+    {
+      "rule": "WRITER-RULE: 건강 효과 주장 시 반드시 'seemed to', 'for me', 'I felt like', 'may', 'I probably' 사용.",
+      "count": 5,
+      "tier": 1,
+      "added_at": "2026-06-02 22:01",
+      "source": "user_engrave_2026-06-02"
+    },
+    {
+      "rule": "CRITIC-RULE: 발행 전 경험담 비율 60% 미만이면 REJECT. Writer에게 조언→경험 전환 요구.",
+      "count": 5,
+      "tier": 1,
+      "added_at": "2026-06-02 22:01",
+      "source": "user_engrave_2026-06-02"
+    },
+    {
+      "rule": "CRITIC-RULE: og:description에 'the research', 'studies show', 'X is known to' 등 3인칭 연구 언급 금지. 개인 경험형만 허용.",
+      "count": 5,
+      "tier": 1,
+      "added_at": "2026-06-02 22:01",
+      "source": "user_engrave_2026-06-02"
+    },
+    {
+      "rule": "WRITER/CRITIC-RULE: 경험담 비율 타입별 기준 (Rule5 v8.9) — comprehensive_guide:45~55% | how_i_use/personal_guide:60~75% | experiment_log:60~70% | wrong_culprit:65~80% | unexpected_tradeoff:65~80% | regret_ignoring:65~80% | 기타:60~75%",
+      "count": 5,
+      "tier": 1,
+      "added_at": "2026-06-02 22:09",
+      "source": "user_engrave_2026-06-02"
+    },
+    "AVOID: Post content is incomplete/truncated. The section ends mid-sentence: 'I was also eating a fair amoun (detected 4x in published posts)",
+    "AVOID: Timeline inconsistency: Section sec1 states 'By week three of the citrate form, my afternoon fog had (detected 2x in published posts)",
+    "AVOID: Multiple AI-pattern phrases detected: 'consistency is key' is implied throughout, and the phrase 'ga (detected 2x in published posts)",
+    "AVOID: Post title 'Is Zinc Worth Taking? What the Research Says' suggests a research-based, evidence-driven (detected 4x in published posts)",
+    "AVOID: Multiple canonical URLs appear: one at top is 'https://www.nutristacklab.com/2026/06/why-taking-fina (detected 2x in published posts)",
+    {
+      "rule": "TITLE-YMYL: Healed/Cured/Fixed/Eliminated/Disappeared 금지 — helped with/started working/became less noticeable로 대체",
+      "count": 5,
+      "tier": 1,
+      "added_at": "2026-06-03 00:52",
+      "source": "user_feedback_ymyl"
+    },
+    {
+      "rule": "BODY-YMYL: crashes disappeared/fog lifted/pain gone 금지 — became less noticeable/felt clearer/seemed to improve로 대체",
+      "count": 5,
+      "tier": 1,
+      "added_at": "2026-06-03 00:52",
+      "source": "user_feedback_ymyl"
+    },
+    {
+      "rule": "BODY-GENERALIZATION: you can feel/neither one is/everyone who... 금지 — for me/seemed to/may/in some situations로 대체",
+      "count": 5,
+      "tier": 1,
+      "added_at": "2026-06-03 00:52",
+      "source": "user_feedback_ymyl"
+    }
   ]
 }

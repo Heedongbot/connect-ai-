@@ -1,1573 +1,4919 @@
 [
   {
-    "topic": "Vitamin A and Collagen Synergy: The Nordic Protocol",
-    "type": "synergy",
-    "time": "08:41",
-    "date": "2026-05-11",
-    "status": "skipped"
-  },
-  {
-    "topic": "Morning vs Evening: When to Take Collagen",
-    "type": "protocol",
-    "time": "12:47",
-    "date": "2026-05-11",
-    "status": "skipped"
-  },
-  {
-    "topic": "Is Vitamin C Safe Long-Term? The Real Data",
-    "type": "side-effects",
-    "time": "18:07",
-    "date": "2026-05-11",
-    "status": "skipped"
-  },
-  {
-    "topic": "What CDP-Choline Does to Your Mitochondria",
-    "type": "mechanism",
-    "time": "12:11",
-    "date": "2026-05-11",
-    "status": "skipped"
-  },
-  {
-    "topic": "How to Cook With GABA for Maximum Benefit",
-    "type": "recipe",
-    "time": "19:53",
-    "date": "2026-05-11",
-    "status": "skipped"
-  },
-  {
-    "topic": "Morning vs Evening: When to Take Vitamin A",
-    "type": "protocol",
-    "time": "10:29",
-    "date": "2026-05-11",
-    "status": "skipped"
-  },
-  {
-    "topic": "Head-to-Head: NAC vs Glucosamine",
-    "type": "comparison",
-    "time": "14:33",
-    "date": "2026-05-11",
-    "status": "skipped"
-  },
-  {
-    "topic": "Omega-3 Side Effects: What the Research Shows",
-    "type": "side-effects",
-    "time": "21:23",
-    "date": "2026-05-11",
-    "status": "skipped"
-  },
-  {
-    "topic": "Creatine and CoQ10: The Complete Combination Guide",
-    "type": "synergy",
-    "time": "06:29",
-    "date": "2026-05-11",
-    "status": "skipped"
-  },
-  {
-    "topic": "The Mechanism of Taurine: A Deep Dive",
-    "type": "mechanism",
-    "time": "10:47",
-    "date": "2026-05-11",
-    "status": "skipped"
-  },
-  {
-    "topic": "Never Combine CoQ10 and Magnesium: Here's Why",
-    "type": "antagonism",
-    "time": "19:53",
-    "date": "2026-05-11",
-    "status": "skipped"
-  },
-  {
-    "topic": "L-Tyrosine and Hormones: The Connection",
-    "type": "mechanism",
-    "time": "06:41",
-    "date": "2026-05-11",
-    "status": "skipped"
-  },
-  {
-    "topic": "Zinc with Chia Seeds: The Absorption Stack",
-    "type": "food-combo",
-    "time": "11:33",
-    "date": "2026-05-11",
-    "status": "skipped"
-  },
-  {
-    "topic": "Comparing Quercetin and Selenium: The Full Analysis",
-    "type": "comparison",
-    "time": "15:53",
-    "date": "2026-05-11",
-    "status": "skipped"
-  },
-  {
-    "topic": "The Complete L-Tyrosine Protocol: Dosage and Timing",
-    "type": "protocol",
-    "time": "08:23",
-    "date": "2026-05-11",
-    "status": "skipped"
-  },
-  {
-    "topic": "L-Tyrosine and L-Carnitine Synergy: The Nordic Protocol",
-    "type": "synergy",
-    "time": "12:29",
-    "date": "2026-05-11",
-    "status": "skipped"
-  },
-  {
-    "topic": "Should You Take L-Carnitine With Food?",
+    "topic": "The Best Time to Take Melatonin — What I Got Wrong at First",
     "type": "timing",
-    "time": "18:47",
-    "date": "2026-05-11",
-    "status": "skipped"
-  },
-  {
-    "topic": "How L-Theanine Actually Works in Your Body",
-    "type": "mechanism",
-    "time": "07:53",
-    "date": "2026-05-11",
-    "status": "skipped"
-  },
-  {
-    "topic": "Eating Garlic With Your Glycine Supplement",
-    "type": "food-combo",
-    "time": "15:47",
-    "date": "2026-05-11",
-    "status": "skipped"
-  },
-  {
-    "topic": "Head-to-Head: Probiotics vs Calcium",
-    "type": "comparison",
-    "time": "19:33",
-    "date": "2026-05-11",
-    "status": "skipped"
-  },
-  {
-    "topic": "Best Foods to Take With MSM",
-    "type": "food-combo",
-    "time": "11:53",
-    "date": "2026-05-12",
-    "status": "skipped"
-  },
-  {
-    "topic": "Never Combine Vitamin C and Magnesium: Here's Why",
-    "type": "antagonism",
-    "time": "15:17",
-    "date": "2026-05-12",
-    "status": "skipped"
-  },
-  {
-    "topic": "Never Combine Astaxanthin and Alpha-GPC: Here's Why",
-    "type": "antagonism",
-    "time": "11:23",
-    "date": "2026-05-12",
-    "status": "skipped"
-  },
-  {
-    "topic": "Signs You're Glycine Deficient",
-    "type": "deficiency",
-    "time": "18:07",
-    "date": "2026-05-12",
-    "status": "skipped"
-  },
-  {
-    "topic": "Avoid This Alpha Lipoic Acid Mistake With Zinc",
-    "type": "antagonism",
-    "time": "09:29",
-    "date": "2026-05-12",
-    "status": "completed",
-    "completed_at": "2026-05-12 09:29"
-  },
-  {
-    "topic": "Ashwagandha and Kimchi: The Natural Pairing",
-    "type": "food-combo",
-    "time": "17:17",
-    "date": "2026-05-12",
-    "status": "completed",
-    "completed_at": "2026-05-12 17:17"
-  },
-  {
-    "topic": "When to Take Creatine for Maximum Absorption",
-    "type": "timing",
-    "time": "21:00",
-    "date": "2026-05-12",
-    "status": "completed",
-    "completed_at": "2026-05-12 21:00"
-  },
-  {
-    "topic": "When to Take 5-HTP for Maximum Absorption",
-    "type": "timing",
-    "time": "06:00",
-    "date": "2026-05-12",
-    "status": "completed",
-    "completed_at": "2026-05-12 06:00"
-  },
-  {
-    "topic": "Eating Spinach With Your Alpha-GPC Supplement",
-    "type": "food-combo",
-    "time": "16:47",
-    "date": "2026-05-12",
-    "status": "completed",
-    "completed_at": "2026-05-12 16:47"
-  },
-  {
-    "topic": "How to Cook With Elderberry for Maximum Benefit",
-    "type": "recipe",
-    "time": "20:47",
-    "date": "2026-05-12",
-    "status": "completed",
-    "completed_at": "2026-05-12 20:47"
-  },
-  {
-    "topic": "Testing for Quercetin Deficiency: A Guide",
-    "type": "deficiency",
-    "time": "17:47",
-    "date": "2026-05-12",
-    "status": "skipped"
-  },
-  {
-    "topic": "What Iron Does to Your Mitochondria",
-    "type": "mechanism",
-    "time": "21:41",
-    "date": "2026-05-12",
-    "status": "completed",
-    "completed_at": "2026-05-12 21:41"
-  },
-  {
-    "topic": "Ashwagandha vs MSM: Cost, Efficacy, Safety",
-    "type": "comparison",
-    "time": "06:11",
-    "date": "2026-05-13",
-    "status": "completed",
-    "completed_at": "2026-05-13 06:11"
-  },
-  {
-    "topic": "Boron and the Brain-Gut Axis: Explained",
-    "type": "mechanism",
-    "time": "13:47",
-    "date": "2026-05-13",
-    "status": "completed",
-    "completed_at": "2026-05-13 13:47"
-  },
-  {
-    "topic": "Why Vitamin D3 and Iron Cancel Each Other Out",
-    "type": "antagonism",
-    "time": "08:33",
-    "date": "2026-05-14",
-    "status": "completed",
-    "completed_at": "2026-05-14 08:33"
-  },
-  {
-    "topic": "Ginger and Beets: The Natural Pairing",
-    "type": "food-combo",
-    "time": "16:29",
-    "date": "2026-05-14",
-    "status": "completed",
-    "completed_at": "2026-05-14 16:29"
-  },
-  {
-    "topic": "Probiotics Overdose Risk: Clinical Findings",
-    "type": "side-effects",
-    "time": "20:47",
-    "date": "2026-05-14",
-    "status": "completed",
-    "completed_at": "2026-05-14 20:47"
-  },
-  {
-    "topic": "Is Creatine Safe Long-Term? The Real Data",
-    "type": "side-effects",
-    "time": "14:23",
-    "date": "2026-05-15",
-    "status": "completed",
-    "completed_at": "2026-05-15 14:23"
-  },
-  {
-    "topic": "Taking Vitamin D3 Before Bed: A Huge Mistake?",
-    "type": "longtail-mistake",
-    "time": "19:41",
-    "date": "2026-05-15",
-    "status": "completed",
-    "completed_at": "2026-05-15 19:41"
-  },
-  {
-    "topic": "Best Food to Eat With Astaxanthin",
-    "type": "longtail-routine",
-    "time": "06:17",
-    "date": "2026-05-16",
-    "status": "completed",
-    "completed_at": "2026-05-16 06:17"
-  },
-  {
-    "topic": "Common Omega-3 Mistakes You're Making",
-    "type": "longtail-mistake",
-    "time": "17:33",
-    "date": "2026-05-16",
-    "status": "completed",
-    "completed_at": "2026-05-16 17:33"
-  },
-  {
-    "topic": "Comparing Berberine and GABA: The Full Analysis",
-    "type": "comparison",
-    "time": "06:33",
-    "date": "2026-05-17",
-    "status": "completed",
-    "completed_at": "2026-05-17 06:33"
-  },
-  {
-    "topic": "Stop Taking CoQ10 Like This",
-    "type": "longtail-mistake",
-    "time": "13:11",
-    "date": "2026-05-17",
-    "status": "completed",
-    "completed_at": "2026-05-17 13:11"
-  },
-  {
-    "topic": "Berries Enhances Vitamin D3 Absorption: Here's Why",
-    "type": "food-combo",
-    "time": "18:11",
-    "date": "2026-05-17",
-    "status": "completed",
-    "completed_at": "2026-05-17 18:11"
-  },
-  {
-    "topic": "NMN Causing Bloating: Is It Normal?",
-    "type": "longtail-symptom",
-    "time": "07:53",
-    "date": "2026-05-18",
-    "status": "completed",
-    "completed_at": "2026-05-18 07:53"
-  },
-  {
-    "topic": "Calcium plus Boron: Dosage and Timing",
-    "type": "synergy",
-    "time": "13:23",
-    "date": "2026-05-18",
-    "status": "completed",
-    "completed_at": "2026-05-18 13:23"
-  },
-  {
-    "topic": "Morning vs Evening: When to Take Selenium",
-    "type": "protocol",
-    "time": "17:23",
-    "date": "2026-05-18",
-    "status": "completed",
-    "completed_at": "2026-05-18 17:23"
-  },
-  {
-    "topic": "Why Phosphatidylserine Upset My Stomach",
-    "type": "longtail-symptom",
-    "time": "16:23",
-    "date": "2026-05-19",
-    "status": "completed",
-    "completed_at": "2026-05-19 16:23"
-  },
-  {
-    "topic": "The Mechanism of Melatonin: A Deep Dive",
-    "type": "mechanism",
-    "time": "21:07",
-    "date": "2026-05-19",
-    "status": "completed",
-    "completed_at": "2026-05-19 21:07"
-  },
-  {
-    "topic": "Melatonin Loading Protocol: Does It Work?",
-    "type": "protocol",
-    "time": "09:47",
-    "date": "2026-05-20",
-    "status": "completed",
-    "completed_at": "2026-05-20 09:47"
-  },
-  {
-    "topic": "Weird Dreams After Taking Vitamin B6: Explained",
-    "type": "longtail-symptom",
-    "time": "15:00",
-    "date": "2026-05-20",
-    "status": "completed",
-    "completed_at": "2026-05-20 15:00"
-  },
-  {
-    "topic": "Elderberry Blocks Iron Absorption: The Science",
-    "type": "antagonism",
-    "time": "10:53",
-    "date": "2026-05-21",
-    "status": "completed",
-    "completed_at": "2026-05-21 10:53"
-  },
-  {
-    "topic": "Iodine Side Effects: What the Research Shows",
-    "type": "side-effects",
-    "time": "16:41",
-    "date": "2026-05-21",
-    "status": "completed",
-    "completed_at": "2026-05-21 16:41"
-  },
-  {
-    "topic": "Glycine Causing Bloating: Is It Normal?",
-    "type": "longtail-symptom",
-    "time": "21:33",
-    "date": "2026-05-22",
-    "status": "completed",
-    "completed_at": "2026-05-22 21:33"
-  },
-  {
-    "topic": "Omega-3 with Kefir: The Absorption Stack",
-    "type": "food-combo",
-    "time": "09:11",
-    "date": "2026-05-23",
-    "status": "completed",
-    "completed_at": "2026-05-23 09:11"
-  },
-  {
-    "topic": "The Vitamin K2 Smoothie That Maximizes Absorption",
-    "type": "recipe",
-    "time": "01:32",
-    "date": "2026-05-23",
-    "status": "pending",
-    "completed_at": ""
-  },
-  {
-    "topic": "The Resveratrol Mistake That Ruins Absorption",
-    "type": "longtail-mistake",
-    "time": "19:33",
-    "date": "2026-05-23",
-    "status": "completed",
-    "completed_at": "2026-05-23 19:33"
-  },
-  {
-    "topic": "Zinc and Vitamin B6 Synergy: The Nordic Protocol",
-    "type": "synergy",
-    "time": "07:17",
-    "date": "2026-05-24",
-    "status": "completed",
-    "completed_at": "2026-05-24 07:17"
-  },
-  {
-    "topic": "Best Food to Eat With Biotin",
-    "type": "longtail-routine",
-    "time": "11:23",
-    "date": "2026-05-24",
-    "status": "completed",
-    "completed_at": "2026-05-24 11:23"
-  },
-  {
-    "topic": "NMN and the Brain-Gut Axis: Explained",
-    "type": "mechanism",
-    "time": "18:41",
-    "date": "2026-05-24",
-    "status": "completed",
-    "completed_at": "2026-05-24 18:41"
-  },
-  {
-    "topic": "Vitamin C Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "14:34",
-    "date": "2026-05-25",
-    "status": "completed",
-    "completed_at": "2026-05-25 10:20"
-  },
-  {
-    "topic": "Vitamin D3 Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "10:13",
-    "date": "2026-05-26",
-    "status": "completed",
-    "completed_at": "2026-05-30 21:16",
-    "reset_reason": "blogger_delete_bug_2026_05"
-  },
-  {
-    "topic": "Vitamin K2 (MK-7) Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "01:32",
-    "date": "2026-05-26",
-    "status": "pending",
-    "completed_at": "",
-    "reset_reason": "blogger_delete_bug_2026_05"
-  },
-  {
-    "topic": "Magnesium Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "14:34",
-    "date": "2026-05-26",
-    "status": "completed",
-    "completed_at": "2026-05-26 14:34"
-  },
-  {
-    "topic": "Zinc Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "18:05",
-    "date": "2026-05-27",
-    "status": "pending",
-    "completed_at": "2026-05-27 18:05",
-    "reset_reason": "blogger_delete_bug_2026_05"
-  },
-  {
-    "topic": "Selenium Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "19:35",
-    "date": "2026-05-27",
-    "status": "pending",
-    "completed_at": "2026-05-27 19:35",
-    "reset_reason": "blogger_delete_bug_2026_05"
-  },
-  {
-    "topic": "Omega-3 (EPA/DHA) Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "L-Carnitine ALCAR Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Berberine Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:40",
-    "date": "2026-05-30",
-    "status": "in_progress",
-    "trend_window": "7d",
-    "trend_slot": "재발행"
-  },
-  {
-    "topic": "Probiotics Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "02:05",
-    "date": "2026-05-30",
-    "status": "completed",
-    "trend_window": "7d",
-    "trend_slot": "재발행",
-    "completed_at": "2026-05-30 02:05"
-  },
-  {
-    "topic": "Taurine Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "06:47",
-    "date": "2026-05-30",
-    "status": "skipped",
-    "trend_window": "7d",
-    "trend_slot": "1번째"
-  },
-  {
-    "topic": "NAC (N-Acetyl Cysteine) Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Lions Mane Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Bacopa Monnieri Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Alpha-GPC Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "CDP-Choline Citicoline Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "L-Theanine Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Creatine Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "20:33",
-    "date": "2026-05-29",
-    "status": "pending",
-    "trend_window": "7d",
-    "trend_slot": "1번째",
-    "completed_at": "2026-05-29 20:33",
-    "reset_reason": "blogger_delete_bug_2026_05"
-  },
-  {
-    "topic": "CoQ10 Ubiquinol Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "PQQ Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "NR Nicotinamide Riboside Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Glutathione Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "13:07",
-    "date": "2026-05-30",
-    "status": "skipped",
-    "trend_window": "30d",
-    "trend_slot": "2번째"
-  },
-  {
-    "topic": "Resveratrol Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Quercetin Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Ashwagandha KSM-66 Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Rhodiola Rosea Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Panax Ginseng Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Berberine Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "21:52",
-    "date": "2026-05-29",
-    "status": "completed",
-    "trend_window": "30d",
-    "trend_slot": "2번째",
-    "completed_at": "2026-05-29 21:52"
-  },
-  {
-    "topic": "Turmeric Curcumin Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Collagen Type I II III Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Probiotics Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "23:11",
-    "date": "2026-05-29",
-    "status": "pending",
-    "trend_window": "1yr",
-    "trend_slot": "3번째",
-    "completed_at": "2026-05-30 02:05",
-    "reset_reason": "duplicate_entry"
-  },
-  {
-    "topic": "Elderberry Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Vitamin A Retinol Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Vitamin B3 Niacin Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "18:23",
-    "date": "2026-05-30",
-    "status": "skipped",
-    "trend_window": "1yr",
-    "trend_slot": "3번째"
-  },
-  {
-    "topic": "Vitamin B6 Pyridoxine Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Vitamin B7 Biotin Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Vitamin B9 Folate Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Vitamin E Tocopherol Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Iron Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "20:58",
-    "date": "2026-05-28",
-    "status": "completed",
-    "longtail_keywords": [
-      "Iron benefits",
-      "Iron side effects",
-      "Iron dosage",
-      "Iron benefits and side effects",
-      "best time to take Iron",
-      "Iron before bed",
-      "Iron with food",
-      "Iron for women",
-      "Iron for men over 50",
-      "how much Iron per day",
-      "Iron deficiency symptoms",
-      "does Iron really work",
-      "Iron vs other supplements",
-      "what does Iron do",
-      "Iron supplement guide"
+    "nutrients": [
+      "Melatonin"
     ],
-    "trend_slot": "30일",
-    "completed_at": "2026-05-28 20:58"
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-05-31"
   },
   {
-    "topic": "Iodine Complete Guide",
+    "topic": "The Best Time to Take Copper — What I Got Wrong at First",
+    "type": "timing",
+    "nutrients": [
+      "Copper"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-05-31"
+  },
+  {
+    "topic": "Why I Started Taking Magnesium and Vitamin D at the Same Time",
+    "type": "synergy",
+    "nutrients": [
+      "Magnesium",
+      "Vitamin D"
+    ],
+    "status": "completed",
+    "priority": "high",
+    "added_at": "2026-05-31",
+    "date": "2026-06-01",
+    "time": "11:23",
+    "trend_score": 0,
+    "completed_at": "2026-06-01 11:23"
+  },
+  {
+    "topic": "The Copper and Zinc Stack I Wish I Had Tried Sooner",
+    "type": "synergy",
+    "nutrients": [
+      "Copper",
+      "Zinc"
+    ],
+    "status": "completed",
+    "priority": "high",
+    "added_at": "2026-05-31",
+    "date": "2026-06-02",
+    "time": "18:29",
+    "trend_score": 0,
+    "completed_at": "2026-06-02 18:29"
+  },
+  {
+    "topic": "How Iron Made My Vitamin C Finally Work",
+    "type": "synergy",
+    "nutrients": [
+      "Vitamin C",
+      "Iron"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-05-31"
+  },
+  {
+    "topic": "Taking Selenium with Zinc: What Changed After Four Weeks",
+    "type": "synergy",
+    "nutrients": [
+      "Selenium",
+      "Zinc"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-05-31"
+  },
+  {
+    "topic": "Why I Started Taking Vitamin K2 and Vitamin D at the Same Time",
+    "type": "synergy",
+    "nutrients": [
+      "Vitamin K2",
+      "Vitamin D"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-05-31"
+  },
+  {
+    "topic": "How Iron Made My B12 Finally Work",
+    "type": "synergy",
+    "nutrients": [
+      "B12",
+      "Iron"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-05-31"
+  },
+  {
+    "topic": "Zinc and Vitamin C Together: The Combination I Didn't Expect to Work",
+    "type": "synergy",
+    "nutrients": [
+      "Zinc",
+      "Vitamin C"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-05-31"
+  },
+  {
+    "topic": "How Vitamin C Made My Selenium Finally Work",
+    "type": "synergy",
+    "nutrients": [
+      "Selenium",
+      "Vitamin C"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-05-31"
+  },
+  {
+    "topic": "The Magnesium and Zinc Stack I Wish I Had Tried Sooner",
+    "type": "synergy",
+    "nutrients": [
+      "Magnesium",
+      "Zinc"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-05-31"
+  },
+  {
+    "topic": "How Vitamin D Made My HMB Finally Work",
+    "type": "synergy",
+    "nutrients": [
+      "HMB",
+      "Vitamin D"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-05-31"
+  },
+  {
+    "topic": "Why Copper Stopped Working When I Added Zinc",
+    "type": "antagonism",
+    "nutrients": [
+      "Copper",
+      "Zinc"
+    ],
+    "status": "completed",
+    "priority": "high",
+    "added_at": "2026-05-31",
+    "date": "2026-06-01",
+    "time": "17:47",
+    "trend_score": 0,
+    "completed_at": "2026-06-01 17:47"
+  },
+  {
+    "topic": "Taking Zinc with Iron: What I Learned the Hard Way",
+    "type": "antagonism",
+    "nutrients": [
+      "Zinc",
+      "Iron"
+    ],
+    "status": "completed",
+    "priority": "high",
+    "added_at": "2026-05-31",
+    "date": "2026-06-02",
+    "time": "23:54",
+    "completed_at": "2026-06-02 23:54"
+  },
+  {
+    "topic": "Taking Vitamin D with Magnesium: What I Learned the Hard Way",
+    "type": "antagonism",
+    "nutrients": [
+      "Vitamin D",
+      "Magnesium"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-05-31"
+  },
+  {
+    "topic": "Why You Shouldn't Take Copper and Vitamin C Together (What Happened to Me)",
+    "type": "antagonism",
+    "nutrients": [
+      "Copper",
+      "Vitamin C"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-05-31"
+  },
+  {
+    "topic": "Taking Iron with Zinc: What I Learned the Hard Way",
+    "type": "antagonism",
+    "nutrients": [
+      "Iron",
+      "Zinc"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-05-31"
+  },
+  {
+    "topic": "Taking Copper Before Bed: Four Weeks of Testing",
+    "type": "timing",
+    "nutrients": [
+      "Copper"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-05-31"
+  },
+  {
+    "topic": "Why I Switched Melatonin to Morning (And What Changed)",
+    "type": "timing",
+    "nutrients": [
+      "Melatonin"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-05-31"
+  },
+  {
+    "topic": "Taking Selenium Before Bed: Four Weeks of Testing",
+    "type": "timing",
+    "nutrients": [
+      "Selenium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-05-31"
+  },
+  {
+    "topic": "The Best Time to Take SAMe — What I Got Wrong at First",
+    "type": "timing",
+    "nutrients": [
+      "SAMe"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-05-31"
+  },
+  {
+    "topic": "Why I Switched Zinc to Morning (And What Changed)",
+    "type": "timing",
+    "nutrients": [
+      "Zinc"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-05-31"
+  },
+  {
+    "topic": "Why I Switched HMB to Morning (And What Changed)",
+    "type": "timing",
+    "nutrients": [
+      "HMB"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-05-31"
+  },
+  {
+    "topic": "Why I Switched Vitamin K2 to Morning (And What Changed)",
+    "type": "timing",
+    "nutrients": [
+      "Vitamin K2"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-05-31"
+  },
+  {
+    "topic": "Why I Switched Vitamin D to Morning (And What Changed)",
+    "type": "timing",
+    "nutrients": [
+      "Vitamin D"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-05-31"
+  },
+  {
+    "topic": "Omega-3 Complete Guide",
     "type": "comprehensive_guide",
-    "time": "00:00",
+    "status": "pending",
     "date": "",
-    "status": "pending"
+    "time": "",
+    "added_at": "2026-06-01"
   },
   {
     "topic": "Calcium Complete Guide",
     "type": "comprehensive_guide",
-    "time": "00:00",
+    "status": "pending",
     "date": "",
-    "status": "pending"
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Iodine Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
   },
   {
     "topic": "Boron Complete Guide",
     "type": "comprehensive_guide",
-    "time": "00:00",
+    "status": "pending",
     "date": "",
-    "status": "pending"
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "L-Theanine Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
   },
   {
     "topic": "L-Glutamine Complete Guide",
     "type": "comprehensive_guide",
-    "time": "00:00",
+    "status": "pending",
     "date": "",
-    "status": "pending"
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "L-Carnitine Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
   },
   {
     "topic": "L-Tyrosine Complete Guide",
     "type": "comprehensive_guide",
-    "time": "00:00",
+    "status": "pending",
     "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "5-HTP Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "GABA Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
+    "time": "",
+    "added_at": "2026-06-01"
   },
   {
     "topic": "Glycine Complete Guide",
     "type": "comprehensive_guide",
-    "time": "00:00",
+    "status": "pending",
     "date": "",
-    "status": "pending"
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Taurine Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "NAC Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Alpha-GPC Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "CDP-Choline Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
   },
   {
     "topic": "Phosphatidylserine Complete Guide",
     "type": "comprehensive_guide",
-    "time": "00:00",
+    "status": "pending",
     "date": "",
-    "status": "pending"
+    "time": "",
+    "added_at": "2026-06-01"
   },
   {
-    "topic": "Ginkgo Biloba Complete Guide",
+    "topic": "Lion's Mane Complete Guide",
     "type": "comprehensive_guide",
-    "time": "00:00",
+    "status": "pending",
     "date": "",
-    "status": "pending"
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Bacopa Monnieri Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Rhodiola Rosea Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Ashwagandha Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Quercetin Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Resveratrol Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "CoQ10 Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "PQQ Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Glutathione Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Alpha Lipoic Acid Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
   },
   {
     "topic": "Astaxanthin Complete Guide",
     "type": "comprehensive_guide",
-    "time": "00:00",
+    "status": "pending",
     "date": "",
-    "status": "pending"
+    "time": "",
+    "added_at": "2026-06-01"
   },
   {
-    "topic": "Alpha Lipoic Acid ALA Complete Guide",
+    "topic": "Vitamin B6 Complete Guide",
     "type": "comprehensive_guide",
-    "time": "00:00",
+    "status": "pending",
     "date": "",
-    "status": "pending"
+    "time": "",
+    "added_at": "2026-06-01"
   },
   {
-    "topic": "Fisetin Complete Guide",
+    "topic": "Folate Complete Guide",
     "type": "comprehensive_guide",
-    "time": "00:00",
+    "status": "pending",
     "date": "",
-    "status": "pending"
+    "time": "",
+    "added_at": "2026-06-01"
   },
   {
-    "topic": "Maca Root Complete Guide",
+    "topic": "Biotin Complete Guide",
     "type": "comprehensive_guide",
-    "time": "00:00",
+    "status": "pending",
     "date": "",
-    "status": "pending"
+    "time": "",
+    "added_at": "2026-06-01"
   },
   {
-    "topic": "Milk Thistle Silymarin Complete Guide",
+    "topic": "Vitamin A Complete Guide",
     "type": "comprehensive_guide",
-    "time": "00:00",
+    "status": "pending",
     "date": "",
-    "status": "pending"
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Collagen Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
   },
   {
     "topic": "Glucosamine Complete Guide",
     "type": "comprehensive_guide",
-    "time": "00:00",
+    "status": "pending",
     "date": "",
-    "status": "pending"
+    "time": "",
+    "added_at": "2026-06-01"
   },
   {
     "topic": "MSM Complete Guide",
     "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Hyaluronic Acid Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Chondroitin Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Prebiotics Inulin FOS Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Digestive Enzymes Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Butyrate Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Echinacea Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Beta-Glucan Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Beta-Alanine Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Citrulline Malate Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "09:36",
-    "date": "2026-06-16",
-    "status": "completed",
-    "completed_at": "2026-05-30 21:16",
-    "reset_reason": "blogger_delete_bug_2026_05"
-  },
-  {
-    "topic": "Vitamin B1 Thiamine Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Vitamin B2 Riboflavin Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Vitamin B5 Pantothenic Acid Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Vitamin B12 Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "02:32",
-    "date": "2026-05-25",
-    "status": "completed",
-    "completed_at": "2026-05-25 02:32",
-    "reset_reason": "blogger_delete_bug_2026_05",
-    "published_url": "https://www.nutristacklab.com/2026/05/vitamin-b12-absorption-why-i-got-it.html",
-    "published_at": "2026-05-30"
-  },
-  {
-    "topic": "Chromium Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Copper Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "22:13",
-    "date": "2026-05-28",
     "status": "pending",
-    "longtail_keywords": [
-      "Copper benefits",
-      "Copper side effects",
-      "Copper dosage",
-      "Copper benefits and side effects",
-      "best time to take Copper",
-      "Copper before bed",
-      "Copper with food",
-      "Copper for women",
-      "Copper for men over 50",
-      "how much Copper per day",
-      "Copper deficiency symptoms",
-      "does Copper really work",
-      "Copper vs other supplements",
-      "what does Copper do",
-      "Copper supplement guide"
-    ],
-    "trend_slot": "1년",
-    "completed_at": "2026-05-28 22:13",
-    "reset_reason": "blogger_delete_bug_2026_05"
-  },
-  {
-    "topic": "GLA Evening Primrose Oil Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
     "date": "",
-    "status": "pending"
+    "time": "",
+    "added_at": "2026-06-01"
   },
   {
-    "topic": "Huperzine A Complete Guide",
+    "topic": "Turmeric Complete Guide",
     "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Holy Basil Tulsi Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "HMB Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "16:49",
-    "date": "2026-05-27",
     "status": "pending",
-    "completed_at": "2026-05-27 16:49",
-    "reset_reason": "blogger_delete_bug_2026_05"
-  },
-  {
-    "topic": "Melatonin Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
     "date": "",
-    "status": "pending"
+    "time": "",
+    "added_at": "2026-06-01"
   },
   {
-    "topic": "Lutein and Zeaxanthin Complete Guide",
+    "topic": "Ginger Complete Guide",
     "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
+    "status": "completed",
+    "date": "2026-06-01",
+    "time": "07:29",
+    "added_at": "2026-06-01",
+    "trend_score": 525,
+    "completed_at": "2026-06-01 07:29"
   },
   {
-    "topic": "Potassium Complete Guide",
+    "topic": "Elderberry Complete Guide",
     "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Manganese Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "DHEA Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "SAMe Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "19:42",
-    "date": "2026-05-28",
     "status": "pending",
-    "longtail_keywords": [
-      "SAMe benefits",
-      "SAMe side effects",
-      "SAMe dosage",
-      "SAMe benefits and side effects",
-      "best time to take SAMe",
-      "SAMe before bed",
-      "SAMe with food",
-      "SAMe for women",
-      "SAMe for men over 50",
-      "how much SAMe per day",
-      "SAMe deficiency symptoms",
-      "does SAMe really work",
-      "SAMe vs other supplements",
-      "what does SAMe do",
-      "SAMe supplement guide"
-    ],
-    "trend_slot": "7일",
-    "completed_at": "2026-05-28 19:42",
-    "reset_reason": "blogger_delete_bug_2026_05"
-  },
-  {
-    "topic": "Spirulina Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
     "date": "",
-    "status": "pending"
+    "time": "",
+    "added_at": "2026-06-01"
   },
   {
-    "topic": "Chlorella Complete Guide",
+    "topic": "5-HTP Complete Guide",
     "type": "comprehensive_guide",
-    "time": "00:00",
+    "status": "pending",
     "date": "",
-    "status": "pending"
+    "time": "",
+    "added_at": "2026-06-01"
   },
   {
-    "topic": "Vitamin K1 Complete Guide",
+    "topic": "GABA Complete Guide",
     "type": "comprehensive_guide",
-    "time": "00:00",
+    "status": "pending",
     "date": "",
-    "status": "pending"
+    "time": "",
+    "added_at": "2026-06-01"
   },
   {
-    "topic": "EGCG Green Tea Extract Complete Guide",
+    "topic": "Niacin Complete Guide",
     "type": "comprehensive_guide",
-    "time": "00:00",
+    "status": "pending",
     "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "BCAAs Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Tongkat Ali Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Shilajit Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Colostrum Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "L-Arginine Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "L-Tryptophan Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Fadogia Agrestis Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Reishi Mushroom Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Cordyceps Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Turkey Tail Mushroom Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Chaga Mushroom Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Pterostilbene Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Urolithin A Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Grape Seed Extract Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Moringa Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Black Seed Oil Nigella Sativa Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "MCT Oil Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "CLA Conjugated Linoleic Acid Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "D-Aspartic Acid Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Tribulus Terrestris Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Mucuna Pruriens Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Valerian Root Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Passionflower Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Lemon Balm Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Saw Palmetto Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Apigenin Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Pycnogenol Pine Bark Extract Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Bilberry Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Silica Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "L-Lysine Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Carnosine Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Lithium Orotate Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Maitake Mushroom Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Shiitake Mushroom Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Psyllium Husk Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Saffron Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Hawthorn Berry Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Boswellia Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Aged Garlic Extract Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "TUDCA Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Nattokinase Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Gotu Kola Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Phosphatidylcholine Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Artichoke Extract Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Inositol Myo-Inositol Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Serrapeptase Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "Nettle Root Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "00:00",
-    "date": "",
-    "status": "pending"
-  },
-  {
-    "topic": "NMN Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "05:22",
-    "date": "2026-05-30",
-    "status": "completed",
-    "trend_slot": "재발행",
-    "completed_at": "2026-05-30 05:22"
-  },
-  {
-    "topic": "Vitamin B12 Cobalamin Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "11:15",
-    "date": "2026-05-30",
-    "status": "completed",
-    "trend_slot": "재발행",
-    "completed_at": "2026-05-30 21:16"
-  },
-  {
-    "topic": "Citrulline Malate Complete Guide",
-    "type": "comprehensive_guide",
-    "time": "16:07",
-    "date": "2026-05-30",
-    "status": "completed",
-    "trend_slot": "재발행",
-    "completed_at": "2026-05-30 21:16"
+    "time": "",
+    "added_at": "2026-06-01"
   },
   {
     "topic": "Vitamin D3 Complete Guide",
     "type": "comprehensive_guide",
-    "time": "20:08",
-    "date": "2026-05-30",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Manganese Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Chromium Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Molybdenum Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Potassium Complete Guide",
+    "type": "comprehensive_guide",
     "status": "completed",
-    "trend_slot": "재발행",
-    "completed_at": "2026-05-30 21:16"
+    "date": "2026-06-02",
+    "time": "09:23",
+    "added_at": "2026-06-01",
+    "trend_score": 767,
+    "completed_at": "2026-06-02 09:23"
   },
   {
-    "topic": "Vitamin K2 MK-7 Complete Guide",
+    "topic": "Phosphorus Complete Guide",
     "type": "comprehensive_guide",
-    "time": "01:32",
-    "date": "2026-05-31",
     "status": "pending",
-    "trend_slot": "재발행",
-    "completed_at": ""
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
   },
   {
-    "topic": "HMB Complete Guide",
+    "topic": "Silica Complete Guide",
     "type": "comprehensive_guide",
-    "time": "03:43",
-    "date": "2026-05-31",
     "status": "pending",
-    "trend_slot": "재발행"
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
   },
   {
-    "topic": "Zinc Complete Guide",
+    "topic": "Vitamin E Complete Guide",
     "type": "comprehensive_guide",
-    "time": "06:58",
-    "date": "2026-05-31",
     "status": "pending",
-    "trend_slot": "재발행"
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
   },
   {
-    "topic": "Selenium Complete Guide",
+    "topic": "Vitamin K1 Complete Guide",
     "type": "comprehensive_guide",
-    "time": "11:23",
-    "date": "2026-05-31",
     "status": "pending",
-    "trend_slot": "재발행"
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
   },
   {
-    "topic": "SAMe Complete Guide",
+    "topic": "Vitamin B2 Complete Guide",
     "type": "comprehensive_guide",
-    "time": "16:21",
-    "date": "2026-05-31",
     "status": "pending",
-    "trend_slot": "재발행"
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
   },
   {
-    "topic": "Copper Complete Guide",
+    "topic": "Vitamin B3 Complete Guide",
     "type": "comprehensive_guide",
-    "time": "20:32",
-    "date": "2026-05-31",
     "status": "pending",
-    "trend_slot": "재발행"
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Vitamin B5 Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Vitamin B7 Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Choline Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Inositol Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Pantothenic Acid Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Riboflavin Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Thiamine Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "L-Arginine Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "L-Lysine Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Beta-Alanine Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "BCAA Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Leucine Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Carnosine Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Acetyl-L-Carnitine Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Betaine Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Tryptophan Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Ornithine Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
   },
   {
     "topic": "Creatine Complete Guide",
     "type": "comprehensive_guide",
-    "time": "00:09",
-    "date": "2026-06-01",
+    "status": "completed",
+    "date": "2026-06-02",
+    "time": "14:33",
+    "added_at": "2026-06-01",
+    "trend_score": 713,
+    "completed_at": "2026-06-02 14:33"
+  },
+  {
+    "topic": "Ginkgo Biloba Complete Guide",
+    "type": "comprehensive_guide",
     "status": "pending",
-    "trend_slot": "재발행"
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Gotu Kola Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Mucuna Pruriens Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "NAD Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Spermidine Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Fisetin Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Apigenin Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Sulforaphane Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Urolithin A Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "EGCG Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Pterostilbene Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Milk Thistle Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Saw Palmetto Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Ginseng Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Maca Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Tongkat Ali Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Fenugreek Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Holy Basil Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Cordyceps Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Reishi Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Chaga Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Turkey Tail Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Schisandra Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Valerian Root Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Passionflower Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Lemon Balm Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Chamomile Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Echinacea Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Boswellia Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Garlic Extract Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Cinnamon Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Pine Bark Extract Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Grape Seed Extract Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Olive Leaf Extract Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Krill Oil Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Fish Oil Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Flaxseed Oil Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Evening Primrose Oil Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "MCT Oil Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "DHA Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "EPA Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Lecithin Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Phosphatidylcholine Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Chondroitin Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Hyaluronic Acid Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Bromelain Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Serrapeptase Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Digestive Enzymes Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Psyllium Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Inulin Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Prebiotics Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "TMG Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Spirulina Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Chlorella Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Moringa Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Beetroot Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Lutein Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Zeaxanthin Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Bilberry Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "DIM Complete Guide",
+    "type": "comprehensive_guide",
+    "status": "pending",
+    "date": "",
+    "time": "",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Copper and Zinc Together: The Combination I Didn't Expect to Work",
+    "type": "synergy",
+    "nutrients": [
+      "Copper",
+      "Zinc"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "The Vitamin C and Iron Stack I Wish I Had Tried Sooner",
+    "type": "synergy",
+    "nutrients": [
+      "Vitamin C",
+      "Iron"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Why You Shouldn't Take Copper and Zinc Together (What Happened to Me)",
+    "type": "antagonism",
+    "nutrients": [
+      "Copper",
+      "Zinc"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Why Zinc Stopped Working When I Added Iron",
+    "type": "antagonism",
+    "nutrients": [
+      "Zinc",
+      "Iron"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "How Vitamin C Was Blocking My Copper — And I Had No Idea",
+    "type": "antagonism",
+    "nutrients": [
+      "Copper",
+      "Vitamin C"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "SAMe in the Morning vs at Night: Which Worked Better for Me",
+    "type": "timing",
+    "nutrients": [
+      "SAMe"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "Taking Zinc Before Bed: Four Weeks of Testing",
+    "type": "timing",
+    "nutrients": [
+      "Zinc"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-01"
+  },
+  {
+    "topic": "My Partner Started Magnesium Before I Did — And What They Told Me Changed My Mind",
+    "type": "friend_experience",
+    "nutrients": [
+      "Magnesium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "A Woman I Work With Figured Out the Magnesium Timing I'd Been Missing",
+    "type": "friend_experience",
+    "nutrients": [
+      "Magnesium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Roommate Tried Magnesium for a Month — Here's What They Noticed",
+    "type": "friend_experience",
+    "nutrients": [
+      "Magnesium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Someone I Know Swears by Magnesium — Here's Why I Finally Listened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Magnesium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Partner Started Zinc Before I Did — And What They Told Me Changed My Mind",
+    "type": "friend_experience",
+    "nutrients": [
+      "Zinc"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Watched My Colleague Go Through the Same Zinc Learning Curve",
+    "type": "friend_experience",
+    "nutrients": [
+      "Zinc"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "What A Woman I Work With Said About Zinc After Six Weeks",
+    "type": "friend_experience",
+    "nutrients": [
+      "Zinc"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Trainer Swears by Zinc — Here's Why I Finally Listened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Zinc"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Colleague Had Better Results with Vitamin D3 Than I Expected",
+    "type": "friend_experience",
+    "nutrients": [
+      "Vitamin D3"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "A Guy at My Gym Started Vitamin D3 Before I Did — And What They Told Me Changed My Mind",
+    "type": "friend_experience",
+    "nutrients": [
+      "Vitamin D3"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Trainer Figured Out the Vitamin D3 Timing I'd Been Missing",
+    "type": "friend_experience",
+    "nutrients": [
+      "Vitamin D3"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Almost Talked My Partner Out of Vitamin D3 — Then This Happened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Vitamin D3"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Watched A Guy at My Gym Go Through the Same Vitamin K2 Learning Curve",
+    "type": "friend_experience",
+    "nutrients": [
+      "Vitamin K2"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Someone I Know Had Better Results with Vitamin K2 Than I Expected",
+    "type": "friend_experience",
+    "nutrients": [
+      "Vitamin K2"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Roommate Figured Out the Vitamin K2 Timing I'd Been Missing",
+    "type": "friend_experience",
+    "nutrients": [
+      "Vitamin K2"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Almost Talked My Trainer Out of Vitamin K2 — Then This Happened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Vitamin K2"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Roommate Started Omega-3 Before I Did — And What They Told Me Changed My Mind",
+    "type": "friend_experience",
+    "nutrients": [
+      "Omega-3"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Almost Talked A Guy at My Gym Out of Omega-3 — Then This Happened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Omega-3"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Someone I Know Swears by Omega-3 — Here's Why I Finally Listened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Omega-3"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "A Woman I Work With Had Better Results with Omega-3 Than I Expected",
+    "type": "friend_experience",
+    "nutrients": [
+      "Omega-3"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Almost Talked My Roommate Out of Vitamin C — Then This Happened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Vitamin C"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "A Woman I Work With Started Vitamin C Before I Did — And What They Told Me Changed My Mind",
+    "type": "friend_experience",
+    "nutrients": [
+      "Vitamin C"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "What A Guy at My Gym Said About Vitamin C After Six Weeks",
+    "type": "friend_experience",
+    "nutrients": [
+      "Vitamin C"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Someone I Know Had Better Results with Vitamin C Than I Expected",
+    "type": "friend_experience",
+    "nutrients": [
+      "Vitamin C"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Almost Talked Someone I Know Out of Iron — Then This Happened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Iron"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "A Woman I Work With Swears by Iron — Here's Why I Finally Listened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Iron"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Friend Figured Out the Iron Timing I'd Been Missing",
+    "type": "friend_experience",
+    "nutrients": [
+      "Iron"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Trainer Started Iron Before I Did — And What They Told Me Changed My Mind",
+    "type": "friend_experience",
+    "nutrients": [
+      "Iron"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Almost Talked My Friend Out of Calcium — Then This Happened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Calcium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Roommate Had Better Results with Calcium Than I Expected",
+    "type": "friend_experience",
+    "nutrients": [
+      "Calcium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Watched A Guy at My Gym Go Through the Same Calcium Learning Curve",
+    "type": "friend_experience",
+    "nutrients": [
+      "Calcium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "What My Trainer Said About Calcium After Six Weeks",
+    "type": "friend_experience",
+    "nutrients": [
+      "Calcium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Colleague Had Better Results with Selenium Than I Expected",
+    "type": "friend_experience",
+    "nutrients": [
+      "Selenium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Roommate Swears by Selenium — Here's Why I Finally Listened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Selenium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Partner Started Selenium Before I Did — And What They Told Me Changed My Mind",
+    "type": "friend_experience",
+    "nutrients": [
+      "Selenium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Almost Talked A Guy at My Gym Out of Selenium — Then This Happened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Selenium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Watched My Partner Go Through the Same Iodine Learning Curve",
+    "type": "friend_experience",
+    "nutrients": [
+      "Iodine"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "What My Trainer Said About Iodine After Six Weeks",
+    "type": "friend_experience",
+    "nutrients": [
+      "Iodine"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Almost Talked My Friend Out of Iodine — Then This Happened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Iodine"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Colleague Tried Iodine for a Month — Here's What They Noticed",
+    "type": "friend_experience",
+    "nutrients": [
+      "Iodine"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Almost Talked My Friend Out of Copper — Then This Happened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Copper"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "A Guy at My Gym Figured Out the Copper Timing I'd Been Missing",
+    "type": "friend_experience",
+    "nutrients": [
+      "Copper"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "What Someone I Know Said About Copper After Six Weeks",
+    "type": "friend_experience",
+    "nutrients": [
+      "Copper"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Colleague Had Better Results with Copper Than I Expected",
+    "type": "friend_experience",
+    "nutrients": [
+      "Copper"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "What My Roommate Said About Potassium After Six Weeks",
+    "type": "friend_experience",
+    "nutrients": [
+      "Potassium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Friend Figured Out the Potassium Timing I'd Been Missing",
+    "type": "friend_experience",
+    "nutrients": [
+      "Potassium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Partner Tried Potassium for a Month — Here's What They Noticed",
+    "type": "friend_experience",
+    "nutrients": [
+      "Potassium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "A Guy at My Gym Swears by Potassium — Here's Why I Finally Listened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Potassium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "What My Colleague Said About Vitamin B12 After Six Weeks",
+    "type": "friend_experience",
+    "nutrients": [
+      "Vitamin B12"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "A Woman I Work With Started Vitamin B12 Before I Did — And What They Told Me Changed My Mind",
+    "type": "friend_experience",
+    "nutrients": [
+      "Vitamin B12"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Trainer Tried Vitamin B12 for a Month — Here's What They Noticed",
+    "type": "friend_experience",
+    "nutrients": [
+      "Vitamin B12"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Almost Talked Someone I Know Out of Vitamin B12 — Then This Happened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Vitamin B12"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Trainer Tried NMN for a Month — Here's What They Noticed",
+    "type": "friend_experience",
+    "nutrients": [
+      "NMN"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Almost Talked My Partner Out of NMN — Then This Happened",
+    "type": "friend_experience",
+    "nutrients": [
+      "NMN"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Colleague Figured Out the NMN Timing I'd Been Missing",
+    "type": "friend_experience",
+    "nutrients": [
+      "NMN"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Friend Had Better Results with NMN Than I Expected",
+    "type": "friend_experience",
+    "nutrients": [
+      "NMN"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Trainer Tried Probiotics for a Month — Here's What They Noticed",
+    "type": "friend_experience",
+    "nutrients": [
+      "Probiotics"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Almost Talked My Partner Out of Probiotics — Then This Happened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Probiotics"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Friend Figured Out the Probiotics Timing I'd Been Missing",
+    "type": "friend_experience",
+    "nutrients": [
+      "Probiotics"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "What Someone I Know Said About Probiotics After Six Weeks",
+    "type": "friend_experience",
+    "nutrients": [
+      "Probiotics"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Watched My Roommate Go Through the Same Berberine Learning Curve",
+    "type": "friend_experience",
+    "nutrients": [
+      "Berberine"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Partner Started Berberine Before I Did — And What They Told Me Changed My Mind",
+    "type": "friend_experience",
+    "nutrients": [
+      "Berberine"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "A Woman I Work With Swears by Berberine — Here's Why I Finally Listened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Berberine"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "A Guy at My Gym Tried Berberine for a Month — Here's What They Noticed",
+    "type": "friend_experience",
+    "nutrients": [
+      "Berberine"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "What My Friend Said About Citrulline After Six Weeks",
+    "type": "friend_experience",
+    "nutrients": [
+      "Citrulline"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "A Guy at My Gym Started Citrulline Before I Did — And What They Told Me Changed My Mind",
+    "type": "friend_experience",
+    "nutrients": [
+      "Citrulline"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Partner Swears by Citrulline — Here's Why I Finally Listened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Citrulline"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Colleague Figured Out the Citrulline Timing I'd Been Missing",
+    "type": "friend_experience",
+    "nutrients": [
+      "Citrulline"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Trainer Swears by Melatonin — Here's Why I Finally Listened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Melatonin"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Watched My Colleague Go Through the Same Melatonin Learning Curve",
+    "type": "friend_experience",
+    "nutrients": [
+      "Melatonin"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Almost Talked My Friend Out of Melatonin — Then This Happened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Melatonin"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "What Someone I Know Said About Melatonin After Six Weeks",
+    "type": "friend_experience",
+    "nutrients": [
+      "Melatonin"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Someone I Know Started HMB Before I Did — And What They Told Me Changed My Mind",
+    "type": "friend_experience",
+    "nutrients": [
+      "HMB"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Partner Swears by HMB — Here's Why I Finally Listened",
+    "type": "friend_experience",
+    "nutrients": [
+      "HMB"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Watched My Trainer Go Through the Same HMB Learning Curve",
+    "type": "friend_experience",
+    "nutrients": [
+      "HMB"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "What My Colleague Said About HMB After Six Weeks",
+    "type": "friend_experience",
+    "nutrients": [
+      "HMB"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Watched My Colleague Go Through the Same SAMe Learning Curve",
+    "type": "friend_experience",
+    "nutrients": [
+      "SAMe"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Almost Talked My Partner Out of SAMe — Then This Happened",
+    "type": "friend_experience",
+    "nutrients": [
+      "SAMe"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Trainer Started SAMe Before I Did — And What They Told Me Changed My Mind",
+    "type": "friend_experience",
+    "nutrients": [
+      "SAMe"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Friend Had Better Results with SAMe Than I Expected",
+    "type": "friend_experience",
+    "nutrients": [
+      "SAMe"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Roommate Figured Out the Ginger Timing I'd Been Missing",
+    "type": "friend_experience",
+    "nutrients": [
+      "Ginger"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Colleague Swears by Ginger — Here's Why I Finally Listened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Ginger"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "A Guy at My Gym Had Better Results with Ginger Than I Expected",
+    "type": "friend_experience",
+    "nutrients": [
+      "Ginger"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Almost Talked My Friend Out of Ginger — Then This Happened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Ginger"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Almost Talked My Roommate Out of Creatine — Then This Happened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Creatine"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Friend Swears by Creatine — Here's Why I Finally Listened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Creatine"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Trainer Had Better Results with Creatine Than I Expected",
+    "type": "friend_experience",
+    "nutrients": [
+      "Creatine"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "What Someone I Know Said About Creatine After Six Weeks",
+    "type": "friend_experience",
+    "nutrients": [
+      "Creatine"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Colleague Had Better Results with Taurine Than I Expected",
+    "type": "friend_experience",
+    "nutrients": [
+      "Taurine"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Watched My Partner Go Through the Same Taurine Learning Curve",
+    "type": "friend_experience",
+    "nutrients": [
+      "Taurine"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "What A Woman I Work With Said About Taurine After Six Weeks",
+    "type": "friend_experience",
+    "nutrients": [
+      "Taurine"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Roommate Figured Out the Taurine Timing I'd Been Missing",
+    "type": "friend_experience",
+    "nutrients": [
+      "Taurine"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Almost Talked My Roommate Out of Glutathione — Then This Happened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Glutathione"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "A Woman I Work With Started Glutathione Before I Did — And What They Told Me Changed My Mind",
+    "type": "friend_experience",
+    "nutrients": [
+      "Glutathione"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Colleague Had Better Results with Glutathione Than I Expected",
+    "type": "friend_experience",
+    "nutrients": [
+      "Glutathione"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Watched My Friend Go Through the Same Glutathione Learning Curve",
+    "type": "friend_experience",
+    "nutrients": [
+      "Glutathione"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Friend Figured Out the Niacin Timing I'd Been Missing",
+    "type": "friend_experience",
+    "nutrients": [
+      "Niacin"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Someone I Know Started Niacin Before I Did — And What They Told Me Changed My Mind",
+    "type": "friend_experience",
+    "nutrients": [
+      "Niacin"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "What My Roommate Said About Niacin After Six Weeks",
+    "type": "friend_experience",
+    "nutrients": [
+      "Niacin"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "A Guy at My Gym Had Better Results with Niacin Than I Expected",
+    "type": "friend_experience",
+    "nutrients": [
+      "Niacin"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Watched A Guy at My Gym Go Through the Same Ashwagandha Learning Curve",
+    "type": "friend_experience",
+    "nutrients": [
+      "Ashwagandha"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Friend Started Ashwagandha Before I Did — And What They Told Me Changed My Mind",
+    "type": "friend_experience",
+    "nutrients": [
+      "Ashwagandha"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Trainer Had Better Results with Ashwagandha Than I Expected",
+    "type": "friend_experience",
+    "nutrients": [
+      "Ashwagandha"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Colleague Tried Ashwagandha for a Month — Here's What They Noticed",
+    "type": "friend_experience",
+    "nutrients": [
+      "Ashwagandha"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Colleague Figured Out the CoQ10 Timing I'd Been Missing",
+    "type": "friend_experience",
+    "nutrients": [
+      "CoQ10"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Almost Talked Someone I Know Out of CoQ10 — Then This Happened",
+    "type": "friend_experience",
+    "nutrients": [
+      "CoQ10"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Watched My Partner Go Through the Same CoQ10 Learning Curve",
+    "type": "friend_experience",
+    "nutrients": [
+      "CoQ10"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Roommate Tried CoQ10 for a Month — Here's What They Noticed",
+    "type": "friend_experience",
+    "nutrients": [
+      "CoQ10"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Someone I Know Swears by L-Theanine — Here's Why I Finally Listened",
+    "type": "friend_experience",
+    "nutrients": [
+      "L-Theanine"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "What A Woman I Work With Said About L-Theanine After Six Weeks",
+    "type": "friend_experience",
+    "nutrients": [
+      "L-Theanine"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Watched My Roommate Go Through the Same L-Theanine Learning Curve",
+    "type": "friend_experience",
+    "nutrients": [
+      "L-Theanine"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Friend Tried L-Theanine for a Month — Here's What They Noticed",
+    "type": "friend_experience",
+    "nutrients": [
+      "L-Theanine"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Watched A Woman I Work With Go Through the Same Collagen Learning Curve",
+    "type": "friend_experience",
+    "nutrients": [
+      "Collagen"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Almost Talked My Colleague Out of Collagen — Then This Happened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Collagen"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Roommate Swears by Collagen — Here's Why I Finally Listened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Collagen"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "A Guy at My Gym Had Better Results with Collagen Than I Expected",
+    "type": "friend_experience",
+    "nutrients": [
+      "Collagen"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Roommate Started Rhodiola Rosea Before I Did — And What They Told Me Changed My Mind",
+    "type": "friend_experience",
+    "nutrients": [
+      "Rhodiola Rosea"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "A Guy at My Gym Figured Out the Rhodiola Rosea Timing I'd Been Missing",
+    "type": "friend_experience",
+    "nutrients": [
+      "Rhodiola Rosea"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "What My Colleague Said About Rhodiola Rosea After Six Weeks",
+    "type": "friend_experience",
+    "nutrients": [
+      "Rhodiola Rosea"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Partner Had Better Results with Rhodiola Rosea Than I Expected",
+    "type": "friend_experience",
+    "nutrients": [
+      "Rhodiola Rosea"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Partner Had Better Results with Lion's Mane Than I Expected",
+    "type": "friend_experience",
+    "nutrients": [
+      "Lion's Mane"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Almost Talked A Woman I Work With Out of Lion's Mane — Then This Happened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Lion's Mane"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Someone I Know Figured Out the Lion's Mane Timing I'd Been Missing",
+    "type": "friend_experience",
+    "nutrients": [
+      "Lion's Mane"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Colleague Started Lion's Mane Before I Did — And What They Told Me Changed My Mind",
+    "type": "friend_experience",
+    "nutrients": [
+      "Lion's Mane"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Friend Swears by Alpha-GPC — Here's Why I Finally Listened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Alpha-GPC"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Roommate Had Better Results with Alpha-GPC Than I Expected",
+    "type": "friend_experience",
+    "nutrients": [
+      "Alpha-GPC"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Watched My Partner Go Through the Same Alpha-GPC Learning Curve",
+    "type": "friend_experience",
+    "nutrients": [
+      "Alpha-GPC"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Someone I Know Started Alpha-GPC Before I Did — And What They Told Me Changed My Mind",
+    "type": "friend_experience",
+    "nutrients": [
+      "Alpha-GPC"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Trainer Swears by Quercetin — Here's Why I Finally Listened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Quercetin"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Colleague Tried Quercetin for a Month — Here's What They Noticed",
+    "type": "friend_experience",
+    "nutrients": [
+      "Quercetin"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Roommate Figured Out the Quercetin Timing I'd Been Missing",
+    "type": "friend_experience",
+    "nutrients": [
+      "Quercetin"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Friend Started Quercetin Before I Did — And What They Told Me Changed My Mind",
+    "type": "friend_experience",
+    "nutrients": [
+      "Quercetin"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "A Woman I Work With Started Resveratrol Before I Did — And What They Told Me Changed My Mind",
+    "type": "friend_experience",
+    "nutrients": [
+      "Resveratrol"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Almost Talked My Partner Out of Resveratrol — Then This Happened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Resveratrol"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Roommate Swears by Resveratrol — Here's Why I Finally Listened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Resveratrol"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Watched A Guy at My Gym Go Through the Same Resveratrol Learning Curve",
+    "type": "friend_experience",
+    "nutrients": [
+      "Resveratrol"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Friend Had Better Results with Turmeric Than I Expected",
+    "type": "friend_experience",
+    "nutrients": [
+      "Turmeric"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Colleague Started Turmeric Before I Did — And What They Told Me Changed My Mind",
+    "type": "friend_experience",
+    "nutrients": [
+      "Turmeric"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "A Guy at My Gym Figured Out the Turmeric Timing I'd Been Missing",
+    "type": "friend_experience",
+    "nutrients": [
+      "Turmeric"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Almost Talked My Roommate Out of Turmeric — Then This Happened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Turmeric"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Someone I Know Swears by Fish Oil — Here's Why I Finally Listened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Fish Oil"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "My Friend Tried Fish Oil for a Month — Here's What They Noticed",
+    "type": "friend_experience",
+    "nutrients": [
+      "Fish Oil"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "What My Partner Said About Fish Oil After Six Weeks",
+    "type": "friend_experience",
+    "nutrients": [
+      "Fish Oil"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Almost Talked My Trainer Out of Fish Oil — Then This Happened",
+    "type": "friend_experience",
+    "nutrients": [
+      "Fish Oil"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Always Tired After Lunch — Here's What Finally Made a Difference for Me",
+    "type": "symptom_query",
+    "nutrients": [
+      "Iron",
+      "Vitamin B12",
+      "Magnesium"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "I Was Exhausted Every Morning No Matter How Much I Slept",
+    "type": "symptom_query",
+    "nutrients": [
+      "Iron",
+      "Vitamin D3",
+      "Magnesium"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Afternoon Energy Crash Every Day — What I Tried and What Actually Helped",
+    "type": "symptom_query",
+    "nutrients": [
+      "Magnesium",
+      "Iron",
+      "Vitamin B12"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Constant Fatigue Even After Rest — The Supplement That Changed Things for Me",
+    "type": "symptom_query",
+    "nutrients": [
+      "Iron",
+      "Vitamin D3",
+      "Vitamin B12"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Waking Up at 3am Every Night — What Finally Stopped It",
+    "type": "symptom_query",
+    "nutrients": [
+      "Magnesium",
+      "Melatonin"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can't Fall Asleep Even When Exhausted — My Three-Month Search for Answers",
+    "type": "symptom_query",
+    "nutrients": [
+      "Magnesium",
+      "L-Theanine",
+      "Melatonin"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why I'd Wake Up Feeling More Tired Than When I Went to Bed",
+    "type": "symptom_query",
+    "nutrients": [
+      "Magnesium",
+      "Iron",
+      "Vitamin D3"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Brain Fog Every Afternoon — What I Tried Before Finding What Worked",
+    "type": "symptom_query",
+    "nutrients": [
+      "Zinc",
+      "Vitamin B12",
+      "Iron"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Couldn't Focus After Noon — What Changed When I Fixed This",
+    "type": "symptom_query",
+    "nutrients": [
+      "Magnesium",
+      "Vitamin B12",
+      "Zinc"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Forgetting Simple Things Mid-Sentence — The Supplement That Helped Me",
+    "type": "symptom_query",
+    "nutrients": [
+      "Vitamin B12",
+      "Alpha-GPC"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Getting Sick Every Single Winter — What I Changed and Why It Worked",
+    "type": "symptom_query",
+    "nutrients": [
+      "Zinc",
+      "Vitamin C",
+      "Vitamin D3"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Catching Every Cold That Went Around — My Six-Month Immune Experiment",
+    "type": "symptom_query",
+    "nutrients": [
+      "Zinc",
+      "Vitamin C"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Hair Thinning Suddenly at 30 — What My Testing Revealed",
+    "type": "symptom_query",
+    "nutrients": [
+      "Zinc",
+      "Iron",
+      "Biotin"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Skin Breaking Out in My 30s — The Mineral Connection I Didn't Expect",
+    "type": "symptom_query",
+    "nutrients": [
+      "Zinc",
+      "Vitamin A"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Irritable for No Reason — The Supplement That Quietly Fixed It",
+    "type": "symptom_query",
+    "nutrients": [
+      "Magnesium",
+      "Zinc",
+      "Vitamin B6"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Low Mood in Winter Every Year — What Actually Helped Beyond the Basics",
+    "type": "symptom_query",
+    "nutrients": [
+      "Vitamin D3",
+      "SAMe",
+      "5-HTP"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Leg Cramps at Night — What Stopped Them After Months of Trying",
+    "type": "symptom_query",
+    "nutrients": [
+      "Magnesium",
+      "Potassium"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Muscle Soreness That Wouldn't Go Away — What Changed My Recovery",
+    "type": "symptom_query",
+    "nutrients": [
+      "Magnesium",
+      "HMB",
+      "Creatine"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Bloated After Every Meal — What I Figured Out After Three Months",
+    "type": "symptom_query",
+    "nutrients": [
+      "Probiotics",
+      "Digestive Enzymes",
+      "Ginger"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Stomach Issues That Doctors Couldn't Explain — What Actually Helped",
+    "type": "symptom_query",
+    "nutrients": [
+      "Probiotics",
+      "Berberine"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why Isn't My Zinc Supplement Working — What I Finally Figured Out",
+    "type": "question_query",
+    "nutrients": [
+      "Zinc"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "How Long Does Magnesium Actually Take to Work — My Honest Timeline",
+    "type": "question_query",
+    "nutrients": [
+      "Magnesium"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why Do I Feel Worse After Taking Iron — What's Actually Happening",
+    "type": "question_query",
+    "nutrients": [
+      "Iron"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can I Take Vitamin D Without Vitamin K2 — What I Learned",
+    "type": "question_query",
+    "nutrients": [
+      "Vitamin D3",
+      "Vitamin K2"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why Does Creatine Take So Long to Work — My First Four Weeks",
+    "type": "question_query",
+    "nutrients": [
+      "Creatine"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Should I Take Probiotics With Food or Without — What Made a Difference",
+    "type": "question_query",
+    "nutrients": [
+      "Probiotics"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why Does Vitamin B12 Give Me Energy on Some Days and Not Others",
+    "type": "question_query",
+    "nutrients": [
+      "Vitamin B12"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can You Take Zinc and Copper at the Same Time — What I Found Out",
+    "type": "question_query",
+    "nutrients": [
+      "Zinc",
+      "Copper"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Magnesium and Melatonin Together — What Happened When I Combined Them",
+    "type": "question_query",
+    "nutrients": [
+      "Magnesium",
+      "Melatonin"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking Vitamin D and K2 Together — Why I Finally Started Doing This",
+    "type": "question_query",
+    "nutrients": [
+      "Vitamin D3",
+      "Vitamin K2"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Iron and Vitamin C — Why I Take Them Together Now",
+    "type": "question_query",
+    "nutrients": [
+      "Iron",
+      "Vitamin C"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Creatine and Caffeine — What Actually Happens When You Stack Them",
+    "type": "question_query",
+    "nutrients": [
+      "Creatine"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Magnesium Glycinate vs Oxide — Why the Form Finally Mattered to Me",
+    "type": "question_query",
+    "nutrients": [
+      "Magnesium"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Zinc Picolinate vs Gluconate — What the Difference Actually Felt Like",
+    "type": "question_query",
+    "nutrients": [
+      "Zinc"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Methylcobalamin vs Cyanocobalamin B12 — Why I Switched Forms",
+    "type": "question_query",
+    "nutrients": [
+      "Vitamin B12"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why Zinc Made Me Nauseous — What Fixed It",
+    "type": "question_query",
+    "nutrients": [
+      "Zinc"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Iron Supplements and Constipation — What Finally Solved It for Me",
+    "type": "question_query",
+    "nutrients": [
+      "Iron"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why Melatonin Left Me Groggy — The Dose Change That Helped",
+    "type": "question_query",
+    "nutrients": [
+      "Melatonin"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "How Long Before You Feel Vitamin D Working — My Six-Week Log",
+    "type": "question_query",
+    "nutrients": [
+      "Vitamin D3"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Does NMN Actually Do Anything — Honest Notes After Three Months",
+    "type": "question_query",
+    "nutrients": [
+      "NMN"
+    ],
+    "status": "pending",
+    "priority": "high",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking Berberine With Magnesium — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "Berberine",
+      "Magnesium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "The Citrulline + Magnesium Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Citrulline",
+      "Magnesium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can You Take Vitamin B12 and Vitamin D3 Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "Vitamin B12",
+      "Vitamin D3"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why I Started Pairing Copper With SAMe (And What Happened)",
+    "type": "combination_query",
+    "nutrients": [
+      "Copper",
+      "SAMe"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why I Started Pairing SAMe With Vitamin B12 (And What Happened)",
+    "type": "combination_query",
+    "nutrients": [
+      "SAMe",
+      "Vitamin B12"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "The HMB + Probiotics Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "HMB",
+      "Probiotics"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "The Creatine + Selenium Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Creatine",
+      "Selenium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Copper and NMN Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "Copper",
+      "NMN"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Ginger and Iron Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "Ginger",
+      "Iron"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why I Started Pairing HMB With Iron (And What Happened)",
+    "type": "combination_query",
+    "nutrients": [
+      "HMB",
+      "Iron"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Berberine and Vitamin K2 Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "Berberine",
+      "Vitamin K2"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can You Take Berberine and Vitamin C Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "Berberine",
+      "Vitamin C"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can You Take Ginger and Vitamin C Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "Ginger",
+      "Vitamin C"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking Magnesium With Vitamin C — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "Magnesium",
+      "Vitamin C"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why I Started Pairing SAMe With Vitamin K2 (And What Happened)",
+    "type": "combination_query",
+    "nutrients": [
+      "SAMe",
+      "Vitamin K2"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "The Ginger + Melatonin Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Ginger",
+      "Melatonin"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Citrulline and NMN Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "Citrulline",
+      "NMN"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "NMN and SAMe Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "NMN",
+      "SAMe"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why I Started Pairing Ginger With Vitamin B12 (And What Happened)",
+    "type": "combination_query",
+    "nutrients": [
+      "Ginger",
+      "Vitamin B12"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Iron and Vitamin K2 Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "Iron",
+      "Vitamin K2"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can You Take Melatonin and Vitamin B12 Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "Melatonin",
+      "Vitamin B12"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why I Started Pairing Iron With SAMe (And What Happened)",
+    "type": "combination_query",
+    "nutrients": [
+      "Iron",
+      "SAMe"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "SAMe and Selenium Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "SAMe",
+      "Selenium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "The Citrulline + Zinc Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Citrulline",
+      "Zinc"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking Vitamin K2 With Zinc — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "Vitamin K2",
+      "Zinc"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Melatonin and Zinc Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "Melatonin",
+      "Zinc"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking NMN With Vitamin K2 — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "NMN",
+      "Vitamin K2"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Citrulline and Ginger Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "Citrulline",
+      "Ginger"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Creatine and Iron Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "Creatine",
+      "Iron"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "The Ginger + NMN Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Ginger",
+      "NMN"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking Berberine With Creatine — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "Berberine",
+      "Creatine"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "The Melatonin + NMN Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Melatonin",
+      "NMN"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "The Creatine + Probiotics Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Creatine",
+      "Probiotics"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can You Take Copper and Vitamin K2 Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "Copper",
+      "Vitamin K2"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking Probiotics With Zinc — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "Probiotics",
+      "Zinc"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why I Started Pairing Citrulline With Copper (And What Happened)",
+    "type": "combination_query",
+    "nutrients": [
+      "Citrulline",
+      "Copper"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "The Creatine + Vitamin C Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Creatine",
+      "Vitamin C"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking HMB With Vitamin K2 — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "HMB",
+      "Vitamin K2"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking Melatonin With Probiotics — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "Melatonin",
+      "Probiotics"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking NMN With Probiotics — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "NMN",
+      "Probiotics"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can You Take HMB and Zinc Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "HMB",
+      "Zinc"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking Copper With Creatine — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "Copper",
+      "Creatine"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "SAMe and Zinc Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "SAMe",
+      "Zinc"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can You Take Ginger and Vitamin D3 Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "Ginger",
+      "Vitamin D3"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking Citrulline With SAMe — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "Citrulline",
+      "SAMe"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Citrulline and Vitamin K2 Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "Citrulline",
+      "Vitamin K2"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can You Take Citrulline and Vitamin C Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "Citrulline",
+      "Vitamin C"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can You Take Creatine and Vitamin B12 Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "Creatine",
+      "Vitamin B12"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Citrulline and Iron Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "Citrulline",
+      "Iron"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why I Started Pairing Copper With Probiotics (And What Happened)",
+    "type": "combination_query",
+    "nutrients": [
+      "Copper",
+      "Probiotics"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can You Take Citrulline and Melatonin Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "Citrulline",
+      "Melatonin"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can You Take Copper and Vitamin B12 Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "Copper",
+      "Vitamin B12"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Vitamin B12 and Vitamin C Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "Vitamin B12",
+      "Vitamin C"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can You Take Copper and Melatonin Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "Copper",
+      "Melatonin"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why I Started Pairing Copper With Vitamin D3 (And What Happened)",
+    "type": "combination_query",
+    "nutrients": [
+      "Copper",
+      "Vitamin D3"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Ginger and Vitamin K2 Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "Ginger",
+      "Vitamin K2"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can You Take Berberine and Citrulline Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "Berberine",
+      "Citrulline"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Berberine and Iron Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "Berberine",
+      "Iron"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking Ginger With Selenium — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "Ginger",
+      "Selenium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can You Take Copper and Ginger Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "Copper",
+      "Ginger"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can You Take Berberine and HMB Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "Berberine",
+      "HMB"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking HMB With Vitamin C — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "HMB",
+      "Vitamin C"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why I Started Pairing Magnesium With Vitamin K2 (And What Happened)",
+    "type": "combination_query",
+    "nutrients": [
+      "Magnesium",
+      "Vitamin K2"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Berberine and Copper Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "Berberine",
+      "Copper"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why I Started Pairing HMB With SAMe (And What Happened)",
+    "type": "combination_query",
+    "nutrients": [
+      "HMB",
+      "SAMe"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Magnesium and Probiotics Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "Magnesium",
+      "Probiotics"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why I Started Pairing Creatine With Zinc (And What Happened)",
+    "type": "combination_query",
+    "nutrients": [
+      "Creatine",
+      "Zinc"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why I Started Pairing Selenium With Vitamin B12 (And What Happened)",
+    "type": "combination_query",
+    "nutrients": [
+      "Selenium",
+      "Vitamin B12"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why I Started Pairing Berberine With Selenium (And What Happened)",
+    "type": "combination_query",
+    "nutrients": [
+      "Berberine",
+      "Selenium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking NMN With Vitamin B12 — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "NMN",
+      "Vitamin B12"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can You Take Vitamin D3 and Zinc Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "Vitamin D3",
+      "Zinc"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Creatine and Magnesium Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "Creatine",
+      "Magnesium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why I Started Pairing Iron With NMN (And What Happened)",
+    "type": "combination_query",
+    "nutrients": [
+      "Iron",
+      "NMN"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "The Melatonin + Vitamin C Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Melatonin",
+      "Vitamin C"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Berberine and NMN Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "Berberine",
+      "NMN"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can You Take Copper and HMB Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "Copper",
+      "HMB"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can You Take Ginger and Zinc Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "Ginger",
+      "Zinc"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can You Take Creatine and Vitamin K2 Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "Creatine",
+      "Vitamin K2"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can You Take HMB and NMN Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "HMB",
+      "NMN"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can You Take Vitamin B12 and Vitamin K2 Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "Vitamin B12",
+      "Vitamin K2"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "The Melatonin + Selenium Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Melatonin",
+      "Selenium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "The Selenium + Vitamin K2 Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Selenium",
+      "Vitamin K2"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking Citrulline With Vitamin D3 — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "Citrulline",
+      "Vitamin D3"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "The Berberine + Zinc Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Berberine",
+      "Zinc"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "The NMN + Selenium Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "NMN",
+      "Selenium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "The NMN + Vitamin D3 Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "NMN",
+      "Vitamin D3"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "The Creatine + Ginger Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Creatine",
+      "Ginger"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why I Started Pairing Ginger With Magnesium (And What Happened)",
+    "type": "combination_query",
+    "nutrients": [
+      "Ginger",
+      "Magnesium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can You Take Creatine and NMN Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "Creatine",
+      "NMN"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking Citrulline With Vitamin B12 — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "Citrulline",
+      "Vitamin B12"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why I Started Pairing HMB With Vitamin D3 (And What Happened)",
+    "type": "combination_query",
+    "nutrients": [
+      "HMB",
+      "Vitamin D3"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking Probiotics With Selenium — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "Probiotics",
+      "Selenium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "HMB and Melatonin Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "HMB",
+      "Melatonin"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking Melatonin With Vitamin K2 — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "Melatonin",
+      "Vitamin K2"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "The Creatine + Melatonin Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Creatine",
+      "Melatonin"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can You Take Berberine and Melatonin Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "Berberine",
+      "Melatonin"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "The Melatonin + Vitamin D3 Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Melatonin",
+      "Vitamin D3"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why I Started Pairing Magnesium With SAMe (And What Happened)",
+    "type": "combination_query",
+    "nutrients": [
+      "Magnesium",
+      "SAMe"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why I Started Pairing Magnesium With NMN (And What Happened)",
+    "type": "combination_query",
+    "nutrients": [
+      "Magnesium",
+      "NMN"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why I Started Pairing NMN With Vitamin C (And What Happened)",
+    "type": "combination_query",
+    "nutrients": [
+      "NMN",
+      "Vitamin C"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can You Take Ginger and HMB Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "Ginger",
+      "HMB"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can You Take Berberine and Vitamin B12 Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "Berberine",
+      "Vitamin B12"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "The Probiotics + Vitamin K2 Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Probiotics",
+      "Vitamin K2"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why I Started Pairing SAMe With Vitamin C (And What Happened)",
+    "type": "combination_query",
+    "nutrients": [
+      "SAMe",
+      "Vitamin C"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why I Started Pairing Selenium With Vitamin D3 (And What Happened)",
+    "type": "combination_query",
+    "nutrients": [
+      "Selenium",
+      "Vitamin D3"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why I Started Pairing Melatonin With SAMe (And What Happened)",
+    "type": "combination_query",
+    "nutrients": [
+      "Melatonin",
+      "SAMe"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking HMB With Vitamin B12 — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "HMB",
+      "Vitamin B12"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "The Berberine + Vitamin D3 Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Berberine",
+      "Vitamin D3"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why I Started Pairing Creatine With SAMe (And What Happened)",
+    "type": "combination_query",
+    "nutrients": [
+      "Creatine",
+      "SAMe"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking Citrulline With Probiotics — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "Citrulline",
+      "Probiotics"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "The Citrulline + Selenium Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Citrulline",
+      "Selenium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking Iron With Melatonin — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "Iron",
+      "Melatonin"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "HMB and Selenium Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "HMB",
+      "Selenium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking NMN With Zinc — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "NMN",
+      "Zinc"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "The Probiotics + Vitamin B12 Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Probiotics",
+      "Vitamin B12"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking Creatine With Vitamin D3 — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "Creatine",
+      "Vitamin D3"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking Iron With Probiotics — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "Iron",
+      "Probiotics"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Probiotics and Vitamin D3 Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "Probiotics",
+      "Vitamin D3"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking Probiotics With Vitamin C — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "Probiotics",
+      "Vitamin C"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Probiotics and SAMe Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "Probiotics",
+      "SAMe"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why I Started Pairing Citrulline With HMB (And What Happened)",
+    "type": "combination_query",
+    "nutrients": [
+      "Citrulline",
+      "HMB"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "The Ginger + Probiotics Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Ginger",
+      "Probiotics"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can You Take Citrulline and Creatine Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "Citrulline",
+      "Creatine"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Creatine and HMB Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "Creatine",
+      "HMB"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Berberine and SAMe Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "Berberine",
+      "SAMe"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Why I Started Pairing Ginger With SAMe (And What Happened)",
+    "type": "combination_query",
+    "nutrients": [
+      "Ginger",
+      "SAMe"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Copper and Selenium Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "Copper",
+      "Selenium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "The Copper + Iron Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Copper",
+      "Iron"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Copper and Magnesium Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "Copper",
+      "Magnesium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking Vitamin C With Vitamin D3 — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "Vitamin C",
+      "Vitamin D3"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking Berberine With Ginger — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "Berberine",
+      "Ginger"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "The Vitamin C + Vitamin K2 Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Vitamin C",
+      "Vitamin K2"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Iron and Selenium Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "Iron",
+      "Selenium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Can You Take Magnesium and Selenium Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "Magnesium",
+      "Selenium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-02"
+  },
+  {
+    "topic": "Taking HMB With Potassium — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "HMB",
+      "Potassium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-03"
+  },
+  {
+    "topic": "The Potassium + SAMe Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Potassium",
+      "SAMe"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-03"
+  },
+  {
+    "topic": "Potassium and Vitamin D3 Stack — My Six-Week Experiment",
+    "type": "combination_query",
+    "nutrients": [
+      "Potassium",
+      "Vitamin D3"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-03"
+  },
+  {
+    "topic": "The Ginger + Potassium Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Ginger",
+      "Potassium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-03"
+  },
+  {
+    "topic": "The Citrulline + Potassium Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Citrulline",
+      "Potassium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-03"
+  },
+  {
+    "topic": "Why I Started Pairing Berberine With Potassium (And What Happened)",
+    "type": "combination_query",
+    "nutrients": [
+      "Berberine",
+      "Potassium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-03"
+  },
+  {
+    "topic": "Taking Potassium With Probiotics — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "Potassium",
+      "Probiotics"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-03"
+  },
+  {
+    "topic": "The Potassium + Vitamin K2 Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Potassium",
+      "Vitamin K2"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-03"
+  },
+  {
+    "topic": "Can You Take Melatonin and Potassium Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "Melatonin",
+      "Potassium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-03"
+  },
+  {
+    "topic": "The Potassium + Vitamin B12 Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Potassium",
+      "Vitamin B12"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-03"
+  },
+  {
+    "topic": "Can You Take NMN and Potassium Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "NMN",
+      "Potassium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-03"
+  },
+  {
+    "topic": "Taking Creatine With Potassium — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "Creatine",
+      "Potassium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-03"
+  },
+  {
+    "topic": "The Potassium + Vitamin C Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Potassium",
+      "Vitamin C"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-03"
+  },
+  {
+    "topic": "Taking Iron With Potassium — What Changed When I Combined Them",
+    "type": "combination_query",
+    "nutrients": [
+      "Iron",
+      "Potassium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-03"
+  },
+  {
+    "topic": "The Potassium + Zinc Combination I Didn't Expect to Work",
+    "type": "combination_query",
+    "nutrients": [
+      "Potassium",
+      "Zinc"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-03"
+  },
+  {
+    "topic": "Can You Take Potassium and Selenium Together — What I Found Out",
+    "type": "combination_query",
+    "nutrients": [
+      "Potassium",
+      "Selenium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-03"
+  },
+  {
+    "topic": "Why I Started Pairing Copper With Potassium (And What Happened)",
+    "type": "combination_query",
+    "nutrients": [
+      "Copper",
+      "Potassium"
+    ],
+    "status": "pending",
+    "priority": "medium",
+    "added_at": "2026-06-03"
   }
 ]

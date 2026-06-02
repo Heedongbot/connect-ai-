@@ -59,10 +59,39 @@ def fetch_all_live_posts(svc) -> list:
     return posts
 
 
+def make_claude_fn():
+    """bulk_verify용 Claude AI 함수 — B1/YMYL 자동 수정에 사용."""
+    try:
+        import anthropic, os
+        key = os.environ.get("ANTHROPIC_API_KEY", "")
+        if not key:
+            log.warning("ANTHROPIC_API_KEY 없음 — AI 없이 rule-based만 실행")
+            return None
+        client = anthropic.Anthropic(api_key=key)
+        def ask_claude(prompt, system_prompt="You are a senior editorial assistant.", **kw):
+            try:
+                msg = client.messages.create(
+                    model="claude-haiku-4-5-20251001",  # 비용 절감: Haiku 사용
+                    max_tokens=512,
+                    system=system_prompt,
+                    messages=[{"role": "user", "content": prompt}],
+                )
+                return msg.content[0].text.strip() if msg.content else ""
+            except Exception as e:
+                log.warning(f"  [AI] 호출 실패: {e}")
+                return ""
+        log.info("Claude Haiku AI 연결 완료 (bulk_verify)")
+        return ask_claude
+    except Exception as e:
+        log.warning(f"AI 연결 실패: {e}")
+        return None
+
+
 def main():
     from post_publish_verifier import verify_and_patch, build_discord_report
 
     svc = get_service()
+    ask_ai = make_claude_fn()
     log.info("Blogger API 연결 완료")
 
     posts = fetch_all_live_posts(svc)
@@ -92,8 +121,8 @@ def main():
                 title     = title,
                 html      = html,
                 meta_desc = meta_desc,
-                ask_ai_fn        = None,   # AI 스캔 없이 rule-based만
-                ask_ai_fn_claude = None,
+                ask_ai_fn        = ask_ai,   # Claude Haiku — B1/YMYL 자동 수정
+                ask_ai_fn_claude = ask_ai,
                 meta_dir  = META_DIR,
             )
 

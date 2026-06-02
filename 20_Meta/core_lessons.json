@@ -65,6 +65,307 @@
       "count": 3,
       "promoted_date": "2026-05-26",
       "first_seen": "2026-05-26"
+    },
+    {
+      "lesson": "[사용자피드백] 동명이의 침투 금지: selenium=보충제 글인데 WebDriver/automation/documentation 내용이 생성됨. 영양소명이 다른 분야 용어와 겹칠 때 반드시 보충제 맥락만 유지",
+      "count": 3,
+      "first_seen": "2026-05-31",
+      "source": "user"
+    },
+    {
+      "lesson": "[사용자피드백] 경험담 제목(I Almost Quit / What Changed / The Mistake)이면 본문 경험담 80%+. Benefits/Dosage/Absorption H2 섹션 3개 이상 만들면 즉각 탈락",
+      "count": 3,
+      "first_seen": "2026-05-31",
+      "source": "user"
+    },
+    {
+      "lesson": "[사용자피드백] 신체 변화 최대 2~3가지만. 에너지+기분+수면+피부+손톱+머리카락+집중력+불안 전부 개선하면 과장. 영양소별 직접 관련 변화만",
+      "count": 3,
+      "first_seen": "2026-05-31",
+      "source": "user"
+    },
+    {
+      "lesson": "[사용자피드백] 타임라인은 글 전체에서 하나로 통일. Week three와 Week four를 같은 글에서 혼용하면 즉각 탈락",
+      "count": 3,
+      "first_seen": "2026-05-31",
+      "source": "user"
+    },
+    {
+      "lesson": "[사용자피드백] 단락 삭제 시 앞뒤 연결 확인 필수. 통째 삭제하면 서사 공백 발생. 브리지 문장 1개로 대체할 것",
+      "count": 3,
+      "first_seen": "2026-05-31",
+      "source": "user"
+    },
+    {
+      "lesson": "[사용자피드백] 문장 시작 대소문자: <p> 또는 따옴표 뒤 첫 단어는 무조건 대문자. That's/Maybe/It 등이 문장 시작에 소문자면 즉각 탈락",
+      "count": 3,
+      "first_seen": "2026-05-31",
+      "source": "user"
+    },
+    {
+      "issue": "?? ?? I noticed/I realized/What surprised me",
+      "root_cause": "AI? 1?? ?? ?? ? ?? ?? ?? ??",
+      "fix": "? ??? ? ???? ?? 2?. ??: I felt / I found / I kept thinking / Turned out / Looking back",
+      "severity": "high",
+      "count": 5,
+      "first_seen": "2026-05-31",
+      "agent": "03_Writer_Gardener"
+    },
+    {
+      "issue": "??? ???? (Week1?Week2?Month2?Conclusion?FAQ)",
+      "root_cause": "AI? ?? ???? ?? ?? ? ??? ?? ??",
+      "fix": "??? ?? ??. ?? ?? ? ?? ?? ? FAQ ?? ?? ??. ?? '???????? ? ?????' ??",
+      "severity": "high",
+      "count": 5,
+      "first_seen": "2026-05-31",
+      "agent": "03_Writer_Gardener"
+    },
+    {
+      "issue": "?? ??? ?? ?? (energy? skin? hair?)",
+      "root_cause": "AI? ???/?? ?? ??",
+      "fix": "??? 1? ??? ?? ?? ??. ?: energy? but sleep? / focus? but irritable first week. ??? ??? ????? ??",
+      "severity": "high",
+      "count": 5,
+      "first_seen": "2026-05-31",
+      "agent": "03_Writer_Gardener"
+    },
+    {
+      "issue": "??? ?? (Copper helps collagen / affects iron transport)",
+      "root_cause": "AI? mechanism ?? ? ??? ?? ??",
+      "fix": "?? ??? ?? ?? ???. ?: 'I later found it has something to do with iron transport?which actually explained the fatigue' ??",
+      "severity": "high",
+      "count": 5,
+      "first_seen": "2026-05-31",
+      "agent": "03_Writer_Gardener"
+    },
+    {
+      "issue": "?? ?? ?? (??/??/??/??/??)",
+      "root_cause": "AI? ?? ??? ???? ?? ?? ??",
+      "fix": "? ?? ???? ?? 1?? ?? ??. ?: 'I remember staring at the bottle wondering if I had wasted my money.' / 'I was annoyed. Four weeks and nothing.'",
+      "severity": "high",
+      "count": 5,
+      "first_seen": "2026-05-31",
+      "agent": "03_Writer_Gardener"
+    },
+    {
+      "issue": "?? ??? ?? (hives ???)",
+      "root_cause": "AI? ?? ?? ??? ??",
+      "fix": "?? ?? ?? 2??: ?? ?? / ?? ?? ?? / ???? / ?? ?? ? ?2. ?? ?? ??? ???? ??? ??",
+      "severity": "high",
+      "count": 5,
+      "first_seen": "2026-05-31",
+      "agent": "03_Writer_Gardener"
+    },
+    {
+      "issue": "??? ?? ?? (0.75mg was perfect)",
+      "root_cause": "AI? ??? ?? ??",
+      "fix": "??? ????. '0.75mg? ?? ?? ? ??. ??? ?? ???.' / 'Maybe. I think. Not sure yet.' ??? ?? ?? ?? ? ???",
+      "severity": "high",
+      "count": 5,
+      "first_seen": "2026-05-31",
+      "agent": "03_Writer_Gardener"
+    },
+    {
+      "lesson": "?? ?? ?? 2??: ?? ?? / ?? ?? ?? / ???? / ?? ?? ? ?2. ?? ?? ??? ???? ??? ??",
+      "count": 5,
+      "promoted_date": "2026-05-31",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "lesson": "?? ?? ?? 2??: ?? ?? / ?? ?? ?? / ???? / ?? ?? ? ?2. ?? ?? ??? ???? ??? ??",
+      "count": 5,
+      "promoted_date": "2026-05-31",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "lesson": "?? ?? ?? 2??: ?? ?? / ?? ?? ?? / ???? / ?? ?? ? ?2. ?? ?? ??? ???? ??? ??",
+      "count": 5,
+      "promoted_date": "2026-05-31",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "lesson": "?? ?? ?? 2??: ?? ?? / ?? ?? ?? / ???? / ?? ?? ? ?2. ?? ?? ??? ???? ??? ??",
+      "count": 5,
+      "promoted_date": "2026-06-01",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "lesson": "?? ?? ?? 2??: ?? ?? / ?? ?? ?? / ???? / ?? ?? ? ?2. ?? ?? ??? ???? ??? ??",
+      "count": 5,
+      "promoted_date": "2026-06-01",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "lesson": "?? ?? ?? 2??: ?? ?? / ?? ?? ?? / ???? / ?? ?? ? ?2. ?? ?? ??? ???? ??? ??",
+      "count": 5,
+      "promoted_date": "2026-06-01",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "lesson": "?? ?? ?? 2??: ?? ?? / ?? ?? ?? / ???? / ?? ?? ? ?2. ?? ?? ??? ???? ??? ??",
+      "count": 5,
+      "promoted_date": "2026-06-01",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "lesson": "?? ?? ?? 2??: ?? ?? / ?? ?? ?? / ???? / ?? ?? ? ?2. ?? ?? ??? ???? ??? ??",
+      "count": 5,
+      "promoted_date": "2026-06-01",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "lesson": "?? ?? ?? 2??: ?? ?? / ?? ?? ?? / ???? / ?? ?? ? ?2. ?? ?? ??? ???? ??? ??",
+      "count": 5,
+      "promoted_date": "2026-06-01",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "lesson": "?? ?? ?? 2??: ?? ?? / ?? ?? ?? / ???? / ?? ?? ? ?2. ?? ?? ??? ???? ??? ??",
+      "count": 5,
+      "promoted_date": "2026-06-01",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "lesson": "?? ?? ?? 2??: ?? ?? / ?? ?? ?? / ???? / ?? ?? ? ?2. ?? ?? ??? ???? ??? ??",
+      "count": 5,
+      "promoted_date": "2026-06-01",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "lesson": "?? ?? ?? 2??: ?? ?? / ?? ?? ?? / ???? / ?? ?? ? ?2. ?? ?? ??? ???? ??? ??",
+      "count": 5,
+      "promoted_date": "2026-06-01",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "lesson": "[Claude발견-3회반복] Two consecutive <hr /> tags appear at the start of the post body (before the intro paragraph).",
+      "count": 3,
+      "promoted_date": "2026-06-02",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "lesson": "[Claude발견-3회반복] Post title is 'Zinc: Guide to Dosage and Benefits' (educational/reference style), but entire body is a personal narrativ",
+      "count": 3,
+      "promoted_date": "2026-06-02",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "lesson": "[Claude발견-6회반복] After a closing quote in the narrative, a sentence begins with lowercase: '\"Does it actually work?\" He looked at me like",
+      "count": 6,
+      "promoted_date": "2026-06-02",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "lesson": "[Claude발견-5회반복] The post claims ginger improved: digestion/bloating, afternoon energy crashes, stomach calmness, body warmth, mental ale",
+      "count": 5,
+      "promoted_date": "2026-06-02",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "lesson": "[Claude발견-3회반복] Title 'How to Take Magnesium Vitamin for Best Results' is instructional/how-to, but body is structured as a personal nar",
+      "count": 3,
+      "promoted_date": "2026-06-02",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "lesson": "[Claude발견-4회반복] Author name is 'Eric Lindström' in schema.org/JSON-LD but 'Erik Lindström' in About section — inconsistent spelling of f",
+      "count": 4,
+      "promoted_date": "2026-06-02",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "lesson": "[Claude발견-9회반복] Multiple instances of 'in conclusion' or similar closing patterns detected throughout sections — indicates AI-generated ",
+      "count": 9,
+      "promoted_date": "2026-06-02",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "lesson": "[Claude발견-22회반복] Phrase 'game-changer' or similar AI-pattern detected — actually uses 'changed everything' in H2 which is close to repeat",
+      "count": 22,
+      "promoted_date": "2026-06-02",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "lesson": "[Claude발견-7회반복] Internal link to 'why-vitamin-finally-worked-for-me.html' likely has wrong slug — the post title is 'Vitamin D3: Guide t",
+      "count": 7,
+      "promoted_date": "2026-06-02",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "lesson": "[Claude발견-9회반복] Sentence begins with lowercase 'what' after opening quote mark in table cell.",
+      "count": 9,
+      "promoted_date": "2026-06-02",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "lesson": "[Claude발견-7회반복] Post describes improvements in 5+ different body systems/symptoms: leg cramps (gone), afternoon energy crash (improved),",
+      "count": 7,
+      "promoted_date": "2026-06-02",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "lesson": "[Claude발견-4회반복] Post about magnesium vitamin supplement is hijacked by discussion of vitamin D as co-equal topic. Title and meta descrip",
+      "count": 4,
+      "promoted_date": "2026-06-02",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "lesson": "[Claude발견-4회반복] <!DOCTYPE html>, <html>, and <head> tags are included in the post body HTML. These should only appear in the page templa",
+      "count": 4,
+      "promoted_date": "2026-06-02",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "lesson": "[사용자피드백] 건강효과 단정 표현 금지 — 개인 경험 블로그에서 'X makes you stronger', 'X does nothing', 'That's basically useless', 'absorption depends on Y' 같은 단정 표현은 건강 콘텐츠 안전성 위험. 반드시 'seemed to', 'for me', 'I felt like', 'may', 'I probably' 등 완화 표현으로 대체할 것.",
+      "count": 3,
+      "first_seen": "2026-06-02",
+      "source": "user"
+    },
+    {
+      "lesson": "건강효과 단정 표현 금지 (Tier1 각인): 'makes you stronger', 'X does nothing', 'basically useless', 'absorption depends on', 'is essential for' → 'seemed to help', 'for me', 'may', 'from what I've read'로 교체.",
+      "count": 5,
+      "tier": 1,
+      "added_at": "2026-06-02 22:01",
+      "active": true,
+      "source": "user_engrave_2026-06-02"
+    },
+    {
+      "lesson": "경험담 비율 60%+ 필수 (Tier1 각인): 포스팅 전체 문장 중 1인칭 경험 문장 60% 이상 유지. 조언/설명형 문장을 개인 관찰/경험형으로 전환. og:description도 개인 경험형으로 작성 (연구/정보 언급 금지).",
+      "count": 5,
+      "tier": 1,
+      "added_at": "2026-06-02 22:01",
+      "active": true,
+      "source": "user_engrave_2026-06-02"
+    },
+    {
+      "lesson": "[사용자피드백] 【주변인 경험담 필수】 포스팅에 내 경험담(I noticed)만 쓰지 말고 주변인 경험담을 반드시 포함할 것. 권장 비율 내경험:주변인 = 2:8. 주변인 예시: 'My friend said she noticed the same thing', 'A guy at the gym told me', 'My partner mentioned', 'Someone on Reddit described exactly this', 'A colleague of mine tried it and'. 주변인 경험은 글에 신뢰도와 사회적 증거를 더해 더 자연스럽게 읽힘.",
+      "count": 3,
+      "first_seen": "2026-06-02",
+      "source": "user"
+    },
+    {
+      "lesson": "【단정 표현 절대 금지】 개인 경험 블로그에서 건강 효과를 단정 짓는 표현은 절대 쓰지 말 것. 금지: 'X makes you stronger', 'X helps you recover faster', 'X does nothing', 'That's basically useless', 'absorption depends on Y', 'X is essential for Z'. 대체: 'seemed to help', 'for me at least', 'I felt like', 'may', 'I probably', 'from what I'v",
+      "count": 5,
+      "promoted_date": "2026-06-02",
+      "first_seen": "2026-06-02"
+    },
+    {
+      "lesson": "【경험담 비율 60%+ 필수】 포스팅 전체 문장 중 1인칭 경험 문장(I/my/me 포함)이 반드시 60% 이상이어야 함. 설명/정보/조언 문장이 많아지면 FAIL. 조언형('X is important', 'you should', 'the key is') 문장을 경험형 ('I noticed', 'I found', 'it felt like', 'I was surprised') 으로 교체할 것. 리스트 항목도 'I noticed X' 형태로 작성.",
+      "count": 5,
+      "promoted_date": "2026-06-02",
+      "first_seen": "2026-06-02"
+    },
+    {
+      "lesson": "[사용자피드백] 【YMYL 제목 금지】 'Healed', 'Cured', 'Fixed', 'Eliminated', 'Disappeared' 같은 치료/완치 의미 단어는 제목에 절대 사용 금지. 대신: 'helped with', 'started working for me', 'finally worked', 'made a difference', 'became less noticeable' 사용.",
+      "count": 3,
+      "first_seen": "2026-06-03",
+      "source": "user"
+    },
+    {
+      "lesson": "[사용자피드백] 【본문 단정 표현 금지】 'disappeared', 'lifted', 'gone', 'eliminated' → 'became less noticeable', 'felt clearer', 'seemed to improve'. 일반화 표현 'you can feel / neither one is' → 'for me / seemed to / may / in some situations' 형태로.",
+      "count": 3,
+      "first_seen": "2026-06-03",
+      "source": "user"
     }
   ],
   "04_SEO_Optimizer": [
@@ -139,6 +440,273 @@
       "count": 3,
       "promoted_date": "2026-05-27",
       "first_seen": "2026-05-26"
+    },
+    {
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 6/10 — CSS 없음 | Is Berberine Worth Taking What the Resea",
+      "count": 3,
+      "promoted_date": "2026-05-31",
+      "first_seen": "2026-05-29"
+    },
+    {
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | The Berberine Mistake That Made Me Want ",
+      "count": 6,
+      "promoted_date": "2026-05-31",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Iron: How I Actually Fixed My Energy (Af",
+      "count": 9,
+      "promoted_date": "2026-05-31",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Vitamin C: What I Found After Months of ",
+      "count": 3,
+      "promoted_date": "2026-05-31",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Magnesium: Benefits, Types, and Best Dos",
+      "count": 8,
+      "promoted_date": "2026-05-31",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 6/10 — CSS 없음 | The NMN Mistake That Delayed My Results",
+      "count": 8,
+      "promoted_date": "2026-05-31",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 6/10 — CSS 없음 | Probiotics: Probiotics Dosage Guide: How",
+      "count": 5,
+      "promoted_date": "2026-05-31",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 6/10 — CSS 없음 | Vitamin B12 Absorption: Why I Got It Wro",
+      "count": 16,
+      "promoted_date": "2026-05-31",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 6/10 — CSS 없음 | Why Citrulline Malate Felt Useless Until",
+      "count": 16,
+      "promoted_date": "2026-05-31",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "lesson": "[발행후검증-B1] og:description 상태 5/10 — 너무 짧음 (71자) | The Vitamin D Mistake That Kept Me Tired",
+      "count": 6,
+      "promoted_date": "2026-05-31",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 3/10 — &#8594; 엔티티 잔존 (→ 로 교체 필요), CSS 없음 | Vitamin K2 Timing: Why I Finally Saw Res",
+      "count": 11,
+      "promoted_date": "2026-05-31",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Vitamin K2 Timing: Why I Finally Saw Res",
+      "count": 11,
+      "promoted_date": "2026-05-31",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 6/10 — CSS 없음 | I Almost Quit Vitamin K2 After Two Weeks",
+      "count": 7,
+      "promoted_date": "2026-05-31",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 6/10 — CSS 없음 | How HMB Helped Me Recover From My Worst ",
+      "count": 7,
+      "promoted_date": "2026-05-31",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | I Kept Taking the Wrong Form of Zinc — H",
+      "count": 10,
+      "promoted_date": "2026-05-31",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | SAMe Surprised Me After I Almost Gave Up",
+      "count": 10,
+      "promoted_date": "2026-05-31",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 6/10 — CSS 없음 | Selenium Benefits: What I Noticed After ",
+      "count": 3,
+      "promoted_date": "2026-05-31",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "lesson": "[발행후검증-B1] og:description 상태 7/10 — 너무 김 (164자) | How to Take Zinc for Best Results",
+      "count": 6,
+      "promoted_date": "2026-06-02",
+      "first_seen": "2026-05-27"
+    },
+    {
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 6/10 — CSS 없음 | I Thought Melatonin Didn't Work Until We",
+      "count": 4,
+      "promoted_date": "2026-06-02",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Why I Started Taking Copper and Everythi",
+      "count": 3,
+      "promoted_date": "2026-06-02",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 6/10 — CSS 없음 | How Zinc Supplements Finally Ended My Co",
+      "count": 3,
+      "promoted_date": "2026-06-02",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 6/10 — CSS 없음 | Why I Started Taking Magnesium and Vitam",
+      "count": 3,
+      "promoted_date": "2026-06-02",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | What Four Weeks of Daily Ginger Actually",
+      "count": 3,
+      "promoted_date": "2026-06-02",
+      "first_seen": "2026-06-01"
+    },
+    {
+      "lesson": "[발행후검증-B1] og:description 상태 5/10 — 너무 짧음 (70자) | How Creatine Finally Stopped My Workout ",
+      "count": 3,
+      "promoted_date": "2026-06-02",
+      "first_seen": "2026-06-02"
+    },
+    {
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | The Potassium Problem That Changed My En",
+      "count": 4,
+      "promoted_date": "2026-06-02",
+      "first_seen": "2026-06-02"
+    }
+  ],
+  "05_Critic_Editor_In_Chief": [
+    {
+      "lesson": "[사용자피드백] Selenium WebDriver 같은 동명이의 내용을 못 잡음. 영양소명이 다른 분야(자동화툴/프로그래밍/음악 등)에서도 쓰이는 경우 본문 맥락 체크 필요",
+      "count": 3,
+      "first_seen": "2026-05-31",
+      "source": "user"
+    },
+    {
+      "lesson": "[사용자피드백] 타임라인 충돌(Week three vs Week four)을 REJECT 조건에 추가했으나 이전엔 통과. 같은 글에서 변화 시작 시점이 두 군데에서 다르면 즉각 반려",
+      "count": 3,
+      "first_seen": "2026-05-31",
+      "source": "user"
+    },
+    {
+      "lesson": "[사용자피드백] 과도한 신체 변화(5가지+)를 못 잡음. 에너지/기분/수면/피부/손톱/머리카락 전부 개선 패턴은 AI 생성 흔적임",
+      "count": 3,
+      "first_seen": "2026-05-31",
+      "source": "user"
+    },
+    {
+      "lesson": "[사용자피드백] 단정 표현 검사 추가 — 발행 전 다음 패턴 감지 필요: 'X does nothing', 'That's basically useless/pointless', 'X means you will Y', 'absorption depends on', 'makes you stronger/faster/better'. 감지 시 완화 표현 제안으로 REJECT 처리.",
+      "count": 3,
+      "first_seen": "2026-06-02",
+      "source": "user"
+    },
+    {
+      "lesson": "건강효과 단정 표현 금지 (Tier1 각인): 'makes you stronger', 'X does nothing', 'basically useless', 'absorption depends on', 'is essential for' → 'seemed to help', 'for me', 'may', 'from what I've read'로 교체.",
+      "count": 5,
+      "tier": 1,
+      "added_at": "2026-06-02 22:01",
+      "active": true,
+      "source": "user_engrave_2026-06-02"
+    },
+    {
+      "lesson": "경험담 비율 60%+ 필수 (Tier1 각인): 포스팅 전체 문장 중 1인칭 경험 문장 60% 이상 유지. 조언/설명형 문장을 개인 관찰/경험형으로 전환. og:description도 개인 경험형으로 작성 (연구/정보 언급 금지).",
+      "count": 5,
+      "tier": 1,
+      "added_at": "2026-06-02 22:01",
+      "active": true,
+      "source": "user_engrave_2026-06-02"
+    },
+    {
+      "lesson": "【단정 표현 감지 → REJECT】 다음 패턴 발견 시 즉시 REJECT: 'makes you stronger/faster/better', 'X does nothing', 'basically useless', 'absorption depends on', 'X is essential', 'you will feel/see/notice'. Writer에게 완화 표현으로 재작성 요청: 'seemed to', 'for me', 'I felt like', 'may'.",
+      "count": 5,
+      "promoted_date": "2026-06-02",
+      "first_seen": "2026-06-02"
+    },
+    {
+      "lesson": "【경험담 비율 체크 필수】 발행 전 경험 문장 비율 반드시 확인. 전체 문장 대비 1인칭 경험 문장 60% 미만이면 REJECT. 특히 'First/Second/Third' 리스트, 'Key Takeaways', 'What I Wish' 섹션이 조언형으로 흐르기 쉬움 — 개인 회고형으로 변환 요구.",
+      "count": 5,
+      "promoted_date": "2026-06-02",
+      "first_seen": "2026-06-02"
+    },
+    {
+      "lesson": "[사용자피드백] 【YMYL 제목 감지】 제목에 'Healed', 'Cured', 'Fixed my X', 'Eliminated', 'Disappeared' 포함 시 REJECT. 만성질환(fatigue, inflammation, anxiety, depression) + 치료동사 조합 = 즉시 반려.",
+      "count": 3,
+      "first_seen": "2026-06-03",
+      "source": "user"
+    }
+  ],
+  "02_Researcher_Synergy": [
+    {
+      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 0/10 — PMID/연구링크 없음 | Why Citrulline Malate Felt Useless Until",
+      "count": 16,
+      "promoted_date": "2026-05-31",
+      "first_seen": "2026-05-30"
+    },
+    {
+      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 7/10 — PMID 2개 (권장 3+) | I Kept Taking the Wrong Form of Zinc — H",
+      "count": 10,
+      "promoted_date": "2026-05-31",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 7/10 — PMID 2개 (권장 3+) | SAMe Surprised Me After I Almost Gave Up",
+      "count": 10,
+      "promoted_date": "2026-05-31",
+      "first_seen": "2026-05-31"
+    },
+    {
+      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 7/10 — PMID 1개 (권장 3+) | How Zinc Supplements Finally Ended My Co",
+      "count": 3,
+      "promoted_date": "2026-06-02",
+      "first_seen": "2026-06-01"
+    }
+  ],
+  "post_publish_verifier": [
+    {
+      "agent": "post_publish_verifier",
+      "issue": "og:description content ?? regex ?? ? apostrophe ?? ???",
+      "root_cause": "[^\"']+ ??? broken content ??? merge ? Here's what changed.'s the real story ??",
+      "fix": "<meta> ?? ?? ?? ?? + html.escape()? apostrophe ? &#x27; ??. content ???? ?? ?? ??",
+      "severity": "critical",
+      "count": 5,
+      "first_seen": "2026-05-31"
+    },
+    {
+      "agent": "post_publish_verifier",
+      "issue": "PPV정체(5회): How to Take Zinc for Best Results",
+      "root_cause": "## 진단 결과\n\n---\n\n**ROOT_CAUSE:** `og:description`이 JavaScript `DOMContentLoaded` 이후에 동적으로 덮어쓰여지지만, 평가 시스템은 **HTML 정적 파싱** 시점에 `<meta property=\"og:description\">`의 값을 읽기 때문에 — 현재 static HTML에 남아있는 오염된 잔여값 `\"The research on Zinc is often different from real-\"`이 계속 감지됨.\n\n---\n\n**WHY_CLAUDE_FAILS:**\n\nClaude",
+      "fix": "Writer/Critic 프롬프트에 CODE_FIX_NEEDED 항목 추가",
+      "severity": "high",
+      "count": 3,
+      "first_seen": "2026-06-02"
+    }
+  ],
+  "00_Orchestrator": [
+    {
+      "agent": "00_Orchestrator",
+      "issue": "_sync_all_meta og:description apostrophe ?? (Melatonin, Copper 2? ??)",
+      "root_cause": "property/content ?? ?? + apostrophe ?? desc ?? ? ?? ???",
+      "fix": "_sync_all_meta: meta ?? ?? ?? ???? ?? ?? (v8.2). html.escape(desc, quote=True) ??",
+      "severity": "critical",
+      "count": 5,
+      "first_seen": "2026-05-31"
     }
   ]
 }

@@ -96,13 +96,20 @@ BAD_TITLE_PATTERNS = [
     re.compile(r"How Much Do You Need",    re.I),          # v7.6: 동일 이유
     re.compile(r":\s*Guide to\s+\w",       re.I),          # v7.6: ": Guide to dosage and benefits" 회귀
     re.compile(r"\band [Bb]enefits$",      re.I),          # v7.6: "Dosage and Benefits" 말미 패턴
+    re.compile(r"Benefits,?\s*Dosage,?\s*and Side Effects", re.I),  # v7.9: 전형적 SEO 3종세트
+    re.compile(r"\bBenefits and Side Effects\b", re.I),    # v7.9: 변형 패턴
+    re.compile(r"Dosage,?\s*Benefits,?\s*and", re.I),      # v7.9: 순서 변형
 ]
 BAD_TITLE_WORDS = ["Molecular", "Longevity", "Effectively", "Mechanism", "Blocks",
-                   "Worth Taking", "Research Says", "Dosage Guide"]
+                   "Worth Taking", "Research Says", "Dosage Guide",
+                   # YMYL 치료/완치 표현 — Google 건강 콘텐츠 정책 위반 위험
+                   "Healed My", "Cured My", "Eliminated My", "Fixed My Chronic",
+                   "Reversed My", "Defeated My", "Overcame My Chronic"]
 # "Complete Guide" / "Complete" 제거 — SEO 키워드로 유효함
 # "Is X Worth Taking? What the Research Says" 조합만 차단
 
 AI_PATTERNS = [
+    r"\brecommendation medications\b",  # → prescription medications
     "it's worth noting",
     "in conclusion",
     "delve into",
@@ -284,7 +291,11 @@ def score_B(html: str) -> dict:
 
     if not desc_val:
         b1, note = 0, "og:description 없음"
-    elif any(t in desc_val.lower() for t in ["the research on zinc", "template", "placeholder", "write one"]):
+    elif any(t in desc_val.lower() for t in [
+        "the research on zinc", "the research on ", "template", "placeholder", "write one",
+        "and complete", "or complete", "studies show", "according to research",
+        "what the research says", "science behind",
+    ]):
         b1, note = 0, f"오염됨: {desc_val[:50]}"
     elif re.search(r'[가-힣]', desc_val):                          # 한국어 혼입
         b1, note = 0, f"한국어 혼입: {desc_val[:50]}"
@@ -548,7 +559,14 @@ def score_F(html: str, title: str) -> dict:
                 scores["F1"] = (0, f"본문 누락: {', '.join(missing)} — 제목엔 있으나 본문에 없음")
 
     # F2. 이미지 유효성/관련성 — hero 이미지 src 유효 + alt에 토픽 키워드 포함 여부
-    hero_img = re.search(r'<img[^>]+>', html, re.I)
+    # display:none / 1px 트래킹 픽셀 제외하고 첫 번째 실제 이미지 찾기
+    hero_img = None
+    for _m in re.finditer(r'<img[^>]+>', html, re.I):
+        _tag = _m.group(0)
+        if "display:none" in _tag or "width:1px" in _tag or "height:1px" in _tag:
+            continue
+        hero_img = _m
+        break
     if not hero_img:
         scores["F2"] = (0, "이미지 없음")
     else:
@@ -600,16 +618,37 @@ def check_instant_reject(all_scores: dict, html: str) -> list:
         rejects.append(f"F1 = 0 — 영양소명 누락 ({all_scores['F1'][1]})")
     if all_scores.get("F2", (10,))[0] == 0:
         rejects.append(f"F2 = 0 — 이미지 없음")
-    # v7.8: 효과 과잉 — 5가지 이상 개선 효과 나열 시 REJECT
+    # v7.8 (v7.9 수정): 효과 과잉 — 긍정 문맥에서만 카운트
+    # "no X", "didn't notice X", "I just X" 등 부정/무관 문맥 제외
     _benefit_kws = ["joint", "blood pressure", "skin", "digestion", "teeth", "sleep", "mood",
-                    "vision", "hair", "nails", "memory", "focus", "libido", "testosterone"]
-    _benefit_count = sum(1 for kw in _benefit_kws if re.search(rf'\b{kw}\b', html, re.I))
+                    "vision", "hair", "nails", "memory", "libido", "testosterone"]
+    def _is_positive_claim(kw, text):
+        hits = re.findall(rf'.{{0,40}}\b{kw}\b.{{0,40}}', text, re.I)
+        for h in hits:
+            # 부정 문맥 제외 — wasn't/isn't/aren't 포함
+            if re.search(
+                r"\bno\b|\bnot\b|\bdidn't\b|\bdoesn't\b|\bnever\b"
+                r"|\bI just\b|\bI only\b|\bwasn't\b|\bisn't\b|\baren't\b"
+                r"|\bwouldn't\b|\bcouldn't\b|\bshouldn't\b"
+                r"|\bslight\b|\bsubtle\b|\bnot sure\b|\bunsure\b"
+                r"|\bdropping\b|\bdeficien\b|\blead to\b|\bissue\b"
+                r"|\brestless\b|\banxious\b|\bworse\b|\bproblem\b|\blow\b",
+                h, re.I
+            ):
+                continue
+            return True
+        return False
+    _benefit_count = sum(1 for kw in _benefit_kws if _is_positive_claim(kw, html))
     if _benefit_count >= 5:
-        rejects.append(f"효과 과잉 — {_benefit_count}가지 효과 나열 (최대 3가지)")
-    # v7.8: "I'd" 반복 과잉 — 10회 이상 시 REJECT
-    _id_count = len(re.findall(r"\bI[''']d\s", html))
-    if _id_count >= 10:
-        rejects.append(f"I'd 반복 과잉 — {_id_count}회 (최대 8회)")
+        rejects.append(f"효과 과잉 — {_benefit_count}가지 긍정 효과 나열 (최대 4가지)")
+    # v7.8 (v7.9 수정): "I'd" 리스트 과잉 — <li>I'd 형태만 카운트 (과거습관 I'd been 제외)
+    _id_list = len(re.findall(r"<li>[^<]*I[''']d\s+(?!been\b|had\b|already\b)", html, re.I))
+    if _id_list >= 8:
+        rejects.append(f"I'd 리스트 과잉 — {_id_list}개 (최대 7개)")
+    # v7.9: fat 단독 과잉 — 지용성 비타민 글에서 fat-soluble 제외 15회+ 경고
+    _fat_standalone = len(re.findall(r'\bfat\b', html, re.I)) - len(re.findall(r'fat.soluble', html, re.I))
+    if _fat_standalone >= 15:
+        rejects.append(f"fat 단독 과잉 — {_fat_standalone}회 (fat-soluble 제외, 최대 8회)")
     return rejects
 
 

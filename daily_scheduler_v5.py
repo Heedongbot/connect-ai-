@@ -225,16 +225,26 @@ def fetch_google_trends(keywords, timeframe='today 1-m', cache_hours=6):
         kw_list = list(keywords)
         for i in range(0, len(kw_list), 5):
             batch = kw_list[i:i+5]
-            try:
-                pytrends.build_payload(batch, timeframe=timeframe, geo='US')
-                data = pytrends.interest_over_time()
-                if not data.empty:
-                    for kw in batch:
-                        if kw in data.columns:
-                            scores[kw] = int(data[kw].mean())
-                time.sleep(1.5)
-            except Exception as e:
-                logging.warning(f"  Trends 배치 오류 [{timeframe}]: {e}")
+            wait = 2.0
+            for attempt in range(3):
+                try:
+                    pytrends.build_payload(batch, timeframe=timeframe, geo='US')
+                    data = pytrends.interest_over_time()
+                    if not data.empty:
+                        for kw in batch:
+                            if kw in data.columns:
+                                scores[kw] = int(data[kw].mean())
+                    time.sleep(wait)
+                    break
+                except Exception as e:
+                    err_str = str(e)
+                    if "429" in err_str:
+                        logging.warning(f"  Trends 429 [{timeframe}] — {wait*4:.0f}초 대기 후 재시도")
+                        time.sleep(wait * 4)
+                        wait = min(wait * 2, 30)
+                    else:
+                        logging.warning(f"  Trends 배치 오류 [{timeframe}]: {e}")
+                        break
 
         cache_file.write_text(json.dumps({
             "timestamp": datetime.now().isoformat(),
@@ -315,28 +325,35 @@ def generate_topic(topic_type, nutrients, published, max_tries=20):
 # ============================================================
 def generate_daily_schedule(count):
     """
-    24시간 내 불규칙 발행 스케줄
-    - 최소 3시간 간격
-    - 06:00 ~ 22:00 범위
-    - 분 단위 entropy (사람처럼 불규칙하게)
+    07:00 ~ 22:30 범위, 최소 간격 보장, 사람처럼 불규칙한 분 단위.
+    count=4 이상일 때 랜덤 탈락 방지 — 균등 분배 후 jitter 적용.
     """
-    available = list(range(6, 22))
+    START, END = 7, 22.5        # 07:00 ~ 22:30
+    total_hours = END - START   # 15.5시간
+
+    # 최소 간격: count에 따라 동적으로 결정
+    # count=2 → 4h, count=3 → 3h, count=4 → 2.5h
+    min_gap = max(2.5, total_hours / (count + 1))
+
+    # 균등 간격으로 기준점 생성 후 ±30분 jitter
+    interval = total_hours / (count + 1)
     chosen = []
+    for i in range(1, count + 1):
+        base = START + interval * i
+        jitter = random.uniform(-0.4, 0.4)  # ±24분
+        h_float = base + jitter
+        # 범위 클램프 + 앞 슬롯과 최소 간격 보장
+        h_float = max(START + 0.1, min(END - 0.5, h_float))
+        if chosen and h_float - chosen[-1] < min_gap:
+            h_float = chosen[-1] + min_gap
+        chosen.append(h_float)
 
-    for _ in range(count):
-        if not available: break
-        h = random.choice(available)
-        chosen.append(h)
-        # ±3시간 제거
-        available = [x for x in available if abs(x - h) > 3]
-
-    chosen.sort()
-
-    # 분 단위 불규칙성 (사람처럼)
-    human_minutes = [0, 7, 11, 17, 23, 29, 33, 41, 47, 53]
+    human_minutes = [7, 11, 17, 23, 29, 33, 41, 47, 53]
     times = []
-    for h in chosen:
+    for h_float in chosen:
+        h = int(h_float)
         m = random.choice(human_minutes)
+        if h >= END: h = END - 1
         times.append(f"{h:02d}:{m:02d}")
 
     return times
@@ -378,14 +395,15 @@ def mark_topic_done(topic):
 # ============================================================
 # 발행 실행
 # ============================================================
-def create_raw_file(topic):
+def create_raw_file(topic, topic_type="comprehensive_guide"):
     """오케스트레이터가 감지할 .txt 파일 생성"""
     safe = "".join(c for c in topic if c.isalnum() or c in " -").strip()
     safe = safe.replace(" ", "_")[:80]
     filename = f"{safe}.txt"
     file_path = RAW_DIR / filename
-    file_path.write_text(topic, encoding='utf-8')
-    logging.info(f"  📄 RAW 파일 생성: {filename}")
+    content = f"topic_type: {topic_type}\n{topic}"
+    file_path.write_text(content, encoding='utf-8')
+    logging.info(f"  📄 RAW 파일 생성: {filename} [type={topic_type}]")
     return file_path
 
 def save_schedule_log(posts):
@@ -405,7 +423,7 @@ def run_posting_job(topic, topic_type="comprehensive_guide"):
     """스케줄된 포스팅 실행 (주제 이미 결정됨 — plan_today에서 선정)"""
     logging.info("\n" + "="*50)
     logging.info(f"⏰ 포스팅 실행: {topic}")
-    create_raw_file(topic)
+    create_raw_file(topic, topic_type=topic_type)
     mark_topic_done(topic)
     save_schedule_log([{
         "time":       datetime.now().strftime("%H:%M"),
@@ -425,127 +443,223 @@ def _extract_nutrient(topic_str: str) -> str:
 
 def plan_today():
     """
-    오늘의 발행 시간표 (v6.0 — 트렌드 기반 comprehensive guide 3개):
-
-    131개 comprehensive guide 중 미완료 주제를
-      1번째 포스팅: 7일 트렌드 1위
-      2번째 포스팅: 30일 트렌드 1위
-      3번째 포스팅: 1년 트렌드 1위
-    이미 선정/발행된 주제는 2위, 3위... 로 밀림.
+    v8.2 — 06:00 실행
+    comprehensive_guide: 트렌드 점수 기반 1~2개
+    longtail (synergy/antagonism/timing/question): priority 기반 1개
+    총 2~3개 → 07~20시 배정
     """
     logging.info("\n" + "="*50)
     today = datetime.now().strftime("%Y-%m-%d")
-    logging.info(f"📅 발행 시간표 수립 (v6.0 Trend-Guided) — {today}")
+    logging.info(f"📊 트렌드 기반 스케줄 수립 (v8.2) — {today}")
 
-    bank    = load_topic_bank()
+    bank = load_topic_bank()
 
-    # 미완료 comprehensive guide (날짜 배정 전 + 오늘 이미 배정된 것 모두 포함)
+    # ── 가이드 후보 (기존) ───────────────────────────────────────────
     pending = [
         t for t in bank
         if t.get("type") == "comprehensive_guide"
         and t.get("status") == "pending"
+        and not t.get("date")
     ]
 
-    # 오늘 이미 배정된 항목은 제외 (중복 방지)
-    already_today = {
-        t["topic"] for t in bank
-        if t.get("date") == today and t.get("status") == "pending"
-    }
-    pending = [t for t in pending if t["topic"] not in already_today]
+    # ── 롱테일 후보 (신규) ───────────────────────────────────────────
+    longtail_types = {"synergy", "antagonism", "timing", "question", "comparison",
+                      "combination_query", "symptom_query", "question_query"}
+    pending_longtail = [
+        t for t in bank
+        if t.get("type") in longtail_types
+        and t.get("status") == "pending"
+        and not t.get("date")
+    ]
+    # priority: high 먼저, 같으면 추가일 오래된 것 먼저
+    pending_longtail.sort(
+        key=lambda t: (0 if t.get("priority") == "high" else 1,
+                       t.get("added_at", ""))
+    )
 
-    if not pending:
-        logging.info("  ✅ 모든 comprehensive guide 완료 (또는 오늘 이미 배정 완료)!")
+    if not pending and not pending_longtail:
+        logging.info("  ✅ 배정 가능한 항목 없음")
+        # 롱테일 자동 보충
+        try:
+            import longtail_pipeline as _lp
+            logging.info("  🔄 롱테일 자동 보충 실행...")
+            _lp.run_full_pipeline(run_suggest=False)
+        except Exception as _e:
+            logging.warning(f"  롱테일 보충 실패: {_e}")
         return None
 
-    logging.info(f"  📚 남은 comprehensive guide: {len(pending)}개")
+    logging.info(f"  📚 후보: {len(pending)}개")
 
-    # 영양소명 추출 (트렌드 검색 키워드)
-    nutrients = list(dict.fromkeys(_extract_nutrient(t["topic"]) for t in pending))
+    # 영양소명 추출
+    # ── 가이드: 트렌드 점수 산출 ────────────────────────────────────
+    selected_guides = []
+    combined = {}
 
-    # 3개 트렌드 윈도우 — 순서 = 발행 순서
-    TREND_WINDOWS = [
-        ("7d",  "now 7-d",       "1번째"),
-        ("30d", "today 1-m",     "2번째"),
-        ("1yr", "today 12-m",    "3번째"),
-    ]
+    if pending:
+        nutrients = list(dict.fromkeys(_extract_nutrient(t["topic"]) for t in pending))
+        WINDOWS = [
+            ("7d",  "now 7-d",    4),
+            ("30d", "today 1-m",  3),
+            ("3m",  "today 3-m",  2),
+            ("1yr", "today 12-m", 1),
+        ]
+        for label, tf, weight in WINDOWS:
+            scores = fetch_google_trends(nutrients, timeframe=tf, cache_hours=6)
+            if scores:
+                top3 = sorted(scores.items(), key=lambda x: x[1], reverse=True)[:3]
+                logging.info(f"  [{label}×{weight}] TOP3: {[f'{n}({s})' for n, s in top3]}")
+            for nut, s in scores.items():
+                combined[nut] = combined.get(nut, 0) + s * weight
 
-    trend_scores = {}
-    for label, tf, _ in TREND_WINDOWS:
-        scores = fetch_google_trends(nutrients, timeframe=tf, cache_hours=6)
-        trend_scores[label] = scores
-        if scores:
-            top3 = sorted(scores.items(), key=lambda x: x[1], reverse=True)[:3]
-            logging.info(f"  [{label}] TOP3: {[f'{n}({s})' for n, s in top3]}")
-        else:
-            logging.info(f"  [{label}] 트렌드 데이터 없음 — 순서 기반 선택")
+        # ── [v9.0] Site Brain 40% 반영 ─────────────────────────────
+        _NUTRIENT_TO_CAT_local = {}  # fallback: 빈 dict (scope 오류 방지)
+        try:
+            from site_brain import SiteBrain, _NUTRIENT_TO_CAT as _NUTRIENT_TO_CAT_local
+            _brain   = SiteBrain()
+            _recs    = _brain.recommend()
+            _block   = set(_recs.get("block_categories", []))
+            _boost   = set(_recs.get("boost_categories", []))
+            logging.info(f"  🧠 [SiteBrain] BLOCK:{list(_block)} BOOST:{list(_boost)}")
+        except Exception as _sb_err:
+            logging.warning(f"  [SiteBrain] 로드 실패: {_sb_err}")
+            _block, _boost = set(), set()
 
-    # 각 윈도우에서 미선정 1위 선택
-    selected        = []   # [(entry_dict, trend_label, trend_window_name)]
-    selected_topics = set()
+        def _site_score(t: dict) -> float:
+            nut = _extract_nutrient(t["topic"]).lower()
+            cat = _NUTRIENT_TO_CAT_local.get(nut, "other") if _boost or _block else "other"
+            s   = combined.get(_extract_nutrient(t["topic"]), 0)
+            # 카테고리 보정: block=-40점, boost=+20점
+            if cat in _block: s -= 40
+            if cat in _boost: s += 20
+            return s
 
-    for label, _, slot_name in TREND_WINDOWS:
-        scores = trend_scores[label]
-        # 아직 선정 안 된 항목을 트렌드 점수 내림차순 정렬
         ranked = sorted(
-            [t for t in pending if t["topic"] not in selected_topics],
-            key=lambda t: (
-                scores.get(_extract_nutrient(t["topic"]), 0),
-                random.uniform(0, 1)   # 동점 시 랜덤 tiebreak
-            ),
-            reverse=True
+            pending,
+            key=lambda t: (_site_score(t), random.uniform(0, 1)),
+            reverse=True,
         )
-        if not ranked:
-            logging.warning(f"  [{label}] 선택 가능한 주제 없음 — 스킵")
-            continue
-        chosen = ranked[0]
-        nut    = _extract_nutrient(chosen["topic"])
-        score  = scores.get(nut, 0)
-        selected.append((chosen, label, slot_name))
-        selected_topics.add(chosen["topic"])
-        logging.info(f"  [{slot_name}/{label}] 선택: {chosen['topic']} (trend={score})")
+        # 가이드는 하루 1~2개
+        guide_count = min(random.randint(1, 2), len(ranked))
+        selected_guides = ranked[:guide_count]
+        logging.info(f"  📚 가이드 선택 {guide_count}개: {[t['topic'][:35] for t in selected_guides]}")
 
-    if not selected:
-        logging.warning("  ⚠️ 선택된 주제 없음 — plan 중단")
+    # ── 롱테일: priority 순 2개 ────────────────────────────────────
+    selected_longtail = []
+    if pending_longtail:
+        # 같은 타입 연속 방지: 첫 번째와 다른 타입 선택
+        first = pending_longtail[0]
+        second = next(
+            (t for t in pending_longtail[1:] if t.get("type") != first.get("type")),
+            pending_longtail[1] if len(pending_longtail) > 1 else None,
+        )
+        selected_longtail = [t for t in [first, second] if t]
+        for lt in selected_longtail:
+            logging.info(f"  🔗 롱테일: [{lt['type']}] {lt['topic'][:50]}")
+
+    # ── friend_experience: 1:9 비율 엄격 관리 ────────────────────────
+    # published_links 기준 personal(guide+longtail) vs friend_experience 비율 확인
+    try:
+        _pl_path = Path(__file__).parent / "20_Meta" / "published_links.json"
+        _pl = json.loads(_pl_path.read_text(encoding="utf-8")) if _pl_path.exists() else []
+        _personal_count = sum(1 for p in _pl if p.get("topic_type","") != "friend_experience")
+        _friend_count   = sum(1 for p in _pl if p.get("topic_type","") == "friend_experience")
+        # 엄격 비율: friend = personal × 9 (1:9)
+        _friend_needed = max(0, _personal_count * 9 - _friend_count)
+        logging.info(f"  📊 발행 비율 — personal:{_personal_count} friend:{_friend_count} (필요:{_friend_needed}) [목표 1:9]")
+    except Exception as _e:
+        _friend_needed = 0  # 기본값 — 비율 계산 실패 시 강제 선택 안 함
+        logging.warning(f"  비율 계산 실패: {_e}")
+
+    _pending_friend = [
+        t for t in bank
+        if t.get("type") == "friend_experience"
+        and t.get("status") == "pending"
+        and not t.get("date")
+    ]
+    random.shuffle(_pending_friend)
+
+    # 비율 충족 시 0개, 부족 시 최대 4개 — 강제 선택 없음 (엄격 1:9)
+    _friend_select_count = min(
+        max(0, min(4, _friend_needed)),  # 비율 충족 시 0개
+        len(_pending_friend)
+    )
+    selected_friend = _pending_friend[:_friend_select_count]
+    for ft in selected_friend:
+        logging.info(f"  👥 friend_experience: {ft['topic'][:55]}")
+
+    selected = selected_guides + selected_longtail + selected_friend
+    count    = len(selected)
+
+    if count == 0:
+        logging.info("  ✅ 선택된 항목 없음")
         return None
 
-    # 발행 시간 배정 (불규칙, 3시간 간격)
-    times = generate_daily_schedule(len(selected))
+    # ── 시간 배정 (07:00~20:00, 간격 최소 2.5시간) ─────────────────
+    times = generate_daily_schedule(count)
 
-    # topic_bank 업데이트 — 날짜 + 시간 배정
-    updated = 0
     plan_posts = []
-    for (entry, label, slot_name), t in zip(selected, times):
+    for entry, t in zip(selected, times):
+        sc = round(combined.get(_extract_nutrient(entry["topic"]), 0), 1) if entry in selected_guides else 0
         for b in bank:
-            if b["topic"] == entry["topic"] and b.get("status") == "pending":
-                b["date"]         = today
-                b["time"]         = t
-                b["trend_window"] = label
-                b["trend_slot"]   = slot_name
-                updated += 1
+            if b["topic"] == entry["topic"] and b.get("status") == "pending" and not b.get("date"):
+                b["date"]        = today
+                b["time"]        = t
+                b["trend_score"] = sc
                 break
         plan_posts.append({
-            "time":         t,
-            "topic":        entry["topic"],
-            "topic_type":   "comprehensive_guide",
-            "trend_window": label,
-            "trend_slot":   slot_name,
+            "time":  t,
+            "topic": entry["topic"],
+            "type":  entry.get("type", ""),
+            "trend_score": sc,
         })
 
     save_topic_bank(bank)
 
-    plan = {
-        "date":       today,
-        "post_count": len(selected),
-        "posts":      plan_posts,
-    }
+    plan = {"date": today, "post_count": count, "posts": plan_posts}
     (META_DIR / "daily_plan.json").write_text(
-        json.dumps(plan, ensure_ascii=False, indent=2), encoding='utf-8'
+        json.dumps(plan, ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
-    logging.info(f"\n  📋 오늘 발행 시간표 ({len(selected)}개):")
+    logging.info(f"\n  📋 오늘 발행 시간표 ({count}개):")
     for p in plan_posts:
-        logging.info(f"    ⏰ {p['time']} [{p['trend_slot']}/{p['trend_window']}] → {p['topic']}")
-    logging.info(f"  📊 진행률: {len([t for t in bank if t.get('type')=='comprehensive_guide' and t.get('status')=='completed'])} / 131 완료")
+        tag = f"[{p['type']}]" if p.get("type") else ""
+        logging.info(f"    ⏰ {p['time']} {tag} → {p['topic'][:45]}")
+    done = len([t for t in bank if t.get("type") == "comprehensive_guide" and t.get("status") == "completed"])
+    logging.info(f"  📊 가이드 진행률: {done} / 131")
+
+    # ── 재고 임계값 체크 (가이드 < 10 OR 롱테일 < 10 → 통합 자동 보충) ────
+    _GUIDE_THRESHOLD    = 10
+    _LONGTAIL_THRESHOLD = 10
+    longtail_types = {"synergy", "antagonism", "timing", "question", "comparison",
+                      "combination_query", "symptom_query", "question_query"}
+    remaining_guides = [
+        t for t in bank
+        if t.get("type") == "comprehensive_guide" and t.get("status") == "pending"
+    ]
+    remaining_longtail = [
+        t for t in bank
+        if t.get("type") in longtail_types and t.get("status") == "pending"
+    ]
+    logging.info(
+        f"  📦 재고 — 가이드: {len(remaining_guides)}개 / 롱테일: {len(remaining_longtail)}개"
+    )
+
+    if (len(remaining_guides) < _GUIDE_THRESHOLD
+            or len(remaining_longtail) < _LONGTAIL_THRESHOLD):
+        logging.info(
+            f"  ⚠️ 재고 부족 (가이드 {len(remaining_guides)} or 롱테일 {len(remaining_longtail)} < 10) "
+            f"→ 통합 충전 시작 (가이드+롱테일+Google Suggest)"
+        )
+        try:
+            import subprocess, sys
+            subprocess.Popen(
+                [sys.executable, str(BASE_DIR / "longtail_pipeline.py")],
+                cwd=str(BASE_DIR),
+            )
+            logging.info("  🔄 longtail_pipeline.py 통합 충전 백그라운드 실행 중...")
+        except Exception as _e:
+            logging.warning(f"  통합 충전 실패: {_e}")
+
     logging.info("="*50)
     return plan
 
@@ -562,12 +676,10 @@ def register_today_schedule():
     today = datetime.now().strftime("%Y-%m-%d")
     now   = datetime.now()
 
-    # [v5.6] 오늘 pending 항목이 없으면 자동으로 plan_today() 호출
+    # v8.1: plan_today()는 06:00에만 실행. 00:01은 등록만 담당.
     today_pending = [e for e in bank if e.get("date") == today and e.get("status") == "pending"]
     if not today_pending:
-        logging.info(f"  📅 오늘({today}) 스케줄 없음 → plan_today() 자동 실행")
-        new_plan = plan_today()
-        bank = load_topic_bank()  # plan_today가 topic_bank에 추가하므로 재로드
+        logging.info(f"  📅 오늘({today}) 배정된 스케줄 없음 (06:00 트렌드 확인 후 배정 예정)")
 
     registered = 0
 
@@ -728,19 +840,25 @@ def run_scheduler():
     logging.info("="*50)
 
     def _rescan_today():
+        """00:01 — 기존 등록된 스케줄만 재등록 (plan_today 호출 없음)"""
         jobs_to_cancel = [j for j in list(schedule.jobs)
                           if any(str(t).startswith('post_') for t in getattr(j, 'tags', []))]
         for j in jobs_to_cancel:
             schedule.cancel_job(j)
         register_today_schedule()
 
-    # 매일 00:01 — topic_bank 재스캔
+    def _plan_and_register():
+        """06:00 — 트렌드 확인 + 점수 계산 + 오늘 스케줄 배정 + 등록"""
+        plan_today()
+        _rescan_today()
+
+    # 00:01 — 스케줄 등록 (시간 배정 없음, 이미 배정된 것만 등록)
     schedule.every().day.at("00:01").do(_rescan_today)
 
-    # 매일 06:05 — topic_ranker 실행 후 재스캔 (06:00 topic_ranker 완료 후)
-    schedule.every().day.at("06:05").do(_rescan_today)
+    # 06:00 — 트렌드 확인 + 오늘 발행 주제 선택 + 시간 배정 + 등록
+    schedule.every().day.at("06:00").do(_plan_and_register)
 
-    # 오늘 계획 즉시 수립
+    # 시작 시 기존 스케줄 등록 (재시작 복구)
     register_today_schedule()
 
     # 워치독: 오케스트레이터 초기 시작
