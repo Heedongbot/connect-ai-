@@ -205,5 +205,49 @@
     "score": 0.867,
     "html_path": "D:\\블로그\\nutristack\\pipeline\\01_Completed\\Taking_Zinc_with_Iron_What_I_Learned_the_Hard_Way.txt",
     "topic_type": "synergy"
+  },
+  {
+    "title": "How NAC Supplements Saved My Cough-Ridden Winters",
+    "url": "https://www.nutristacklab.com/2026/06/my-honest-notes-on-nac.html",
+    "topic": "NAC Complete Guide",
+    "nutrients": [],
+    "date": "2026-06-03",
+    "category": "GENERAL",
+    "template": "F_journal",
+    "post_id": "1770477363095666455",
+    "score": 0.97,
+    "html_path": "D:\\블로그\\nutristack\\pipeline\\01_Completed\\NAC_Complete_Guide.txt",
+    "topic_type": "comprehensive_guide"
+  },
+  {
+    "title": "How to Take Iron Made for Best Results",
+    "url": "https://www.nutristacklab.com/2026/06/the-how-mistake-i-kept-making.html",
+    "topic": "How Iron Made My Vitamin C Finally Work",
+    "nutrients": [
+      "vitamin c"
+    ],
+    "date": "2026-06-03",
+    "category": "IMMUNE",
+    "template": "F_journal",
+    "post_id": "380319093225252017",
+    "score": 0.933,
+    "html_path": "D:\\블로그\\nutristack\\pipeline\\01_Completed\\How_Iron_Made_My_Vitamin_C_Finally_Work.txt",
+    "topic_type": "synergy"
+  },
+  {
+    "title": "Is Vitamin D Worth Taking? What the Research Says",
+    "url": "https://www.nutristacklab.com/2026/06/the-taking-timing-that-changed-things.html",
+    "topic": "Taking Vitamin D with Magnesium: What I Learned the Hard Way",
+    "nutrients": [
+      "vitamin d",
+      "magnesium"
+    ],
+    "date": "2026-06-03",
+    "category": "FUNDAMENTAL",
+    "template": "C_failure_to_fix",
+    "post_id": "3033036099960060067",
+    "score": 0.938,
+    "html_path": "D:\\블로그\\nutristack\\pipeline\\01_Completed\\Taking_Vitamin_D_with_Magnesium_What_I_Learned_the_Hard_Way.txt",
+    "topic_type": "comprehensive_guide"
   }
 ]

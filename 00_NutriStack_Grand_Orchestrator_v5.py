@@ -2147,7 +2147,8 @@ def ask_ai(prompt, system_prompt, model=HEAVY_MODEL, max_retries=2, timeout=360)
         try:
             r = requests.post(OLLAMA_URL, json={
                 "model": model, "prompt": clean_instruction, "system": system_prompt,
-                "stream": False, "options": {"temperature": 0.4, "top_p": 0.9, "repeat_penalty": 1.2, "repeat_last_n": 64, "num_predict": 8192}
+                "stream": False, "keep_alive": "1m",
+                "options": {"temperature": 0.4, "top_p": 0.9, "repeat_penalty": 1.2, "repeat_last_n": 64, "num_predict": 8192}
             }, timeout=timeout)
             text = r.json().get('response','').strip()
             bad  = ["Write ", "Topic:", "Instruction", "CRITICAL", "YOU MUST", "🚨", "🚫", "POST SKELETON"]
@@ -2475,9 +2476,20 @@ def get_image_prompt(topic, img_key, title="", hook=""):
     return f"{style}, {composition}, {realism_suffix}"[:280]
 
 
+def _sd_health_check():
+    """SD API 가용 여부 빠른 확인 (5초)."""
+    try:
+        requests.get(f"{SD_API_URL}/sdapi/v1/sd-models", timeout=5)
+        return True
+    except Exception:
+        return False
+
 def _sd_generate(prompt, is_hero=True):
     """[v6.6] 라이프스타일 포토리얼리스틱 설정 — 가로형, epicrealismXL 최적화."""
     if not SD_ENABLED: return None
+    if not _sd_health_check():
+        logging.warning("    SD API 응답 없음 — 폴백으로 즉시 전환")
+        return None
     try:
         model  = SD15_MODEL
         steps  = 24 if is_hero else 20
@@ -2500,7 +2512,7 @@ def _sd_generate(prompt, is_hero=True):
             "sampler_name": "DPM++ 2M Karras",
             "override_settings": {"sd_model_checkpoint": model},
         }
-        r = requests.post(f"{SD_API_URL}/sdapi/v1/txt2img", json=payload, timeout=300)
+        r = requests.post(f"{SD_API_URL}/sdapi/v1/txt2img", json=payload, timeout=120)
         r.raise_for_status()
         return base64.b64decode(r.json()["images"][0])
     except Exception as e:
@@ -3140,6 +3152,11 @@ def auto_sanitize_html(html: str, topic: str) -> str:
         return m.group(0)
     html = re.sub(r'<h1[^>]*>(.+?)</h1>', fix_h1, html, flags=re.IGNORECASE | re.DOTALL)
 
+    # 1-b. body 본문 "complete guide" / "ultimate guide" 제거 (AI_Footprint 사전 차단)
+    # H1은 위에서 이미 교체됨. 본문 내 잔존 구절만 제거.
+    html = re.sub(r'(?i)\b(the\s+)?(complete|ultimate)\s+guide\b', '', html)
+    html = re.sub(r'  +', ' ', html)  # 이중 공백 정리
+
     # 2. 치료/완치 주장 → 부드러운 표현으로 교체 (No_Cure_Claims)
     cure_replacements = [
         (r'\bcures?\b', 'may support'),
@@ -3693,9 +3710,11 @@ class GrandOrchestrator:
             topic = raw_text
             topic = topic.lstrip('﻿​‌‍')          # BOM + zero-width chars
             topic = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]', '', topic)  # 제어문자
-            # 헤더 라인 제거 (topic_type: / scheduled_time: 등)
-            topic = re.sub(r'^(topic_type|scheduled_time|draft|test):[^\n]*\n?', '',
+            # 헤더 라인 제거 (topic_type: / scheduled_time: / type: 등)
+            topic = re.sub(r'^(topic_type|scheduled_time|draft|test|type|nutrients|category):[^\n]*\n?', '',
                            topic, flags=re.IGNORECASE | re.MULTILINE).strip()
+            # 마크다운 H1 # 접두사 제거
+            topic = re.sub(r'^#+\s*', '', topic, flags=re.MULTILINE).strip()
             # 접두사 청소 루프
             prefixes = [r'^TOPIC:\s*', r'^Title:\s*', r'^\[.*?\]', r'^P[12]\s*[-_]*\s*']
             for p in prefixes:
@@ -4118,6 +4137,24 @@ class GrandOrchestrator:
                 html = html[:_insert_pos_preqc2] + _arrow_preqc + html[_insert_pos_preqc2:]
                 logging.info("  🔧 [Pre-QC] &#8594; 화살표 선주입")
 
+            # [Pre-QC] meta name="description" 누락 시 og:description에서 자동 주입
+            # (_qa_leakage_issues check#3 — 없으면 NoPlaceholder 항상 실패)
+            if not re.search(r'<meta\s+name=["\']description["\']', html, re.IGNORECASE):
+                _og_desc_m = re.search(
+                    r'<meta\s[^>]*property=["\']og:description["\']\s[^>]*content=["\']([^"\']{20,})["\']',
+                    html, re.IGNORECASE
+                )
+                if _og_desc_m:
+                    import html as _html_mod
+                    _desc_val = _html_mod.escape(_og_desc_m.group(1), quote=True)
+                    _meta_desc = f'<meta name="description" content="{_desc_val}"/>'
+                    _head_end = html.find('</head>')
+                    if _head_end != -1:
+                        html = html[:_head_end] + _meta_desc + html[_head_end:]
+                    else:
+                        html = _meta_desc + html
+                    logging.info("  🔧 [Pre-QC] meta name=description 자동 주입")
+
             score, issues, word_count = quality_check(html + schema, title, archetype_name)
             pmid_count = len(re.findall(r'PMID\s*\d+', html, re.IGNORECASE))
             logging.info(f"  📊 품질: {score:.1%} | 단어: {word_count} | PMID: {pmid_count}")
@@ -4174,41 +4211,45 @@ class GrandOrchestrator:
                     logging.warning("  ⚠️ 폴리시 응답 불량 — 원본 유지")
 
             # [v7.1] 치명적 이슈만 강제반려 대상 — Alt_Clean/Disclosure 등 경미한 이슈는 통과
-            _critical_issues = {"AI_Footprint", "No_Cure_Claims", "PMID_Valid", "NoPlaceholder"}
+            # [v9.5] NoPlaceholder 제거 — Pre-QC meta 자동주입으로 처리, 나머지는 점수 반영으로 충분
+            _critical_issues = {"AI_Footprint", "No_Cure_Claims", "PMID_Valid"}
             _blocking_issues = [i for i in issues if i in _critical_issues]
 
-            # [v8.1] 모든 포스팅 Critic A 필수 통과 (80% 자동승인 제거)
-            logging.info(f"  🎯 Critic A 검증 [gemma4 Q8] (품질 {score:.1%})...")
-            report_to_discord("편집장", f"🎯 Critic A 검증 시작 ({score:.0%})...")
-            critic_sys    = load_agent_with_lessons("05_Critic_Editor_In_Chief.md")
-            html          = clean_ai_output(html)
-            critic_result = ask_ai(
-                f"Topic: {topic}\nArchetype: {archetype_name}\nTopic Type: {topic_type}\n"
-                f"Title: {title}\nWord Count: {word_count}\nPMID Count: {pmid_count}\n"
-                f"Issues: {issues}\nArticle (first 12000 chars):\n{html[:12000]}\n\n"
-                f"IMPORTANT: This is a '{archetype_name}' article.\n"
-                f"- minimalist/quick-answer/short-practical: "
-                f"{ARCHETYPES.get(archetype_name,{}).get('min_words',1200)}+ words. TOC/FAQ optional.\n"
-                f"- science-heavy/deep-protocol: 2000+ words, PMID citations required.\n"
-                f"Evaluate based on archetype standards.\n"
-                f"Output: APPROVED or REJECTED\nReason (Korean, specific):",
-                critic_sys, MODEL_CRITIC, max_retries=1
-            )
+            # [v9.4] blocking 체크 선행 — Critic AI 호출 전 조기 반려 (1.5분 낭비 방지)
+            logging.info(f"  🎯 1차 품질 검사 (기준 70%, 현재 {score:.1%})...")
+            report_to_discord("편집장", f"🎯 1차 검사 ({score:.0%} / 기준 70%)...")
 
             critic_retries = self.ctx.get("critic_retries", 0)
             history        = self.ctx.get("rejection_history", [])
 
-            # [v6.5] 치명적 이슈만 강제반려 (경미한 이슈로 Critic 승인 무효화 금지)
-            if _blocking_issues and "REJECTED" not in critic_result.upper():
-                logging.warning(f"  🚨 치명적 이슈 {_blocking_issues} → AI 승인 무효화")
-                critic_result = f"REJECTED\n자동 검증 이슈: {', '.join(_blocking_issues)}"
-            elif issues and not _blocking_issues and "REJECTED" not in critic_result.upper():
-                logging.info(f"  ℹ️ 경미한 이슈 {issues} — Critic A 승인 유지")
-
-            is_rejected = "REJECTED" in critic_result.upper()
-
-            critic_retries = self.ctx.get("critic_retries", 0)
-            history        = self.ctx.get("rejection_history", [])
+            if _blocking_issues:
+                # 치명적 이슈 → Critic AI 스킵하고 즉시 반려
+                logging.warning(f"  🚨 치명적 이슈 {_blocking_issues} → Critic AI 스킵, 즉시 반려")
+                is_rejected   = True
+                critic_result = f"강제 반려(blocking): {', '.join(_blocking_issues)}"
+            elif score < 0.70:
+                # 점수 미달 → Critic AI 스킵하고 즉시 반려
+                logging.warning(f"  🔴 1차 미달 ({score:.1%} < 70%) → Critic AI 스킵, 재작성")
+                is_rejected   = True
+                critic_result = f"품질 미달: {score:.1%}"
+            else:
+                # 조건 통과 → Critic AI 실행 (피드백 전용)
+                logging.info(f"  ✅ 1차 통과 ({score:.1%} ≥ 70%) — Critic AI 피드백 수집 중...")
+                critic_sys    = load_agent_with_lessons("05_Critic_Editor_In_Chief.md")
+                html          = clean_ai_output(html)
+                critic_result = ask_ai(
+                    f"Topic: {topic}\nArchetype: {archetype_name}\nTopic Type: {topic_type}\n"
+                    f"Title: {title}\nWord Count: {word_count}\nPMID Count: {pmid_count}\n"
+                    f"Issues: {issues}\nArticle (first 12000 chars):\n{html[:12000]}\n\n"
+                    f"IMPORTANT: This is a '{archetype_name}' article.\n"
+                    f"- minimalist/quick-answer/short-practical: "
+                    f"{ARCHETYPES.get(archetype_name,{}).get('min_words',1200)}+ words. TOC/FAQ optional.\n"
+                    f"- science-heavy/deep-protocol: 2000+ words, PMID citations required.\n"
+                    f"Evaluate based on archetype standards.\n"
+                    f"Output: APPROVED or REJECTED\nReason (Korean, specific):",
+                    critic_sys, MODEL_CRITIC, max_retries=1
+                )
+                is_rejected = False
 
             if is_rejected:
                 critic_retries += 1
@@ -4305,7 +4346,7 @@ class GrandOrchestrator:
                                 logging.info(f"  ✍️ Claude 재작성 결과: {_r_score:.1%} | 이슈 {len(_r_issues)}건 | {_r_wc}단어")
                                 if _r_issues:
                                     logging.info(f"  ✍️ 재작성 이슈: {', '.join(_r_issues)}")
-                                if _r_score >= 0.50:  # 재작성 결과는 Critic A(70%)가 판단 — 여기선 치명적 파손만 차단
+                                if _r_score >= 0.70:  # [v9.0] 재작성 결과도 1차 기준 70% 적용
                                     logging.info(f"  ✅ Claude 재작성 채택 ({_r_score:.1%}) → 발행")
                                     report_to_discord("System", f"✅ Claude 재작성 발행: {topic[:40]} ({_r_score:.0%})")
                                     html, score, issues, word_count = _rewritten, _r_score, _r_issues, _r_wc
@@ -4439,10 +4480,9 @@ class GrandOrchestrator:
                     _p2_sys, MODEL_CRITIC, max_retries=1
                 )
                 _p2_m     = re.search(r'종합\s*점수[：:]\s*([\d.]+)', _p2_result)
-                # regex 실패 or AI 빈 응답 → 점수 불명확하므로 통과 처리 (불필요한 재작성 방지)
-                _p2_score = float(_p2_m.group(1)) / 10 if _p2_m else 0.80
-                _p2_fail  = ("REJECTED" in _p2_result.upper()) or (_p2_score < 0.80)
-                logging.info(f"  {'❌ 2차 반려' if _p2_fail else '✅ 2차 승인'}: {_p2_score:.1%}")
+                # [v9.0] 2차 게이트: quality_check score >= 80% (AI 텍스트는 피드백 전용)
+                _p2_fail  = score < 0.80
+                logging.info(f"  {'❌ 2차 미달' if _p2_fail else '✅ 2차 통과'}: {score:.1%} ({'< 80%' if _p2_fail else '≥ 80%'})")
 
                 if _p2_fail:
                     for _p2_try in range(1):
@@ -4473,7 +4513,7 @@ class GrandOrchestrator:
                         _p2_fixed = clean_ai_output(_p2_fixed)
                         if _p2_fixed and len(_p2_fixed) > 500:
                             _pf_sc, _pf_is, _pf_wc = quality_check(_p2_fixed + schema, title, archetype_name)
-                            if _pf_sc >= 0.70:
+                            if _pf_sc >= 0.80:  # [v9.0] 2차 fix 후 80% 달성해야 채택
                                 html, score, issues, word_count = _p2_fixed, _pf_sc, _pf_is, _pf_wc
                                 _p2_recheck = ask_ai(
                                     f"⚠️ PHASE 2 RE-AUDIT — MINIMUM 8.5/10\n"
@@ -4484,7 +4524,7 @@ class GrandOrchestrator:
                                 )
                                 _p2_m2    = re.search(r'종합\s*점수[：:]\s*([\d.]+)', _p2_recheck)
                                 _p2_score = float(_p2_m2.group(1)) / 10 if _p2_m2 else 0.75
-                                _p2_fail  = ("REJECTED" in _p2_recheck.upper()) or (_p2_score < 0.85)
+                                _p2_fail  = _pf_sc < 0.80  # [v9.0] 재감사도 score 기준
                                 logging.info(f"  {'❌' if _p2_fail else '✅'} 2차 재감사: {_p2_score:.1%}")
                                 if not _p2_fail:
                                     logging.info(f"  🌟 2차 감사 통과! ({_p2_score:.1%})")
@@ -4493,7 +4533,7 @@ class GrandOrchestrator:
                             logging.warning(f"  ⚠️ 2차 감사 2회 미달 — 현재 품질로 발행 진행 ({score:.1%})")
                             report_to_discord("System", f"⚠️ 2차 미달 발행: {topic[:30]} ({score:.0%})")
                 else:
-                    logging.info(f"  🌟 2차 감사 통과! ({_p2_score:.1%}) → 고품질 발행")
+                    logging.info(f"  🌟 2차 감사 통과! ({score:.1%}) → 고품질 발행")
                 # ────────────────────────────────────────────────────────────────
 
                 self.ctx["last_critic_feedback"] = ""
@@ -5051,6 +5091,29 @@ def monitor():
     file_fail_counts   = {}   # {filename: fail_count} — ctx 초기화와 무관하게 유지
     FAILED_DIR         = RAW_DIR.parent / "00_Failed"
     FAILED_DIR.mkdir(exist_ok=True)
+
+    # [v9.5] 재시작 시 오늘 날짜 processing 항목 → pending 자동 복원
+    # 이유: 재시작마다 _next_scheduled_task()가 pending 항목을 하나씩 processing으로 소진
+    # → 반복 재시작 시 모든 슬롯이 processing으로 고착되는 버그 방지
+    try:
+        _tb_path = META_DIR / "topic_bank.json"
+        if _tb_path.exists():
+            _tb = json.loads(_tb_path.read_text(encoding="utf-8"))
+            _today_str = datetime.now().strftime("%Y-%m-%d")
+            _now_hm    = datetime.now().strftime("%H:%M")
+            _reset_count = 0
+            for _item in _tb:
+                # 발행 완료된 항목은 status=completed — processing 상태면 미발행 중단된 것
+                if (_item.get("status") == "processing"
+                        and _item.get("date", "") == _today_str
+                        and _item.get("time", "00:00") > _now_hm):
+                    _item["status"] = "pending"
+                    _reset_count += 1
+            if _reset_count:
+                _tb_path.write_text(json.dumps(_tb, ensure_ascii=False, indent=2), encoding="utf-8")
+                logging.info(f"  🔄 [v9.5] 재시작 복원: 오늘 processing {_reset_count}개 → pending")
+    except Exception as _rst_e:
+        logging.warning(f"  [v9.5] 재시작 복원 실패 (무시): {_rst_e}")
 
     # [v6.5] 재시작 시 60초 대기 — 스케줄러 타이밍 존중
     _startup_files = set(f.name for f in list(RAW_DIR.glob("**/*.txt")) + list(RAW_DIR.glob("**/*.md"))

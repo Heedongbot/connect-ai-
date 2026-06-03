@@ -590,6 +590,18 @@
       "count": 4,
       "promoted_date": "2026-06-02",
       "first_seen": "2026-06-02"
+    },
+    {
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | How Zinc Supplementation Finally Healed ",
+      "count": 5,
+      "promoted_date": "2026-06-03",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | How NAC Supplements Saved My Cough-Ridde",
+      "count": 3,
+      "promoted_date": "2026-06-03",
+      "first_seen": "2026-06-03"
     }
   ],
   "05_Critic_Editor_In_Chief": [
@@ -707,6 +719,38 @@
       "severity": "critical",
       "count": 5,
       "first_seen": "2026-05-31"
+    }
+  ],
+  "lessons": [
+    {
+      "date": "2026-06-03",
+      "type": "BANNED_PATTERN",
+      "tier": 1,
+      "count": 5,
+      "agent": "Writer",
+      "rule": "og:description = personal experience ONLY. Never research/clinical language.",
+      "example_bad": "Research on Vitamin D supplementation: what studies show about effectiveness",
+      "example_good": "I resisted taking vitamin D for years. Here is what changed my mind."
+    },
+    {
+      "date": "2026-06-03",
+      "type": "BANNED_PATTERN",
+      "tier": 1,
+      "count": 5,
+      "agent": "Writer",
+      "rule": "H1 BANNED: 'Is X Worth Taking? What the Research Says'. Use experience title.",
+      "example_bad": "Is Vitamin D Worth Taking? What the Research Says",
+      "example_good": "Why I Started Taking Vitamin D and Never Looked Back"
+    },
+    {
+      "date": "2026-06-03",
+      "type": "BANNED_PATTERN",
+      "tier": 1,
+      "count": 5,
+      "agent": "Writer",
+      "rule": "Result claims must be hedged. BANNED: 'huge difference', 'can see the results', 'energy is stable'. GOOD: 'felt noticeably different', 'notice the difference in my routine', 'energy feels more stable'.",
+      "example_bad": "It's made a huge difference. I can see the results.",
+      "example_good": "It's felt noticeably different over time. I can notice the difference in my routine."
     }
   ]
 }

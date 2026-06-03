@@ -176,6 +176,646 @@
       "last_hit": "2026-05-29",
       "example_bad": "",
       "example_good": ""
+    },
+    {
+      "id": "noplaceholder",
+      "tier": 1,
+      "type": "AVOID",
+      "severity": "high",
+      "category": "content",
+      "instruction": "NoPlaceholder",
+      "hit_count": 39,
+      "sources": [
+        "pre_publish_critic"
+      ],
+      "first_hit": "2026-05-31",
+      "last_hit": "2026-06-03",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "title_vs_body_mismatch",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "high",
+      "category": "html",
+      "instruction": "The post title is 'Ginger: Ginger Benefits, Dosage, and Side Effects' — an informational/guide-style title — but the body is written in first-person experience narrative style with sections like 'The ",
+      "hit_count": 1,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-01",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "duplicate_title_redundancy",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "medium",
+      "category": "html",
+      "instruction": "The H1 reads 'Ginger: Ginger Benefits, Dosage, and Side Effects' — the word 'Ginger' appears twice consecutively as both the prefix label and the start of the subtitle, making it redundant and awkward",
+      "hit_count": 1,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-01",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "complete_guide_remnant",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "medium",
+      "category": "html",
+      "instruction": "The alt text of the main body image reads 'Ginger Complete: Benefits, Dosage, Side Effects, and Nutritional Profile' — containing the template artifact 'Complete:' which should have been removed.",
+      "hit_count": 2,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-01",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "broken_truncated_content",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "high",
+      "category": "html",
+      "instruction": "The last FAQ answer ('Does ginger help with inflammation?') is cut off mid-sentence: '...than what I' — the paragraph is never closed properly and the content ends abruptly without a closing </p> tag ",
+      "hit_count": 1,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-01",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "truncated_link_text",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "medium",
+      "category": "html",
+      "instruction": "The first related reading link has truncated anchor text: 'Ginger Complete: Ginger Benefits, Dosage, and Side Effe' — cut off mid-word ('Effects').",
+      "hit_count": 2,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-01",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "over_improvements",
+      "tier": 1,
+      "type": "AVOID",
+      "severity": "high",
+      "category": "html",
+      "instruction": "The post claims ginger improved: digestion/bloating, afternoon energy crashes, stomach calmness, body warmth, mental alertness, digestive speed, and overall daily comfort — that is 7+ distinct improve",
+      "hit_count": 5,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-01",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "broken_internal_link",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "medium",
+      "category": "html",
+      "instruction": "The related reading link 'What I Learned From Why' points to URL 'https://www.nutristacklab.com/2026/05/what-i-learned-from-why.html' — the URL slug 'what-i-learned-from-why' is a nonsensical placehol",
+      "hit_count": 2,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-01",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "omitted_content_marker",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "high",
+      "category": "html",
+      "instruction": "The post body contains '[...MIDDLE SECTION OMITTED...]' — a placeholder marker indicating sections of the article were not included. This is editorial scaffolding left in the published HTML.",
+      "hit_count": 1,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-01",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "ai_pattern_phrase",
+      "tier": 1,
+      "type": "AVOID",
+      "severity": "medium",
+      "category": "html",
+      "instruction": "The phrase 'consistency is key' does not appear, but 'game-changer' does not appear either — however the phrase 'in conclusion' is absent. Checking confirmed: no flagged AI phrases found in the visibl",
+      "hit_count": 6,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-02",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "sentence_start_lowercase",
+      "tier": 1,
+      "type": "AVOID",
+      "severity": "medium",
+      "category": "html",
+      "instruction": "After a closing quote in the narrative, a sentence begins with lowercase: '\"Does it actually work?\" He looked at me like I\\'d asked a stupid question. \"Of course it works,\" he said. \"But you have to t",
+      "hit_count": 6,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-01",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "article_error",
+      "tier": 2,
+      "type": "AVOID",
+      "severity": "medium",
+      "category": "html",
+      "instruction": "No 'a instant', 'a improvement', or 'a answer' constructions detected in the visible text. This check passes.",
+      "hit_count": 3,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-02",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "duplicate_image",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "medium",
+      "category": "html",
+      "instruction": "The same image (https://i.imgur.com/38X43Hc.png) appears twice: once at the very top of the post and again inside a centered <p> tag after the byline.",
+      "hit_count": 1,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-01",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "author_name_mismatch",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "high",
+      "category": "html",
+      "instruction": "The byline inside the post body reads 'Sarah Chen | June 15, 2025' but the schema markup, About the Author box, and site identity all name the author as 'Erik Lindström'. Two different names are used ",
+      "hit_count": 1,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-01",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "title_body_mismatch",
+      "tier": 2,
+      "type": "AVOID",
+      "severity": "high",
+      "category": "html",
+      "instruction": "The post title is 'Magnesium Vitamin Benefits, Dosage, and Side Effects' (an informational reference-style title implying structured sections on Benefits, Dosage, and Side Effects), but the entire bod",
+      "hit_count": 3,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-02",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "double_hr",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "medium",
+      "category": "html",
+      "instruction": "Two consecutive <hr /> tags appear with only a short italic paragraph between them, and then a final standalone <hr> at the bottom before the About the Author block — the opening two <hr> tags wrap a ",
+      "hit_count": 2,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-01",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "constipation_error",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "high",
+      "category": "html",
+      "instruction": "In 'What Surprised Me Most (The Bad Part)', the author says taking too much magnesium caused 'the worst constipation of my life' and then says 'it turns out magnesium glycinate is gentler on the diges",
+      "hit_count": 1,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-01",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "truncated_content",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "high",
+      "category": "html",
+      "instruction": "The post contains '[...MIDDLE SECTION OMITTED...]' indicating content was cut from the submission. The callout box before it ends mid-sentence: 'That's huge when you've be' — the post body is visibly ",
+      "hit_count": 2,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-01",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "h2_capitalization",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "low",
+      "category": "html",
+      "instruction": "The H2 heading 'What changed and what Stayed the Same' has inconsistent capitalization: 'changed' is lowercase while 'Stayed' is capitalized mid-title.",
+      "hit_count": 1,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-01",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "topic_infiltration",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "critical",
+      "category": "html",
+      "instruction": "The post title says 'How Zinc Supplements Finally Ended My Cold Cycle' but the entire article is about zinc-copper mineral interaction and copper deficiency symptoms. There is zero content about zinc ",
+      "hit_count": 2,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-01",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "sentence_start_uppercase_mid_paragraph",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "medium",
+      "category": "html",
+      "instruction": "Mid-paragraph false capitalization: 'I figured Maybe it was stress' — 'Maybe' is incorrectly capitalized in the middle of a sentence.",
+      "hit_count": 1,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-01",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "allcaps_word",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "medium",
+      "category": "html",
+      "instruction": "'COPPER's still doing the work it did before' — the word COPPER is written in all-caps for no apparent reason, inconsistent with the rest of the post's formatting.",
+      "hit_count": 1,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-01",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "title_capitalization",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "medium",
+      "category": "html",
+      "instruction": "H1 and og:title and JSON-LD headline all use lowercase 'magnesium' and 'vitamin D' — 'magnesium' should be capitalized as it begins a proper noun phrase in a title: 'Why I Started Taking Magnesium and",
+      "hit_count": 1,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-01",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "factual_self_contradiction",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "high",
+      "category": "html",
+      "instruction": "The post states 'I take 2,000–3,000 IU of vitamin D3 daily with my largest meal, which typically has a small meal in it' — 'my largest meal, which typically has a small meal in it' is a nonsensical se",
+      "hit_count": 1,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-01",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "pmid_citation_mismatch",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "high",
+      "category": "html",
+      "instruction": "PMID 28485061 is cited in-body (paragraph 4 of the research section) as a '2016 analysis' examining magnesium's role across metabolic pathways, but in the References section it is attributed to 'Worki",
+      "hit_count": 1,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-01",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "canonical_url_mismatch",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "high",
+      "category": "html",
+      "instruction": "The canonical URL, og:url, and ld+json @id all point to 'what-ginger-actually-did-for-my-energy.html', but the post is about digestion and recovery, not energy. The URL slug contradicts the actual con",
+      "hit_count": 1,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-01",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "title_capitalisation_inconsistency",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "medium",
+      "category": "html",
+      "instruction": "The H1, og:title, and ld+json headline all render 'My digestion and recovery' with a lowercase 'd' in 'digestion', breaking consistent title case used elsewhere in the title.",
+      "hit_count": 1,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-01",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "toc_lowercase_label",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "medium",
+      "category": "html",
+      "instruction": "The TOC entry reads 'The form and dose That Finally Made a Difference' — 'form and dose' is not capitalised consistently with the other TOC entries and reads awkwardly as a title.",
+      "hit_count": 1,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-01",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "broken_internal_link_section",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "high",
+      "category": "html",
+      "instruction": "The TOC links to '#form-and-dose' but the corresponding H2 in the visible HTML has no matching id='form-and-dose' present in the rendered portion. The section titled 'The form and dose That Finally Ma",
+      "hit_count": 1,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-01",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "double_consecutive_hr",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "medium",
+      "category": "html",
+      "instruction": "Two consecutive <hr /> tags appear with only an italicised teaser line between them, creating an awkward visual double-rule that serves no semantic purpose and may render as a cluttered divider block.",
+      "hit_count": 1,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-01",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "garbled_phrase",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "medium",
+      "category": "html",
+      "instruction": "The phrase 'if you're on anything recommendation' in the FAQ section is grammatically broken — 'recommendation' is not a valid noun in this context. Likely should read 'if you're on any prescription m",
+      "hit_count": 2,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-01",
+      "last_hit": "2026-06-01",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "h1_60자",
+      "tier": 1,
+      "type": "AVOID",
+      "severity": "high",
+      "category": "content",
+      "instruction": "H1 60자",
+      "hit_count": 10,
+      "sources": [
+        "pre_publish_critic"
+      ],
+      "first_hit": "2026-06-02",
+      "last_hit": "2026-06-02",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "ai_footprint",
+      "tier": 1,
+      "type": "AVOID",
+      "severity": "high",
+      "category": "content",
+      "instruction": "AI_Footprint",
+      "hit_count": 13,
+      "sources": [
+        "pre_publish_critic"
+      ],
+      "first_hit": "2026-06-02",
+      "last_hit": "2026-06-03",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "doctype_in_body",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "critical",
+      "category": "html",
+      "instruction": "Full <!DOCTYPE html>, <html lang='en'>, <head>...</head>, and <body> tags are present inside the post body content. The entire HTML document skeleton is embedded in what should be a Blogger post body ",
+      "hit_count": 1,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-02",
+      "last_hit": "2026-06-02",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "duplicate_canonical",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "high",
+      "category": "html",
+      "instruction": "There are two conflicting canonical <link> tags: one at the very top of the snippet pointing to the correct URL, and a second one inside the embedded <head> block with an empty href attribute (href=''",
+      "hit_count": 1,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-02",
+      "last_hit": "2026-06-02",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "duplicate_meta_tags",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "high",
+      "category": "html",
+      "instruction": "og:title, og:description, og:type, and twitter:title/description meta tags are defined twice — once correctly at the top of the snippet and again inside the embedded <head> block, creating duplicate a",
+      "hit_count": 1,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-02",
+      "last_hit": "2026-06-02",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "toc_lowercase_link_text",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "medium",
+      "category": "html",
+      "instruction": "TOC list item anchor text 'what shifted in My Body' starts with a lowercase letter after the opening quote context, indicating an uncapitalized section label.",
+      "hit_count": 1,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-02",
+      "last_hit": "2026-06-02",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "broken_paragraph_truncation",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "high",
+      "category": "html",
+      "instruction": "A paragraph is visibly truncated mid-sentence: '...which helps your muscles pull in more c' followed by '[...MIDDLE SECTION OMITTED...]'. This indicates missing body content was never generated or was",
+      "hit_count": 1,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-02",
+      "last_hit": "2026-06-02",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "broken_html_tag",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "high",
+      "category": "html",
+      "instruction": "The final FAQ answer paragraph is not closed before an <hr> tag appears inline: '...Three to four weeks before you really notice<hr>' — the closing </p> is missing and the <hr> is incorrectly embedded",
+      "hit_count": 1,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-02",
+      "last_hit": "2026-06-02",
+      "example_bad": "",
+      "example_good": ""
+    },
+    {
+      "id": "duplicate_og_type",
+      "tier": 3,
+      "type": "AVOID",
+      "severity": "low",
+      "category": "html",
+      "instruction": "The meta tag og:type='article' is declared twice: once at the top of the snippet and once inside the embedded <head> block.",
+      "hit_count": 1,
+      "sources": [
+        "post_publish_verifier"
+      ],
+      "first_hit": "2026-06-02",
+      "last_hit": "2026-06-02",
+      "example_bad": "",
+      "example_good": ""
     }
   ],
   "good_patterns": [
@@ -184,12 +824,12 @@
       "type": "DO",
       "category": "structure",
       "instruction": "Always include a Hook in the first 200 words",
-      "confirmed_count": 1,
+      "confirmed_count": 5,
       "sources": [
         "Is Berberine Worth Taking What the Research Says"
       ],
       "first_confirmed": "2026-05-29",
-      "last_confirmed": "2026-05-29",
+      "last_confirmed": "2026-06-03",
       "example": ""
     },
     {
@@ -223,12 +863,12 @@
       "type": "DO",
       "category": "structure",
       "instruction": "Include 2+ PMID citations (found 2)",
-      "confirmed_count": 1,
+      "confirmed_count": 4,
       "sources": [
         "Is Berberine Worth Taking What the Research Says"
       ],
       "first_confirmed": "2026-05-29",
-      "last_confirmed": "2026-05-29",
+      "last_confirmed": "2026-06-01",
       "example": ""
     },
     {
@@ -236,12 +876,12 @@
       "type": "DO",
       "category": "structure",
       "instruction": "Write 2000+ words for comprehensive guides",
-      "confirmed_count": 1,
+      "confirmed_count": 7,
       "sources": [
         "Is Berberine Worth Taking What the Research Says"
       ],
       "first_confirmed": "2026-05-29",
-      "last_confirmed": "2026-05-29",
+      "last_confirmed": "2026-06-03",
       "example": ""
     },
     {
@@ -249,14 +889,54 @@
       "type": "DO",
       "category": "structure",
       "instruction": "Use 5+ H2 sections (9 found)",
-      "confirmed_count": 1,
+      "confirmed_count": 7,
       "sources": [
         "Is Berberine Worth Taking What the Research Says"
       ],
       "first_confirmed": "2026-05-29",
-      "last_confirmed": "2026-05-29",
+      "last_confirmed": "2026-06-03",
       "example": ""
     }
   ],
-  "last_updated": "2026-05-29 23:09"
+  "last_updated": "2026-06-03 13:31",
+  "avoid_patterns": [
+    {
+      "pattern": "recommendation medications",
+      "replacement": "prescription medications",
+      "count": 3,
+      "tier": 1,
+      "note": "NEVER write 'recommendation medications' — always write 'prescription medications'. 'Recommendation' is not an adjective for medications. This mistake appeared in both Ginger and Magnesium posts."
+    }
+  ],
+  "teacher_roles": [
+    {
+      "role": "Post-Processing Editor",
+      "version": "v1.0",
+      "added_at": "2026-06-01 20:42",
+      "description": "Writer 품질은 이미 충분히 개선됨. 남은 문제는 자동 수정/치환/메타 동기화 단계에서 발생. 7개 Editor 룰로 후처리 파손을 방지.",
+      "rules": [
+        "Rule1: 치환 후 중복 구문 탐지 (X That Finally Made a Difference That Finally...)",
+        "Rule2: 치환 사고 문장 파손 탐지 (health.simultaneously)",
+        "Rule3: H1 = OG Title = JSON-LD headline 100% 동일",
+        "Rule4: OG Description = JSON-LD description 동일",
+        "Rule5: 경험담 비율 ≥ 60% (설명 vs 경험 문단 비율)",
+        "Rule6: 과장 탐지 (everything changed 등) + 근거 문단 존재 여부",
+        "Rule7: 독자 시점 검사 — story/what_changed/mistake/title_fulfilled 4가지 답 가능 여부"
+      ],
+      "note": "Writer 코치 역할은 agent_lessons (글쓰기 패턴 교육)이 계속 담당. Editor 역할은 run_editor_checks()가 PPV 채점 직후 별도 레이어로 실행. 두 역할은 독립적으로 공존."
+    }
+  ],
+  "experience_ratio_rules": {
+    "comprehensive_guide": {
+      "min": 0.45,
+      "max": 0.55,
+      "label": "정보+경험 균형"
+    },
+    "experience_longtail": {
+      "min": 0.6,
+      "max": 0.75,
+      "label": "경험 중심"
+    },
+    "updated_at": "2026-06-02 20:03"
+  }
 }

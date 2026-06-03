@@ -1,3 +1,4 @@
+import logging
 """
 hub_page_generator.py — v9.0
 카테고리별 허브 포스팅 생성 + Blogger 발행 + 자동 업데이트.
@@ -183,7 +184,7 @@ def publish_hub(svc, category: str, posts: list) -> str:
         ).execute()
         post_id = resp["id"]
         url     = resp.get("url", "")
-        sys.stdout.write(f"  🔄 허브 업데이트: [{category}] {title[:45]}\n")
+        logging.info(f"  🔄 허브 업데이트: [{category}] {title[:45]}\n")
     else:
         # 신규 발행 (지수 백오프 재시도)
         from googleapiclient.errors import HttpError as _HttpError
@@ -197,14 +198,14 @@ def publish_hub(svc, category: str, posts: list) -> str:
             except _HttpError as e:
                 if e.resp.status == 429:
                     wait = 15 * (2 ** _attempt)
-                    sys.stdout.write(f"  ⏳ Rate limit — {wait}초 대기 후 재시도 ({_attempt+1}/5)...\n")
+                    logging.info(f"  ⏳ Rate limit — {wait}초 대기 후 재시도 ({_attempt+1}/5)...\n")
                     time.sleep(wait)
                 else:
                     raise
         post_id = resp["id"]
         url     = resp.get("url", "")
-        sys.stdout.write(f"  ✅ 허브 발행: [{category}] {title[:45]}\n")
-        sys.stdout.write(f"     URL: {url}\n")
+        logging.info(f"  ✅ 허브 발행: [{category}] {title[:45]}\n")
+        logging.info(f"     URL: {url}\n")
         time.sleep(5)
 
     # hub_posts.json 업데이트
@@ -224,12 +225,17 @@ def add_post_to_hub(svc, new_post_id: str, new_title: str, new_url: str, categor
     hubs = load_hub_posts()
     hub_info = hubs.get(category)
     if not hub_info:
-        sys.stdout.write(f"  ⚠️ 허브 없음 [{category}] — 먼저 generate 실행 필요\n")
+        logging.info(f"  ⚠️ 허브 없음 [{category}] — 먼저 generate 실행 필요\n")
         return
 
     hub_id = hub_info["post_id"]
     post   = svc.posts().get(blogId=BLOG_ID, postId=hub_id).execute()
     html   = _h.unescape(post.get("content", ""))
+
+    # 중복 체크 — 이미 허브 HTML에 동일 URL 있으면 스킵
+    if new_url and new_url in html:
+        logging.info(f"  ⏭️ 허브 중복 스킵: [{category}] {new_title[:45]}")
+        return
 
     # 새 항목 HTML
     new_entry = (
@@ -267,7 +273,7 @@ def add_post_to_hub(svc, new_post_id: str, new_title: str, new_url: str, categor
     hubs[category]["updated_at"] = datetime.now().strftime("%Y-%m-%d %H:%M")
     hubs[category]["post_count"] = post_count
     save_hub_posts(hubs)
-    sys.stdout.write(f"  🔗 허브 링크 추가: [{category}] ← {new_title[:45]}\n")
+    logging.info(f"  🔗 허브 링크 추가: [{category}] ← {new_title[:45]}\n")
 
 
 def generate_all_hubs():
@@ -276,7 +282,7 @@ def generate_all_hubs():
     svc    = get_service()
     pl     = brain.published
 
-    sys.stdout.write("허브 페이지 생성/업데이트 시작...\n\n")
+    logging.info("허브 페이지 생성/업데이트 시작...")
 
     for category in HUB_META:
         # 해당 카테고리 포스팅 수집
@@ -294,11 +300,11 @@ def generate_all_hubs():
         cat_posts.sort(key=lambda x: x.get("date",""), reverse=True)
         publish_hub(svc, category, cat_posts)
 
-    sys.stdout.write("\n✅ 전체 허브 생성 완료\n")
+    logging.info("✅ 전체 허브 생성 완료")
     hubs = load_hub_posts()
-    sys.stdout.write("\n[허브 목록]\n")
+    logging.info("[허브 목록]")
     for cat, info in hubs.items():
-        sys.stdout.write(f"  {cat:<28} {info['post_count']:2}편  {info.get('url','')[:60]}\n")
+        logging.info(f"  {cat:<28} {info['post_count']:2}편  {info.get('url','')[:60]}\n")
 
 
 # ── CLI ───────────────────────────────────────────────────────────

@@ -1,876 +1,5 @@
 [
   {
-    "date": "2026-05-17",
-    "audited_at": "2026-05-17 15:02:53",
-    "source": "CEO_Auditor",
-    "title": "The NAD+ Bankruptcy: Why Nordic Professionals Age Faster in the 20-Hour Darkness",
-    "url": "https://www.nutristacklab.com/2026/03/the-nad-bankruptcy-why-nordic.html",
-    "scores": {
-      "seo": 7.0,
-      "humanity": 6.0,
-      "ai_footprint": 4.0,
-      "health_safety": 7.0,
-      "adsense": 6.0,
-      "total": 6.2
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-17",
-    "audited_at": "2026-05-17 16:52:52",
-    "source": "CEO_Auditor",
-    "title": "The Zinc and Selenium Synergy Protocol",
-    "url": "https://www.nutristacklab.com/2026/05/the-zinc-and-selenium-synergy-protocol.html",
-    "scores": {
-      "seo": 9.5,
-      "humanity": 8.0,
-      "ai_footprint": 6.5,
-      "health_safety": 9.5,
-      "adsense": 9.0,
-      "total": 5.9
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-17",
-    "audited_at": "2026-05-17 16:53:50",
-    "source": "CEO_Auditor",
-    "title": "When People Prefer When Over to",
-    "url": "https://www.nutristacklab.com/2026/05/when-people-prefer-when-over-to.html",
-    "scores": {
-      "seo": 6.0,
-      "humanity": 6.0,
-      "ai_footprint": 5.0,
-      "health_safety": 7.0,
-      "adsense": 5.0,
-      "total": 5.9
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-17",
-    "audited_at": "2026-05-17 16:54:45",
-    "source": "CEO_Auditor",
-    "title": "The Mitochondrial Crisis: Why PQQ Deficiency Starts Earlier Than You Think",
-    "url": "https://www.nutristacklab.com/2026/03/what-is-pqq-tiny-molecule-powering-your.html",
-    "scores": {
-      "seo": 9.5,
-      "humanity": 9.0,
-      "ai_footprint": 9.0,
-      "health_safety": 10.0,
-      "adsense": 10.0,
-      "total": 5.9
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-17",
-    "audited_at": "2026-05-17 16:56:10",
-    "source": "CEO_Auditor",
-    "title": "The Longevity Architecture: Synchronizing Your Cellular Clock With CoQ10",
-    "url": "https://www.nutristacklab.com/2026/03/part-3-longevity-architecture.html",
-    "scores": {
-      "seo": null,
-      "humanity": null,
-      "ai_footprint": null,
-      "health_safety": null,
-      "adsense": null,
-      "total": 5.0
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-17",
-    "audited_at": "2026-05-17 16:57:19",
-    "source": "CEO_Auditor",
-    "title": "Collagen and Ha Synergy: The Nordic Stack",
-    "url": "https://www.nutristacklab.com/2026/05/collagen-and-ha-synergy-nordic-stack.html",
-    "scores": {
-      "seo": 9.5,
-      "humanity": 10.0,
-      "ai_footprint": 8.5,
-      "health_safety": 10.0,
-      "adsense": 10.0,
-      "total": 5.9
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-17",
-    "audited_at": "2026-05-17 16:58:16",
-    "source": "CEO_Auditor",
-    "title": "The Synergy Spark: Why MSM Without Vitamin C Is Like Bricks Without Mortar",
-    "url": "https://www.nutristacklab.com/2026/03/step-23-clinical-report-synergy_01010020768.html",
-    "scores": {
-      "seo": 9.5,
-      "humanity": 7.5,
-      "ai_footprint": 6.5,
-      "health_safety": 9.0,
-      "adsense": 8.0,
-      "total": 5.9
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-17 18:18",
-    "topic": "Berries Enhances Vitamin D3 Absorption: Here's Why",
-    "title": "How I Use Berries Effectively: My Findings",
-    "status": "rejected",
-    "score": 1.0,
-    "word_count": 1061,
-    "archetype": "quick-answer",
-    "topic_type": "mechanism",
-    "nutrients": [
-      "vitamin d",
-      "vitamin d3"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED: The provided content is too short and lacks the depth required for a comprehensive article, especially given the context of scientific supplementation. The current structure is more of a sum"
-    ]
-  },
-  {
-    "date": "2026-05-17 18:41",
-    "topic": "Berries Enhances Vitamin D3 Absorption: Here's Why",
-    "title": "Why I Pair Berries With Specific Foods",
-    "status": "rejected",
-    "score": 1.0,
-    "word_count": 1626,
-    "archetype": "nordic-anecdotal",
-    "topic_type": "food-combo",
-    "nutrients": [
-      "vitamin d",
-      "vitamin d3"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED. The provided content is incomplete and lacks the necessary narrative depth, specific actionable advice, or consistent tone required for a high-quality, engaging article based on the establis"
-    ]
-  },
-  {
-    "date": "2026-05-17 19:28",
-    "topic": "Berries Enhances Vitamin D3 Absorption: Here's Why",
-    "title": "How I Use Berries Effectively: My Findings",
-    "status": "rejected",
-    "score": 1.0,
-    "word_count": 1592,
-    "archetype": "nordic-anecdotal",
-    "topic_type": "synergy",
-    "nutrients": [
-      "vitamin d3",
-      "vitamin d"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED. The provided content is incomplete and does not contain the full article body to evaluate against the required criteria. Please provide the complete text."
-    ]
-  },
-  {
-    "date": "2026-05-17 19:51",
-    "topic": "Berries Enhances Vitamin D3 Absorption: Here's Why",
-    "title": "When I Take Berries: Morning vs Evening Results",
-    "status": "rejected",
-    "score": 1.0,
-    "word_count": 891,
-    "archetype": "quick-answer",
-    "topic_type": "timing",
-    "nutrients": [
-      "vitamin d3",
-      "vitamin d"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED. The provided content is insufficient to generate a final assessment. The prompt requires the full article content to be evaluated against the specified criteria. Please provide the complete "
-    ]
-  },
-  {
-    "date": "2026-05-17 20:43",
-    "topic": "Berries Enhances Vitamin D3 Absorption: Here's Why",
-    "title": "Why I Pair Berries With Specific Foods",
-    "status": "rejected",
-    "score": 0.9230769230769231,
-    "word_count": 602,
-    "archetype": "comparison",
-    "topic_type": "food-combo",
-    "nutrients": [
-      "vitamin d",
-      "vitamin d3"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: 단어수_1600+"
-    ]
-  },
-  {
-    "date": "2026-05-17 20:50",
-    "topic": "Berries Enhances Vitamin D3 Absorption: Here's Why",
-    "title": "How I Use Berries Effectively: My Findings",
-    "status": "NEEDS_RE_AUDIT",
-    "score": 1.0,
-    "word_count": 1123,
-    "archetype": "quick-answer",
-    "topic_type": "protocol",
-    "nutrients": [
-      "vitamin d",
-      "vitamin d3"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [],
-    "quality_score": 0.0
-  },
-  {
-    "date": "2026-05-17",
-    "audited_at": "2026-05-17 23:12:21",
-    "source": "CEO_Auditor",
-    "title": "Morning vs Evening Ashwagandha: Does Timing Really Matter",
-    "url": "https://www.nutristacklab.com/2026/05/morning-vs-evening-ashwagandha-does.html",
-    "scores": {
-      "seo": 7.5,
-      "humanity": 6.0,
-      "ai_footprint": 5.5,
-      "health_safety": 9.0,
-      "adsense": 6.5,
-      "total": 5.9
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-17",
-    "audited_at": "2026-05-17 23:13:34",
-    "source": "CEO_Auditor",
-    "title": "Why I Stopped Taking Zinc With Breakfast",
-    "url": "https://www.nutristacklab.com/2026/05/how-i-use-comparing-effectively-my.html",
-    "scores": {
-      "seo": 10.0,
-      "humanity": 10.0,
-      "ai_footprint": 10.0,
-      "health_safety": 10.0,
-      "adsense": 10.0,
-      "total": 5.9
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-17",
-    "audited_at": "2026-05-17 23:14:56",
-    "source": "CEO_Auditor",
-    "title": "The Bacoside Blueprint: How Bacopa Rewires Memory and Calms the Storm",
-    "url": "https://www.nutristacklab.com/2026/03/the-bacoside-blueprint-how-bacopa.html",
-    "scores": {
-      "seo": 9.5,
-      "humanity": 9.0,
-      "ai_footprint": 7.0,
-      "health_safety": 9.5,
-      "adsense": 9.5,
-      "total": 5.9
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-17",
-    "audited_at": "2026-05-17 23:36:16",
-    "source": "CEO_Auditor",
-    "title": "The Molecular Engine: GPx, Selenium, and Why Glutathione Form Determines Everything",
-    "url": "https://www.nutristacklab.com/2026/03/glutathione-complete-supplement-guide.html",
-    "scores": {
-      "seo": null,
-      "humanity": null,
-      "ai_footprint": null,
-      "health_safety": null,
-      "adsense": null,
-      "total": 5.0
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-17",
-    "audited_at": "2026-05-17 23:38:04",
-    "source": "CEO_Auditor",
-    "title": "The Immune Switch: What Quercetin Actually Does Inside Your Cells",
-    "url": "https://www.nutristacklab.com/2026/03/the-immune-switch-what-quercetin.html",
-    "scores": {
-      "seo": null,
-      "humanity": null,
-      "ai_footprint": null,
-      "health_safety": null,
-      "adsense": null,
-      "total": 5.0
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-17",
-    "audited_at": "2026-05-17 23:40:13",
-    "source": "CEO_Auditor",
-    "title": "The Nordic Vitamin C Protocol: Dose, Form, and Winter Defense",
-    "url": "https://www.nutristacklab.com/2026/03/the-nordic-vitamin-c-protocol-dose-form.html",
-    "scores": {
-      "seo": null,
-      "humanity": null,
-      "ai_footprint": null,
-      "health_safety": null,
-      "adsense": null,
-      "total": 5.0
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-17",
-    "audited_at": "2026-05-17 23:48:41",
-    "source": "CEO_Auditor",
-    "title": "What Nordic Darkness Does to Your Body (The Science",
-    "url": "https://www.nutristacklab.com/2026/04/morkketid-science-nordic-darkness-body.html",
-    "scores": {
-      "seo": null,
-      "humanity": null,
-      "ai_footprint": null,
-      "health_safety": null,
-      "adsense": null,
-      "total": 5.0
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-17",
-    "audited_at": "2026-05-17 23:50:19",
-    "source": "CEO_Auditor",
-    "title": "Is Your Magnesium \"Leaking\" Before It Reaches Your Cells?",
-    "url": "https://www.nutristacklab.com/2026/03/is-your-magnesium-leaking-before-it.html",
-    "scores": {
-      "seo": null,
-      "humanity": null,
-      "ai_footprint": null,
-      "health_safety": null,
-      "adsense": null,
-      "total": 5.0
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-17",
-    "audited_at": "2026-05-17 23:51:43",
-    "source": "CEO_Auditor",
-    "title": "The Magnesium Connection: Why Your Brain Feels Foggy Without It",
-    "url": "https://www.nutristacklab.com/2026/03/the-magnesium-connection-why-your-brain.html",
-    "scores": {
-      "seo": null,
-      "humanity": null,
-      "ai_footprint": null,
-      "health_safety": null,
-      "adsense": null,
-      "total": 5.0
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-18",
-    "audited_at": "2026-05-18 00:13:23",
-    "source": "CEO_Auditor",
-    "title": "The Longevity Architecture: Synchronizing Your Cellular Clock With CoQ10",
-    "url": "https://www.nutristacklab.com/2026/03/part-3-longevity-architecture.html",
-    "scores": {
-      "seo": null,
-      "humanity": null,
-      "ai_footprint": null,
-      "health_safety": null,
-      "adsense": null,
-      "total": 5.0
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-18",
-    "audited_at": "2026-05-18 03:01:53",
-    "source": "CEO_Auditor",
-    "title": "Elderberry and Zinc Synergy",
-    "url": "https://www.nutristacklab.com/2026/05/elderberry-and-synergy-nordic-stack.html",
-    "scores": {
-      "seo": null,
-      "humanity": null,
-      "ai_footprint": null,
-      "health_safety": null,
-      "adsense": null,
-      "total": 5.0
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-18",
-    "audited_at": "2026-05-18 03:03:36",
-    "source": "CEO_Auditor",
-    "title": "PQQ Mastery: The Four-Layer Stack and Chronobiological Protocol for Mitochondrial Longevity",
-    "url": "https://www.nutristacklab.com/2026/03/how-pqq-actually-works-molecular.html",
-    "scores": {
-      "seo": null,
-      "humanity": null,
-      "ai_footprint": null,
-      "health_safety": null,
-      "adsense": null,
-      "total": 5.0
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-18",
-    "audited_at": "2026-05-18 03:05:20",
-    "source": "CEO_Auditor",
-    "title": "The Memory Herb: What Bacopa Monnieri Actually Does to Your Brain",
-    "url": "https://www.nutristacklab.com/2026/03/the-memory-herb-what-bacopa-monnieri.html",
-    "scores": {
-      "seo": null,
-      "humanity": null,
-      "ai_footprint": null,
-      "health_safety": null,
-      "adsense": null,
-      "total": 5.0
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-18",
-    "audited_at": "2026-05-18 06:01:42",
-    "source": "CEO_Auditor",
-    "title": "The Joint Paradox: Why Glucosamine Works — And Why Most People Take It Wrong",
-    "url": "https://www.nutristacklab.com/2026/03/the-joint-paradox-why-glucosamine-works.html",
-    "scores": {
-      "seo": null,
-      "humanity": null,
-      "ai_footprint": null,
-      "health_safety": null,
-      "adsense": null,
-      "total": 5.0
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-18",
-    "audited_at": "2026-05-18 06:03:29",
-    "source": "CEO_Auditor",
-    "title": "Berberine and Synergy: The Nordic Stack",
-    "url": "https://www.nutristacklab.com/2026/05/berberine-and-synergy-nordic-stack.html",
-    "scores": {
-      "seo": null,
-      "humanity": null,
-      "ai_footprint": null,
-      "health_safety": null,
-      "adsense": null,
-      "total": 5.0
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-18",
-    "audited_at": "2026-05-18 06:05:15",
-    "source": "CEO_Auditor",
-    "title": "The Catalyst: Prebiotic Fuel and the Vitamin D3-VDR Axis That Locks Probiotics In",
-    "url": "https://www.nutristacklab.com/2026/03/step-23-catalyst-biochemical-logistics.html",
-    "scores": {
-      "seo": null,
-      "humanity": null,
-      "ai_footprint": null,
-      "health_safety": null,
-      "adsense": null,
-      "total": 5.0
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-18 08:05",
-    "topic": "NMN Causing Bloating: Is It Normal?",
-    "title": "NMN vs Causing: My Choice After Testing",
-    "status": "NEEDS_RE_AUDIT",
-    "score": 1.0,
-    "word_count": 1848,
-    "archetype": "minimalist",
-    "topic_type": "comparison",
-    "nutrients": [
-      "nmn"
-    ],
-    "category": "METABOLIC",
-    "issues": [],
-    "quality_score": 0.0
-  },
-  {
-    "date": "2026-05-18",
-    "audited_at": "2026-05-18 09:10:01",
-    "source": "CEO_Auditor",
-    "title": "Vitamin C and Zinc Synergy: The Immune Acceleration Stack",
-    "url": "https://www.nutristacklab.com/2026/05/vitamin-and-c-synergy-nordic-stack.html",
-    "scores": {
-      "seo": null,
-      "humanity": null,
-      "ai_footprint": null,
-      "health_safety": null,
-      "adsense": null,
-      "total": 5.0
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-18",
-    "audited_at": "2026-05-18 12:10:39",
-    "source": "CEO_Auditor",
-    "title": "The Molecular Engine",
-    "url": "https://www.nutristacklab.com/2026/03/phosphatidylserine-research-report-part.html",
-    "scores": {
-      "seo": null,
-      "humanity": null,
-      "ai_footprint": null,
-      "health_safety": null,
-      "adsense": null,
-      "total": 5.0
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-18 13:43",
-    "topic": "Calcium plus Boron: Dosage and Timing",
-    "title": "When I Take Calcium: Morning vs Evening Results",
-    "status": "NEEDS_RE_AUDIT",
-    "score": 1.0,
-    "word_count": 972,
-    "archetype": "quick-answer",
-    "topic_type": "timing",
-    "nutrients": [
-      "boron"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [],
-    "quality_score": 0.0
-  },
-  {
-    "date": "2026-05-18 17:52",
-    "topic": "Morning vs Evening: When to Take Selenium",
-    "title": "Morning vs Evening: My Choice After Testing",
-    "status": "rejected",
-    "score": 0.9230769230769231,
-    "word_count": 1383,
-    "archetype": "comparison",
-    "topic_type": "comparison",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "REJECTED. The content does not meet the length requirement for the specified article type."
-    ]
-  },
-  {
-    "date": "2026-05-18 18:07",
-    "topic": "Morning vs Evening: When to Take Selenium",
-    "title": "Should I Take Selenium in the Morning or Evening",
-    "status": "rejected",
-    "score": 0.9230769230769231,
-    "word_count": 1381,
-    "archetype": "journal-tone",
-    "topic_type": "comparison",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: AI_Footprint"
-    ]
-  },
-  {
-    "date": "2026-05-18 18:20",
-    "topic": "Morning vs Evening: When to Take Selenium",
-    "title": "Morning vs Evening: My Choice After Testing",
-    "status": "rejected",
-    "score": 0.9230769230769231,
-    "word_count": 2700,
-    "archetype": "science-heavy",
-    "topic_type": "comparison",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: AI_Footprint"
-    ]
-  },
-  {
-    "date": "2026-05-18 18:38",
-    "topic": "Morning vs Evening: When to Take Selenium",
-    "title": "Morning vs Evening: My Choice After Testing",
-    "status": "rejected",
-    "score": 0.9230769230769231,
-    "word_count": 2188,
-    "archetype": "journal-tone",
-    "topic_type": "comparison",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: AI_Footprint"
-    ]
-  },
-  {
-    "date": "2026-05-18 19:22",
-    "topic": "Morning vs Evening: When to Take Selenium",
-    "title": "Morning vs Evening: My Choice After Testing",
-    "status": "NEEDS_RE_AUDIT",
-    "score": 0.8461538461538461,
-    "word_count": 1128,
-    "archetype": "science-heavy",
-    "topic_type": "comparison",
-    "nutrients": [],
-    "category": "GENERAL",
-    "issues": [
-      "단어수_2000+",
-      "AI_Footprint"
-    ],
-    "quality_score": 0.0
-  },
-  {
-    "date": "2026-05-18",
-    "audited_at": "2026-05-18 21:09:42",
-    "source": "CEO_Auditor",
-    "title": "The Stoichiometric Precision: Decoding the Optimal D3:K2 Ratio for Arterial Protection",
-    "url": "https://www.nutristacklab.com/2026/03/sunlight-in-bottle-series-part-2.html",
-    "scores": {
-      "seo": null,
-      "humanity": null,
-      "ai_footprint": null,
-      "health_safety": null,
-      "adsense": null,
-      "total": 5.0
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-18",
-    "audited_at": "2026-05-18 21:18:16",
-    "source": "CEO_Auditor",
-    "title": "L-Theanine Benefits: Why Caffeine Alone Ruins Your Brain",
-    "url": "https://www.nutristacklab.com/2026/04/disclosure-this-post-may-contain.html",
-    "scores": {
-      "seo": null,
-      "humanity": null,
-      "ai_footprint": null,
-      "health_safety": null,
-      "adsense": null,
-      "total": 5.0
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-18",
-    "audited_at": "2026-05-18 21:26:42",
-    "source": "CEO_Auditor",
-    "title": "Nmn and Resveratrol: The Nordic Protocol",
-    "url": "https://www.nutristacklab.com/2026/04/nmn-and-resveratrol-nordic-protocol.html",
-    "scores": {
-      "seo": null,
-      "humanity": null,
-      "ai_footprint": null,
-      "health_safety": null,
-      "adsense": null,
-      "total": 5.0
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-19 00:53",
-    "topic": "The Longevity Architecture: Synchronizing Your Cellular Clock With CoQ10",
-    "title": "How I Use Longevity Effectively: My Findings",
-    "status": "success",
-    "score": 1.0,
-    "word_count": 1408,
-    "archetype": "nordic-anecdotal",
-    "topic_type": "synergy",
-    "nutrients": [
-      "coq10"
-    ],
-    "category": "METABOLIC",
-    "issues": []
-  },
-  {
-    "date": "2026-05-19 01:10",
-    "topic": "The Molecular Engine: GPx, Selenium, and Why Glutathione Form Determines Everything",
-    "title": "How I Use Molecular Effectively: My Findings",
-    "status": "success",
-    "score": 1.0,
-    "word_count": 2093,
-    "archetype": "journal-tone",
-    "topic_type": "synergy",
-    "nutrients": [
-      "glutathione"
-    ],
-    "category": "IMMUNE",
-    "issues": []
-  },
-  {
-    "date": "2026-05-19 01:48",
-    "topic": "The Nordic Quercetin Protocol: Defend, Repair, and Stay Sharp All Winter",
-    "title": "How I Use Quercetin Effectively: My Findings",
-    "status": "success",
-    "score": 1.0,
-    "word_count": 1621,
-    "archetype": "journal-tone",
-    "topic_type": "protocol",
-    "nutrients": [
-      "quercetin"
-    ],
-    "category": "IMMUNE",
-    "issues": []
-  },
-  {
-    "date": "2026-05-19",
-    "audited_at": "2026-05-19 03:06:14",
-    "source": "CEO_Auditor",
-    "title": "How PQQ Actually Works: The CREB→PGC-1α Molecular Cascade Explained",
-    "url": "https://www.nutristacklab.com/2026/03/pqq-complete-guide-benefits-dosage-and.html",
-    "scores": {
-      "seo": null,
-      "humanity": null,
-      "ai_footprint": null,
-      "health_safety": null,
-      "adsense": null,
-      "total": 5.0
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-19",
-    "audited_at": "2026-05-19 03:11:18",
-    "source": "CEO_Auditor",
-    "title": "The Nordic Cognitive Protocol: Erasing Brain Fog",
-    "url": "https://www.nutristacklab.com/2026/04/the-nordic-cognitive-protocol-erasing.html",
-    "scores": {
-      "seo": null,
-      "humanity": null,
-      "ai_footprint": null,
-      "health_safety": null,
-      "adsense": null,
-      "total": 5.0
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-19",
-    "audited_at": "2026-05-19 03:17:27",
-    "source": "CEO_Auditor",
-    "title": "The Omega-3 Deficiency Signal: Why Your Brain and Heart Are Running on Empty",
-    "url": "https://www.nutristacklab.com/2026/03/the-omega-3-deficiency-signal-why-your.html",
-    "scores": {
-      "seo": null,
-      "humanity": null,
-      "ai_footprint": null,
-      "health_safety": null,
-      "adsense": null,
-      "total": 5.0
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-19",
-    "audited_at": "2026-05-19 06:06:27",
-    "source": "CEO_Auditor",
-    "title": "The Brain Fog Mushroom: What Lion's Mane Actually Does to Your Neurons",
-    "url": "https://www.nutristacklab.com/2026/03/the-brain-fog-mushroom-what-lions-mane.html",
-    "scores": {
-      "seo": null,
-      "humanity": null,
-      "ai_footprint": null,
-      "health_safety": null,
-      "adsense": null,
-      "total": 5.0
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-19",
-    "audited_at": "2026-05-19 06:12:49",
-    "source": "CEO_Auditor",
-    "title": "Elderberry and Zinc Synergy: The Nordic Stack",
-    "url": "https://www.nutristacklab.com/2026/05/elderberry-and-zinc-synergy-nordic-stack.html",
-    "scores": {
-      "seo": null,
-      "humanity": null,
-      "ai_footprint": null,
-      "health_safety": null,
-      "adsense": null,
-      "total": 5.0
-    },
-    "status": "REWRITE"
-  },
-  {
-    "date": "2026-05-19",
-    "audited_at": "2026-05-19 06:17:09",
-    "source": "CEO_Auditor",
-    "title": "The Stoichiometric Precision: Decoding the Optimal D3:K2 Ratio for Arterial Protection",
-    "url": "https://www.nutristacklab.com/2026/03/sunlight-in-bottle-series-part-2.html",
-    "scores": {
-      "seo": null,
-      "humanity": null,
-      "ai_footprint": null,
-      "health_safety": null,
-      "adsense": null,
-      "total": 5.0
-    },
-    "status": "KEEP"
-  },
-  {
-    "date": "2026-05-19 07:39",
-    "topic": "Elderberry and Zinc Synergy",
-    "title": "How I Use Elderberry Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.9230769230769231,
-    "word_count": 1139,
-    "archetype": "minimalist",
-    "topic_type": "synergy",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-19 08:20",
-    "topic": "Elderberry and Zinc Synergy",
-    "title": "How I Use Elderberry Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.9230769230769231,
-    "word_count": 2805,
-    "archetype": "journal-tone",
-    "topic_type": "synergy",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-19 08:58",
-    "topic": "Elderberry and Zinc Synergy",
-    "title": "How I Use Elderberry Effectively: My Findings",
-    "status": "rejected",
-    "score": 0.9230769230769231,
-    "word_count": 2943,
-    "archetype": "science-heavy",
-    "topic_type": "synergy",
-    "nutrients": [
-      "zinc"
-    ],
-    "category": "FUNDAMENTAL",
-    "issues": [
-      "REJECTED\n자동 검증 이슈: Alt_Clean"
-    ]
-  },
-  {
-    "date": "2026-05-19 20:43",
-    "topic": "Why Phosphatidylserine Upset My Stomach",
-    "title": "How I Use Phosphatidylserine Effectively: My Findings",
-    "status": "success",
-    "score": 1.0,
-    "word_count": 1047,
-    "archetype": "minimalist",
-    "topic_type": "protocol",
-    "nutrients": [
-      "phosphatidylserine"
-    ],
-    "category": "GENERAL",
-    "issues": []
-  },
-  {
     "date": "2026-05-19 21:49",
     "topic": "The Mechanism of Melatonin: A Deep Dive",
     "title": "How I Use Mechanism Effectively: My Findings",
@@ -3215,6 +2344,908 @@
     "category": "FUNDAMENTAL",
     "issues": [
       "AI_Footprint",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-31 01:57",
+    "topic": "# Vitamin K2 MK 7 Complete Guide\ntype: comprehensive guide",
+    "title": "Vitamin K2 Timing: Why I Finally Saw Results After Changing My Routine",
+    "status": "success",
+    "score": 0.8125,
+    "word_count": 2552,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "H1 60자",
+      "AI_Footprint",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-31 02:58",
+    "topic": "# Vitamin K2 MK 7 Complete Guide\ntype: comprehensive guide",
+    "title": "Vitamin K2 Benefits, Dosage, and Side Effects",
+    "status": "success",
+    "score": 0.875,
+    "word_count": 3028,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "AI_Footprint",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-31 11:54",
+    "topic": "# Selenium Complete Guide\ntype: comprehensive guide",
+    "title": "Selenium Complete: Is Selenium Worth Taking? What the Research Says",
+    "status": "success",
+    "score": 0.875,
+    "word_count": 3327,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "H1 60자",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-31 13:29",
+    "topic": "Melatonin Complete Guide",
+    "title": "Melatonin Complete: Melatonin Dosage Guide: How Much Do You Need?",
+    "status": "success",
+    "score": 0.8125,
+    "word_count": 3286,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "H1 60자",
+      "No_Cure_Claims",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-31 19:15",
+    "topic": "Copper Complete Guide",
+    "title": "Copper Complete: Copper Dosage Guide: How Much Do You Need?",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 3016,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED  \n이 글은 'science-heavy/deep-protocol' 아키타입의 기준을 충족하지 못한다. 첫째, 과학적 근거와 메커니즘에 대한 설명이 부족하다. 구체적으로, 구리의 생리학적 역할, 철분 대사와의 관계, 흡수 경로, 적정 용량 범위, 임상 연구 결과 등이 명확히 다루어지지 않았다. 둘째, PMID 인용이 극히 제한적이다. 전체 글"
+    ]
+  },
+  {
+    "date": "2026-05-31 19:19",
+    "topic": "Copper Complete Guide",
+    "title": "Copper Complete: Copper Dosage Guide: How Much Do You Need?",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 3103,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED  \n이 글은 'comprehensive-guide' 아키타입 기준에 부합하지 않습니다. 과학 중심의 심층 프로토콜(2000자 이상)과 PMID 인용이 필수적이지만, 본문은 주로 개인 경험 중심의 서술(예: \"손이 더 차가워졌다\", \"기분이 더 불안정해졌다\")과 제한적인 PMID 인용(1건만 포함)에 의존하고 있습니다. 과학적 메커니즘, 생리"
+    ]
+  },
+  {
+    "date": "2026-05-31 19:22",
+    "topic": "Copper Complete Guide",
+    "title": "Copper Complete: Copper Dosage Guide: How Much Do You Need?",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 3042,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED  \n이 글은 'science-heavy/deep-protocol' 아키타입의 기준을 충족하지 못한다. 3,000자 이상의 길이를 갖추었지만, 학술적 근거(PMID 인용)가 전혀 포함되어 있지 않으며, 개인의 경험 중심의 서술로 구성되어 있다. 과학적 메커니즘, 권장 용량, 상호작용, 부작용 등에 대한 체계적인 설명이나 참고문헌이 누락되었으며"
+    ]
+  },
+  {
+    "date": "2026-05-31 19:37",
+    "topic": "Copper Complete Guide",
+    "title": "Copper Complete: Copper Dosage Guide: How Much Do You Need?",
+    "status": "success",
+    "score": 0.875,
+    "word_count": 3323,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "Disclosure",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-31 23:45",
+    "topic": "# Why I Started Taking Magnesium and Vitamin D at the Same Time\ntype: synergy\nscheduled time: 2026 05 31 21:00\nnutrients: Magnesium, Vitamin D",
+    "title": "How to Take Magnesium Vitamin for Best Results",
+    "status": "rejected",
+    "score": 0.9333333333333333,
+    "word_count": 1370,
+    "archetype": "minimalist",
+    "topic_type": "synergy",
+    "nutrients": [
+      "magnesium",
+      "vitamin d"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-31 23:47",
+    "topic": "# Why I Started Taking Magnesium and Vitamin D at the Same Time\ntype: synergy\nscheduled time: 2026 05 31 21:00\nnutrients: Magnesium, Vitamin D",
+    "title": "How to Take Magnesium Vitamin for Best Results",
+    "status": "rejected",
+    "score": 0.9333333333333333,
+    "word_count": 1441,
+    "archetype": "minimalist",
+    "topic_type": "synergy",
+    "nutrients": [
+      "magnesium",
+      "vitamin d"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED  \n이유: \"minimalist\" 아키텍처 기준에 따라 1200자 이상의 짧고 실용적인 글이어야 하지만, 본문은 과도한 개인 경험 서술과 구조적 문제(예: 불완전한 PMID 인용, 텍스트 중단)로 인해 기준에 부합하지 않습니다. 또한, 과학적 근거가 충분히 명시되지 않았으며, 실용적 조언이 명확하지 않아 'minimalist' 유형에 적합하"
+    ]
+  },
+  {
+    "date": "2026-05-31 23:50",
+    "topic": "# Why I Started Taking Magnesium and Vitamin D at the Same Time\ntype: synergy\nscheduled time: 2026 05 31 21:00\nnutrients: Magnesium, Vitamin D",
+    "title": "How to Take Magnesium Vitamin for Best Results",
+    "status": "rejected",
+    "score": 0.9333333333333333,
+    "word_count": 1518,
+    "archetype": "minimalist",
+    "topic_type": "synergy",
+    "nutrients": [
+      "magnesium",
+      "vitamin d"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-05-31 23:57",
+    "topic": "# Why I Started Taking Magnesium and Vitamin D at the Same Time\ntype: synergy\nscheduled time: 2026 05 31 21:00\nnutrients: Magnesium, Vitamin D",
+    "title": "How to Take Magnesium Vitamin for Best Results",
+    "status": "success",
+    "score": 0.9333333333333333,
+    "word_count": 1523,
+    "archetype": "minimalist",
+    "topic_type": "synergy",
+    "nutrients": [
+      "magnesium",
+      "vitamin d"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-06-01 00:10",
+    "topic": "# Why I Started Taking Magnesium and Vitamin D at the Same Time\ntype: synergy\nscheduled time: 2026 06 01 00:00\ndraft: true\nnutrients: Magnesium, Vitamin D",
+    "title": "Magnesium Vitamin Benefits, Dosage, and Side Effects",
+    "status": "rejected",
+    "score": 0.9333333333333333,
+    "word_count": 832,
+    "archetype": "quick-answer",
+    "topic_type": "synergy",
+    "nutrients": [
+      "magnesium",
+      "vitamin d"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-06-01 00:15",
+    "topic": "# Why I Started Taking Magnesium and Vitamin D at the Same Time\ntype: synergy\nscheduled time: 2026 06 01 00:00\ndraft: true\nnutrients: Magnesium, Vitamin D",
+    "title": "Magnesium Vitamin Benefits, Dosage, and Side Effects",
+    "status": "rejected",
+    "score": 0.9333333333333333,
+    "word_count": 4505,
+    "archetype": "quick-answer",
+    "topic_type": "synergy",
+    "nutrients": [
+      "magnesium",
+      "vitamin d"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED  \n이 글은 'quick-answer' 형식의 기준인 1000자 이상의 길이를 충족하지 못하고 있습니다. 또한, \"Wait. Wait. Wait...\"와 같은 반복적인 문구로 인해 내용의 일관성과 전문성이 떨어지며, 과학적 근거를 뒷받침하는 PMID 인용이나 구체적인 데이터도 누락되어 있습니다. 'quick-answer' 형식은 간결하면서도"
+    ]
+  },
+  {
+    "date": "2026-06-01 07:55",
+    "topic": "Ginger Complete Guide",
+    "title": "Ginger Complete: Ginger Benefits, Dosage, and Side Effects",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 2967,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED  \n이 문서는 'comprehensive-guide' 아키텍처 기준에 따라 충분한 과학적 근거와 세부 정보를 제공하지 못하고 있습니다. 먼저, 기사에서 언급된 \"250–500mg의 생강이 구토에 효과적\"이라는 주장은 연구 결과를 인용해야 하지만, PMID(유전자 정보 데이터베이스) 번호나 구체적인 연구 출처가 명시되지 않았습니다. 과학 중심"
+    ]
+  },
+  {
+    "date": "2026-06-01 08:03",
+    "topic": "Ginger Complete Guide",
+    "title": "Ginger Complete: Ginger Benefits, Dosage, and Side Effects",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 3102,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED\n자동 검증 이슈: NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-06-01 08:21",
+    "topic": "Ginger Complete Guide",
+    "title": "Ginger Complete: Ginger Benefits, Dosage, and Side Effects",
+    "status": "rejected",
+    "score": 0.9375,
+    "word_count": 3027,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED  \n이 글은 'comprehensive-guide' 아키텍처 기준에 따라 평가할 때, 과학적 근거를 강조하는 'deep-protocol' 유형의 글로 간주될 수 있으나, PMID 인용이 누락되어 있습니다. 텍스트 내에서 \"PubMed abstracts\"를 언급했으나, 구체적인 PMID 번호나 관련 연구를 인용하지 않아 과학적 신뢰도가 떨어집"
+    ]
+  },
+  {
+    "date": "2026-06-01 08:38",
+    "topic": "Ginger Complete Guide",
+    "title": "Ginger Complete: Ginger Benefits, Dosage, and Side Effects",
+    "status": "success",
+    "score": 0.75,
+    "word_count": 3211,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "Disclosure",
+      "AI_Footprint",
+      "No_Cure_Claims",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-06-01 11:33",
+    "topic": "Why I Started Taking Magnesium and Vitamin D at the Same Time",
+    "title": "Magnesium Vitamin Benefits, Dosage, and Side Effects",
+    "status": "rejected",
+    "score": 0.9333333333333333,
+    "word_count": 2118,
+    "archetype": "science-heavy",
+    "topic_type": "synergy",
+    "nutrients": [
+      "magnesium",
+      "vitamin d"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED  \n이유: 과학 중심 기사로 분류되었으나, PMID 인용이 불충분하며, 생물학적 메커니즘에 대한 심층 분석이 부족합니다. 예를 들어, \"Vitamin D needing magnesium to work properly\"와 같은 설명은 근거가 되는 연구를 인용하지 않아 과학적 신뢰도가 떨어집니다. 또한, 개인 경험에 대한 서술이 지나치게 많고,"
+    ]
+  },
+  {
+    "date": "2026-06-01 11:36",
+    "topic": "Why I Started Taking Magnesium and Vitamin D at the Same Time",
+    "title": "Magnesium Vitamin Benefits, Dosage, and Side Effects",
+    "status": "rejected",
+    "score": 0.9333333333333333,
+    "word_count": 2173,
+    "archetype": "science-heavy",
+    "topic_type": "synergy",
+    "nutrients": [
+      "magnesium",
+      "vitamin d"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED  \n이유: 과학 중심 기사의 표준에 부합하지 않습니다. 1) PMID 인용이 필수적이지만, 본문에 구체적인 연구 인용(예: PMID 번호 포함)이 전혀 없거나 불완전합니다(예: \"Research published via : Further evidence from supports...\" 등). 2) 내용이 개인 경험 중심의 서술로, 과학적 메"
+    ]
+  },
+  {
+    "date": "2026-06-01 11:39",
+    "topic": "Why I Started Taking Magnesium and Vitamin D at the Same Time",
+    "title": "Magnesium Vitamin Benefits, Dosage, and Side Effects",
+    "status": "rejected",
+    "score": 0.9333333333333333,
+    "word_count": 2281,
+    "archetype": "science-heavy",
+    "topic_type": "synergy",
+    "nutrients": [
+      "magnesium",
+      "vitamin d"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED  \n이 글은 'science-heavy' 아키타입 기준에 충족하지 못함. 첫째, 과학적 근거의 깊이가 부족함. 단일 PMID 인용(38613445)만 포함되었고, 생리학적 메커니즘(예: 마그네슘과 비타민D의 상호작용, 흡수 경로, 세포 수준의 작용 방식 등)에 대한 구체적 설명이 부재함. 둘째, 연구 데이터의 다양성과 깊이가 부족함. 비타민"
+    ]
+  },
+  {
+    "date": "2026-06-01 11:48",
+    "topic": "Why I Started Taking Magnesium and Vitamin D at the Same Time",
+    "title": "Magnesium Vitamin Benefits, Dosage, and Side Effects",
+    "status": "success",
+    "score": 0.8,
+    "word_count": 2385,
+    "archetype": "science-heavy",
+    "topic_type": "synergy",
+    "nutrients": [
+      "magnesium",
+      "vitamin d"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "AI_Footprint",
+      "No_Cure_Claims",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-06-01 18:03",
+    "topic": "Why Copper Stopped Working When I Added Zinc",
+    "title": "Zinc: Guide to Dosage and Benefits",
+    "status": "rejected",
+    "score": 0.9333333333333333,
+    "word_count": 2421,
+    "archetype": "nordic-anecdotal",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED  \n이 문서는 'nordic-anecdotal' 아키타입의 기준을 충족하지 못한다. 첫째, 'nordic-anecdotal'은 개인 경험을 중심으로 한 간결하고 실용적인 조언을 제공해야 하지만, 본문은 과도한 기술 용어와 복잡한 생리학적 설명으로 인해 과학 중심의 스타일로 흐르고 있다. 둘째, PMID 인용이 요구되지 않는 'nordic-a"
+    ]
+  },
+  {
+    "date": "2026-06-01 18:09",
+    "topic": "Why Copper Stopped Working When I Added Zinc",
+    "title": "Zinc: Guide to Dosage and Benefits",
+    "status": "rejected",
+    "score": 0.9333333333333333,
+    "word_count": 2410,
+    "archetype": "nordic-anecdotal",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED  \n이유: 'nordic-anecdotal' 아키타입 기준에 따라 1400자 이상의 단순하고 실용적인 내용이 요구되지만, 실제 글은 1400자에 가까운 길이로, 충분한 실용적 조언이나 구체적 실행 단계가 부족합니다. 또한, 과학적 근거를 다루는 경우 PMID 인용이 필요하지만, 여기서는 인용이 전혀 없어 신뢰성에 문제가 있습니다. 또한, 이"
+    ]
+  },
+  {
+    "date": "2026-06-01 18:14",
+    "topic": "Why Copper Stopped Working When I Added Zinc",
+    "title": "Zinc: Guide to Dosage and Benefits",
+    "status": "rejected",
+    "score": 0.9333333333333333,
+    "word_count": 2371,
+    "archetype": "nordic-anecdotal",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED  \n이 기사는 'nordic-anecdotal' 아키타입의 기준에 부합하지 않습니다. 1400자 이상의 단순하고 실용적인 형식을 요구하는 'nordic-anecdotal'은 개인적 경험을 중심으로 한 간결한 조언을 제공해야 하지만, 본문은 과도한 세부 설명과 복잡한 구조로 인해 지나치게 장황합니다. 또한, 과학적 내용이 포함되어 있지만, '"
+    ]
+  },
+  {
+    "date": "2026-06-01 18:30",
+    "topic": "Why Copper Stopped Working When I Added Zinc",
+    "title": "Zinc: Guide to Dosage and Benefits",
+    "status": "success",
+    "score": 0.8666666666666667,
+    "word_count": 2435,
+    "archetype": "nordic-anecdotal",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "Disclaimer",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-06-02 19:36",
+    "topic": "Creatine Complete Guide",
+    "title": "Creatine Complete: Creatine Dosage Guide: How Much Do You Need?",
+    "status": "rejected",
+    "score": 0.8125,
+    "word_count": 3282,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "creatine"
+    ],
+    "category": "COGNITIVE",
+    "issues": [
+      "REJECTED  \n이 글은 'comprehensive-guide' 아키텍처 기준에 부합하지 않습니다. 첫째, 과학적 근거를 강조하는 'science-heavy/deep-protocol' 유형의 글이어야 하지만, PMID 인용이 전혀 포함되지 않았습니다. 예를 들어 \"(Clinical data via  confirms measurable progress i"
+    ]
+  },
+  {
+    "date": "2026-06-02 19:41",
+    "topic": "Creatine Complete Guide",
+    "title": "Creatine Complete: Creatine Dosage Guide: How Much Do You Need?",
+    "status": "rejected",
+    "score": 0.8125,
+    "word_count": 3415,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "creatine"
+    ],
+    "category": "COGNITIVE",
+    "issues": [
+      "REJECTED  \n이 글은 'comprehensive-guide' 아키타입의 기준을 충족하지 못한다. 첫째, 과학 중심의 심층 프로토콜 가이드(2000+ 단어, PMID 인용 필수)에 해당하지 않으며, 두째, 간결한 실용 가이드(3000+ 단어)의 구조도 갖추지 못했다. 내용은 개인 경험 중심의 서사체로, 실용적 정보(예: 사용 방법, 효과, 부작용 등)"
+    ]
+  },
+  {
+    "date": "2026-06-02 19:46",
+    "topic": "Creatine Complete Guide",
+    "title": "Creatine Complete: Creatine Dosage Guide: How Much Do You Need?",
+    "status": "rejected",
+    "score": 0.8125,
+    "word_count": 3408,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "creatine"
+    ],
+    "category": "COGNITIVE",
+    "issues": [
+      "REJECTED  \n이 글은 'comprehensive-guide' 아키타입의 기준을 충족하지 못한다. 첫째, 과학적 근거를 강조하는 'science-heavy/deep-protocol' 유형이라면 PMID 인용이 필수적이지만, 본문에서 연구 결과를 언급할 때 인용 출처가 누락되어 있다(예: \"As noted in , researchers observed."
+    ]
+  },
+  {
+    "date": "2026-06-02 20:07",
+    "topic": "scheduled time: 2026 06 02 21:18\nCreatine Complete Guide",
+    "title": "Creatine Complete: Creatine Dosage Guide: How Much Do You Need?",
+    "status": "rejected",
+    "score": 0.8125,
+    "word_count": 3614,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "creatine"
+    ],
+    "category": "COGNITIVE",
+    "issues": [
+      "REJECTED  \n이 글은 'comprehensive-guide' 아키텍처 기준에 부합하지 않습니다. 첫째, 과학적 근거를 다루는 'science-heavy/deep-protocol' 유형이라면 2000자 이상의 글과 PMID 인용이 필수적이지만, 본 글은 개인 경험 중심의 서술로 구성되어 있으며, 관련 연구나 메커니즘에 대한 설명이 전혀 포함되어 있지 "
+    ]
+  },
+  {
+    "date": "2026-06-02 20:33",
+    "topic": "The Copper and Zinc Stack I Wish I Had Tried Sooner",
+    "title": "How to Take Zinc for Best Results",
+    "status": "rejected",
+    "score": 0.9333333333333333,
+    "word_count": 1618,
+    "archetype": "journal-tone",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED  \n이 글은 'science-heavy/deep-protocol' 아키텍처 기준에 부합하지 않습니다. 2000자 이상의 길이를 충족하지만, PMID 인용이 부족하며(현재 1개만 포함), 과학적 근거에 대한 체계적 설명이 부재합니다. 또한, 개인 경험 중심의 서술 방식과 대화체 톤은 'science-heavy' 아키텍처에 요구되는 객관적·학술"
+    ]
+  },
+  {
+    "date": "2026-06-02 20:39",
+    "topic": "The Copper and Zinc Stack I Wish I Had Tried Sooner",
+    "title": "How to Take Zinc for Best Results",
+    "status": "rejected",
+    "score": 0.9333333333333333,
+    "word_count": 1538,
+    "archetype": "journal-tone",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED  \n이유: 'science-heavy/deep-protocol' 아키텍처 기준에 따라 PMID 인용이 필수적이지만, 본 문서에는 과학적 근거를 뒷받침할 수 있는 연구 인용(예: PMID)이 전혀 포함되어 있지 않다. 또한, 기술적 프로토콜이나 실험 데이터 대신 개인 경험 중심의 서술이 지나치게 강조되어 있으며, 이는 'minimalist/q"
+    ]
+  },
+  {
+    "date": "2026-06-02 20:47",
+    "topic": "The Copper and Zinc Stack I Wish I Had Tried Sooner",
+    "title": "How to Take Zinc for Best Results",
+    "status": "rejected",
+    "score": 0.9333333333333333,
+    "word_count": 1696,
+    "archetype": "journal-tone",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED  \n이 글은 'journal-tone' 아키텍처 기준에 따라 평가되었으나, 과학적 근거를 요구하는 'science-heavy/deep-protocol' 유형의 기사로 간주될 수 있는 요소(예: 특정 보충제 복용 시기, 영양소 상호작용 등)가 포함되어 있으나, PMID 인용이 전혀 없고, 실험적 데이터나 연구 결과를 언급하지 않아 과학적 신뢰"
+    ]
+  },
+  {
+    "date": "2026-06-02 21:19",
+    "topic": "The Copper and Zinc Stack I Wish I Had Tried Sooner",
+    "title": "How to Take Zinc for Best Results",
+    "status": "success",
+    "score": 0.8666666666666667,
+    "word_count": 1795,
+    "archetype": "journal-tone",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "No_Cure_Claims",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-06-02 22:58",
+    "topic": "Potassium Complete Guide",
+    "title": "Potassium Complete: Potassium Dosage Guide: How Much Do You Need?",
+    "status": "rejected",
+    "score": 0.8125,
+    "word_count": 3435,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED  \n이유: 과학 중심의 'deep-protocol' 아키텍처 기준에 따라 PMID 인용이 필수적이지만, 기사에서 연구 관련 내용이 언급되었음에도 불구하고 PMID가 누락되었음. 예: \"Research published via : According to research (), these markers showed consistent impro"
+    ]
+  },
+  {
+    "date": "2026-06-02 23:05",
+    "topic": "Potassium Complete Guide",
+    "title": "Potassium Complete: Potassium Dosage Guide: How Much Do You Need?",
+    "status": "rejected",
+    "score": 0.8125,
+    "word_count": 3596,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED  \n이 기사는 'science-heavy/deep-protocol' 아키타입의 기준을 충족하지 못한다. PMID 인용이 필수적이지만, 본문에서 단 하나의 연구도 인용되지 않았다(예: \"As noted in , researchers observed...\" 문장은 인용 출처가 누락됨). 또한, 과학적 프로토콜이나 생리학적 메커니즘에 대한 심층적"
+    ]
+  },
+  {
+    "date": "2026-06-02 23:12",
+    "topic": "Potassium Complete Guide",
+    "title": "Potassium Complete: Potassium Dosage Guide: How Much Do You Need?",
+    "status": "rejected",
+    "score": 0.8125,
+    "word_count": 3609,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED  \n이 문서는 'science-heavy/deep-protocol' 아키텍처 기준에 부합하지 않습니다. PMID 인용이 전혀 포함되지 않았으며, 과학적 근거보다는 개인 경험 중심의 서술이 지배적입니다. 또한, 'comprehensive-guide'로 분류되었음에도 불구하고, 단순한 팁 제공에 그치고 체계적인 프로토콜이나 심층적인 연구 기반의"
+    ]
+  },
+  {
+    "date": "2026-06-02 23:37",
+    "topic": "Potassium Complete Guide",
+    "title": "Potassium Complete: Potassium Dosage Guide: How Much Do You Need?",
+    "status": "rejected",
+    "score": 0.8125,
+    "word_count": 3783,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED  \n문서는 'science-heavy/deep-protocol' 아키타입 기준에 부합하지 않습니다. 2000자 이상의 길이를 충족하지만, PMID 인용이 전혀 포함되어 있지 않으며, 과학적 근거를 바탕으로 한 심층 분석이 부족합니다. 예를 들어, '포타슘 흡수 메커니즘', '포타슘 형태별 생체 이용률 차이', '혈중 농도 조절 원리' 등에 "
+    ]
+  },
+  {
+    "date": "2026-06-02 23:45",
+    "topic": "Potassium Complete Guide",
+    "title": "Potassium Complete: Potassium Dosage Guide: How Much Do You Need?",
+    "status": "rejected",
+    "score": 0.8125,
+    "word_count": 3964,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED  \n이 글은 'comprehensive-guide' 아키타입의 기준을 충족하지 못한다. 첫째, 과학적 근거와 PMID 인용이 전혀 포함되어 있지 않다. 포스팅된 내용은 개인의 경험 중심의 서술로, 생리학적 메커니즘, 권장 용량, 연구 데이터 등이 결여되어 있다. 둘째, 글의 구조가 비과학적이다. 'comprehensive-guide'는 명확"
+    ]
+  },
+  {
+    "date": "2026-06-02 23:52",
+    "topic": "Potassium Complete Guide",
+    "title": "Potassium Complete: Potassium Dosage Guide: How Much Do You Need?",
+    "status": "rejected",
+    "score": 0.8125,
+    "word_count": 4075,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED  \n이 글은 'science-heavy/deep-protocol' 아키타입 기준에 부합하지 않습니다. PMID 인용이 전혀 포함되어 있지 않으며, 과학적 근거를 바탕으로 한 체계적인 분석이나 프로토콜 설명이 부재합니다. 대신 개인 경험 중심의 서술이 지나치게 강조되어 있으며, 'comprehensive-guide'로서의 전문성과 깊이가 부족"
+    ]
+  },
+  {
+    "date": "2026-06-03 00:04",
+    "topic": "Potassium Complete Guide",
+    "title": "Potassium Complete: Potassium Dosage Guide: How Much Do You Need?",
+    "status": "success",
+    "score": 0.8125,
+    "word_count": 3952,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "H1 60자",
+      "AI_Footprint",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-06-03 00:18",
+    "topic": "Taking Zinc with Iron: What I Learned the Hard Way",
+    "title": "Is Zinc Worth Taking? What the Research Says",
+    "status": "rejected",
+    "score": 0.9333333333333333,
+    "word_count": 1440,
+    "archetype": "minimalist",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED  \n이 글은 'minimalist' 아키텍처 기준에 부합하지 않습니다. 첫째, 단순한 실용적 조언이 아닌 개인 경험 중심의 서술로, 과학적 근거나 명확한 프로토콜이 부재합니다. 둘째, PMID 인용이 필요한 'science-heavy' 아키텍처에 해당하지만, 인용이 전혀 포함되지 않았습니다. 셋째, 글의 끝부분이 중단되어 완결되지 않았으며,"
+    ]
+  },
+  {
+    "date": "2026-06-03 00:21",
+    "topic": "Taking Zinc with Iron: What I Learned the Hard Way",
+    "title": "Is Zinc Worth Taking? What the Research Says",
+    "status": "rejected",
+    "score": 0.9333333333333333,
+    "word_count": 1553,
+    "archetype": "minimalist",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED  \n이 글은 'minimalist' 아키텍처 기준에 부합하지 않습니다. 1200자 이상의 짧고 실용적인 글이어야 하지만, 현재 글은 2000자 이상의 장황한 서사체로 구성되어 있으며, 과학적 근거나 PMID 인용 없이 개인 경험 중심의 반복적 서술로 이루어져 있습니다. 'minimalist' 형식은 간결한 구조, 핵심 정보의 빠른 전달, T"
+    ]
+  },
+  {
+    "date": "2026-06-03 00:24",
+    "topic": "Taking Zinc with Iron: What I Learned the Hard Way",
+    "title": "Is Zinc Worth Taking? What the Research Says",
+    "status": "rejected",
+    "score": 0.9333333333333333,
+    "word_count": 1387,
+    "archetype": "minimalist",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "REJECTED  \n이 글은 'minimalist' 아키텍처 기준에 부합하지 않습니다. 1200+ 단어를 충족하지만, 내용이 개인 경험 중심의 서사체로 구성되어 있어 간결하고 실용적인 정보 제공에 실패했습니다. TOC/FAQ는 선택적 요소이지만, 본문은 반복적이고 구조화되지 않은 시도-실패 과정에 집중하며, 명확한 결론이나 실천 지침이 부재합니다. 또한, "
+    ]
+  },
+  {
+    "date": "2026-06-03 00:37",
+    "topic": "Taking Zinc with Iron: What I Learned the Hard Way",
+    "title": "Is Zinc Worth Taking? What the Research Says",
+    "status": "success",
+    "score": 0.8666666666666667,
+    "word_count": 1393,
+    "archetype": "minimalist",
+    "topic_type": "synergy",
+    "nutrients": [
+      "zinc"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
+      "No_Cure_Claims",
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-06-03 09:13",
+    "topic": "NAC Complete Guide",
+    "title": "Nac Complete: Nac : Guide to Dosage and Benefits",
+    "status": "rejected",
+    "score": 0.875,
+    "word_count": 3569,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED  \n이 글은 'science-heavy/deep-protocol' 아키타입의 기준을 충족하지 못한다. 첫째, PMID 인용이 전혀 포함되어 있지 않다(예: \"PubMed abstracts를 봤지만\"이라는 언급만 있고, 구체적인 연구 번호나 내용은 없음). 둘째, 과학적 메커니즘, 생리학적 작용 경로, 약물 상호작용, 권장 용량 프로토콜 등 "
+    ]
+  },
+  {
+    "date": "2026-06-03 09:18",
+    "topic": "NAC Complete Guide",
+    "title": "Nac Complete: Nac : Guide to Dosage and Benefits",
+    "status": "rejected",
+    "score": 0.875,
+    "word_count": 3896,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED  \n의문점 및 부족한 점: 1) 과학적 근거 부재: 'science-heavy/deep-protocol' 아키타입에 해당하지만, PMID 인용이 전혀 없고 PubMed 추상만 언급한 수준으로, 학문적 신뢰도 부족. 2) 구조적 문제: 'comprehensive-guide'에 필요한 체계적인 정보(효능, 용법, 부작용, 프로토콜 등)가 부재하"
+    ]
+  },
+  {
+    "date": "2026-06-03 09:22",
+    "topic": "NAC Complete Guide",
+    "title": "Nac Complete: Nac : Guide to Dosage and Benefits",
+    "status": "rejected",
+    "score": 0.875,
+    "word_count": 4218,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "REJECTED  \n이 문서는 'science-heavy/deep-protocol' 아키타입 기준에 부합하지 않습니다. 1) PMID 인용이 전혀 포함되어 있지 않으며, 2) 과학적 메커니즘, 임상 연구, 프로토콜 등 구조화된 정보가 결여된 상태입니다. 대신 개인 경험 중심의 서술이 지배적이며, 'minimalist/quick-answer' 형식에 가까운 "
+    ]
+  },
+  {
+    "date": "2026-06-03 09:37",
+    "topic": "NAC Complete Guide",
+    "title": "Nac Complete: Nac : Guide to Dosage and Benefits",
+    "status": "success",
+    "score": 0.8125,
+    "word_count": 4234,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [],
+    "category": "GENERAL",
+    "issues": [
+      "AI_Footprint",
+      "NoPlaceholder",
+      "TOC_Present"
+    ]
+  },
+  {
+    "date": "2026-06-03 13:27",
+    "topic": "# How Iron Made My Vitamin C Finally Work\ntype: synergy",
+    "title": "How to Take Iron Made for Best Results",
+    "status": "rejected",
+    "score": 0.9333333333333333,
+    "word_count": 3390,
+    "archetype": "science-heavy",
+    "topic_type": "synergy",
+    "nutrients": [
+      "vitamin c"
+    ],
+    "category": "IMMUNE",
+    "issues": [
+      "강제 반려(blocking): NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-06-03 13:28",
+    "topic": "# How Iron Made My Vitamin C Finally Work\ntype: synergy",
+    "title": "How to Take Iron Made for Best Results",
+    "status": "rejected",
+    "score": 0.9333333333333333,
+    "word_count": 3504,
+    "archetype": "science-heavy",
+    "topic_type": "synergy",
+    "nutrients": [
+      "vitamin c"
+    ],
+    "category": "IMMUNE",
+    "issues": [
+      "강제 반려(blocking): NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-06-03 13:31",
+    "topic": "How Iron Made My Vitamin C Finally Work",
+    "title": "How to Take Iron Made for Best Results",
+    "status": "rejected",
+    "score": 0.9333333333333333,
+    "word_count": 3728,
+    "archetype": "science-heavy",
+    "topic_type": "synergy",
+    "nutrients": [
+      "vitamin c"
+    ],
+    "category": "IMMUNE",
+    "issues": [
+      "강제 반려(blocking): NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-06-03 14:02",
+    "topic": "How Iron Made My Vitamin C Finally Work",
+    "title": "How to Take Iron Made for Best Results",
+    "status": "success",
+    "score": 0.9333333333333333,
+    "word_count": 3757,
+    "archetype": "science-heavy",
+    "topic_type": "synergy",
+    "nutrients": [
+      "vitamin c"
+    ],
+    "category": "IMMUNE",
+    "issues": [
+      "NoPlaceholder"
+    ]
+  },
+  {
+    "date": "2026-06-03 15:41",
+    "topic": "Taking Vitamin D with Magnesium: What I Learned the Hard Way",
+    "title": "Is Vitamin D Worth Taking? What the Research Says",
+    "status": "success",
+    "score": 0.9375,
+    "word_count": 3313,
+    "archetype": "comprehensive-guide",
+    "topic_type": "comprehensive_guide",
+    "nutrients": [
+      "vitamin d",
+      "magnesium"
+    ],
+    "category": "FUNDAMENTAL",
+    "issues": [
       "NoPlaceholder"
     ]
   }

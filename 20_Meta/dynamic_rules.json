@@ -25,22 +25,25 @@
       "top_issue": "NoPlaceholder"
     },
     "How it Actually Felt During the First Week": {
-      "removed": 1,
+      "removed": 2,
       "issues": [
+        "NoPlaceholder",
         "NoPlaceholder"
       ],
       "top_issue": "NoPlaceholder"
     },
     "The Timing Experiment: My Morning vs Night Results": {
-      "removed": 1,
+      "removed": 2,
       "issues": [
+        "NoPlaceholder",
         "NoPlaceholder"
       ],
       "top_issue": "NoPlaceholder"
     },
     "Who Gets the Most Out of This Combination": {
-      "removed": 3,
+      "removed": 4,
       "issues": [
+        "NoPlaceholder",
         "NoPlaceholder",
         "NoPlaceholder",
         "NoPlaceholder"
@@ -161,6 +164,30 @@
         "NoPlaceholder"
       ],
       "top_issue": "H1 60자"
+    },
+    "Month 2: Settling Into a Routine": {
+      "removed": 1,
+      "issues": [
+        "AI_Footprint",
+        "NoPlaceholder"
+      ],
+      "top_issue": "AI_Footprint"
+    },
+    "What I'm Still Figuring Out": {
+      "removed": 1,
+      "issues": [
+        "AI_Footprint",
+        "NoPlaceholder"
+      ],
+      "top_issue": "AI_Footprint"
+    },
+    "Week 2: The Dip I Didn't Expect": {
+      "removed": 1,
+      "issues": [
+        "AI_Footprint",
+        "NoPlaceholder"
+      ],
+      "top_issue": "AI_Footprint"
     }
   },
   "retry_history": [
@@ -283,9 +310,27 @@
       "topic": "Taking Zinc with Iron: What I Learned th",
       "retries": 4,
       "published": true
+    },
+    {
+      "date": "2026-06-03",
+      "topic": "NAC Complete Guide",
+      "retries": 4,
+      "published": true
+    },
+    {
+      "date": "2026-06-03",
+      "topic": "How Iron Made My Vitamin C Finally Work",
+      "retries": 3,
+      "published": true
+    },
+    {
+      "date": "2026-06-03",
+      "topic": "Taking Vitamin D with Magnesium: What I ",
+      "retries": 0,
+      "published": true
     }
   ],
-  "avg_retries_20": 1.6,
+  "avg_retries_20": 1.95,
   "rules": [
     "AVOID: Two consecutive <hr /> tags appear at the start of post body (detected 2x in published posts)",
     "AVOID: Post ends with incomplete sentence 'I'm not' — text is cut off mid-paragraph (detected 2x in published posts)",
@@ -501,6 +546,19 @@
       "tier": 1,
       "added_at": "2026-06-03 00:52",
       "source": "user_feedback_ymyl"
-    }
+    },
+    "AVOID: DOCTYPE, <html>, <head>, and <style> tags are present in the post body. These should only appear in  (detected 2x in published posts)",
+    "AVOID: The post describes 7+ different body systems/symptoms as 'improved': respiratory clarity, mental cla (detected 2x in published posts)",
+    "AVOID: Timeline conflicts exist: 'Week 6: Something Actually Shifted' section states 'By week 4' changes we (detected 2x in published posts)",
+    "AVOID: Post title is 'Nac Complete: Nac : Guide to Dosage and Benefits' (guidebook style) but og:title and  (detected 2x in published posts)",
+    "AVOID: og:description and meta description state 'The research on Vitamin C is often different from real-wo (detected 2x in published posts)",
+    "AVOID: og:description starting with research language. 'Research on', 'What the research says', 'Studies show', '[Nutrient] supplementation:' are all BANNED in og:description.",
+    "AVOID: H1 pattern 'Is X Worth Taking? What the Research Says' — use experience-based title instead.",
+    "AVOID: Assertive health claims — 'made a measurable difference', 'proved significantly more effective', 'the answer was always X'. Use hedged personal experience language.",
+    "AVOID: 'made a huge difference' → use 'felt noticeably different over time'",
+    "AVOID: 'I can see the results' → use 'I can notice the difference in my routine'",
+    "AVOID: 'energy levels are stable' → use 'energy levels feel more stable' (hedge with feel/seem)",
+    "SYSTEM: hub_page_generator.py uses logging.info() not sys.stdout.write() — stdout is closed in orchestrator context.",
+    "SYSTEM: Hub auto-update runs after every publish via add_post_to_hub(). Categories: minerals/vitamins/performance/sleep_stress/gut_metabolism/longevity_antioxidants/cognitive_mood."
   ]
 }
