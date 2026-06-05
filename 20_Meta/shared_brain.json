@@ -816,7 +816,10 @@
       "last_hit": "2026-06-02",
       "example_bad": "",
       "example_good": ""
-    }
+    },
+    "REQUIRE per post: 1+ social observation (another person reacting/noticing/commenting)",
+    "REQUIRE per post: 1+ genuine uncertainty or failed attempt — not everything works",
+    "AVOID: Repeated paragraph structure skepticism->improvement->consistency across ALL sections"
   ],
   "good_patterns": [
     {
@@ -824,12 +827,12 @@
       "type": "DO",
       "category": "structure",
       "instruction": "Always include a Hook in the first 200 words",
-      "confirmed_count": 5,
+      "confirmed_count": 15,
       "sources": [
         "Is Berberine Worth Taking What the Research Says"
       ],
       "first_confirmed": "2026-05-29",
-      "last_confirmed": "2026-06-03",
+      "last_confirmed": "2026-06-05",
       "example": ""
     },
     {
@@ -837,12 +840,12 @@
       "type": "DO",
       "category": "structure",
       "instruction": "Include TOC with anchor links (#sec)",
-      "confirmed_count": 1,
+      "confirmed_count": 11,
       "sources": [
         "Is Berberine Worth Taking What the Research Says"
       ],
       "first_confirmed": "2026-05-29",
-      "last_confirmed": "2026-05-29",
+      "last_confirmed": "2026-06-05",
       "example": ""
     },
     {
@@ -850,12 +853,12 @@
       "type": "DO",
       "category": "structure",
       "instruction": "Include FAQ section (3+ Q&A pairs) for long-tail SEO",
-      "confirmed_count": 1,
+      "confirmed_count": 11,
       "sources": [
         "Is Berberine Worth Taking What the Research Says"
       ],
       "first_confirmed": "2026-05-29",
-      "last_confirmed": "2026-05-29",
+      "last_confirmed": "2026-06-05",
       "example": ""
     },
     {
@@ -863,12 +866,12 @@
       "type": "DO",
       "category": "structure",
       "instruction": "Include 2+ PMID citations (found 2)",
-      "confirmed_count": 4,
+      "confirmed_count": 10,
       "sources": [
         "Is Berberine Worth Taking What the Research Says"
       ],
       "first_confirmed": "2026-05-29",
-      "last_confirmed": "2026-06-01",
+      "last_confirmed": "2026-06-05",
       "example": ""
     },
     {
@@ -876,12 +879,12 @@
       "type": "DO",
       "category": "structure",
       "instruction": "Write 2000+ words for comprehensive guides",
-      "confirmed_count": 7,
+      "confirmed_count": 17,
       "sources": [
         "Is Berberine Worth Taking What the Research Says"
       ],
       "first_confirmed": "2026-05-29",
-      "last_confirmed": "2026-06-03",
+      "last_confirmed": "2026-06-05",
       "example": ""
     },
     {
@@ -889,16 +892,16 @@
       "type": "DO",
       "category": "structure",
       "instruction": "Use 5+ H2 sections (9 found)",
-      "confirmed_count": 7,
+      "confirmed_count": 17,
       "sources": [
         "Is Berberine Worth Taking What the Research Says"
       ],
       "first_confirmed": "2026-05-29",
-      "last_confirmed": "2026-06-03",
+      "last_confirmed": "2026-06-05",
       "example": ""
     }
   ],
-  "last_updated": "2026-06-03 13:31",
+  "last_updated": "2026-06-05",
   "avoid_patterns": [
     {
       "pattern": "recommendation medications",
@@ -906,6 +909,42 @@
       "count": 3,
       "tier": 1,
       "note": "NEVER write 'recommendation medications' — always write 'prescription medications'. 'Recommendation' is not an adjective for medications. This mistake appeared in both Ginger and Magnesium posts."
+    },
+    {
+      "pattern": "AI_reflective_loop",
+      "count": 5,
+      "tier": 1,
+      "note": "NEVER repeat brain fog/consistency/sluggish/routine/not a miracle across sections in same cadence. Each section = different emotional entry point. NAD+ 89 vs SAMe 97 핵심 차이."
+    },
+    {
+      "pattern": "solo_monologue_no_social",
+      "count": 5,
+      "tier": 1,
+      "note": "EVERY post needs 1+ moment involving another person (partner/roommate/coworker/friend) reacting or noticing. Pure solo body-state introspection = AI wellness journal pattern."
+    },
+    {
+      "pattern": "performance_namedrop_list",
+      "count": 5,
+      "tier": 1,
+      "note": "MAX 2 effects per post. Do NOT stack: focus+sleep+recovery+clarity all improved. Supplement success montage = AI detection signal."
+    },
+    {
+      "pattern": "mechanistic_certainty",
+      "count": 4,
+      "tier": 1,
+      "note": "NEVER: rewiring neurotransmitters / reverse aging at molecular level / calcium accumulate in wrong places. Always hedge with: may relate to / from what I read / some researchers suggest."
+    },
+    {
+      "pattern": "YMYL_symptom_direct_link",
+      "count": 5,
+      "tier": 1,
+      "note": "REJECT: chest pain stopped / pain disappeared / symptoms cleared. Use: Around that time, the discomfort gradually became less noticeable."
+    },
+    {
+      "pattern": "ai_metaphor_density",
+      "count": 4,
+      "tier": 1,
+      "note": "MAX 1 metaphor per post. broken battery / party in a vacuum / flickering candle = AI generation signal. 2+ metaphors = GPT creative rhythm."
     }
   ],
   "teacher_roles": [

@@ -366,6 +366,246 @@
       "count": 3,
       "first_seen": "2026-06-03",
       "source": "user"
+    },
+    {
+      "lesson": "[Claude발견-3회반복] Table of Contents lists 7 sections (sec0–sec5 + faq), but only sec0, sec1, sec2, and faq are present in body. sec3 'What",
+      "count": 3,
+      "promoted_date": "2026-06-04",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[Claude발견-3회반복] After '[...MIDDLE SECTION OMITTED...]' placeholder, post jumps to 'Week three, I hit a wall...' content that appears to ",
+      "count": 3,
+      "promoted_date": "2026-06-04",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[Claude발견-3회반복] Post title says 'Roommate Swears' but the entire body is about SELENIUM (a mineral supplement). The supplement name is n",
+      "count": 3,
+      "promoted_date": "2026-06-04",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[Claude발견-3회반복] Section about 'Can I take ginger with other supplements?' ends mid-sentence: 'I haven't had any issues taking ginger alo",
+      "count": 3,
+      "promoted_date": "2026-06-04",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[Claude발견-3회반복] Post title is 'Potassium Complete: Potassium Dosage Guide: How Much Do You Need?' (informational/guide format) but H1 is",
+      "count": 3,
+      "promoted_date": "2026-06-04",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[Claude발견-7회반복] Two consecutive <hr> tags appear before the FAQ section",
+      "count": 7,
+      "promoted_date": "2026-06-04",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[Claude발견-3회반복] Post mentions 'within two weeks' (first copper + zinc disruption), 'Within a week' (after halving zinc dose), 'By the fi",
+      "count": 3,
+      "promoted_date": "2026-06-04",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[Claude발견-3회반복] Post claims 'Taking my supplement at completely different times of day made zero noticeable difference' (in 'What surpri",
+      "count": 3,
+      "promoted_date": "2026-06-04",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[Claude발견-3회반복] Post never specifies iron dosage (mg/day), frequency (once or twice daily), or the exact vitamin C dosage paired with it",
+      "count": 3,
+      "promoted_date": "2026-06-04",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[Claude발견-3회반복] The text '[...MIDDLE SECTION OMITTED...]' appears in the body, indicating placeholder or corrupted content between sec4 ",
+      "count": 3,
+      "promoted_date": "2026-06-04",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[Claude발견-3회반복] The phrase 'this routine C' appears 8+ times throughout the post (sec0, sec1, sec5) but makes no sense. Should be 'this ",
+      "count": 3,
+      "promoted_date": "2026-06-04",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[Claude발견-3회반복] og:description says 'Six months on Probiotics' but post content discusses 'three months' — content contradiction and met",
+      "count": 3,
+      "promoted_date": "2026-06-04",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[Claude발견-4회반복] In the section 'What Surprised Me Most (The Bad Part)', the sentence is cut off mid-word: 'Within two days, I had the wo",
+      "count": 4,
+      "promoted_date": "2026-06-04",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[Claude발견-10회반복] Phrases like 'consistency is key', 'it's just a balancing act', 'Your body is remarkably good at telling you', 'It's not",
+      "count": 10,
+      "promoted_date": "2026-06-04",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[Claude발견-3회반복] Jake is introduced as the author's friend who started HMB first, but then Lena is introduced as starting 'before I did' ",
+      "count": 3,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-04"
+    },
+    {
+      "lesson": "[Claude발견-3회반복] The post body is truncated mid-sentence ('I didn't see results for the first two weeks. He kept taking it, though...') a",
+      "count": 3,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-04"
+    },
+    {
+      "lesson": "[Claude발견-3회반복] Post introduces multiple different people (Jake, Lena, Alex) with conflicting or overlapping experiences, making it uncl",
+      "count": 3,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-04"
+    },
+    {
+      "lesson": "[Claude발견-3회반복] Meta og:description contains 'someone' and 'know' which are placeholder/corrupted terms, not a real supplement name.",
+      "count": 3,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-04"
+    },
+    {
+      "lesson": "[Claude발견-3회반복] The post jumps from 'I'd been waiting for a recent discovery, but what I needed was patience' mid-narrative directly to ",
+      "count": 3,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-04"
+    },
+    {
+      "lesson": "[Claude발견-4회반복] No grammatical errors of 'a instant', 'a improvement', etc. detected. This check passes.",
+      "count": 4,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-04"
+    },
+    {
+      "lesson": "[Claude발견-3회반복] The paragraph ending 'I was out for a run one morning, feeling unusually al[...MIDDLE SECTION OMITTED...]t Take copper a",
+      "count": 3,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-04"
+    },
+    {
+      "lesson": "[Claude발견-3회반복] Post title contains 'Shouldn'T' (with smart quote and capital T mid-word) and 'ShouldnT' (malformed). This appears to be",
+      "count": 3,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-04"
+    },
+    {
+      "lesson": "[Claude발견-3회반복] og:description states 'Combining Vitamin D And Magnesium was a learning process...' — this is accurate but emphasizes Ma",
+      "count": 3,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-04"
+    },
+    {
+      "lesson": "[Claude발견-3회반복] The 'Weeks 1–2' section and 'Month One' section describe nearly identical experiences (no immediate results, day 7 tingl",
+      "count": 3,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-04"
+    },
+    {
+      "lesson": "[Claude발견-3회반복] Post repeatedly treats 'selenium' and 'zinc' as if both are being supplemented together, but the title is 'Zinc Dosage G",
+      "count": 3,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-04"
+    },
+    {
+      "lesson": "[Claude발견-3회반복] H1 contains lowercase 'd' in 'digestion' — should be 'Digestion'",
+      "count": 3,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-04"
+    },
+    {
+      "lesson": "[Claude발견-3회반복] H2 section 'What shifted in My Body' ends abruptly mid-paragraph: 'But outside the' with no closing content",
+      "count": 3,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-04"
+    },
+    {
+      "lesson": "[발행후검증-C2] H2 섹션 제목 5/10 — H2 1개 (권장 4+) | Sleep and Stress Supplements — What's Ac",
+      "count": 4,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[발행후검증-C2] H2 섹션 제목 5/10 — H2 1개 (권장 4+) | Performance Supplements I've Actually Us",
+      "count": 4,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[발행후검증-E2] 콘텐츠 독창성 4/10 — 개인경험 부족 (1회) | Performance Supplements I've Actually Us",
+      "count": 4,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[발행후검증-C2] H2 섹션 제목 5/10 — H2 1개 (권장 4+) | Every Vitamin I've Tested — What I Notic",
+      "count": 4,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[발행후검증-C2] H2 섹션 제목 5/10 — H2 1개 (권장 4+) | Every Mineral Supplement I've Tested — M",
+      "count": 4,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[발행후검증-C4] AI 패턴 제거 7/10 — AI패턴 1개: ['thriving'] | Selenium Benefits: What I Noticed After ",
+      "count": 4,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[품질검사-E2] 콘텐츠 독창성 7/10 — 개인경험 14회 | 포스트: Why I Started Taking Vitamin D and Never",
+      "count": 4,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[v10.2-CRITICAL] AI Reflective Loop 금지: brain fog / consistency / sluggish / routine / not a miracle을 여러 섹션에서 같은 회상 리듬으로 반복 금지. 각 섹션은 완전히 다른 감정 진입점 필요. NAD+ 89점 핵심 원인.",
+      "count": 5,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-05"
+    },
+    {
+      "lesson": "[v10.2-CRITICAL] 사회적 관찰 필수: 모든 포스팅에 타인(partner/roommate/coworker/friend)이 반응하거나 대화하거나 눈치채는 순간 최소 1개 필수. 순수 혼자 독백 = AI wellness journal 패턴. SAMe 97점 vs NAD 89점 핵심 차이.",
+      "count": 5,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-05"
+    },
+    {
+      "lesson": "[v10.2-CRITICAL] 성능 향상 나열 금지: focus improved + sleep improved + recovery improved + clarity improved를 같은 포스팅에 쌓는 것 금지. 최대 2개, 구체적 개인 디테일로 묘사. supplement success montage = AI 탐지 즉시.",
+      "count": 5,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-05"
+    },
+    {
+      "lesson": "[v10.2-HIGH] 메커니즘 단정 금지: \"rewiring neurotransmitters\" / \"reverse aging at molecular level\" / \"calcium accumulate in wrong places\" 사용 금지. 항상 헤지: \"may relate to\" / \"from what I read\" / \"some researchers suggest\".",
+      "count": 4,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-05"
+    },
+    {
+      "lesson": "[v10.2-HIGH] AI 메타포 밀도 제한: \"broken battery\" / \"party in a vacuum\" 류 AI 생성 메타포는 포스팅당 최대 1개. 2개 이상 = GPT creative rhythm 신호.",
+      "count": 4,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-05"
+    },
+    {
+      "lesson": "[v10.2-HIGH] 실패 경험 필수: 포스팅당 최소 1개의 진짜 불확실성/실패/모순 필수. 모든 것이 개선되는 포스팅 = AI success montage. D3+K2 94점 약점이 이것.",
+      "count": 4,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-05"
     }
   ],
   "04_SEO_Optimizer": [
@@ -602,6 +842,90 @@
       "count": 3,
       "promoted_date": "2026-06-03",
       "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[발행후검증-E3] 브랜드 일관성 7/10 — 브랜드 OK | Why Zinc Finally Started Working For Me",
+      "count": 4,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[발행후검증-B1] og:description 상태 0/10 — og:description 없음 | Brain and Mood Supplements — My Honest T",
+      "count": 4,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 6/10 — CSS 없음, Schema.org 없음 | Brain and Mood Supplements — My Honest T",
+      "count": 4,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[발행후검증-B1] og:description 상태 0/10 — og:description 없음 | Longevity and Antioxidant Supplements — ",
+      "count": 4,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[발행후검증-B1] og:description 상태 0/10 — og:description 없음 | Gut Health and Metabolism Supplements — ",
+      "count": 4,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[발행후검증-B1] og:description 상태 0/10 — og:description 없음 | Sleep and Stress Supplements — What's Ac",
+      "count": 4,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[발행후검증-B1] og:description 상태 0/10 — og:description 없음 | Performance Supplements I've Actually Us",
+      "count": 4,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[발행후검증-E3] 브랜드 일관성 4/10 — disclosure 없음 | Performance Supplements I've Actually Us",
+      "count": 4,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[발행후검증-B1] og:description 상태 0/10 — og:description 없음 | Every Vitamin I've Tested — What I Notic",
+      "count": 4,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[발행후검증-D4] HTML 구조 완성도 6/10 — CSS 없음, Schema.org 없음 | Every Vitamin I've Tested — What I Notic",
+      "count": 4,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[발행후검증-B1] og:description 상태 0/10 — og:description 없음 | Every Mineral Supplement I've Tested — M",
+      "count": 4,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[발행후검증-B1] og:description 상태 0/10 — 오염됨: An honest account of combining magnesium and vitam | Why I Started Taking Magnesium and Vitam",
+      "count": 4,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[품질검사-D4] HTML 구조 완성도 6/10 — CSS 없음 | 포스트: How to Take Iron for Best Results: The I",
+      "count": 4,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[품질검사-D4] HTML 구조 완성도 6/10 — CSS 없음 | 포스트: My Roommate Swears by Selenium — Here's ",
+      "count": 3,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-03"
     }
   ],
   "05_Critic_Editor_In_Chief": [
@@ -662,6 +986,12 @@
       "count": 3,
       "first_seen": "2026-06-03",
       "source": "user"
+    },
+    {
+      "lesson": "[v10.2-CRITICAL] REJECT: 보충제 섭취 → 증상 직접 해결 문장 즉시 반려. \"chest pain stopped\" / \"pain disappeared\" / \"symptoms cleared\" YMYL 위험. 필수 교체: \"Around that time, the discomfort gradually became less noticeable.\"",
+      "count": 5,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-05"
     }
   ],
   "02_Researcher_Synergy": [
@@ -688,6 +1018,30 @@
       "count": 3,
       "promoted_date": "2026-06-02",
       "first_seen": "2026-06-01"
+    },
+    {
+      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 0/10 — PMID/연구링크 없음 | Brain and Mood Supplements — My Honest T",
+      "count": 4,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 0/10 — PMID/연구링크 없음 | Performance Supplements I've Actually Us",
+      "count": 4,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[발행후검증-D1] PMID/연구링크 유효성 0/10 — PMID/연구링크 없음 | Every Vitamin I've Tested — What I Notic",
+      "count": 4,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-03"
+    },
+    {
+      "lesson": "[품질검사-D1] PMID/연구링크 유효성 7/10 — PMID 2개 (권장 3+) | 포스트: My Roommate Swears by Selenium — Here's ",
+      "count": 3,
+      "promoted_date": "2026-06-05",
+      "first_seen": "2026-06-03"
     }
   ],
   "post_publish_verifier": [
@@ -751,6 +1105,131 @@
       "rule": "Result claims must be hedged. BANNED: 'huge difference', 'can see the results', 'energy is stable'. GOOD: 'felt noticeably different', 'notice the difference in my routine', 'energy feels more stable'.",
       "example_bad": "It's made a huge difference. I can see the results.",
       "example_good": "It's felt noticeably different over time. I can notice the difference in my routine."
+    }
+  ],
+  "Writer": [
+    {
+      "agent": "Writer",
+      "issue": "LAB_RESULT_DIRECT_ATTRIBUTION",
+      "severity": "critical",
+      "rule": "절대 금지: 혈액검사/수치를 보충제 복용과 직접 연결하는 문장. 'His markers were lower' 뒤에 selenium 언급 = YMYL 위반.",
+      "bad": "His inflammation markers were lower, his thyroid function was optimal",
+      "good": "He said his blood work looked better overall, though I can't say what specifically caused that change.",
+      "count": 5,
+      "tier": "tier1",
+      "added": "2026-06-04 20:02"
+    },
+    {
+      "agent": "Writer",
+      "issue": "MECHANISM_BRO_SCIENCE",
+      "severity": "critical",
+      "rule": "메커니즘을 단정형으로 서술 금지. 'Vitamin C changes pH', 'Copper doesn't like that environment' 형태는 bro-science. 반드시 경험형으로.",
+      "bad": "Vitamin C changes the pH level in the stomach. Copper doesn't like that environment.",
+      "good": "I came across discussions suggesting vitamin C might affect how some minerals are absorbed, though the research seemed more nuanced.",
+      "count": 5,
+      "tier": "tier1",
+      "added": "2026-06-04 20:02"
+    },
+    {
+      "agent": "Writer",
+      "issue": "TITLE_STRONG_VERB",
+      "severity": "high",
+      "rule": "'Fixed', 'Healed', 'Cured', 'Solved' 같은 확신형 동사를 제목에 사용 금지. 'Finally Fixed My Fatigue' → 'What Changed After Three Months'.",
+      "bad": "How Zinc Supplements Finally Fixed My Constant Fatigue",
+      "good": "What Changed After Three Months of Taking Zinc",
+      "count": 5,
+      "tier": "tier1",
+      "added": "2026-06-04 20:02"
+    },
+    {
+      "agent": "Writer",
+      "issue": "SYMPTOM_HORROR_NARRATIVE",
+      "severity": "high",
+      "rule": "부작용 표현 최대 2개, 경미한 것만. 'sharp abdominal pain, mood swings, skin changes, restlessness' 나열 = supplement side effect horror narrative = REJECT.",
+      "bad": "sharp abdominal pain, mood swings, skin changes, restlessness",
+      "good": "some stomach discomfort and low-grade irritability",
+      "count": 5,
+      "tier": "tier1",
+      "added": "2026-06-04 20:02"
+    },
+    {
+      "agent": "Writer",
+      "issue": "BRAND_TONE_OVERSTATEMENT",
+      "severity": "high",
+      "rule": "'zinc was quietly rewriting how my body functioned' 같은 브랜드 카피 느낌 과장 금지. 개인 경험 블로그답게 절제.",
+      "bad": "zinc was quietly rewriting how my body functioned",
+      "good": "it felt like my body was slowly adjusting",
+      "count": 5,
+      "tier": "tier1",
+      "added": "2026-06-04 20:02"
+    },
+    {
+      "agent": "Writer",
+      "issue": "PERFORMANCE_ENHANCEMENT_CERTAINTY",
+      "severity": "high",
+      "rule": "운동 성과 표현 금지 패턴: 'more reps', 'lift heavier', 'recovery improved noticeably'. 반드시 완화형으로: 'seemed to recover a little better', 'felt less drained', 'noticed less soreness'.",
+      "bad": "I could do more reps without crashing, I could lift slightly heavier weights",
+      "good": "I seemed to recover a little better — felt less drained, noticed less soreness",
+      "count": 5,
+      "tier": "tier1",
+      "added": "2026-06-04 20:39"
+    },
+    {
+      "agent": "Writer",
+      "issue": "HMB_MECHANISM_CERTAINTY",
+      "severity": "high",
+      "rule": "HMB 메커니즘 단정 금지. 'HMB reducing muscle breakdown' → 'Research suggests HMB may support recovery and muscle retention during demanding training periods'.",
+      "bad": "HMB reducing muscle breakdown",
+      "good": "Research suggests HMB may support recovery and muscle retention during demanding training",
+      "count": 5,
+      "tier": "tier1",
+      "added": "2026-06-04 20:39"
+    },
+    {
+      "agent": "Writer",
+      "issue": "FAQ_MECHANISM_CERTAINTY",
+      "severity": "medium",
+      "rule": "FAQ에서도 메커니즘 단정 금지. 'preventing muscle loss' → 'possibly supporting muscle retention'.",
+      "bad": "preventing muscle loss",
+      "good": "possibly supporting muscle retention",
+      "count": 3,
+      "tier": "tier2",
+      "added": "2026-06-04 20:39"
+    }
+  ],
+  "Critic": [
+    {
+      "agent": "Critic",
+      "issue": "LAB_RESULT_DIRECT_ATTRIBUTION",
+      "severity": "critical",
+      "rule": "혈액검사 수치(inflammation markers, thyroid function, CRP 등)를 특정 보충제 복용 결과로 직접 연결하는 문장 발견 시 즉시 REJECT.",
+      "bad": "His inflammation markers were lower",
+      "good": "He said his blood work looked better overall",
+      "count": 5,
+      "tier": "tier1",
+      "added": "2026-06-04 20:02"
+    },
+    {
+      "agent": "Critic",
+      "issue": "MECHANISM_BRO_SCIENCE",
+      "severity": "critical",
+      "rule": "보충제 흡수 메커니즘을 단정형 설명으로 서술 시 REJECT. pH, 수용체, 경쟁 흡수 메커니즘은 반드시 불확실성 표현 포함 필수.",
+      "bad": "Copper doesn't like that environment",
+      "good": "separating them seemed to work better in my routine",
+      "count": 5,
+      "tier": "tier1",
+      "added": "2026-06-04 20:02"
+    },
+    {
+      "agent": "Critic",
+      "issue": "PERFORMANCE_ENHANCEMENT_CERTAINTY",
+      "severity": "high",
+      "rule": "'more reps', 'lift heavier', 'recovery improved noticeably' 표현 3개 이상 누적 → REJECT. 확신형 퍼포먼스 클레임은 YMYL 위험.",
+      "bad": "I could do more reps, I could lift heavier, recovery improved noticeably",
+      "good": "seemed to recover a little better, felt less drained",
+      "count": 5,
+      "tier": "tier1",
+      "added": "2026-06-04 20:39"
     }
   ]
 }
