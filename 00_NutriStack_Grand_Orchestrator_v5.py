@@ -65,7 +65,7 @@ SCOPES = [
     'https://www.googleapis.com/auth/blogger',
     'https://www.googleapis.com/auth/drive.file',
     'https://www.googleapis.com/auth/analytics.readonly',
-    'https://www.googleapis.com/auth/webmasters.readonly'
+    'https://www.googleapis.com/auth/webmasters',
 ]
 CLIENT_SECRETS_FILE = "client_secrets.json"
 TOKEN_FILE          = Path("token.pickle")
@@ -76,14 +76,18 @@ OLLAMA_URL          = "http://localhost:11434/api/generate"
 HEAVY_MODEL         = "qwen3:14b-q4_K_M"
 LIGHT_MODEL         = "qwen2:7b-instruct-q4_0"
 MODEL_RESEARCH      = "gemma4:e4b-it-q8_0"
-MODEL_WRITER        = "qwen3:8b-q4_K_M"
+MODEL_WRITER        = "qwen3:8b-q4_K_M"    # 초안 생성 (로컬 무료)
 MODEL_VISUAL_PROMPT = "gemma2:2b"
 MODEL_HOOK_CREATIVE = "gemma2:9b"
 MODEL_HOOK_TRIM     = "qwen2:7b-instruct-q4_0"
 MODEL_TITLE_FAQ     = "qwen3:14b-q4_K_M"
 MODEL_LABEL_EXTRACT = "gemma2:2b"
 MODEL_LABEL_SEO     = "gemma4:e4b-it-q4_K_M"
-MODEL_CRITIC        = "qwen3:14b-q4_K_M"
+MODEL_CRITIC        = "qwen3:14b-q4_K_M"  # 1차 비평 (로컬 무료)
+MODEL_MINIMAX_PPV   = "MiniMax-M3"         # MiniMax M3 — PPV 전용
+MODEL_MINIMAX_SURGEON = "MiniMax-M2.7"     # 발행 전 부분 수술 전용
+
+MINIMAX_API_URL = "https://api.minimaxi.chat/v1/chat/completions"
 
 SD_API_URL  = "http://127.0.0.1:7860"
 SD_ENABLED  = True
@@ -401,7 +405,7 @@ def inject_meta_description(html, description):
     return meta_block + js_injector + html
 
 
-def patch_seo_tags(html: str, url: str, title: str, description: str) -> str:
+def patch_seo_tags(html: str, url: str, title: str, description: str, image_url: str = "") -> str:
     """발행 후 확정된 URL로 canonical + og:url + JSON-LD url 필드를 HTML에 주입."""
     if not url or not url.startswith("http"):
         return html
@@ -409,6 +413,13 @@ def patch_seo_tags(html: str, url: str, title: str, description: str) -> str:
     desc_escaped = description.replace('"', '\\"')
     title_esc    = title.replace('"', '\\"')
     today_str    = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
+
+    # og:image — 히어로 이미지 URL (Pinterest/SNS 공유 시 핵심)
+    _img_tag = ""
+    _img_jsonld = ""
+    if image_url and image_url.startswith("http") and "UPLOAD_TO" not in image_url:
+        _img_tag = f'<meta property="og:image" content="{image_url}"/>\n'
+        _img_jsonld = f'"image":"{image_url}",'
 
     patch = (
         # 표준 HTML canonical (body 내 — Blogger가 head로 올리지 않지만 크롤러가 감지할 수 있음)
@@ -418,6 +429,7 @@ def patch_seo_tags(html: str, url: str, title: str, description: str) -> str:
         f'<meta property="og:description" content="{desc_escaped}"/>\n'
         f'<meta property="og:url" content="{url_escaped}"/>\n'
         f'<meta property="og:type" content="article"/>\n'
+        + _img_tag +
         # 완전한 BlogPosting JSON-LD (url + mainEntityOfPage 포함)
         f'<script type="application/ld+json">'
         f'{{'
@@ -426,6 +438,7 @@ def patch_seo_tags(html: str, url: str, title: str, description: str) -> str:
         f'"mainEntityOfPage":{{"@type":"WebPage","@id":"{url_escaped}"}},'
         f'"headline":"{title_esc}",'
         f'"description":"{desc_escaped}",'
+        f'{_img_jsonld}'
         f'"url":"{url_escaped}",'
         f'"datePublished":"{today_str}",'
         f'"author":{{"@type":"Person","name":"Erik Lindström"}},'
@@ -858,6 +871,17 @@ LABEL_DB = {
     "default": ["Supplements","NordicHealth","Nootropics","BrainHealth","NutriStackLab"],
 }
 
+# About the Author 바이오 변형 풀 — 반복 패턴 방지
+_AUTHOR_BIO_VARIANTS = [
+    "Every article on NutriStack Lab reflects his real-world testing — not medical advice.",
+    "His writing documents personal experiments, not clinical recommendations.",
+    "These posts are personal notes from ongoing testing — not a substitute for professional advice.",
+    "Everything here is first-person experience. Nothing here is medical guidance.",
+    "He writes from his own routine, not from a lab — always personal, never prescriptive.",
+    "Each post captures what he actually tried, not what studies promise.",
+    "His notes are honest accounts of what worked and what didn't — not health recommendations.",
+]
+
 NUTRIENT_RELATIONS = {
     "magnesium":          ["vitamin d","vitamin d3","zinc","l-theanine","sleep","omega","calcium","k2"],
     "vitamin d":          ["magnesium","vitamin k","k2","omega","calcium","boron","zinc","immune"],
@@ -1093,6 +1117,27 @@ BANNED_PHRASES = {
     "pain disappeared": "pain became less noticeable",
     "neither one is getting properly absorbed": "absorption of both may be affected",
     "you can feel simultaneously": "it seemed like I was feeling",
+
+    # [v10.1] 메커니즘 AI 흔적 — SAMe/NAD 분석에서 추출
+    "rewiring neurotransmitters":           "gradually affecting mood and focus patterns",
+    "reverse aging at molecular level":     "what some researchers are exploring with cellular energy",
+    "at the molecular level":               "in ways I don't fully understand",
+    "physiological response discussed here": "what I described above",
+
+    # [v10.1] YMYL 직접 증상 해결 — D3+K2 분석에서 추출
+    "the chest pain stopped":               "around that time, the discomfort gradually became less noticeable",
+    "chest pain stopped":                   "the discomfort became less noticeable over time",
+    "the pain stopped":                     "the discomfort became less noticeable",
+    "calcium could accumulate in the wrong places": "some discussions suggested K2 may help direct calcium utilization",
+
+    # [v10.1] AI 메타포 — NAD 분석에서 추출
+    "broken battery":                       "drained feeling",
+    "party in a vacuum":                    "effort that didn't seem to add up",
+
+    # [v10.1] AI reflective loop 패턴 — NAD 분석에서 추출
+    "not a miracle":                        "not an overnight fix",
+    "it's not a miracle":                   "it's not an overnight fix",
+    "not a magic":                          "not an instant",
 
 }
 
@@ -2118,27 +2163,63 @@ def _load_anthropic_key():
 
 _api_tokens = {"input": 0, "output": 0}  # 글 1개 처리 중 Claude API 사용량 누적
 
+def _load_minimax_key() -> str:
+    if os.environ.get("MINIMAX_API_KEY"):
+        return os.environ["MINIMAX_API_KEY"]
+    env_path = Path(__file__).parent / ".env"
+    if env_path.exists():
+        for line in env_path.read_text(encoding="utf-8").splitlines():
+            if line.startswith("MINIMAX_API_KEY=") and not line.startswith("#"):
+                key = line.split("=", 1)[1].strip().strip('"').strip("'")
+                if key:
+                    os.environ["MINIMAX_API_KEY"] = key
+                    return key
+    return ""
+
+def ask_minimax(prompt: str, system_prompt: str = "", model: str = "MiniMax-M2.7",
+                max_tokens: int = 8192, max_retries: int = 2) -> str:
+    """MiniMax API 호출 — Writer/Critic(M2.7) + PPV(M3) 전용."""
+    key = _load_minimax_key()
+    if not key:
+        logging.warning("  [MiniMax] API 키 없음 → 로컬 폴백")
+        return ask_ai(prompt, system_prompt, HEAVY_MODEL)
+    messages = []
+    if system_prompt:
+        messages.append({"role": "system", "content": system_prompt})
+    messages.append({"role": "user", "content": prompt})
+    for attempt in range(max_retries):
+        try:
+            r = requests.post(
+                MINIMAX_API_URL,
+                headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json; charset=utf-8"},
+                json={"model": model, "messages": messages, "max_tokens": max_tokens},
+                timeout=180,
+            )
+            if not r.ok:
+                logging.warning(f"  [MiniMax] {r.status_code}: {r.text[:100]}")
+                time.sleep(2)
+                continue
+            raw = r.json()["choices"][0]["message"]["content"]
+            # <think> 태그 제거 (M2.7/M3 추론 과정)
+            import re as _re
+            text = _re.sub(r'<think>.*?</think>', '', raw, flags=_re.DOTALL).strip()
+            text = clean_ai_output(text)
+            if len(text) > 80:
+                return text
+        except Exception as e:
+            logging.error(f"  [MiniMax 오류] (시도{attempt+1}): {e}")
+            time.sleep(2)
+    logging.warning("  [MiniMax] 실패 → 로컬 폴백")
+    return ask_ai(prompt, system_prompt, HEAVY_MODEL)
+
 def ask_claude(prompt, system_prompt="", model="claude-haiku-4-5-20251001", max_tokens=8192):
-    """Claude API 직접 호출 — Polish / 3회반려 수정 전용."""
-    global _api_tokens
-    api_key = _load_anthropic_key()
-    if not api_key:
-        logging.warning("  [Claude] ANTHROPIC_API_KEY 없음 — 로컬 폴백")
-        return ask_ai(prompt, system_prompt)
-    try:
-        client = _anthropic.Anthropic(api_key=api_key)
-        kwargs = {"model": model, "max_tokens": max_tokens, "messages": [{"role": "user", "content": prompt}]}
-        if system_prompt:
-            kwargs["system"] = system_prompt
-        msg = client.messages.create(**kwargs)
-        _api_tokens["input"]  += getattr(msg.usage, "input_tokens", 0)
-        _api_tokens["output"] += getattr(msg.usage, "output_tokens", 0)
-        return msg.content[0].text.strip()
-    except Exception as e:
-        logging.warning(f"  [Claude API 오류] {e} — 로컬 폴백")
-        return ask_ai(prompt, system_prompt)
+    """Claude API → MiniMax M3로 대체 (PPV + 3회반려 수정 전용)."""
+    return ask_minimax(prompt, system_prompt, MODEL_MINIMAX_PPV, max_tokens=max_tokens)
 
 def ask_ai(prompt, system_prompt, model=HEAVY_MODEL, max_retries=2, timeout=360):
+    # MiniMax 모델이면 자동으로 API 라우팅
+    if isinstance(model, str) and model.startswith("MiniMax"):
+        return ask_minimax(prompt, system_prompt, model)
     clean_instruction = (
         f"{prompt}\n\nSTRICT: Output ONLY the requested content. "
         "No instructions. No markdown. No preamble. Start immediately."
@@ -2165,8 +2246,8 @@ def get_pmids(topic, count=5):
     try:
         from pubmed_fetcher import fetch_relevant_pmids
         papers = fetch_relevant_pmids(topic, count=count)
-        # ★ PMID 날조 방지 패치: 7-10자리 숫자 + 현재 상한선(4000만) 이하만 허용
-        pmids  = [str(p["pmid"]) for p in papers if str(p["pmid"]).isdigit() and 7 <= len(str(p["pmid"])) <= 8 and int(p["pmid"]) < 40000000]
+        # PMID 검증: API로 실제 존재 확인한 것만 사용 (숫자 범위 체크 불필요)
+        pmids  = [str(p["pmid"]) for p in papers if str(p["pmid"]).isdigit() and len(str(p["pmid"])) >= 7]
         if pmids:
             logging.info(f"  🔬 PubMed 실제 논문 {len(pmids)}개 검증 완료")
             return pmids
@@ -2177,12 +2258,12 @@ def get_pmids(topic, count=5):
     for key, pool_pmids in PMID_DB.items():
         if key in t:
             # 검증된 숫자만 추출
-            valid_pool = [str(p) for p in pool_pmids if str(p).isdigit() and int(p) < 40000000]
+            valid_pool = [str(p) for p in pool_pmids if str(p).isdigit() and len(str(p)) >= 7]
             if not valid_pool: continue
             return random.sample(valid_pool, min(count, len(valid_pool)))
     
     # 기본 폴백에서도 숫자 검증
-    default_pool = [str(p) for p in PMID_DB.get("default", []) if str(p).isdigit() and int(p) < 40000000]
+    default_pool = [str(p) for p in PMID_DB.get("default", []) if str(p).isdigit() and len(str(p)) >= 7]
     return random.sample(default_pool, min(count, len(default_pool)))
 
 def get_labels(topic):
@@ -2605,7 +2686,9 @@ def generate_title(topic, archetype_name="science-heavy", topic_type="synergy", 
         is_vitamin_code = len(cw) == 2 and bool(re.match(r'^[A-Za-z]\d$', cw))  # D3, K2, B6 등
         return cw.lower() not in stop_words and (len(cw) > 2 or (len(cw) == 1 and cw.isupper()) or is_vitamin_code)
     key_words_full = [w for w in words if _is_valid_keyword(w)]
-    topic_label = " ".join(key_words_full[:2]).title() if key_words_full else "Supplement"
+    # .title() 사용 금지 — apostrophe 뒤 글자도 대문자화하는 버그 (e.g. "Shouldn'T")
+    # 대신 각 단어의 첫 글자만 대문자화
+    topic_label = " ".join(w[0].upper() + w[1:] if w else w for w in key_words_full[:2]) if key_words_full else "Supplement"
 
     bad_labels = ["Stopped", "Stop", "Taking", "Take", "Started", "Using", "Use", "Found", "Actually", "Truth", "Comparing", "Combining", "Trying", "Testing", "Avoid"]
     for bl in bad_labels:
@@ -2733,11 +2816,11 @@ def generate_title(topic, archetype_name="science-heavy", topic_type="synergy", 
             first = f"{topic_label} Deficiency: Signs and How to Fix It"
         else:
             _else_fallbacks = [
-                f"{topic_label} Benefits, Dosage, and Side Effects",
-                f"How to Take {topic_label} for Best Results",
-                f"{topic_label}: Complete Guide to Dosage and Benefits",
-                f"Is {topic_label} Worth Taking? What the Research Says",
-                f"{topic_label} Dosage Guide: How Much Do You Need?",
+                f"What I Learned Taking {topic_label} for the First Time",
+                f"My First Month on {topic_label}: What Changed and What Didn't",
+                f"The {topic_label} Mistake I Kept Making",
+                f"Why I Kept Getting {topic_label} Wrong",
+                f"I Took {topic_label} Wrong for Months — Here's What Finally Worked",
             ]
             first = random.choice(_else_fallbacks)
         
@@ -2878,7 +2961,8 @@ def assemble_post(topic, title, hook, sections, images, pmids, faq_text, related
     # [v5.9.9.9] topic_label에서도 Common/Mistakes 제거 및 'And ' 접두사 방지
     topic_label = re.sub(r'(?i)\b(common|mistakes|tips|avoid|guide|protocol)\b', '', topic_label).strip()
     topic_label = re.sub(r'(?i)^(and|with)\s+', '', topic_label).strip()
-    topic_label = topic_label.title()
+    # .title() 금지 — apostrophe 버그 방지
+    topic_label = " ".join(w[0].upper() + w[1:] if w else w for w in topic_label.split())
 
     disc = ('<p><em>Disclosure: This post may contain affiliate links. '
             'Purchases made through these links support NutriStack Lab '
@@ -3081,7 +3165,7 @@ def assemble_post(topic, title, hook, sections, images, pmids, faq_text, related
             '<h2 style="margin-top:0;">About the Author</h2>'
             '<p><strong>Erik Lindström</strong> is a Stockholm-based writer who documents his personal supplement '
             'experiences and what has (or hasn\'t) worked in his own routine. '
-            'Every article on NutriStack Lab reflects his real-world testing — not medical advice.</p>'
+            f'{random.choice(_AUTHOR_BIO_VARIANTS)}</p>'
             '<p style="margin-bottom:0;font-size:0.9em;color:#555;">'
             '<a href="https://www.nutristacklab.com/p/1-about-us-manifesto-of-nutristack-lab.html" rel="noopener noreferrer">More about Erik</a>'
             ' &nbsp;|&nbsp; '
@@ -3325,7 +3409,7 @@ def quality_check(html, title, archetype_name="science-heavy"):
         "Disclaimer":      'medical-disclaimer' in html.lower(),
         "Disclosure":      'Disclosure:' in html,
         "PersonaCheck":    'Erik Lindström' in html and 'NutriStack Lab Methodology' not in html,
-        "PMID_Valid":      not any(int(p) > 40000000 for p in re.findall(r'PMID\s*(\d+)', html, re.IGNORECASE)),
+        "PMID_Valid":      not any(len(p) < 7 for p in re.findall(r'PMID\s*(\d+)', html, re.IGNORECASE)),
         "AI_Footprint":    not any(p in html.lower() for p in ["interestingly", "notably", "surprisingly", "moreover", "furthermore", "magic hour", "consistency is king", "pairing routine", "delve into", "unlock the", "it's worth noting", "in conclusion", "to summarize", "as an ai", "i cannot", "crucial role", "multifaceted", "comprehensive overview", "let's explore", "in this article we will", "real talk:", "chemical architecture", "complete guide"]),
         "No_Cure_Claims":  not any(re.search(p, html, re.IGNORECASE) for p in [r'\bcures?\b', r'\btreats?\s+\w+\s+disease', r'\bprevents?\s+cancer\b', r'\bheals?\s+\w+\s+condition', r'\bguaranteed\s+to\b']),
         "Alt_Clean":       not any(bad in html for bad in ["And Zinc", "Stopped And", "Taking And", "Stop And", "Take And", "Trying And", "Comparing And", "Using And"]) and all(not alt.strip().startswith("And ") for alt in re.findall(r'alt="([^"]*)"', html)),
@@ -3583,6 +3667,107 @@ def _strip_html_document_wrapper(content: str) -> str:
     cleaned = (seo_block + '\n' + style_block + body_text).strip()
     logging.warning("  ⚠️ [발행] <!DOCTYPE html> 구조 감지 → body 내용만 추출")
     return _hl.unescape(cleaned)
+
+
+# ── [M2.7 Surgical Fix] 발행 전 메타/오염 부분 수술 ───────────────────────────
+def minimax_surgical_fix(html: str, title: str, topic: str) -> str:
+    """
+    Qwen3 초안 발행 직전 M2.7로 부분 수술.
+    내용 재작성 없이 메타/오염 패턴만 정밀 수정.
+    """
+    prompt = f"""You are an editorial assistant doing a SURGICAL fix on a blog post.
+DO NOT rewrite content. Only fix these specific issues if present:
+
+1. TITLE: If title contains "Benefits, Dosage", "How to Take", "Complete Guide", "Worth Taking",
+   "Research Says" → replace with a personal experience title
+2. OG:DESCRIPTION: If it sounds clinical/research-like → make it first-person experience
+3. AI PHRASES: Replace any of these exact phrases:
+   - "HMB reducing muscle breakdown" → "HMB may support recovery"
+   - "copper and vitamin C don't play well together" → "separating them worked better for me"
+   - "inflammation markers were lower" → "blood work looked better overall"
+   - "zinc was quietly rewriting how my body functioned" → "my body seemed to slowly adjust"
+   - "recovery improved noticeably" → "I seemed to recover a little better"
+   - "preventing muscle loss" → "possibly supporting muscle retention"
+4. MECHANISM CLAIMS: Any sentence stating supplement mechanism as fact → add "from what I read" or "it seemed like"
+
+Return the COMPLETE HTML with ONLY those targeted fixes applied. Nothing else changed.
+
+POST TITLE: {title}
+TOPIC: {topic}
+
+HTML:
+{html[:8000]}"""
+
+    fixed = ask_minimax(prompt, "Fix only what's listed. Return complete HTML.", MODEL_MINIMAX_SURGEON, max_tokens=8192)
+    if fixed and len(fixed) > 1000 and '<' in fixed:
+        logging.info(f"  ✂️ [M2.7 수술] 메타/오염 패턴 수정 완료")
+        return fixed
+    logging.warning(f"  ✂️ [M2.7 수술] 응답 불량 — 원본 유지")
+    return html
+# ─────────────────────────────────────────────────────────────────────────────
+
+
+# ── [SEO Ping] 발행 시 검색엔진 알림 ──────────────────────────────────────────
+_SITEMAP_URL  = "https://www.nutristacklab.com/sitemap.xml"
+_GSC_SITE_URL = "sc-domain:nutristacklab.com"
+
+def _load_bing_key() -> str:
+    if os.environ.get("BING_API_KEY"):
+        return os.environ["BING_API_KEY"]
+    env_path = Path(__file__).parent / ".env"
+    if env_path.exists():
+        for line in env_path.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if line.startswith("BING_API_KEY=") and not line.startswith("#"):
+                key = line.split("=", 1)[1].strip().strip('"').strip("'")
+                if key:
+                    os.environ["BING_API_KEY"] = key
+                    return key
+    return ""
+
+def ping_indexing(post_url: str):
+    """발행 완료 직후 Google SC 사이트맵 제출 + Bing URL 직접 등록 (비치명적)."""
+    results = []
+
+    # 1. Google Search Console — 사이트맵 제출
+    try:
+        creds = get_creds()
+        wm = build("webmasters", "v3", credentials=creds)
+        wm.sitemaps().submit(siteUrl=_GSC_SITE_URL, feedpath=_SITEMAP_URL).execute()
+        results.append("Google SC ✅")
+    except Exception as e:
+        results.append(f"Google SC ❌ {e}")
+
+    # 2. Bing Webmaster Tools — 사이트맵 제출 + URL 직접 등록
+    _bing_key = _load_bing_key()
+    if _bing_key:
+        # 2-a. 사이트맵 제출
+        try:
+            r = requests.post(
+                f"https://ssl.bing.com/webmaster/api.svc/json/AddSitemap?apikey={_bing_key}",
+                headers={"Content-Type": "application/json; charset=utf-8"},
+                json={"siteUrl": "https://www.nutristacklab.com/", "feedUrl": _SITEMAP_URL},
+                timeout=10,
+            )
+            results.append(f"Bing Sitemap ✅ ({r.status_code})" if r.ok else f"Bing Sitemap ❌ ({r.status_code})")
+        except Exception as e:
+            results.append(f"Bing Sitemap ❌ {e}")
+        # 2-b. 신규 URL 직접 등록
+        try:
+            r = requests.post(
+                f"https://ssl.bing.com/webmaster/api.svc/json/SubmitUrlbatch?apikey={_bing_key}",
+                headers={"Content-Type": "application/json; charset=utf-8"},
+                json={"siteUrl": "https://www.nutristacklab.com/", "urlList": [post_url]},
+                timeout=10,
+            )
+            results.append(f"Bing URL ✅ ({r.status_code})" if r.ok else f"Bing URL ❌ ({r.status_code}) {r.text[:80]}")
+        except Exception as e:
+            results.append(f"Bing URL ❌ {e}")
+    else:
+        results.append("Bing ⏭️ (키 없음)")
+
+    logging.info(f"  🔍 [Ping] {' | '.join(results)}")
+# ─────────────────────────────────────────────────────────────────────────────
 
 
 def publish_to_blogger(title, content, labels=[], meta_desc="", is_draft=False, post_id=None, url_seed=None):
@@ -4121,7 +4306,7 @@ class GrandOrchestrator:
                     '<h2 style="margin-top:0;">About the Author</h2>'
                     '<p><strong>Erik Lindström</strong> is a Stockholm-based writer who documents his personal supplement '
                     'experiences and what has (or hasn\'t) worked in his own routine. '
-                    'Every article on NutriStack Lab reflects his real-world testing — not medical advice.</p>'
+                    + random.choice(_AUTHOR_BIO_VARIANTS) + '</p>'
                     '<p style="margin-bottom:0;font-size:0.9em;color:#555;">'
                     '<a href="https://www.nutristacklab.com/p/1-about-us-manifesto-of-nutristack-lab.html" rel="noopener noreferrer">More about Erik</a>'
                     ' &nbsp;|&nbsp; '
@@ -4635,6 +4820,13 @@ class GrandOrchestrator:
                     self.ctx["url"] = url
                     save()
                 else:
+                    # [M2.7 수술] 발행 전 메타/오염 패턴 부분 수술
+                    if not is_draft_mode:
+                        try:
+                            html = minimax_surgical_fix(html, title, topic)
+                        except Exception as _sx_err:
+                            logging.warning(f"  [M2.7 수술] 실패 (비치명적): {_sx_err}")
+
                     # [v7.0] 신규 포스트에만 URL 슬러그 적용
                     _url_seed = None
                     if not self.ctx.get("post_id"):
@@ -4669,10 +4861,11 @@ class GrandOrchestrator:
                             _pid_file.unlink()
                     except: pass
 
-                    # [SEO v6.0] 발행 후 확정 URL로 canonical + og:url + JSON-LD 패치
+                    # [SEO v6.0] 발행 후 확정 URL로 canonical + og:url + JSON-LD + og:image 패치
                     if _pub_post_id:
                         try:
-                            _patched_html = patch_seo_tags(html, url, title, meta_desc)
+                            _hero_img_url = self.ctx.get("images", {}).get("hero", "")
+                            _patched_html = patch_seo_tags(html, url, title, meta_desc, image_url=_hero_img_url)
                             _seo_svc = get_blogger_service()
                             if _seo_svc:
                                 # searchDescription 보장: meta_desc 없으면 title 기반 생성
@@ -4707,7 +4900,7 @@ class GrandOrchestrator:
                             html             = html,
                             meta_desc        = meta_desc,
                             ask_ai_fn        = ask_ai,
-                            ask_ai_fn_claude = lambda p, s="": ask_claude(p, s, model="claude-haiku-4-5-20251001"),
+                            ask_ai_fn_claude = lambda p, s="": ask_minimax(p, s, MODEL_MINIMAX_PPV),
                             meta_dir         = META_DIR,
                             topic_type       = topic_type,
                         )
@@ -4724,6 +4917,13 @@ class GrandOrchestrator:
                     except Exception as _ppv_err:
                         logging.warning(f"  [Post-Publish] 검증 스킵 (무시): {_ppv_err}")
                     # ────────────────────────────────────────────────────────────
+
+                    # [SEO Ping] Google SC 사이트맵 제출 + Bing URL 등록
+                    if url and url.startswith("http"):
+                        try:
+                            ping_indexing(url)
+                        except Exception as _ping_err:
+                            logging.warning(f"  [Ping] 실패 (비치명적): {_ping_err}")
 
                     _html_path = COMPLETED_DIR / file_path.name
                     # last_guide_template.json에서 템플릿 이름 읽기

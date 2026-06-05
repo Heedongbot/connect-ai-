@@ -328,6 +328,54 @@
       "topic": "Taking Vitamin D with Magnesium: What I ",
       "retries": 0,
       "published": true
+    },
+    {
+      "date": "2026-06-03",
+      "topic": "My Roommate Swears by Selenium — Here's ",
+      "retries": 0,
+      "published": true
+    },
+    {
+      "date": "2026-06-04",
+      "topic": "Taking Selenium with Zinc: What Changed ",
+      "retries": 0,
+      "published": true
+    },
+    {
+      "date": "2026-06-04",
+      "topic": "Why You Shouldn't Take Copper and Vitami",
+      "retries": 0,
+      "published": true
+    },
+    {
+      "date": "2026-06-04",
+      "topic": "My Colleague Had Better Results with Sel",
+      "retries": 0,
+      "published": true
+    },
+    {
+      "date": "2026-06-04",
+      "topic": "Someone I Know Started HMB Before I Did ",
+      "retries": 0,
+      "published": true
+    },
+    {
+      "date": "2026-06-05",
+      "topic": "NAD Complete Guide",
+      "retries": 0,
+      "published": true
+    },
+    {
+      "date": "2026-06-05",
+      "topic": "Why I Started Taking Vitamin K2 and Vita",
+      "retries": 0,
+      "published": true
+    },
+    {
+      "date": "2026-06-05",
+      "topic": "I Almost Talked My Partner Out of SAMe —",
+      "retries": 0,
+      "published": true
     }
   ],
   "avg_retries_20": 1.95,
@@ -559,6 +607,27 @@
     "AVOID: 'I can see the results' → use 'I can notice the difference in my routine'",
     "AVOID: 'energy levels are stable' → use 'energy levels feel more stable' (hedge with feel/seem)",
     "SYSTEM: hub_page_generator.py uses logging.info() not sys.stdout.write() — stdout is closed in orchestrator context.",
-    "SYSTEM: Hub auto-update runs after every publish via add_post_to_hub(). Categories: minerals/vitamins/performance/sleep_stress/gut_metabolism/longevity_antioxidants/cognitive_mood."
+    "SYSTEM: Hub auto-update runs after every publish via add_post_to_hub(). Categories: minerals/vitamins/performance/sleep_stress/gut_metabolism/longevity_antioxidants/cognitive_mood.",
+    "AVOID: og:description says 'If Vitamin C isn't working for you, it might be the context' — this describes t (detected 2x in published posts)",
+    "AVOID: Related posts link to Iron, Zinc, Vitamin D, and Potassium articles — none are about copper. These a (detected 2x in published posts)",
+    "AVOID: Check for 'a instant', 'a improvement', 'a answer' patterns — none found in this post. However, 'a s (detected 2x in published posts)",
+    "AVOID: Connecting lab results (inflammation markers, thyroid function, CRP, etc.) directly to a supplement — 'His markers were lower' after taking selenium = YMYL violation. Use: 'He said his blood work looked better overall, though I cannot say what caused it'",
+    "AVOID: Mechanism statements presented as fact: 'Vitamin C changes stomach pH', 'Copper doesn't like that environment' = bro-science. Always use uncertainty: 'I came across discussions suggesting...' or 'from what I read, it might...'",
+    "AVOID: Strong result verbs in titles — 'Fixed', 'Healed', 'Cured', 'Solved'. Use instead: 'What Changed After', 'What I Noticed', 'My Honest Notes', 'Slowly Started Helping'",
+    "AVOID: Side effect horror narrative — listing 4+ symptoms (sharp abdominal pain, mood swings, skin changes, restlessness) makes post read like a scare piece. Max 2 mild symptoms only.",
+    "AVOID: Brand-tone overstatements like 'quietly rewriting how my body functioned' — this is ad copy, not personal blog. Use: 'it felt like my body was slowly adjusting'",
+    "AVOID: 'don't play well together' when describing supplement interactions — too casual and definitive. Use: 'seemed to work better for me when separated'",
+    "AVOID: Title contains placeholder text 'Someone Know' which is nonsensical. Should be 'What I Learned Takin (detected 2x in published posts)",
+    "AVOID: Performance certainty phrases like 'do more reps', 'lift heavier', 'recovery improved noticeably' — use instead: 'seemed to recover a little better', 'felt less drained', 'noticed less soreness'",
+    "AVOID: 'HMB reducing muscle breakdown' as fact — use: 'Research suggests HMB may support recovery and muscle retention during demanding training periods'",
+    "AVOID: FAQ stating 'preventing muscle loss' as definitive — use: 'possibly supporting muscle retention'",
+    "AVOID: Solo self-analysis monologue without social context — every post needs at least 1 observation involving another person (partner, roommate, coworker, friend) reacting, commenting, or being part of the story",
+    "AVOID: AI reflective loop pattern — repeatedly cycling brain fog / consistency / sluggish / routine / not a miracle in the same reflective cadence across sections. Reads as LLM self-reflection, not human memory",
+    "AVOID: Performance improvement namedrop list — do NOT stack focus improved + sleep improved + recovery improved + clarity improved in the same post. Pick 2 max and describe them specifically",
+    "AVOID: Repeated paragraph structure skepticism->small improvement->consistency lesson across ALL sections. Vary: start with the contradiction, start mid-story, start with someone else",
+    "AVOID: AI metaphor density > 2 per post — broken battery, party in a vacuum, flickering candle type metaphors signal AI generation. One deliberate metaphor max",
+    "AVOID: mechanistic certainty phrases like rewiring neurotransmitters / reverse aging at molecular level / calcium accumulate in wrong places — use hedged language: may relate to / some researchers suggest / from what I read",
+    "REQUIRE: At least 1 genuine uncertainty or failed attempt per post — hesitation, contradiction, or something that did NOT work as expected. Posts where everything works = AI success montage",
+    "REQUIRE: At least 1 social observation per post — other person reaction, conversation snippet, or environmental detail. Pure solo introspection = AI wellness journal pattern"
   ]
 }

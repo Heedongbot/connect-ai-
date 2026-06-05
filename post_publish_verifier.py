@@ -25,6 +25,7 @@ try:
     from post_quality_check import (
         score_A, score_B, score_C, score_D, score_E, score_F,
         check_instant_reject, AGENT_ROUTING, CATEGORY_LABELS,
+        AI_PATTERNS,
     )
     _QC_AVAILABLE = True
 except ImportError:
@@ -33,10 +34,11 @@ except ImportError:
 log = logging.getLogger("PostPublishVerifier")
 
 # 즉시 자동 수정 가능 카테고리
-_AUTO_FIX = {"B2", "C1", "D2", "D3", "E1"}
-# 알림만 (자동수정 불가 — 내용 재작성 필요)
-# B1: Blogger가 <meta> 태그를 post content에서 제거하므로 HTML 패치 불가 → 레슨만
-_NOTIFY_ONLY = {"B1", "C3", "D1", "C4", "C2", "C5"}
+_AUTO_FIX = {"B1", "B2", "C1", "D1", "D2", "D3", "E1"}
+# 알림만 (내용 재작성 필요)
+# B1: Blogger API로 meta 패치 가능 — AUTO_FIX로 이동 (기존 가정 오류)
+# D1: FALLBACK_PMIDS로 주입 가능 — AUTO_FIX로 이동
+_NOTIFY_ONLY = {"C3", "C4", "C2", "C5"}
 # Hermes 큐에 즉시 등록 (발행 후 1회라도)
 _HERMES_IMMEDIATE = {"A1", "A2", "F1", "F2"}
 
@@ -2408,26 +2410,41 @@ def _save_verification_log(meta_dir: Path, entry: dict):
     log_path.write_text(json.dumps(records, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-# ── Teacher 전용 Sonnet 호출 ──────────────────────────────────────────────────
+# ── Teacher 전용 MiniMax M3 호출 ─────────────────────────────────────────────
 
 def _ask_sonnet(prompt: str, system: str = "") -> str:
-    """Claude-Teacher (T1/T2) 전용 — Sonnet 4.6 직접 호출."""
+    """Teacher (T1/T2) 전용 — MiniMax M3 호출 (Claude Sonnet 대체)."""
+    import re as _re, os, requests as _req
     try:
-        import anthropic, os
-        key = os.environ.get("ANTHROPIC_API_KEY", "")
+        key = os.environ.get("MINIMAX_API_KEY", "")
         if not key:
-            log.warning("  [Teacher-Sonnet] ANTHROPIC_API_KEY 없음 — 스킵")
+            env = Path(__file__).parent / ".env"
+            if env.exists():
+                for line in env.read_text(encoding="utf-8").splitlines():
+                    if line.startswith("MINIMAX_API_KEY="):
+                        key = line.split("=", 1)[1].strip()
+                        os.environ["MINIMAX_API_KEY"] = key
+                        break
+        if not key:
+            log.warning("  [Teacher-M3] MINIMAX_API_KEY 없음 — 스킵")
             return ""
-        client = anthropic.Anthropic(api_key=key)
-        msg = client.messages.create(
-            model="claude-sonnet-4-6",
-            max_tokens=1024,
-            system=system or "You are a senior editorial analyst.",
-            messages=[{"role": "user", "content": prompt}],
+        msgs = []
+        if system:
+            msgs.append({"role": "system", "content": system or "You are a senior editorial analyst."})
+        msgs.append({"role": "user", "content": prompt})
+        r = _req.post(
+            "https://api.minimaxi.chat/v1/chat/completions",
+            headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+            json={"model": "MiniMax-M3", "messages": msgs, "max_tokens": 1024},
+            timeout=60,
         )
-        return msg.content[0].text.strip() if msg.content else ""
+        if r.ok:
+            raw = r.json()["choices"][0]["message"]["content"]
+            return _re.sub(r'<think>.*?</think>', '', raw, flags=_re.DOTALL).strip()
+        log.warning(f"  [Teacher-M3] 응답 오류: {r.status_code}")
+        return ""
     except Exception as _e:
-        log.warning(f"  [Teacher-Sonnet] 호출 실패: {_e}")
+        log.warning(f"  [Teacher-M3] 호출 실패: {_e}")
         return ""
 
 
@@ -2479,14 +2496,11 @@ def _extract_surgical_parts(html: str, failing_cats: dict) -> dict:
         body   = body_m.group(1) if body_m else stripped
 
         if "C4" in failing_cats:
-            # AI 패턴 문장만 추출 (전체 본문 불필요)
-            _AI_KW = ["real talk", "game changer", "bioavailable", "significant advancement",
-                      "delve into", "it's worth noting", "consistency is everything",
-                      "miracle", "aging slower", "new level", "hamster wheel", "warzone"]
+            # AI 패턴 문장만 추출 — AI_PATTERNS와 동기화 유지
             raw_text = re.sub(r'<[^>]+>', ' ', body)
             sents = re.split(r'(?<=[.!?])\s+', raw_text)
             ai_sents = [s.strip() for s in sents
-                        if any(k in s.lower() for k in _AI_KW)][:10]
+                        if any(re.search(p, s, re.I) for p in AI_PATTERNS)][:10]
             parts["C4_SENTENCES"] = "\n".join(ai_sents) if ai_sents else ""
 
         if "C6" in failing_cats:
@@ -2649,7 +2663,7 @@ def verify_and_patch(
     a = score_A(title, html)
     b = score_B(html)
     c = score_C(html, title)
-    d = score_D(html)
+    d = score_D(html, title)
     e = score_E(html, title)
     f = score_F(html, title)
     all_scores = {**a, **b, **c, **d, **e, **f}
@@ -2976,7 +2990,7 @@ def verify_and_patch(
                 log.info("  [Post-Publish] 1차 스캔: 이슈 없음")
 
             # ── 5-2. 2차 스캔 (Claude API) — 항상 실행, 수정 + 패치까지
-            log.info("  [Post-Publish] 2차 스캔 시작 (Claude API)...")
+            log.info("  [Post-Publish] 2차 스캔 시작 (MiniMax M3)...")
             scan2_issues = claude_smart_scan(new_html, title, _fn2, meta_dir)
             if scan2_issues:
                 log.warning(f"  [Post-Publish] 2차 스캔 이슈 {len(scan2_issues)}개:")
@@ -3059,7 +3073,7 @@ def verify_and_patch(
             _la = score_A(_ppv_loop_title, _ppv_loop_html)
             _lb = score_B(_ppv_loop_html)
             _lc = score_C(_ppv_loop_html, _ppv_loop_title)
-            _ld = score_D(_ppv_loop_html)
+            _ld = score_D(_ppv_loop_html, _ppv_loop_title)
             _le = score_E(_ppv_loop_html, _ppv_loop_title)
             _lf = score_F(_ppv_loop_html, _ppv_loop_title)
             _l_all = {**_la, **_lb, **_lc, **_ld, **_le, **_lf}
@@ -3143,7 +3157,7 @@ def verify_and_patch(
                     f"CODE_FIX_NEEDED: [Writer/Critic 프롬프트에 추가해야 할 규칙]"
                 )
                 try:
-                    log.info("  [Claude-Teacher T1] Sonnet 4.6 호출 중...")
+                    log.info("  [Claude-Teacher T1] MiniMax M3 호출 중...")
                     _root_analysis = _ask_sonnet(
                         _root_prompt,
                         "You are a senior editorial analyst. Diagnose why automated fixes are failing.",
@@ -3368,7 +3382,7 @@ def verify_and_patch(
                     f"AVOID: [구체적 금지 패턴 — 예시 포함] (detected {_PPV_MAX_ROUNDS}x in PPV-Loop)"
                 )
                 try:
-                    log.info("  [Claude-Teacher T2] Sonnet 4.6 호출 중...")
+                    log.info("  [Claude-Teacher T2] MiniMax M3 호출 중...")
                     _rule_resp = _ask_sonnet(
                         _rule_prompt,
                         "You are a senior editorial analyst extracting writing rules from failures.",

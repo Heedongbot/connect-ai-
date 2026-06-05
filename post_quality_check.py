@@ -180,6 +180,22 @@ AI_PATTERNS = [
     "may support-all",
     "routine d3",
     "routine vitamin",
+    # v10.1: 메커니즘 AI 흔적
+    "rewiring neurotransmitters",
+    "physiological response discussed here",
+    "reverse aging at molecular level",
+    "at the molecular level",
+    # v10.1: AI 메타포 패턴
+    "broken battery",
+    "party in a vacuum",
+    # v10.1: AI reflective loop 패턴
+    "not a miracle",
+    "it's not a miracle",
+    "not a magic",
+    # v10.1: 증상 직접 해결 YMYL
+    "the chest pain stopped",
+    "the pain stopped",
+    "symptoms disappeared",
 ]
 
 MEDICAL_JARGON = [
@@ -345,6 +361,21 @@ def score_B(html: str) -> dict:
     return scores
 
 
+_HUB_TITLE_PATTERNS = [
+    r"every\s+\w+\s+supplement",
+    r"supplement[s]?\s*[—–-]+\s*my\s+(testing|running|honest)",
+    r"gut\s+health.*supplement",
+    r"sleep\s+and\s+stress\s+supplement",
+    r"brain\s+and\s+mood\s+supplement",
+    r"longevity\s+and\s+antioxidant",
+    r"performance\s+supplement[s]?\s+i",
+    r"every\s+vitamin\s+i",
+    r"every\s+mineral\s+supplement",
+]
+
+def _is_hub_page(title: str) -> bool:
+    return any(re.search(p, title, re.I) for p in _HUB_TITLE_PATTERNS)
+
 def score_C(html: str, title: str) -> dict:
     scores = {}
     text = re.sub(r'<[^>]+>', ' ', html)
@@ -373,8 +404,10 @@ def score_C(html: str, title: str) -> dict:
     else:
         scores["C2"] = (0, "H2 없음")
 
-    # C3. 본문 길이
-    if word_count >= 1500:
+    # C3. 본문 길이 (허브 페이지 제외)
+    if _is_hub_page(title):
+        scores["C3"] = (10, f"허브 페이지 — 단어수 기준 제외 ({word_count}단어)")
+    elif word_count >= 1500:
         scores["C3"] = (10, f"{word_count}단어")
     elif word_count >= 1000:
         scores["C3"] = (7, f"{word_count}단어 (권장 1500+)")
@@ -414,24 +447,27 @@ def score_C(html: str, title: str) -> dict:
     return scores
 
 
-def score_D(html: str) -> dict:
+def score_D(html: str, title: str = "") -> dict:
     scores = {}
 
-    # D1. PMID 유효성
-    pmid_links = re.findall(r'pubmed\.ncbi\.nlm\.nih\.gov/(\d+)', html, re.I)
-    pmid_text = re.findall(r'PMID[:\s]+(\d+)', html, re.I)
-    all_pmids = [int(p) for p in pmid_links + pmid_text if p.isdigit()]
-
-    if not all_pmids:
-        scores["D1"] = (0, "PMID/연구링크 없음")
+    # D1. PMID 유효성 (허브 페이지 제외)
+    if title and _is_hub_page(title):
+        scores["D1"] = (10, "허브 페이지 — PMID 기준 제외")
     else:
-        fake = [p for p in all_pmids if p > 50000000]  # 2025년 기준 PubMed 최대 ~42M
-        if fake:
-            scores["D1"] = (0, f"가상 PMID: {fake[:2]}")
-        elif len(all_pmids) >= 3:
-            scores["D1"] = (10, f"PMID {len(all_pmids)}개")
+        pmid_links = re.findall(r'pubmed\.ncbi\.nlm\.nih\.gov/(\d+)', html, re.I)
+        pmid_text = re.findall(r'PMID[:\s]+(\d+)', html, re.I)
+        all_pmids = [int(p) for p in pmid_links + pmid_text if p.isdigit()]
+
+        if not all_pmids:
+            scores["D1"] = (0, "PMID/연구링크 없음")
         else:
-            scores["D1"] = (7, f"PMID {len(all_pmids)}개 (권장 3+)")
+            fake = [p for p in all_pmids if p > 50000000]
+            if fake:
+                scores["D1"] = (0, f"가상 PMID: {fake[:2]}")
+            elif len(all_pmids) >= 3:
+                scores["D1"] = (10, f"PMID {len(all_pmids)}개")
+            else:
+                scores["D1"] = (7, f"PMID {len(all_pmids)}개 (권장 3+)")
 
     # D2. 내부 링크
     internal = re.findall(r'href="https://www\.nutristacklab\.com/[^"#]+"', html, re.I)
